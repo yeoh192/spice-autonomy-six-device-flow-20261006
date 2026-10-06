@@ -1,0 +1,243 @@
+* OPAX591
+************************************************************************************************************************
+* (C) Copyright 2026 Texas Instruments Incorporated. All rights reserved.     
+************************************************************************************************************************
+** This model is designed as an aid for customers of Texas Instruments.      
+** TI and its licensors and suppliers make no warranties, either expressed   
+** or implied, with respect to this model, including the warranties of       
+** merchantability or fitness for a particular purpose. The model is        
+** provided solely on an "as is" basis. The entire risk as to its quality   
+** and performance is with the customer
+************************************************************************************************************************
+* Released by: Srivatsan Sathyamoorthy
+* Date: 06/14/2026
+* Part: OPAx591
+* Model Type: Generic (suitable for all analysis types)
+* EVM Users Guide:  SBOU192 - JULY 2017 (Generic Version)
+* Datasheet: SBOSA47 - JUNE 2026
+* Created with TI Properitary Model Architecture
+*
+* Top Level Model: OPAx591
+* Model Version: 1.0
+*
+************************************************************************************************************************
+* MACRO-MODEL SIMULATED PARAMETERS:
+******************************************************
+*
+* OPEN-LOOP GAIN AND PHASE VS. FREQUENCY  WITH RL, CL EFFECTS (Aol)
+* UNITY GAIN BANDWIDTH (GBW)
+* INPUT COMMON-MODE REJECTION RATIO VS. FREQUENCY (CMRR)
+* POWER SUPPLY REJECTION RATIO VS. FREQUENCY (PSRR)
+* DIFFERENTIAL INPUT IMPEDANCE (Zid)
+* COMMON-MODE INPUT IMPEDANCE (Zic)
+* OPEN-LOOP OUTPUT IMPEDANCE VS. FREQUENCY (Zo)
+* OUTPUT CURRENT THROUGH THE SUPPLY (Iout)
+* INPUT VOLTAGE NOISE DENSITY VS. FREQUENCY (en)
+* INPUT CURRENT NOISE DENSITY VS. FREQUENCY (in)
+* OUTPUT VOLTAGE SWING vs. OUTPUT CURRENT (Vo)
+* SHORT-CIRCUIT OUTPUT CURRENT (Isc)
+* QUIESCENT CURRENT (Iq)
+* SETTLING TIME VS. CAPACITIVE LOAD (ts)
+* SLEW RATE (SR)
+* SMALL SIGNAL OVERSHOOT VS. CAPACITIVE LOAD
+* LARGE SIGNAL RESPONSE
+* OVERLOAD RECOVERY TIME (tor)
+* INPUT BIAS CURRENT (Ib)
+* INPUT OFFSET CURRENT (Ios)
+* INPUT OFFSET VOLTAGE (Vos)
+* INPUT OFFSET VOLTAGE VS. TEMPERATURE (VOS DRIFT)
+* INPUT COMMON-MODE VOLTAGE RANGE (Vcm)
+* INPUT OFFSET VOLTAGE VS. INPUT COMMON-MODE VOLTAGE (Vos vs. Vcm)
+* INPUT/OUTPUT ESD CELLS (ESDin, ESDout)
+*
+******************************************************
+* PARAMETERS NOT MODELED
+******************************************************
+* (1) Variations in Process, Temperature and Supply voltage
+* (2) Min &/ Max specs
+*************************************************************************************************************************
+*
+************************************************************************************************************************
+.SUBCKT OPAX591 IN+ IN- V+ V- OUT
+****************************************
+* Models
+.MODEL DN D (IS=1E-14 BV=90 IBV=1E-13 RS=1 CJO=1E-14)
+.MODEL R_NOISELESS RES (T_ABS=-273.15)
+****************************************
+* Components
+C_C1 MID CLAMP 700F 
+C_C2 MID N22517 500F 
+C_C3 N22511 N22517 13P 
+C_C4 IN- IN+ 2.5P 
+C_C5 N15430 N15555 159.2P 
+C_C6 N18339 N18349 4N 
+C_C7 N19306 N19316 3.5N 
+C_C8 MID N23742 1P 
+C_C9 N24878 MID 100F 
+C_CCM1 MID IN+ 5.5P 
+C_CCM2 IN- MID 5.5P 
+C_CMID1 0 N12704 10F 
+C_CMID2 0 N13087 10F 
+C_CMID3 0 N12851 10U 
+D_D1 IN+ V+ DN 
+D_D2 V- IN+ DN 
+D_D3 IN- V+ DN 
+D_D4 V- IN- DN 
+D_D5 OUT V+ DN 
+D_D6 V- OUT DN 
+E_E1 MID 0 N12851 0 1
+E_E2 VOUT_S 0 OUT 0 1
+E_E3 VIMON MID N24878 MID 1K
+G_G_CMR1 NCMR2 NCMR1 N15555 MID -1M
+G_G_PSR1 NPSR1 NPSR2 N18349 N19316 -1M
+G_G1 VP_B 0 V+ 0 -1
+G_G2 VN_B 0 V- 0 -1
+G_G3 N15430 MID IN+ MID 1.85M
+G_G4 N18339 MID VP_B MID 1.688
+G_G5 N19306 MID VN_B MID 1.688
+I_IB MID IN+ DC 5PADC
+I_IOS IN+ IN- DC 7PADC
+I_IQ V+ V- DC 450UADC
+R_R1 MID CLAMP R_NOISELESS 15.3G 
+R_R2 MID N22517 R_NOISELESS 75K 
+R_R3 N22511 CLAMP R_NOISELESS 2.6K 
+R_R4 NPSR1 NCMR2 R_NOISELESS 10M 
+R_R5 INPX NPSR2 R_NOISELESS 10M 
+R_R6 INN IN- R_NOISELESS 10M 
+R_R7 MID N23289 R_NOISELESS 1T 
+R_R8 N23467 MID R_NOISELESS 1T 
+R_R9 N23697 MID R_NOISELESS 1 
+R_R10 N23742 N23697 R_NOISELESS 10M 
+R_R11 INP N23742 R_NOISELESS 10M 
+R_RCM1 MID IN+ R_NOISELESS 100G 
+R_RCM2 IN- MID R_NOISELESS 100G 
+R_RCMR1 MID N15430 R_NOISELESS 1 
+R_RCMR2 N15555 N15430 R_NOISELESS 100MEG 
+R_RCMR3 MID N15555 R_NOISELESS 10K 
+R_RCMR4 NCMR1 NCMR2 R_NOISELESS 1K 
+R_RDIFF IN- IN+ R_NOISELESS 100MEG 
+R_RMID1 0 VP_B R_NOISELESS 1 
+R_RMID2 N12704 VP_B R_NOISELESS 10M 
+R_RMID3 N12851 N12704 R_NOISELESS 10MEG 
+R_RMID4 N13087 N12851 R_NOISELESS 10MEG 
+R_RMID5 VN_B N13087 R_NOISELESS 10M 
+R_RMID6 0 VN_B R_NOISELESS 1 
+R_RPSR1 MID N18339 R_NOISELESS 1 
+R_RPSR2 N18349 N18339 R_NOISELESS 100MEG 
+R_RPSR3 MID N18349 R_NOISELESS 6 
+R_RPSR4 N19316 N19306 R_NOISELESS 100MEG 
+R_RPSR5 MID N19306 R_NOISELESS 1 
+R_RPSR6 MID N19316 R_NOISELESS 6 
+R_RPSR7 NPSR2 NPSR1 R_NOISELESS 1K 
+R_RS1 MID IMON R_NOISELESS 1T 
+R_RS2 N24878 IMON R_NOISELESS 100M 
+V_V1 VP_B N94661 100MVDC
+V_V2 N94909 VN_B 100MVDC
+V_VCMN VN_B N23467 100MVDC
+V_VCMP VP_B N23289 3.5VDC
+X_H1 N22517 OUT IMON MID BLK_1B_SMC_H1_OPAX591
+X_U1 INP INN MID CLAMP AOL_1_OPAX591 PARAMS: GAIN=-282.74U IPOS=1.898M INEG=-1.898M
+X_U3 N10935 IN+ VOS_DRIFT_OPAX591 PARAMS: DC=41.39U POL=1 DRIFT=200E-9
+X_U4 N10935 NCMR1 VNSE1_OPAX591 PARAMS: FLW=1 NLF=100 NVR=12.8
+X_U5 MID N10935 FEMT1_OPAX591 PARAMS: NVRF=6.6
+X_U6 IN- MID FEMT1_OPAX591 PARAMS: NVRF=6.6
+X_U7 INPX MID N23697 MID N23289 N23467 VCM_CLAMP_OPAX591 PARAMS: GAIN=1
+X_U8 VIMON MID V+ MID IQ_SRC_OPAX591 PARAMS: GAIN=1E-3
+X_U9 MID VIMON MID V- IQ_SRC_OPAX591 PARAMS: GAIN=1E-3
+X_U11 OUT N94661 0 CLAMP AOL_1_OPAX591 PARAMS: GAIN=1M IPOS=3M INEG=0
+X_U12 N94909 OUT 0 CLAMP AOL_1_OPAX591 PARAMS: GAIN=-1M IPOS=0 INEG=-3M
+X_U13 CLAMP MID MID N22517 AOL_2_OPAX591 PARAMS: GAIN=-266.667U IPOS=30M INEG=-30M
+.ENDS OPAX591
+************************************************************************************************************************
+
+************************************************************************************************************************
+.SUBCKT AOL_1_OPAX591 VC+ VC- IOUT+ IOUT- PARAMS: GAIN=1E-4 IPOS=.5 INEG=-.5
+****************************************
+* Components
+G1 IOUT+ IOUT- VALUE={LIMIT(GAIN*V(VC+,VC-),INEG,IPOS)}
+.ENDS AOL_1_OPAX591
+************************************************************************************************************************
+
+************************************************************************************************************************
+.SUBCKT AOL_2_OPAX591 VC+ VC- IOUT+ IOUT- PARAMS: GAIN=20.36E-3 IPOS=0.163 INEG=-0.163
+****************************************
+* Components
+G1 IOUT+ IOUT- VALUE={LIMIT(GAIN*V(VC+,VC-),INEG,IPOS)}
+.ENDS AOL_2_OPAX591
+************************************************************************************************************************
+
+************************************************************************************************************************
+.SUBCKT BLK_1B_SMC_H1_OPAX591 1 2 3 4
+****************************************
+* Components
+H_H1 3 4 VH_H1 1
+VH_H1 1 2 0V
+.ENDS BLK_1B_SMC_H1_OPAX591
+************************************************************************************************************************
+
+************************************************************************************************************************
+.SUBCKT FEMT1_OPAX591 1 2 PARAMS: NVRF=1.5
+****************************************
+* Parameters
+.PARAM RNVF={1.184*PWR(NVRF,2)}
+****************************************
+* Components
+E1 3 0 5 0 10
+G1 1 2 3 0 1E-6
+R4 5 0 {RNVF} 
+R5 5 0 {RNVF} 
+.ENDS FEMT1_OPAX591
+************************************************************************************************************************
+
+************************************************************************************************************************
+.SUBCKT IQ_SRC_OPAX591 VC+ VC- IOUT+ IOUT- PARAMS: GAIN=1E-3
+****************************************
+* Components
+G1 IOUT+ IOUT- VALUE={IF((V(VC+,VC-)<=0),0,GAIN*V(VC+,VC-))}
+.ENDS IQ_SRC_OPAX591
+************************************************************************************************************************
+
+************************************************************************************************************************
+.SUBCKT VCM_CLAMP_OPAX591 VIN+ VIN- IOUT- IOUT+ VP+ VP- PARAMS: GAIN=1
+****************************************
+* Components
+G1 IOUT+ IOUT- VALUE={LIMIT(GAIN*V(VIN+,VIN-),V(VP-,VIN-),V(VP+,VIN-))}
+.ENDS VCM_CLAMP_OPAX591
+************************************************************************************************************************
+
+************************************************************************************************************************
+.SUBCKT VNSE1_OPAX591 1 2 PARAMS: FLW=1 NLF=120 NVR=18
+****************************************
+* Parameters
+.PARAM GLF={PWR(FLW,0.25)*NLF/1164}
+.PARAM RNV={1.184*PWR(NVR,2)}
+****************************************
+* Models
+.MODEL DVN D (KF={PWR(FLW,0.5)/1E11} IS=1.0E-16)
+****************************************
+* Components
+D1 7 0 DVN 
+D2 8 0 DVN 
+E1 3 6 7 8 {GLF}
+E2 6 4 5 0 10
+E3 1 2 3 4 1
+I1 0 7 10E-3
+I2 0 8 10E-3
+R1 3 0 1E9 
+R2 3 0 1E9 
+R3 3 6 1E9 
+R4 5 0 {RNV} 
+R5 5 0 {RNV} 
+R6 3 4 1E9 
+R7 4 0 1E9 
+.ENDS VNSE1_OPAX591
+************************************************************************************************************************
+
+************************************************************************************************************************
+.SUBCKT VOS_DRIFT_OPAX591 VOS+ VOS- PARAMS: DC=496.4E-6 POL=1 DRIFT=2E-06
+****************************************
+* Components
+E1 VOS+ VOS- VALUE={DC+POL*DRIFT*(TEMP-27)}
+.ENDS VOS_DRIFT_OPAX591
+************************************************************************************************************************
+

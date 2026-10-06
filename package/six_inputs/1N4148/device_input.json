@@ -1,0 +1,265 @@
+{
+  "schema_version": "unified-device-input-1",
+  "device": "1N4148",
+  "category": "switching_diode",
+  "selected_variant": "1N4148",
+  "materials": {
+    "manual": "assets/cc5a33f31a2690a270cc8961b33a9d412dac473e2cfe77faa16ef79502f56400.pdf",
+    "electrical": "assets/f9d9eb18da98e6f6cf7316dd795d65710cf982a7061d99f6762bb69b53279b68.json",
+    "evidence": "assets/353ca8820e3b6b4f5669ef1f22c26964f78cd1c30a23e4755a0c2b686e17d940.json",
+    "ports": "assets/2d45606ea4d36fa30af07e100cc8ac9363ce9d1a51b933dd4090602ab7499aac.json",
+    "inventory": "assets/850b560f648519c66e3228d69ce32446f0eba926fb4ca057640c99ee780bdd2a.json",
+    "test_plan": "assets/791cabfc9eb22055a4d551585296630d93278d47f80fda2a5d49290a2176a2c7.json",
+    "acceptance": "assets/315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e.json",
+    "manual_page_evidence": "assets/f7a0c6529f5a63cadbbe266ca877ac6439c59f1ce27ed6fd7b58bb6b5cf13b77.json"
+  },
+  "coverage_plan": "coverage_plan.json",
+  "inventory": "inventory.json",
+  "reference_assets": [
+    {
+      "source_relative": "references/curves/electrical_with_curves.json",
+      "path": "assets/f9d9eb18da98e6f6cf7316dd795d65710cf982a7061d99f6762bb69b53279b68.json",
+      "sha256": "f9d9eb18da98e6f6cf7316dd795d65710cf982a7061d99f6762bb69b53279b68",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig2/curve_data.json",
+      "path": "assets/3267434c79ac7285515892fcfba2918d0a044c5367f887fea4f6206b7cf65d98.json",
+      "sha256": "3267434c79ac7285515892fcfba2918d0a044c5367f887fea4f6206b7cf65d98",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig2/max_if.csv",
+      "path": "assets/b8a8f4c83cae1172875bc8819f2d189dc34b41cd11a7052c84cc492a984d6188.csv",
+      "sha256": "b8a8f4c83cae1172875bc8819f2d189dc34b41cd11a7052c84cc492a984d6188",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig2/max_if.vector_source.json",
+      "path": "assets/8113df319b1f8f3592fbdaf8435b9c5ec0aeaa68728032b7561e09f9eb891324.json",
+      "sha256": "8113df319b1f8f3592fbdaf8435b9c5ec0aeaa68728032b7561e09f9eb891324",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig3/curve_data.json",
+      "path": "assets/a1b9b27e34005753614720de419dc5c9b8751ec193b85e5764d77d3251b9ae3a.json",
+      "sha256": "a1b9b27e34005753614720de419dc5c9b8751ec193b85e5764d77d3251b9ae3a",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig3/max_25C.csv",
+      "path": "assets/f402bb8a75af3970109fb20a9f1b2df9a024330db6fb4664b56ab133519162e5.csv",
+      "sha256": "f402bb8a75af3970109fb20a9f1b2df9a024330db6fb4664b56ab133519162e5",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig3/max_25C.vector_source.json",
+      "path": "assets/4bb86d2ec2e53de478afa9737ac983f48490dcaf639d603b1bf6cdc85c84d2ad.json",
+      "sha256": "4bb86d2ec2e53de478afa9737ac983f48490dcaf639d603b1bf6cdc85c84d2ad",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig3/typ_175C.csv",
+      "path": "assets/4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211.csv",
+      "sha256": "4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig3/typ_175C.vector_source.json",
+      "path": "assets/73545707a44f41e3b8e8beb28f395ebab50c2e877066ad340ed631a942950e22.json",
+      "sha256": "73545707a44f41e3b8e8beb28f395ebab50c2e877066ad340ed631a942950e22",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig3/typ_25C.csv",
+      "path": "assets/5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3.csv",
+      "sha256": "5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig3/typ_25C.vector_source.json",
+      "path": "assets/dfc0ce97fe5065e0106b7a4345728b68662e52e2f4f128d8b22d51bcdb039492.json",
+      "sha256": "dfc0ce97fe5065e0106b7a4345728b68662e52e2f4f128d8b22d51bcdb039492",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig4/curve_data.json",
+      "path": "assets/6913f166896beb977d9e361a011a8cdd3765739c66099faa7ffd2a8ca8c59aea.json",
+      "sha256": "6913f166896beb977d9e361a011a8cdd3765739c66099faa7ffd2a8ca8c59aea",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig4/surge.csv",
+      "path": "assets/83071ab5e9a90356337361a90d1a0a76d72edde3fd60b20637bd42c0e3e9a4e7.csv",
+      "sha256": "83071ab5e9a90356337361a90d1a0a76d72edde3fd60b20637bd42c0e3e9a4e7",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig4/surge.vector_source.json",
+      "path": "assets/3da30251f161588503fa014eafe6739fe1f003e6dbb01ae117084c24eae79897.json",
+      "sha256": "3da30251f161588503fa014eafe6739fe1f003e6dbb01ae117084c24eae79897",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig5/curve_data.json",
+      "path": "assets/8869380e72f48c031ab7c48f82a7ab482c08c0b5e325eedc1b488db22d7689cb.json",
+      "sha256": "8869380e72f48c031ab7c48f82a7ab482c08c0b5e325eedc1b488db22d7689cb",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig5/vr20.csv",
+      "path": "assets/6bd776b5e839b976597c0c563bc1f20036c7e1b02e0c92d763b1737d66ac7b34.csv",
+      "sha256": "6bd776b5e839b976597c0c563bc1f20036c7e1b02e0c92d763b1737d66ac7b34",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig5/vr20.vector_source.json",
+      "path": "assets/8b9c2965fde067ff0d5e5c5aaf356cad422fff5a76bb238a4e143c3f7bc2fc53.json",
+      "sha256": "8b9c2965fde067ff0d5e5c5aaf356cad422fff5a76bb238a4e143c3f7bc2fc53",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig5/vr75.csv",
+      "path": "assets/5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51.csv",
+      "sha256": "5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig5/vr75.vector_source.json",
+      "path": "assets/7f57b92fb83ce00a833a22b4ad657629d70af62cd5df527995bc28e2fd22c0d2.json",
+      "sha256": "7f57b92fb83ce00a833a22b4ad657629d70af62cd5df527995bc28e2fd22c0d2",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig6/capacitance.csv",
+      "path": "assets/d7ef18958bc4e92ee61697a4a67e1de530816bb7390bb5571aedcccebf823844.csv",
+      "sha256": "d7ef18958bc4e92ee61697a4a67e1de530816bb7390bb5571aedcccebf823844",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig6/capacitance.vector_source.json",
+      "path": "assets/9c849227e80008dba796b745b4464cdc3e3eaa8556d17e81dd03e27e67c5d179.json",
+      "sha256": "9c849227e80008dba796b745b4464cdc3e3eaa8556d17e81dd03e27e67c5d179",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "references/curves/fig6/curve_data.json",
+      "path": "assets/d100c5080c067a6b8d9f3765af232c41a0f64f9bd9ea97fde669f9dbf4e579e1.json",
+      "sha256": "d100c5080c067a6b8d9f3765af232c41a0f64f9bd9ea97fde669f9dbf4e579e1",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "reference_models/1n4148.lib",
+      "path": "assets/33d09f8399292d72faf0e76eebc36e99805df3b6d561c028dd06f63c38eafc5d.lib",
+      "sha256": "33d09f8399292d72faf0e76eebc36e99805df3b6d561c028dd06f63c38eafc5d",
+      "role": "reference_interface_benchmark_only"
+    }
+  ],
+  "coverage_queue": "coverage_queue.json",
+  "fixture_drafts": "fixture_drafts.json",
+  "configured_task": "configured_task.json",
+  "configured_tests": 6,
+  "draft_tests": 0,
+  "acceptance_standard": {
+    "typical_tolerance_percent": 10,
+    "curve_mae_percent": 5.0,
+    "curve_max_error_percent": 10.0
+  },
+  "record_count": 31,
+  "review_status": "page_anchored_inventory_expanded_series_and_footnote_review_pending",
+  "model_fitting_ready": false,
+  "full_manual_coverage": false,
+  "delivery_eligible": false,
+  "template_selection": {
+    "status": "pending",
+    "source": "bundled_index",
+    "reference_models_are_starting_templates": false
+  },
+  "routes": {
+    "design": {
+      "provider": "qwen",
+      "model": "qwen3.8-max-0902"
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-5.3"
+    }
+  },
+  "assets": {
+    "assets/a3fcd1a928f43d39d17638585e636109bd6ce4f174db44fa72b7b3d10d583ea4.json": "a3fcd1a928f43d39d17638585e636109bd6ce4f174db44fa72b7b3d10d583ea4",
+    "assets/cc5a33f31a2690a270cc8961b33a9d412dac473e2cfe77faa16ef79502f56400.pdf": "cc5a33f31a2690a270cc8961b33a9d412dac473e2cfe77faa16ef79502f56400",
+    "assets/f9d9eb18da98e6f6cf7316dd795d65710cf982a7061d99f6762bb69b53279b68.json": "f9d9eb18da98e6f6cf7316dd795d65710cf982a7061d99f6762bb69b53279b68",
+    "assets/353ca8820e3b6b4f5669ef1f22c26964f78cd1c30a23e4755a0c2b686e17d940.json": "353ca8820e3b6b4f5669ef1f22c26964f78cd1c30a23e4755a0c2b686e17d940",
+    "assets/2d45606ea4d36fa30af07e100cc8ac9363ce9d1a51b933dd4090602ab7499aac.json": "2d45606ea4d36fa30af07e100cc8ac9363ce9d1a51b933dd4090602ab7499aac",
+    "assets/850b560f648519c66e3228d69ce32446f0eba926fb4ca057640c99ee780bdd2a.json": "850b560f648519c66e3228d69ce32446f0eba926fb4ca057640c99ee780bdd2a",
+    "assets/791cabfc9eb22055a4d551585296630d93278d47f80fda2a5d49290a2176a2c7.json": "791cabfc9eb22055a4d551585296630d93278d47f80fda2a5d49290a2176a2c7",
+    "assets/315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e.json": "315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e",
+    "assets/3267434c79ac7285515892fcfba2918d0a044c5367f887fea4f6206b7cf65d98.json": "3267434c79ac7285515892fcfba2918d0a044c5367f887fea4f6206b7cf65d98",
+    "assets/b8a8f4c83cae1172875bc8819f2d189dc34b41cd11a7052c84cc492a984d6188.csv": "b8a8f4c83cae1172875bc8819f2d189dc34b41cd11a7052c84cc492a984d6188",
+    "assets/8113df319b1f8f3592fbdaf8435b9c5ec0aeaa68728032b7561e09f9eb891324.json": "8113df319b1f8f3592fbdaf8435b9c5ec0aeaa68728032b7561e09f9eb891324",
+    "assets/a1b9b27e34005753614720de419dc5c9b8751ec193b85e5764d77d3251b9ae3a.json": "a1b9b27e34005753614720de419dc5c9b8751ec193b85e5764d77d3251b9ae3a",
+    "assets/f402bb8a75af3970109fb20a9f1b2df9a024330db6fb4664b56ab133519162e5.csv": "f402bb8a75af3970109fb20a9f1b2df9a024330db6fb4664b56ab133519162e5",
+    "assets/4bb86d2ec2e53de478afa9737ac983f48490dcaf639d603b1bf6cdc85c84d2ad.json": "4bb86d2ec2e53de478afa9737ac983f48490dcaf639d603b1bf6cdc85c84d2ad",
+    "assets/4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211.csv": "4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211",
+    "assets/73545707a44f41e3b8e8beb28f395ebab50c2e877066ad340ed631a942950e22.json": "73545707a44f41e3b8e8beb28f395ebab50c2e877066ad340ed631a942950e22",
+    "assets/5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3.csv": "5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3",
+    "assets/dfc0ce97fe5065e0106b7a4345728b68662e52e2f4f128d8b22d51bcdb039492.json": "dfc0ce97fe5065e0106b7a4345728b68662e52e2f4f128d8b22d51bcdb039492",
+    "assets/6913f166896beb977d9e361a011a8cdd3765739c66099faa7ffd2a8ca8c59aea.json": "6913f166896beb977d9e361a011a8cdd3765739c66099faa7ffd2a8ca8c59aea",
+    "assets/83071ab5e9a90356337361a90d1a0a76d72edde3fd60b20637bd42c0e3e9a4e7.csv": "83071ab5e9a90356337361a90d1a0a76d72edde3fd60b20637bd42c0e3e9a4e7",
+    "assets/3da30251f161588503fa014eafe6739fe1f003e6dbb01ae117084c24eae79897.json": "3da30251f161588503fa014eafe6739fe1f003e6dbb01ae117084c24eae79897",
+    "assets/8869380e72f48c031ab7c48f82a7ab482c08c0b5e325eedc1b488db22d7689cb.json": "8869380e72f48c031ab7c48f82a7ab482c08c0b5e325eedc1b488db22d7689cb",
+    "assets/6bd776b5e839b976597c0c563bc1f20036c7e1b02e0c92d763b1737d66ac7b34.csv": "6bd776b5e839b976597c0c563bc1f20036c7e1b02e0c92d763b1737d66ac7b34",
+    "assets/8b9c2965fde067ff0d5e5c5aaf356cad422fff5a76bb238a4e143c3f7bc2fc53.json": "8b9c2965fde067ff0d5e5c5aaf356cad422fff5a76bb238a4e143c3f7bc2fc53",
+    "assets/5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51.csv": "5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51",
+    "assets/7f57b92fb83ce00a833a22b4ad657629d70af62cd5df527995bc28e2fd22c0d2.json": "7f57b92fb83ce00a833a22b4ad657629d70af62cd5df527995bc28e2fd22c0d2",
+    "assets/d7ef18958bc4e92ee61697a4a67e1de530816bb7390bb5571aedcccebf823844.csv": "d7ef18958bc4e92ee61697a4a67e1de530816bb7390bb5571aedcccebf823844",
+    "assets/9c849227e80008dba796b745b4464cdc3e3eaa8556d17e81dd03e27e67c5d179.json": "9c849227e80008dba796b745b4464cdc3e3eaa8556d17e81dd03e27e67c5d179",
+    "assets/d100c5080c067a6b8d9f3765af232c41a0f64f9bd9ea97fde669f9dbf4e579e1.json": "d100c5080c067a6b8d9f3765af232c41a0f64f9bd9ea97fde669f9dbf4e579e1",
+    "assets/33d09f8399292d72faf0e76eebc36e99805df3b6d561c028dd06f63c38eafc5d.lib": "33d09f8399292d72faf0e76eebc36e99805df3b6d561c028dd06f63c38eafc5d",
+    "coverage_plan.json": "8b9479aeee64ed68a81251c9b2949191bd2d4d0c6696701ac4cd7b99e9024b03",
+    "assets/f7a0c6529f5a63cadbbe266ca877ac6439c59f1ce27ed6fd7b58bb6b5cf13b77.json": "f7a0c6529f5a63cadbbe266ca877ac6439c59f1ce27ed6fd7b58bb6b5cf13b77",
+    "assets/6eeb7fa736719fc91681f0a0eca4f26dd6777603f83fc8f80607c7d5557b5509.json": "6eeb7fa736719fc91681f0a0eca4f26dd6777603f83fc8f80607c7d5557b5509",
+    "assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+    "fixture_drafts.json": "f3e1ade200009ffec3b28f6e8667ad6738aff754987c578c8b31304c8be2af48",
+    "inventory.json": "ea4d7e02956dd21ccc357406ae1b00b006dbef681708a4c2e64eac358a3b95b9",
+    "configured_task.json": "580b05129dd0c539faf79762b34c723969f56e5f657850dcfcdb0975716293c3",
+    "coverage_queue.json": "3ac2a339431ada7aa6f454a0e2886d39a509ce2e789b5027a0b63f05fac0bd70"
+  },
+  "source_hashes": {
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/input_packet.json": "a3fcd1a928f43d39d17638585e636109bd6ce4f174db44fa72b7b3d10d583ea4",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/manual/1N4148_数据手册.pdf": "cc5a33f31a2690a270cc8961b33a9d412dac473e2cfe77faa16ef79502f56400",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/extraction/electrical.json": "f9d9eb18da98e6f6cf7316dd795d65710cf982a7061d99f6762bb69b53279b68",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/extraction/evidence_catalog.json": "353ca8820e3b6b4f5669ef1f22c26964f78cd1c30a23e4755a0c2b686e17d940",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/contracts/ports.json": "2d45606ea4d36fa30af07e100cc8ac9363ce9d1a51b933dd4090602ab7499aac",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/contracts/manual_inventory.json": "850b560f648519c66e3228d69ce32446f0eba926fb4ca057640c99ee780bdd2a",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/contracts/test_plan.json": "791cabfc9eb22055a4d551585296630d93278d47f80fda2a5d49290a2176a2c7",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/contracts/acceptance.json": "315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/electrical_with_curves.json": "f9d9eb18da98e6f6cf7316dd795d65710cf982a7061d99f6762bb69b53279b68",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig2/curve_data.json": "3267434c79ac7285515892fcfba2918d0a044c5367f887fea4f6206b7cf65d98",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig2/max_if.csv": "b8a8f4c83cae1172875bc8819f2d189dc34b41cd11a7052c84cc492a984d6188",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig2/max_if.vector_source.json": "8113df319b1f8f3592fbdaf8435b9c5ec0aeaa68728032b7561e09f9eb891324",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig3/curve_data.json": "a1b9b27e34005753614720de419dc5c9b8751ec193b85e5764d77d3251b9ae3a",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig3/max_25C.csv": "f402bb8a75af3970109fb20a9f1b2df9a024330db6fb4664b56ab133519162e5",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig3/max_25C.vector_source.json": "4bb86d2ec2e53de478afa9737ac983f48490dcaf639d603b1bf6cdc85c84d2ad",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig3/typ_175C.csv": "4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig3/typ_175C.vector_source.json": "73545707a44f41e3b8e8beb28f395ebab50c2e877066ad340ed631a942950e22",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig3/typ_25C.csv": "5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig3/typ_25C.vector_source.json": "dfc0ce97fe5065e0106b7a4345728b68662e52e2f4f128d8b22d51bcdb039492",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig4/curve_data.json": "6913f166896beb977d9e361a011a8cdd3765739c66099faa7ffd2a8ca8c59aea",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig4/surge.csv": "83071ab5e9a90356337361a90d1a0a76d72edde3fd60b20637bd42c0e3e9a4e7",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig4/surge.vector_source.json": "3da30251f161588503fa014eafe6739fe1f003e6dbb01ae117084c24eae79897",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig5/curve_data.json": "8869380e72f48c031ab7c48f82a7ab482c08c0b5e325eedc1b488db22d7689cb",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig5/vr20.csv": "6bd776b5e839b976597c0c563bc1f20036c7e1b02e0c92d763b1737d66ac7b34",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig5/vr20.vector_source.json": "8b9c2965fde067ff0d5e5c5aaf356cad422fff5a76bb238a4e143c3f7bc2fc53",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig5/vr75.csv": "5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig5/vr75.vector_source.json": "7f57b92fb83ce00a833a22b4ad657629d70af62cd5df527995bc28e2fd22c0d2",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig6/capacitance.csv": "d7ef18958bc4e92ee61697a4a67e1de530816bb7390bb5571aedcccebf823844",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig6/capacitance.vector_source.json": "9c849227e80008dba796b745b4464cdc3e3eaa8556d17e81dd03e27e67c5d179",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig6/curve_data.json": "d100c5080c067a6b8d9f3765af232c41a0f64f9bd9ea97fde669f9dbf4e579e1",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/reference_models/1n4148.lib": "33d09f8399292d72faf0e76eebc36e99805df3b6d561c028dd06f63c38eafc5d",
+    "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/manual_review/1N4148/pages.json": "f7a0c6529f5a63cadbbe266ca877ac6439c59f1ce27ed6fd7b58bb6b5cf13b77",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/execution/task_engineering.json": "6eeb7fa736719fc91681f0a0eca4f26dd6777603f83fc8f80607c7d5557b5509",
+    "/Users/192y/电气/六器件标准输入包_20261006/1N4148/historical_regression/model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387"
+  },
+  "status": "configured_scope_available_with_gaps"
+}

@@ -1,0 +1,184 @@
+*$
+* LM5017
+*****************************************************************************
+*  (C) Copyright 2012 Texas Instruments Incorporated. All rights reserved.
+*****************************************************************************
+** This model is designed as an aid for customers of Texas Instruments.
+** TI and its licensors and suppliers make no warranties, either expressed
+** or implied, with respect to this model, including the warranties of 
+** merchantability or fitness for a particular purpose.  The model is
+** provided solely on an "as is" basis.  The entire risk as to its quality
+** and performance is with the customer
+*****************************************************************************
+*
+** Released by: WEBENCH Design Center, Texas Instruments Inc.
+* Part: LM5017
+* Date: 17JAN2018
+* Model Type: Transient
+* Simulator: PSPICE
+* Simulator Version: 16.2.0.p001
+* EVM Order Number: NA
+* EVM Users Guide: SNVA612A
+* Datasheet: SNVS783C
+*
+* Model Version: Final 1.20
+*
+*****************************************************************************
+*
+* Updates:
+*
+* Bugfix 1.20
+* Modified UVLO equation to implement it as per DS. There was an additional IF condition which was removed.
+* This additional check was resulting in convergence failure when UVLO pin voltage tried to go over 5V.
+*
+* Final 1.10
+* Fixed OVP Threshold
+* Fixed VCC implementation
+* Fixed EN implementation to avoid convergence
+* Tuned Min OFF Time and VREF to Final values from Pre Prod values
+*
+* Final 1.00
+* Release to Web.
+*
+*****************************************************************************
+.SUBCKT LM5017 RON RTN EP FB SW BST VCC VIN UVLO
+R_U4_R3         U4_N171579 U4_N171585  10 TC=0,0 
+X_U4_S1    U4_N171701 U4_N171719 U4_N171579 U4_N171573 STARTUP_REG_U4_S1 
+D_U4_D10         U4_N171585 VCC Dbreak 
+R_U4_R36         EN U4_N223324  10 TC=0,0 
+E_U4_E18         U4_N223324 0 VALUE { IF(V(UVLO,0)<1.25,0, IF(V(VCC,0)<5,0,5))
++  }
+C_U4_C2         0 EN  1n  TC=0,0 
+R_U4_R35         0 EN  10k TC=0,0 
+R_U4_R5         0 U4_N171719  100k TC=0,0 
+R_U4_R6         0 U4_N171701  100k TC=0,0 
+X_U4_S3    UVLO 0 VIN U4_N171569 STARTUP_REG_U4_S3 
+E_U4_E1         U4_N171573 0 TABLE { V(U4_N171569, 0) } 
++ ( (1.4,0.7) (8.9,8.2) )
+G_U4_ABMI3         0 UVLO VALUE {IF(V(EN,0)<2.5,0,IF(V(UVLO,0)<VREF,0, 20u))}
+E_U4_E2         U4_N171701 U4_N171719 TABLE { V(U4_N171579, U4_N171585) } 
++ ( (0.25,1) (0.30,0.9) )
+D_U4_D9         VCC BST Dbreak 
+C_U4_C1         0 U4_N171585  1n  TC=0,0 
+R_U4_R7         0 U4_N171569  100k TC=0,0 
+E_U2_E7         U2_QB_ND 0 VALUE { IF(V(U2_SET,0)<2.5,
++  IF(V(U2_Q_ND,0)<2.5,5,0),0) }
+E_U2_E15         QBD 0 VALUE { IF(V(U2_QB_ND,0)<2.5,0, IF(V(QB,0)<2.5,0,5)) }
+E_U2_E8         U2_Q_ND 0 VALUE { IF(V(U2_RESET,0)<=2.5,
++  IF(V(U2_QB_ND,0)<2.5,5,0),0) }
+E_U2_E16         QD 0 VALUE { IF(V(U2_Q_ND,0)<2.5,0, IF(V(U2_Q,0)<2.5,0,5)) }
+E_U2_E9         U2_SET 0 VALUE { IF(V(U2_RESET,0)>=2.5,0,IF(V(SET3,0)>2.5,5,0))
++  }
+R_U2_R30         0 QBD  100k TC=0,0 
+E_U2_E10         U2_RESET 0 VALUE {
++  IF(V(CON,0)>VREF,5,IF(V(ILIM,0)>2.5,5,IF(V(FB,0)>1.62,5,0))) }
+R_U2_R12         QB U2_QB_ND  1k TC=0,0 
+R_U2_R31         0 QD  100k TC=0,0 
+R_U2_R19         U2_Q_ND U2_Q  1k TC=0,0 
+C_U2_C5         U2_Q 0  50p IC=0 TC=0,0 
+C_U2_C6         QB 0  50p IC=5 TC=0,0 
+R_U1_R17         0 U1_N187524  100k TC=0,0 
+R_U1_R34         U1_N187172 U1_N187248  2k TC=0,0 
+R_U1_R22         0 ILIM  100k TC=0,0 
+C_U1_C13         U1_N187172 U1_N187238  10p IC=5 TC=0,0 
+D_U1_D11         SW U1_N187094 Dbreak 
+D_U1_D6         COFF_ILIM U1_N210973 Dbreak 
+X_U1_S8    ILIM 0 COFF_ILIM 0 DRIVER_U1_S8 
+E_U1_E17         U1_N187248 U1_N187238 VALUE { IF(V(QBD, 0)>2.5,5,0) }
+R_U1_R20         U1_N187142 U1_N187560  2k TC=0,0 
+R_U1_R24         VREF U1_N210973  1k TC=0,0 
+X_U1_S9    U1_N187172 U1_N187238 SW RTN DRIVER_U1_S9 
+C_U1_C10         U1_N187142 U1_N187524  10p IC=5 TC=0,0 
+R_U1_R25         U1_N211031 U1_ISENSE  100k TC=0,0 
+G_U1_ABMI2         0 COFF_ILIM VALUE { IF(V(EN,0)<2.5,0,
++  VREF*10u*(V(FB,0)+0.2)/(0.07*V(VIN,0)))    }
+C_U1_C9         U1_N211031 0  1p IC=5 TC=0,0 
+D_U1_D7         RTN SW Dbreak 
+E_U1_E19         U1_ISENSE 0 VALUE { I(V_U1_VH1) }
+E_U1_E4         U1_N187560 U1_N187524 VALUE { IF(V(QD, 0)>2.5,5,0) }
+C_U1_C8         COFF_ILIM 0  10p IC=5 TC=0,0 
+R_U1_R32         0 U1_N187172  100k TC=0,0 
+X_U1_S5    U1_N187142 U1_N187524 U1_N187094 SW DRIVER_U1_S5 
+L_U1_L2         U1_N196671 U1_N187094  10n  
+R_U1_R33         0 U1_N187238  100k TC=0,0 
+R_U1_R16         0 U1_N187142  100k TC=0,0 
+E_U1_E5         ILIM 0 VALUE { IF(V(U1_N211031, 0)>1.00,5,0) }
+V_U1_VH1         VIN U1_N196671 0Vdc
+R_R36         0 EP  1k TC=0,0 
+D_U5_D8         CON VREF Dbreak 
+R_U5_R10         0 VREF  10k TC=0,0 
+X_U5_S2    UVLO 0 U5_N224691 0 TIMER_U5_S2 
+E_U5_E3         VREF 0 VALUE { IF(V(VCC,0) <5, 0, VREF) }
+C_U5_C4         0 CON  10p  TC=0,0 
+V_U5_VF1         RON U5_N224691 0Vdc
+G_U5_ABMI4         0 CON VALUE { 0.1*VREF*I(V_U5_VF1)    }
+X_U5_S6    QB 0 CON 0 TIMER_U5_S6 
+E_U3_E11         SET3 0 VALUE {
++  IF(V(U3_TOFF,0)<=2.5,0,IF(V(U3_FBCOMP,0)<=2.5,0,5)) }
+D_U3_D5         U3_COFF U3_N184129 Dbreak 
+E_U3_E12         U3_TOFF 0 VALUE {
++  IF(V(COFF_ILIM,0)<VREF,0,IF(V(U3_COFF,0)<VREF,0,5)) }
+R_U3_R21         0 U3_N184171  100k TC=0,0 
+E_U3_E13         U3_N184171 0 VALUE { V(QD,0) }
+G_U3_ABMI1         0 U3_COFF VALUE { IF(V(EN,0)<2.5,0,8.68u)    }
+C_U3_C12         U3_COFF 0  1p IC=5 TC=0,0 
+R_U3_R13         VREF U3_N184129  1k TC=0,0 
+X_U3_S7    U3_N184171 0 U3_N184319 0 TOFF_LOGIC_U3_S7 
+R_U3_R18         U3_COFF U3_N184319  5k TC=0,0 
+E_U3_E6         U3_FBCOMP 0 VALUE { IF(V(EN,0)<2.5,0,
++  IF(V(FB,0)<V(VREF,0),5,0)) }
+.PARAM  vref=1.225
+.ENDS LM5017
+*$
+.subckt STARTUP_REG_U4_S1 1 2 3 4  
+S_U4_S1         3 4 1 2 _U4_S1
+RS_U4_S1         1 2 1G
+.MODEL         _U4_S1 VSWITCH Roff=10k Ron=1 Voff=0.9V Von=1.0V
+.ends STARTUP_REG_U4_S1
+*$
+.subckt STARTUP_REG_U4_S3 1 2 3 4  
+S_U4_S3         3 4 1 2 _U4_S3
+RS_U4_S3         1 2 1G
+.MODEL         _U4_S3 VSWITCH Roff=1e6 Ron=1.0 Voff=0.45V Von=0.7V
+.ends STARTUP_REG_U4_S3
+*$
+.subckt DRIVER_U1_S8 1 2 3 4  
+S_U1_S8         3 4 1 2 _U1_S8
+RS_U1_S8         1 2 1G
+.MODEL         _U1_S8 VSWITCH Roff=1e9 Ron=100 VH=1 VT=2.5 TD=0
+.ends DRIVER_U1_S8
+*$
+.subckt DRIVER_U1_S9 1 2 3 4  
+S_U1_S9         3 4 1 2 _U1_S9
+RS_U1_S9         1 2 1G
+.MODEL         _U1_S9 VSWITCH Roff=1e6 Ron=0.6 Voff=3V Von=3.5V
+.ends DRIVER_U1_S9
+*$
+.subckt DRIVER_U1_S5 1 2 3 4  
+S_U1_S5         3 4 1 2 _U1_S5
+RS_U1_S5         1 2 1G
+.MODEL         _U1_S5 VSWITCH Roff=1e6 Ron=1.0 Voff=3V Von=3.5V
+.ends DRIVER_U1_S5
+*$
+.subckt TIMER_U5_S2 1 2 3 4  
+S_U5_S2         3 4 1 2 _U5_S2
+RS_U5_S2         1 2 1G
+.MODEL         _U5_S2 VSWITCH Roff=140k Ron=6k Voff=0.45V Von=0.7V
+.ends TIMER_U5_S2
+*$
+.subckt TIMER_U5_S6 1 2 3 4  
+S_U5_S6         3 4 1 2 _U5_S6
+RS_U5_S6         1 2 1G
+.MODEL         _U5_S6 VSWITCH Roff=1e6 Ron=1.0 Voff=1.5V Von=3.5V
+.ends TIMER_U5_S6
+*$
+.subckt TOFF_LOGIC_U3_S7 1 2 3 4  
+S_U3_S7         3 4 1 2 _U3_S7
+RS_U3_S7         1 2 1G
+.MODEL         _U3_S7 VSWITCH Roff=1e7 Ron=1e3 VH=2V VT=2.5V TD=0
+.ends TOFF_LOGIC_U3_S7
+*$
+.model Dbreak D Is=1e-14 Cjo=.1pF Rs=.1
+*$
+
+

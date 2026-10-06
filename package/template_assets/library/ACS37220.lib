@@ -1,0 +1,20 @@
+.subckt ACS37220 IP+ IP- DUT_GND VOC FAULT VOUT VDD
+R IP+ IP- 0.1m
+B§OutputStage N001 DUT_GND V=delay(((V(IP+)-V(IP-))/0.1m*{sensitivity}+(V(VDD)/2), .016u))
+XBuffer N001 VOUT P001 P002 VOUT level2 Avol=1Meg GBW=150k Slew=10Meg Ilimit=25m Rail=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+B§ICC DUT_GND VDD I=15.5mA
+M1 FAULT N003 DUT_GND N004 NMOS l=1u w=84u
+B§Compare1 N002 DUT_GND V=if(abs(I(R))>({imax}*{faultpercent}/100), V(VDD), 0)
+B§Compare2 N005 DUT_GND V=if(abs(I(R))<=({imax}*{faultpercent}/100-(0.035*{imax}*{faultpercent}/100)), V(VDD),0)
+A1 N002 N005 0 0 0 0 Q 0 SRFLOP Vhigh=3.3
+B§Set_Delay1 N003 DUT_GND V=delay(V(Q), 3u)
+B2 P001 0 V=V(VDD)-0.3
+V1 P002 0 0.3
+.model NMOS NMOS
+.model PMOS PMOS
+.lib "standard_mos.lib"
+.lib "opamp.sub"
+.lib "UniversalOpAmp2.lib"
+.backanno
+.ends ACS37220
+.end

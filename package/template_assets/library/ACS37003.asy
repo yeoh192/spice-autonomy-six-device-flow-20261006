@@ -1,0 +1,40 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal -97 -143 97 160
+WINDOW 0 1 -144 Bottom 2
+WINDOW 3 0 160 Top 2
+SYMATTR Value ACS37003
+SYMATTR Prefix X
+SYMATTR ModelFile ACS37003.lib
+SYMATTR SpiceLine VCC_typ=5 sensitivity=12m QVO_typ = 2.5
+SYMATTR Description 400 kHz typical bandwidth; non-ratiometric operation with VREF output.
+PIN -96 -128 LEFT 8
+PINATTR PinName IP+
+PINATTR SpiceOrder 1
+PIN -96 144 LEFT 8
+PINATTR PinName IP-
+PINATTR SpiceOrder 2
+PIN 96 -128 RIGHT 8
+PINATTR PinName DUT_GND
+PINATTR SpiceOrder 3
+PIN 96 -96 RIGHT 8
+PINATTR PinName NC
+PINATTR SpiceOrder 4
+PIN 96 -64 RIGHT 8
+PINATTR PinName NC
+PINATTR SpiceOrder 5
+PIN 96 -16 RIGHT 8
+PINATTR PinName VCC
+PINATTR SpiceOrder 6
+PIN 96 16 RIGHT 8
+PINATTR PinName VOUT
+PINATTR SpiceOrder 7
+PIN 96 64 RIGHT 8
+PINATTR PinName VREF
+PINATTR SpiceOrder 8
+PIN 96 96 RIGHT 8
+PINATTR PinName NC
+PINATTR SpiceOrder 9
+PIN 96 128 RIGHT 8
+PINATTR PinName NC
+PINATTR SpiceOrder 10

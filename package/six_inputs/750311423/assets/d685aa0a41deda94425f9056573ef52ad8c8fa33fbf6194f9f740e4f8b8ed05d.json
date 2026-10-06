@@ -1,0 +1,1589 @@
+{
+  "index_base": 0,
+  "blocks": {
+    "b0": {
+      "type": "text",
+      "text": "Dimensions: [mm]",
+      "text_level": 2,
+      "bbox": [
+        24,
+        55,
+        131,
+        82
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b1": {
+      "type": "image",
+      "img_path": "images/2c93b36dbf2761f48a72dfe3bf4d00f586110f500ba0e1e34a2125798d3aced4.jpg",
+      "image_caption": [],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        68,
+        149,
+        175,
+        243
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b2": {
+      "type": "image",
+      "img_path": "images/6f441214042e46ed4cc265eadf788d324abe5e7f130f00b6e948c3885704f1b8.jpg",
+      "image_caption": [],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        70,
+        290,
+        309,
+        453
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b3": {
+      "type": "image",
+      "img_path": "images/83d75d2097bb5e26304604c8d90a220cd20bfa8b04aab9729c8938f7da7f6f92.jpg",
+      "image_caption": [],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        78,
+        502,
+        166,
+        626
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b4": {
+      "type": "image",
+      "img_path": "images/6e41e04645dd63fb69295b381f1eb2732ba13532141b5e4992cc532c416b1832.jpg",
+      "image_caption": [
+        "SCALE 1.5:1"
+      ],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        225,
+        497,
+        324,
+        642
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b5": {
+      "type": "text",
+      "text": "Recommended Land Pattern: [mm]",
+      "text_level": 2,
+      "bbox": [
+        375,
+        55,
+        575,
+        82
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b6": {
+      "type": "image",
+      "img_path": "images/64fb504b5bae6eddcf7547deb63fe5bb3d22312d798a2bad21d4fb429cbac573.jpg",
+      "image_caption": [
+        "SCALE 1.5:1"
+      ],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        399,
+        131,
+        587,
+        310
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b7": {
+      "type": "text",
+      "text": "Schematic:",
+      "text_level": 2,
+      "bbox": [
+        375,
+        394,
+        443,
+        416
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b8": {
+      "type": "image",
+      "img_path": "images/69c08111587cb48ad1c3578e708778773c7199c7b6005e059f7511a0c75f5add.jpg",
+      "image_caption": [],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        416,
+        443,
+        577,
+        685
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b9": {
+      "type": "table",
+      "img_path": "images/13e2dc173f5eb79584f91013f406a144ae0059aa1def9d26501c336daae23656.jpg",
+      "table_caption": [
+        "Electrical Properties:"
+      ],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>Properties</td><td></td><td>Test conditions</td><td>Value</td><td>Unit</td><td>Tol.</td></tr><tr><td>Inductance</td><td>L</td><td>N1/ 10 kHz/ 100 mV</td><td>50</td><td>μH</td><td>±10%</td></tr><tr><td>Turns Ratio</td><td>n</td><td>N1 : N2 : N3</td><td>4:1:2</td><td></td><td></td></tr><tr><td>Saturation Current</td><td> $I_{SAT}$ </td><td>N1/ IΔL/LI &lt; 20 %</td><td>3.85</td><td>A</td><td>typ.</td></tr><tr><td>DC Resistance 1</td><td> $R_{DC\\ 1}$ </td><td>N1/ 20 °C</td><td>0.09</td><td>Ω</td><td>±20%</td></tr><tr><td>DC Resistance 2</td><td> $R_{DC\\ 2}$ </td><td>N2/ 20 °C</td><td>0.012</td><td>Ω</td><td>±20%</td></tr><tr><td>DC Resistance 3</td><td> $R_{DC\\ 3}$ </td><td>N3/ 20 °C</td><td>0.205</td><td>Ω</td><td>±10%</td></tr><tr><td>Leakage Inductance</td><td> $L_S$ </td><td>N1/ 100 kHz/ 100 mV</td><td>1.2</td><td>μH</td><td>max.</td></tr><tr><td>Insulation Test Voltage</td><td> $V_T$ </td><td>N1,3 =&gt; N2</td><td>1500</td><td>V (AC)</td><td></td></tr><tr><td>Insulation Test Voltage</td><td> $V_{T\\ 2}$ </td><td>N1 =&gt; N3</td><td>500</td><td>V (AC)</td><td></td></tr></table>",
+      "bbox": [
+        631,
+        82,
+        978,
+        309
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b10": {
+      "type": "table",
+      "img_path": "images/af75c286f4c7673f8d771a60e2b8704303111084c18fe00219c79dba91b92ae5.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>Pin 1</td><td>•</td></tr></table>",
+      "bbox": [
+        19,
+        749,
+        366,
+        774
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b11": {
+      "type": "table",
+      "img_path": "images/5ec499267db863a41349994522225e9853d94ba8be6c167106c92ce664ee9942.jpg",
+      "table_caption": [
+        "Certification:"
+      ],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>RoHS Approval</td><td>Compliant [2011/65/EU&amp;2015/863]</td></tr><tr><td>REACH Approval</td><td>Conform or declared [(EC)1907/2006]</td></tr></table>",
+      "bbox": [
+        631,
+        347,
+        978,
+        396
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b12": {
+      "type": "text",
+      "text": "General Information:",
+      "text_level": 2,
+      "bbox": [
+        631,
+        470,
+        752,
+        494
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b13": {
+      "type": "table",
+      "img_path": "images/4e1658d57b1234e5450986d4f3d52f0f155b7e9194baeb96a33e37a9f6b0f137.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>Operating Temperature</td><td>-40 up to +125 °C</td></tr><tr><td>Storage Conditions (in original packaging)</td><td>&lt; 40 °C ; &lt; 75 % RH</td></tr><tr><td>Storage Conditions (for single parts)</td><td>-20 up to +60 °C</td></tr><tr><td>Moisture Sensitivity Level (MSL)</td><td>1</td></tr><tr><td colspan=\"2\">Test conditions of Electrical Properties: +20 °C, 33 % RH if not specified differently</td></tr></table>",
+      "bbox": [
+        631,
+        497,
+        978,
+        655
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b14": {
+      "type": "table",
+      "img_path": "images/a9f8debed0feb336caaf6dfa397397e1d1cda554bfe9c6590a8c4c8ee0c1b537.jpg",
+      "table_caption": [
+        "Product Marking:"
+      ],
+      "table_footnote": [
+        "This electronic component has been designed and developed for usage in general electronic equipment only. This product is not authorized for use in equipment where a higher safety standard and reliability standard is especial y required or where a failure of the product is reasonably expected to cause severe personal injury or death, unless the parties have executed an agreement specifical y governing such use. Moreover Würth Elektronik eiSos GmbH & Co KG products are neither designed nor intended for use in areas such as military, aerospace, aviation, nuclear control, submarine, transportation, transportation signal, disaster prevention, medical, public information network etc.. Würth Elektronik eiSos GmbH & Co KG must be informed about the intent of such usage before the design-in stage. In addition, sufficient reliability evaluation checks for safety must be performed on every electronic comptc is  i ltrica ciruits th ruire i st an rliaility fntion om."
+      ],
+      "table_body": "<table><tr><td rowspan=\"2\" colspan=\"2\"><img src=\"images/d71eaaabac4d45d210924f145b0c657c22a32a75e84241d92868e47d415e5f65.jpg\"/></td><td>CHECKEDIKK</td><td>REVISION007.001</td><td>DATE (YYY-MM-DD)2023-07-11</td><td colspan=\"2\">GENERAL TOLERANCEISO 2768-1m</td><td colspan=\"2\">PROJECTION METHOD<img src=\"images/33a4ed4961a3781aa770011cdb137c92e7152c679230a741b57c9d7599d50b81.jpg\"/></td></tr><tr><td rowspan=\"2\" colspan=\"4\">DESCRIPTIONWE-FB Flyback Transformersuitable for LT3573/ LT3574/LT3575/ LT3748</td><td colspan=\"3\"></td></tr><tr><td rowspan=\"2\">WÜRTHELEKTRONIKMORE THANYOU EXPECT</td><td rowspan=\"2\">Wurth Electronics Midcom Inc. Headquarters121 Airport Drive57201 Watertown, SDUnited StatesPhone: +1 (605) 886-4385www.we-online.com/midcommidcom@we-online.com</td><td colspan=\"3\">ORDER CODE750311423</td></tr><tr><td colspan=\"3\">SIZE/TYPEEP13</td><td>BUSINESS UNITMidcom</td><td colspan=\"2\">STATUSDraft</td><td>PAGE1/7</td></tr></table>",
+      "bbox": [
+        370,
+        761,
+        977,
+        937
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b15": {
+      "type": "table",
+      "img_path": "images/32774a348fea5c322423708c27158e9876f3a2634d371cf2d027150824a6cd32.jpg",
+      "table_caption": [
+        "Typical Application:"
+      ],
+      "table_footnote": [
+        "Input: N1",
+        "Output 1: N2",
+        "Table shows a typical flyback application. Values may vary by application.",
+        "Auxiliary: N3"
+      ],
+      "table_body": "<table><tr><td>Properties</td><td></td><td>Value</td><td>Unit</td></tr><tr><td>Input Voltage</td><td> $V_{in}$ </td><td>36</td><td>V (DC)</td></tr><tr><td>Switching Frequency</td><td> $f_{switch}$ </td><td>100</td><td>kHz</td></tr><tr><td>Output Voltage 1</td><td> $V_{Out1}$ </td><td>5</td><td>V</td></tr><tr><td>Output Current 1</td><td> $I_{Out1}$ </td><td>4</td><td>A</td></tr><tr><td>Auxiliary Voltage</td><td> $V_{aux}$ </td><td>10</td><td>V</td></tr></table>",
+      "bbox": [
+        19,
+        82,
+        493,
+        220
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b16": {
+      "type": "table",
+      "img_path": "images/77eb754ac020785e8bb2515c07de582e7bf154387973dc25ea2029bdede318c8.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td rowspan=\"2\" colspan=\"3\"><img src=\"images/21453fdbb9ab32a52d79b87d290a03c4b5f669f5248297577ee1d64ab99abd6e.jpg\"/></td><td>CHECKEDIKK</td><td>REVISION007.001</td><td>DATE (YYYY-MM-DD)2023-07-11</td><td colspan=\"2\">GENERAL TOLERANCEISO 2768-1m</td><td>PROJECTION METHOD</td><td></td></tr><tr><td rowspan=\"2\" colspan=\"4\">DESCRIPTIONWE-FB Flyback Transformersuitable for LT3573/ LT3574/LT3575/ LT3748</td><td colspan=\"3\"></td></tr><tr><td rowspan=\"2\">WURTHELEKTRONIKMORE THANYOU EXPECT</td><td rowspan=\"2\" colspan=\"2\">Wurth Electronics Midcom Inc. Headquarters121 Airport Drive57201 Watertown, SDUnited StatesPhone: +1 (605) 886-4385www.we-online.com/midcommidcom@we-online.com</td><td colspan=\"3\">ORDER CODE750311423</td></tr><tr><td colspan=\"3\">SIZE/TYPEEP13</td><td>BUSINESS UNITMidcom</td><td colspan=\"2\">STATUSDraft</td><td>PAGE2/7</td></tr></table>",
+      "bbox": [
+        369,
+        763,
+        977,
+        937
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b17": {
+      "type": "footer",
+      "text": "<sup>This</sup> <sup>electronic</sup> <sup>component</sup> <sup>has</sup> <sup>been</sup> <sup>designed</sup> <sup>and</sup> <sup>developed</sup> <sup>for</sup> <sup>usage</sup> <sup>in</sup> <sup>general</sup> <sup>electronic</sup> <sup>equipment</sup> <sup>only.</sup> <sup>This</sup> <sup>product</sup> <sup>is</sup> <sup>not</sup> <sup>authorized</sup> <sup>for</sup> <sup>use</sup> <sup>in</sup> <sup>equipment</sup> <sup>where</sup> <sup>a</sup> <sup>higher</sup> <sup>safety</sup> <sup>standard</sup> <sup>and</sup> <sup>reliability</sup> <sup>standard</sup> <sup>is</sup> <sup>especial y</sup> <sup>required</sup> <sup>or</sup> <sup>where</sup> <sup>a</sup> <sup>failure</sup> <sup>of</sup> <sup>the</sup> <sup>product</sup> <sup>is</sup> <sup>reasonably</sup> <sup>expected</sup> <sup>to</sup> <sup>cause</sup> <sup>severe</sup> <sup>personal</sup> <sup>injury</sup> <sup>or</sup> <sup>death,</sup> <sup>unless</sup> <sup>the</sup> <sup>parties</sup> <sup>have</sup> <sup>executed</sup> <sup>an</sup> <sup>agreement</sup> <sup>specifical y</sup> <sup>governing</sup> <sup>such</sup> <sup>use.</sup> <sup>Moreover</sup> <sup>Würth</sup> <sup>Elektronik</sup> <sup>eiSos</sup>& Co KG products are neither designed nor intended for use in areas such as military, aerospace, aviation, nuclear control, submarine, transportation, transportation signal, disaster prevention, medical, public information network etc.. Würth Elektronik eiSos GmbH & Co KG must be informed about the intent of such usage before the design-in stage. In addition, sufficient reliability evaluation checks for safety must be performed on every electronic compntwic is u in lctrica cuits tat ruir hi st an relimlityntiono me",
+      "bbox": [
+        17,
+        942,
+        976,
+        971
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b18": {
+      "type": "image",
+      "img_path": "images/86e013e9271097e5c745e346ec97a5c8e13e4d7970008938084a558664c06d62.jpg",
+      "image_caption": [],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        23,
+        84,
+        954,
+        937
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b19": {
+      "type": "table",
+      "img_path": "images/4de2b5e08b9820584bf26c29a0fb05aa2766eee61b7321665fb105e04aa49e97.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td rowspan=\"4\" colspan=\"2\"></td><td>CHECKEDIKK</td><td>REVISION007.001</td><td>DATE (YYYY-MM-DD)2023-07-11</td><td colspan=\"2\">GENERAL TOLERANCEISO 2768-1m</td><td>PROJECTION METHOD</td><td></td></tr><tr><td rowspan=\"2\" colspan=\"4\">DESCRIPTIONWE-FB Flyback Transformersuitable for LT3573/ LT3574/LT3575/ LT3748</td><td colspan=\"3\"></td></tr><tr><td colspan=\"3\">ORDER CODE750311423</td></tr><tr><td colspan=\"3\">SIZE/TYPEEP13</td><td>BUSINESS UNITMidcom</td><td colspan=\"2\">STATUSDraft</td><td>PAGE3/7</td></tr></table>",
+      "bbox": [
+        369,
+        761,
+        977,
+        937
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b20": {
+      "type": "table",
+      "img_path": "images/949a2e937fab9f2305d5b9e10919d1eb4a613e08c8fb75efbb395fbc19970f8e.jpg",
+      "table_caption": [
+        "Packaging Specification - Reel: [mm]"
+      ],
+      "table_footnote": [],
+      "table_body": "<table><tr><td></td><td>Tape Type</td><td>A0 (mm)</td><td>B0 (mm)</td><td>W (mm)</td><td>T (mm)</td><td>T1 (mm)</td><td>T2 (mm)</td><td>K0 (mm)</td><td>P0 (mm)</td><td>P1 (mm)</td><td>P2 (mm)</td><td>D0 (mm)</td><td>D0/2 (mm)</td><td>D1 (mm)</td><td>d (mm)</td><td>E (mm)</td><td>S (mm)</td><td>F (mm)</td><td>Material</td><td>Qty. (pcs.)</td></tr><tr><td>Tolerance</td><td></td><td>typ.</td><td>typ.</td><td>±0,3</td><td>±0,05</td><td>±0,0025</td><td>typ.</td><td>typ.</td><td>±0,1</td><td>±0,1</td><td>±0,15</td><td>+0,1/-0,0</td><td>+0,05/-0,0</td><td>min.</td><td>±0,05</td><td>±0,1</td><td>±0,1</td><td>±0,15</td><td></td><td></td></tr><tr><td>Value</td><td>3</td><td>13,21</td><td>18,00</td><td>32,00</td><td>0,60</td><td>0,05</td><td>13,50</td><td>13,00</td><td>4,00</td><td>24,00</td><td>2,00</td><td>1,50</td><td>0,75</td><td>2,00</td><td>0,20</td><td>1,75</td><td>28,40</td><td>14,20</td><td>Polystyrene</td><td>200</td></tr></table>",
+      "bbox": [
+        53,
+        655,
+        595,
+        707
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b21": {
+      "type": "table",
+      "img_path": "images/87a9f994cfa3689d67ca7cd8e10a6c467dd3e911f7c61bf4f90e5de178ff1fa5.jpg",
+      "table_caption": [],
+      "table_footnote": [
+        "This electronic component has been designed and developed for usage in general electronic equipment only. This product is not authorized for use in equipment where a higher safety standard and reliability standard is especial y required or where a failure of the product is reasonably expected to cause severe personal injury or death, unless the parties have executed an agreement specifical y governing such use. Moreover Würth Elektronik eiSos GmbH & Co KG products are neither designed nor intended for use in areas such as military, aerospace, aviation, nuclear control, submarine, transportation, transportation signal, disaster prevention, medical, public information network etc.. Würth Elektronik eiSos GmbH & Co KG must be informed about the intent of such usage before the design-in stage. In addition, sufficient reliability evaluation checks for safety must be performed on every electronic comptc is  i ltrica ciruits th ruire i st an rliaility fntion om."
+      ],
+      "table_body": "<table><tr><td></td><td>A(mm)</td><td>B(mm)</td><td>C(mm)</td><td>D(mm)</td><td>N(mm)</td><td>W1(mm)</td><td>W2(mm)</td><td>W3(mm)</td><td>W3(mm)</td><td>Material</td></tr><tr><td>Tolerance</td><td>max</td><td>min.</td><td>min.</td><td>min.</td><td>typ.</td><td>+2,0</td><td>max</td><td>min.</td><td>max</td><td></td></tr><tr><td>Value</td><td>330,00</td><td>1,50</td><td>12,80</td><td>20,20</td><td>101,60</td><td>32,40</td><td>38,40</td><td>31,90</td><td>35,40</td><td>PS</td></tr></table>",
+      "bbox": [
+        626,
+        655,
+        954,
+        707
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b22": {
+      "type": "header",
+      "text": "Packaging Specification - Tape: [mm]",
+      "bbox": [
+        24,
+        55,
+        242,
+        80
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b23": {
+      "type": "image",
+      "img_path": "images/d2db706a0f92d0762ce71774fa8a0892aebc572be6e937cc3c74c741b5428861.jpg",
+      "image_caption": [],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        141,
+        119,
+        506,
+        611
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b24": {
+      "type": "image",
+      "img_path": "images/925fd4b8eb6ac4a6a12bdfe0724e203a74292f14b20d03b34ce80cbe788b50dc.jpg",
+      "image_caption": [],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        656,
+        97,
+        917,
+        633
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b25": {
+      "type": "table",
+      "img_path": "images/8696031da180fad9ec3fbd511cbe6545a22301411ebdbea41d0ca15acea273b1.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td></td><td> $L_{IC}$ (mm)</td><td> $W_{IC}$ (mm)</td><td> $H_{IC}$ (mm)</td><td>No. of Reel (pcs.)</td><td>Qty.(pcs.)</td><td>Material</td></tr><tr><td>Tolerance</td><td>typ.</td><td>typ.</td><td>typ.</td><td></td><td></td><td></td></tr><tr><td>Value</td><td>362,00</td><td>339,00</td><td>60,00</td><td>1</td><td>200</td><td>Paper</td></tr></table>",
+      "bbox": [
+        53,
+        655,
+        595,
+        707
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b26": {
+      "type": "table",
+      "img_path": "images/9a53d59e63ef51d90cc68fcba569d210bbb8be0149fa681f57ec02e88364ff10.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td></td><td> $L_{C}$ (mm)</td><td> $W_{C}$ (mm)</td><td> $H_{C}$ (mm)</td><td>No. of Inner Carton (pcs.)</td><td>Qty.(pcs.)</td><td>Material</td></tr><tr><td>Tolerance</td><td>typ.</td><td>typ.</td><td>typ.</td><td></td><td></td><td></td></tr><tr><td>Value</td><td>365,12</td><td>342,90</td><td>253,00</td><td>4</td><td>800</td><td>Paper</td></tr></table>",
+      "bbox": [
+        625,
+        655,
+        954,
+        707
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b27": {
+      "type": "table",
+      "img_path": "images/4eacd2a60475f572376a0684a6f7bd99d3ff2ae316b5a91525c50150060f8a7b.jpg",
+      "table_caption": [],
+      "table_footnote": [
+        "This electronic component has been designed and developed for usage in general electronic equipment only. This product is not authorized for use in equipment where a higher safety standard and reliability standard is especial y required or where a failure of the product is reasonably expected to cause severe personal injury or death, unless the parties have executed an agreement specifical y governing such use. Moreover Würth Elektronik eiSos GmbH & Co KG products are neither designed nor intended for use in areas such as military, aerospace, aviation, nuclear control, submarine, transportation, transportation signal, disaster prevention, medical, public information network etc.. Würth Elektronik eiSos GmbH & Co KG must be informed about the intent of such usage before the design-in stage. In addition, sufficient reliability evaluation checks for safety must be performed on every electronic comptc is  i ltrica ciruits th ruire i st an rliaility fntion om."
+      ],
+      "table_body": "<table><tr><td><img src=\"images/bdc8a3b8735cd6ba79855ed1877c20ee924716778798a6448d6ffcf57a5fb886.jpg\"/></td><td><img src=\"images/777deb7a17cded2bf97174c68c295a7a96ea8a6b5eb9282e6536fd256f9f682f.jpg\"/></td><td rowspan=\"2\"></td><td>CHECKEDIKK</td><td>REVISION007.001</td><td>DATE (YYYY-MM-DD)2023-07-11</td><td colspan=\"2\">GENERAL TOLERANCEISO 2768-1m</td><td colspan=\"2\">PROJECTION METHOD<img src=\"images/5b83bc60e2598497b4a30c47e889d5b8129038278cad4c9e9cad36e7c1d18804.jpg\"/> -</td></tr><tr><td>RoHS COMPLIANT</td><td>REACH COMPLIANT</td><td rowspan=\"2\" colspan=\"4\">DESCRIPTIONWE-FB Flyback Transformersuitable for LT3573/ LT3574/LT3575/ LT3748</td><td colspan=\"3\"></td></tr><tr><td rowspan=\"2\"><img src=\"images/e52d3a2a6a0c25c5418648896ac417a4ed468706ddecbc2f989c343f6b48732e.jpg\"/></td><td rowspan=\"2\"><img src=\"images/b799eecfe6064f91ff32fbf4ed64a035de0738454c33e7f2465b51a27e732be7.jpg\"/></td><td rowspan=\"2\">Wurth Electronics Midcom Inc. Headquarters121 Airport Drive57201 Watertown, SDUnited StatesPhone: +1 (605) 886-4385www.we-online.com/midcommidcom@we-online.com</td><td colspan=\"3\">ORDER CODE750311423</td></tr><tr><td colspan=\"3\">SIZE/TYPEEP13</td><td>BUSINESS UNITMidcom</td><td colspan=\"2\">STATUSDraft</td><td>PAGE4/7</td></tr></table>",
+      "bbox": [
+        368,
+        761,
+        978,
+        937
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b28": {
+      "type": "header",
+      "text": "Packaging Specification - Inner Carton: [mm]",
+      "bbox": [
+        24,
+        55,
+        286,
+        80
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b29": {
+      "type": "header",
+      "text": "Packaging Specification - Carton: [mm]",
+      "bbox": [
+        631,
+        55,
+        860,
+        82
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b30": {
+      "type": "text",
+      "text": "Classification Reflow Profile for SMT components:",
+      "text_level": 2,
+      "bbox": [
+        24,
+        55,
+        313,
+        80
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b31": {
+      "type": "image",
+      "img_path": "images/55d182f4a6aa3ea2b4f0999e3ecd3694517d0a9f6ed4b5ee9fa76b170c2b1139.jpg",
+      "image_caption": [],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        47,
+        112,
+        468,
+        519
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b32": {
+      "type": "table",
+      "img_path": "images/7706767acb2da6ba46798f9a1a1e537e8726ea47c318410dec346c4ec59c4c4c.jpg",
+      "table_caption": [
+        "Classification Reflow Soldering Profile:"
+      ],
+      "table_footnote": [
+        "refer to IPC/ JEDEC J-STD-020E"
+      ],
+      "table_body": "<table><tr><td>Profile Feature</td><td></td><td>Value</td></tr><tr><td>Preheat Temperature Min</td><td> $T_{s\\ min}$ </td><td>150 °C</td></tr><tr><td>Preheat Temperature Max</td><td> $T_{s\\ max}$ </td><td>200 °C</td></tr><tr><td>Preheat Time  $t_s$  from  $T_{s\\ min}$  to  $T_{s\\ max}$ </td><td> $t_s$ </td><td>60 - 120 seconds</td></tr><tr><td>Ramp-up Rate ( $T_L$  to  $T_P$ )</td><td></td><td>3 °C/ second max.</td></tr><tr><td>Liquidous Temperature</td><td> $T_L$ </td><td>217 °C</td></tr><tr><td>Time  $t_L$  maintained above  $T_L$ </td><td> $t_L$ </td><td>60 - 150 seconds</td></tr><tr><td>Peak package body temperature</td><td> $T_p$ </td><td> $T_p \\leq T_c$ , see Table below</td></tr><tr><td>Time within 5°C of actual peak temperature</td><td> $t_p$ </td><td>20 - 30 seconds</td></tr><tr><td>Ramp-down Rate ( $T_P$  to  $T_L$ )</td><td></td><td>6 °C/ second max.</td></tr><tr><td>Time 25°C to peak temperature</td><td></td><td>8 minutes max.</td></tr></table>",
+      "bbox": [
+        489,
+        80,
+        984,
+        354
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b33": {
+      "type": "table",
+      "img_path": "images/dcbfc7d822581c2142f7d314af3a371949e3fc5acd7ab7076b4ee4fb48a7bf4b.jpg",
+      "table_caption": [
+        "Package Classification Reflow Temperature $( \\overline { { \\mathbf { I } } } _ { \\mathbf { c } } ) \\div$"
+      ],
+      "table_footnote": [
+        "refer to IPC/ JEDEC J-STD-020E"
+      ],
+      "table_body": "<table><tr><td>Properties</td><td>Volume  $mm^3$ &lt;350</td><td>Volume  $mm^3$ 350-2000</td><td>Volume  $mm^3$ &gt;2000</td></tr><tr><td>PB-Free Assembly | Package Thickness &lt; 1.6 mm</td><td>260 °C</td><td>260 °C</td><td>260 °C</td></tr><tr><td>PB-Free Assembly | Package Thickness 1.6 mm - 2.5 mm</td><td>260 °C</td><td>250 °C</td><td>245 °C</td></tr><tr><td>PB-Free Assembly | Package Thickness &gt; 2.5 mm</td><td>250 °C</td><td>245 °C</td><td>245 °C</td></tr></table>",
+      "bbox": [
+        489,
+        413,
+        984,
+        594
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b34": {
+      "type": "table",
+      "img_path": "images/17b4e00485356c0da94419e0e2a5d5b4ba7eac618808691a0d7e0aa9f6252649.jpg",
+      "table_caption": [],
+      "table_footnote": [
+        "<sup>This</sup> <sup>electronic</sup> <sup>component</sup> <sup>has</sup> <sup>been</sup> <sup>designed</sup> <sup>and</sup> <sup>developed</sup> <sup>for</sup> <sup>usage</sup> <sup>in</sup> <sup>general</sup> <sup>electronic</sup> <sup>equipment</sup> <sup>only.</sup> <sup>This</sup> <sup>product</sup> <sup>is</sup> <sup>not</sup> <sup>authorized</sup> <sup>for</sup> <sup>use</sup> <sup>in</sup> <sup>equipment</sup> <sup>where</sup> <sup>a</sup> <sup>higher</sup> <sup>safety</sup> <sup>standard</sup> <sup>and</sup> <sup>reliability</sup> <sup>standard</sup> <sup>is</sup> <sup>especial y</sup> <sup>required</sup> <sup>or</sup> <sup>where</sup> <sup>a</sup> <sup>failure</sup> <sup>of</sup> <sup>the</sup> <sup>product</sup> <sup>is</sup> <sup>reasonably</sup> <sup>expected</sup> <sup>to</sup> <sup>cause</sup> <sup>severe</sup> <sup>personal</sup> <sup>injury</sup> <sup>or</sup> <sup>death,</sup> <sup>unless</sup> <sup>the</sup> <sup>parties</sup> <sup>have</sup> <sup>executed</sup> <sup>an</sup> <sup>agreement</sup> <sup>specifical y</sup> <sup>governing</sup> <sup>such</sup> <sup>use.</sup> <sup>Moreover</sup> <sup>Würth</sup> <sup>Elektronik</sup> <sup>eiSos</sup>& Co KG products are neither designed nor intended for use in areas such as military, aerospace, aviation, nuclear control, submarine, transportation, transportation signal, disaster prevention, medical, public information network etc.. Würth Elektronik eiSos GmbH & Co KG must be informed about the intent of such usage before the design-in stage. In addition, sufficient reliability evaluation checks for safety must be performed on every electronic compntwic is u in lctrica cuits tat ruir hi st an relimlityntiono me"
+      ],
+      "table_body": "<table><tr><td rowspan=\"2\"><img src=\"images/cb337a75f7b14a117f81625936cab311643f24ab4c224c592c678a7834c9ffd8.jpg\"/></td><td rowspan=\"2\"></td><td>CHECKEDIKK</td><td>REVISION007.001</td><td>DATE (YYYY-MM-DD)2023-07-11</td><td colspan=\"2\">GENERAL TOLERANCEISO 2768-1m</td><td>PROJECTION METHOD</td><td><img src=\"images/b79f581f1110229a1f3641e5360fb2fc554334e29d5a30727b4c820f5322a54b.jpg\"/></td></tr><tr><td rowspan=\"2\" colspan=\"4\">DESCRIPTIONWE-FB Flyback Transformersuitable for LT3573/ LT3574/LT3575/ LT3748</td><td colspan=\"3\"></td></tr><tr><td rowspan=\"2\">WURTHELEKTRONIKMORE THANYOU EXPECT</td><td rowspan=\"2\">Wurth Electronics Midcom Inc. Headquarters121 Airport Drive57201 Watertown, SDUnited StatesPhone: +1 (605) 886-4385www.we-online.com/midcommidcom@we-online.com</td><td colspan=\"3\">ORDER CODE750311423</td></tr><tr><td colspan=\"3\">SIZE/TYPEEP13</td><td>BUSINESS UNITMidcom</td><td colspan=\"2\">STATUSDraft</td><td>PAGE5/7</td></tr></table>",
+      "bbox": [
+        369,
+        763,
+        976,
+        937
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b35": {
+      "type": "text",
+      "text": "The following conditions apply to all goods within the product series of WE-FB of Würth Elektronik eiSos GmbH & Co. KG:",
+      "text_level": 1,
+      "bbox": [
+        17,
+        92,
+        487,
+        137
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b36": {
+      "type": "text",
+      "text": "General:",
+      "text_level": 2,
+      "bbox": [
+        17,
+        152,
+        61,
+        171
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b37": {
+      "type": "text",
+      "text": "• This electronic component is designed and manufactured for use in general electronic equipment.",
+      "bbox": [
+        17,
+        186,
+        365,
+        203
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b38": {
+      "type": "text",
+      "text": "• Würth Elektronik must be asked for written approval (following the PPAP procedure) before incorporating the components into any equipment in fields such as military, aerospace, aviation, nuclear control, submarine, transportation (automotive control, train control, ship control), transportation signal, disaster prevention, medical, public information network etc. where higher safety and reliability are especially required and/or if there is the possibility of direct damage or human injury.",
+      "bbox": [
+        17,
+        203,
+        483,
+        268
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b39": {
+      "type": "text",
+      "text": "• Electronic components that will be used in safety-critical or high-reliability applications, should be pre-evaluated by the customer.",
+      "bbox": [
+        17,
+        268,
+        470,
+        285
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b40": {
+      "type": "text",
+      "text": "• The component is designed and manufactured to be used within the datasheet specified values. If the usage and operation conditions specified in the datasheet are not met, the wire insulation may be damaged or dissolved.",
+      "bbox": [
+        17,
+        285,
+        486,
+        315
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b41": {
+      "type": "text",
+      "text": "• Do not drop or impact the components, as the component may be damaged.",
+      "bbox": [
+        17,
+        317,
+        293,
+        332
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b42": {
+      "type": "text",
+      "text": "Würth Elektronik products are qualified according to international standards, which are listed in each product reliability report. Würth Elektronik does not warrant any customer qualified product characteristics beyond Würth Elektroniks’ specifications, for its validity and sustainability over time.",
+      "bbox": [
+        17,
+        332,
+        485,
+        379
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b43": {
+      "type": "text",
+      "text": "• The responsibility for the applicability of the customer specific products and use in a particular customer design is always within the authority of the customer. All technical specifications for standard products also apply to customer specific products.",
+      "bbox": [
+        17,
+        379,
+        479,
+        415
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b44": {
+      "type": "text",
+      "text": "Product specific:",
+      "text_level": 2,
+      "bbox": [
+        17,
+        431,
+        99,
+        450
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b45": {
+      "type": "text",
+      "text": "Soldering:",
+      "text_level": 2,
+      "bbox": [
+        17,
+        465,
+        68,
+        485
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b46": {
+      "type": "text",
+      "text": "• The solder profile must comply with the technical product specifications. All other profiles will void the warranty.",
+      "bbox": [
+        17,
+        500,
+        410,
+        517
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b47": {
+      "type": "text",
+      "text": "• All other soldering methods are at the customers’ own risk",
+      "bbox": [
+        17,
+        517,
+        235,
+        532
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b48": {
+      "type": "text",
+      "text": "• Strong forces which may affect the coplanarity of the components’ electrical connection with the PCB (i.e. pins), can damage th component. resulting in avoid of the warranty",
+      "bbox": [
+        17,
+        532,
+        468,
+        566
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b49": {
+      "type": "text",
+      "text": "Cleaning and Washing:",
+      "text_level": 2,
+      "bbox": [
+        17,
+        581,
+        126,
+        601
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b50": {
+      "type": "text",
+      "text": "• Washing agents used during the production to clean the customer application might damage or change the characteristics of the wire insulation, marking or plating. Washing agents may have a negative effect on the long-term functionality of the product",
+      "bbox": [
+        17,
+        616,
+        486,
+        650
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b51": {
+      "type": "text",
+      "text": "• Using a brush during the cleaning process may break the wire due to its small diameter. Therefore, we do not recommend using a brush during the PCB cleaning process.",
+      "bbox": [
+        17,
+        650,
+        493,
+        682
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b52": {
+      "type": "text",
+      "text": "• If the product is potted in the customer application, the potting material might shrink or expand during and after hardening. Shrinkin could lead to an incomplete seal, allowing contaminants into the core. Expansion could damage the component. We recommend manual inspection after potting to avoid these effects",
+      "bbox": [
+        502,
+        87,
+        966,
+        137
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b53": {
+      "type": "text",
+      "text": "Storage Conditions:",
+      "text_level": 2,
+      "bbox": [
+        502,
+        152,
+        596,
+        171
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b54": {
+      "type": "text",
+      "text": "• A storage of Würth Elektronik products for longer than 12 months is not recommended. Within other effects, the terminals may suffe degradation, resulting in bad solderability. Therefore, all products shall be used within the period of 12 months based on the day of shipment.",
+      "bbox": [
+        502,
+        186,
+        967,
+        235
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b55": {
+      "type": "text",
+      "text": "• Do not expose the components to direct sunlight.",
+      "bbox": [
+        502,
+        235,
+        684,
+        250
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b56": {
+      "type": "text",
+      "text": "• The storage conditions in the original packaging are defined according to DIN EN 61760-2.",
+      "bbox": [
+        502,
+        252,
+        826,
+        267
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b57": {
+      "type": "text",
+      "text": "• The storage conditions stated in the original packaging apply to the storage time and not to the transportation time of the components",
+      "bbox": [
+        502,
+        268,
+        971,
+        285
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b58": {
+      "type": "text",
+      "text": "Packaging:",
+      "text_level": 2,
+      "bbox": [
+        502,
+        300,
+        558,
+        321
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b59": {
+      "type": "text",
+      "text": "• The packaging specifications apply only to purchase orders comprising whole packaging units. If the ordered quantity exceeds or is lower than the specified packaging unit, packaging in accordance with the packaging specifications cannot be ensured",
+      "bbox": [
+        502,
+        334,
+        961,
+        369
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b60": {
+      "type": "text",
+      "text": "Handling:",
+      "text_level": 2,
+      "bbox": [
+        502,
+        384,
+        550,
+        405
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b61": {
+      "type": "text",
+      "text": "• Violation of the technical product specifications such as exceeding the nominal rated current will void the warranty.",
+      "bbox": [
+        502,
+        418,
+        904,
+        435
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b62": {
+      "type": "text",
+      "text": "• Applying currents with audio-frequency signals may result in audible noise due to the magnetostrictive material properties",
+      "bbox": [
+        502,
+        436,
+        931,
+        452
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b63": {
+      "type": "text",
+      "text": "● Due to heayy weight of the components. strong forces and high accelerations may have the effect to damage the electrical connectior or to harm the circuit board and will void the warranty.",
+      "bbox": [
+        502,
+        452,
+        972,
+        482
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b64": {
+      "type": "text",
+      "text": "• The temperature rise of the component must be taken into consideration. The operating temperature is comprised of ambien temperature and temperature rise of the component.The operating temperature of the component shall not exceed the maximum temperature specified",
+      "bbox": [
+        502,
+        484,
+        953,
+        532
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b65": {
+      "type": "text",
+      "text": "These cautions and warnings comply with the state of the scientific and technical knowledge and are believed to be accurate and reliable. However, no responsibility is assumed for inaccuracies or incompleteness.",
+      "bbox": [
+        501,
+        547,
+        967,
+        581
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b66": {
+      "type": "table",
+      "img_path": "images/b09723445bcbb0a77ac3a05448c0ea52b3a29cc5d0dcd643cff145502daf371c.jpg",
+      "table_caption": [],
+      "table_footnote": [
+        "<sup>This</sup> <sup>electronic</sup> <sup>component</sup> <sup>has</sup> <sup>been</sup> <sup>designed</sup> <sup>and</sup> <sup>developed</sup> <sup>for</sup> <sup>usage</sup> <sup>in</sup> <sup>general</sup> <sup>electronic</sup> <sup>equipment</sup> <sup>only.</sup> <sup>This</sup> <sup>product</sup> <sup>is</sup> <sup>not</sup> <sup>authorized</sup> <sup>for</sup> <sup>use</sup> <sup>in</sup> <sup>equipment</sup> <sup>where</sup> <sup>a</sup> <sup>higher</sup> <sup>safety</sup> <sup>standard</sup> <sup>and</sup> <sup>reliability</sup> <sup>standard</sup> <sup>is</sup> <sup>especial y</sup> <sup>required</sup> <sup>or</sup> <sup>where</sup> <sup>a</sup> <sup>failure</sup> <sup>of</sup> <sup>the</sup> <sup>product</sup> <sup>is</sup> <sup>reasonably</sup> <sup>expected</sup> <sup>to</sup> <sup>cause</sup> <sup>severe</sup> <sup>personal</sup> <sup>injury</sup> <sup>or</sup> <sup>death,</sup> <sup>unless</sup> <sup>the</sup> <sup>parties</sup> <sup>have</sup> <sup>executed</sup> <sup>an</sup> <sup>agreement</sup> <sup>specifical y</sup> <sup>governing</sup> <sup>such</sup> <sup>use.</sup> <sup>Moreover</sup> <sup>Würth</sup> <sup>Elektronik</sup> <sup>eiSos</sup>& Co KG products are neither designed nor intended for use in areas such as military, aerospace, aviation, nuclear control, submarine, transportation, transportation signal, disaster prevention, medical, public information network etc.. Würth Elektronik eiSos GmbH & Co KG must be informed about the intent of such usage before the design-in stage. In addition, sufficient reliability evaluation checks for safety must be performed on every electronic"
+      ],
+      "table_body": "<table><tr><td rowspan=\"2\" colspan=\"3\"><img src=\"images/f74c582a57502323c824fc7c15e776b91599fcbca08f7e2b966f08985c7c257c.jpg\"/></td><td>CHECKEDIKK</td><td>REVISION007.001</td><td>DATE (YYYY-MM-DD)2023-07-11</td><td colspan=\"2\">GENERAL TOLERANCEISO 2768-1m</td><td>PROJECTION METHOD</td><td></td></tr><tr><td rowspan=\"2\" colspan=\"4\">DESCRIPTIONWE-FB Flyback Transformersuitable for LT3573/ LT3574/LT3575/ LT3748</td><td colspan=\"3\"></td></tr><tr><td rowspan=\"2\">WURTHELEKTRONIKMORE THANYOU EXPECT</td><td rowspan=\"2\" colspan=\"2\">Wurth Electronics Midcom Inc. Headquarters121 Airport Drive57201 Watertown, SDUnited StatesPhone: +1 (605) 886-4385www.we-online.com/midcommidcom@we-online.com</td><td colspan=\"3\">ORDER CODE750311423</td></tr><tr><td colspan=\"3\">SIZE/TYPEEP13</td><td>BUSINESS UNITMidcom</td><td colspan=\"2\">STATUSDraft</td><td>PAGE6/7</td></tr></table>",
+      "bbox": [
+        369,
+        763,
+        977,
+        937
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b67": {
+      "type": "header",
+      "text": "Cautions and Warnings:",
+      "bbox": [
+        17,
+        53,
+        165,
+        75
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b68": {
+      "type": "header",
+      "text": "Potting:",
+      "bbox": [
+        502,
+        53,
+        543,
+        73
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b69": {
+      "type": "text",
+      "text": "Important Notes",
+      "text_level": 2,
+      "bbox": [
+        17,
+        53,
+        121,
+        77
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b70": {
+      "type": "text",
+      "text": "The following conditions apply to all goods within the product range of Würth Elektronik eiSos GmbH & Co. KG:",
+      "text_level": 2,
+      "bbox": [
+        17,
+        92,
+        488,
+        137
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b71": {
+      "type": "text",
+      "text": "1. General Customer Responsibility",
+      "text_level": 2,
+      "bbox": [
+        17,
+        152,
+        181,
+        174
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b72": {
+      "type": "text",
+      "text": "Some goods within the product range of Würth Elektronik eiSos GmbH & Co. KG contain statements regarding general suitability for certair application areas. These statements about suitability are based on our knowledge and experience of typical requirements concerning the areas. serve as general quidance and cannot be estimated as binding statements about the suitability for a customer application. The responsibility for the applicability and use in a particular customer design is always solely within the authority of the customer. Due to this fact it is up to the customer to evaluate, where appropriate to investigate and decide whether the device with the specific product characteristics described in the product specification is valid and suitable for the respective customer application or not",
+      "bbox": [
+        16,
+        186,
+        487,
+        287
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b73": {
+      "type": "text",
+      "text": "2. Customer Responsibility related to Specific, in particular Safety-Relevant Applications",
+      "text_level": 2,
+      "bbox": [
+        17,
+        300,
+        423,
+        322
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b74": {
+      "type": "text",
+      "text": "It has to be clearly pointed out that the possibility of a malfunction of electronic components or failure before the end of the usual lifetime cannot be completely eliminated in the current state of the art, even if the products are operated within the range of the specifications In certain customer applications reguiring a very high level of safety and especially in customer applications in which the malfunction or failure of an electronic component could endanger human life or health it must be ensured by most advanced technological aid of suitable design of the customer application that no iniury or damage is caused to third parties in the event of malfunction or failure of an electronic component. Therefore, customer is cautioned to verify that data sheets are current before placing orders. The current data sheets can be downloaded at www,we-online.com.",
+      "bbox": [
+        16,
+        334,
+        486,
+        450
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b75": {
+      "type": "text",
+      "text": "3. Best Care and Attention",
+      "text_level": 2,
+      "bbox": [
+        17,
+        465,
+        141,
+        485
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b76": {
+      "type": "text",
+      "text": "Any product-specific notes, cautions and warnings must be strictly observed. Any disregard will result in the loss of warranty.",
+      "bbox": [
+        16,
+        500,
+        441,
+        519
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b77": {
+      "type": "text",
+      "text": "4. Customer Support for Product Specifications",
+      "text_level": 2,
+      "bbox": [
+        17,
+        532,
+        236,
+        552
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b78": {
+      "type": "text",
+      "text": "Some products within the product range may contain substances which are subject to restrictions in certain jurisdictions in order to serve specific technical requirements. Necessary information is available on request. In this case the field sales engineer or the internal sales person in charge should be contacted who will be happy to support in this matter.",
+      "bbox": [
+        17,
+        568,
+        483,
+        618
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b79": {
+      "type": "text",
+      "text": "5. Product R&D",
+      "text_level": 2,
+      "bbox": [
+        17,
+        633,
+        91,
+        653
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b80": {
+      "type": "text",
+      "text": "Due to constant product improvement product specifications may change from time to time. As a standard reporting procedure of the Product Change Notification (PCN) according to the JEDEC-Standard inform about minor and major changes. In case of further queries regarding the PCN, the field sales engineer or the internal sales person in charge should be contacted. The basic responsibility of the customer as per Section 1 and 2 remains unaffected.",
+      "bbox": [
+        17,
+        668,
+        473,
+        734
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b81": {
+      "type": "text",
+      "text": "6. Product Life Cycle",
+      "text_level": 2,
+      "bbox": [
+        502,
+        53,
+        601,
+        73
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b82": {
+      "type": "text",
+      "text": "Due to technical progress and economical evaluation we also reserve the right to discontinue production and delivery of products. As standard reporting procedure of the Product Termination Notification (PTN) according to the JEDEC-Standard we will inform at an early stag about inevitable product discontinuance. According to this we cannot guarantee that all products within our product range will always be available. Therefore it needs to be verified with the field sales engineer or the internal sales person in charge about the current product availability expectancy before or when the product for application design-in disposal is considered. The approach named above does no apply in the case of individual agreements deviating from the foregoing for customer-specific products",
+      "bbox": [
+        500,
+        87,
+        977,
+        186
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b83": {
+      "type": "text",
+      "text": "7. Property Rights",
+      "text_level": 2,
+      "bbox": [
+        502,
+        201,
+        589,
+        221
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b84": {
+      "type": "text",
+      "text": "All the rights for contractual products produced by Würth Elektronik eiSos GmbH & Co. KG on the basis of ideas, development contracts as well as models or templates that are subiect to copvyright. patent or commercial protection supplied to the customer will remain with Würth Elektronik eiSos GmbH & Co. KG. Würth Elektronik eiSos GmbH & Co. KG does not warrant or represent that any license, either expressed o implied. is granted under any patent right. copvright, mask work right, or other intellectual property right relating to any combination application, or process in which Würth Elektronik eiSos GmbH & Co. KG components or services are used.",
+      "bbox": [
+        500,
+        235,
+        977,
+        317
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b85": {
+      "type": "text",
+      "text": "8. General Terms and Conditions",
+      "text_level": 2,
+      "bbox": [
+        502,
+        332,
+        653,
+        352
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b86": {
+      "type": "text",
+      "text": "Unless otherwise agreed in individual contracts, all orders are subject to the current version of the “General Terms and Conditions of Würth Elektronik eiSos Group”. last version available at www,we-online.com",
+      "bbox": [
+        501,
+        366,
+        973,
+        401
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    },
+    "b87": {
+      "type": "table",
+      "img_path": "images/d8807d5ff914386b6d12a3f5dd28fba728ca158addc9650bf896c85566ad39db.jpg",
+      "table_caption": [],
+      "table_footnote": [
+        "This electronic component has been designed and developed for usage in general electronic equipment only. This product is not authorized for use in equipment where a higher safety standard and reliability standard is especial y required or where a failure of the product is reasonably expected to cause severe personal injury or death, unless the parties have executed an agreement specifical y governing such use. Moreover Würth Elektronik eiSos GmbH & Co KG products are neither designed nor intended for use in areas such as military, aerospace, aviation, nuclear control, submarine, transportation, transportation signal, disaster prevention, medical, public information network etc.. Würth Elektronik eiSos GmbH & Co KG must be informed about the intent of such usage before the design-in stage. In addition, sufficient reliability evaluation checks for safety must be performed on every electronic"
+      ],
+      "table_body": "<table><tr><td rowspan=\"2\" colspan=\"3\"><img src=\"images/1937bb5a14422a51a66852399b6e9b2cf637cbd2d0442a440b67eb99a3f3698b.jpg\"/></td><td>CHECKEDIKK</td><td>REVISION007.001</td><td>DATE (YYYY-MM-DD)2023-07-11</td><td colspan=\"2\">GENERAL TOLERANCEISO 2768-1m</td><td>PROJECTION METHOD</td><td></td></tr><tr><td rowspan=\"2\" colspan=\"4\">DESCRIPTIONWE-FB Flyback Transformersuitable for LT3573/ LT3574/LT3575/ LT3748</td><td colspan=\"3\"></td></tr><tr><td rowspan=\"2\">WURTHELEKTRONIKMORE THANYOU EXPECT</td><td rowspan=\"2\" colspan=\"2\">Wurth Electronics Midcom Inc. Headquarters121 Airport Drive57201 Watertown, SDUnited StatesPhone: +1 (605) 886-4385www.we-online.com/midcommidcom@we-online.com</td><td colspan=\"3\">ORDER CODE750311423</td></tr><tr><td colspan=\"3\">SIZE/TYPEEP13</td><td>BUSINESS UNITMidcom</td><td colspan=\"2\">STATUSDraft</td><td>PAGE7/7</td></tr></table>",
+      "bbox": [
+        369,
+        763,
+        977,
+        937
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/750311423_数据手册_content_list.json"
+    }
+  },
+  "images": {
+    "images/2c93b36dbf2761f48a72dfe3bf4d00f586110f500ba0e1e34a2125798d3aced4.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/2c93b36dbf2761f48a72dfe3bf4d00f586110f500ba0e1e34a2125798d3aced4.jpg",
+      "exists": true,
+      "block_ids": [
+        "b1"
+      ],
+      "sha256": "5f49f1545f859a1a12a3fabf8d5d40937283a326aa1205ae2ee046bba28af0ac"
+    },
+    "images/6f441214042e46ed4cc265eadf788d324abe5e7f130f00b6e948c3885704f1b8.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/6f441214042e46ed4cc265eadf788d324abe5e7f130f00b6e948c3885704f1b8.jpg",
+      "exists": true,
+      "block_ids": [
+        "b2"
+      ],
+      "sha256": "bff128010f31abc1a662b80cba4034ff34e22bebb6c22e51eb2f62e42830d723"
+    },
+    "images/83d75d2097bb5e26304604c8d90a220cd20bfa8b04aab9729c8938f7da7f6f92.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/83d75d2097bb5e26304604c8d90a220cd20bfa8b04aab9729c8938f7da7f6f92.jpg",
+      "exists": true,
+      "block_ids": [
+        "b3"
+      ],
+      "sha256": "72b560b4dada625783263e78e24eebf1dd21400f07280217487d69d66c7411c7"
+    },
+    "images/6e41e04645dd63fb69295b381f1eb2732ba13532141b5e4992cc532c416b1832.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/6e41e04645dd63fb69295b381f1eb2732ba13532141b5e4992cc532c416b1832.jpg",
+      "exists": true,
+      "block_ids": [
+        "b4"
+      ],
+      "sha256": "a409acd049f07c15b897c12cb817a47efd17bc4b5ff2206aada9b2045ef7a1a2"
+    },
+    "images/64fb504b5bae6eddcf7547deb63fe5bb3d22312d798a2bad21d4fb429cbac573.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/64fb504b5bae6eddcf7547deb63fe5bb3d22312d798a2bad21d4fb429cbac573.jpg",
+      "exists": true,
+      "block_ids": [
+        "b6"
+      ],
+      "sha256": "31ac3d7108839e01c2b16d824267fa1465ec5ca07ba4e2fe9251478f35b23b8d"
+    },
+    "images/69c08111587cb48ad1c3578e708778773c7199c7b6005e059f7511a0c75f5add.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/69c08111587cb48ad1c3578e708778773c7199c7b6005e059f7511a0c75f5add.jpg",
+      "exists": true,
+      "block_ids": [
+        "b8"
+      ],
+      "sha256": "3ce484b93ed301584dfa6fbe080fed524b93103586a854c40c4a4a030a76a909"
+    },
+    "images/13e2dc173f5eb79584f91013f406a144ae0059aa1def9d26501c336daae23656.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/13e2dc173f5eb79584f91013f406a144ae0059aa1def9d26501c336daae23656.jpg",
+      "exists": true,
+      "block_ids": [
+        "b9"
+      ],
+      "sha256": "b377983782254273757d370dde5375d637240fd924a6e2af027138e2c4824fc4"
+    },
+    "images/af75c286f4c7673f8d771a60e2b8704303111084c18fe00219c79dba91b92ae5.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/af75c286f4c7673f8d771a60e2b8704303111084c18fe00219c79dba91b92ae5.jpg",
+      "exists": true,
+      "block_ids": [
+        "b10"
+      ],
+      "sha256": "865073f937e4af4c2cf5e24d087a0658de591cbec6b8ad9d9ec1082c1cf8515f"
+    },
+    "images/5ec499267db863a41349994522225e9853d94ba8be6c167106c92ce664ee9942.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/5ec499267db863a41349994522225e9853d94ba8be6c167106c92ce664ee9942.jpg",
+      "exists": true,
+      "block_ids": [
+        "b11"
+      ],
+      "sha256": "a305e9464a86c32bf6142ea27731a2cf3c93e7cb42042945ccf6167038950a99"
+    },
+    "images/4e1658d57b1234e5450986d4f3d52f0f155b7e9194baeb96a33e37a9f6b0f137.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/4e1658d57b1234e5450986d4f3d52f0f155b7e9194baeb96a33e37a9f6b0f137.jpg",
+      "exists": true,
+      "block_ids": [
+        "b13"
+      ],
+      "sha256": "8bbd3d69f975677c4f7d8dd48a089a5f6a97615d2420851abd499a5784749008"
+    },
+    "images/a9f8debed0feb336caaf6dfa397397e1d1cda554bfe9c6590a8c4c8ee0c1b537.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/a9f8debed0feb336caaf6dfa397397e1d1cda554bfe9c6590a8c4c8ee0c1b537.jpg",
+      "exists": true,
+      "block_ids": [
+        "b14"
+      ],
+      "sha256": "f86a0e4e7b7efd3dbd910889b158bb947b6a22ad12e16aa936865976c3898063"
+    },
+    "images/33a4ed4961a3781aa770011cdb137c92e7152c679230a741b57c9d7599d50b81.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/33a4ed4961a3781aa770011cdb137c92e7152c679230a741b57c9d7599d50b81.jpg",
+      "exists": true,
+      "block_ids": [
+        "b14"
+      ],
+      "sha256": "dcfbdca6c93cb660a971aa2d6bd2ba69c72ed6a73154f26c68de7be50b285a2d"
+    },
+    "images/d71eaaabac4d45d210924f145b0c657c22a32a75e84241d92868e47d415e5f65.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/d71eaaabac4d45d210924f145b0c657c22a32a75e84241d92868e47d415e5f65.jpg",
+      "exists": true,
+      "block_ids": [
+        "b14"
+      ],
+      "sha256": "a065748161320cd815d3da330efca090611e701bb8113e498e2d4342136a7a88"
+    },
+    "images/32774a348fea5c322423708c27158e9876f3a2634d371cf2d027150824a6cd32.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/32774a348fea5c322423708c27158e9876f3a2634d371cf2d027150824a6cd32.jpg",
+      "exists": true,
+      "block_ids": [
+        "b15"
+      ],
+      "sha256": "61fa0555ee1ecc6eda25434b70deb2163a760f2413bf635d1a5bfef97b132ea6"
+    },
+    "images/77eb754ac020785e8bb2515c07de582e7bf154387973dc25ea2029bdede318c8.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/77eb754ac020785e8bb2515c07de582e7bf154387973dc25ea2029bdede318c8.jpg",
+      "exists": true,
+      "block_ids": [
+        "b16"
+      ],
+      "sha256": "5ffa91a12b297617d803ce0af2497bc24a7ad670c3c8c19e992b2e3715376e73"
+    },
+    "images/21453fdbb9ab32a52d79b87d290a03c4b5f669f5248297577ee1d64ab99abd6e.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/21453fdbb9ab32a52d79b87d290a03c4b5f669f5248297577ee1d64ab99abd6e.jpg",
+      "exists": true,
+      "block_ids": [
+        "b16"
+      ],
+      "sha256": "129c9ca207cd5f3e7c89e146d35b306fd7af5e35029ad126f9b6021f34b58fd4"
+    },
+    "images/86e013e9271097e5c745e346ec97a5c8e13e4d7970008938084a558664c06d62.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/86e013e9271097e5c745e346ec97a5c8e13e4d7970008938084a558664c06d62.jpg",
+      "exists": true,
+      "block_ids": [
+        "b18"
+      ],
+      "sha256": "eb686477685bc79360c61b1ee81cf82c512f0749ccac4037fdbd1eae7ad15c36"
+    },
+    "images/4de2b5e08b9820584bf26c29a0fb05aa2766eee61b7321665fb105e04aa49e97.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/4de2b5e08b9820584bf26c29a0fb05aa2766eee61b7321665fb105e04aa49e97.jpg",
+      "exists": true,
+      "block_ids": [
+        "b19"
+      ],
+      "sha256": "3e2f283262794a36c3ce17b85736c1975c080072b40a52c8b665abd90c003bca"
+    },
+    "images/949a2e937fab9f2305d5b9e10919d1eb4a613e08c8fb75efbb395fbc19970f8e.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/949a2e937fab9f2305d5b9e10919d1eb4a613e08c8fb75efbb395fbc19970f8e.jpg",
+      "exists": true,
+      "block_ids": [
+        "b20"
+      ],
+      "sha256": "3b33b92b2ce39775f7bc560ffd545e1613f9f2e686661cab949753ffe316c215"
+    },
+    "images/87a9f994cfa3689d67ca7cd8e10a6c467dd3e911f7c61bf4f90e5de178ff1fa5.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/87a9f994cfa3689d67ca7cd8e10a6c467dd3e911f7c61bf4f90e5de178ff1fa5.jpg",
+      "exists": true,
+      "block_ids": [
+        "b21"
+      ],
+      "sha256": "bbc5f08561ea5bef6af3c63b033bd53ba3b30950e1ef4b65cee90a21afe6cba2"
+    },
+    "images/d2db706a0f92d0762ce71774fa8a0892aebc572be6e937cc3c74c741b5428861.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/d2db706a0f92d0762ce71774fa8a0892aebc572be6e937cc3c74c741b5428861.jpg",
+      "exists": true,
+      "block_ids": [
+        "b23"
+      ],
+      "sha256": "c679ff37a42b2431c83a92d44cbc8491716091ceffa4c76452b8a1a7ddc64109"
+    },
+    "images/925fd4b8eb6ac4a6a12bdfe0724e203a74292f14b20d03b34ce80cbe788b50dc.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/925fd4b8eb6ac4a6a12bdfe0724e203a74292f14b20d03b34ce80cbe788b50dc.jpg",
+      "exists": true,
+      "block_ids": [
+        "b24"
+      ],
+      "sha256": "e8457841953fbac3b20d883f9fdfe8e749fe232ec5d7e3c90cd4721fb72dc516"
+    },
+    "images/8696031da180fad9ec3fbd511cbe6545a22301411ebdbea41d0ca15acea273b1.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/8696031da180fad9ec3fbd511cbe6545a22301411ebdbea41d0ca15acea273b1.jpg",
+      "exists": true,
+      "block_ids": [
+        "b25"
+      ],
+      "sha256": "1872d9f4088af8d92081599f9694516c65eefa872191141fc3801434709b62e3"
+    },
+    "images/9a53d59e63ef51d90cc68fcba569d210bbb8be0149fa681f57ec02e88364ff10.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/9a53d59e63ef51d90cc68fcba569d210bbb8be0149fa681f57ec02e88364ff10.jpg",
+      "exists": true,
+      "block_ids": [
+        "b26"
+      ],
+      "sha256": "96ecaf1429522c4fc38ae75e1f417cfb0f1056d74a07f75fb51bc0d58b45d3eb"
+    },
+    "images/bdc8a3b8735cd6ba79855ed1877c20ee924716778798a6448d6ffcf57a5fb886.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/bdc8a3b8735cd6ba79855ed1877c20ee924716778798a6448d6ffcf57a5fb886.jpg",
+      "exists": true,
+      "block_ids": [
+        "b27"
+      ],
+      "sha256": "d37ef1f92b530bed77e92290ccd0eac043bc58a2a326561ed82bb3648ed08652"
+    },
+    "images/4eacd2a60475f572376a0684a6f7bd99d3ff2ae316b5a91525c50150060f8a7b.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/4eacd2a60475f572376a0684a6f7bd99d3ff2ae316b5a91525c50150060f8a7b.jpg",
+      "exists": true,
+      "block_ids": [
+        "b27"
+      ],
+      "sha256": "ad2418489d2b8a558654ad475cf10372bc07d7a39a94fe95dba177a71eeb6ff5"
+    },
+    "images/5b83bc60e2598497b4a30c47e889d5b8129038278cad4c9e9cad36e7c1d18804.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/5b83bc60e2598497b4a30c47e889d5b8129038278cad4c9e9cad36e7c1d18804.jpg",
+      "exists": true,
+      "block_ids": [
+        "b27"
+      ],
+      "sha256": "c17814358003dcbb819dd9513941aa68366700ba040c0c7bcf5d78918ad38df5"
+    },
+    "images/777deb7a17cded2bf97174c68c295a7a96ea8a6b5eb9282e6536fd256f9f682f.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/777deb7a17cded2bf97174c68c295a7a96ea8a6b5eb9282e6536fd256f9f682f.jpg",
+      "exists": true,
+      "block_ids": [
+        "b27"
+      ],
+      "sha256": "25d942702c5566e2d15811733bc2dfe1131712de1b2de5c7c27d0ec0cf5afe9e"
+    },
+    "images/e52d3a2a6a0c25c5418648896ac417a4ed468706ddecbc2f989c343f6b48732e.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/e52d3a2a6a0c25c5418648896ac417a4ed468706ddecbc2f989c343f6b48732e.jpg",
+      "exists": true,
+      "block_ids": [
+        "b27"
+      ],
+      "sha256": "fef84e5d24fec29cd526d15fb6344158f269eda323a1749b4b33cb4ea45d8fbd"
+    },
+    "images/b799eecfe6064f91ff32fbf4ed64a035de0738454c33e7f2465b51a27e732be7.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/b799eecfe6064f91ff32fbf4ed64a035de0738454c33e7f2465b51a27e732be7.jpg",
+      "exists": true,
+      "block_ids": [
+        "b27"
+      ],
+      "sha256": "dd35d4f5f5b6f77e7ee253b120d0f160ed3967b1d65daaed8b38677ed85f20e2"
+    },
+    "images/55d182f4a6aa3ea2b4f0999e3ecd3694517d0a9f6ed4b5ee9fa76b170c2b1139.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/55d182f4a6aa3ea2b4f0999e3ecd3694517d0a9f6ed4b5ee9fa76b170c2b1139.jpg",
+      "exists": true,
+      "block_ids": [
+        "b31"
+      ],
+      "sha256": "fd75218fc9427482fdae6a816cc26d7175469df3d2741cbb0c1a8bf3e55a55f1"
+    },
+    "images/7706767acb2da6ba46798f9a1a1e537e8726ea47c318410dec346c4ec59c4c4c.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/7706767acb2da6ba46798f9a1a1e537e8726ea47c318410dec346c4ec59c4c4c.jpg",
+      "exists": true,
+      "block_ids": [
+        "b32"
+      ],
+      "sha256": "db1972801ac66e61864e1b04046dd07029540415451e39043f7a98028bdfb761"
+    },
+    "images/dcbfc7d822581c2142f7d314af3a371949e3fc5acd7ab7076b4ee4fb48a7bf4b.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/dcbfc7d822581c2142f7d314af3a371949e3fc5acd7ab7076b4ee4fb48a7bf4b.jpg",
+      "exists": true,
+      "block_ids": [
+        "b33"
+      ],
+      "sha256": "c254bc1497057eed5fabe9f2244a7ad83d7d883d03cf7aec0845dbf84f22960e"
+    },
+    "images/17b4e00485356c0da94419e0e2a5d5b4ba7eac618808691a0d7e0aa9f6252649.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/17b4e00485356c0da94419e0e2a5d5b4ba7eac618808691a0d7e0aa9f6252649.jpg",
+      "exists": true,
+      "block_ids": [
+        "b34"
+      ],
+      "sha256": "df4ba5c88ec63e49a621ad503859bcd118409326a391ac35e2dfee33817d5d6d"
+    },
+    "images/b79f581f1110229a1f3641e5360fb2fc554334e29d5a30727b4c820f5322a54b.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/b79f581f1110229a1f3641e5360fb2fc554334e29d5a30727b4c820f5322a54b.jpg",
+      "exists": true,
+      "block_ids": [
+        "b34"
+      ],
+      "sha256": "0d911bc5a27f0a0483ea03465b4ff072d52a5607eb0a1ed3e7ac6000bb4b3f1f"
+    },
+    "images/cb337a75f7b14a117f81625936cab311643f24ab4c224c592c678a7834c9ffd8.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/cb337a75f7b14a117f81625936cab311643f24ab4c224c592c678a7834c9ffd8.jpg",
+      "exists": true,
+      "block_ids": [
+        "b34"
+      ],
+      "sha256": "06673ab62399b86b0ad3ac83dacedf4d59c715c6689efddfd05d7c4dc063b54c"
+    },
+    "images/f74c582a57502323c824fc7c15e776b91599fcbca08f7e2b966f08985c7c257c.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/f74c582a57502323c824fc7c15e776b91599fcbca08f7e2b966f08985c7c257c.jpg",
+      "exists": true,
+      "block_ids": [
+        "b66"
+      ],
+      "sha256": "d9ea7d60d55ce3374e58088eb4e67b77e96c9c93563cd5597454574062629f7b"
+    },
+    "images/b09723445bcbb0a77ac3a05448c0ea52b3a29cc5d0dcd643cff145502daf371c.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/b09723445bcbb0a77ac3a05448c0ea52b3a29cc5d0dcd643cff145502daf371c.jpg",
+      "exists": true,
+      "block_ids": [
+        "b66"
+      ],
+      "sha256": "7fd770b0726123dac4ad007533f164071ff2ac6cca8c3e152e4cf83cf02e6b08"
+    },
+    "images/1937bb5a14422a51a66852399b6e9b2cf637cbd2d0442a440b67eb99a3f3698b.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/1937bb5a14422a51a66852399b6e9b2cf637cbd2d0442a440b67eb99a3f3698b.jpg",
+      "exists": true,
+      "block_ids": [
+        "b87"
+      ],
+      "sha256": "b0f20a5d8c7ba495098068ba691edda7b956c14d3776ab536f29bbb43e883f01"
+    },
+    "images/d8807d5ff914386b6d12a3f5dd28fba728ca158addc9650bf896c85566ad39db.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/750311423_数据手册/images/d8807d5ff914386b6d12a3f5dd28fba728ca158addc9650bf896c85566ad39db.jpg",
+      "exists": true,
+      "block_ids": [
+        "b87"
+      ],
+      "sha256": "7520cf5b759c673c3c1f7fc12f978e5069123eeb795c54b838a91e467f07ccdc"
+    }
+  },
+  "source_pdf": "/Users/192y/电气/器件手册与模型/750311423/750311423_数据手册.pdf",
+  "source_pdf_evidence_note": "PDF page reference IDs pN use zero-based physical page index; visual assertions separately logged.",
+  "pdf_pages": {
+    "p0": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/750311423/750311423_数据手册.pdf",
+      "page_idx": 0,
+      "physical_page": 1,
+      "rendered_path": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/750311423/source_pages/page_1.png",
+      "visually_inspected_full_page": true,
+      "text": "   Dimensions: [mm]                                                                                                                                                     Recommended Land Pattern: [mm]                                                                                           Electrical Properties:\n                                                                                                                                                                                                                                                                                                   Properties                                                         Test conditions                                 Value                Unit           Tol.\n                                                                                                                                                                                                                                                                                                   Inductance                                                L        N1/ 10 kHz/ 100 mV                               50                    µH         ±10%\n                                                                                                                                                                                                                                                                                                   Turns Ratio                                               n        N1 : N2 : N3                                    4:1:2\n                                                                                                                                                                                                                                                                                                   Saturation Current                                      ISAT       N1/ |ΔL/L| < 20 %                               3.85                    A           typ.\n                                                                                                                                                                                                                                                                                                   DC Resistance 1                                       RDC 1 N1/ 20 °C                                              0.09                    Ω         ±20%\n                                                                                                                                                                                                                                                                                                   DC Resistance 2                                       RDC 2 N2/ 20 °C                                              0.012                   Ω         ±20%\n                                                                                                                                                                                                                                                                                                   DC Resistance 3                                       RDC 3 N3/ 20 °C                                              0.205                   Ω         ±10%\n                                                                                                                                                                                                                                                                                                   Leakage Inductance                                       LS        N1/ 100 kHz/ 100 mV                              1.2                   µH          max.\n                                                                                                                                                                                                                                                                                                   Insulation Test Voltage                                  VT        N1,3 => N2                                      1500                V (AC)\n                                                                                                                                                                                                                                                                                                   Insulation Test Voltage                                 VT 2       N1 => N3                                        500                 V (AC)\n\n                                                                                                                                                                                                                                                                                                 Certification:\n                                                                                                                                                                                                                                                                                                   RoHS Approval                                                                      Compliant [2011/65/EU&2015/863]\n                                                                                                                                                                                                                                                                                                   REACh Approval                                                                    Conform or declared [(EC)1907/2006]\n                                                                                                                                                                        Schematic:\n\n                                                                                                                                                                                             3\n                                                                                                                                                                                                                                                                                                 General Information:\n                                                                                                                                                                                                      N1                                                                                           Operating Temperature                                                                           -40 up to +125 °C\n                                                                                                                                                                                                                                                           6,7\n                                                                                                                                                                                                                                                                                                   Storage Conditions (in original                                                               < 40 °C ; < 75 % RH\n                                                                                                                                                                                                                                                                                                   packaging)\n                                                                                                                                                                                             5                                                N2\n                                                                                                                                                                                             2                                                                                                     Storage Conditions (for single                                                                   -20 up to +60 °C\n                                                                                                                                                                                                                                                                                                   parts)\n\n                                                                                                                                                                                                      N3                                                   9,10                                    Moisture Sensitivity Level (MSL)                                                                               1\n                                                                                                                                                                                                                                                                                                                 Test conditions of Electrical Properties: +20 °C, 33 % RH if not specified differently\n\n                                                                                                                                                                                             1\n\n                                                                                                                                                                        Application of the transformer allows for the leadwires between\nProduct Marking:                                                                                                                                                        terminals 6&7 and 9&10 to solder bridge.\n Pin 1                                                                                                         •\n                                                                                                                                                                                                                                                                                                          CHECKED             REVISION            DATE (YYYY-MM-DD)          GENERAL TOLERANCE                        PROJECTION\n                                                                                                                                                                                                                                                                                                                                                                                                                      METHOD\n                                                                                                                                                                                                                                                                                                          IKK                 007.001             2023-07-11                 ISO 2768-1m\n\n                                                                                                                                                                                                                                                                                                          DESCRIPTION\n\n\n                                                                                                                                                                                                                                                                                                          WE-FB Flyback Transformer\n                                                                                                                                                                                                                                            Wurth Electronics Midcom Inc. Headquarters\n                                                                                                                                                                                                                                            121 Airport Drive\n                                                                                                                                                                                                                                                                                                          suitable for LT3573/ LT3574/                                                                   ORDER CODE\n\n                                                                                                                                                                                                                                            57201 Watertown, SD\n                                                                                                                                                                                                                                            United States                                                 LT3575/ LT3748                                                                                 750311423\n                                                                                                                                                                                                                                            Phone: +1 (605) 886-4385                                      SIZE/TYPE                                                          BUSINESS UNIT               STATUS                                         PAGE\n                                                                                                                                                                                                                                            www.we-online.com/midcom\n                                                                                                                                                                                                                                            midcom@we-online.com                                          EP13                                                               Midcom                      Draft                                          1/7\n\nThis electronic component has been designed and developed for usage in general electronic equipment only. This product is not authorized for use in equipment where a higher safety standard and reliability standard is especially required or where a failure of the product is reasonably expected to cause severe personal injury or death, unless the parties have executed an agreement specifically governing such use. Moreover Würth Elektronik eiSos GmbH\n& Co KG products are neither designed nor intended for use in areas such as military, aerospace, aviation, nuclear control, submarine, transportation, transportation signal, disaster prevention, medical, public information network etc.. Würth Elektronik eiSos GmbH & Co KG must be informed about the intent of such usage before the design-in stage. In addition, sufficient reliability evaluation checks for safety must be performed on every electronic\ncomponent which is used in electrical circuits that require high safety and reliability functions or performance.\n"
+    },
+    "p1": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/750311423/750311423_数据手册.pdf",
+      "page_idx": 1,
+      "physical_page": 2,
+      "rendered_path": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/750311423/source_pages/page_2.png",
+      "visually_inspected_full_page": true,
+      "text": "Typical Application:\n Properties                                                                                                                               Value                                                                     Unit\n Input Voltage                                                      Vin                                                                     36                                                                     V (DC)\n Switching Frequency                                             fswitch                                                                   100                                                                       kHz\n Output Voltage 1                                                 VOut1                                                                      5                                                                         V\n Output Current 1                                                 IOut1                                                                      4                                                                        A\n Auxiliary Voltage                                                 Vaux                                                                     10                                                                         V\nInput: N1\nOutput 1: N2\nAuxiliary: N3\nTable shows a typical flyback application. Values may vary by application.\n\n\n\n\n                                                                                                                                                                                                                                                                                                          CHECKED             REVISION            DATE (YYYY-MM-DD)          GENERAL TOLERANCE                        PROJECTION\n                                                                                                                                                                                                                                                                                                                                                                                                                      METHOD\n                                                                                                                                                                                                                                                                                                          IKK                 007.001             2023-07-11                 ISO 2768-1m\n\n                                                                                                                                                                                                                                                                                                          DESCRIPTION\n\n\n                                                                                                                                                                                                                                                                                                          WE-FB Flyback Transformer\n                                                                                                                                                                                                                                            Wurth Electronics Midcom Inc. Headquarters\n                                                                                                                                                                                                                                            121 Airport Drive\n                                                                                                                                                                                                                                                                                                          suitable for LT3573/ LT3574/                                                                   ORDER CODE\n\n                                                                                                                                                                                                                                            57201 Watertown, SD\n                                                                                                                                                                                                                                            United States                                                 LT3575/ LT3748                                                                                 750311423\n                                                                                                                                                                                                                                            Phone: +1 (605) 886-4385                                      SIZE/TYPE                                                          BUSINESS UNIT               STATUS                                         PAGE\n                                                                                                                                                                                                                                            www.we-online.com/midcom\n                                                                                                                                                                                                                                            midcom@we-online.com                                          EP13                                                               Midcom                      Draft                                          2/7\n\nThis electronic component has been designed and developed for usage in general electronic equipment only. This product is not authorized for use in equipment where a higher safety standard and reliability standard is especially required or where a failure of the product is reasonably expected to cause severe personal injury or death, unless the parties have executed an agreement specifically governing such use. Moreover Würth Elektronik eiSos GmbH\n& Co KG products are neither designed nor intended for use in areas such as military, aerospace, aviation, nuclear control, submarine, transportation, transportation signal, disaster prevention, medical, public information network etc.. Würth Elektronik eiSos GmbH & Co KG must be informed about the intent of such usage before the design-in stage. In addition, sufficient reliability evaluation checks for safety must be performed on every electronic\ncomponent which is used in electrical circuits that require high safety and reliability functions or performance.\n"
+    },
+    "p2": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/750311423/750311423_数据手册.pdf",
+      "page_idx": 2,
+      "physical_page": 3,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "   Packaging Specification - Tape: [mm]                                                                                                                                                                                                                                                          Packaging Specification - Reel: [mm]\n                                                                                                                                  P0                                                                                                          K0\n  A                                                       D0                                                                                   P2\n                                                                                                                                                                                                       E\n                                                                                                                                                                                                                                                              T                                                                                                                      W3\n\n\n                                                                                                                                                                                                                                                                                                                                                                                                                            W1\n                                                                                                                                                                                                F                                                                                                                                                                                                                     close to center\n                                                                                                                                                                                                                                                                                                                                         D\n                                                                                                                                                                                                                                                                                                                      B\n                                                                              B0                                                                                                                       S      W\n                                                                                                                                                                                                                                                                                                                                                                                  A      N\n                                                                                                                                                                                                                                                                                                                        C\n\n                                                                                                                                                                                                d                                                                      Top Cover\n                                                                                                                                                                                                                                                                         Tape\n                                                                   D1                                                P1                                                                D0                                                                      T1\n  A                                                        A0\n                                                                                                                                                                                        2\n                                                                                                                                                                                                                                              T2                                                                                                                                      W2\n\n\n\n                                                                                                                                                                                                                                                                 Carrier Tape\n       End                                                                                            Feeding direction                                                                                                                   Start                 Cover Tape\n                                                                                                                                                                                                                                                                                                                                                                                 detail B\n                                                                                                                                                                                                                                                                                                                                            B         Cover Tape\n\n                                                                                                                                                                                                                                                                                                                                                                                                                    Chip Cavity\n                                                                                                                                                                                                                                                                                                                                                                                                                     Sprocket Hole\n\n\n\n                                  No Component                                                                 Components                                                                 No Component\n                                   min.160mm                                                                                                                                               min. 100mm\n                                                                                                                                                                                                                                                                                                                                           Embossment\n                                                                                                                                                                                                        Cover Tape\n                                                                                                                                                                                                        min. 400mm\n\n\n                                                Tape Type A0    B0    W     T    T1                                 T2    K0    P0   P1    P2   D0         D0/2                                      D1   d     E    S    F                                          Qty.                                        A             B            C            D            N              W1          W2            W3           W3\n                                                                                                                                                                                                     (mm) (mm) (mm) (mm) (mm) Material                                                                                                                                                                                                   Material\n                                                           (mm) (mm) (mm) (mm) (mm)                                  (mm) (mm) (mm) (mm) (mm) (mm)          (mm)                                                                                                     (pcs.)                                       (mm)          (mm)         (mm)         (mm)         (mm)           (mm)        (mm)          (mm)         (mm)\n                Tolerance                                 typ.  typ.  ±0,3 ±0,05 ±0,0025                            typ.  typ.  ±0,1 ±0,1 ±0,15 +0,1/ -0,0 +0,05/-0,0                                min. ±0,05 ±0,1 ±0,1 ±0,15                                                                Tolerance         max           min.         min.         min.         typ.           +2,0        max           min.         max\n                Value                           3         13,21 18,00 32,00 0,60 0,05                               13,50 13,00 4,00 24,00 2,00 1,50       0,75                                      2,00 0,20 1,75 28,40 14,20 Polystyrene                          200                       Value             330,00        1,50         12,80        20,20        101,60         32,40       38,40         31,90        35,40        PS\n\n\n\n\n                                                                                                                                                                                                                                                                                                          CHECKED             REVISION            DATE (YYYY-MM-DD)          GENERAL TOLERANCE                        PROJECTION\n                                                                                                                                                                                                                                                                                                                                                                                                                      METHOD\n                                                                                                                                                                                                                                                                                                          IKK                 007.001             2023-07-11                 ISO 2768-1m\n\n                                                                                                                                                                                                                                                                                                          DESCRIPTION\n\n\n                                                                                                                                                                                                                                                                                                          WE-FB Flyback Transformer\n                                                                                                                                                                                                                                            Wurth Electronics Midcom Inc. Headquarters\n                                                                                                                                                                                                                                            121 Airport Drive\n                                                                                                                                                                                                                                                                                                          suitable for LT3573/ LT3574/                                                                   ORDER CODE\n\n                                                                                                                                                                                                                                            57201 Watertown, SD\n                                                                                                                                                                                                                                            United States                                                 LT3575/ LT3748                                                                                 750311423\n                                                                                                                                                                                                                                            Phone: +1 (605) 886-4385                                      SIZE/TYPE                                                          BUSINESS UNIT               STATUS                                         PAGE\n                                                                                                                                                                                                                                            www.we-online.com/midcom\n                                                                                                                                                                                                                                            midcom@we-online.com                                          EP13                                                               Midcom                      Draft                                          3/7\n\nThis electronic component has been designed and developed for usage in general electronic equipment only. This product is not authorized for use in equipment where a higher safety standard and reliability standard is especially required or where a failure of the product is reasonably expected to cause severe personal injury or death, unless the parties have executed an agreement specifically governing such use. Moreover Würth Elektronik eiSos GmbH\n& Co KG products are neither designed nor intended for use in areas such as military, aerospace, aviation, nuclear control, submarine, transportation, transportation signal, disaster prevention, medical, public information network etc.. Würth Elektronik eiSos GmbH & Co KG must be informed about the intent of such usage before the design-in stage. In addition, sufficient reliability evaluation checks for safety must be performed on every electronic\ncomponent which is used in electrical circuits that require high safety and reliability functions or performance.\n"
+    },
+    "p3": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/750311423/750311423_数据手册.pdf",
+      "page_idx": 3,
+      "physical_page": 4,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "   Packaging Specification - Inner Carton: [mm]                                                                                                                                                                                                                                                  Packaging Specification - Carton: [mm]\n\n\n\n\n                                                                                                                                                                                                                          H IC\n                                                                                                                                                                                                                                                                                                                                                                                                                               HC\n\n\n\n                                                                                                            W                                                                                    L IC\n                                                                                                                IC\n\n                                                                                                                                                                                                                                                                                                                                              W\n                                                                                                                                                                                                                                                                                                                                                   C                                                      LC\n\n\n\n                                                     LIC                                 WIC                                  HIC                                 No. of                              Qty.                                                                                                            LC                  WC               HC                No. of                                Qty.\n                                                                                                                                                                                                                                           Material                                                                                                                                                                                   Material\n                                                      (mm)                                (mm)                                 (mm)                               Reel (pcs.)                         (pcs.)                                                                                                           (mm)                (mm)             (mm)             Inner Carton (pcs.)                   (pcs.)\n                Tolerance                            typ.                                typ.                                 typ.                                                                                                                                                             Tolerance              typ.                typ.             typ.\n                Value                                362,00                              339,00                               60,00                               1                                   200                                  Paper                                               Value                  365,12              342,90           253,00            4                                     800                Paper\n\n\n\n\n                                                                                                                                                                                                                                                                                                          CHECKED              REVISION            DATE (YYYY-MM-DD)         GENERAL TOLERANCE                        PROJECTION\n                                                                                                                                                                                                                                                                                                                                                                                                                      METHOD\n                                                                                                                                                                                                                                                                                                          IKK                  007.001             2023-07-11                ISO 2768-1m\n\n                                                                                                                                                                                                                                                                                                          DESCRIPTION\n\n\n                                                                                                                                                                                                                                                                                                          WE-FB Flyback Transformer\n                                                                                                                                                                                                                                            Wurth Electronics Midcom Inc. Headquarters\n                                                                                                                                                                                                                                            121 Airport Drive\n                                                                                                                                                                                                                                                                                                          suitable for LT3573/ LT3574/                                                                   ORDER CODE\n\n                                                                                                                                                                                                                                            57201 Watertown, SD\n                                                                                                                                                                                                                                            United States                                                 LT3575/ LT3748                                                                                 750311423\n                                                                                                                                                                                                                                            Phone: +1 (605) 886-4385                                      SIZE/TYPE                                                          BUSINESS UNIT               STATUS                                         PAGE\n                                                                                                                                                                                                                                            www.we-online.com/midcom\n                                                                                                                                                                                                                                            midcom@we-online.com                                          EP13                                                               Midcom                      Draft                                          4/7\n\nThis electronic component has been designed and developed for usage in general electronic equipment only. This product is not authorized for use in equipment where a higher safety standard and reliability standard is especially required or where a failure of the product is reasonably expected to cause severe personal injury or death, unless the parties have executed an agreement specifically governing such use. Moreover Würth Elektronik eiSos GmbH\n& Co KG products are neither designed nor intended for use in areas such as military, aerospace, aviation, nuclear control, submarine, transportation, transportation signal, disaster prevention, medical, public information network etc.. Würth Elektronik eiSos GmbH & Co KG must be informed about the intent of such usage before the design-in stage. In addition, sufficient reliability evaluation checks for safety must be performed on every electronic\ncomponent which is used in electrical circuits that require high safety and reliability functions or performance.\n"
+    },
+    "p4": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/750311423/750311423_数据手册.pdf",
+      "page_idx": 4,
+      "physical_page": 5,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "   Classification Reflow Profile for SMT components:                                                                                                                                                                           Classification Reflow Soldering Profile:\n                                                                                                                                                                                                                                Profile Feature                                                                     Value\n                                                                                                                                                                                                                                Preheat Temperature Min                                              Ts min 150 °C\n                                                                                                                                                                                                                                Preheat Temperature Max                                             Ts max 200 °C\n                    Tp                                                                                                                                                                                                          Preheat Time ts from Ts min to Ts max                                   ts          60 - 120 seconds\n                                                                                                                                                                                       TC –5°C\n                                                                             Max. Ramp Up Rate                                                                tp                                                                Ramp-up Rate (TL to TP)                                                             3 °C/ second max.\n                                                                             Max. Ramp Down Rate                                                                                                                                Liquidous Temperature                                                  TL           217 °C\n                    TL                                                                                                                                                                                                          Time tL maintained above TL                                             tL          60 - 150 seconds\n                                                                                                                                                        tL                                                                                                                                             Tp           Tp ≤ Tc, see Table below\n                                   Ts max                                                                                                                                                                                       Peak package body temperature\n                                                                 Preheat Area\n\n\n\n\n      Temperature\n                                                                                                                                                                                                                                Time within 5°C of actual peak                                         tp           20 - 30 seconds\n                                                                                                                                                                                                                                temperature\n\n                                   Ts min                                                                                                                                                                                       Ramp-down Rate (TP to TL)                                                           6 °C/ second max.\n                                                                                                                                                                                                                                Time 25°C to peak temperature                                                       8 minutes max.\n\n                                                                              tS                                                                                                                                               refer to IPC/ JEDEC J-STD-020E\n\n                                                                                                                                                                                                                               Package Classification Reflow Temperature (Tc):\n                                                                                                                                                                                                                                                                                                          Volume mm³                                            Volume mm³                                          Volume mm³\n                                                                                                                                                                                                                                Properties                                                                <350                                                  350-2000                                            >2000\n                     25\n                                                              Time 25°C to Peak                                                                                                                                                 PB-Free Assembly | Package Thickness 260 °C                                                                                     260 °C                                              260 °C\n                                                                                                                                                                                                                                < 1.6 mm\n                                                                                                               Time\n                                                                                                                                                                                                                                PB-Free Assembly | Package Thickness 260 °C                                                                                     250 °C                                              245 °C\n                                                                                                                                                                                                                                1.6 mm - 2.5 mm\n\n                                                                                                                                                                                                                                PB-Free Assembly | Package Thickness 250 °C                                                                                     245 °C                                              245 °C\n                                                                                                                                                                                                                                > 2.5 mm\n\n                                                                                                                                                                                                                               refer to IPC/ JEDEC J-STD-020E\n\n\n\n\n                                                                                                                                                                                                                                                                                                          CHECKED             REVISION            DATE (YYYY-MM-DD)          GENERAL TOLERANCE                        PROJECTION\n                                                                                                                                                                                                                                                                                                                                                                                                                      METHOD\n                                                                                                                                                                                                                                                                                                          IKK                 007.001             2023-07-11                 ISO 2768-1m\n\n                                                                                                                                                                                                                                                                                                          DESCRIPTION\n\n\n                                                                                                                                                                                                                                                                                                          WE-FB Flyback Transformer\n                                                                                                                                                                                                                                            Wurth Electronics Midcom Inc. Headquarters\n                                                                                                                                                                                                                                            121 Airport Drive\n                                                                                                                                                                                                                                                                                                          suitable for LT3573/ LT3574/                                                                   ORDER CODE\n\n                                                                                                                                                                                                                                            57201 Watertown, SD\n                                                                                                                                                                                                                                            United States                                                 LT3575/ LT3748                                                                                 750311423\n                                                                                                                                                                                                                                            Phone: +1 (605) 886-4385                                      SIZE/TYPE                                                          BUSINESS UNIT               STATUS                                         PAGE\n                                                                                                                                                                                                                                            www.we-online.com/midcom\n                                                                                                                                                                                                                                            midcom@we-online.com                                          EP13                                                               Midcom                      Draft                                          5/7\n\nThis electronic component has been designed and developed for usage in general electronic equipment only. This product is not authorized for use in equipment where a higher safety standard and reliability standard is especially required or where a failure of the product is reasonably expected to cause severe personal injury or death, unless the parties have executed an agreement specifically governing such use. Moreover Würth Elektronik eiSos GmbH\n& Co KG products are neither designed nor intended for use in areas such as military, aerospace, aviation, nuclear control, submarine, transportation, transportation signal, disaster prevention, medical, public information network etc.. Würth Elektronik eiSos GmbH & Co KG must be informed about the intent of such usage before the design-in stage. In addition, sufficient reliability evaluation checks for safety must be performed on every electronic\ncomponent which is used in electrical circuits that require high safety and reliability functions or performance.\n"
+    },
+    "p5": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/750311423/750311423_数据手册.pdf",
+      "page_idx": 5,
+      "physical_page": 6,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "Cautions and Warnings:                                                                                                                                                                                                               Potting:\n\n                                                                                                                                                                                                                                     • If the product is potted in the customer application, the potting material might shrink or expand during and after hardening. Shrinking\nThe following conditions apply to all goods within the product series of WE-FB of Würth                                                                                                                                                could lead to an incomplete seal, allowing contaminants into the core. Expansion could damage the component. We recommend a\nElektronik eiSos GmbH & Co. KG:                                                                                                                                                                                                        manual inspection after potting to avoid these effects.\n\nGeneral:                                                                                                                                                                                                                             Storage Conditions:\n\n• This electronic component is designed and manufactured for use in general electronic equipment.                                                                                                                                    • A storage of Würth Elektronik products for longer than 12 months is not recommended. Within other effects, the terminals may suffer\n• Würth Elektronik must be asked for written approval (following the PPAP procedure) before incorporating the components into any                                                                                                      degradation, resulting in bad solderability. Therefore, all products shall be used within the period of 12 months based on the day of\n  equipment in fields such as military, aerospace, aviation, nuclear control, submarine, transportation (automotive control, train control,                                                                                            shipment.\n  ship control), transportation signal, disaster prevention, medical, public information network etc. where higher safety and reliability are                                                                                        • Do not expose the components to direct sunlight.\n  especially required and/or if there is the possibility of direct damage or human injury.                                                                                                                                           • The storage conditions in the original packaging are defined according to DIN EN 61760-2.\n• Electronic components that will be used in safety-critical or high-reliability applications, should be pre-evaluated by the customer.                                                                                              • The storage conditions stated in the original packaging apply to the storage time and not to the transportation time of the components.\n• The component is designed and manufactured to be used within the datasheet specified values. If the usage and operation conditions\n  specified in the datasheet are not met, the wire insulation may be damaged or dissolved.                                                                                                                                           Packaging:\n• Do not drop or impact the components, as the component may be damaged.\n• Würth Elektronik products are qualified according to international standards, which are listed in each product reliability report. Würth                                                                                           • The packaging specifications apply only to purchase orders comprising whole packaging units. If the ordered quantity exceeds or is\n  Elektronik does not warrant any customer qualified product characteristics beyond Würth Elektroniks’ specifications, for its validity and                                                                                            lower than the specified packaging unit, packaging in accordance with the packaging specifications cannot be ensured.\n  sustainability over time.\n• The responsibility for the applicability of the customer specific products and use in a particular customer design is always within the                                                                                            Handling:\n  authority of the customer. All technical specifications for standard products also apply to customer specific products.\n                                                                                                                                                                                                                                     • Violation of the technical product specifications such as exceeding the nominal rated current will void the warranty.\nProduct specific:                                                                                                                                                                                                                    • Applying currents with audio-frequency signals may result in audible noise due to the magnetostrictive material properties.\n                                                                                                                                                                                                                                     • Due to heavy weight of the components, strong forces and high accelerations may have the effect to damage the electrical connection\nSoldering:                                                                                                                                                                                                                             or to harm the circuit board and will void the warranty.\n                                                                                                                                                                                                                                     • The temperature rise of the component must be taken into consideration. The operating temperature is comprised of ambient\n• The solder profile must comply with the technical product specifications. All other profiles will void the warranty.                                                                                                                 temperature and temperature rise of the component.The operating temperature of the component shall not exceed the maximum\n• All other soldering methods are at the customers’ own risk.                                                                                                                                                                          temperature specified.\n• Strong forces which may affect the coplanarity of the components’ electrical connection with the PCB (i.e. pins), can damage the\n  component, resulting in avoid of the warranty.                                                                                                                                                                                     These cautions and warnings comply with the state of the scientific and technical knowledge and are believed to be accurate and reliable.\n                                                                                                                                                                                                                                     However, no responsibility is assumed for inaccuracies or incompleteness.\nCleaning and Washing:\n• Washing agents used during the production to clean the customer application might damage or change the characteristics of the wire\n  insulation, marking or plating. Washing agents may have a negative effect on the long-term functionality of the product.\n• Using a brush during the cleaning process may break the wire due to its small diameter. Therefore, we do not recommend using a brush\n  during the PCB cleaning process.\n\n\n\n\n                                                                                                                                                                                                                                                                                                          CHECKED             REVISION            DATE (YYYY-MM-DD)          GENERAL TOLERANCE                        PROJECTION\n                                                                                                                                                                                                                                                                                                                                                                                                                      METHOD\n                                                                                                                                                                                                                                                                                                          IKK                 007.001             2023-07-11                 ISO 2768-1m\n\n                                                                                                                                                                                                                                                                                                          DESCRIPTION\n\n\n                                                                                                                                                                                                                                                                                                          WE-FB Flyback Transformer\n                                                                                                                                                                                                                                            Wurth Electronics Midcom Inc. Headquarters\n                                                                                                                                                                                                                                            121 Airport Drive\n                                                                                                                                                                                                                                                                                                          suitable for LT3573/ LT3574/                                                                   ORDER CODE\n\n                                                                                                                                                                                                                                            57201 Watertown, SD\n                                                                                                                                                                                                                                            United States                                                 LT3575/ LT3748                                                                                 750311423\n                                                                                                                                                                                                                                            Phone: +1 (605) 886-4385                                      SIZE/TYPE                                                          BUSINESS UNIT               STATUS                                         PAGE\n                                                                                                                                                                                                                                            www.we-online.com/midcom\n                                                                                                                                                                                                                                            midcom@we-online.com                                          EP13                                                               Midcom                      Draft                                          6/7\n\nThis electronic component has been designed and developed for usage in general electronic equipment only. This product is not authorized for use in equipment where a higher safety standard and reliability standard is especially required or where a failure of the product is reasonably expected to cause severe personal injury or death, unless the parties have executed an agreement specifically governing such use. Moreover Würth Elektronik eiSos GmbH\n& Co KG products are neither designed nor intended for use in areas such as military, aerospace, aviation, nuclear control, submarine, transportation, transportation signal, disaster prevention, medical, public information network etc.. Würth Elektronik eiSos GmbH & Co KG must be informed about the intent of such usage before the design-in stage. In addition, sufficient reliability evaluation checks for safety must be performed on every electronic\ncomponent which is used in electrical circuits that require high safety and reliability functions or performance.\n"
+    },
+    "p6": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/750311423/750311423_数据手册.pdf",
+      "page_idx": 6,
+      "physical_page": 7,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "Important Notes                                                                                                                                                                                                                      6. Product Life Cycle\n\n                                                                                                                                                                                                                                     Due to technical progress and economical evaluation we also reserve the right to discontinue production and delivery of products. As a\nThe following conditions apply to all goods within the product range of Würth Elektronik                                                                                                                                             standard reporting procedure of the Product Termination Notification (PTN) according to the JEDEC-Standard we will inform at an early stage\neiSos GmbH & Co. KG:                                                                                                                                                                                                                 about inevitable product discontinuance. According to this we cannot guarantee that all products within our product range will always be\n                                                                                                                                                                                                                                     available. Therefore it needs to be verified with the field sales engineer or the internal sales person in charge about the current product\n1. General Customer Responsibility                                                                                                                                                                                                   availability expectancy before or when the product for application design-in disposal is considered. The approach named above does not\n                                                                                                                                                                                                                                     apply in the case of individual agreements deviating from the foregoing for customer-specific products.\nSome goods within the product range of Würth Elektronik eiSos GmbH & Co. KG contain statements regarding general suitability for certain\napplication areas. These statements about suitability are based on our knowledge and experience of typical requirements concerning the                                                                                               7. Property Rights\nareas, serve as general guidance and cannot be estimated as binding statements about the suitability for a customer application. The\nresponsibility for the applicability and use in a particular customer design is always solely within the authority of the customer. Due to this                                                                                      All the rights for contractual products produced by Würth Elektronik eiSos GmbH & Co. KG on the basis of ideas, development contracts as\nfact it is up to the customer to evaluate, where appropriate to investigate and decide whether the device with the specific product                                                                                                  well as models or templates that are subject to copyright, patent or commercial protection supplied to the customer will remain with Würth\ncharacteristics described in the product specification is valid and suitable for the respective customer application or not.                                                                                                         Elektronik eiSos GmbH & Co. KG. Würth Elektronik eiSos GmbH & Co. KG does not warrant or represent that any license, either expressed or\n                                                                                                                                                                                                                                     implied, is granted under any patent right, copyright, mask work right, or other intellectual property right relating to any combination,\n2. Customer Responsibility related to Specific, in particular Safety-Relevant Applications                                                                                                                                           application, or process in which Würth Elektronik eiSos GmbH & Co. KG components or services are used.\n\nIt has to be clearly pointed out that the possibility of a malfunction of electronic components or failure before the end of the usual lifetime                                                                                      8. General Terms and Conditions\ncannot be completely eliminated in the current state of the art, even if the products are operated within the range of the specifications.\nIn certain customer applications requiring a very high level of safety and especially in customer applications in which the malfunction or                                                                                           Unless otherwise agreed in individual contracts, all orders are subject to the current version of the “General Terms and Conditions of Würth\nfailure of an electronic component could endanger human life or health it must be ensured by most advanced technological aid of suitable                                                                                             Elektronik eiSos Group”, last version available at www.we-online.com.\ndesign of the customer application that no injury or damage is caused to third parties in the event of malfunction or failure of an electronic\ncomponent. Therefore, customer is cautioned to verify that data sheets are current before placing orders. The current data sheets can be\ndownloaded at www.we-online.com.\n\n3. Best Care and Attention\nAny product-specific notes, cautions and warnings must be strictly observed. Any disregard will result in the loss of warranty.\n\n4. Customer Support for Product Specifications\nSome products within the product range may contain substances which are subject to restrictions in certain jurisdictions in order to serve\nspecific technical requirements. Necessary information is available on request. In this case the field sales engineer or the internal sales\nperson in charge should be contacted who will be happy to support in this matter.\n\n5. Product R&D\nDue to constant product improvement product specifications may change from time to time. As a standard reporting procedure of the\nProduct Change Notification (PCN) according to the JEDEC-Standard inform about minor and major changes. In case of further queries\nregarding the PCN, the field sales engineer or the internal sales person in charge should be contacted. The basic responsibility of the\ncustomer as per Section 1 and 2 remains unaffected.\n\n\n                                                                                                                                                                                                                                                                                                          CHECKED             REVISION            DATE (YYYY-MM-DD)          GENERAL TOLERANCE                        PROJECTION\n                                                                                                                                                                                                                                                                                                                                                                                                                      METHOD\n                                                                                                                                                                                                                                                                                                          IKK                 007.001             2023-07-11                 ISO 2768-1m\n\n                                                                                                                                                                                                                                                                                                          DESCRIPTION\n\n\n                                                                                                                                                                                                                                                                                                          WE-FB Flyback Transformer\n                                                                                                                                                                                                                                            Wurth Electronics Midcom Inc. Headquarters\n                                                                                                                                                                                                                                            121 Airport Drive\n                                                                                                                                                                                                                                                                                                          suitable for LT3573/ LT3574/                                                                   ORDER CODE\n\n                                                                                                                                                                                                                                            57201 Watertown, SD\n                                                                                                                                                                                                                                            United States                                                 LT3575/ LT3748                                                                                 750311423\n                                                                                                                                                                                                                                            Phone: +1 (605) 886-4385                                      SIZE/TYPE                                                          BUSINESS UNIT               STATUS                                         PAGE\n                                                                                                                                                                                                                                            www.we-online.com/midcom\n                                                                                                                                                                                                                                            midcom@we-online.com                                          EP13                                                               Midcom                      Draft                                          7/7\n\nThis electronic component has been designed and developed for usage in general electronic equipment only. This product is not authorized for use in equipment where a higher safety standard and reliability standard is especially required or where a failure of the product is reasonably expected to cause severe personal injury or death, unless the parties have executed an agreement specifically governing such use. Moreover Würth Elektronik eiSos GmbH\n& Co KG products are neither designed nor intended for use in areas such as military, aerospace, aviation, nuclear control, submarine, transportation, transportation signal, disaster prevention, medical, public information network etc.. Würth Elektronik eiSos GmbH & Co KG must be informed about the intent of such usage before the design-in stage. In addition, sufficient reliability evaluation checks for safety must be performed on every electronic\ncomponent which is used in electrical circuits that require high safety and reliability functions or performance.\n"
+    }
+  }
+}

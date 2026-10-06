@@ -1,0 +1,28 @@
+{
+  "schema": "test-method-1",
+  "id": "thermal_impedance",
+  "version": "1.0.0",
+  "family": "mosfet_n_channel",
+  "keys": [
+    "thermal_impedance_pulse"
+  ],
+  "figures": [
+    "5"
+  ],
+  "stage": "interface_or_definition_required",
+  "authoring": "GPT-assisted engineering draft",
+  "qwen_qualified": false,
+  "live_validated": false,
+  "meaning": "需热端口与6种占空比脉冲协议；已有热曲线数据不等于模型具备热响应",
+  "reason": "需热端口与6种占空比脉冲协议；已有热曲线数据不等于模型具备热响应",
+  "required": [
+    "明确端口语义",
+    "原手册条件及证据",
+    "测量单位与参考数据",
+    "独立审查",
+    "已知电路校准",
+    "真实DUT试运行"
+  ],
+  "acceptance_policy": "手册极限与典型值容差分别核对；不存在的容差保持pending",
+  "reuse_scope": "参数化方法不是任何器件已验证证明；具体契约需校准并试跑"
+}

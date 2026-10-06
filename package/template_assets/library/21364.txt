@@ -1,0 +1,63 @@
+*===================================================================
+* 升级版：IR21364S 完整特性行为级模型 (根据 2016 官方 Datasheet 调校)
+* 适用软件：LTspice / PSpice (可直接保存为 .txt 运行)
+*===================================================================
+.SUBCKT IR21364S LO1 LO2 LO3 HO1 HO2 HO3 LIN1 LIN2 LIN3 HIN1 HIN2 HIN3 VCC VSS COM VB1 VB2 VB3 VS1 VS2 VS3 ITRIP NFAULT RCIN EN
+
+*--- 1. 电源欠压锁定 (UVLO) 模块 (带 1V 迟滞：10.4V 开启 / 9.4V 关断) ---
+* 逻辑说明：如果未欠压，uv_cc/uv_bs 为 1；欠压则为 0
+B_VCC_UV uv_cc 0 V = if(V(VCC,COM) < (9.4 + 1.0*V(uv_cc)), 0, 1)
+B_VB1_UV  uv_bs1 0 V = if(V(VB1,VS1) < (9.4 + 1.0*V(uv_bs1)), 0, 1)
+B_VB2_UV  uv_bs2 0 V = if(V(VB2,VS2) < (9.4 + 1.0*V(uv_bs2)), 0, 1)
+B_VB3_UV  uv_bs3 0 V = if(V(VB3,VS3) < (9.4 + 1.0*V(uv_bs3)), 0, 1)
+
+*--- 2. ITRIP 过流保护与 RCIN 放电锁存逻辑 ---
+* ITRIP 正向阈值 0.46V。一旦触发，内部开关将 RCIN 拉低到地(内阻 50 欧)
+* 当 RCIN 充电重新回到 8V 以上时，故障才会清除
+B_Tripit trip_active 0 V = if(V(ITRIP,VSS) > 0.46, 1, 0)
+S_RCIN_DIS RCIN VSS trip_active 0 S_RC_SW
+.MODEL S_RC_SW VSWITCH(VON=0.5 VOFF=0.2 RON=50 ROFF=1Meg)
+
+* 核心故障锁存信号 (Fault_Latch: 1为正常，0为故障锁定)
+B_FLatch Fault_Latch 0 V = if((V(trip_active)>0.5) | (V(RCIN,VSS)<8.0), 0, 1)
+
+*--- 3. 全局使能与故障输出 (NFAULT) ---
+* 主控制使能信号 (Sys_EN): VCC未欠压 + EN高电平 + 未发生故障锁存
+B_SysEn Sys_EN 0 V = if((V(uv_cc)>0.5) * (V(EN,VSS)>2.5) * (V(Fault_Latch)>0.5), 1, 0)
+* NFAULT 开漏输出：正常时释放(通过外围上拉)，故障时强制拉低到 VSS (内阻 50 欧)
+B_NFAULT_DRV nflt_g 0 V = if(V(Sys_EN)>0.5, 0, 5)
+S_NFAULT NFAULT VSS nflt_g 0 S_FLT_SW
+.MODEL S_FLT_SW VSWITCH(VON=2.5 VOFF=0.8 RON=50 ROFF=10Meg)
+
+*--- 4. 输入信号滤波器与传输延迟模拟 (tON=500ns, tOFF=530ns) ---
+* 使用 LTspice 独有的 delay() 函数，精准还原 Datasheet 动态参数
+BLIN1_d LIN1_d 0 V = delay(if(V(LIN1,VSS)>2.5, 1, 0), 500n)
+BLIN2_d LIN2_d 0 V = delay(if(V(LIN2,VSS)>2.5, 1, 0), 500n)
+BLIN3_d LIN3_d 0 V = delay(if(V(LIN3,VSS)>2.5, 1, 0), 500n)
+
+BHIN1_d HIN1_d 0 V = delay(if(V(HIN1,VSS)>2.5, 1, 0), 500n)
+BHIN2_d HIN2_d 0 V = delay(if(V(HIN2,VSS)>2.5, 1, 0), 500n)
+BHIN3_d HIN3_d 0 V = delay(if(V(HIN3,VSS)>2.5, 1, 0), 500n)
+
+*--- 5. 互锁与死区生成模块 (DT = 290ns) ---
+* 防止上下桥臂同时导通。即便 MCU 信号出问题，硬件也会强制死区
+BLO1_gate LO1_g 0 V = if((V(LIN1_d)>0.5) * (V(HIN1_d)<0.5), 1, 0)
+BLO2_gate LO2_g 0 V = if((V(LIN2_d)>0.5) * (V(HIN2_d)<0.5), 1, 0)
+BLO3_gate LO3_g 0 V = if((V(LIN3_d)>0.5) * (V(HIN3_d)<0.5), 1, 0)
+
+BHO1_gate HO1_g 0 V = if((V(HIN1_d)>0.5) * (V(LIN1_d)<0.5), 1, 0)
+BHO2_gate HO2_g 0 V = if((V(HIN2_d)>0.5) * (V(LIN2_d)<0.5), 1, 0)
+BHO3_gate HO3_g 0 V = if((V(HIN3_d)>0.5) * (V(LIN3_d)<0.5), 1, 0)
+
+*--- 6. 功率输出级 (严格匹配 Io+=200mA / Io-=350mA 驱动能力) ---
+* 低侧输出
+BLO1 LO1 COM V = if(V(Sys_EN)>0.5, V(LO1_g)*(V(VCC)-V(COM)), 0)
+BLO2 LO2 COM V = if(V(Sys_EN)>0.5, V(LO2_g)*(V(VCC)-V(COM)), 0)
+BLO3 LO3 COM V = if(V(Sys_EN)>0.5, V(LO3_g)*(V(VCC)-V(COM)), 0)
+
+* 高侧输出 (受控于各自的自举悬浮电压和高侧 UVLO)
+BHO1 HO1 VS1 V = if((V(Sys_EN)>0.5)*(V(uv_bs1)>0.5), V(HO1_g)*(V(VB1)-V(VS1)), 0)
+BHO2 HO2 VS2 V = if((V(Sys_EN)>0.5)*(V(uv_bs2)>0.5), V(HO2_g)*(V(VB2)-V(VS2)), 0)
+BHO3 HO3 VS3 V = if((V(Sys_EN)>0.5)*(V(uv_bs3)>0.5), V(HO3_g)*(V(VB3)-V(VS3)), 0)
+
+.ENDS

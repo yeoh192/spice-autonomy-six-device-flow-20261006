@@ -1,0 +1,1732 @@
+{
+  "review_status": "pending_table_row_and_series_review",
+  "sources": [
+    {
+      "kind": "datasheet_pdf",
+      "path": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+      "sha256": "4272aefd6383ccab0790755ef94f526441c93ccf928df7532889dc31cc64454e"
+    },
+    {
+      "kind": "extracted_electrical",
+      "path": "/Users/192y/电气/SPICE六器件试点/run_20261002-184233/BUK7K52-60E/input/electrical.json",
+      "sha256": "a165de3c28c86ee03c2fb64c72b64e596c7c876e3332566971660d05fb354397"
+    }
+  ],
+  "items": [
+    {
+      "id": "parameter:vds",
+      "label": "drain_source_voltage",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "p1"
+      ],
+      "reference_evidence": {
+        "id": "vds",
+        "key": "drain_source_voltage",
+        "values": {
+          "max": 60
+        },
+        "unit": "V",
+        "conditions": "Tj=25..175°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "p1"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:vdgr",
+      "label": "drain_gate_voltage",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "p1"
+      ],
+      "reference_evidence": {
+        "id": "vdgr",
+        "key": "drain_gate_voltage",
+        "values": {
+          "max": 60
+        },
+        "unit": "V",
+        "conditions": "RGS=20 kΩ",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "p1"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:id25",
+      "label": "drain_current",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "p1"
+      ],
+      "reference_evidence": {
+        "id": "id25",
+        "key": "drain_current",
+        "values": {
+          "max": 15.4
+        },
+        "unit": "A",
+        "conditions": "Tmb=25°C; VGS=10 V",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "p1"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:id100",
+      "label": "drain_current",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "p1"
+      ],
+      "reference_evidence": {
+        "id": "id100",
+        "key": "drain_current",
+        "values": {
+          "max": 12.6
+        },
+        "unit": "A",
+        "conditions": "Tmb=100°C; VGS=10 V",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "p1"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:idm",
+      "label": "peak_drain_current",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "p1"
+      ],
+      "reference_evidence": {
+        "id": "idm",
+        "key": "peak_drain_current",
+        "values": {
+          "max": 71
+        },
+        "unit": "A",
+        "conditions": "Tmb=25°C; tp≤10 μs",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "p1"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:ptot",
+      "label": "total_power_dissipation",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "p1"
+      ],
+      "reference_evidence": {
+        "id": "ptot",
+        "key": "total_power_dissipation",
+        "values": {
+          "max": 32
+        },
+        "unit": "W",
+        "conditions": "Tmb=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "p1"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:vgs",
+      "label": "gate_source_voltage",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "p1"
+      ],
+      "reference_evidence": {
+        "id": "vgs",
+        "key": "gate_source_voltage",
+        "values": {
+          "min": -20,
+          "max": 20
+        },
+        "unit": "V",
+        "conditions": "DC; Tj≤175°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "p1"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:tj",
+      "label": "junction_temperature",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "b33",
+        "p1",
+        "p2"
+      ],
+      "reference_evidence": {
+        "id": "tj",
+        "key": "junction_temperature",
+        "values": {
+          "min": -55,
+          "max": 175
+        },
+        "unit": "°C",
+        "conditions": "",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "b33",
+          "p1",
+          "p2"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:tstg",
+      "label": "storage_temperature",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "b33",
+        "p1",
+        "p2"
+      ],
+      "reference_evidence": {
+        "id": "tstg",
+        "key": "storage_temperature",
+        "values": {
+          "min": -55,
+          "max": 175
+        },
+        "unit": "°C",
+        "conditions": "",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "b33",
+          "p1",
+          "p2"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:eas",
+      "label": "nonrepetitive_avalanche_energy",
+      "kind": "constraint",
+      "evidence": [
+        "b33",
+        "p2"
+      ],
+      "reference_evidence": {
+        "id": "eas",
+        "key": "nonrepetitive_avalanche_energy",
+        "values": {
+          "max": 11.6
+        },
+        "unit": "mJ",
+        "conditions": "ID=15.4 A; Vsup≤60 V; VGS=10 V; initial Tj=25°C; single pulse; Tj(max)=175°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b33",
+          "p2"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:rthjmb",
+      "label": "thermal_resistance_junction_mounting_base",
+      "kind": "test",
+      "evidence": [
+        "b51",
+        "p3"
+      ],
+      "reference_evidence": {
+        "id": "rthjmb",
+        "key": "thermal_resistance_junction_mounting_base",
+        "values": {
+          "max": 4.68
+        },
+        "unit": "K/W",
+        "conditions": "",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b51",
+          "p3"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:rthja",
+      "label": "thermal_resistance_junction_ambient",
+      "kind": "test",
+      "evidence": [
+        "b51",
+        "p3"
+      ],
+      "reference_evidence": {
+        "id": "rthja",
+        "key": "thermal_resistance_junction_ambient",
+        "values": {
+          "typ": 95
+        },
+        "unit": "K/W",
+        "conditions": "minimum PCB footprint; source mounting conditions apply",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b51",
+          "p3"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:breakdown-55",
+      "label": "drain_source_breakdown_voltage",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "breakdown-55",
+        "key": "drain_source_breakdown_voltage",
+        "values": {
+          "min": 54
+        },
+        "unit": "V",
+        "conditions": "FET1 and FET2; ID=250 μA; VGS=0 V; Tj=-55°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "已完成击穿下限验证，并接入统一回归；不证明温度曲线拟合。",
+      "bindings": [
+        "manual_breakdown_55"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_breakdown_55",
+          "expected": {
+            "current_A": 0.00025,
+            "temperature_C": -55.0,
+            "fixed_gate_source_V": 0,
+            "measurement": "v(d)",
+            "unit": "V",
+            "limits": {
+              "min": 54
+            },
+            "typical": null,
+            "kind": "dc_current_voltage"
+          }
+        }
+      ]
+    },
+    {
+      "id": "parameter:breakdown25",
+      "label": "drain_source_breakdown_voltage",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "breakdown25",
+        "key": "drain_source_breakdown_voltage",
+        "values": {
+          "min": 60
+        },
+        "unit": "V",
+        "conditions": "FET1 and FET2; ID=250 μA; VGS=0 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "已完成击穿下限验证，并接入统一回归；不证明温度曲线拟合。",
+      "bindings": [
+        "manual_breakdown25"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_breakdown25",
+          "expected": {
+            "current_A": 0.00025,
+            "temperature_C": 25.0,
+            "fixed_gate_source_V": 0,
+            "measurement": "v(d)",
+            "unit": "V",
+            "limits": {
+              "min": 60
+            },
+            "typical": null,
+            "kind": "dc_current_voltage"
+          }
+        }
+      ]
+    },
+    {
+      "id": "parameter:vth25",
+      "label": "gate_threshold_voltage",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "vth25",
+        "key": "gate_threshold_voltage",
+        "values": {
+          "min": 2.4,
+          "typ": 3,
+          "max": 4
+        },
+        "unit": "V",
+        "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "已有规格测试绑定",
+      "bindings": [
+        "threshold_25C"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "threshold_25C",
+          "expected": {
+            "kind": "threshold",
+            "temperature_C": 25,
+            "current_A": 0.001,
+            "typical": 3,
+            "limits": {
+              "min": 2.4,
+              "max": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "parameter:vth175",
+      "label": "gate_threshold_voltage",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "vth175",
+        "key": "gate_threshold_voltage",
+        "values": {
+          "min": 1
+        },
+        "unit": "V",
+        "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=175°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "已有规格测试绑定",
+      "bindings": [
+        "threshold_175C"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "threshold_175C",
+          "expected": {
+            "kind": "threshold",
+            "temperature_C": 175,
+            "current_A": 0.001,
+            "typical": null,
+            "limits": {
+              "min": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "parameter:vthcold",
+      "label": "gate_threshold_voltage",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "vthcold",
+        "key": "gate_threshold_voltage",
+        "values": {
+          "max": 4.5
+        },
+        "unit": "V",
+        "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=-55°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "已有规格测试绑定",
+      "bindings": [
+        "threshold_minus55C"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "threshold_minus55C",
+          "expected": {
+            "kind": "threshold",
+            "temperature_C": -55,
+            "current_A": 0.001,
+            "typical": null,
+            "limits": {
+              "max": 4.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "parameter:idss25",
+      "label": "drain_leakage_current",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "idss25",
+        "key": "drain_leakage_current",
+        "values": {
+          "typ": 0.02,
+          "max": 1
+        },
+        "unit": "μA",
+        "conditions": "FET1 and FET2; VDS=60 V; VGS=0 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+      "bindings": [
+        "manual_idss25"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_idss25",
+          "expected": {
+            "kind": "leakage",
+            "temperature_C": 25,
+            "vds_V": 60,
+            "vgs_V": 0,
+            "limits": {
+              "max": 1e-06
+            },
+            "typical": 2e-08,
+            "terminal": "drain"
+          }
+        }
+      ]
+    },
+    {
+      "id": "parameter:idss175",
+      "label": "drain_leakage_current",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "idss175",
+        "key": "drain_leakage_current",
+        "values": {
+          "max": 500
+        },
+        "unit": "μA",
+        "conditions": "FET1 and FET2; VDS=60 V; VGS=0 V; Tj=175°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+      "bindings": [
+        "manual_idss175"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_idss175",
+          "expected": {
+            "kind": "leakage",
+            "temperature_C": 175,
+            "vds_V": 60,
+            "vgs_V": 0,
+            "limits": {
+              "max": 0.0005
+            },
+            "typical": null,
+            "terminal": "drain"
+          }
+        }
+      ]
+    },
+    {
+      "id": "parameter:igss",
+      "label": "gate_leakage_current",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "igss",
+        "key": "gate_leakage_current",
+        "values": {
+          "typ": 2,
+          "max": 100
+        },
+        "unit": "nA",
+        "conditions": "FET1 and FET2; VGS=-20 V or +20 V (two rows, same values); VDS=0 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+      "bindings": [
+        "manual_igss_minus20",
+        "manual_igss_plus20"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_igss_minus20",
+          "expected": {
+            "kind": "leakage",
+            "temperature_C": 25,
+            "vds_V": 0,
+            "vgs_V": -20,
+            "limits": {
+              "max": 1.0000000000000001e-07
+            },
+            "typical": 2e-09,
+            "terminal": "gate"
+          }
+        },
+        {
+          "test_id": "manual_igss_plus20",
+          "expected": {
+            "kind": "leakage",
+            "temperature_C": 25,
+            "vds_V": 0,
+            "vgs_V": 20,
+            "limits": {
+              "max": 1.0000000000000001e-07
+            },
+            "typical": 2e-09,
+            "terminal": "gate"
+          }
+        }
+      ]
+    },
+    {
+      "id": "parameter:rdson25",
+      "label": "drain_source_on_resistance",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "rdson25",
+        "key": "drain_source_on_resistance",
+        "values": {
+          "typ": 35,
+          "max": 45
+        },
+        "unit": "mΩ",
+        "conditions": "FET1 and FET2; VGS=10 V; ID=5 A; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "已有规格测试绑定",
+      "bindings": [
+        "rdson_25C"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "rdson_25C",
+          "expected": {
+            "kind": "rdson",
+            "temperature_C": 25,
+            "current_A": 5,
+            "vgs_V": 10,
+            "typical": 0.035,
+            "limits": {
+              "max": 0.045
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "parameter:rdson175",
+      "label": "drain_source_on_resistance",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "rdson175",
+        "key": "drain_source_on_resistance",
+        "values": {
+          "typ": 78,
+          "max": 101
+        },
+        "unit": "mΩ",
+        "conditions": "FET1 and FET2; VGS=10 V; ID=5 A; Tj=175°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "已有规格测试绑定",
+      "bindings": [
+        "rdson_175C"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "rdson_175C",
+          "expected": {
+            "kind": "rdson",
+            "temperature_C": 175,
+            "current_A": 5,
+            "vgs_V": 10,
+            "typical": 0.078,
+            "limits": {
+              "max": 0.101
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "parameter:qg",
+      "label": "total_gate_charge",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "qg",
+        "key": "total_gate_charge",
+        "values": {
+          "typ": 9.2
+        },
+        "unit": "nC",
+        "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; VGS=10 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:qgs",
+      "label": "gate_source_charge",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "qgs",
+        "key": "gate_source_charge",
+        "values": {
+          "typ": 2
+        },
+        "unit": "nC",
+        "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; VGS=10 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:qgd",
+      "label": "gate_drain_charge",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "qgd",
+        "key": "gate_drain_charge",
+        "values": {
+          "typ": 3.5
+        },
+        "unit": "nC",
+        "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; VGS=10 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:plateau",
+      "label": "gate_plateau_voltage",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "plateau",
+        "key": "gate_plateau_voltage",
+        "values": {
+          "typ": 5
+        },
+        "unit": "V",
+        "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:ciss",
+      "label": "input_capacitance",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "ciss",
+        "key": "input_capacitance",
+        "values": {
+          "typ": 401,
+          "max": 535
+        },
+        "unit": "pF",
+        "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+      "bindings": [
+        "manual_ciss"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_ciss",
+          "expected": {
+            "kind": "capacitance",
+            "temperature_C": 25,
+            "vds_V": 25,
+            "vgs_V": 0,
+            "limits": {
+              "max": 5.35e-10
+            },
+            "typical": 4.01e-10,
+            "quantity": "ciss",
+            "frequency_Hz": 1000000.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "parameter:coss",
+      "label": "output_capacitance",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "coss",
+        "key": "output_capacitance",
+        "values": {
+          "typ": 73,
+          "max": 87
+        },
+        "unit": "pF",
+        "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+      "bindings": [
+        "manual_coss"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_coss",
+          "expected": {
+            "kind": "capacitance",
+            "temperature_C": 25,
+            "vds_V": 25,
+            "vgs_V": 0,
+            "limits": {
+              "max": 8.7e-11
+            },
+            "typical": 7.299999999999999e-11,
+            "quantity": "coss",
+            "frequency_Hz": 1000000.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "parameter:crss",
+      "label": "reverse_transfer_capacitance",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "crss",
+        "key": "reverse_transfer_capacitance",
+        "values": {
+          "typ": 53,
+          "max": 72
+        },
+        "unit": "pF",
+        "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+      "bindings": [
+        "manual_crss"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_crss",
+          "expected": {
+            "kind": "capacitance",
+            "temperature_C": 25,
+            "vds_V": 25,
+            "vgs_V": 0,
+            "limits": {
+              "max": 7.2e-11
+            },
+            "typical": 5.3e-11,
+            "quantity": "crss",
+            "frequency_Hz": 1000000.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "parameter:tdon",
+      "label": "turn_on_delay",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "tdon",
+        "key": "turn_on_delay",
+        "values": {
+          "typ": 4.3
+        },
+        "unit": "ns",
+        "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:tr",
+      "label": "rise_time",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "tr",
+        "key": "rise_time",
+        "values": {
+          "typ": 5.1
+        },
+        "unit": "ns",
+        "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:tdoff",
+      "label": "turn_off_delay",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "tdoff",
+        "key": "turn_off_delay",
+        "values": {
+          "typ": 8.4
+        },
+        "unit": "ns",
+        "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:tf",
+      "label": "fall_time",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "tf",
+        "key": "fall_time",
+        "values": {
+          "typ": 5.4
+        },
+        "unit": "ns",
+        "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:vsd",
+      "label": "body_diode_forward_voltage",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "vsd",
+        "key": "body_diode_forward_voltage",
+        "values": {
+          "typ": 0.83,
+          "max": 1.2
+        },
+        "unit": "V",
+        "conditions": "FET1 and FET2; IS=5 A; VGS=0 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "已有规格测试绑定",
+      "bindings": [
+        "body_diode_25C"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "body_diode_25C",
+          "expected": {
+            "kind": "body_diode",
+            "temperature_C": 25,
+            "current_A": 5,
+            "typical": 0.83,
+            "limits": {
+              "max": 1.2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "parameter:trr",
+      "label": "body_diode_reverse_recovery_time",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "trr",
+        "key": "body_diode_reverse_recovery_time",
+        "values": {
+          "typ": 17.6
+        },
+        "unit": "ns",
+        "conditions": "FET1 and FET2; IS=5 A; dIS/dt=-100 A/μs; VGS=0 V; VDS=30 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "parameter:qr",
+      "label": "body_diode_recovered_charge",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "qr",
+        "key": "body_diode_recovered_charge",
+        "values": {
+          "typ": 12.3
+        },
+        "unit": "nC",
+        "conditions": "FET1 and FET2; IS=5 A; dIS/dt=-100 A/μs; VGS=0 V; VDS=30 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "figure:1",
+      "label": "连续漏极电流随安装基座温度",
+      "kind": "constraint",
+      "evidence": [
+        "PDF Fig.1"
+      ],
+      "reference_evidence": {},
+      "reason": "额定范围图，需单独约束核对",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "figure:2",
+      "label": "归一化功耗随安装基座温度",
+      "kind": "constraint",
+      "evidence": [
+        "PDF Fig.2"
+      ],
+      "reference_evidence": {},
+      "reason": "额定范围图，需单独约束核对",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "figure:3",
+      "label": "雪崩电流与雪崩时间",
+      "kind": "constraint",
+      "evidence": [
+        "PDF Fig.3"
+      ],
+      "reference_evidence": {},
+      "reason": "额定范围图，需单独约束核对",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "figure:4",
+      "label": "安全工作区",
+      "kind": "constraint",
+      "evidence": [
+        "PDF Fig.4"
+      ],
+      "reference_evidence": {},
+      "reason": "额定范围图，需单独约束核对",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "figure:5",
+      "label": "瞬态热阻抗",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.5"
+      ],
+      "reference_evidence": {},
+      "reason": "6条热阻曲线已数字化；缺少热模型与测试生成器",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "figure:6",
+      "label": "输出特性",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.6"
+      ],
+      "reference_evidence": {},
+      "reason": "已有全部系列测试绑定",
+      "bindings": [
+        "fig6_vgs_0",
+        "fig6_vgs_1",
+        "fig6_vgs_2",
+        "fig6_vgs_3",
+        "fig6_vgs_4",
+        "fig6_vgs_5"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "fig6_vgs_0",
+          "expected": {
+            "kind": "output",
+            "condition": "VGS=4.5 V",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 25,
+            "vgs_V": 4.5,
+            "acceptance": null
+          }
+        },
+        {
+          "test_id": "fig6_vgs_1",
+          "expected": {
+            "kind": "output",
+            "condition": "VGS=5 V",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 25,
+            "vgs_V": 5.0,
+            "acceptance": null
+          }
+        },
+        {
+          "test_id": "fig6_vgs_2",
+          "expected": {
+            "kind": "output",
+            "condition": "VGS=5.5 V",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 25,
+            "vgs_V": 5.5,
+            "acceptance": null
+          }
+        },
+        {
+          "test_id": "fig6_vgs_3",
+          "expected": {
+            "kind": "output",
+            "condition": "VGS=6 V",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 25,
+            "vgs_V": 6.0,
+            "acceptance": null
+          }
+        },
+        {
+          "test_id": "fig6_vgs_4",
+          "expected": {
+            "kind": "output",
+            "condition": "VGS=6.5 V",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 25,
+            "vgs_V": 6.5,
+            "acceptance": null
+          }
+        },
+        {
+          "test_id": "fig6_vgs_5",
+          "expected": {
+            "kind": "output",
+            "condition": "VGS=10 V",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 25,
+            "vgs_V": 10.0,
+            "acceptance": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "figure:7",
+      "label": "转移特性",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.7"
+      ],
+      "reference_evidence": {},
+      "reason": "已有全部系列测试绑定",
+      "bindings": [
+        "fig7_tj25",
+        "fig7_tj175"
+      ],
+      "binding_complete": true,
+      "legacy_bindings": [
+        {
+          "test_id": "fig7_tj25",
+          "expected": {
+            "kind": "transfer",
+            "condition": "Tj=25 C",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 25.0,
+            "vds_V": 10,
+            "acceptance": null
+          }
+        },
+        {
+          "test_id": "fig7_tj175",
+          "expected": {
+            "kind": "transfer",
+            "condition": "Tj=175 C",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 175.0,
+            "vds_V": 10,
+            "acceptance": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "figure:8",
+      "label": "导通电阻随栅压",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.8"
+      ],
+      "reference_evidence": {},
+      "reason": "手册曲线尚未全部数字化或缺少测试生成器",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "figure:9",
+      "label": "亚阈值电流",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.9"
+      ],
+      "reference_evidence": {},
+      "reason": "手册曲线尚未全部数字化或缺少测试生成器",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "figure:10",
+      "label": "阈值电压随结温",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.10"
+      ],
+      "reference_evidence": {},
+      "reason": "手册曲线尚未全部数字化或缺少测试生成器",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "figure:11",
+      "label": "导通电阻随电流",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.11"
+      ],
+      "reference_evidence": {},
+      "reason": "手册曲线尚未全部数字化或缺少测试生成器",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "figure:12",
+      "label": "归一化导通电阻随结温",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.12"
+      ],
+      "reference_evidence": {},
+      "reason": "手册曲线尚未全部数字化或缺少测试生成器",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "figure:13",
+      "label": "栅极电荷曲线",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.13"
+      ],
+      "reference_evidence": {},
+      "reason": "手册曲线尚未全部数字化或缺少测试生成器",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "figure:14",
+      "label": "栅极电荷波形定义",
+      "kind": "informational",
+      "evidence": [
+        "PDF Fig.14"
+      ],
+      "reference_evidence": {},
+      "reason": "定义/封装示意，不属于数值拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "figure:15",
+      "label": "电容随漏源电压",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.15"
+      ],
+      "reference_evidence": {},
+      "reason": "手册曲线尚未全部数字化或缺少测试生成器",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "figure:16",
+      "label": "体二极管正向曲线",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.16"
+      ],
+      "reference_evidence": {},
+      "reason": "已有5 A单点测试，但没有覆盖整条体二极管曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    },
+    {
+      "id": "figure:17",
+      "label": "封装尺寸图",
+      "kind": "informational",
+      "evidence": [
+        "PDF Fig.17"
+      ],
+      "reference_evidence": {},
+      "reason": "定义/封装示意，不属于数值拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": []
+    }
+  ]
+}

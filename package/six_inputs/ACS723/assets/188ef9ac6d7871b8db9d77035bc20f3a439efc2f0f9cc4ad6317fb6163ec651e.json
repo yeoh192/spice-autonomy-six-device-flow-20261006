@@ -1,0 +1,256 @@
+{
+  "device": "ACS723KMATR-20AB-T",
+  "status": "development_queue_not_executable_test_plan",
+  "required_features": [
+    {
+      "feature": "current_to_output",
+      "priority": "first",
+      "reference_parameters": [
+        {
+          "id": "20AB_range",
+          "key": "optimized_current_range",
+          "values": {
+            "min": -20,
+            "max": 20
+          },
+          "unit": "A",
+          "conditions": "VCC=5 V; TA=-40..125°C",
+          "applies_to": [
+            "ACS723KMATR-20AB-T"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b79",
+            "p7"
+          ]
+        },
+        {
+          "id": "20AB_sensitivity",
+          "key": "sensitivity",
+          "values": {
+            "typ": 100
+          },
+          "unit": "mV/A",
+          "conditions": "VCC=5 V; TA=-40..125°C",
+          "applies_to": [
+            "ACS723KMATR-20AB-T"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b79",
+            "p7"
+          ]
+        },
+        {
+          "id": "20AB_zero",
+          "key": "zero_current_output",
+          "values": {
+            "typ": "0.5 × VCC"
+          },
+          "unit": "V",
+          "conditions": "IP=0 A; VCC=5 V",
+          "applies_to": [
+            "ACS723KMATR-20AB-T"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b79",
+            "p7"
+          ]
+        },
+        {
+          "id": "vcc_abs",
+          "key": "supply_voltage",
+          "values": {
+            "max": 6
+          },
+          "unit": "V",
+          "conditions": "",
+          "applies_to": [
+            "ACS723"
+          ],
+          "rating_kind": "absolute_maximum",
+          "state": "initial",
+          "evidence_refs": [
+            "b52",
+            "p3"
+          ]
+        },
+        {
+          "id": "vcc",
+          "key": "supply_voltage",
+          "values": {
+            "min": 4.5,
+            "typ": 5,
+            "max": 5.5
+          },
+          "unit": "V",
+          "conditions": "TA=-40..125°C",
+          "applies_to": [
+            "ACS723"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b67",
+            "p5"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "电流输入到电压输出",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [],
+      "enabled": false
+    },
+    {
+      "feature": "output_limits",
+      "priority": "first",
+      "reference_parameters": [
+        {
+          "id": "vout_hi",
+          "key": "output_saturation_high",
+          "values": {
+            "min": "VCC − 0.5"
+          },
+          "unit": "V",
+          "conditions": "TA=25°C; RL=4.7 kΩ",
+          "applies_to": [
+            "ACS723"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b67",
+            "p5"
+          ]
+        },
+        {
+          "id": "vout_lo",
+          "key": "output_saturation_low",
+          "values": {
+            "max": 0.5
+          },
+          "unit": "V",
+          "conditions": "TA=25°C; RL=4.7 kΩ",
+          "applies_to": [
+            "ACS723"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b67",
+            "p5"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "输出限幅",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [],
+      "enabled": false
+    },
+    {
+      "feature": "dynamic_response",
+      "priority": "later",
+      "reference_parameters": [
+        {
+          "id": "bw80",
+          "key": "bandwidth",
+          "values": {
+            "typ": 80
+          },
+          "unit": "kHz",
+          "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=GND; small-signal -3 dB",
+          "applies_to": [
+            "ACS723"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b67",
+            "p5"
+          ]
+        },
+        {
+          "id": "response_time80",
+          "key": "response_time",
+          "values": {
+            "typ": 5
+          },
+          "unit": "μs",
+          "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=GND; IP=IPR(max)",
+          "applies_to": [
+            "ACS723"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b67",
+            "p5"
+          ]
+        },
+        {
+          "id": "bw20",
+          "key": "bandwidth",
+          "values": {
+            "typ": 20
+          },
+          "unit": "kHz",
+          "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=VCC; small-signal -3 dB",
+          "applies_to": [
+            "ACS723"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b67",
+            "p5"
+          ]
+        },
+        {
+          "id": "response_time20",
+          "key": "response_time",
+          "values": {
+            "typ": 22.5
+          },
+          "unit": "μs",
+          "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=VCC; IP=IPR(max)",
+          "applies_to": [
+            "ACS723"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b67",
+            "p5"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "带宽和动态响应",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [],
+      "enabled": false
+    }
+  ],
+  "required_inventory": "manual_inventory.json",
+  "execution_cases": [],
+  "unresolved": [
+    "完整覆盖清单复核",
+    "未绑定参考与测试接口",
+    "统一验收阈值"
+  ]
+}

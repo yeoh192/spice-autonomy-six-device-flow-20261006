@@ -1,0 +1,92 @@
+{
+  "schema_version": "unified-device-input-1",
+  "device": "ADA4528-1_MSOP",
+  "category": "zero_drift_operational_amplifier",
+  "selected_variant": "ADA4528-1_MSOP",
+  "materials": {
+    "manual": "assets/fce0580e62c03c6e03b5777611bfbbf28574e03bf033de3d691f3c095861592f.pdf",
+    "electrical": "assets/fad92847199d57b03f527c74e06fb146fe7aad15a0c95343702d6b8b74aef643.json",
+    "evidence": "assets/ae65a39a4fa608c87849bb6e6b32dc8d3adecfd96308cffd73067b380a6e33b8.json",
+    "ports": "assets/905a1495eda05f668891efe82f27f0d476e964e324e315da674766b8be2f48c7.json",
+    "inventory": "assets/281f22bc300bf2cf8b00af9d862248c17e4cc1009014d6471cb95960dd88ecc2.json",
+    "test_plan": "assets/1edbf4979fe433a0c0ef3dd18c2e067b8f5c528ba67bd52152c076a57bc07c5f.json",
+    "acceptance": "assets/315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e.json",
+    "manual_page_evidence": "assets/b7faf4ec3186dc6760cdb2786b68f2b76e38b8daba5b559461685caa3870e0f7.json"
+  },
+  "coverage_plan": "coverage_plan.json",
+  "inventory": "inventory.json",
+  "reference_assets": [
+    {
+      "source_relative": "references/curves/electrical_with_curves.json",
+      "path": "assets/fad92847199d57b03f527c74e06fb146fe7aad15a0c95343702d6b8b74aef643.json",
+      "sha256": "fad92847199d57b03f527c74e06fb146fe7aad15a0c95343702d6b8b74aef643",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "reference_models/ADI__b4819bc06f.lib",
+      "path": "assets/c65fb7db58918ebdcea8dd8e005c45d9f3635ae82ed6879c739fad2a90e07d60.lib",
+      "sha256": "c65fb7db58918ebdcea8dd8e005c45d9f3635ae82ed6879c739fad2a90e07d60",
+      "role": "reference_interface_benchmark_only"
+    }
+  ],
+  "coverage_queue": "coverage_queue.json",
+  "fixture_drafts": "fixture_drafts.json",
+  "configured_task": null,
+  "configured_tests": 0,
+  "draft_tests": 0,
+  "acceptance_standard": {
+    "typical_tolerance_percent": 10,
+    "curve_mae_percent": 5.0,
+    "curve_max_error_percent": 10.0
+  },
+  "record_count": 186,
+  "review_status": "page_anchored_inventory_expanded_series_and_footnote_review_pending",
+  "model_fitting_ready": false,
+  "full_manual_coverage": false,
+  "delivery_eligible": false,
+  "template_selection": {
+    "status": "pending",
+    "source": "bundled_index",
+    "reference_models_are_starting_templates": false
+  },
+  "routes": {
+    "design": {
+      "provider": "qwen",
+      "model": "qwen3.8-max-0902"
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-5.3"
+    }
+  },
+  "assets": {
+    "assets/d4c01366286607d7d5e230d66348a48e04d781eb4a460fd5be7800eb940812ab.json": "d4c01366286607d7d5e230d66348a48e04d781eb4a460fd5be7800eb940812ab",
+    "assets/fce0580e62c03c6e03b5777611bfbbf28574e03bf033de3d691f3c095861592f.pdf": "fce0580e62c03c6e03b5777611bfbbf28574e03bf033de3d691f3c095861592f",
+    "assets/fad92847199d57b03f527c74e06fb146fe7aad15a0c95343702d6b8b74aef643.json": "fad92847199d57b03f527c74e06fb146fe7aad15a0c95343702d6b8b74aef643",
+    "assets/ae65a39a4fa608c87849bb6e6b32dc8d3adecfd96308cffd73067b380a6e33b8.json": "ae65a39a4fa608c87849bb6e6b32dc8d3adecfd96308cffd73067b380a6e33b8",
+    "assets/905a1495eda05f668891efe82f27f0d476e964e324e315da674766b8be2f48c7.json": "905a1495eda05f668891efe82f27f0d476e964e324e315da674766b8be2f48c7",
+    "assets/281f22bc300bf2cf8b00af9d862248c17e4cc1009014d6471cb95960dd88ecc2.json": "281f22bc300bf2cf8b00af9d862248c17e4cc1009014d6471cb95960dd88ecc2",
+    "assets/1edbf4979fe433a0c0ef3dd18c2e067b8f5c528ba67bd52152c076a57bc07c5f.json": "1edbf4979fe433a0c0ef3dd18c2e067b8f5c528ba67bd52152c076a57bc07c5f",
+    "assets/315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e.json": "315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e",
+    "assets/c65fb7db58918ebdcea8dd8e005c45d9f3635ae82ed6879c739fad2a90e07d60.lib": "c65fb7db58918ebdcea8dd8e005c45d9f3635ae82ed6879c739fad2a90e07d60",
+    "coverage_plan.json": "dcb31aa03a036e55a7f9e45fa188d44f87428095f54a202aafa8630140a15d95",
+    "assets/b7faf4ec3186dc6760cdb2786b68f2b76e38b8daba5b559461685caa3870e0f7.json": "b7faf4ec3186dc6760cdb2786b68f2b76e38b8daba5b559461685caa3870e0f7",
+    "fixture_drafts.json": "f3e1ade200009ffec3b28f6e8667ad6738aff754987c578c8b31304c8be2af48",
+    "inventory.json": "a13c29b0e7634979c0d79f866d220c33d388fdf71c0eea667ddc7fe468f41792",
+    "coverage_queue.json": "271b7f965c7aa65827d52f9f69437f98f6a9dca863bf0e041087cc0ee3d6c8d5"
+  },
+  "source_hashes": {
+    "/Users/192y/电气/六器件标准输入包_20261006/ADA4528/input_packet.json": "d4c01366286607d7d5e230d66348a48e04d781eb4a460fd5be7800eb940812ab",
+    "/Users/192y/电气/六器件标准输入包_20261006/ADA4528/manual/ADA4528_数据手册.pdf": "fce0580e62c03c6e03b5777611bfbbf28574e03bf033de3d691f3c095861592f",
+    "/Users/192y/电气/六器件标准输入包_20261006/ADA4528/extraction/electrical.json": "fad92847199d57b03f527c74e06fb146fe7aad15a0c95343702d6b8b74aef643",
+    "/Users/192y/电气/六器件标准输入包_20261006/ADA4528/extraction/evidence_catalog.json": "ae65a39a4fa608c87849bb6e6b32dc8d3adecfd96308cffd73067b380a6e33b8",
+    "/Users/192y/电气/六器件标准输入包_20261006/ADA4528/contracts/ports.json": "905a1495eda05f668891efe82f27f0d476e964e324e315da674766b8be2f48c7",
+    "/Users/192y/电气/六器件标准输入包_20261006/ADA4528/contracts/manual_inventory.json": "281f22bc300bf2cf8b00af9d862248c17e4cc1009014d6471cb95960dd88ecc2",
+    "/Users/192y/电气/六器件标准输入包_20261006/ADA4528/contracts/test_plan.json": "1edbf4979fe433a0c0ef3dd18c2e067b8f5c528ba67bd52152c076a57bc07c5f",
+    "/Users/192y/电气/六器件标准输入包_20261006/ADA4528/contracts/acceptance.json": "315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e",
+    "/Users/192y/电气/六器件标准输入包_20261006/ADA4528/references/curves/electrical_with_curves.json": "fad92847199d57b03f527c74e06fb146fe7aad15a0c95343702d6b8b74aef643",
+    "/Users/192y/电气/六器件标准输入包_20261006/ADA4528/reference_models/ADI__b4819bc06f.lib": "c65fb7db58918ebdcea8dd8e005c45d9f3635ae82ed6879c739fad2a90e07d60",
+    "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/manual_review/ADA4528/pages.json": "b7faf4ec3186dc6760cdb2786b68f2b76e38b8daba5b559461685caa3870e0f7"
+  },
+  "status": "materials_and_drafts_with_execution_gaps"
+}

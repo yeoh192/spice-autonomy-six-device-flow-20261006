@@ -1,0 +1,106 @@
+{
+  "schema_version": "unified-device-input-1",
+  "device": "EMHK350ARA470MF80G",
+  "category": "aluminum_electrolytic_capacitor",
+  "selected_variant": "EMHK350ARA470MF80G",
+  "materials": {
+    "manual": "assets/8b60da7d50773812f4a63d54d7798c9ce98d6c5b4b1f6bd044ccf0898b8dc15a.pdf",
+    "electrical": "assets/52e6bc3b8490c6c590fa19fb9c216b10645d25784040e26e8b9c56f00fbb135a.json",
+    "evidence": "assets/10f0c1e86eae1f81b14cc578fdc62097dfb8c753949009345eefd8bdcbd2054e.json",
+    "ports": "assets/58f317a5498819b4bfba964ffb288598e8790ee0a1e2bb8cdc659193b0bfab8b.json",
+    "inventory": "assets/520935f2bdc438d26e918180475ff4d707ec80f18daf5d10773cb52e1b40f3bc.json",
+    "test_plan": "assets/1848523570ce4c83d0dfc1be38b85dee304e269177f1b99beb638c3b4fafd170.json",
+    "acceptance": "assets/315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e.json",
+    "manual_page_evidence": "assets/a780617eac9d0e865713289e883a1412831db24e15b06c4fdd0aca15126b8710.json"
+  },
+  "coverage_plan": "coverage_plan.json",
+  "inventory": "inventory.json",
+  "reference_assets": [
+    {
+      "source_relative": "references/curves/electrical_with_curves.json",
+      "path": "assets/52e6bc3b8490c6c590fa19fb9c216b10645d25784040e26e8b9c56f00fbb135a.json",
+      "sha256": "52e6bc3b8490c6c590fa19fb9c216b10645d25784040e26e8b9c56f00fbb135a",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "reference_models/EMHK350ARA470MF80G.lib",
+      "path": "assets/0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b.lib",
+      "sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+      "role": "reference_interface_benchmark_only"
+    }
+  ],
+  "coverage_queue": "coverage_queue.json",
+  "fixture_drafts": "fixture_drafts.json",
+  "configured_task": null,
+  "configured_tests": 0,
+  "draft_tests": 8,
+  "acceptance_standard": {
+    "typical_tolerance_percent": 10,
+    "curve_mae_percent": 5.0,
+    "curve_max_error_percent": 10.0
+  },
+  "record_count": 31,
+  "review_status": "page_anchored_inventory_expanded_series_and_footnote_review_pending",
+  "model_fitting_ready": false,
+  "full_manual_coverage": false,
+  "delivery_eligible": false,
+  "template_selection": {
+    "status": "pending",
+    "source": "bundled_index",
+    "reference_models_are_starting_templates": false
+  },
+  "routes": {
+    "design": {
+      "provider": "qwen",
+      "model": "qwen3.8-max-0902"
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-5.3"
+    }
+  },
+  "assets": {
+    "assets/0ce5307d66cc182ed66596aca2924e269204b4f7a7b388553a1745fb2b5e4451.json": "0ce5307d66cc182ed66596aca2924e269204b4f7a7b388553a1745fb2b5e4451",
+    "assets/8b60da7d50773812f4a63d54d7798c9ce98d6c5b4b1f6bd044ccf0898b8dc15a.pdf": "8b60da7d50773812f4a63d54d7798c9ce98d6c5b4b1f6bd044ccf0898b8dc15a",
+    "assets/52e6bc3b8490c6c590fa19fb9c216b10645d25784040e26e8b9c56f00fbb135a.json": "52e6bc3b8490c6c590fa19fb9c216b10645d25784040e26e8b9c56f00fbb135a",
+    "assets/10f0c1e86eae1f81b14cc578fdc62097dfb8c753949009345eefd8bdcbd2054e.json": "10f0c1e86eae1f81b14cc578fdc62097dfb8c753949009345eefd8bdcbd2054e",
+    "assets/58f317a5498819b4bfba964ffb288598e8790ee0a1e2bb8cdc659193b0bfab8b.json": "58f317a5498819b4bfba964ffb288598e8790ee0a1e2bb8cdc659193b0bfab8b",
+    "assets/520935f2bdc438d26e918180475ff4d707ec80f18daf5d10773cb52e1b40f3bc.json": "520935f2bdc438d26e918180475ff4d707ec80f18daf5d10773cb52e1b40f3bc",
+    "assets/1848523570ce4c83d0dfc1be38b85dee304e269177f1b99beb638c3b4fafd170.json": "1848523570ce4c83d0dfc1be38b85dee304e269177f1b99beb638c3b4fafd170",
+    "assets/315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e.json": "315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e",
+    "assets/0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b.lib": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+    "coverage_plan.json": "f212f615bc0dcf02d4f9c8e0834a9654e8be8111ae7190479e8a98d47a61d51e",
+    "assets/a780617eac9d0e865713289e883a1412831db24e15b06c4fdd0aca15126b8710.json": "a780617eac9d0e865713289e883a1412831db24e15b06c4fdd0aca15126b8710",
+    "assets/e02ab65caf34492738908f16bb6687a8c59775f38a7457222bac721461eeb226.json": "e02ab65caf34492738908f16bb6687a8c59775f38a7457222bac721461eeb226",
+    "assets/b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+    "fixture_circuits/cap_120Hz.cir": "58f8fcb4b234f86026fb347ce56c2940f331d687315d68ef34a0bb57310a30e1",
+    "fixture_circuits/df_120Hz.cir": "58f8fcb4b234f86026fb347ce56c2940f331d687315d68ef34a0bb57310a30e1",
+    "fixture_circuits/esr_20_100000Hz.cir": "4b60809675d995bd8e71fa5622d4e0a8c34972bebf1cdd4a848678720fb66eab",
+    "fixture_circuits/esr_20_200000Hz.cir": "f7f66241d5d4284d441e3773ff327d9853c22d43f22c5894234a08c52008edf6",
+    "fixture_circuits/esr_20_400000Hz.cir": "c822788a836be2fffef49e967b324cc330ff163c260810f8f791798ebfa0f0f8",
+    "assets/e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306.lib": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+    "fixture_circuits/esr_-40_100000Hz.cir": "e4211a0f5eb1d916217416539a6f8dbff8ef91d08ce291ffe26ac05a31fdc4b0",
+    "fixture_circuits/esr_-40_200000Hz.cir": "66f7c624323ffb59c10b522ba14af9a8df086720d3356b0ad72e231b27acb276",
+    "fixture_circuits/esr_-40_400000Hz.cir": "7e18a9e6b3aa99b6f746111f4a0aac42d8a81ea703ec02eb09e2364cb2178749",
+    "fixture_drafts.json": "1b15ef5c6f71acc5376a4174c75f02eab5f4f6568070721afb479533ee90d727",
+    "inventory.json": "5e9d34dd2e07d529917083c1ed4cd58a668eb531f9be404c33da5c9ed3e04574",
+    "coverage_queue.json": "db411d5103ed59f28115e2a26a145015096538397d3a1f105b6b40cc6ae568cf"
+  },
+  "source_hashes": {
+    "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/input_packet.json": "0ce5307d66cc182ed66596aca2924e269204b4f7a7b388553a1745fb2b5e4451",
+    "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/manual/EMHK350ARA470MF80G_数据手册.pdf": "8b60da7d50773812f4a63d54d7798c9ce98d6c5b4b1f6bd044ccf0898b8dc15a",
+    "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/extraction/electrical.json": "52e6bc3b8490c6c590fa19fb9c216b10645d25784040e26e8b9c56f00fbb135a",
+    "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/extraction/evidence_catalog.json": "10f0c1e86eae1f81b14cc578fdc62097dfb8c753949009345eefd8bdcbd2054e",
+    "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/contracts/ports.json": "58f317a5498819b4bfba964ffb288598e8790ee0a1e2bb8cdc659193b0bfab8b",
+    "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/contracts/manual_inventory.json": "520935f2bdc438d26e918180475ff4d707ec80f18daf5d10773cb52e1b40f3bc",
+    "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/contracts/test_plan.json": "1848523570ce4c83d0dfc1be38b85dee304e269177f1b99beb638c3b4fafd170",
+    "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/contracts/acceptance.json": "315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e",
+    "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/references/curves/electrical_with_curves.json": "52e6bc3b8490c6c590fa19fb9c216b10645d25784040e26e8b9c56f00fbb135a",
+    "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+    "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/manual_review/EMHK350ARA470MF80G/pages.json": "a780617eac9d0e865713289e883a1412831db24e15b06c4fdd0aca15126b8710",
+    "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/EMHK350ARA470MF80G/executable_tests.json": "e02ab65caf34492738908f16bb6687a8c59775f38a7457222bac721461eeb226",
+    "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/EMHK350ARA470MF80G/reference_benchmark_20.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+    "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/EMHK350ARA470MF80G/reference_benchmark_-40.lib": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306"
+  },
+  "status": "materials_and_drafts_with_execution_gaps"
+}

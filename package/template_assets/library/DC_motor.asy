@@ -1,0 +1,38 @@
+Version 4
+SymbolType CELL
+LINE Normal -90 0 -59 0
+LINE Normal 87 0 57 0
+RECTANGLE Normal 192 112 -160 -112
+CIRCLE Normal 57 59 -59 -60
+TEXT -10 -3 Left 2 M
+WINDOW 0 16 -117 Bottom 2
+SYMATTR Prefix X
+SYMATTR Description DC_motor
+SYMATTR Value DC_motor
+SYMATTR ModelFile DC_motor.lib
+SYMATTR SpiceLine R=0.5 L=1.5m Ke=0.05
+SYMATTR SpiceLine2 J=250u B=0.1m
+PIN -160 -48 LEFT 8
+PINATTR PinName VIN
+PINATTR SpiceOrder 1
+PIN 192 -80 RIGHT 8
+PINATTR PinName e_MID
+PINATTR SpiceOrder 2
+PIN 192 80 RIGHT 8
+PINATTR PinName back_EMF
+PINATTR SpiceOrder 3
+PIN 192 48 RIGHT 8
+PINATTR PinName torque
+PINATTR SpiceOrder 4
+PIN 192 -48 RIGHT 8
+PINATTR PinName m_MID
+PINATTR SpiceOrder 5
+PIN 192 -16 RIGHT 8
+PINATTR PinName w
+PINATTR SpiceOrder 6
+PIN 192 16 RIGHT 8
+PINATTR PinName angle
+PINATTR SpiceOrder 7
+PIN -160 48 LEFT 8
+PINATTR PinName GND
+PINATTR SpiceOrder 8

@@ -1,0 +1,728 @@
+{
+  "index_base": 0,
+  "blocks": {
+    "b0": {
+      "type": "text",
+      "text": "RoHS2 Compliant",
+      "bbox": [
+        78,
+        173,
+        201,
+        184
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b1": {
+      "type": "text",
+      "text": "AEC-Q200 compliant : Please contact Chemi-Con for more details, test data, information.",
+      "bbox": [
+        77,
+        184,
+        611,
+        197
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b2": {
+      "type": "image",
+      "img_path": "images/8f7d942c79732559290eadb393f75cc0fa5f116acc6f04c37ff17d1eac03c4eb.jpg",
+      "image_caption": [],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        830,
+        108,
+        912,
+        181
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b3": {
+      "type": "text",
+      "text": "◆SPECIFICATIONS",
+      "text_level": 2,
+      "bbox": [
+        78,
+        205,
+        238,
+        219
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b4": {
+      "type": "table",
+      "img_path": "images/c6ca6c5bf8c3eb8c48f7ebeb0f3ecd78d4dde2d3e86a59ed01f8aca97b636bfd.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>Items</td><td colspan=\"3\">Characteristics</td></tr><tr><td>Category Temperature Range</td><td colspan=\"3\">-40 to +125°C</td></tr><tr><td>Rated Voltage Range</td><td colspan=\"3\"> $35V_{dc}$ </td></tr><tr><td>Capacitance Tolerance</td><td colspan=\"3\">±20%(M) (at 20°C, 120Hz)</td></tr><tr><td>Leakage Current</td><td colspan=\"3\">I=0.01CVWhere, I : Max. leakage current (μA), C : Nominal capacitance (μF), V : Rated voltage (V) (at 20°C after 2 minute)</td></tr><tr><td rowspan=\"2\">Dissipation Factor (tan δ )</td><td>Rated voltage( $V_{dc}$ )</td><td>35V</td><td rowspan=\"2\">(at 20°C, 120Hz)</td></tr><tr><td>tan δ (Max.)</td><td>0.14</td></tr><tr><td rowspan=\"3\">Low Temperature Characteristics (Max. impedance Ratio)</td><td>Rated voltage( $V_{dc}$ )</td><td>35V</td><td rowspan=\"2\"></td></tr><tr><td>Z(-25°C)/Z(+20°C)</td><td>2</td></tr><tr><td>Z(-40°C)/Z(+20°C)</td><td>3</td><td>(at 120Hz)</td></tr><tr><td rowspan=\"6\">Endurance</td><td colspan=\"3\">The following specifications shall be satisfied when the capacitors are restored to 20°C after the rated voltage is applied for 2,000 hours at 125°C.</td></tr><tr><td>Capacitance change</td><td colspan=\"2\">≤±30% of the initial value</td></tr><tr><td>D.F. (tan δ )</td><td colspan=\"2\">≤300% of the initial specified value</td></tr><tr><td>Leakage current</td><td colspan=\"2\">≤The initial specified value</td></tr><tr><td rowspan=\"2\">ESR(Ω max./-40°C, 400kHz)</td><td>F80</td><td>6.0</td></tr><tr><td>HA0</td><td>4.5</td></tr><tr><td rowspan=\"4\">Shelf life</td><td colspan=\"3\">The following specifications shall be satisfied when the capacitors are restored to 20°C after exposing them for 1,000 hours at 125°C without voltage applied. Before the measurement, the capacitor shall be preconditioned by applying voltage according to Item 4.1 of JIS C 5101-4.</td></tr><tr><td>Capacitance change</td><td colspan=\"2\">≤±30% of the initial value</td></tr><tr><td>D.F. (tan δ )</td><td colspan=\"2\">≤300% of the initial specified value</td></tr><tr><td>Leakage current</td><td colspan=\"2\">≤The initial specified value</td></tr></table>",
+      "bbox": [
+        78,
+        221,
+        919,
+        501
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b5": {
+      "type": "text",
+      "text": "DIMENSIONS [mm]",
+      "text_level": 2,
+      "bbox": [
+        77,
+        507,
+        248,
+        521
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b6": {
+      "type": "text",
+      "text": "\\- Terminal Code : A\n- Size code : F80, HA0",
+      "bbox": [
+        75,
+        523,
+        236,
+        548
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b7": {
+      "type": "image",
+      "img_path": "images/1df2931ec6b68ceca3bad10f096c112614cb6bd7b2edee4edad6e36d905908aa.jpg",
+      "image_caption": [],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        87,
+        561,
+        206,
+        644
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b8": {
+      "type": "image",
+      "img_path": "images/506a4e4c13cdbbaa425e5a841a7053607b391721fa287e7dc0cdc3c43a548692.jpg",
+      "image_caption": [],
+      "image_footnote": [
+        "Note : L±0.5 for HA0"
+      ],
+      "content": "",
+      "bbox": [
+        216,
+        546,
+        342,
+        643
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b9": {
+      "type": "text",
+      "text": "\\- Terminal Code : G(Vibration resistant structure)\n- Size code : F80, HA0",
+      "bbox": [
+        356,
+        521,
+        690,
+        548
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b10": {
+      "type": "image",
+      "img_path": "images/78491b38611ca6d34f79812aacc50b02563e60cad32b41da7cf648db4c529e57.jpg",
+      "image_caption": [],
+      "image_footnote": [
+        "Note : L±0.5 for HA0"
+      ],
+      "content": "",
+      "bbox": [
+        357,
+        550,
+        472,
+        631
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b11": {
+      "type": "image",
+      "img_path": "images/18a86f932e2bc6232675ac0b3959b35ea2f891c24c114136aecbbfde2881edd6.jpg",
+      "image_caption": [],
+      "image_footnote": [
+        ": Supportive terminals",
+        "♦MARKING"
+      ],
+      "content": "",
+      "bbox": [
+        497,
+        545,
+        623,
+        640
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b12": {
+      "type": "image",
+      "img_path": "images/9e25b3eb607383bf5bc563743e81fad27f1c1c265f0601d83f939f2b860118a0.jpg",
+      "image_caption": [],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        746,
+        524,
+        855,
+        588
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b13": {
+      "type": "text",
+      "text": "●Rated voltage symbol\nRated voltage (Vdc) Symbol\n35 V",
+      "bbox": [
+        726,
+        606,
+        884,
+        642
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b14": {
+      "type": "table",
+      "img_path": "images/849bd8067962bbea7139d2608952e68f942e06ae20d98ad0b514dba7e7c25ec8.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>Size code</td><td>D</td><td>L</td><td>A</td><td>B</td><td>C</td><td>W</td><td>P</td></tr><tr><td>F80</td><td>6.3</td><td>7.7</td><td>6.6</td><td>6.6</td><td>7.2</td><td>0.5 to 0.8</td><td>1.9</td></tr><tr><td>HA0</td><td>8</td><td>10.0</td><td>8.3</td><td>8.3</td><td>9.0</td><td>0.7 to 1.1</td><td>3.1</td></tr></table>",
+      "bbox": [
+        78,
+        656,
+        369,
+        688
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b15": {
+      "type": "text",
+      "text": "◆PART NUMBERING SYSTEM",
+      "text_level": 2,
+      "bbox": [
+        78,
+        694,
+        324,
+        707
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b16": {
+      "type": "image",
+      "img_path": "images/6b9ee37ad5268421ab32f568efa752c9bfd6eb3699c20040643d26095c18c7ad.jpg",
+      "image_caption": [],
+      "image_footnote": [
+        "Please refer to \"Product code guide (surface mount type)\""
+      ],
+      "content": "",
+      "bbox": [
+        80,
+        709,
+        532,
+        827
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b17": {
+      "type": "text",
+      "text": "◆RATED RIPPLE CURRENT MULTIPLIERS",
+      "text_level": 2,
+      "bbox": [
+        571,
+        695,
+        917,
+        709
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b18": {
+      "type": "table",
+      "img_path": "images/907f7e60381a9c8309287c07bcdf1eeb99f6e6041bf055948394ab5466c646d5.jpg",
+      "table_caption": [
+        "Frequency Multipliers"
+      ],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>Capacitance(μF)\\Frequency(Hz)</td><td>120</td><td>1k</td><td>10k</td><td>100k</td></tr><tr><td>47 to 100</td><td>0.40</td><td>0.75</td><td>0.90</td><td>1.00</td></tr><tr><td>220</td><td>0.50</td><td>0.85</td><td>0.94</td><td>1.00</td></tr></table>",
+      "bbox": [
+        573,
+        725,
+        872,
+        762
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b19": {
+      "type": "text",
+      "text": "The deterioration of aluminum electrolytic capacitors accelerates their life due to the internal heating produced by ripple current. For details, refer to Section \"5-3 Ripple Current Effect on Lifetime\" in the catalog, Technical Note.",
+      "bbox": [
+        569,
+        765,
+        910,
+        810
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b20": {
+      "type": "text",
+      "text": "◆STANDARD RATINGS",
+      "text_level": 2,
+      "bbox": [
+        77,
+        846,
+        272,
+        860
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b21": {
+      "type": "table",
+      "img_path": "images/b28e2df605d7256547d5eab091d98133d38f8f3f24eafb3fd2b4e47477e91da5.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td rowspan=\"2\">WV (Vdc)</td><td rowspan=\"2\">Cap (μF)</td><td rowspan=\"2\">Size code</td><td colspan=\"2\">ESR (Ω max./100k to 400kHz)</td><td rowspan=\"2\">Rated ripple current (mArms/125°C, 100k to 400kHz)</td><td rowspan=\"2\">Part No.</td></tr><tr><td>20°C</td><td>-40°C</td></tr><tr><td rowspan=\"3\">35</td><td>47</td><td>F80</td><td>0.30</td><td>3.0</td><td>240</td><td>EMHK350□RA470MF80G</td></tr><tr><td>100</td><td>F80</td><td>0.30</td><td>3.0</td><td>240</td><td>EMHK350□RA101MF80G</td></tr><tr><td>220</td><td>HA0</td><td>0.20</td><td>2.0</td><td>330</td><td>EMHK350□RA221MHA0G</td></tr></table>",
+      "bbox": [
+        78,
+        860,
+        919,
+        942
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b22": {
+      "type": "header",
+      "text": "MHK\nLower ESR\nMHJ",
+      "bbox": [
+        692,
+        131,
+        778,
+        181
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b23": {
+      "type": "header",
+      "text": "CHEMI-CON ALUMINUM ELECTROLYTIC CAPACITORS",
+      "bbox": [
+        82,
+        48,
+        626,
+        68
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b24": {
+      "type": "header",
+      "text": "High heat resistance, 125°C",
+      "bbox": [
+        707,
+        53,
+        919,
+        68
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b25": {
+      "type": "header",
+      "text": "Alchip™-MHK Series",
+      "bbox": [
+        75,
+        89,
+        389,
+        124
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b26": {
+      "type": "footer",
+      "text": "CAT. No. E1001A 2026",
+      "bbox": [
+        741,
+        967,
+        919,
+        980
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b27": {
+      "type": "header",
+      "text": "Endurance : 2,000 hours at 125°C",
+      "bbox": [
+        78,
+        127,
+        292,
+        139
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b28": {
+      "type": "header",
+      "text": "- Specified ESR after endurance",
+      "bbox": [
+        78,
+        139,
+        275,
+        149
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b29": {
+      "type": "header",
+      "text": "- For automobile modules and other high temperature applications",
+      "bbox": [
+        77,
+        149,
+        470,
+        161
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b30": {
+      "type": "header",
+      "text": "- Solvent resistant type (see PRECAUTIONS AND GUIDELINES)",
+      "bbox": [
+        77,
+        161,
+        468,
+        173
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b31": {
+      "type": "footer",
+      "text": "Product specifications in this catalog are subject to change without notice.Request our product specifications before purchase and/or use. Please use our products based on the information contained in this catalog and product specifications.",
+      "bbox": [
+        75,
+        952,
+        919,
+        961
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b32": {
+      "type": "text",
+      "text": "■ Always read \"Notes on Use\" before using the product in order to enable you to use the product correctly and prevent any faults and accidents from occurring.",
+      "bbox": [
+        77,
+        89,
+        919,
+        114
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b33": {
+      "type": "text",
+      "text": "■ Request the Product Specification on the product of NIPPON CHEMI-CON CORPORATION to refer to it as well as this brochure prior to the order of the products. Some specific notes on use of the ordered product may be described in the specifications.",
+      "bbox": [
+        77,
+        124,
+        921,
+        149
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b34": {
+      "type": "text",
+      "text": "The products listed in this catalog are designed and manufactured for general electronics equipment use and are not intended for use in applications that can adversely affect human life; where the malfunction of equipment may cause damage to life or property. In addition, our products are not intended to be used in specific applications that may cause a major social impact. Please consult with us in advance of usage of our products in the following listed applications. ① Aerospace equipment ② Power generation equipment such as thermal power, nuclear power etc. ③ Medical equipment ④ Transport equipment (automobiles, trains, ships, etc.) ⑤ Transportation control equipment ⑥ Disaster prevention / crime prevention equipment ⑦ Highly publicized information processing equipment ⑧ Submarine equipment ⑨ Other applications that are not considered general-purpose applications.",
+      "bbox": [
+        77,
+        160,
+        922,
+        256
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b35": {
+      "type": "text",
+      "text": "The circuits described as examples in this catalog and the \"delivery specifications\" are featured in order to show the operations and usage of our products, however, this fact does not guarantee that the circuits are available to function in your equipment systems. We are not in any case responsible for any failures or damage caused by the use of information contained herein. You should examine our products, of which the characteristics are described in the \"delivery specifications\" and other documents, and determine whether or not our products suit your requirements according to the specifications of your equipment systems. Therefore, you bear final responsibility regarding the use of our products.",
+      "bbox": [
+        77,
+        267,
+        922,
+        338
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b36": {
+      "type": "text",
+      "text": "Please make sure that you take appropriate safety measures such as use of redundant design and malfunction prevention measures in order to prevent fatal accidents and/or fires in the event any of our products malfunction.",
+      "bbox": [
+        92,
+        338,
+        921,
+        363
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b37": {
+      "type": "text",
+      "text": "We strongly recommend our customers to purchase Nippon Chemi-Con products only through our official sales channels. We assume no responsibility for any defects or damages caused by using products purchased from outside our official sales channel or of counterfeit goods. In addition, we will ask the customer to pay the investigation cost for products purchased outside our official sales channel.",
+      "bbox": [
+        75,
+        374,
+        922,
+        423
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b38": {
+      "type": "text",
+      "text": "We reserve the right to discontinue production and delivery of products. We do not guarantee that all the products included in this catalog will be available in the future.",
+      "bbox": [
+        75,
+        432,
+        921,
+        457
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b39": {
+      "type": "text",
+      "text": "The aforementioned does not apply in the case of individual agreements deviating from the foregoing for customer-specific products",
+      "bbox": [
+        90,
+        457,
+        921,
+        482
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b40": {
+      "type": "text",
+      "text": "We continually strive to improve the quality and reliability of our products, but in any case that our product does not meet our published specifications, please stop using it promptly and contact us immediately. As for compensation for non-conforming goods delivered by Chemi-Con, we will limit it only to goods found in non-compliance of our published specifications. This may be accomplished by a no cost replacement of non-conforming individual products, a credit of the piece price paid per each individual non-conforming product, or in other ways deemed necessary.",
+      "bbox": [
+        75,
+        492,
+        922,
+        552
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b41": {
+      "type": "text",
+      "text": "In addition, we have an established system with enhanced traceability, therefore we will limit the applicable lot items for any potential compensation.",
+      "bbox": [
+        92,
+        552,
+        921,
+        577
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b42": {
+      "type": "text",
+      "text": "Part Numbering System\nPart Numbering System (Appendix)\nStandardization\nAvailable Items by Manufacturing Locations\nEnvironmental Measures\nTechnical Note\nPrecautions and Guidelines\nRecommended Soldering Conditions\nTaping, Lead-preforming and Packaging\nAvailable Terminals for Snap-in and Screw Mount Type",
+      "bbox": [
+        75,
+        588,
+        433,
+        708
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b43": {
+      "type": "header",
+      "text": "CHEMI-CON ALUMINUM ELECTROLYTIC CAPACITORS",
+      "bbox": [
+        84,
+        48,
+        650,
+        68
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b44": {
+      "type": "header",
+      "text": "Product Guide",
+      "bbox": [
+        808,
+        54,
+        919,
+        68
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b45": {
+      "type": "footer",
+      "text": "Product specifications in this catalog are subject to change without notice.Request our product specifications before purchase and/or use. Please use our products based on the information contained in this catalog and product specifications.",
+      "bbox": [
+        75,
+        952,
+        919,
+        961
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    },
+    "b46": {
+      "type": "footer",
+      "text": "CAT. No. E1001A 2026",
+      "bbox": [
+        741,
+        967,
+        919,
+        980
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/EMHK350ARA470MF80G_数据手册_content_list.json"
+    }
+  },
+  "images": {
+    "images/8f7d942c79732559290eadb393f75cc0fa5f116acc6f04c37ff17d1eac03c4eb.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/images/8f7d942c79732559290eadb393f75cc0fa5f116acc6f04c37ff17d1eac03c4eb.jpg",
+      "exists": true,
+      "block_ids": [
+        "b2"
+      ],
+      "sha256": "82c3bfb5dbbd11b59d86cfcd56a443ef4006b8f2daf8bf3e5d1781f46f5be6e1"
+    },
+    "images/c6ca6c5bf8c3eb8c48f7ebeb0f3ecd78d4dde2d3e86a59ed01f8aca97b636bfd.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/images/c6ca6c5bf8c3eb8c48f7ebeb0f3ecd78d4dde2d3e86a59ed01f8aca97b636bfd.jpg",
+      "exists": true,
+      "block_ids": [
+        "b4"
+      ],
+      "sha256": "b3990ef216183e8e63891b4c68a83d141c62ab2303714e73f8f35a0100a60bf1"
+    },
+    "images/1df2931ec6b68ceca3bad10f096c112614cb6bd7b2edee4edad6e36d905908aa.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/images/1df2931ec6b68ceca3bad10f096c112614cb6bd7b2edee4edad6e36d905908aa.jpg",
+      "exists": true,
+      "block_ids": [
+        "b7"
+      ],
+      "sha256": "9ec36a83e998549cc688290478e207fdef9dd7cb3f4897ff0c20e9a5aadaf4c0"
+    },
+    "images/506a4e4c13cdbbaa425e5a841a7053607b391721fa287e7dc0cdc3c43a548692.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/images/506a4e4c13cdbbaa425e5a841a7053607b391721fa287e7dc0cdc3c43a548692.jpg",
+      "exists": true,
+      "block_ids": [
+        "b8"
+      ],
+      "sha256": "7d125ec201c1e3667319a77328596ce813ffcdada341c07e828a92d3d14ac215"
+    },
+    "images/78491b38611ca6d34f79812aacc50b02563e60cad32b41da7cf648db4c529e57.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/images/78491b38611ca6d34f79812aacc50b02563e60cad32b41da7cf648db4c529e57.jpg",
+      "exists": true,
+      "block_ids": [
+        "b10"
+      ],
+      "sha256": "5656ec7f4892e27784821a433cada3fe695c9b2e3767953c5dd2a18a318f013f"
+    },
+    "images/18a86f932e2bc6232675ac0b3959b35ea2f891c24c114136aecbbfde2881edd6.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/images/18a86f932e2bc6232675ac0b3959b35ea2f891c24c114136aecbbfde2881edd6.jpg",
+      "exists": true,
+      "block_ids": [
+        "b11"
+      ],
+      "sha256": "70bbd437268a52709969e31b188f896e6c53bb558622d334cdd02f7a035bc010"
+    },
+    "images/9e25b3eb607383bf5bc563743e81fad27f1c1c265f0601d83f939f2b860118a0.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/images/9e25b3eb607383bf5bc563743e81fad27f1c1c265f0601d83f939f2b860118a0.jpg",
+      "exists": true,
+      "block_ids": [
+        "b12"
+      ],
+      "sha256": "7d03fbc82c4774ffde93c60bd4613ab53cb541390b6014cbec4656f5f844dfda"
+    },
+    "images/849bd8067962bbea7139d2608952e68f942e06ae20d98ad0b514dba7e7c25ec8.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/images/849bd8067962bbea7139d2608952e68f942e06ae20d98ad0b514dba7e7c25ec8.jpg",
+      "exists": true,
+      "block_ids": [
+        "b14"
+      ],
+      "sha256": "7db5db685d841dbfab4c1299c92eda4f3b6df89ea7c8ffcd001d5607e58abfcf"
+    },
+    "images/6b9ee37ad5268421ab32f568efa752c9bfd6eb3699c20040643d26095c18c7ad.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/images/6b9ee37ad5268421ab32f568efa752c9bfd6eb3699c20040643d26095c18c7ad.jpg",
+      "exists": true,
+      "block_ids": [
+        "b16"
+      ],
+      "sha256": "a483c274d9d6d3b4034496a831050dead9b273e9b55de3186870699120ff137a"
+    },
+    "images/907f7e60381a9c8309287c07bcdf1eeb99f6e6041bf055948394ab5466c646d5.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/images/907f7e60381a9c8309287c07bcdf1eeb99f6e6041bf055948394ab5466c646d5.jpg",
+      "exists": true,
+      "block_ids": [
+        "b18"
+      ],
+      "sha256": "62a0110be158f5ba29f20a260d648551f4ee17b7f43c5eb3c53d3fc96c351241"
+    },
+    "images/b28e2df605d7256547d5eab091d98133d38f8f3f24eafb3fd2b4e47477e91da5.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/EMHK350ARA470MF80G_数据手册/images/b28e2df605d7256547d5eab091d98133d38f8f3f24eafb3fd2b4e47477e91da5.jpg",
+      "exists": true,
+      "block_ids": [
+        "b21"
+      ],
+      "sha256": "731a9e22e2fdc6adcbe114dd76792ebd38f458bf9b6ead21639adab4baab33e8"
+    }
+  },
+  "source_pdf": "/Users/192y/电气/器件手册与模型/EMHK350ARA470MF80G/EMHK350ARA470MF80G_数据手册.pdf",
+  "source_pdf_evidence_note": "PDF page reference IDs pN use zero-based physical page index; visual assertions separately logged.",
+  "pdf_pages": {
+    "p0": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/EMHK350ARA470MF80G/EMHK350ARA470MF80G_数据手册.pdf",
+      "page_idx": 0,
+      "physical_page": 1,
+      "rendered_path": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/EMHK350ARA470MF80G/source_pages/page_1.png",
+      "visually_inspected_full_page": true,
+      "text": "                                ALUMINUM ELECTROLYTIC CAPACITORS                                                                                                                      High heat resistance, 125℃\n\n\n\nAIchip\n                            TM\n\n・Endurance : 2,000 hours at 125℃\n                                -   MHK                                         Series\n・Specified ESR after endurance                                                                                                                                                      MHK\n・For automobile modules and other high temperature applications\n・Solvent resistant type (see PRECAUTIONS AND GUIDELINES)                                                                                                                                  Lower ESR\n\n・RoHS2 Compliant                                                                                                                                                                     MHJ\n\n・AEC-Q200 compliant : Please contact Chemi-Con for more details, test data, information.\n\n◆SPECIFICATIONS\n                   Items                                                                                                            Characteristics\n Category\n                                            -40 to +125℃\n Temperature Range\n Rated Voltage Range                        35Vdc\n Capacitance Tolerance                      ±20%(M)                                                                                                                   (at 20℃, 120Hz)\n Leakage Current                            I=0.01CV\n                                            Where, I : Max. leakage current (µA), C : Nominal capacitance (µF), V : Rated voltage (V)                           (at 20℃ after 2 minute)\n Dissipation Factor                         Rated voltage(Vdc)           35V\n (tanδ)                                     tanδ (Max.)                  0.14                                                                                         (at 20℃, 120Hz)\n Low Temperature                            Rated voltage(Vdc)           35V\n Characteristics                            Z(-25℃)/Z(+20℃)                2\n (Max. impedance Ratio)\n                                            Z(-40℃)/Z(+20℃)                3                                                                                                 (at 120Hz)\n Endurance                                  The following specifications shall be satisfied when the capacitors are restored to 20℃ after the rated voltage is applied for 2,000 hours\n                                            at 125℃.\n                                            Capacitance change            ≦±30% of the initial value\n                                            D.F. (tanδ)                   ≦300% of the initial specified value\n                                            Leakage current               ≦The initial specified value\n                                                                          F80                   6.0\n                                            ESR（Ω max./-40℃, 400kHz）\n                                                                          HA0                   4.5\n Shelf life                                 The following specifications shall be satisfied when the capacitors are restored to 20℃ after exposing them for 1,000 hours at 125℃ without\n                                            voltage applied. Before the measurement, the capacitor shall be preconditioned by applying voltage according to Item 4.1 of JIS C 5101-4.\n                                            Capacitance change            ≦±30% of the initial value\n                                            D.F. (tanδ)                   ≦300% of the initial specified value\n                                            Leakage current               ≦The initial specified value\n\n◆DIMENSIONS [mm]                                                                                                                                                                           ◆MARKING\n● Terminal Code : A                                                                         ● Terminal Code : G(Vibration resistant structure)                                                   EX) 35V47µF\n● Size code : F80, HA0                                                                      ● Size code : F80, HA0\n                                                                                                            0.3max.                          W                                                             3A\n                                                              W                                                                                                                                            47\n                                                                                                                                                                                                           V HK\n                                                                                            φD±0.5\n     φD±0.5\n                                                                                                                                                        P\n                                                                                                                            B±0.2\n                                                                              P\n                                              B±0.2                         C±0.2                                                                     C±0.2\n\n                                                                                                                                                                                           ●Rated voltage symbol\n                                                                                                        L±0.3 (Note)                    A±0.2                                              Rated voltage (Vdc) Symbol\n                        0.3max.                               A±0.2\n                   L±0.3 (Note)                                                                      Note : L±0.5 for HA0                                                                          35            V\n              Note : L±0.5 for HA0                                                                                                     : Supportive terminals\n Size code               D        L      A         B           C            W              P\n    F80                 6.3      7.7    6.6       6.6         7.2       0.5 to 0.8        1.9\n    HA0                  8      10.0    8.3       8.3         9.0       0.7 to 1.1        3.1\n\n◆PART NUMBERING SYSTEM                                                                                                                          ◆RATED RIPPLE CURRENT MULTIPLIERS\n 1        2    3   4    5   6   7   8   9   10        11 12   13   14   15 16   17   18\n\nE MH K 3 5 0 A R A                                                 M F80 G                                                                      ・Frequency Multipliers\n                                                                                                                                                                   Frequency(Hz)   120        1k           10k          100k\n                                                                                                                                                 Capacitance(µF)\n                                                                                                    Supplement code\n                                                                                                           Size code                                      47 to 100                0.40      0.75          0.90         1.00\n                                                                                          Capacitance tolerance code                                        220                    0.50      0.85          0.94         1.00\n                                                                           Capacitance code (ex. 47µF:470,100µF:101)                            The deterioration of aluminum electrolytic capacitors\n                                                                                                         Taping code                            accelerates their life due to the internal heating produced\n                                                                                                       Terminal code                            by ripple current. For details, refer to Section \"5-3 Ripple\n                                                                                           Voltage code (ex.35V:350)                            Current Effect on Lifetime\" in the catalog, Technical Note.\n                                                                                                         Series code\n                                                                                                            Category\n Please refer to \"Product code guide (surface mount type)\"\n\n◆STANDARD RATINGS\n                                                                                                                    ESR\n                 WV                         Cap                                                            （Ω max./100k to 400kHz)                         Rated ripple current\n                                                                        Size code                                                                                                                                Part No.\n                (Vdc)                       (µF)                                                                                                         (mArms/125℃, 100k to 400kHz)\n                                                                                                            20℃                     -40℃\n                                             47                             F80                             0.30                      3.0                                  240                     EMHK350□RA470MF80G\n                   35                       100                             F80                             0.30                      3.0                                  240                     EMHK350□RA101MF80G\n                                            220                             HA0                             0.20                      2.0                                  330                     EMHK350□RA221MHA0G\n\nProduct specifications in this catalog are subject to change without notice.Request our product specifications before purchase and/or use. Please use our products based on the information contained in this catalog and product specifications.\n\n\n                                                                                                                                                                                              CAT. No. E1001A 2026\n"
+    },
+    "p1": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/EMHK350ARA470MF80G/EMHK350ARA470MF80G_数据手册.pdf",
+      "page_idx": 1,
+      "physical_page": 2,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "                        ALUMINUM ELECTROLYTIC CAPACITORS                                                                                                                                                          Product Guide\n\n■ Always read \"Notes on Use\" before using the product in order to enable you to use the product correctly and prevent any faults\n  and accidents from occurring.\n\n■ Request the Product Specification on the product of NIPPON CHEMI-CON CORPORATION to refer to it as well as this brochure\n  prior to the order of the products. Some specific notes on use of the ordered product may be described in the specifications.\n\n■ The products listed in this catalog are designed and manufactured for general electronics equipment use and are not intended for\n  use in applications that can adversely affect human life; where the malfunction of equipment may cause damage to life or\n  property. In addition, our products are not intended to be used in specific applications that may cause a major social impact.\n  Please consult with us in advance of usage of our products in the following listed applications. ① Aerospace equipment ② Power\n  generation equipment such as thermal power, nuclear power etc. ③ Medical equipment ④ Transport equipment (automobiles,\n  trains, ships, etc.) ⑤ Transportation control equipment ⑥ Disaster prevention / crime prevention equipment ⑦ Highly publicized\n  information processing equipment ⑧ Submarine equipment ⑨ Other applications that are not considered general-purpose\n  applications.\n\n■ The circuits described as examples in this catalog and the \"delivery specifications\" are featured in order to show the operations\n  and usage of our products, however, this fact does not guarantee that the circuits are available to function in your equipment\n  systems. We are not in any case responsible for any failures or damage caused by the use of information contained herein. You\n  should examine our products, of which the characteristics are described in the \"delivery specifications\" and other documents, and\n  determine whether or not our products suit your requirements according to the specifications of your equipment systems.\n  Therefore, you bear final responsibility regarding the use of our products.\n  Please make sure that you take appropriate safety measures such as use of redundant design and malfunction prevention\n  measures in order to prevent fatal accidents and/or fires in the event any of our products malfunction.\n\n■ We strongly recommend our customers to purchase Nippon Chemi-Con products only through our official sales channels. We\n  assume no responsibility for any defects or damages caused by using products purchased from outside our official sales channel\n  or of counterfeit goods. In addition, we will ask the customer to pay the investigation cost for products purchased outside our\n  official sales channel.\n\n■ We reserve the right to discontinue production and delivery of products. We do not guarantee that all the products included in this\n  catalog will be available in the future.\n  The aforementioned does not apply in the case of individual agreements deviating from the foregoing for customer-specific\n  products\n\n■ We continually strive to improve the quality and reliability of our products, but in any case that our product does not meet our\n  published specifications, please stop using it promptly and contact us immediately. As for compensation for non-conforming\n  goods delivered by Chemi-Con, we will limit it only to goods found in non-compliance of our published specifications. This may be\n  accomplished by a no cost replacement of non-conforming individual products, a credit of the piece price paid per each individual\n  non-conforming product, or in other ways deemed necessary.\n  In addition, we have an established system with enhanced traceability, therefore we will limit the applicable lot items for any\n  potential compensation.\n\nPart Numbering System\nPart Numbering System (Appendix)\nStandardization\nAvailable Items by Manufacturing Locations\nEnvironmental Measures\nTechnical Note\nPrecautions and Guidelines\nRecommended Soldering Conditions\nTaping, Lead-preforming and Packaging\nAvailable Terminals for Snap-in and Screw Mount Type\n\n\n\n\nProduct specifications in this catalog are subject to change without notice.Request our product specifications before purchase and/or use. Please use our products based on the information contained in this catalog and product specifications.\n\n\n                                                                                                                                                                                              CAT. No. E1001A 2026\n"
+    }
+  }
+}

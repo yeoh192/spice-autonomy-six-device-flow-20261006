@@ -1,0 +1,15 @@
+* Project-generated 2N7002 model for JSMICRO datasheet comparison.
+* D G S interface and explicit DBD branch follow the editable NMOS macro-model
+* skeleton observed in the local temporary library (ROHM RUR020N02). Numerical
+* values are independently fitted from JSMICRO datasheet p.2/p.3 and the
+* LTspice built-in Fairchild 2N7002 reference. NOT a manufacturer official model.
+.SUBCKT 2N7002_FIT D G S
+RG G GI 25
+RD D DI 0.20
+MCORE DI GI S S 2N7002_CORE
+DBD S D 2N7002_DBD
+.MODEL 2N7002_CORE VDMOS(Rg=0 Vto=1.55 Rd=0 Rs=1.80 Rb=.20 Kp=.23 mtriode=1.25 Lambda=.015 Cgdmax=24p Cgdmin=8p Cgs=34p Cjo=1f Is=1e-30 ksubthres=.1 Ron=2.1 Qg=1.5n)
+* BV is set to 61 V so the separate p.2 constraints can coexist: IDSS<=1uA
+* at exactly 60 V, while VBR(DSS) measured at 250uA remains >=60 V.
+.MODEL 2N7002_DBD D(Is=2p N=1.15 Rs=.20 Cjo=17p Vj=.75 M=.4 TT=18n BV=61 IBV=250u)
+.ENDS 2N7002_FIT

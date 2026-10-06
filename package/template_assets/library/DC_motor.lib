@@ -1,0 +1,13 @@
+* Copyright (c) 1998-2026 Analog Devices, Inc.  All rights reserved.
+*
+.subckt DC_motor 1 2 3 4 5 6 7 8
+RA 1 2 {R}
+LA 2 3 {L} Rser=1m
+LJ 4 5 {J} Rser=1m
+RB 5 8 {B}
+CPOS 7 8 1 Rpar=1Meg
+B1 6 8 V=I(LJ)
+B2 8 7 I=I(LJ)
+B3 4 8 V=I(RA)*{Ke}
+B4 3 8 V=I(LJ)*{Ke}
+.ends DC_motor

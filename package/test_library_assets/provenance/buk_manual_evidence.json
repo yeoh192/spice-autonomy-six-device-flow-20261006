@@ -1,0 +1,89 @@
+{
+  "device": "BUK7K52-60E",
+  "pdf_sha256": "4272aefd6383ccab0790755ef94f526441c93ccf928df7532889dc31cc64454e",
+  "source_path": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+  "review_type": "local PDF text and visual inspection; not a complete manual audit",
+  "findings": [
+    {
+      "page": 3,
+      "table": 5,
+      "rows": [
+        {
+          "symbol": "IS",
+          "max": 15.4,
+          "unit": "A",
+          "conditions": "Tmb=25°C"
+        },
+        {
+          "symbol": "ISM",
+          "max": 71,
+          "unit": "A",
+          "conditions": "pulsed; tp≤10 μs; Tmb=25°C"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "table": 7,
+      "rows": [
+        {
+          "symbol": "IGSS",
+          "VGS_V": -20,
+          "typ_nA": 2,
+          "max_nA": 100
+        },
+        {
+          "symbol": "IGSS",
+          "VGS_V": 20,
+          "typ_nA": 2,
+          "max_nA": 100
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "figures": {
+        "9": [
+          "min",
+          "typ",
+          "max"
+        ],
+        "10": [
+          "min",
+          "typ",
+          "max"
+        ],
+        "11": [
+          5.5,
+          6,
+          6.5,
+          7,
+          8,
+          10
+        ]
+      }
+    },
+    {
+      "page": 8,
+      "figures": {
+        "13": [
+          "VDS14",
+          "VDS48"
+        ],
+        "15": [
+          "Ciss",
+          "Coss",
+          "Crss"
+        ],
+        "14": "charge waveform definitions; no numeric endpoint tolerance"
+      }
+    },
+    {
+      "page": 6,
+      "switching_conditions": "VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+      "status": "fixture clarification required; retain all printed conditions"
+    }
+  ],
+  "electrical_verified": false,
+  "reviewed_complete": false
+}

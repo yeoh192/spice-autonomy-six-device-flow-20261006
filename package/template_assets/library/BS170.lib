@@ -1,0 +1,6 @@
+.model BS170 NMOS (Level=3 W=200u L=1u Tox=0.05u  ; dimensions
++  Vto=2.14 Kp=4e-4 Vmax=0 Uo=700 Phi=0.6 NSUB=1e15 NFS=9e11    ; Beta=0.08   
++  Gamma=0.1 Delta=0 Eta=0 Theta=0 Kappa=0.005   ; empirical parameters
++  Rg=0 Rs=0 Rd=0.0 Rb=0 Rds=50e9              ; series and leakage resistances
++  Cgso=140n Cgdo=10n Cgbo=10n Cbd=100p Cj=2e-4 Cjsw=1n  ; capacitance factors
++  Is=10f N=1 Pb=.8 )              ; body diode parameters

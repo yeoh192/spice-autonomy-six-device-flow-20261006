@@ -1,0 +1,191 @@
+{
+  "part": "1N4148",
+  "chart_id": "fig5",
+  "status": "auto_passed",
+  "human_review_required": false,
+  "method": "original_pdf_vector_path_digitization",
+  "source_pdf": "/Users/192y/电气/器件手册与模型/1N4148/1N4148_数据手册.pdf",
+  "source_pdf_sha256": "cc5a33f31a2690a270cc8961b33a9d412dac473e2cfe77faa16ef79502f56400",
+  "page_index": 4,
+  "mineru_image": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/e8bc25a135bfeb1f19800353926434490b232c38a8272f20e88b25bb70fb3987.jpg",
+  "calibration": {
+    "plot_rect_pdf_pt": [
+      89.58499908447266,
+      171.26702880859375,
+      250.2779998779297,
+      331.7130126953125
+    ],
+    "x_axis": {
+      "quantity": "Tj",
+      "unit": "°C",
+      "scale": "linear",
+      "range": [
+        0,
+        200
+      ]
+    },
+    "y_axis": {
+      "quantity": "IR",
+      "unit": "μA",
+      "scale": "log10",
+      "range": [
+        0.01,
+        1000
+      ]
+    },
+    "grid_drawing_ids": [
+      3
+    ],
+    "calibration_method": "axis meaning read by current multimodal assistant; exact grid positions from PDF vector objects"
+  },
+  "common_conditions": "(1)VR=75 V typical; (2)VR=20 V typical",
+  "series": [
+    {
+      "series_id": "vr75",
+      "condition": "(1) VR=75 V, typical",
+      "status": "auto_passed",
+      "sample_count": 201,
+      "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/vr75.csv",
+      "visible_x_range": [
+        24.16657815961968,
+        199.63407697136213
+      ],
+      "y_range": [
+        0.017571877161562964,
+        254.2819517778227
+      ],
+      "extrapolated": false,
+      "source_pdf_drawing_ids": [
+        5
+      ],
+      "resampling_rmse_plot_px_at_300dpi": 0.0011061356441340712,
+      "resampling_max_error_plot_px_at_300dpi": 0.004056975020934791,
+      "reconstruction_r2_in_axis_domain": 0.9999999999525757,
+      "y_resampling_rmse_in_axis_unit": 9.466683647953584e-05,
+      "y_unit": "μA",
+      "physical_model_fit_r2": null,
+      "independent_measurement_accuracy": null,
+      "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+      "dashed_source": false,
+      "y_resampling_rmse_log10": 8.272957295697876e-06,
+      "rendered_ink_support_fraction": 1.0,
+      "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+    },
+    {
+      "series_id": "vr20",
+      "condition": "(2) VR=20 V, typical",
+      "status": "auto_passed",
+      "sample_count": 201,
+      "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/vr20.csv",
+      "visible_x_range": [
+        29.494182561938675,
+        199.1573970866408
+      ],
+      "y_range": [
+        0.01,
+        141.53612927173376
+      ],
+      "extrapolated": false,
+      "source_pdf_drawing_ids": [
+        5
+      ],
+      "resampling_rmse_plot_px_at_300dpi": 0.0014394709955273248,
+      "resampling_max_error_plot_px_at_300dpi": 0.005373533641043575,
+      "reconstruction_r2_in_axis_domain": 0.9999999999185821,
+      "y_resampling_rmse_in_axis_unit": 6.193759255148551e-05,
+      "y_unit": "μA",
+      "physical_model_fit_r2": null,
+      "independent_measurement_accuracy": null,
+      "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+      "dashed_source": false,
+      "y_resampling_rmse_log10": 1.0766023260837958e-05,
+      "rendered_ink_support_fraction": 1.0,
+      "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+    }
+  ],
+  "overlay": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/overlay.png",
+  "reconstructed": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/reconstructed.png",
+  "digitization_error_scope": "CSV resampling versus dense vector centreline, not experimental device accuracy, curve-label accuracy, or SPICE model fit",
+  "sampling_policy": "linear interpolation in plot/axis domain, adaptive maximum 0.25 pixel error at 300 dpi; clip to visible axes; do not extend curve endpoints",
+  "calibration_checks": {
+    "part": "1N4148",
+    "chart_id": "fig5",
+    "note": "Grid geometry compared to declared linear/log scale. Does not independently verify OCR tick values or legend semantics.",
+    "x": {
+      "expected_grid_lines": 11,
+      "detected_grid_lines": 11,
+      "max_grid_alignment_error_px_at_300dpi": 0.7554131825765253,
+      "rmse_grid_alignment_px_at_300dpi": 0.42644384828580173,
+      "matched_within_2px": 11,
+      "expected_tick_values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        180.0,
+        200.0
+      ]
+    },
+    "y": {
+      "expected_grid_lines": 46,
+      "detected_grid_lines": 54,
+      "max_grid_alignment_error_px_at_300dpi": 0.015888165034520323,
+      "rmse_grid_alignment_px_at_300dpi": 0.005109790837866174,
+      "matched_within_2px": 46,
+      "expected_tick_values": [
+        0.01,
+        0.02,
+        0.03,
+        0.04,
+        0.05,
+        0.06,
+        0.07,
+        0.08,
+        0.09,
+        0.1,
+        0.2,
+        0.30000000000000004,
+        0.4,
+        0.5,
+        0.6000000000000001,
+        0.7000000000000001,
+        0.8,
+        0.9,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        90.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        700.0,
+        800.0,
+        900.0,
+        1000.0
+      ]
+    },
+    "status": "auto_passed"
+  }
+}

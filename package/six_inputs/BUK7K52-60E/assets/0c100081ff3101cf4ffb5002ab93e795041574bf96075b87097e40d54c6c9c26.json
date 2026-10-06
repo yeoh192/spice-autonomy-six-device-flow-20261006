@@ -1,0 +1,36 @@
+{
+  "schema_version": "device-input-packet-1",
+  "device": "BUK7K52-60E",
+  "source_series": "BUK7K52-60E",
+  "category": "dual_n_channel_mosfet",
+  "selected_variant": "BUK7K52-60E",
+  "manual": "manual/BUK7K52-60E_数据手册.pdf",
+  "electrical": "extraction/electrical.json",
+  "evidence": "extraction/evidence_catalog.json",
+  "ports": "contracts/ports.json",
+  "inventory": "contracts/manual_inventory.json",
+  "test_plan": "contracts/test_plan.json",
+  "acceptance": "contracts/acceptance.json",
+  "template_selection": {
+    "status": "pending",
+    "source": "bundled_index",
+    "reference_models_are_starting_templates": false
+  },
+  "execution_task": "execution/task_engineering.json",
+  "status": "configured_scope_regression_ready_full_coverage_pending",
+  "role_routes": {
+    "design": "qwen_official/qwen3.8-max",
+    "review": "zhipu/glm-5.3"
+  },
+  "secrets": "interactive_hidden_input_not_stored",
+  "source_status": "auto_processed",
+  "upfront_coverage_stage": {
+    "plan": "../stages/coverage_interfaces_20261006/devices/BUK7K52-60E/coverage_plan.json",
+    "plan_absolute": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/BUK7K52-60E/coverage_plan.json",
+    "stage": "coverage_interfaces_20261006",
+    "status": "prepared_with_explicit_gaps",
+    "full_manual_coverage": false,
+    "model_fitting_ready": false,
+    "note": "新增前置计划；旧execution_task保留用于已配置范围回归，不能据此宣称全覆盖"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "part": "1N4148",
+  "chart_id": "fig6",
+  "status": "auto_passed",
+  "human_review_required": false,
+  "method": "original_pdf_vector_path_digitization",
+  "source_pdf": "/Users/192y/电气/器件手册与模型/1N4148/1N4148_数据手册.pdf",
+  "source_pdf_sha256": "cc5a33f31a2690a270cc8961b33a9d412dac473e2cfe77faa16ef79502f56400",
+  "page_index": 4,
+  "mineru_image": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/45407a1aa5a055a493977f745f0fd97ca3dd4b55d62946e85ed4aac3b2f29e28.jpg",
+  "calibration": {
+    "plot_rect_pdf_pt": [
+      351.77099609375,
+      170.65899658203125,
+      512.3309936523438,
+      331.2179870605469
+    ],
+    "x_axis": {
+      "quantity": "VR",
+      "unit": "V",
+      "scale": "linear",
+      "range": [
+        0,
+        20
+      ]
+    },
+    "y_axis": {
+      "quantity": "Cd",
+      "unit": "pF",
+      "scale": "linear",
+      "range": [
+        0.4,
+        1.2
+      ]
+    },
+    "grid_drawing_ids": [
+      28
+    ],
+    "calibration_method": "axis meaning read by current multimodal assistant; exact grid positions from PDF vector objects"
+  },
+  "common_conditions": "f=1 MHz; Tj=25°C; typical",
+  "series": [
+    {
+      "series_id": "capacitance",
+      "condition": "f=1 MHz; Tj=25 C; typical",
+      "status": "auto_passed",
+      "sample_count": 203,
+      "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig6/capacitance.csv",
+      "visible_x_range": [
+        0.01582139537712664,
+        20.0
+      ],
+      "y_range": [
+        0.8179115587501338,
+        0.9990172958739237
+      ],
+      "extrapolated": false,
+      "source_pdf_drawing_ids": [
+        29
+      ],
+      "resampling_rmse_plot_px_at_300dpi": 0.006035141044270046,
+      "resampling_max_error_plot_px_at_300dpi": 0.02180066255803581,
+      "reconstruction_r2_in_axis_domain": 0.999999983982983,
+      "y_resampling_rmse_in_axis_unit": 7.216955444514748e-06,
+      "y_unit": "pF",
+      "physical_model_fit_r2": null,
+      "independent_measurement_accuracy": null,
+      "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+      "dashed_source": false,
+      "rendered_ink_support_fraction": 1.0,
+      "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+    }
+  ],
+  "overlay": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig6/overlay.png",
+  "reconstructed": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig6/reconstructed.png",
+  "digitization_error_scope": "CSV resampling versus dense vector centreline, not experimental device accuracy, curve-label accuracy, or SPICE model fit",
+  "sampling_policy": "linear interpolation in plot/axis domain, adaptive maximum 0.25 pixel error at 300 dpi; clip to visible axes; do not extend curve endpoints",
+  "calibration_checks": {
+    "part": "1N4148",
+    "chart_id": "fig6",
+    "note": "Grid geometry compared to declared linear/log scale. Does not independently verify OCR tick values or legend semantics.",
+    "x": {
+      "expected_grid_lines": 9,
+      "detected_grid_lines": 9,
+      "max_grid_alignment_error_px_at_300dpi": 2.6448567780334997e-05,
+      "rmse_grid_alignment_px_at_300dpi": 2.1613126985159277e-05,
+      "matched_within_2px": 9,
+      "expected_tick_values": [
+        0.0,
+        2.5,
+        5.0,
+        7.5,
+        10.0,
+        12.5,
+        15.0,
+        17.5,
+        20.0
+      ]
+    },
+    "y": {
+      "expected_grid_lines": 9,
+      "detected_grid_lines": 54,
+      "max_grid_alignment_error_px_at_300dpi": 0.0021174112955435476,
+      "rmse_grid_alignment_px_at_300dpi": 0.0011540444827082103,
+      "matched_within_2px": 9,
+      "expected_tick_values": [
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.7999999999999999,
+        0.8999999999999999,
+        0.9999999999999999,
+        1.0999999999999999,
+        1.1999999999999997
+      ]
+    },
+    "status": "auto_passed"
+  }
+}

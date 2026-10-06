@@ -1,0 +1,17 @@
+* NCD0805R1 equivalent electrical model
+* Based on the selected Wurth Elektronik 150080RS75000 red 0805 LED model.
+* Pin order: A K
+.SUBCKT NCD0805R1 A K
+D1 A K D_NCD0805R1
+.MODEL D_NCD0805R1 D
++ IS=10.000E-21
++ N=1.6992
++ RS=1.0000E-6
++ IKF=1.2373E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ENDS NCD0805R1

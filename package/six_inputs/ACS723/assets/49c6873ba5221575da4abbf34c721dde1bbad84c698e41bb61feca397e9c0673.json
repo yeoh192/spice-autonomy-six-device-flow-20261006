@@ -1,0 +1,1582 @@
+{
+  "device": "ACS723KMATR-20AB-T",
+  "review_status": "pending_full_table_row_and_series_review",
+  "items": [
+    {
+      "id": "parameter:10AB_range",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_range",
+        "key": "optimized_current_range",
+        "values": {
+          "min": -10,
+          "max": 10
+        },
+        "unit": "A",
+        "conditions": "VCC=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:10AB_sensitivity",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_sensitivity",
+        "key": "sensitivity",
+        "values": {
+          "typ": 200
+        },
+        "unit": "mV/A",
+        "conditions": "VCC=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:10AB_zero",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_zero",
+        "key": "zero_current_output",
+        "values": {
+          "typ": "0.5 × VCC"
+        },
+        "unit": "V",
+        "conditions": "IP=0 A; VCC=5 V",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:10AB_error_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_error_warm",
+        "key": "total_output_error",
+        "values": {
+          "min": -2.5,
+          "typ": "±1.4",
+          "max": 2.5
+        },
+        "unit": "%",
+        "conditions": "IP=IPR(max); TA=25..125°C; VCC=5 V; typical band is ±3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:10AB_error_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_error_cold",
+        "key": "total_output_error",
+        "values": {
+          "typ": "±2.0"
+        },
+        "unit": "%",
+        "conditions": "IP=IPR(max); TA=-40..25°C; VCC=5 V; typical band is ±3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:20AB_range",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_range",
+        "key": "optimized_current_range",
+        "values": {
+          "min": -20,
+          "max": 20
+        },
+        "unit": "A",
+        "conditions": "VCC=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:20AB_sensitivity",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_sensitivity",
+        "key": "sensitivity",
+        "values": {
+          "typ": 100
+        },
+        "unit": "mV/A",
+        "conditions": "VCC=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:20AB_zero",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_zero",
+        "key": "zero_current_output",
+        "values": {
+          "typ": "0.5 × VCC"
+        },
+        "unit": "V",
+        "conditions": "IP=0 A; VCC=5 V",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:20AB_error_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_error_warm",
+        "key": "total_output_error",
+        "values": {
+          "min": -2,
+          "typ": "±1.3",
+          "max": 2
+        },
+        "unit": "%",
+        "conditions": "IP=IPR(max); TA=25..125°C; VCC=5 V; typical band is ±3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:20AB_error_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_error_cold",
+        "key": "total_output_error",
+        "values": {
+          "typ": "±2.0"
+        },
+        "unit": "%",
+        "conditions": "IP=IPR(max); TA=-40..25°C; VCC=5 V; typical band is ±3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:40AB_range",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_range",
+        "key": "optimized_current_range",
+        "values": {
+          "min": -40,
+          "max": 40
+        },
+        "unit": "A",
+        "conditions": "VCC=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:40AB_sensitivity",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_sensitivity",
+        "key": "sensitivity",
+        "values": {
+          "typ": 50
+        },
+        "unit": "mV/A",
+        "conditions": "VCC=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:40AB_zero",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_zero",
+        "key": "zero_current_output",
+        "values": {
+          "typ": "0.5 × VCC"
+        },
+        "unit": "V",
+        "conditions": "IP=0 A; VCC=5 V",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:40AB_error_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_error_warm",
+        "key": "total_output_error",
+        "values": {
+          "min": -2,
+          "typ": "±0.8",
+          "max": 2
+        },
+        "unit": "%",
+        "conditions": "IP=IPR(max); TA=25..125°C; VCC=5 V; typical band is ±3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:40AB_error_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_error_cold",
+        "key": "total_output_error",
+        "values": {
+          "typ": "±1.8"
+        },
+        "unit": "%",
+        "conditions": "IP=IPR(max); TA=-40..25°C; VCC=5 V; typical band is ±3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:vcc_abs",
+      "kind": "constraint",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vcc_abs",
+        "key": "supply_voltage",
+        "values": {
+          "max": 6
+        },
+        "unit": "V",
+        "conditions": "",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:vout_abs",
+      "kind": "constraint",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vout_abs",
+        "key": "output_voltage",
+        "values": {
+          "max": 25
+        },
+        "unit": "V",
+        "conditions": "",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:ip_abs",
+      "kind": "constraint",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "ip_abs",
+        "key": "continuous_primary_current",
+        "values": {
+          "max": 60
+        },
+        "unit": "A",
+        "conditions": "TA=25°C",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:tj_abs",
+      "kind": "constraint",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "tj_abs",
+        "key": "junction_temperature",
+        "values": {
+          "max": 165
+        },
+        "unit": "°C",
+        "conditions": "",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:ta",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "ta",
+        "key": "operating_ambient_temperature",
+        "values": {
+          "min": -40,
+          "max": 125
+        },
+        "unit": "°C",
+        "conditions": "",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "operating_range",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:tstg",
+      "kind": "constraint",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "tstg",
+        "key": "storage_temperature",
+        "values": {
+          "min": -65,
+          "max": 165
+        },
+        "unit": "°C",
+        "conditions": "",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:vcc",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vcc",
+        "key": "supply_voltage",
+        "values": {
+          "min": 4.5,
+          "typ": 5,
+          "max": 5.5
+        },
+        "unit": "V",
+        "conditions": "TA=-40..125°C",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:icc",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "icc",
+        "key": "supply_current",
+        "values": {
+          "typ": 9,
+          "max": 14
+        },
+        "unit": "mA",
+        "conditions": "VCC=4.5..5.5 V; TA=-40..125°C",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:cl",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "cl",
+        "key": "output_capacitive_load",
+        "values": {
+          "max": 10
+        },
+        "unit": "nF",
+        "conditions": "VIOUT to GND",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:rl",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "rl",
+        "key": "output_resistive_load",
+        "values": {
+          "min": 4.7
+        },
+        "unit": "kΩ",
+        "conditions": "VIOUT to GND",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:rip",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "rip",
+        "key": "primary_conductor_resistance",
+        "values": {
+          "typ": 0.85
+        },
+        "unit": "mΩ",
+        "conditions": "TA=25°C",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:bw80",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "bw80",
+        "key": "bandwidth",
+        "values": {
+          "typ": 80
+        },
+        "unit": "kHz",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=GND; small-signal -3 dB",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:rise_time80",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "rise_time80",
+        "key": "rise_time",
+        "values": {
+          "typ": 4
+        },
+        "unit": "μs",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=GND; IP=IPR(max)",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:propagation_delay80",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "propagation_delay80",
+        "key": "propagation_delay",
+        "values": {
+          "typ": 2
+        },
+        "unit": "μs",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=GND; IP=IPR(max)",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:response_time80",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "response_time80",
+        "key": "response_time",
+        "values": {
+          "typ": 5
+        },
+        "unit": "μs",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=GND; IP=IPR(max)",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:noise80",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "noise80",
+        "key": "input_referred_noise",
+        "values": {
+          "typ": 62
+        },
+        "unit": "mA rms",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=GND",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:bw20",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "bw20",
+        "key": "bandwidth",
+        "values": {
+          "typ": 20
+        },
+        "unit": "kHz",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=VCC; small-signal -3 dB",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:rise_time20",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "rise_time20",
+        "key": "rise_time",
+        "values": {
+          "typ": 17.5
+        },
+        "unit": "μs",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=VCC; IP=IPR(max)",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:propagation_delay20",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "propagation_delay20",
+        "key": "propagation_delay",
+        "values": {
+          "typ": 5
+        },
+        "unit": "μs",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=VCC; IP=IPR(max)",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:response_time20",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "response_time20",
+        "key": "response_time",
+        "values": {
+          "typ": 22.5
+        },
+        "unit": "μs",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=VCC; IP=IPR(max)",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:noise20",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "noise20",
+        "key": "input_referred_noise",
+        "values": {
+          "typ": 31
+        },
+        "unit": "mA rms",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=VCC",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:poweron",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "poweron",
+        "key": "power_on_time",
+        "values": {
+          "typ": 64
+        },
+        "unit": "μs",
+        "conditions": "TA=25°C; IP=IPR(max); 90% steady state",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:vout_hi",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vout_hi",
+        "key": "output_saturation_high",
+        "values": {
+          "min": "VCC − 0.5"
+        },
+        "unit": "V",
+        "conditions": "TA=25°C; RL=4.7 kΩ",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:vout_lo",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vout_lo",
+        "key": "output_saturation_low",
+        "values": {
+          "max": 0.5
+        },
+        "unit": "V",
+        "conditions": "TA=25°C; RL=4.7 kΩ",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:isotest",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "isotest",
+        "key": "dielectric_strength_test",
+        "values": {
+          "value": 4800
+        },
+        "unit": "V",
+        "conditions": "60 s; agency test",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "isolation_specification",
+        "state": "initial",
+        "evidence_refs": [
+          "b53",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:working_basic",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "working_basic",
+        "key": "basic_isolation_working_voltage",
+        "values": {
+          "value": 1097
+        },
+        "unit": "V",
+        "conditions": "RMS or DC; distinct from 1550 V peak",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "isolation_specification",
+        "state": "initial",
+        "evidence_refs": [
+          "b53",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:working_reinforced",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "working_reinforced",
+        "key": "reinforced_isolation_working_voltage",
+        "values": {
+          "value": 565
+        },
+        "unit": "V",
+        "conditions": "RMS or DC; distinct from 800 V peak",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "isolation_specification",
+        "state": "initial",
+        "evidence_refs": [
+          "b53",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:10AB_sens_error_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_sens_error_warm",
+        "key": "sensitivity_error",
+        "values": {
+          "min": -2,
+          "typ": "±1.3",
+          "max": 2
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; TA=25..125°C; IP=IPR(max); typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:10AB_sens_error_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_sens_error_cold",
+        "key": "sensitivity_error",
+        "values": {
+          "typ": "±1.8"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; TA=-40..25°C; IP=IPR(max); typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:10AB_offset_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_offset_warm",
+        "key": "offset_voltage",
+        "values": {
+          "min": -15,
+          "typ": "±10",
+          "max": 15
+        },
+        "unit": "mV",
+        "conditions": "VCC=5 V; TA=25..125°C; IP=0 A; excludes external magnetic fields; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:10AB_offset_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_offset_cold",
+        "key": "offset_voltage",
+        "values": {
+          "typ": "±20"
+        },
+        "unit": "mV",
+        "conditions": "VCC=5 V; TA=-40..25°C; IP=0 A; excludes external magnetic fields; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:10AB_sensitivity_error_lifetime_drift",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_sensitivity_error_lifetime_drift",
+        "key": "sensitivity_error_lifetime_drift",
+        "values": {
+          "typ": "±1"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:10AB_total_output_error_lifetime_drift",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_total_output_error_lifetime_drift",
+        "key": "total_output_error_lifetime_drift",
+        "values": {
+          "typ": "±1"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:20AB_sens_error_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_sens_error_warm",
+        "key": "sensitivity_error",
+        "values": {
+          "min": -1.5,
+          "typ": "±1.2",
+          "max": 1.5
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; TA=25..125°C; IP=IPR(max); typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:20AB_sens_error_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_sens_error_cold",
+        "key": "sensitivity_error",
+        "values": {
+          "typ": "±1.8"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; TA=-40..25°C; IP=IPR(max); typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:20AB_offset_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_offset_warm",
+        "key": "offset_voltage",
+        "values": {
+          "min": -10,
+          "typ": "±5",
+          "max": 10
+        },
+        "unit": "mV",
+        "conditions": "VCC=5 V; TA=25..125°C; IP=0 A; excludes external magnetic fields; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:20AB_offset_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_offset_cold",
+        "key": "offset_voltage",
+        "values": {
+          "typ": "±12"
+        },
+        "unit": "mV",
+        "conditions": "VCC=5 V; TA=-40..25°C; IP=0 A; excludes external magnetic fields; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:20AB_sensitivity_error_lifetime_drift",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_sensitivity_error_lifetime_drift",
+        "key": "sensitivity_error_lifetime_drift",
+        "values": {
+          "typ": "±1"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:20AB_total_output_error_lifetime_drift",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_total_output_error_lifetime_drift",
+        "key": "total_output_error_lifetime_drift",
+        "values": {
+          "typ": "±1"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:40AB_sens_error_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_sens_error_warm",
+        "key": "sensitivity_error",
+        "values": {
+          "min": -1.5,
+          "typ": "±0.8",
+          "max": 1.5
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; TA=25..125°C; IP=IPR(max); typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:40AB_sens_error_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_sens_error_cold",
+        "key": "sensitivity_error",
+        "values": {
+          "typ": "±1.8"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; TA=-40..25°C; IP=IPR(max); typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:40AB_offset_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_offset_warm",
+        "key": "offset_voltage",
+        "values": {
+          "min": -10,
+          "typ": "±4",
+          "max": 10
+        },
+        "unit": "mV",
+        "conditions": "VCC=5 V; TA=25..125°C; IP=0 A; excludes external magnetic fields; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:40AB_offset_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_offset_cold",
+        "key": "offset_voltage",
+        "values": {
+          "typ": "±6"
+        },
+        "unit": "mV",
+        "conditions": "VCC=5 V; TA=-40..25°C; IP=0 A; excludes external magnetic fields; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:40AB_sensitivity_error_lifetime_drift",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_sensitivity_error_lifetime_drift",
+        "key": "sensitivity_error_lifetime_drift",
+        "values": {
+          "typ": "±1"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:40AB_total_output_error_lifetime_drift",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_total_output_error_lifetime_drift",
+        "key": "total_output_error_lifetime_drift",
+        "values": {
+          "typ": "±1"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:noise_density",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "noise_density",
+        "key": "input_referred_noise_density",
+        "values": {
+          "typ": 220
+        },
+        "unit": "μA rms/√Hz",
+        "conditions": "TA=25°C; CL=1 nF; VCC=5 V",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    },
+    {
+      "id": "parameter:nonlinear",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "nonlinear",
+        "key": "nonlinearity",
+        "values": {
+          "typ": "±1"
+        },
+        "unit": "%",
+        "conditions": "IPR(min)<IP<IPR(max); VCC=5 V",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false
+    }
+  ]
+}

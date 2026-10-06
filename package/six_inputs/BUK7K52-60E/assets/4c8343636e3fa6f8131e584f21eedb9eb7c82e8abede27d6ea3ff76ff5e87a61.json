@@ -1,0 +1,2921 @@
+{
+  "index_base": 0,
+  "blocks": {
+    "b0": {
+      "type": "text",
+      "text": "1. General description",
+      "text_level": 2,
+      "bbox": [
+        78,
+        192,
+        347,
+        211
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b1": {
+      "type": "text",
+      "text": "Dual standard level N-channel MOSFET in an LFPAK56D (Dual Power-SO8) package using TrenchMOS technology. This product has been designed and qualified to AEC Q101 standard for use in high performance automotive applications.",
+      "bbox": [
+        243,
+        219,
+        892,
+        267
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b2": {
+      "type": "text",
+      "text": "2. Features and benefits",
+      "text_level": 2,
+      "bbox": [
+        78,
+        291,
+        369,
+        310
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b3": {
+      "type": "text",
+      "text": "Dual MOSFET",
+      "bbox": [
+        245,
+        319,
+        394,
+        334
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b4": {
+      "type": "text",
+      "text": "Q101 compliant",
+      "bbox": [
+        245,
+        335,
+        403,
+        348
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b5": {
+      "type": "text",
+      "text": "Repetitive avalanche rated",
+      "bbox": [
+        245,
+        349,
+        484,
+        363
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b6": {
+      "type": "text",
+      "text": "Suitable for thermally demanding environments due to $1 7 5 ~ ^ { \\circ } \\mathrm { C }$ rating",
+      "bbox": [
+        245,
+        363,
+        789,
+        379
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b7": {
+      "type": "text",
+      "text": "True standard level gate with $\\mathsf { V } _ { \\mathsf { G S } ( \\mathsf { t h } ) }$ of greater than 1 V at $1 7 5 ^ { \\circ } \\complement$",
+      "bbox": [
+        245,
+        378,
+        771,
+        395
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b8": {
+      "type": "text",
+      "text": "3. Applications",
+      "text_level": 2,
+      "bbox": [
+        78,
+        420,
+        268,
+        441
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b9": {
+      "type": "text",
+      "text": "12 V Automotive systems",
+      "bbox": [
+        247,
+        450,
+        475,
+        464
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b10": {
+      "type": "text",
+      "text": "Motors, lamps and solenoid control",
+      "bbox": [
+        245,
+        464,
+        546,
+        480
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b11": {
+      "type": "text",
+      "text": "• Transmission control",
+      "bbox": [
+        247,
+        480,
+        440,
+        495
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b12": {
+      "type": "text",
+      "text": "• Ultra high performance power switching",
+      "bbox": [
+        247,
+        495,
+        579,
+        511
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b13": {
+      "type": "text",
+      "text": "4. Quick reference data",
+      "text_level": 2,
+      "bbox": [
+        78,
+        536,
+        359,
+        555
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b14": {
+      "type": "table",
+      "img_path": "images/94ace3ad9e0b9701bb518f5c03d72576ad05d16b2b4a3675484dc5a781711c8e.jpg",
+      "table_caption": [
+        "Table 1. Quick reference data"
+      ],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>Symbol</td><td>Parameter</td><td>Conditions</td><td></td><td>Min</td><td>Typ</td><td>Max</td><td>Unit</td></tr><tr><td> $V_{DS}$ </td><td>drain-source voltage</td><td> $T_j \\geq 25 \\, ^{\\circ}C; T_j \\leq 175 \\, ^{\\circ}C$ </td><td></td><td>-</td><td>-</td><td>60</td><td>V</td></tr><tr><td> $I_D$ </td><td>drain current</td><td> $V_{GS} = 10 \\, V; T_{mb} = 25 \\, ^{\\circ}C; \\underline{Fig. 1}$ </td><td></td><td>-</td><td>-</td><td>15.4</td><td>A</td></tr><tr><td> $P_{tot}$ </td><td>total power dissipation</td><td> $T_{mb} = 25 \\, ^{\\circ}C; \\underline{Fig. 2}$ </td><td></td><td>-</td><td>-</td><td>32</td><td>W</td></tr><tr><td colspan=\"8\">Static characteristics FET1 and FET2</td></tr><tr><td> $R_{DSon}$ </td><td>drain-source on-state resistance</td><td> $V_{GS} = 10 \\, V; I_D = 5 \\, A; T_j = 25 \\, ^{\\circ}C; \\underline{Fig. 11}$ </td><td></td><td>-</td><td>35</td><td>45</td><td>mΩ</td></tr><tr><td colspan=\"8\">Dynamic characteristics FET1 and FET2</td></tr><tr><td> $Q_{GD}$ </td><td>gate-drain charge</td><td> $I_D = 5 \\, A; V_{DS} = 48 \\, V; V_{GS} = 10 \\, V; T_j = 25 \\, ^{\\circ}C; \\underline{Fig. 13}; \\underline{Fig. 14}$ </td><td></td><td>-</td><td>3.5</td><td>-</td><td>nC</td></tr></table>",
+      "bbox": [
+        80,
+        581,
+        915,
+        782
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b15": {
+      "type": "header",
+      "text": "WK心",
+      "bbox": [
+        85,
+        61,
+        206,
+        115
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b16": {
+      "type": "header",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        273,
+        66,
+        546,
+        93
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b17": {
+      "type": "header",
+      "text": "Product data sheet",
+      "bbox": [
+        744,
+        122,
+        917,
+        137
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b18": {
+      "type": "footer",
+      "text": "nexperia",
+      "bbox": [
+        640,
+        888,
+        910,
+        934
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b19": {
+      "type": "text",
+      "text": "Dual N-channel 60 V, 45 mΩ standard level MOSFET",
+      "bbox": [
+        497,
+        93,
+        917,
+        109
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b20": {
+      "type": "text",
+      "text": "5. Pinning information",
+      "text_level": 2,
+      "bbox": [
+        78,
+        151,
+        349,
+        171
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b21": {
+      "type": "table",
+      "img_path": "images/5a3e1b178e9284bc4418ffaf4c9e38b5516b3b200746b4e6e8f7c6af4c203e37.jpg",
+      "table_caption": [
+        "Table 2. Pinning information"
+      ],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>Pin</td><td>Symbol</td><td>Description</td><td>Simplified outline</td><td>Graphic symbol</td></tr><tr><td>1</td><td>S1</td><td>source1</td><td rowspan=\"8\"><img src=\"images/8c7a5582324c2093672c68078a1823aeb41ad5437d468fa2d725ba111ff75ebb.jpg\"/>LFPAK56D (SOT1205)</td><td rowspan=\"8\"><img src=\"images/1e5a123b59cce4f80d4b3723900de0fce6e07f73d9c30f170b7ab4949b29e259.jpg\"/>mbk725</td></tr><tr><td>2</td><td>G1</td><td>gate1</td></tr><tr><td>3</td><td>S2</td><td>source2</td></tr><tr><td>4</td><td>G2</td><td>gate2</td></tr><tr><td>5</td><td>D2</td><td>drain2</td></tr><tr><td>6</td><td>D2</td><td>drain2</td></tr><tr><td>7</td><td>D1</td><td>drain1</td></tr><tr><td>8</td><td>D1</td><td>drain1</td></tr></table>",
+      "bbox": [
+        78,
+        198,
+        914,
+        381
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b22": {
+      "type": "text",
+      "text": "6. Ordering information",
+      "text_level": 2,
+      "bbox": [
+        78,
+        407,
+        361,
+        428
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b23": {
+      "type": "table",
+      "img_path": "images/a14c253ce8568d0f01f3d0f33332026da0fec75fe600a36767efa15b16ac83ea.jpg",
+      "table_caption": [
+        "Table 3. Ordering information"
+      ],
+      "table_footnote": [],
+      "table_body": "<table><tr><td rowspan=\"2\">Type number</td><td colspan=\"3\">Package</td></tr><tr><td>Name</td><td>Description</td><td>Version</td></tr><tr><td>BUK7K52-60E</td><td>LFPAK56D</td><td>Plastic single ended surface mounted package (LFPAK56D); 8 leads</td><td>SOT1205</td></tr></table>",
+      "bbox": [
+        80,
+        455,
+        914,
+        532
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b24": {
+      "type": "text",
+      "text": "7. Marking",
+      "text_level": 2,
+      "bbox": [
+        78,
+        558,
+        216,
+        577
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b25": {
+      "type": "table",
+      "img_path": "images/8e97de0b07f2d883311abfeff4650f4bf093ae67cac55bf20904f8e26e60b0bf.jpg",
+      "table_caption": [
+        "Table 4. Marking codes"
+      ],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>Type number</td><td>Marking code</td></tr><tr><td>BUK7K52-60E</td><td>75260E</td></tr></table>",
+      "bbox": [
+        80,
+        605,
+        915,
+        646
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b26": {
+      "type": "text",
+      "text": "8. Limiting values",
+      "text_level": 2,
+      "bbox": [
+        78,
+        673,
+        297,
+        693
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b27": {
+      "type": "table",
+      "img_path": "images/f63324b3aba25906ee8eb66b51646e78cd9a0cbf2aab4759cfe3b571a26a0c22.jpg",
+      "table_caption": [
+        "Table 5. Limiting values",
+        "In accordance with the Absolute Maximum Rating System (IEC 60134)."
+      ],
+      "table_footnote": [
+        "BUK7K52-60E",
+        "© Nexperia B V 2017 All rights reserved"
+      ],
+      "table_body": "<table><tr><td>Symbol</td><td>Parameter</td><td>Conditions</td><td></td><td>Min</td><td>Max</td><td>Unit</td></tr><tr><td> $V_{DS}$ </td><td>drain-source voltage</td><td> $T_j \\ge 25 \\, ^{\\circ}C; T_j \\le 175 \\, ^{\\circ}C$ </td><td></td><td>-</td><td>60</td><td>V</td></tr><tr><td> $V_{DGR}$ </td><td>drain-gate voltage</td><td> $R_{GS} = 20 \\, k\\Omega$ </td><td></td><td>-</td><td>60</td><td>V</td></tr><tr><td> $V_{GS}$ </td><td>gate-source voltage</td><td> $T_j \\le 175 \\, ^{\\circ}C; DC$ </td><td></td><td>-20</td><td>20</td><td>V</td></tr><tr><td rowspan=\"2\"> $I_D$ </td><td rowspan=\"2\">drain current</td><td> $T_{mb} = 25 \\, ^{\\circ}C; V_{GS} = 10 \\, V; Fig. 1$ </td><td></td><td>-</td><td>15.4</td><td>A</td></tr><tr><td> $T_{mb} = 100 \\, ^{\\circ}C; V_{GS} = 10 \\, V; Fig. 1$ </td><td></td><td>-</td><td>12.6</td><td>A</td></tr><tr><td> $I_{DM}$ </td><td>peak drain current</td><td> $T_{mb} = 25 \\, ^{\\circ}C; pulsed; t_p \\le 10 \\, \\mu s; Fig. 4$ </td><td></td><td>-</td><td>71</td><td>A</td></tr><tr><td> $P_{tot}$ </td><td>total power dissipation</td><td> $T_{mb} = 25 \\, ^{\\circ}C; Fig. 2$ </td><td></td><td>-</td><td>32</td><td>W</td></tr></table>",
+      "bbox": [
+        78,
+        736,
+        915,
+        910
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b28": {
+      "type": "page_number",
+      "text": "2 / 13",
+      "bbox": [
+        878,
+        925,
+        917,
+        936
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b29": {
+      "type": "header",
+      "text": "Nexperia",
+      "bbox": [
+        78,
+        65,
+        171,
+        83
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b30": {
+      "type": "header",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        732,
+        66,
+        915,
+        85
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b31": {
+      "type": "footer",
+      "text": "Product data sheet",
+      "bbox": [
+        78,
+        925,
+        206,
+        938
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b32": {
+      "type": "footer",
+      "text": "10 December 2013",
+      "bbox": [
+        436,
+        925,
+        559,
+        938
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b33": {
+      "type": "table",
+      "img_path": "images/3675087fa5d9256b2ce30d0fc4ff656b9567a4f2b1ceab0e9cf43b405fa2f2da.jpg",
+      "table_caption": [
+        "Dual N-channel 60 V, 45 mΩ standard level MOSFET"
+      ],
+      "table_footnote": [
+        "[1] Refer to application note AN10273 for further information",
+        "[2] Single-pulse avalanche rating limited by maximum junction temperature of $1 7 5 ^ { \\circ } \\complement$"
+      ],
+      "table_body": "<table><tr><td>Symbol</td><td>Parameter</td><td>Conditions</td><td></td><td>Min</td><td>Max</td><td>Unit</td></tr><tr><td> $T_{stg}$ </td><td>storage temperature</td><td></td><td></td><td>-55</td><td>175</td><td>°C</td></tr><tr><td> $T_j$ </td><td>junction temperature</td><td></td><td></td><td>-55</td><td>175</td><td>°C</td></tr><tr><td colspan=\"7\">Source-drain diode FET1 and FET2</td></tr><tr><td> $I_S$ </td><td>source current</td><td> $T_{mb}= 25 °C$ </td><td></td><td>-</td><td>15.4</td><td>A</td></tr><tr><td> $I_{SM}$ </td><td>peak source current</td><td>pulsed;  $t_p \\leq 10 μs$ ;  $T_{mb}= 25 °C$ </td><td></td><td>-</td><td>71</td><td>A</td></tr><tr><td colspan=\"7\">Avalanche Ruggedness FET1 and FET2</td></tr><tr><td> $E_{DS(AL)S}$ </td><td>non-repetitive drain-source avalanche energy</td><td> $I_D= 15.4 A; V_{sup} \\leq 60 V; V_{GS}= 10 V; T_{j(init)} = 25 °C;$  $Fig.\\ 3$ </td><td>[1][2]</td><td>-</td><td>11.6</td><td>mJ</td></tr></table>",
+      "bbox": [
+        80,
+        134,
+        915,
+        323
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b34": {
+      "type": "chart",
+      "img_path": "images/bc3c0ed47271e4e02b93c70eb0b977504d4e2eae3ed541aa1a49ec028277181d.jpg",
+      "content": "",
+      "chart_caption": [
+        "Fig. 1. Continuous drain current as a function of mounting base temperature"
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        110,
+        368,
+        440,
+        594
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b35": {
+      "type": "equation",
+      "text": "$$\nV _ {G S} \\geq 1 0 V\n$$",
+      "text_format": "latex",
+      "bbox": [
+        255,
+        643,
+        326,
+        658
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b36": {
+      "type": "chart",
+      "img_path": "images/d05e4dfb21c666aeafe732b434b9666b54a166941cf1e470e14b53bbcd2a62f4.jpg",
+      "content": "",
+      "chart_caption": [
+        "Fig. 2. Normalized total power dissipation as a function of mounting base temperature"
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        531,
+        368,
+        852,
+        595
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b37": {
+      "type": "equation",
+      "text": "$$\nP_{der} = \\frac{P_{tot}}{P_{tot(25^{\\circ}C)}}\\times 100\\%\n$$",
+      "text_format": "latex",
+      "bbox": [
+        631,
+        644,
+        778,
+        670
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b38": {
+      "type": "page_number",
+      "text": "3 / 13",
+      "bbox": [
+        877,
+        925,
+        917,
+        936
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b39": {
+      "type": "header",
+      "text": "Nexperia",
+      "bbox": [
+        78,
+        65,
+        171,
+        83
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b40": {
+      "type": "header",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        732,
+        66,
+        915,
+        85
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b41": {
+      "type": "footer",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        78,
+        909,
+        139,
+        920
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b42": {
+      "type": "footer",
+      "text": "All information provided in this document is subject to legal disclaimers.",
+      "bbox": [
+        364,
+        910,
+        631,
+        920
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b43": {
+      "type": "footer",
+      "text": "Product data sheet",
+      "bbox": [
+        78,
+        925,
+        206,
+        938
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b44": {
+      "type": "footer",
+      "text": "© Nexperia B V 2017 All rights reserved",
+      "bbox": [
+        759,
+        910,
+        917,
+        921
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b45": {
+      "type": "footer",
+      "text": "10 December 2013",
+      "bbox": [
+        436,
+        925,
+        559,
+        938
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b46": {
+      "type": "text",
+      "text": "Dual N-channel 60 V, 45 mΩ standard level MOSFET",
+      "text_level": 2,
+      "bbox": [
+        497,
+        93,
+        917,
+        109
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b47": {
+      "type": "chart",
+      "img_path": "images/e28e2b3e37680a854ad7889e30ed2382d77d228f77c061a728876094be207881.jpg",
+      "content": "",
+      "chart_caption": [
+        "Fig. 3. Avalanche rating; avalanche current as a function of avalanche time"
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        321,
+        139,
+        642,
+        363
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b48": {
+      "type": "chart",
+      "img_path": "images/38f6c34897d3b092814d9c15e6e36a84c37a731119c5724b3dc5c65942916551.jpg",
+      "content": "",
+      "chart_caption": [
+        "(1) $T _ { j } { \\mathrm { ~ } } _ { ( i n i t ) } = 2 5 ^ { \\circ } C ;$ (2) $T _ { j \\ ( i n i ) } = 1 5 0 ^ { \\circ } C ;$ (3)Repetitive Avalanche",
+        "Fig. 4. Safe operating area; continuous and peak drain currents as a function of drain-source voltage"
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        112,
+        423,
+        852,
+        646
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b49": {
+      "type": "equation",
+      "text": "$$\nT _ {m b} = 2 5 ^ {\\circ} C; I _ {D M}\n$$",
+      "text_format": "latex",
+      "bbox": [
+        396,
+        680,
+        502,
+        695
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b50": {
+      "type": "text",
+      "text": "9. Thermal characteristics",
+      "text_level": 2,
+      "bbox": [
+        78,
+        727,
+        391,
+        745
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b51": {
+      "type": "table",
+      "img_path": "images/fe70205771e044729710979478c5dc4e75412cd9626eba6831e4b78b13d5c14c.jpg",
+      "table_caption": [
+        "Table 6. Thermal characteristics"
+      ],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>Symbol</td><td>Parameter</td><td>Conditions</td><td></td><td>Min</td><td>Typ</td><td>Max</td><td>Unit</td></tr><tr><td> $R_{th(j-mb)}$ </td><td>thermal resistance from junction to mounting base</td><td>Fig. 5</td><td></td><td>-</td><td>-</td><td>4.68</td><td>K/W</td></tr><tr><td> $R_{th(j-a)}$ </td><td>thermal resistance from junction to ambient</td><td>Minimum footprint; mounted on a printed circuit board</td><td></td><td>-</td><td>95</td><td>-</td><td>K/W</td></tr></table>",
+      "bbox": [
+        80,
+        772,
+        915,
+        896
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b52": {
+      "type": "page_number",
+      "text": "4 / 13",
+      "bbox": [
+        878,
+        925,
+        917,
+        936
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b53": {
+      "type": "header",
+      "text": "Nexperia",
+      "bbox": [
+        78,
+        65,
+        171,
+        83
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b54": {
+      "type": "header",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        732,
+        66,
+        917,
+        85
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b55": {
+      "type": "footer",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        78,
+        909,
+        139,
+        920
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b56": {
+      "type": "footer",
+      "text": "All information provided in this document is subject to legal disclaimers.",
+      "bbox": [
+        364,
+        909,
+        633,
+        921
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b57": {
+      "type": "footer",
+      "text": "© Nexperia B V 2017 All rights reserved",
+      "bbox": [
+        759,
+        910,
+        917,
+        921
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b58": {
+      "type": "footer",
+      "text": "Product data sheet",
+      "bbox": [
+        78,
+        925,
+        206,
+        938
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b59": {
+      "type": "footer",
+      "text": "10 December 2013",
+      "bbox": [
+        436,
+        925,
+        559,
+        938
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b60": {
+      "type": "text",
+      "text": "Dual N-channel 60 V, 45 mΩ standard level MOSFET",
+      "text_level": 2,
+      "bbox": [
+        497,
+        93,
+        919,
+        109
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b61": {
+      "type": "chart",
+      "img_path": "images/cd38638b9e095227695292c2f27c33d8b8d32274586b55913aeedf80819491e3.jpg",
+      "content": "",
+      "chart_caption": [
+        "Fig. 5. Transient thermal impedance from junction to mounting base as a function of pulse duration"
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        100,
+        140,
+        845,
+        363
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b62": {
+      "type": "text",
+      "text": "10. Characteristics",
+      "text_level": 2,
+      "bbox": [
+        78,
+        418,
+        297,
+        437
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b63": {
+      "type": "table",
+      "img_path": "images/87042186ded9e154053d643b79f2c883dbb616ac2ef299da4852d9aa11ffeea3.jpg",
+      "table_caption": [
+        "Table 7. Characteristics"
+      ],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>Symbol</td><td>Parameter</td><td>Conditions</td><td></td><td>Min</td><td>Typ</td><td>Max</td><td>Unit</td></tr><tr><td colspan=\"8\">Static characteristics FET1 and FET2</td></tr><tr><td rowspan=\"2\"> $V_{(BR)DSS}$ </td><td rowspan=\"2\">drain-source breakdown voltage</td><td> $I_D=250 μA; V_{GS}=0 V; T_j=-55 °C$ </td><td></td><td>54</td><td>-</td><td>-</td><td>V</td></tr><tr><td> $I_D=250 μA; V_{GS}=0 V; T_j=25 °C$ </td><td></td><td>60</td><td>-</td><td>-</td><td>V</td></tr><tr><td rowspan=\"3\"> $V_{GS(th)}$ </td><td rowspan=\"3\">gate-source threshold voltage</td><td> $I_D=1 mA; V_{DS}=V_{GS}; T_j=25 °C;$  $Fig. 9; Fig. 10$ </td><td></td><td>2.4</td><td>3</td><td>4</td><td>V</td></tr><tr><td> $I_D=1 mA; V_{DS}=V_{GS}; T_j=175 °C;$  $Fig. 9; Fig. 10$ </td><td></td><td>1</td><td>-</td><td>-</td><td>V</td></tr><tr><td> $I_D=1 mA; V_{DS}=V_{GS}; T_j=-55 °C;$  $Fig. 9; Fig. 10$ </td><td></td><td>-</td><td>-</td><td>4.5</td><td>V</td></tr><tr><td rowspan=\"2\"> $I_{DSS}$ </td><td rowspan=\"2\">drain leakage current</td><td> $V_{DS}=60 V; V_{GS}=0 V; T_j=25 °C$ </td><td></td><td>-</td><td>0.02</td><td>1</td><td>μA</td></tr><tr><td> $V_{DS}=60 V; V_{GS}=0 V; T_j=175 °C$ </td><td></td><td>-</td><td>-</td><td>500</td><td>μA</td></tr><tr><td rowspan=\"2\"> $I_{GSS}$ </td><td rowspan=\"2\">gate leakage current</td><td> $V_{GS}=-20 V; V_{DS}=0 V; T_j=25 °C$ </td><td></td><td>-</td><td>2</td><td>100</td><td>nA</td></tr><tr><td> $V_{GS}=20 V; V_{DS}=0 V; T_j=25 °C$ </td><td></td><td>-</td><td>2</td><td>100</td><td>nA</td></tr><tr><td rowspan=\"2\"> $R_{DSon}$ </td><td rowspan=\"2\">drain-source on-state resistance</td><td> $V_{GS}=10 V; I_D=5 A; T_j=25 °C;$  $Fig. 11$ </td><td></td><td>-</td><td>35</td><td>45</td><td>mΩ</td></tr><tr><td> $V_{GS}=10 V; I_D=5 A; T_j=175 °C;$  $Fig. 12; Fig. 11$ </td><td></td><td>-</td><td>78</td><td>101</td><td>mΩ</td></tr><tr><td colspan=\"8\">Dynamic characteristics FET1 and FET2</td></tr><tr><td> $Q_{G(tot)}$ </td><td>total gate charge</td><td rowspan=\"3\"> $I_D=5 A; V_{DS}=48 V; V_{GS}=10 V;$  $T_j=25 °C;$  $Fig. 13; Fig. 14$ </td><td></td><td>-</td><td>9.2</td><td>-</td><td>nC</td></tr><tr><td> $Q_{GS}$ </td><td>gate-source charge</td><td></td><td>-</td><td>2</td><td>-</td><td>nC</td></tr><tr><td> $Q_{GD}$ </td><td>gate-drain charge</td><td></td><td>-</td><td>3.5</td><td>-</td><td>nC</td></tr></table>",
+      "bbox": [
+        78,
+        462,
+        915,
+        890
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b64": {
+      "type": "page_number",
+      "text": "5 / 13",
+      "bbox": [
+        877,
+        925,
+        917,
+        936
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b65": {
+      "type": "header",
+      "text": "Nexperia",
+      "bbox": [
+        78,
+        65,
+        171,
+        83
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b66": {
+      "type": "header",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        732,
+        66,
+        917,
+        85
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b67": {
+      "type": "footer",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        78,
+        909,
+        139,
+        920
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b68": {
+      "type": "footer",
+      "text": "All information provided in this document is subject to legal disclaimers.",
+      "bbox": [
+        363,
+        909,
+        633,
+        921
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b69": {
+      "type": "footer",
+      "text": "© Nexperia B V 2017 All rights reserved",
+      "bbox": [
+        759,
+        910,
+        917,
+        921
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b70": {
+      "type": "footer",
+      "text": "Product data sheet",
+      "bbox": [
+        78,
+        925,
+        206,
+        938
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b71": {
+      "type": "footer",
+      "text": "10 December 2013",
+      "bbox": [
+        436,
+        925,
+        559,
+        938
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b72": {
+      "type": "table",
+      "img_path": "images/e70591d1c011d2a04cdf370f7530d6a3abc569d278f22b683c0bb78ddfddc894.jpg",
+      "table_caption": [
+        "Dual N-channel 60 V, 45 mΩ standard level MOSFET"
+      ],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>Symbol</td><td>Parameter</td><td>Conditions</td><td></td><td>Min</td><td>Typ</td><td>Max</td><td>Unit</td></tr><tr><td> $V_{GS(pl)}$ </td><td>gate-source plateau voltage</td><td> $I_D = 5 A; V_{DS} = 48 V; T_j = 25 °C;Fig. 13;Fig. 14$ </td><td></td><td>-</td><td>5</td><td>-</td><td>V</td></tr><tr><td> $C_{iss}$ </td><td>input capacitance</td><td rowspan=\"3\"> $V_{GS} = 0 V; V_{DS} = 25 V; f = 1 MHz;T_j = 25 °C;Fig. 15$ </td><td></td><td>-</td><td>401</td><td>535</td><td>pF</td></tr><tr><td> $C_{oss}$ </td><td>output capacitance</td><td></td><td>-</td><td>73</td><td>87</td><td>pF</td></tr><tr><td> $C_{rss}$ </td><td>reverse transfer capacitance</td><td></td><td>-</td><td>53</td><td>72</td><td>pF</td></tr><tr><td> $t_{d(on)}$ </td><td>turn-on delay time</td><td rowspan=\"4\"> $V_{DS} = 48 V; R_L = 5 Ω; V_{GS} = 10 V;R_{G(ext)} = 5 Ω; T_j = 25 °C; I_D = 5 A$ </td><td></td><td>-</td><td>4.3</td><td>-</td><td>ns</td></tr><tr><td> $t_r$ </td><td>rise time</td><td></td><td>-</td><td>5.1</td><td>-</td><td>ns</td></tr><tr><td> $t_{d(off)}$ </td><td>turn-off delay time</td><td></td><td>-</td><td>8.4</td><td>-</td><td>ns</td></tr><tr><td> $t_f$ </td><td>fall time</td><td></td><td>-</td><td>5.4</td><td>-</td><td>ns</td></tr><tr><td colspan=\"8\">Source-drain diode FET1 and FET2</td></tr><tr><td> $V_{SD}$ </td><td>source-drain voltage</td><td> $I_S = 5 A; V_{GS} = 0 V; T_j = 25 °C;Fig. 16$ </td><td></td><td>-</td><td>0.83</td><td>1.2</td><td>V</td></tr><tr><td> $t_{rr}$ </td><td>reverse recovery time</td><td rowspan=\"2\"> $I_S = 5 A; dI_S/dt = -100 A/μs; V_{GS} = 0 V;V_{DS} = 30 V; T_j = 25 °C$ </td><td></td><td>-</td><td>17.6</td><td>-</td><td>ns</td></tr><tr><td> $Q_r$ </td><td>recovered charge</td><td></td><td>-</td><td>12.3</td><td>-</td><td>nC</td></tr></table>",
+      "bbox": [
+        78,
+        135,
+        915,
+        443
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b73": {
+      "type": "chart",
+      "img_path": "images/7c1a8ccb504d21cd99a4dacfd74666fb65be9f875668a799b52bc2fda7bcb1e8.jpg",
+      "content": "",
+      "chart_caption": [
+        "Fig. 6. Output characteristics; drain current as a function of drain-source voltage; typical values"
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        132,
+        458,
+        450,
+        681
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b74": {
+      "type": "equation",
+      "text": "$$\nT _ {j} = 2 5 ^ {\\circ} C\n$$",
+      "text_format": "latex",
+      "bbox": [
+        257,
+        728,
+        324,
+        744
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b75": {
+      "type": "chart",
+      "img_path": "images/1b543b7b6450f3e42e59130806b7e6a6c1ef1941637a6e7abac6770a0dae76b3.jpg",
+      "content": "",
+      "chart_caption": [
+        "Fig. 7. Transfer characteristics; drain current as a function of gate-source voltage; typical values"
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        547,
+        456,
+        868,
+        682
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b76": {
+      "type": "equation",
+      "text": "$$\nV _ {D S} = 1 0 V\n$$",
+      "text_format": "latex",
+      "bbox": [
+        670,
+        728,
+        741,
+        743
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b77": {
+      "type": "page_number",
+      "text": "6 / 13",
+      "bbox": [
+        877,
+        925,
+        917,
+        936
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b78": {
+      "type": "header",
+      "text": "Nexperia",
+      "bbox": [
+        78,
+        65,
+        171,
+        83
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b79": {
+      "type": "header",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        732,
+        66,
+        915,
+        85
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b80": {
+      "type": "footer",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        78,
+        909,
+        139,
+        920
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b81": {
+      "type": "footer",
+      "text": "Product data sheet",
+      "bbox": [
+        78,
+        925,
+        206,
+        938
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b82": {
+      "type": "footer",
+      "text": "All information provided in this document is subject to legal disclaimers.",
+      "bbox": [
+        364,
+        910,
+        631,
+        920
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b83": {
+      "type": "footer",
+      "text": "10 December 2013",
+      "bbox": [
+        436,
+        925,
+        559,
+        938
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b84": {
+      "type": "footer",
+      "text": "© Nexperia B V 2017 All rights reserved",
+      "bbox": [
+        759,
+        910,
+        917,
+        921
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b85": {
+      "type": "chart",
+      "img_path": "images/3411ae15304d09a9d62091307d341e0245a319e9d0483a7b3f2b2098d1342f16.jpg",
+      "content": "",
+      "chart_caption": [
+        "Fig. 8. Drain-source on-state resistance as a function of gate-source voltage; typical values"
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        100,
+        137,
+        435,
+        363
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b86": {
+      "type": "equation",
+      "text": "$$\nT _ {j} = 2 5 ^ {\\circ} C; I _ {D} = 5 A\n$$",
+      "text_format": "latex",
+      "bbox": [
+        228,
+        413,
+        354,
+        429
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b87": {
+      "type": "chart",
+      "img_path": "images/adac2e9f45ecfca530168897a0590f1158657981633592f58599d6315f2d8219.jpg",
+      "content": "",
+      "chart_caption": [
+        "Fig. 10. Gate-source threshold voltage as a function of junction temperature"
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        109,
+        435,
+        438,
+        662
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b88": {
+      "type": "equation",
+      "text": "$$\nI _ {D} = 1 \\mathrm{mA}; V _ {D S} = V _ {G S}\n$$",
+      "text_format": "latex",
+      "bbox": [
+        220,
+        709,
+        361,
+        726
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b89": {
+      "type": "text",
+      "text": "Dual N-channel 60 V, 45 mΩ standard level MOSFET",
+      "text_level": 2,
+      "bbox": [
+        499,
+        93,
+        917,
+        109
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b90": {
+      "type": "chart",
+      "img_path": "images/055f15a244aeb04d08e9080736aa651127139e2cfa40611dcfc428a2ac6e6293.jpg",
+      "content": "",
+      "chart_caption": [
+        "Fig. 9. Sub-threshold drain current as a function of gate-source voltage"
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        532,
+        141,
+        845,
+        363
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b91": {
+      "type": "equation",
+      "text": "$$\nT _ {j} = 2 5 ^ {\\circ} C; V _ {D S} = 5 V\n$$",
+      "text_format": "latex",
+      "bbox": [
+        638,
+        412,
+        774,
+        429
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b92": {
+      "type": "chart",
+      "img_path": "images/ab8dd67b32232f020362485b8f7dc9cd41b527f0434b9c316c534024a74b947e.jpg",
+      "content": "",
+      "chart_caption": [
+        "Fig. 11. Drain-source on-state resistance as a function of drain current; typical values"
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        517,
+        436,
+        850,
+        662
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b93": {
+      "type": "equation",
+      "text": "$$\nT _ {j} = 2 5 ^ {\\circ} C\n$$",
+      "text_format": "latex",
+      "bbox": [
+        673,
+        709,
+        739,
+        725
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b94": {
+      "type": "page_number",
+      "text": "7 / 13",
+      "bbox": [
+        878,
+        925,
+        917,
+        936
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b95": {
+      "type": "header",
+      "text": "Nexperia",
+      "bbox": [
+        78,
+        65,
+        171,
+        83
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b96": {
+      "type": "header",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        732,
+        66,
+        917,
+        85
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b97": {
+      "type": "footer",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        78,
+        909,
+        139,
+        920
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b98": {
+      "type": "footer",
+      "text": "All information provided in this document is subject to legal disclaimers.",
+      "bbox": [
+        364,
+        910,
+        631,
+        920
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b99": {
+      "type": "footer",
+      "text": "© Nexperia B V 2017 All rights reserved",
+      "bbox": [
+        759,
+        910,
+        917,
+        921
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b100": {
+      "type": "footer",
+      "text": "Product data sheet",
+      "bbox": [
+        78,
+        925,
+        206,
+        938
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b101": {
+      "type": "footer",
+      "text": "10 December 2013",
+      "bbox": [
+        438,
+        925,
+        559,
+        938
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b102": {
+      "type": "chart",
+      "img_path": "images/fda4553e3ed91b25ec51efa9a8b40162a26819ef7bcb56cf6fc542f4c8f79d05.jpg",
+      "content": "",
+      "chart_caption": [],
+      "chart_footnote": [],
+      "bbox": [
+        119,
+        137,
+        438,
+        365
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b103": {
+      "type": "chart",
+      "img_path": "images/68de1e0532ea7a41f53f1a564101f115c80180a6db783c755595359fbe51d08f.jpg",
+      "content": "",
+      "chart_caption": [
+        "Fig. 12. Normalized drain-source on-state resistance factor as a function of junction temperature",
+        "Fig. 14. Gate charge waveform definitions"
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        152,
+        413,
+        430,
+        627
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b104": {
+      "type": "text",
+      "text": "Dual N-channel 60 V, 45 mΩ standard level MOSFET",
+      "text_level": 2,
+      "bbox": [
+        497,
+        93,
+        917,
+        109
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b105": {
+      "type": "chart",
+      "img_path": "images/b806850e3b574ab5c6544d4a848ecc3d750e83423c8a898d40afc2e77fd9c647.jpg",
+      "content": "",
+      "chart_caption": [
+        "Fig. 13. Gate-source voltage as a function of gate charge; typical values"
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        544,
+        137,
+        868,
+        363
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b106": {
+      "type": "equation",
+      "text": "$$\nT _ {j} = 2 5 ^ {\\circ} C; I _ {D} = 5 A\n$$",
+      "text_format": "latex",
+      "bbox": [
+        643,
+        410,
+        769,
+        426
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b107": {
+      "type": "chart",
+      "img_path": "images/1b94c65711b10ff0f88dabd3bc4432d48e4d7b72c3a4d18c0608c232e8eb9b98.jpg",
+      "content": "",
+      "chart_caption": [
+        "Fig. 15. Input, output and reverse transfer capacitances as a function of drain-source voltage; typical values"
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        542,
+        445,
+        875,
+        671
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b108": {
+      "type": "equation",
+      "text": "$$\nV _ {G S} = 0 V; f = 1 M H z\n$$",
+      "text_format": "latex",
+      "bbox": [
+        636,
+        734,
+        776,
+        750
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b109": {
+      "type": "page_number",
+      "text": "8 / 13",
+      "bbox": [
+        877,
+        925,
+        917,
+        936
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b110": {
+      "type": "header",
+      "text": "Nexperia",
+      "bbox": [
+        78,
+        65,
+        171,
+        83
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b111": {
+      "type": "header",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        732,
+        66,
+        917,
+        85
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b112": {
+      "type": "footer",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        78,
+        909,
+        139,
+        920
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b113": {
+      "type": "footer",
+      "text": "All information provided in this document is subject to legal disclaimers.",
+      "bbox": [
+        364,
+        910,
+        631,
+        920
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b114": {
+      "type": "footer",
+      "text": "© Nexperia B V 2017 All rights reserved",
+      "bbox": [
+        759,
+        910,
+        917,
+        921
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b115": {
+      "type": "footer",
+      "text": "Product data sheet",
+      "bbox": [
+        78,
+        925,
+        206,
+        938
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b116": {
+      "type": "footer",
+      "text": "10 December 2013",
+      "bbox": [
+        436,
+        925,
+        559,
+        938
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b117": {
+      "type": "text",
+      "text": "Dual N-channel 60 V, 45 mΩ standard level MOSFET",
+      "text_level": 2,
+      "bbox": [
+        497,
+        93,
+        917,
+        109
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b118": {
+      "type": "chart",
+      "img_path": "images/d8c2d02301a27dd7cc4d3afadf49446271206cfbaceb1c2d94223ccf3f61f7db.jpg",
+      "content": "",
+      "chart_caption": [
+        "Fig. 16. Source (diode forward) current as a function of source-drain (diode forward) voltage; typical values"
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        337,
+        139,
+        663,
+        363
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b119": {
+      "type": "page_number",
+      "text": "9 / 13",
+      "bbox": [
+        878,
+        925,
+        917,
+        936
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b120": {
+      "type": "header",
+      "text": "Nexperia",
+      "bbox": [
+        78,
+        65,
+        171,
+        83
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b121": {
+      "type": "header",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        732,
+        66,
+        917,
+        85
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b122": {
+      "type": "footer",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        78,
+        910,
+        139,
+        920
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b123": {
+      "type": "footer",
+      "text": "All information provided in this document is subject to legal disclaimers.",
+      "bbox": [
+        364,
+        910,
+        631,
+        920
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b124": {
+      "type": "footer",
+      "text": "© Nexperia B V 2017 All rights reserved",
+      "bbox": [
+        759,
+        910,
+        917,
+        921
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b125": {
+      "type": "footer",
+      "text": "Product data sheet",
+      "bbox": [
+        78,
+        925,
+        206,
+        938
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b126": {
+      "type": "footer",
+      "text": "10 December 2013",
+      "bbox": [
+        436,
+        925,
+        559,
+        938
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b127": {
+      "type": "text",
+      "text": "Dual N-channel 60 V, 45 mΩ standard level MOSFET",
+      "bbox": [
+        497,
+        93,
+        917,
+        109
+      ],
+      "page_idx": 9,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b128": {
+      "type": "image",
+      "img_path": "images/fdb0873f33ac616b608d947821c4854fb93be9a17cb3ad2e6279cdee8f467ec4.jpg",
+      "image_caption": [
+        "11. Package outline"
+      ],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        94,
+        187,
+        905,
+        799
+      ],
+      "page_idx": 9,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b129": {
+      "type": "table",
+      "img_path": "images/fd707b307397191e6512814ad0bd84719ff46eea4bc57df58323c36de1a2bdcc.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td colspan=\"2\">Unit</td><td>A</td><td> $A_1$ </td><td>b</td><td> $b_1$ </td><td>c</td><td> $c_1$ </td><td> $D^{(1)}$ </td><td> $D_1^{(1)}$ </td><td> $D_2 (ref)$ </td><td> $E^{(1)}$ </td><td> $E_1^{(1)}$ </td><td> $E_2$ </td><td>e</td><td>H</td><td>L</td><td> $L_1$ </td><td> $L_p$ </td><td>w</td><td>y</td><td>θ</td></tr><tr><td rowspan=\"3\">mm</td><td>max</td><td>1.05</td><td>0.1</td><td>0.50</td><td>4.4</td><td>0.25</td><td>0.30</td><td>4.70</td><td>4.8</td><td rowspan=\"3\">3.5</td><td>5.30</td><td>1.8</td><td>0.85</td><td rowspan=\"3\">1.27</td><td>6.2</td><td>1.3</td><td>0.55</td><td>0.85</td><td rowspan=\"3\">0.25</td><td rowspan=\"3\">0.1</td><td rowspan=\"2\"> $8^\\circ$ </td></tr><tr><td>nom</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>min</td><td></td><td>0.0</td><td>0.35</td><td>4.1</td><td>0.19</td><td>0.24</td><td>4.45</td><td></td><td>4.95</td><td>1.6</td><td></td><td>5.9</td><td>0.8</td><td>0.30</td><td>0.40</td><td> $0^\\circ$ </td></tr></table>",
+      "bbox": [
+        105,
+        737,
+        857,
+        795
+      ],
+      "page_idx": 9,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b130": {
+      "type": "table",
+      "img_path": "images/6b010c78dbb4835f63d08b5a2ab6d50d651dc835bbe4001fc5574dc4a4be1d1f.jpg",
+      "table_caption": [
+        "1. Plastic or metal protrusions of 0.2 mm maximum per side are not included.",
+        "Fig. 17. Package outline LFPAK56D (SOT1205)"
+      ],
+      "table_footnote": [],
+      "table_body": "<table><tr><td rowspan=\"2\">Outline version</td><td colspan=\"4\">References</td><td rowspan=\"2\">European projection</td><td rowspan=\"2\">Issue date</td></tr><tr><td>IEC</td><td>JEDEC</td><td>JEITA</td><td></td></tr><tr><td colspan=\"5\">SOT1205</td><td colspan=\"2\">-13-02-1913-02-21</td></tr></table>",
+      "bbox": [
+        95,
+        816,
+        902,
+        872
+      ],
+      "page_idx": 9,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b131": {
+      "type": "header",
+      "text": "Nexperia",
+      "bbox": [
+        78,
+        65,
+        171,
+        83
+      ],
+      "page_idx": 9,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b132": {
+      "type": "header",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        732,
+        66,
+        915,
+        85
+      ],
+      "page_idx": 9,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b133": {
+      "type": "footer",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        78,
+        909,
+        139,
+        920
+      ],
+      "page_idx": 9,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b134": {
+      "type": "footer",
+      "text": "All information provided in this document is subject to legal disclaimers.",
+      "bbox": [
+        364,
+        910,
+        631,
+        921
+      ],
+      "page_idx": 9,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b135": {
+      "type": "footer",
+      "text": "© Nexperia B V 2017 All rights reserved",
+      "bbox": [
+        759,
+        910,
+        917,
+        921
+      ],
+      "page_idx": 9,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b136": {
+      "type": "footer",
+      "text": "Product data sheet",
+      "bbox": [
+        78,
+        925,
+        206,
+        938
+      ],
+      "page_idx": 9,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b137": {
+      "type": "page_number",
+      "text": "10 / 13",
+      "bbox": [
+        870,
+        925,
+        917,
+        936
+      ],
+      "page_idx": 9,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b138": {
+      "type": "footer",
+      "text": "10 December 2013",
+      "bbox": [
+        436,
+        925,
+        559,
+        938
+      ],
+      "page_idx": 9,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b139": {
+      "type": "text",
+      "text": "12. Legal information",
+      "text_level": 2,
+      "bbox": [
+        80,
+        154,
+        324,
+        174
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b140": {
+      "type": "text",
+      "text": "12.1 Data sheet status",
+      "text_level": 2,
+      "bbox": [
+        92,
+        200,
+        321,
+        216
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b141": {
+      "type": "table",
+      "img_path": "images/447375dbae82937f313480961d93a536eae83de55b60ce26ce1fc6f44e73c5ac.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>Document status [1][2]</td><td>Product status [3]</td><td>Definition</td></tr><tr><td>Objective [short] data sheet</td><td>Development</td><td>This document contains data from the objective specification for product development.</td></tr><tr><td>Preliminary [short] data sheet</td><td>Qualification</td><td>This document contains data from the preliminary specification.</td></tr><tr><td>Product [short] data sheet</td><td>Production</td><td>This document contains the product specification.</td></tr></table>",
+      "bbox": [
+        82,
+        225,
+        485,
+        357
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b142": {
+      "type": "text",
+      "text": "[1] Please consult the most recently issued document before initiating or completing a design.",
+      "bbox": [
+        78,
+        369,
+        475,
+        388
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b143": {
+      "type": "text",
+      "text": "[2] The term 'short data sheet' is explained in section \"Definitions\".",
+      "bbox": [
+        80,
+        388,
+        445,
+        400
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b144": {
+      "type": "text",
+      "text": "[3] The product status of device(s) described in this document may have changed since this document was published and may differ in case of multiple devices. The latest product status information is available on the Internet at URL http://www.nexperia.com.",
+      "bbox": [
+        78,
+        399,
+        478,
+        441
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b145": {
+      "type": "text",
+      "text": "12.2 Definitions",
+      "text_level": 2,
+      "bbox": [
+        92,
+        464,
+        258,
+        480
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b146": {
+      "type": "text",
+      "text": "Preview — The document is a preview version only. The document is still subject to formal approval, which may result in modifications or additions. Nexperia does not give any representations or warranties as to the accuracy or completeness of information included herein and shall have no liability for the consequences of use of such information.",
+      "bbox": [
+        78,
+        487,
+        478,
+        539
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b147": {
+      "type": "text",
+      "text": "Draft — The document is a draft version only. The content is still under internal review and subject to formal approval, which may result in modifications or additions. Nexperia does not give any representations or warranties as to the accuracy or completeness of information included herein and shall have no liability for the consequences of use of such information",
+      "bbox": [
+        78,
+        548,
+        477,
+        609
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b148": {
+      "type": "text",
+      "text": "Short data sheet — A short data sheet is an extract from a full data sheet with the same product type number(s) and title. A short data sheet is intended for quick reference only and should not be relied upon to contain detailed and full information. For detailed and full information see the relevant full data sheet, which is available on request via the local Nexperia sales office. In case of any inconsistency or conflict with the short data sheet, the full data sheet shall prevail.",
+      "bbox": [
+        78,
+        618,
+        477,
+        690
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b149": {
+      "type": "text",
+      "text": "Product specification — The information and data provided in a Product data sheet shall define the specification of the product as agreed between Nexperia and its customer, unless Nexperia and customer have explicitly agreed otherwise in writing. In no event however, shall an agreement be valid in which the Nexperia product is deemed to offer functions and qualities beyond those described in the Product data sheet.",
+      "bbox": [
+        78,
+        699,
+        470,
+        771
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b150": {
+      "type": "text",
+      "text": "12.3 Disclaimers",
+      "text_level": 2,
+      "bbox": [
+        92,
+        794,
+        267,
+        810
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b151": {
+      "type": "text",
+      "text": "Limited warranty and liability — Information in this document is believed to be accurate and reliable. However, Nexperia does not give any representations or warranties, expressed or implied, as to the accuracy or completeness of such information and shall have no liability for the consequences of use of such information. Nexperia takes no responsibility for the content in this document if provided by an information source outside of Nexperia.",
+      "bbox": [
+        78,
+        816,
+        477,
+        889
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b152": {
+      "type": "text",
+      "text": "Dual N-channel 60 V, 45 mΩ standard level MOSFET",
+      "text_level": 2,
+      "bbox": [
+        497,
+        93,
+        917,
+        109
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b153": {
+      "type": "text",
+      "text": "In no event shall Nexperia be liable for any indirect, incidental, punitive, special or consequential damages (including - without limitation - lost profits, lost savings, business interruption, costs related to the remova or replacement of any products or rework charges) whether or not such damages are based on tort (including negligence), warranty, breach of contract or any other legal theory.",
+      "bbox": [
+        507,
+        136,
+        902,
+        198
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b154": {
+      "type": "text",
+      "text": "Notwithstanding any damages that customer might incur for any reason whatsoever, Nexperia’s aggregate and cumulative liability towards customer for the products described herein shall be limited in accordance with the Terms and conditions of commercial sale of Nexperia.",
+      "bbox": [
+        505,
+        206,
+        897,
+        249
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b155": {
+      "type": "text",
+      "text": "make changes to information published in this document, including without limitation specifications and product descriptions, at any time and without notice. This document supersedes and replaces all information supplied prio to the publication hereof.",
+      "bbox": [
+        507,
+        266,
+        915,
+        309
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b156": {
+      "type": "text",
+      "text": "product has been qualified for use in automotive applications. Unless otherwise agreed in writing, the product is not designed, authorized or warranted to be suitable for use in life support, life-critical or safety-critical systems or equipment, nor in applications where failure or malfunction of a Nexperia product can reasonably be expected to result in personal injury, death or severe property or environmenta damage. Nexperia and its suppliers accept no liability for inclusion and/or use of Nexperia products in such equipment or applications and therefore such inclusion and/or use is at the customer's own risk.",
+      "bbox": [
+        507,
+        328,
+        915,
+        428
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b157": {
+      "type": "text",
+      "text": "Quick reference data — The Quick reference data is an extract of the product data given in the Limiting values and Characteristics sections of this document, and as such is not complete, exhaustive or legally binding.",
+      "bbox": [
+        507,
+        438,
+        910,
+        470
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b158": {
+      "type": "text",
+      "text": "Applications — Applications that are described herein for any of these products are for illustrative purposes only. Nexperia makes no representation or warranty that such applications will be suitable for the specified use without further testing or modification.",
+      "bbox": [
+        507,
+        478,
+        885,
+        521
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b159": {
+      "type": "text",
+      "text": "Customers are responsible for the design and operation of their applications and products using Nexperia products, and Nexperia accepts no liability for any assistance with applications or customer product design. It is customer’s sole responsibility to determine whether the Nexperia product is suitable and fit for the customer’s applications and products planned, as well as for the planned application and use of customer’s third party customer(s). Customers should provide appropriate design and operating safeguards to minimize the risks associated with their applications and products.",
+      "bbox": [
+        507,
+        529,
+        912,
+        621
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b160": {
+      "type": "text",
+      "text": "Nexperia does not accept any liability related to any default, damage, costs or problem which is based on any weakness or default in the customer’s applications or products, or the application or use by customer’s third party customer(s). Customer is responsible for doing all necessary testing for the customer’s applications and products using Nexperia products in order to avoid a default of the applications and the products or of the application or use by customer’s third party customer(s). Nexperia does not accept any liability in this respect.",
+      "bbox": [
+        507,
+        630,
+        921,
+        712
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b161": {
+      "type": "text",
+      "text": "Limiting values — Stress above one or more limiting values (as defined in the Absolute Maximum Ratings System of IEC 60134) will cause permanent damage to the device. Limiting values are stress ratings only and (proper) operation of the device at these or any other conditions above those given in the Recommended operating conditions section (if present) or the Characteristics sections of this document is not warranted. Constant or repeated exposure to limiting values will permanently and irreversibly affect the quality and reliability of the device.",
+      "bbox": [
+        507,
+        720,
+        910,
+        803
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b162": {
+      "type": "text",
+      "text": "products are sold subject to the general terms and conditions of commercia sale, as published at http://www.nexperia.com/profile/terms, unless otherwise agreed in a valid written individual agreement. In case an individua agreement is concluded only the terms and conditions of the respective agreement shall apply. Nexperia hereby expressly objects to applying the customer’s general terms and conditions with regard to the purchase of Nexperia products by customer.",
+      "bbox": [
+        507,
+        819,
+        915,
+        892
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b163": {
+      "type": "page_number",
+      "text": "11 / 13",
+      "bbox": [
+        870,
+        925,
+        917,
+        936
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b164": {
+      "type": "header",
+      "text": "Nexperia",
+      "bbox": [
+        80,
+        65,
+        171,
+        83
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b165": {
+      "type": "header",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        734,
+        66,
+        915,
+        85
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b166": {
+      "type": "footer",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        80,
+        910,
+        139,
+        920
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b167": {
+      "type": "footer",
+      "text": "All information provided in this document is subject to legal disclaimers.",
+      "bbox": [
+        364,
+        910,
+        631,
+        920
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b168": {
+      "type": "footer",
+      "text": "© Nexperia B V 2017 All rights reserved",
+      "bbox": [
+        759,
+        910,
+        917,
+        921
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b169": {
+      "type": "footer",
+      "text": "Product data sheet",
+      "bbox": [
+        80,
+        925,
+        206,
+        938
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b170": {
+      "type": "footer",
+      "text": "10 December 2013",
+      "bbox": [
+        438,
+        925,
+        559,
+        936
+      ],
+      "page_idx": 10,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b171": {
+      "type": "text",
+      "text": "Dual N-channel 60 V, 45 mΩ standard level MOSFET",
+      "bbox": [
+        497,
+        93,
+        917,
+        108
+      ],
+      "page_idx": 11,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b172": {
+      "type": "text",
+      "text": "No offer to sell or license — Nothing in this document may be interpreted or construed as an offer to sell products that is open for acceptance or the grant, conveyance or implication of any license under any copyrights, patents or other industrial or intellectual property rights.",
+      "bbox": [
+        78,
+        136,
+        487,
+        178
+      ],
+      "page_idx": 11,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b173": {
+      "type": "text",
+      "text": "Export control — This document as well as the item(s) described herein may be subject to export control regulations. Export might require a prior authorization from competent authorities.",
+      "bbox": [
+        78,
+        187,
+        465,
+        218
+      ],
+      "page_idx": 11,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b174": {
+      "type": "text",
+      "text": "Translations — A non-English (translated) version of a document is for reference only. The English version shall prevail in case of any discrepancy between the translated and English versions.",
+      "bbox": [
+        78,
+        227,
+        477,
+        259
+      ],
+      "page_idx": 11,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b175": {
+      "type": "text",
+      "text": "12.4 Trademarks",
+      "text_level": 2,
+      "bbox": [
+        94,
+        282,
+        267,
+        298
+      ],
+      "page_idx": 11,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b176": {
+      "type": "text",
+      "text": "Notice: All referenced brands, product names, service names and trademarks are the property of their respective owners.",
+      "bbox": [
+        78,
+        305,
+        426,
+        326
+      ],
+      "page_idx": 11,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b177": {
+      "type": "page_number",
+      "text": "12 / 13",
+      "bbox": [
+        870,
+        925,
+        917,
+        936
+      ],
+      "page_idx": 11,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b178": {
+      "type": "header",
+      "text": "Nexperia",
+      "bbox": [
+        80,
+        66,
+        169,
+        82
+      ],
+      "page_idx": 11,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b179": {
+      "type": "header",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        732,
+        66,
+        915,
+        85
+      ],
+      "page_idx": 11,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b180": {
+      "type": "footer",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        80,
+        910,
+        139,
+        920
+      ],
+      "page_idx": 11,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b181": {
+      "type": "footer",
+      "text": "All information provided in this document is subject to legal disclaimers",
+      "bbox": [
+        364,
+        910,
+        631,
+        920
+      ],
+      "page_idx": 11,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b182": {
+      "type": "footer",
+      "text": "© Nexperia B V 2017 All rights reserved",
+      "bbox": [
+        759,
+        910,
+        917,
+        921
+      ],
+      "page_idx": 11,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b183": {
+      "type": "footer",
+      "text": "Product data sheet",
+      "bbox": [
+        80,
+        925,
+        206,
+        938
+      ],
+      "page_idx": 11,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b184": {
+      "type": "footer",
+      "text": "10 December 2013",
+      "bbox": [
+        438,
+        925,
+        559,
+        936
+      ],
+      "page_idx": 11,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b185": {
+      "type": "text",
+      "text": "Dual N-channel 60 V, 45 mΩ standard level MOSFET",
+      "bbox": [
+        497,
+        93,
+        917,
+        109
+      ],
+      "page_idx": 12,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b186": {
+      "type": "text",
+      "text": "13. Contents",
+      "text_level": 2,
+      "bbox": [
+        80,
+        151,
+        230,
+        170
+      ],
+      "page_idx": 12,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b187": {
+      "type": "text",
+      "text": "General description....1  \nFeatures and benefits....1  \nApplications....1  \nQuick reference data....1  \nPinning information....2  \nOrdering information....2  \nMarking....2  \nLimiting values....2  \nThermal characteristics....4  \nCharacteristics....5  \nPackage outline....10  \nLegal information....11  \nData sheet status....11  \nDefinitions....11  \nDisclaimers....11  \nTrademarks....12",
+      "bbox": [
+        78,
+        175,
+        490,
+        444
+      ],
+      "page_idx": 12,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b188": {
+      "type": "text",
+      "text": "For more information, please visit: http://www.nexperia.com For sales office addresses, please send an email to: salesaddresses@nexperia.com Date of release: 10 December 2013",
+      "bbox": [
+        78,
+        478,
+        462,
+        506
+      ],
+      "page_idx": 12,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b189": {
+      "type": "page_number",
+      "text": "13 / 13",
+      "bbox": [
+        870,
+        925,
+        917,
+        936
+      ],
+      "page_idx": 12,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b190": {
+      "type": "header",
+      "text": "Nexperia",
+      "bbox": [
+        80,
+        65,
+        171,
+        83
+      ],
+      "page_idx": 12,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b191": {
+      "type": "header",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        732,
+        66,
+        915,
+        85
+      ],
+      "page_idx": 12,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b192": {
+      "type": "page_footnote",
+      "text": "© Nexperia B.V. 2017. All rights reserved",
+      "bbox": [
+        78,
+        463,
+        327,
+        476
+      ],
+      "page_idx": 12,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b193": {
+      "type": "footer",
+      "text": "BUK7K52-60E",
+      "bbox": [
+        80,
+        910,
+        139,
+        920
+      ],
+      "page_idx": 12,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b194": {
+      "type": "footer",
+      "text": "All information provided in this document is subject to legal disclaimers.",
+      "bbox": [
+        364,
+        910,
+        631,
+        920
+      ],
+      "page_idx": 12,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b195": {
+      "type": "footer",
+      "text": "© Nexperia B V 2017 All rights reserved",
+      "bbox": [
+        759,
+        910,
+        917,
+        921
+      ],
+      "page_idx": 12,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b196": {
+      "type": "footer",
+      "text": "Product data sheet",
+      "bbox": [
+        80,
+        925,
+        206,
+        938
+      ],
+      "page_idx": 12,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    },
+    "b197": {
+      "type": "footer",
+      "text": "10 December 2013",
+      "bbox": [
+        438,
+        925,
+        559,
+        936
+      ],
+      "page_idx": 12,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/BUK7K52-60E_数据手册_content_list.json"
+    }
+  },
+  "images": {
+    "images/94ace3ad9e0b9701bb518f5c03d72576ad05d16b2b4a3675484dc5a781711c8e.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/94ace3ad9e0b9701bb518f5c03d72576ad05d16b2b4a3675484dc5a781711c8e.jpg",
+      "exists": true,
+      "block_ids": [
+        "b14"
+      ],
+      "sha256": "a35e1a4f1e57cdce0ccda3eca2ba7f38df25b1f534664052d57414aaa3427c07"
+    },
+    "images/8c7a5582324c2093672c68078a1823aeb41ad5437d468fa2d725ba111ff75ebb.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/8c7a5582324c2093672c68078a1823aeb41ad5437d468fa2d725ba111ff75ebb.jpg",
+      "exists": true,
+      "block_ids": [
+        "b21"
+      ],
+      "sha256": "172f6c08d7fb74b6761869eada2d974f12526b5893d1f5275ad56754d505c10d"
+    },
+    "images/1e5a123b59cce4f80d4b3723900de0fce6e07f73d9c30f170b7ab4949b29e259.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/1e5a123b59cce4f80d4b3723900de0fce6e07f73d9c30f170b7ab4949b29e259.jpg",
+      "exists": true,
+      "block_ids": [
+        "b21"
+      ],
+      "sha256": "a9d17bbd535800830103ebe3bfdd5c552170988d7261c728677e38e4ecece892"
+    },
+    "images/5a3e1b178e9284bc4418ffaf4c9e38b5516b3b200746b4e6e8f7c6af4c203e37.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/5a3e1b178e9284bc4418ffaf4c9e38b5516b3b200746b4e6e8f7c6af4c203e37.jpg",
+      "exists": true,
+      "block_ids": [
+        "b21"
+      ],
+      "sha256": "6aa8d24af04f62cdbd3745cf7e8929e5c27b45f759df1834dd7418aa9cbb6480"
+    },
+    "images/a14c253ce8568d0f01f3d0f33332026da0fec75fe600a36767efa15b16ac83ea.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/a14c253ce8568d0f01f3d0f33332026da0fec75fe600a36767efa15b16ac83ea.jpg",
+      "exists": true,
+      "block_ids": [
+        "b23"
+      ],
+      "sha256": "56884928ce7cd40c525009862e6ba09facb145297885fd2adc6117bc8890c39d"
+    },
+    "images/8e97de0b07f2d883311abfeff4650f4bf093ae67cac55bf20904f8e26e60b0bf.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/8e97de0b07f2d883311abfeff4650f4bf093ae67cac55bf20904f8e26e60b0bf.jpg",
+      "exists": true,
+      "block_ids": [
+        "b25"
+      ],
+      "sha256": "297f6b171f86c9c954ed6efdcf23dd66c13c6b3fe42993335518b48701617f5f"
+    },
+    "images/f63324b3aba25906ee8eb66b51646e78cd9a0cbf2aab4759cfe3b571a26a0c22.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/f63324b3aba25906ee8eb66b51646e78cd9a0cbf2aab4759cfe3b571a26a0c22.jpg",
+      "exists": true,
+      "block_ids": [
+        "b27"
+      ],
+      "sha256": "da866fb31257a17c0208b1d752f82fe2e477b8d5e0ca3a8c3f9a43ee6f6d535c"
+    },
+    "images/3675087fa5d9256b2ce30d0fc4ff656b9567a4f2b1ceab0e9cf43b405fa2f2da.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/3675087fa5d9256b2ce30d0fc4ff656b9567a4f2b1ceab0e9cf43b405fa2f2da.jpg",
+      "exists": true,
+      "block_ids": [
+        "b33"
+      ],
+      "sha256": "f7b5c3bd8f4c336dc94e128f3d3f2f071ddcecce0c174cff75a6a692fc78b520"
+    },
+    "images/bc3c0ed47271e4e02b93c70eb0b977504d4e2eae3ed541aa1a49ec028277181d.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/bc3c0ed47271e4e02b93c70eb0b977504d4e2eae3ed541aa1a49ec028277181d.jpg",
+      "exists": true,
+      "block_ids": [
+        "b34"
+      ],
+      "sha256": "e50a4a5545330bb306d2884f05c0ada91cb130b4d482d302b6cbb35a777e64f7"
+    },
+    "images/d05e4dfb21c666aeafe732b434b9666b54a166941cf1e470e14b53bbcd2a62f4.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/d05e4dfb21c666aeafe732b434b9666b54a166941cf1e470e14b53bbcd2a62f4.jpg",
+      "exists": true,
+      "block_ids": [
+        "b36"
+      ],
+      "sha256": "8a0cbb8b5cad48933ccf11581ae3f1785a8afbdb32de1d91c6ef15a1b3c49242"
+    },
+    "images/e28e2b3e37680a854ad7889e30ed2382d77d228f77c061a728876094be207881.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/e28e2b3e37680a854ad7889e30ed2382d77d228f77c061a728876094be207881.jpg",
+      "exists": true,
+      "block_ids": [
+        "b47"
+      ],
+      "sha256": "51d5511656823edbd61be12b2f518512b46a5a9762273e1420d6e7e9d1d2318d"
+    },
+    "images/38f6c34897d3b092814d9c15e6e36a84c37a731119c5724b3dc5c65942916551.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/38f6c34897d3b092814d9c15e6e36a84c37a731119c5724b3dc5c65942916551.jpg",
+      "exists": true,
+      "block_ids": [
+        "b48"
+      ],
+      "sha256": "f7198c11818539fc66406b3f901798510bb272f243df162d67fc355c975d2ece"
+    },
+    "images/fe70205771e044729710979478c5dc4e75412cd9626eba6831e4b78b13d5c14c.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/fe70205771e044729710979478c5dc4e75412cd9626eba6831e4b78b13d5c14c.jpg",
+      "exists": true,
+      "block_ids": [
+        "b51"
+      ],
+      "sha256": "435930f7c4d21389facbb7e8bb7f57741664ab71ef1268a26268674e99649f5a"
+    },
+    "images/cd38638b9e095227695292c2f27c33d8b8d32274586b55913aeedf80819491e3.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/cd38638b9e095227695292c2f27c33d8b8d32274586b55913aeedf80819491e3.jpg",
+      "exists": true,
+      "block_ids": [
+        "b61"
+      ],
+      "sha256": "fc421e98c51e0ffb4bf5646309787eb968429ae3f073216cc8d4e3f052c1a54e"
+    },
+    "images/87042186ded9e154053d643b79f2c883dbb616ac2ef299da4852d9aa11ffeea3.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/87042186ded9e154053d643b79f2c883dbb616ac2ef299da4852d9aa11ffeea3.jpg",
+      "exists": true,
+      "block_ids": [
+        "b63"
+      ],
+      "sha256": "2347decff260b6410f5153b5eaa782ffc85c8d44da2a698eb9cd69095169159b"
+    },
+    "images/e70591d1c011d2a04cdf370f7530d6a3abc569d278f22b683c0bb78ddfddc894.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/e70591d1c011d2a04cdf370f7530d6a3abc569d278f22b683c0bb78ddfddc894.jpg",
+      "exists": true,
+      "block_ids": [
+        "b72"
+      ],
+      "sha256": "677edf399e80464b186ef576af50203e5665a93b18df88a021c714edadfec410"
+    },
+    "images/7c1a8ccb504d21cd99a4dacfd74666fb65be9f875668a799b52bc2fda7bcb1e8.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/7c1a8ccb504d21cd99a4dacfd74666fb65be9f875668a799b52bc2fda7bcb1e8.jpg",
+      "exists": true,
+      "block_ids": [
+        "b73"
+      ],
+      "sha256": "92d3ace7c80687a9d171710b5d619a5e64dc0cb3d4e3cbad6796009948f59383"
+    },
+    "images/1b543b7b6450f3e42e59130806b7e6a6c1ef1941637a6e7abac6770a0dae76b3.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/1b543b7b6450f3e42e59130806b7e6a6c1ef1941637a6e7abac6770a0dae76b3.jpg",
+      "exists": true,
+      "block_ids": [
+        "b75"
+      ],
+      "sha256": "216eb362be808c60b931cb3343bdcbaa1106cd093f83766648e48df7e4c38b0e"
+    },
+    "images/3411ae15304d09a9d62091307d341e0245a319e9d0483a7b3f2b2098d1342f16.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/3411ae15304d09a9d62091307d341e0245a319e9d0483a7b3f2b2098d1342f16.jpg",
+      "exists": true,
+      "block_ids": [
+        "b85"
+      ],
+      "sha256": "e1aeefb3b4be49a52dbcf1a0b9152c9733aaf344eda1715b1ac25e4a4d9d6a48"
+    },
+    "images/adac2e9f45ecfca530168897a0590f1158657981633592f58599d6315f2d8219.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/adac2e9f45ecfca530168897a0590f1158657981633592f58599d6315f2d8219.jpg",
+      "exists": true,
+      "block_ids": [
+        "b87"
+      ],
+      "sha256": "90afc99025cd5e9f8c2c0d2c36ce90308f443cee9a91522b6d11db9ab9f5aadd"
+    },
+    "images/055f15a244aeb04d08e9080736aa651127139e2cfa40611dcfc428a2ac6e6293.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/055f15a244aeb04d08e9080736aa651127139e2cfa40611dcfc428a2ac6e6293.jpg",
+      "exists": true,
+      "block_ids": [
+        "b90"
+      ],
+      "sha256": "f745be30552aae34f6d3121c9fc7e4bcfea51e4cc9ec672e95d75e59aeb5f6f6"
+    },
+    "images/ab8dd67b32232f020362485b8f7dc9cd41b527f0434b9c316c534024a74b947e.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/ab8dd67b32232f020362485b8f7dc9cd41b527f0434b9c316c534024a74b947e.jpg",
+      "exists": true,
+      "block_ids": [
+        "b92"
+      ],
+      "sha256": "e20bca47dc06ffbdbb74397bad4789566208a082829071dfed4629f7ca2addbd"
+    },
+    "images/fda4553e3ed91b25ec51efa9a8b40162a26819ef7bcb56cf6fc542f4c8f79d05.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/fda4553e3ed91b25ec51efa9a8b40162a26819ef7bcb56cf6fc542f4c8f79d05.jpg",
+      "exists": true,
+      "block_ids": [
+        "b102"
+      ],
+      "sha256": "5a2fbb2f1eac389da5fc48bee764fe4d5a544a86c8b389b0a124ef2a55aaff06"
+    },
+    "images/68de1e0532ea7a41f53f1a564101f115c80180a6db783c755595359fbe51d08f.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/68de1e0532ea7a41f53f1a564101f115c80180a6db783c755595359fbe51d08f.jpg",
+      "exists": true,
+      "block_ids": [
+        "b103"
+      ],
+      "sha256": "27057374d2f512ffab9ac9f51e78d85b7f2458969b05268d6caaf34dbc54baf1"
+    },
+    "images/b806850e3b574ab5c6544d4a848ecc3d750e83423c8a898d40afc2e77fd9c647.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/b806850e3b574ab5c6544d4a848ecc3d750e83423c8a898d40afc2e77fd9c647.jpg",
+      "exists": true,
+      "block_ids": [
+        "b105"
+      ],
+      "sha256": "e1e4eb638d488e4e80d4605d51598f3ba07b29b57ceea11a019986c68dc578df"
+    },
+    "images/1b94c65711b10ff0f88dabd3bc4432d48e4d7b72c3a4d18c0608c232e8eb9b98.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/1b94c65711b10ff0f88dabd3bc4432d48e4d7b72c3a4d18c0608c232e8eb9b98.jpg",
+      "exists": true,
+      "block_ids": [
+        "b107"
+      ],
+      "sha256": "48daa5c78bcf2ec6e1c963a3f7be30277f2d5a81adfc883f3fce8ded844d86d5"
+    },
+    "images/d8c2d02301a27dd7cc4d3afadf49446271206cfbaceb1c2d94223ccf3f61f7db.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/d8c2d02301a27dd7cc4d3afadf49446271206cfbaceb1c2d94223ccf3f61f7db.jpg",
+      "exists": true,
+      "block_ids": [
+        "b118"
+      ],
+      "sha256": "94d13080c9fc7afec009ee00a39064787db1b50a4f88dd93336d59122b49f657"
+    },
+    "images/fdb0873f33ac616b608d947821c4854fb93be9a17cb3ad2e6279cdee8f467ec4.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/fdb0873f33ac616b608d947821c4854fb93be9a17cb3ad2e6279cdee8f467ec4.jpg",
+      "exists": true,
+      "block_ids": [
+        "b128"
+      ],
+      "sha256": "d3efaed7b4085037e845fc03da3b0479284a3ce37a532ff45ed54fcbd9c99940"
+    },
+    "images/fd707b307397191e6512814ad0bd84719ff46eea4bc57df58323c36de1a2bdcc.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/fd707b307397191e6512814ad0bd84719ff46eea4bc57df58323c36de1a2bdcc.jpg",
+      "exists": true,
+      "block_ids": [
+        "b129"
+      ],
+      "sha256": "336405121b71c36c709d21fd97b42b15f74a2f9acfbca9ec16cf12b4651cb0b6"
+    },
+    "images/6b010c78dbb4835f63d08b5a2ab6d50d651dc835bbe4001fc5574dc4a4be1d1f.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/6b010c78dbb4835f63d08b5a2ab6d50d651dc835bbe4001fc5574dc4a4be1d1f.jpg",
+      "exists": true,
+      "block_ids": [
+        "b130"
+      ],
+      "sha256": "60ef8ba84052acef042943e2ec34c8c6283f59bdc5e8be638d6971627caeaf8d"
+    },
+    "images/447375dbae82937f313480961d93a536eae83de55b60ce26ce1fc6f44e73c5ac.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/447375dbae82937f313480961d93a536eae83de55b60ce26ce1fc6f44e73c5ac.jpg",
+      "exists": true,
+      "block_ids": [
+        "b141"
+      ],
+      "sha256": "ca2d916c448a9ef55fcedf762010ce7351aace08b9a6b5411eaa78dc6ded7cc2"
+    }
+  },
+  "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+  "source_pdf_evidence_note": "PDF page reference IDs pN use zero-based physical page index; visual assertions separately logged.",
+  "pdf_pages": {
+    "p0": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+      "page_idx": 0,
+      "physical_page": 1,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "                           BUK7K52-60E\n                           Dual N-channel 60 V, 45 mΩ standard level MOSFET\n                           10 December 2013                                                 Product data sheet\n\n\n\n\n1. General description\n                       Dual standard level N-channel MOSFET in an LFPAK56D (Dual Power-SO8) package\n                       using TrenchMOS technology. This product has been designed and qualified to\n                       AEC Q101 standard for use in high performance automotive applications.\n\n\n2. Features and benefits\n                       •    Dual MOSFET\n                       •    Q101 compliant\n                       •    Repetitive avalanche rated\n                       •    Suitable for thermally demanding environments due to 175 °C rating\n                       •    True standard level gate with VGS(th) of greater than 1 V at 175 °C\n\n\n3. Applications\n                       •    12 V Automotive systems\n                       •    Motors, lamps and solenoid control\n                       •    Transmission control\n                       •    Ultra high performance power switching\n\n\n4. Quick reference data\nTable 1.   Quick reference data\nSymbol         Parameter                  Conditions                                  Min   Typ   Max    Unit\n VDS            drain-source voltage      Tj ≥ 25 °C; Tj ≤ 175 °C                     -     -     60     V\n\n ID             drain current             VGS = 10 V; Tmb = 25 °C; Fig. 1             -     -     15.4   A\n\n Ptot           total power dissipation   Tmb = 25 °C; Fig. 2                         -     -     32     W\n\n Static characteristics FET1 and FET2\n RDSon          drain-source on-state     VGS = 10 V; ID = 5 A; Tj = 25 °C; Fig. 11   -     35    45     mΩ\n                resistance\n Dynamic characteristics FET1 and FET2\n QGD            gate-drain charge         ID = 5 A; VDS = 48 V; VGS = 10 V;           -     3.5   -      nC\n                                          Tj = 25 °C; Fig. 13; Fig. 14\n"
+    },
+    "p1": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+      "page_idx": 1,
+      "physical_page": 2,
+      "rendered_path": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/BUK7K52-60E/source_pages/page_2.png",
+      "visually_inspected_full_page": true,
+      "text": "Nexperia                                                                                                                               BUK7K52-60E\n                                                                                  Dual N-channel 60 V, 45 mΩ standard level MOSFET\n\n\n\n\n5. Pinning information\nTable 2.      Pinning information\nPin           Symbol Description                               Simplified outline                                         Graphic symbol\n 1            S1       source1                                                8       7       6        5                          D1 D1                D2 D2\n\n 2            G1       gate1\n 3            S2       source2\n 4            G2       gate2\n 5            D2       drain2                                                                                                     S1      G1           S2         G2\n\n 6            D2       drain2                                                                                                                                    mbk725\n                                                                              1       2       3        4\n 7            D1       drain1\n                                                                     LFPAK56D (SOT1205)\n 8            D1       drain1\n\n\n\n6. Ordering information\nTable 3.      Ordering information\nType number                Package\n                           Name              Description                                                                                                   Version\n BUK7K52-60E               LFPAK56D          Plastic single ended surface mounted package (LFPAK56D); 8                                                     SOT1205\n                                             leads\n\n\n\n7. Marking\nTable 4.      Marking codes\nType number                                                                        Marking code\n BUK7K52-60E                                                                       75260E\n\n\n\n8. Limiting values\nTable 5.   Limiting values\nIn accordance with the Absolute Maximum Rating System (IEC 60134).\nSymbol             Parameter                               Conditions                                                                     Min              Max            Unit\n VDS               drain-source voltage                     Tj ≥ 25 °C; Tj ≤ 175 °C                                                        -                60            V\n\n VDGR              drain-gate voltage                       RGS = 20 kΩ                                                                    -                60            V\n\n VGS               gate-source voltage                      Tj ≤ 175 °C; DC                                                                -20              20            V\n\n ID                drain current                            Tmb = 25 °C; VGS = 10 V; Fig. 1                                                -                15.4          A\n\n                                                            Tmb = 100 °C; VGS = 10 V; Fig. 1                                               -                12.6          A\n\n IDM               peak drain current                       Tmb = 25 °C; pulsed; tp ≤ 10 µs; Fig. 4                                        -                71            A\n\n Ptot              total power dissipation                  Tmb = 25 °C; Fig. 2                                                            -                32            W\nBUK7K52-60E                                  All information provided in this document is subject to legal disclaimers.                        © Nexperia B.V. 2017. All rights reserved\n\n\nProduct data sheet                                               10 December 2013                                                                                             2 / 13\n"
+    },
+    "p2": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+      "page_idx": 2,
+      "physical_page": 3,
+      "rendered_path": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/BUK7K52-60E/source_pages/page_3.png",
+      "visually_inspected_full_page": false,
+      "text": "Nexperia                                                                                                                                       BUK7K52-60E\n                                                                                         Dual N-channel 60 V, 45 mΩ standard level MOSFET\n\n\nSymbol                 Parameter                                  Conditions                                                                    Min             Max            Unit\n Tstg                  storage temperature                                                                                                      -55             175            °C\n\n Tj                    junction temperature                                                                                                     -55             175            °C\n\n Source-drain diode FET1 and FET2\n IS                    source current                              Tmb = 25 °C                                                                  -               15.4           A\n\n ISM                   peak source current                         pulsed; tp ≤ 10 µs; Tmb = 25 °C                                              -               71             A\n\n Avalanche Ruggedness FET1 and FET2\n EDS(AL)S              non-repetitive drain-source                 ID = 15.4 A; Vsup ≤ 60 V; VGS = 10 V;                              [1][2]    -               11.6           mJ\n                       avalanche energy                            Tj(init) = 25 °C; Fig. 3\n\n                              [1]   Refer to application note AN10273 for further information\n                              [2]   Single-pulse avalanche rating limited by maximum junction temperature of 175 °C\n\n                                                      003aak352                                                                                                03aa16\n              20                                                                                      120\n         ID\n        (A)\n                                                                                                  Pder\n              16                                                                                  (%)\n\n\n                                                                                                       80\n              12\n\n\n\n              8\n                                                                                                       40\n\n\n               4\n\n\n\n               0                                                                                         0\n                   0   30   60      90     120       150         180                                         0                   50   100           150               200\n                                                 Tmb (°C)                                                                                                 Tmb (°C)\n\nFig. 1.        Continuous drain current as a function of                                  Fig. 2.          Normalized total power dissipation as a\n               mounting base temperature                                                                   function of mounting base temperature\n\n\n\n\nBUK7K52-60E                                         All information provided in this document is subject to legal disclaimers.                      © Nexperia B.V. 2017. All rights reserved\n\n\nProduct data sheet                                                      10 December 2013                                                                                           3 / 13\n"
+    },
+    "p3": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+      "page_idx": 3,
+      "physical_page": 4,
+      "rendered_path": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/BUK7K52-60E/source_pages/page_4.png",
+      "visually_inspected_full_page": false,
+      "text": "Nexperia                                                                                                                                       BUK7K52-60E\n                                                                                                 Dual N-channel 60 V, 45 mΩ standard level MOSFET\n\n\n                                                                                                                        003aak353\n                                                      102\n                                                IAL\n                                                (A)\n\n\n                                                      10\n\n\n                                                                                                           (1)\n\n                                                        1\n\n                                                                                                           (2)\n\n\n                                                    10-1\n                                                                                                           (3)\n\n\n\n\n                                                    10-2\n                                                       10-3                10-2               10-1                1                 10\n                                                                                                                 tAL (ms)\n\nFig. 3.       Avalanche rating; avalanche current as a function of avalanche time\n\n\n\n                                                                                                                                                           003aak351\n            102\n       ID\n      (A)                  Limit RDSon = VDS / ID\n\n                                                                                                                                                          tp = 10 us\n\n            10\n                                                                                                                                                          100 us\n                                                               DC\n\n\n\n\n              1\n                                                                                                                                                          1 ms\n\n                                                                                                                                                          10 ms\n                                                                                                                                                          100 ms\n\n         10-1\n                  1                                                                            10                                                                     102\n                                                                                                                                                     VDS (V)\n\nFig. 4.       Safe operating area; continuous and peak drain currents as a function of drain-source voltage\n\n\n\n\n9. Thermal characteristics\nTable 6.              Thermal characteristics\nSymbol                    Parameter                         Conditions                                                                   Min    Typ             Max            Unit\n Rth(j-mb)                 thermal resistance               Fig. 5                                                                       -      -               4.68           K/W\n                           from junction to\n                           mounting base\n Rth(j-a)                  thermal resistance                Minimum footprint; mounted on a                                             -      95              -              K/W\n                           from junction to                 printed circuit board\n                           ambient\n\nBUK7K52-60E                                                 All information provided in this document is subject to legal disclaimers.              © Nexperia B.V. 2017. All rights reserved\n\n\nProduct data sheet                                                              10 December 2013                                                                                   4 / 13\n"
+    },
+    "p4": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+      "page_idx": 4,
+      "physical_page": 5,
+      "rendered_path": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/BUK7K52-60E/source_pages/page_5.png",
+      "visually_inspected_full_page": true,
+      "text": "Nexperia                                                                                                                                        BUK7K52-60E\n                                                                                             Dual N-channel 60 V, 45 mΩ standard level MOSFET\n\n\n                                                                                                                                                            003aaj557\n           10\n\n    Zth(j-mb)\n                         δ = 0.5\n     (K/W)\n\n                         0.2\n              1\n                         0.1\n\n                         0.05\n\n                         0.02\n                                                                                                                                                                  tp\n             -1                                                                                                                           P                 δ=\n        10                                                                                                                                                        T\n\n\n\n                         single shot                                                                                                            tp                   t\n                                                                                                                                                     T\n        10-2\n                  10-6                  10-5             10-4                            10-3                            10-2            10-1         tp (s)             1\n\n\nFig. 5.           Transient thermal impedance from junction to mounting base as a function of pulse duration\n\n\n\n10. Characteristics\nTable 7.             Characteristics\nSymbol                          Parameter               Conditions                                                                   Min         Typ             Max            Unit\n Static characteristics FET1 and FET2\n V(BR)DSS                       drain-source            ID = 250 µA; VGS = 0 V; Tj = -55 °C                                          54          -               -              V\n                                breakdown voltage\n                                                        ID = 250 µA; VGS = 0 V; Tj = 25 °C                                           60          -               -              V\n\n VGS(th)                        gate-source threshold   ID = 1 mA; VDS = VGS; Tj = 25 °C;                                            2.4         3               4              V\n                                voltage                 Fig. 9; Fig. 10\n                                                        ID = 1 mA; VDS = VGS; Tj = 175 °C;                                           1           -               -              V\n                                                        Fig. 9; Fig. 10\n                                                        ID = 1 mA; VDS = VGS; Tj = -55 °C;                                           -           -               4.5            V\n                                                        Fig. 9; Fig. 10\n IDSS                           drain leakage current   VDS = 60 V; VGS = 0 V; Tj = 25 °C                                            -           0.02            1              µA\n\n                                                        VDS = 60 V; VGS = 0 V; Tj = 175 °C                                           -           -               500            µA\n\n IGSS                           gate leakage current    VGS = -20 V; VDS = 0 V; Tj = 25 °C                                           -           2               100            nA\n\n                                                        VGS = 20 V; VDS = 0 V; Tj = 25 °C                                            -           2               100            nA\n\n RDSon                          drain-source on-state   VGS = 10 V; ID = 5 A; Tj = 25 °C; Fig. 11                                    -           35              45             mΩ\n                                resistance\n                                                        VGS = 10 V; ID = 5 A; Tj = 175 °C;                                           -           78              101            mΩ\n                                                        Fig. 12; Fig. 11\n Dynamic characteristics FET1 and FET2\n QG(tot)                        total gate charge       ID = 5 A; VDS = 48 V; VGS = 10 V;                                            -           9.2             -              nC\n\n QGS                            gate-source charge      Tj = 25 °C; Fig. 13; Fig. 14                                                 -           2               -              nC\n\n QGD                            gate-drain charge                                                                                    -           3.5             -              nC\n\n\nBUK7K52-60E                                             All information provided in this document is subject to legal disclaimers.                   © Nexperia B.V. 2017. All rights reserved\n\n\nProduct data sheet                                                          10 December 2013                                                                                        5 / 13\n"
+    },
+    "p5": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+      "page_idx": 5,
+      "physical_page": 6,
+      "rendered_path": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/BUK7K52-60E/source_pages/page_6.png",
+      "visually_inspected_full_page": true,
+      "text": "Nexperia                                                                                                                                  BUK7K52-60E\n                                                                                       Dual N-channel 60 V, 45 mΩ standard level MOSFET\n\n\nSymbol                    Parameter               Conditions                                                                       Min         Typ           Max            Unit\n VGS(pl)                  gate-source plateau     ID = 5 A; VDS = 48 V; Tj = 25 °C;                                                -           5             -                V\n                          voltage                 Fig. 13; Fig. 14\n Ciss                     input capacitance       VGS = 0 V; VDS = 25 V; f = 1 MHz;                                                -           401           535              pF\n\n Coss                     output capacitance      Tj = 25 °C; Fig. 15                                                              -           73            87               pF\n\n Crss                     reverse transfer                                                                                         -           53            72               pF\n                          capacitance\n td(on)                   turn-on delay time      VDS = 48 V; RL = 5 Ω; VGS = 10 V;                                                -           4.3           -                ns\n\n tr                       rise time               RG(ext) = 5 Ω; Tj = 25 °C; ID = 5 A                                              -           5.1           -                ns\n\n td(off)                  turn-off delay time                                                                                      -           8.4           -                ns\n\n tf                       fall time                                                                                                -           5.4           -                ns\n\n Source-drain diode FET1 and FET2\n VSD                      source-drain voltage    IS = 5 A; VGS = 0 V; Tj = 25 °C; Fig. 16                                         -           0.83          1.2              V\n\n trr                      reverse recovery time   IS = 5 A; dIS/dt = -100 A/µs; VGS = 0 V;                                         -           17.6          -                ns\n\n Qr                       recovered charge        VDS = 30 V; Tj = 25 °C                                                           -           12.3          -                nC\n\n                                                         003aak345                                                                                           003aak343\n                 20                                                                                        25\n            ID                    10 V   6.5 V                                                        ID\n           (A)                                         VGS = 6 V                                     (A)\n\n                 16                                                                                        20\n\n\n                                                               5.5 V\n                 12                                                                                        15\n\n\n\n                  8                                                                                        10\n                                                                 5V\n\n\n                  4                                                                                          5                           175°C           Tj = 25°C\n                                                               4.5 V\n\n\n                  0                                                                                          0\n                      0        0.5           1    1.5                  2                                         0        1    2   3       4         5     6              7\n                                                  VDS (V)                                                                                             VGS (V)\n\nFig. 6.       Output characteristics; drain current as a       Fig. 7.                                   Transfer characteristics; drain current as a\n              function of drain-source voltage; typical values                                           function of gate-source voltage; typical values\n\n\n\n\nBUK7K52-60E                                       All information provided in this document is subject to legal disclaimers.                     © Nexperia B.V. 2017. All rights reserved\n\n\nProduct data sheet                                                    10 December 2013                                                                                            6 / 13\n"
+    },
+    "p6": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+      "page_idx": 6,
+      "physical_page": 7,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "Nexperia                                                                                                                                             BUK7K52-60E\n                                                                                     Dual N-channel 60 V, 45 mΩ standard level MOSFET\n\n\n                                                    003aak344                                                                                                    003aah028\n       100                                                                                       10-1\n    RDSon                                                                                      ID\n    (mΩ)                                                                                      (A)\n          80                                                                                     10-2\n\n\n                                                                                                                             min               typ        max\n          60                                                                                     10-3\n\n\n\n          40                                                                                     10-4\n\n\n\n          20                                                                                     10-5\n\n\n\n              0                                                                                  10-6\n                  0   4       8          12     16             20                                        0                    2                       4                      6\n                                              VGS (V)                                                                                                        VGS (V)\n\n\nFig. 8.       Drain-source on-state resistance as a function                          Fig. 9.          Sub-threshold drain current as a function of\n              of gate-source voltage; typical values                                                   gate-source voltage\n\n\n\n                                                    003aah027                                                                                                    003aak350\n              5                                                                                   100\n      VGS(th)                                                                              RDSon                                       5.5 V                      6V\n       (V)                                                                                 (mΩ)\n                              max\n              4\n                                                                                                    80\n\n\n              3               typ\n\n                                                                                                                                                                       6.5 V\n                                                                                                    60\n\n              2               min\n                                                                                                                                                                         7V\n\n                                                                                                    40                                                                   8V\n              1\n                                                                                                                                                              VGS = 10 V\n\n\n              0                                                                                     20\n               -60        0         60        120              180                                       0             4           8             12            16            20\n                                                    T j (°C)                                                                                                  ID (A)\n\nFig. 10. Gate-source threshold voltage as a function of                               Fig. 11. Drain-source on-state resistance as a function\n         junction temperature                                                                  of drain current; typical values\n\n\n\n\nBUK7K52-60E                                     All information provided in this document is subject to legal disclaimers.                                © Nexperia B.V. 2017. All rights reserved\n\n\nProduct data sheet                                                   10 December 2013                                                                                                    7 / 13\n"
+    },
+    "p7": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+      "page_idx": 7,
+      "physical_page": 8,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "Nexperia                                                                                                                                           BUK7K52-60E\n                                                                                          Dual N-channel 60 V, 45 mΩ standard level MOSFET\n\n\n                                                         003aaj815                                                                                                  003aak347\n            2.4                                                                                               10\n                                                                                                       VGS\n                                                                                                       (V)\n        a\n                                                                                                                8\n\n\n            1.6                                                                                                                       VDS = 14 V            48 V\n                                                                                                                6\n\n\n\n                                                                                                                4\n            0.8\n\n                                                                                                                2\n\n\n\n              0                                                                                                 0\n               -60          0           60         120             180                                              0             2           4    6           8               10\n                                                         Tj (°C)                                                                                            QG (nC)\n\n\nFig. 12. Normalized drain-source on-state resistance                                       Fig. 13. Gate-source voltage as a function of gate\n         factor as a function of junction temperature                                               charge; typical values\n\n\n\n\n                                                                                                                                                                   003aak348\n                                                                                                          103\n                  VDS                                                                                   C\n                                                                                                       (pF)\n\n                                ID                                                                                                                                      Ciss\n\n\n                  VGS(pl)\n\n\n                  VGS(th)                                                                                   102\n\n                  VGS                                                                                                                                                   Coss\n                                                                                                                                                                        Crss\n                            QGS1     QGS2\n\n                                QGS          QGD\n                                        QG(tot)\n\n                                                         003aaa508\n                                                                                                              10\nFig. 14. Gate charge waveform definitions                                                                      10-1                       1            10                      102\n                                                                                                                                                            VDS (V)\n\n                                                                                           Fig. 15. Input, output and reverse transfer capacitances\n                                                                                                    as a function of drain-source voltage; typical\n                                                                                                    values\n\n\n\n\nBUK7K52-60E                                          All information provided in this document is subject to legal disclaimers.                        © Nexperia B.V. 2017. All rights reserved\n\n\nProduct data sheet                                                       10 December 2013                                                                                             8 / 13\n"
+    },
+    "p8": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+      "page_idx": 8,
+      "physical_page": 9,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "Nexperia                                                                                                                    BUK7K52-60E\n                                                                              Dual N-channel 60 V, 45 mΩ standard level MOSFET\n\n\n                                                                                                          003aak349\n                                         30\n                                    IS\n                                   (A)\n\n                                         24\n\n\n\n                                         18\n\n\n\n                                         12\n\n\n                                                                         175°C                     Tj = 25°C\n                                          6\n\n\n\n                                          0\n                                              0        0.2         0.4          0.6         0.8        1              1.2\n                                                                                                   VSD (V)\n\nFig. 16. Source (diode forward) current as a function of source-drain (diode forward) voltage; typical values\n\n\n\n\nBUK7K52-60E                              All information provided in this document is subject to legal disclaimers.          © Nexperia B.V. 2017. All rights reserved\n\n\nProduct data sheet                                           10 December 2013                                                                               9 / 13\n"
+    },
+    "p9": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+      "page_idx": 9,
+      "physical_page": 10,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "Nexperia                                                                                                                                                              BUK7K52-60E\n                                                                                                             Dual N-channel 60 V, 45 mΩ standard level MOSFET\n\n\n\n\n11. Package outline\n  Plastic single ended surface mounted package (LFPAK56D); 8 leads                                                                                                                                SOT1205\n\n\n\n\n                                                     E                                    A                          A\n\n                                                     b1                                                 c1\n\n\n               L1\n\n\n\n\n                                                                                              mounting\n                                                                                                                                          D1\n                                                                                               base\n                       D                                                                                                                                                                            D2\n         H\n\n\n\n\n                       L\n\n                                    1          2              3            4\n                                                                   b                                                             X\n                                         e                                              w       A                     c                                    E1\n                                                                  (8x)\n                                                                                                                                                                     E2\n\n\n\n\n                                                          A1      C\n\n\n                                                                                                                                                           θ\n\n                                                                                                                                     Lp              y C\n                                                                                                       detail X\n\n\n\n\n                                                                               0                         2.5                              5 mm\n\n     Dimensions                                                                                         scale\n\n                                                                                               D2\n         Unit              A   A1        b     b1         c        c1      D(1) D1(1)                   E(1) E1(1)          E2        e        H     L          L1   Lp     w        y        θ\n                                                                                              (ref)\n               max 1.05        0.1      0.50   4.4       0.25 0.30 4.70              4.8               5.30       1.8     0.85                 6.2   1.3       0.55 0.85                     8°\n      mm       nom                                                                             3.5                                   1.27                                  0.25    0.1\n               min             0.0      0.35   4.1       0.19 0.24 4.45                                4.95       1.6                          5.9   0.8       0.30 0.40                     0°\n     Note\n     1. Plastic or metal protrusions of 0.2 mm maximum per side are not included.                                                                                                             sot1205_po\n\n             Outline                                                           References                                                                   European\n                                                                                                                                                                                         Issue date\n             version                     IEC                       JEDEC                          JEITA                                                     projection\n                                                                                                                                                                                         13-02-19\n         SOT1205\n                                                                                                                                                                                         13-02-21\n\nFig. 17. Package outline LFPAK56D (SOT1205)\n\nBUK7K52-60E                                                           All information provided in this document is subject to legal disclaimers.                           © Nexperia B.V. 2017. All rights reserved\n\n\nProduct data sheet                                                                         10 December 2013                                                                                              10 / 13\n"
+    },
+    "p10": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+      "page_idx": 10,
+      "physical_page": 11,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "Nexperia                                                                                                                                     BUK7K52-60E\n                                                                                             Dual N-channel 60 V, 45 mΩ standard level MOSFET\n\n\n                                                                                                In no event shall Nexperia be liable for any indirect, incidental,\n                                                                                                punitive, special or consequential damages (including - without limitation -\n12. Legal information                                                                           lost profits, lost savings, business interruption, costs related to the removal\n                                                                                                or replacement of any products or rework charges) whether or not such\n                                                                                                damages are based on tort (including negligence), warranty, breach of\n                                                                                                contract or any other legal theory.\n\n      12.1 Data sheet status                                                                    Notwithstanding any damages that customer might incur for any reason\n                                                                                                whatsoever, Nexperia’s aggregate and cumulative liability towards\nDocument         Product          Definition                                                    customer for the products described herein shall be limited in accordance\nstatus [1][2]    status [3]                                                                     with the Terms and conditions of commercial sale of Nexperia.\n\n Objective        Development This document contains data from                                  Right to make changes — Nexperia reserves the right to\n [short] data                 the objective specification for product                           make changes to information published in this document, including without\n sheet                        development.                                                      limitation specifications and product descriptions, at any time and without\n Preliminary      Qualification   This document contains data from the                          notice. This document supersedes and replaces all information supplied prior\n [short] data                     preliminary specification.                                    to the publication hereof.\n sheet\n                                                                                                Suitability for use in automotive applications — This Nexperia\n Product          Production      This document contains the product                            product has been qualified for use in automotive\n [short] data                     specification.                                                applications. Unless otherwise agreed in writing, the product is not designed,\n sheet                                                                                          authorized or warranted to be suitable for use in life support, life-critical or\n                                                                                                safety-critical systems or equipment, nor in applications where failure or\n[1]    Please consult the most recently issued document before initiating or                    malfunction of a Nexperia product can reasonably be expected\n       completing a design.                                                                     to result in personal injury, death or severe property or environmental\n[2]    The term 'short data sheet' is explained in section \"Definitions\".                       damage. Nexperia and its suppliers accept no liability for\n[3]    The product status of device(s) described in this document may have                      inclusion and/or use of Nexperia products in such equipment or\n       changed since this document was published and may differ in case of                      applications and therefore such inclusion and/or use is at the customer's own\n       multiple devices. The latest product status information is available on                  risk.\n       the Internet at URL http://www.nexperia.com.\n                                                                                                Quick reference data — The Quick reference data is an extract of the\n                                                                                                product data given in the Limiting values and Characteristics sections of this\n                                                                                                document, and as such is not complete, exhaustive or legally binding.\n      12.2 Definitions\n                                                                                                Applications — Applications that are described herein for any of these\nPreview — The document is a preview version only. The document is still                         products are for illustrative purposes only. Nexperia makes no\nsubject to formal approval, which may result in modifications or additions.                     representation or warranty that such applications will be suitable for the\nNexperia does not give any representations or warranties as to                                  specified use without further testing or modification.\nthe accuracy or completeness of information included herein and shall have\nno liability for the consequences of use of such information.                                   Customers are responsible for the design and operation of their\n                                                                                                applications and products using Nexperia products, and Nexperia\nDraft — The document is a draft version only. The content is still under                        accepts no liability for any assistance with applications or\ninternal review and subject to formal approval, which may result in                             customer product design. It is customer’s sole responsibility to determine\nmodifications or additions. Nexperia does not give any                                          whether the Nexperia product is suitable and fit for the\nrepresentations or warranties as to the accuracy or completeness of                             customer’s applications and products planned, as well as for the planned\ninformation included herein and shall have no liability for the consequences                    application and use of customer’s third party customer(s). Customers should\nof use of such information.                                                                     provide appropriate design and operating safeguards to minimize the risks\n                                                                                                associated with their applications and products.\nShort data sheet — A short data sheet is an extract from a full data sheet\nwith the same product type number(s) and title. A short data sheet is                           Nexperia does not accept any liability related to any default,\nintended for quick reference only and should not be relied upon to contain                      damage, costs or problem which is based on any weakness or default\ndetailed and full information. For detailed and full information see the                        in the customer’s applications or products, or the application or use by\nrelevant full data sheet, which is available on request via the local Nexperia                  customer’s third party customer(s). Customer is responsible for doing all\nsales office. In case of any inconsistency or conflict with the                                 necessary testing for the customer’s applications and products using Nexperia\nshort data sheet, the full data sheet shall prevail.                                            products in order to avoid a default of the applications\n                                                                                                and the products or of the application or use by customer’s third party\nProduct specification — The information and data provided in a Product                          customer(s). Nexperia does not accept any liability in this respect.\ndata sheet shall define the specification of the product as agreed between\nNexperia and its customer, unless Nexperia and                                                  Limiting values — Stress above one or more limiting values (as defined in\ncustomer have explicitly agreed otherwise in writing. In no event however,                      the Absolute Maximum Ratings System of IEC 60134) will cause permanent\nshall an agreement be valid in which the Nexperia product                                       damage to the device. Limiting values are stress ratings only and (proper)\nis deemed to offer functions and qualities beyond those described in the                        operation of the device at these or any other conditions above those\nProduct data sheet.                                                                             given in the Recommended operating conditions section (if present) or the\n                                                                                                Characteristics sections of this document is not warranted. Constant or\n                                                                                                repeated exposure to limiting values will permanently and irreversibly affect\n                                                                                                the quality and reliability of the device.\n      12.3 Disclaimers\n                                                                                                Terms and conditions of commercial sale — Nexperia\nLimited warranty and liability — Information in this document is believed                       products are sold subject to the general terms and conditions of commercial\nto be accurate and reliable. However, Nexperia does not give                                    sale, as published at http://www.nexperia.com/profile/terms, unless otherwise\nany representations or warranties, expressed or implied, as to the accuracy                     agreed in a valid written individual agreement. In case an individual\nor completeness of such information and shall have no liability for the                         agreement is concluded only the terms and conditions of the respective\nconsequences of use of such information. Nexperia takes no                                      agreement shall apply. Nexperia hereby expressly objects to\nresponsibility for the content in this document if provided by an information                   applying the customer’s general terms and conditions with regard to the\nsource outside of Nexperia.                                                                     purchase of Nexperia products by customer.\n\n\nBUK7K52-60E                                             All information provided in this document is subject to legal disclaimers.                 © Nexperia B.V. 2017. All rights reserved\n\n\nProduct data sheet                                                          10 December 2013                                                                                    11 / 13\n"
+    },
+    "p11": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+      "page_idx": 11,
+      "physical_page": 12,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "Nexperia                                                                                                                            BUK7K52-60E\n                                                                                            Dual N-channel 60 V, 45 mΩ standard level MOSFET\n\n\nNo offer to sell or license — Nothing in this document may be interpreted\nor construed as an offer to sell products that is open for acceptance or the\ngrant, conveyance or implication of any license under any copyrights, patents\nor other industrial or intellectual property rights.\n\nExport control — This document as well as the item(s) described herein\nmay be subject to export control regulations. Export might require a prior\nauthorization from competent authorities.\n\nTranslations — A non-English (translated) version of a document is for\nreference only. The English version shall prevail in case of any discrepancy\nbetween the translated and English versions.\n\n\n\n  12.4 Trademarks\nNotice: All referenced brands, product names, service names and\ntrademarks are the property of their respective owners.\n\n\n\n\nBUK7K52-60E                                            All information provided in this document is subject to legal disclaimers.    © Nexperia B.V. 2017. All rights reserved\n\n\nProduct data sheet                                                         10 December 2013                                                                       12 / 13\n"
+    },
+    "p12": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+      "page_idx": 12,
+      "physical_page": 13,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "Nexperia                                                                                                                                  BUK7K52-60E\n                                                                                                  Dual N-channel 60 V, 45 mΩ standard level MOSFET\n\n\n\n\n13. Contents\n1         General description ............................................... 1\n2         Features and benefits ............................................1\n3         Applications ........................................................... 1\n4         Quick reference data ............................................. 1\n5         Pinning information ............................................... 2\n6         Ordering information ............................................. 2\n7         Marking ................................................................... 2\n8         Limiting values .......................................................2\n9         Thermal characteristics .........................................4\n10        Characteristics ....................................................... 5\n11        Package outline ................................................... 10\n12        Legal information .................................................11\n12.1        Data sheet status ............................................... 11\n12.2        Definitions ...........................................................11\n12.3        Disclaimers .........................................................11\n12.4        Trademarks ........................................................ 12\n\n© Nexperia B.V. 2017. All rights reserved\n\nFor more information, please visit: http://www.nexperia.com\nFor sales office addresses, please send an email to: salesaddresses@nexperia.com\nDate of release: 10 December 2013\n\n\n\n\nBUK7K52-60E                                                  All information provided in this document is subject to legal disclaimers.    © Nexperia B.V. 2017. All rights reserved\n\n\nProduct data sheet                                                               10 December 2013                                                                       13 / 13\n"
+    }
+  }
+}

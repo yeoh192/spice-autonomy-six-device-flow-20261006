@@ -1,0 +1,33 @@
+{
+  "device": "1N4148",
+  "pins": [
+    {
+      "number": null,
+      "label": "k",
+      "applies_to": [
+        "1N4148"
+      ],
+      "package": "SOD27 (DO-35)",
+      "connection_note": "Cathode; marking band indicates cathode. No numeric pin number supplied.",
+      "evidence_refs": [
+        "b20",
+        "b79"
+      ]
+    },
+    {
+      "number": null,
+      "label": "a",
+      "applies_to": [
+        "1N4148"
+      ],
+      "package": "SOD27 (DO-35)",
+      "connection_note": "Anode; no numeric pin number supplied.",
+      "evidence_refs": [
+        "b20"
+      ]
+    }
+  ],
+  "topology": [],
+  "model_port_binding": null,
+  "status": "handbook_pin_evidence_preserved_model_binding_pending"
+}

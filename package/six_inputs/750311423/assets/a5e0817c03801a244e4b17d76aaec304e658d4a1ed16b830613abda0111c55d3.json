@@ -1,0 +1,938 @@
+{
+  "cases": [
+    {
+      "id": "primary_inductance",
+      "reference_ids": [
+        "parameter:inductance"
+      ],
+      "model": {
+        "path": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/750311423/reference_benchmark.lib",
+        "entry": "REFERENCE_XFMR",
+        "declared_ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+          "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P1": "P",
+          "N1": "N",
+          "P3": "AUXP",
+          "N3": "AUXN",
+          "P2": "SECP",
+          "N2": "SECN"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          },
+          {
+            "kind": "R",
+            "name": "RAUX",
+            "nodes": [
+              "AUXN",
+              "0"
+            ],
+            "value": 1e-06
+          },
+          {
+            "kind": "R",
+            "name": "RSEC",
+            "nodes": [
+              "SECN",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 10000
+        },
+        "measurement": {
+          "mode": "ac_inductance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1000000.0
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "μH",
+        "limits": {
+          "min": 45,
+          "max": 55
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "N1 10kHz100mV; secondary/aux open-circuit convention pending review;33%RH is environment metadata",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P1": "P",
+            "N1": "N",
+            "P3": "AUXP",
+            "N3": "AUXN",
+            "P2": "SECP",
+            "N2": "SECN"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            },
+            {
+              "kind": "R",
+              "name": "RAUX",
+              "nodes": [
+                "AUXN",
+                "0"
+              ],
+              "value": 1e-06
+            },
+            {
+              "kind": "R",
+              "name": "RSEC",
+              "nodes": [
+                "SECN",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 10000
+          },
+          "measurement": {
+            "mode": "ac_inductance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1000000.0
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "0a4aa4a635f8937537ea1381f679c15636aeea8c82f0e4afb97f1f8c3e3b2b4d"
+    },
+    {
+      "id": "dcr_N1",
+      "reference_ids": [
+        "parameter:rdc_N1"
+      ],
+      "model": {
+        "path": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/750311423/reference_benchmark.lib",
+        "entry": "REFERENCE_XFMR",
+        "declared_ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+          "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P1": "P",
+          "N1": "N",
+          "P3": "AUXP",
+          "N3": "AUXN",
+          "P2": "SECP",
+          "N2": "SECN"
+        },
+        "components": [
+          {
+            "kind": "I",
+            "name": "IDRIVE",
+            "nodes": [
+              "N",
+              "P"
+            ],
+            "value": {
+              "dc": 0
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "IDRIVE",
+          "start": 0,
+          "stop": 0.01,
+          "step": 0.002
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "v(P,N)",
+          "at": 0.01,
+          "scale": 100
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0.072,
+          "max": 0.108
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "20°C33%RH; other windings open;10mA is fixture choice, not a printed handbook excitation",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P1": "P",
+            "N1": "N",
+            "P3": "AUXP",
+            "N3": "AUXN",
+            "P2": "SECP",
+            "N2": "SECN"
+          },
+          "components": [
+            {
+              "kind": "I",
+              "name": "IDRIVE",
+              "nodes": [
+                "N",
+                "P"
+              ],
+              "value": {
+                "dc": 0
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "dc",
+            "source": "IDRIVE",
+            "start": 0,
+            "stop": 0.01,
+            "step": 0.002
+          },
+          "measurement": {
+            "mode": "sample",
+            "signal": "v(P,N)",
+            "at": 0.01,
+            "scale": 100
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "5b0d5db9b43692c790f615e7680ebfb90dd753d73eea9ed566f3ce87dd470fb0"
+    },
+    {
+      "id": "dcr_N2",
+      "reference_ids": [
+        "parameter:rdc_N2"
+      ],
+      "model": {
+        "path": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/750311423/reference_benchmark.lib",
+        "entry": "REFERENCE_XFMR",
+        "declared_ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+          "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P1": "P",
+          "N1": "N",
+          "P3": "AUXP",
+          "N3": "AUXN",
+          "P2": "SECP",
+          "N2": "SECN"
+        },
+        "components": [
+          {
+            "kind": "I",
+            "name": "IDRIVE",
+            "nodes": [
+              "SECN",
+              "SECP"
+            ],
+            "value": {
+              "dc": 0
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "SECN",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "IDRIVE",
+          "start": 0,
+          "stop": 0.01,
+          "step": 0.002
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "v(SECP,SECN)",
+          "at": 0.01,
+          "scale": 100
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0.009600000000000001,
+          "max": 0.0144
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "20°C33%RH; other windings open;10mA is fixture choice, not a printed handbook excitation",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P1": "P",
+            "N1": "N",
+            "P3": "AUXP",
+            "N3": "AUXN",
+            "P2": "SECP",
+            "N2": "SECN"
+          },
+          "components": [
+            {
+              "kind": "I",
+              "name": "IDRIVE",
+              "nodes": [
+                "SECN",
+                "SECP"
+              ],
+              "value": {
+                "dc": 0
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "SECN",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "dc",
+            "source": "IDRIVE",
+            "start": 0,
+            "stop": 0.01,
+            "step": 0.002
+          },
+          "measurement": {
+            "mode": "sample",
+            "signal": "v(SECP,SECN)",
+            "at": 0.01,
+            "scale": 100
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "aad4a1ab3b7222832ac00a1ef31187f3bc77040c23196e434573862d937fdd11"
+    },
+    {
+      "id": "dcr_N3",
+      "reference_ids": [
+        "parameter:rdc_N3"
+      ],
+      "model": {
+        "path": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/750311423/reference_benchmark.lib",
+        "entry": "REFERENCE_XFMR",
+        "declared_ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+          "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P1": "P",
+          "N1": "N",
+          "P3": "AUXP",
+          "N3": "AUXN",
+          "P2": "SECP",
+          "N2": "SECN"
+        },
+        "components": [
+          {
+            "kind": "I",
+            "name": "IDRIVE",
+            "nodes": [
+              "AUXN",
+              "AUXP"
+            ],
+            "value": {
+              "dc": 0
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "AUXN",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "IDRIVE",
+          "start": 0,
+          "stop": 0.01,
+          "step": 0.002
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "v(AUXP,AUXN)",
+          "at": 0.01,
+          "scale": 100
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0.1845,
+          "max": 0.2255
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "20°C33%RH; other windings open;10mA is fixture choice, not a printed handbook excitation",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P1": "P",
+            "N1": "N",
+            "P3": "AUXP",
+            "N3": "AUXN",
+            "P2": "SECP",
+            "N2": "SECN"
+          },
+          "components": [
+            {
+              "kind": "I",
+              "name": "IDRIVE",
+              "nodes": [
+                "AUXN",
+                "AUXP"
+              ],
+              "value": {
+                "dc": 0
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "AUXN",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "dc",
+            "source": "IDRIVE",
+            "start": 0,
+            "stop": 0.01,
+            "step": 0.002
+          },
+          "measurement": {
+            "mode": "sample",
+            "signal": "v(AUXP,AUXN)",
+            "at": 0.01,
+            "scale": 100
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "042f2efd815b239df8849640a78ead9a38cdc709fae759322f3409ccfa4e13e4"
+    },
+    {
+      "id": "turns_N2",
+      "reference_ids": [
+        "parameter:turns"
+      ],
+      "model": {
+        "path": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/750311423/reference_benchmark.lib",
+        "entry": "REFERENCE_XFMR",
+        "declared_ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+          "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P1": "P",
+          "N1": "N",
+          "P3": "AUXP",
+          "N3": "AUXN",
+          "P2": "SECP",
+          "N2": "SECN"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          },
+          {
+            "kind": "R",
+            "name": "RAUX",
+            "nodes": [
+              "AUXN",
+              "0"
+            ],
+            "value": 1e-06
+          },
+          {
+            "kind": "R",
+            "name": "RSEC",
+            "nodes": [
+              "SECN",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 10000
+        },
+        "measurement": {
+          "mode": "ac_gain_magnitude",
+          "signal": "v(secp,secn)",
+          "denominator": "v(p,n)",
+          "sign": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "1"
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "4:1:2 winding voltage ratios; chosen10kHz100mV is documented test convention pending review; handbook ratio has no printed tolerance so acceptance is pending",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P1": "P",
+            "N1": "N",
+            "P3": "AUXP",
+            "N3": "AUXN",
+            "P2": "SECP",
+            "N2": "SECN"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            },
+            {
+              "kind": "R",
+              "name": "RAUX",
+              "nodes": [
+                "AUXN",
+                "0"
+              ],
+              "value": 1e-06
+            },
+            {
+              "kind": "R",
+              "name": "RSEC",
+              "nodes": [
+                "SECN",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 10000
+          },
+          "measurement": {
+            "mode": "ac_gain_magnitude",
+            "signal": "v(secp,secn)",
+            "denominator": "v(p,n)",
+            "sign": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "a1334050e66b12d554d179615ac9c0a21156184a300e0cd7a97e8dd71e156fd2",
+      "nominal_reference": 0.25
+    },
+    {
+      "id": "turns_N3",
+      "reference_ids": [
+        "parameter:turns"
+      ],
+      "model": {
+        "path": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/750311423/reference_benchmark.lib",
+        "entry": "REFERENCE_XFMR",
+        "declared_ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+          "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P1": "P",
+          "N1": "N",
+          "P3": "AUXP",
+          "N3": "AUXN",
+          "P2": "SECP",
+          "N2": "SECN"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          },
+          {
+            "kind": "R",
+            "name": "RAUX",
+            "nodes": [
+              "AUXN",
+              "0"
+            ],
+            "value": 1e-06
+          },
+          {
+            "kind": "R",
+            "name": "RSEC",
+            "nodes": [
+              "SECN",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 10000
+        },
+        "measurement": {
+          "mode": "ac_gain_magnitude",
+          "signal": "v(auxp,auxn)",
+          "denominator": "v(p,n)",
+          "sign": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "1"
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "4:1:2 winding voltage ratios; chosen10kHz100mV is documented test convention pending review; handbook ratio has no printed tolerance so acceptance is pending",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P1": "P",
+            "N1": "N",
+            "P3": "AUXP",
+            "N3": "AUXN",
+            "P2": "SECP",
+            "N2": "SECN"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            },
+            {
+              "kind": "R",
+              "name": "RAUX",
+              "nodes": [
+                "AUXN",
+                "0"
+              ],
+              "value": 1e-06
+            },
+            {
+              "kind": "R",
+              "name": "RSEC",
+              "nodes": [
+                "SECN",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 10000
+          },
+          "measurement": {
+            "mode": "ac_gain_magnitude",
+            "signal": "v(auxp,auxn)",
+            "denominator": "v(p,n)",
+            "sign": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "f46d7d2e84c0abceb797a3f1946e8f1272a8cd7173f9405ffacfd493d78b2aa9",
+      "nominal_reference": 0.5
+    }
+  ],
+  "qualification_status": "draft_pending_independent_review",
+  "not_formal_acceptance": true
+}

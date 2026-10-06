@@ -1,0 +1,1831 @@
+{
+  "index_base": 0,
+  "blocks": {
+    "b0": {
+      "type": "text",
+      "text": "DATA SHEET",
+      "bbox": [
+        117,
+        142,
+        584,
+        195
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b1": {
+      "type": "image",
+      "img_path": "images/ec3e531bede4334bd2ff6ab6a6047a842a5800c0835340850f4f8fdd0a186570.jpg",
+      "image_caption": [],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        221,
+        261,
+        357,
+        465
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b2": {
+      "type": "text",
+      "text": "1N4148; 1N4448 High-speed diodes",
+      "bbox": [
+        119,
+        630,
+        524,
+        707
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b3": {
+      "type": "header",
+      "text": "DISCRETE SEMICONDUCTORS",
+      "bbox": [
+        319,
+        62,
+        685,
+        85
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b4": {
+      "type": "footer",
+      "text": "Product data sheet Supersedes data of 2002 Jan 23",
+      "bbox": [
+        89,
+        725,
+        443,
+        768
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b5": {
+      "type": "page_number",
+      "text": "2004 Aug 10",
+      "bbox": [
+        761,
+        725,
+        902,
+        747
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b6": {
+      "type": "footer",
+      "text": "NXP founded by Philips",
+      "bbox": [
+        594,
+        851,
+        902,
+        916
+      ],
+      "page_idx": 0,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b7": {
+      "type": "text",
+      "text": "High-speed diodes",
+      "text_level": 2,
+      "bbox": [
+        97,
+        106,
+        315,
+        127
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b8": {
+      "type": "text",
+      "text": "FEATURES",
+      "text_level": 2,
+      "bbox": [
+        78,
+        157,
+        169,
+        173
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b9": {
+      "type": "text",
+      "text": "• Hermetically sealed leaded glass SOD27 (DO-35) package",
+      "bbox": [
+        78,
+        179,
+        450,
+        209
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b10": {
+      "type": "text",
+      "text": "• High switching speed: max. 4 ns",
+      "bbox": [
+        78,
+        212,
+        329,
+        226
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b11": {
+      "type": "text",
+      "text": "• General application",
+      "bbox": [
+        78,
+        230,
+        238,
+        245
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b12": {
+      "type": "text",
+      "text": "• Continuous reverse voltage: max. 100 V",
+      "bbox": [
+        78,
+        249,
+        384,
+        264
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b13": {
+      "type": "text",
+      "text": "• Repetitive peak reverse voltage: max. 100 V",
+      "bbox": [
+        78,
+        267,
+        413,
+        282
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b14": {
+      "type": "text",
+      "text": "• Repetitive peak forward current: max. 450 mA.",
+      "bbox": [
+        78,
+        285,
+        426,
+        300
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b15": {
+      "type": "text",
+      "text": "APPLICATIONS",
+      "text_level": 2,
+      "bbox": [
+        78,
+        319,
+        203,
+        334
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b16": {
+      "type": "text",
+      "text": "• High-speed switching.",
+      "bbox": [
+        78,
+        340,
+        255,
+        357
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b17": {
+      "type": "text",
+      "text": "DESCRIPTION",
+      "text_level": 2,
+      "bbox": [
+        78,
+        375,
+        193,
+        390
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b18": {
+      "type": "text",
+      "text": "The 1N4148 and 1N4448 are high-speed switching diodes fabricated in planar technology, and encapsulated in hermetically sealed leaded glass SOD27 (DO-35) packages.",
+      "bbox": [
+        78,
+        397,
+        485,
+        454
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b19": {
+      "type": "text",
+      "text": "1N4148; 1N4448",
+      "bbox": [
+        714,
+        106,
+        900,
+        125
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b20": {
+      "type": "table",
+      "img_path": "images/7f80a15ec3549f7c826be3fc621a3078fbb8a7239693ba498ac7e4e9a10a6ee4.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>k</td><td>a</td><td>MAM246</td></tr></table>",
+      "bbox": [
+        512,
+        161,
+        915,
+        355
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b21": {
+      "type": "table",
+      "img_path": "images/3522a9959be303058b0ae6e7e01c7e772e22373cf928b02e1b5d0bb9c22f40a9.jpg",
+      "table_caption": [
+        "MARKING"
+      ],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>TYPE NUMBER</td><td>MARKING CODE</td></tr><tr><td>1N4148</td><td>1N4148PH or 4148PH</td></tr><tr><td>1N4448</td><td>1N4448</td></tr></table>",
+      "bbox": [
+        509,
+        410,
+        915,
+        469
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b22": {
+      "type": "text",
+      "text": "ORDERING INFORMATION",
+      "text_level": 2,
+      "bbox": [
+        78,
+        486,
+        285,
+        500
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b23": {
+      "type": "table",
+      "img_path": "images/df1488ec02874fd3dd05bdf38521ff460273795bb826e85b64ff60ecb9f71f9e.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td rowspan=\"2\">TYPE NUMBER</td><td colspan=\"3\">PACKAGE</td></tr><tr><td>NAME</td><td>DESCRIPTION</td><td>VERSION</td></tr><tr><td>1N4148</td><td rowspan=\"2\">-</td><td rowspan=\"2\">hermetically sealed glass package; axial leaded; 2 leads</td><td rowspan=\"2\">SOD27</td></tr><tr><td>1N4448</td></tr></table>",
+      "bbox": [
+        80,
+        505,
+        917,
+        584
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b24": {
+      "type": "header",
+      "text": "NXP Semiconductors",
+      "bbox": [
+        78,
+        67,
+        245,
+        81
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b25": {
+      "type": "header",
+      "text": "Product data sheet",
+      "bbox": [
+        769,
+        67,
+        917,
+        81
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b26": {
+      "type": "footer",
+      "text": "2004 Aug 10",
+      "bbox": [
+        78,
+        916,
+        174,
+        929
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b27": {
+      "type": "page_number",
+      "text": "2",
+      "bbox": [
+        492,
+        916,
+        505,
+        928
+      ],
+      "page_idx": 1,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b28": {
+      "type": "text",
+      "text": "High-speed diodes",
+      "text_level": 2,
+      "bbox": [
+        95,
+        106,
+        300,
+        127
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b29": {
+      "type": "text",
+      "text": "1N4148; 1N4448",
+      "bbox": [
+        715,
+        106,
+        900,
+        125
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b30": {
+      "type": "text",
+      "text": "LIMITING VALUES",
+      "text_level": 2,
+      "bbox": [
+        78,
+        157,
+        223,
+        173
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b31": {
+      "type": "table",
+      "img_path": "images/49e751f4c57c30d6472da3d0b26feba62efb9179ee457d297a3ab3ed0462b09c.jpg",
+      "table_caption": [
+        "In accordance with the Absolute Maximum Rating System (IEC 60134)."
+      ],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>SYMBOL</td><td>PARAMETER</td><td>CONDITIONS</td><td>MIN.</td><td>MAX.</td><td>UNIT</td></tr><tr><td> $V_{RRM}$ </td><td>repetitive peak reverse voltage</td><td></td><td>-</td><td>100</td><td>V</td></tr><tr><td> $V_R$ </td><td>continuous reverse voltage</td><td></td><td>-</td><td>100</td><td>V</td></tr><tr><td> $I_F$ </td><td>continuous forward current</td><td>see Fig.2; note 1</td><td>-</td><td>200</td><td>mA</td></tr><tr><td> $I_{FRM}$ </td><td>repetitive peak forward current</td><td></td><td>-</td><td>450</td><td>mA</td></tr><tr><td> $I_{FSM}$ </td><td>non-repetitive peak forward current</td><td>square wave;  $T_j = 25 °C$  prior to surge; see Fig.4t = 1 μst = 1 mst = 1 s</td><td>--</td><td>410.5</td><td>AAAA</td></tr><tr><td> $P_{tot}$ </td><td>total power dissipation</td><td> $T_{amb} = 25 °C$ ; note 1</td><td>-</td><td>500</td><td>mW</td></tr><tr><td> $T_{stg}$ </td><td>storage temperature</td><td></td><td>-65</td><td>+200</td><td>°C</td></tr><tr><td> $T_j$ </td><td>junction temperature</td><td></td><td>-</td><td>200</td><td>°C</td></tr></table>",
+      "bbox": [
+        80,
+        190,
+        915,
+        421
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b32": {
+      "type": "text",
+      "text": "Note",
+      "text_level": 2,
+      "bbox": [
+        78,
+        429,
+        121,
+        442
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b33": {
+      "type": "text",
+      "text": "1. Device mounted on an FR4 printed-circuit board; lead length 10 mm.",
+      "bbox": [
+        78,
+        447,
+        594,
+        461
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b34": {
+      "type": "text",
+      "text": "ELECTRICAL CHARACTERISTICS",
+      "text_level": 2,
+      "bbox": [
+        78,
+        478,
+        342,
+        492
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b35": {
+      "type": "text",
+      "text": "T<sub>j</sub> = 25 °C unless otherwise specified.",
+      "bbox": [
+        80,
+        495,
+        347,
+        509
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b36": {
+      "type": "table",
+      "img_path": "images/2b2f5faf1c845a5a328bf98895a6f0873173e6054b0fcd65733cccc57261d96d.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>SYMBOL</td><td>PARAMETER</td><td>CONDITIONS</td><td>MIN.</td><td>MAX.</td><td>UNIT</td></tr><tr><td> $V_F$ </td><td>forward voltage1N41481N4448</td><td>see Fig.3 $I_F = 10 mA$  $I_F = 5 mA$  $I_F = 100 mA$ </td><td>-0.62-</td><td>10.721</td><td>VVV</td></tr><tr><td rowspan=\"2\"> $I_R$ </td><td rowspan=\"2\">reverse current</td><td> $V_R = 20 V; see Fig.5$ </td><td></td><td>25</td><td>nA</td></tr><tr><td> $V_R = 20 V; T_j = 150 °C; see Fig.5$ </td><td>-</td><td>50</td><td>μA</td></tr><tr><td> $I_R$ </td><td>reverse current; 1N4448</td><td> $V_R = 20 V; T_j = 100 °C; see Fig.5$ </td><td>-</td><td>3</td><td>μA</td></tr><tr><td> $C_d$ </td><td>diode capacitance</td><td>f = 1 MHz;  $V_R = 0 V; see Fig.6$ </td><td>-</td><td>4</td><td>pF</td></tr><tr><td> $t_{rr}$ </td><td>reverse recovery time</td><td>when switched from  $I_F = 10 mA to I_R = 60 mA; R_L = 100 Ω; measured at I_R = 1 mA; see Fig.7</td><td>-</td><td>4</td><td>ns</td></tr><tr><td>\\( V_{fr}$ </td><td>forward recovery voltage</td><td>when switched from  $I_F = 50 mA; t_r = 20 ns; see Fig.8$ </td><td>-</td><td>2.5</td><td>V</td></tr></table>",
+      "bbox": [
+        80,
+        511,
+        917,
+        752
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b37": {
+      "type": "text",
+      "text": "THERMAL CHARACTERISTICS",
+      "text_level": 2,
+      "bbox": [
+        78,
+        771,
+        317,
+        787
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b38": {
+      "type": "table",
+      "img_path": "images/390fc915899ae17ba6d90108955384ec4e1ea65bbd516536a25169836e0016d3.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td>SYMBOL</td><td>PARAMETER</td><td>CONDITIONS</td><td>VALUE</td><td>UNIT</td></tr><tr><td> $R_{th(j-tp)}$ </td><td>thermal resistance from junction to tie-point</td><td>lead length 10 mm</td><td>240</td><td>K/W</td></tr><tr><td> $R_{th(j-a)}$ </td><td>thermal resistance from junction to ambient</td><td>lead length 10 mm; note 1</td><td>350</td><td>K/W</td></tr></table>",
+      "bbox": [
+        80,
+        790,
+        917,
+        850
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b39": {
+      "type": "text",
+      "text": "Note",
+      "text_level": 2,
+      "bbox": [
+        78,
+        856,
+        121,
+        869
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b40": {
+      "type": "text",
+      "text": "1. Device mounted on a printed-circuit board without metallization pad.",
+      "bbox": [
+        78,
+        874,
+        589,
+        889
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b41": {
+      "type": "header",
+      "text": "NXP Semiconductors",
+      "bbox": [
+        78,
+        67,
+        236,
+        81
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b42": {
+      "type": "header",
+      "text": "Product data sheet",
+      "bbox": [
+        779,
+        67,
+        919,
+        81
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b43": {
+      "type": "page_number",
+      "text": "3",
+      "bbox": [
+        492,
+        916,
+        505,
+        928
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b44": {
+      "type": "footer",
+      "text": "2004 Aug 10",
+      "bbox": [
+        78,
+        916,
+        174,
+        929
+      ],
+      "page_idx": 2,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b45": {
+      "type": "text",
+      "text": "High-speed diodes",
+      "text_level": 2,
+      "bbox": [
+        94,
+        105,
+        304,
+        128
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b46": {
+      "type": "text",
+      "text": "GRAPHICAL DATA",
+      "text_level": 2,
+      "bbox": [
+        78,
+        157,
+        230,
+        174
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b47": {
+      "type": "chart",
+      "img_path": "images/939719b9f7a0ac4e6cff386ee5ceca09632fc65419ea0a4228e66f610665b381.jpg",
+      "content": "",
+      "chart_caption": [
+        "Device mounted on an FR4 printed-circuit board; lead length 10 mm.",
+        "Fig.2 Maximum permissible continuous forward current as a function of ambient temperature."
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        100,
+        182,
+        440,
+        423
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b48": {
+      "type": "text",
+      "text": "1N4148; 1N4448",
+      "bbox": [
+        714,
+        106,
+        902,
+        125
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b49": {
+      "type": "chart",
+      "img_path": "images/f4b9fe642ce34fe8c244f0115396d2554ddfe2dc742f1dda5e543de6245a49cf.jpg",
+      "content": "",
+      "chart_caption": [],
+      "chart_footnote": [
+        "(1) T<sub>j</sub> = 175 °C; typical values. (2) T<sub>j</sub> = 25 °C; typical values. (3) T<sub>j</sub> = 25 °C; maximum values."
+      ],
+      "bbox": [
+        539,
+        194,
+        865,
+        421
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b50": {
+      "type": "chart",
+      "img_path": "images/9379cf0b4a88be2aa8d56665fe54f2349dfcde6bafc3a371d51d33a8c7e4c4c4.jpg",
+      "content": "",
+      "chart_caption": [
+        "Fig.3 Forward current as a function of forward voltage."
+      ],
+      "chart_footnote": [
+        "Based on square wave currents. T<sub>j</sub> = 25 °C prior to surge."
+      ],
+      "bbox": [
+        105,
+        552,
+        863,
+        828
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b51": {
+      "type": "text",
+      "text": "Fig.4 Maximum permissible non-repetitive peak forward current as a function of pulse duration.",
+      "bbox": [
+        157,
+        872,
+        838,
+        890
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b52": {
+      "type": "header",
+      "text": "NXP Semiconductors",
+      "bbox": [
+        78,
+        66,
+        236,
+        81
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b53": {
+      "type": "header",
+      "text": "Product data sheet",
+      "bbox": [
+        778,
+        67,
+        919,
+        81
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b54": {
+      "type": "page_number",
+      "text": "4",
+      "bbox": [
+        490,
+        916,
+        505,
+        928
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b55": {
+      "type": "footer",
+      "text": "2004 Aug 10",
+      "bbox": [
+        78,
+        916,
+        176,
+        929
+      ],
+      "page_idx": 3,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b56": {
+      "type": "text",
+      "text": "High-speed diodes",
+      "text_level": 2,
+      "bbox": [
+        95,
+        105,
+        302,
+        128
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b57": {
+      "type": "chart",
+      "img_path": "images/e8bc25a135bfeb1f19800353926434490b232c38a8272f20e88b25bb70fb3987.jpg",
+      "content": "",
+      "chart_caption": [
+        "(1) $V _ { \\mathsf { R } } = 7 5 ^ { \\circ } $ ; typical values.",
+        "(2) $V _ { \\mathsf { R } } = 2 0$ V; typical values.",
+        "Fig.5 Reverse current as a function of junction temperature."
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        100,
+        182,
+        435,
+        414
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b58": {
+      "type": "chart",
+      "img_path": "images/45407a1aa5a055a493977f745f0fd97ca3dd4b55d62946e85ed4aac3b2f29e28.jpg",
+      "content": "",
+      "chart_caption": [
+        "f = 1 MHz; ${ \\mathsf { T } } _ { \\mathrm { j } } = 2 5 \\ { ^ \\circ } { \\mathsf { C } } .$",
+        "Fig.6 Diode capacitance as a function of reverse voltage; typical values."
+      ],
+      "chart_footnote": [],
+      "bbox": [
+        547,
+        182,
+        873,
+        413
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b59": {
+      "type": "header",
+      "text": "NXP Semiconductors",
+      "bbox": [
+        78,
+        66,
+        236,
+        81
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b60": {
+      "type": "header",
+      "text": "Product data sheet",
+      "bbox": [
+        779,
+        67,
+        919,
+        81
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b61": {
+      "type": "header",
+      "text": "1N4148; 1N4448",
+      "bbox": [
+        715,
+        106,
+        900,
+        125
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b62": {
+      "type": "footer",
+      "text": "2004 Aug 10",
+      "bbox": [
+        78,
+        916,
+        176,
+        929
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b63": {
+      "type": "page_number",
+      "text": "5",
+      "bbox": [
+        490,
+        916,
+        505,
+        929
+      ],
+      "page_idx": 4,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b64": {
+      "type": "image",
+      "img_path": "images/8cc358074892fdc1928048088825e2669608ad0ac94f2ccc1c823fd45319ee51.jpg",
+      "image_caption": [],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        110,
+        252,
+        885,
+        387
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b65": {
+      "type": "text",
+      "text": "High-speed diodes",
+      "text_level": 2,
+      "bbox": [
+        95,
+        105,
+        302,
+        128
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b66": {
+      "type": "text",
+      "text": "1N4148; 1N4448",
+      "bbox": [
+        715,
+        106,
+        900,
+        125
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b67": {
+      "type": "image",
+      "img_path": "images/8e05396590f9664267fcbf378ba5772faf3ac3d3625370e3f1fb15124a06c266.jpg",
+      "image_caption": [
+        "(1) I<sub>R</sub> = 1 mA.",
+        "Fig.7 Reverse recovery voltage test circuit and waveforms.",
+        "Fig.8 Forward recovery voltage test circuit and waveforms."
+      ],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        104,
+        634,
+        890,
+        779
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b68": {
+      "type": "header",
+      "text": "NXP Semiconductors",
+      "bbox": [
+        78,
+        66,
+        236,
+        81
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b69": {
+      "type": "header",
+      "text": "Product data sheet",
+      "bbox": [
+        779,
+        66,
+        919,
+        81
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b70": {
+      "type": "footer",
+      "text": "2004 Aug 10",
+      "bbox": [
+        78,
+        915,
+        176,
+        929
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b71": {
+      "type": "page_number",
+      "text": "6",
+      "bbox": [
+        492,
+        916,
+        505,
+        929
+      ],
+      "page_idx": 5,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b72": {
+      "type": "text",
+      "text": "PACKAGE OUTLINE",
+      "text_level": 2,
+      "bbox": [
+        78,
+        157,
+        238,
+        173
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b73": {
+      "type": "text",
+      "text": "Hermetically sealed glass package; axial leaded; 2 leads",
+      "bbox": [
+        95,
+        187,
+        512,
+        203
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b74": {
+      "type": "text",
+      "text": "SOD27",
+      "bbox": [
+        847,
+        188,
+        902,
+        201
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b75": {
+      "type": "image",
+      "img_path": "images/7ffcf3c84edb424a54071c8a5800b083e40c78f65cf56cb17aa820395a95f391.jpg",
+      "image_caption": [],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        211,
+        274,
+        258,
+        327
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b76": {
+      "type": "image",
+      "img_path": "images/c796573cc033260f515d4a8af46647203bde23bdb32d4969b6b106cd45426663.jpg",
+      "image_caption": [],
+      "image_footnote": [],
+      "content": "",
+      "bbox": [
+        344,
+        266,
+        808,
+        328
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b77": {
+      "type": "table",
+      "img_path": "images/5f0dd5b1e2ae21a62a78eba2902287201ec59cca506b17d6e30ef0affaa891ff.jpg",
+      "table_caption": [
+        "DIMENSIONS (mm are the original dimensions)"
+      ],
+      "table_footnote": [
+        "Note"
+      ],
+      "table_body": "<table><tr><td>UNIT</td><td>b max.</td><td>D max.</td><td>G1 max.</td><td>L min.</td></tr><tr><td>mm</td><td>0.56</td><td>1.85</td><td>4.25</td><td>25.4</td></tr></table>",
+      "bbox": [
+        112,
+        381,
+        371,
+        431
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b78": {
+      "type": "text",
+      "text": "0 1 2 mm FEL scale",
+      "bbox": [
+        734,
+        377,
+        818,
+        406
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b79": {
+      "type": "text",
+      "text": "1. The marking band indicates the cathode.",
+      "bbox": [
+        112,
+        447,
+        334,
+        458
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b80": {
+      "type": "table",
+      "img_path": "images/cd02e6806cc15b4fc055c28ae01f5b75c2e1023b26f188a1e009c12dcb074a48.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td rowspan=\"2\">OUTLINE VERSION</td><td colspan=\"4\">REFERENCES</td><td rowspan=\"2\">EUROPEAN PROJECTION</td><td rowspan=\"2\">ISSUE DATE</td></tr><tr><td>IEC</td><td>JEDEC</td><td>JEITA</td><td></td></tr><tr><td>SOD27</td><td>A24</td><td>DO-35</td><td>SC-40</td><td></td><td></td><td>97-06-0905-12-22</td></tr></table>",
+      "bbox": [
+        112,
+        459,
+        882,
+        515
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b81": {
+      "type": "header",
+      "text": "NXP Semiconductors",
+      "bbox": [
+        78,
+        67,
+        236,
+        81
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b82": {
+      "type": "header",
+      "text": "Product data sheet",
+      "bbox": [
+        779,
+        67,
+        919,
+        81
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b83": {
+      "type": "header",
+      "text": "High-speed diodes",
+      "bbox": [
+        95,
+        106,
+        300,
+        127
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b84": {
+      "type": "header",
+      "text": "1N4148; 1N4448",
+      "bbox": [
+        715,
+        106,
+        900,
+        125
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b85": {
+      "type": "page_number",
+      "text": "7",
+      "bbox": [
+        492,
+        916,
+        505,
+        928
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b86": {
+      "type": "footer",
+      "text": "2004 Aug 10",
+      "bbox": [
+        80,
+        916,
+        174,
+        929
+      ],
+      "page_idx": 6,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b87": {
+      "type": "text",
+      "text": "High-speed diodes",
+      "text_level": 2,
+      "bbox": [
+        95,
+        106,
+        300,
+        127
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b88": {
+      "type": "text",
+      "text": "1N4148; 1N4448",
+      "bbox": [
+        715,
+        106,
+        900,
+        125
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b89": {
+      "type": "text",
+      "text": "DATA SHEET STATUS",
+      "text_level": 2,
+      "bbox": [
+        78,
+        157,
+        253,
+        173
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b90": {
+      "type": "table",
+      "img_path": "images/a5129a8b17f1f3fc2113406ed873b9894269bb524b36ece785c47c8f3b2cc4cf.jpg",
+      "table_caption": [],
+      "table_footnote": [],
+      "table_body": "<table><tr><td> $DOCUMENT STATUS^{(1)}$ </td><td> $PRODUCT STATUS^{(2)}$ </td><td>DEFINITION</td></tr><tr><td>Objective data sheet</td><td>Development</td><td>This document contains data from the objective specification for product development.</td></tr><tr><td>Preliminary data sheet</td><td>Qualification</td><td>This document contains data from the preliminary specification.</td></tr><tr><td>Product data sheet</td><td>Production</td><td>This document contains the product specification.</td></tr></table>",
+      "bbox": [
+        80,
+        178,
+        915,
+        281
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b91": {
+      "type": "text",
+      "text": "Notes",
+      "text_level": 2,
+      "bbox": [
+        78,
+        288,
+        129,
+        302
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b92": {
+      "type": "text",
+      "text": "1. Please consult the most recently issued document before initiating or completing a design.",
+      "bbox": [
+        78,
+        306,
+        746,
+        321
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b93": {
+      "type": "text",
+      "text": "2. The product status of device(s) described in this document may have changed since this document was published and may differ in case of multiple devices. The latest product status information is available on the Internet at URL http://www.nxp.com.",
+      "bbox": [
+        78,
+        323,
+        912,
+        368
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b94": {
+      "type": "text",
+      "text": "DISCLAIMERS",
+      "text_level": 2,
+      "bbox": [
+        78,
+        387,
+        194,
+        401
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b95": {
+      "type": "text",
+      "text": "General ⎯ Information in this document is believed to be accurate and reliable. However, NXP Semiconductors does not give any representations or warranties, expressed or implied, as to the accuracy or completeness of such information and shall have no liability for the consequences of use of such information.",
+      "bbox": [
+        77,
+        408,
+        487,
+        494
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b96": {
+      "type": "text",
+      "text": "Right to make changes ⎯ NXP Semiconductors reserves the right to make changes to information published in this document, including without limitation specifications and product descriptions, at any time and without notice. This document supersedes and replaces all information supplied prior to the publication hereof.",
+      "bbox": [
+        77,
+        500,
+        487,
+        585
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b97": {
+      "type": "text",
+      "text": "Suitability for use ⎯ NXP Semiconductors products are not designed, authorized or warranted to be suitable for use in medical, military, aircraft, space or life support equipment, nor in applications where failure or malfunction of an NXP Semiconductors product can reasonably be expected to result in personal injury, death or severe property or environmental damage. NXP Semiconductors accepts no liability for inclusion and/or use of NXP Semiconductors products in such equipment or applications and therefore such inclusion and/or use is at the customer’s own risk.",
+      "bbox": [
+        77,
+        590,
+        487,
+        745
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b98": {
+      "type": "text",
+      "text": "Applications ⎯ Applications that are described herein for any of these products are for illustrative purposes only. NXP Semiconductors makes no representation or warranty that such applications will be suitable for the specified use without further testing or modification.",
+      "bbox": [
+        77,
+        751,
+        487,
+        823
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b99": {
+      "type": "text",
+      "text": "Limiting values ⎯ Stress above one or more limiting values (as defined in the Absolute Maximum Ratings System of IEC 60134) may cause permanent damage to the device. Limiting values are stress ratings only and operation of the device at these or any other conditions above those given in the Characteristics sections of this document is not implied. Exposure to limiting values for extended periods may affect device reliability.",
+      "bbox": [
+        77,
+        828,
+        482,
+        900
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b100": {
+      "type": "text",
+      "text": "",
+      "bbox": [
+        505,
+        387,
+        905,
+        431
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b101": {
+      "type": "text",
+      "text": "Terms and conditions of sale ⎯ NXP Semiconductors products are sold subject to the general terms and conditions of commercial sale, as published at http://www.nxp.com/profile/terms, including those pertaining to warranty, intellectual property rights infringement and limitation of liability, unless explicitly otherwise agreed to in writing by NXP Semiconductors. In case of any inconsistency or conflict between information in this document and such terms and conditions, the latter will prevail.",
+      "bbox": [
+        505,
+        435,
+        915,
+        578
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b102": {
+      "type": "text",
+      "text": "No offer to sell or license ⎯ Nothing in this document may be interpreted or construed as an offer to sell products that is open for acceptance or the grant, conveyance or implication of any license under any copyrights, patents or other industrial or intellectual property rights.",
+      "bbox": [
+        505,
+        583,
+        915,
+        655
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b103": {
+      "type": "text",
+      "text": "Export control ⎯ This document as well as the item(s) described herein may be subject to export control regulations. Export might require a prior authorization from national authorities.",
+      "bbox": [
+        505,
+        660,
+        915,
+        718
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b104": {
+      "type": "text",
+      "text": "Quick reference data ⎯ The Quick reference data is an extract of the product data given in the Limiting values and Characteristics sections of this document, and as such is not complete, exhaustive or legally binding.",
+      "bbox": [
+        505,
+        723,
+        915,
+        782
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b105": {
+      "type": "header",
+      "text": "NXP Semiconductors",
+      "bbox": [
+        78,
+        67,
+        236,
+        81
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b106": {
+      "type": "header",
+      "text": "Product data sheet",
+      "bbox": [
+        779,
+        67,
+        919,
+        81
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b107": {
+      "type": "footer",
+      "text": "2004 Aug 10",
+      "bbox": [
+        78,
+        916,
+        174,
+        929
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b108": {
+      "type": "page_number",
+      "text": "8",
+      "bbox": [
+        492,
+        916,
+        505,
+        928
+      ],
+      "page_idx": 7,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b109": {
+      "type": "text",
+      "text": "NXP Semiconductors",
+      "bbox": [
+        102,
+        133,
+        391,
+        154
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b110": {
+      "type": "text",
+      "text": "Customer notification",
+      "text_level": 2,
+      "bbox": [
+        117,
+        364,
+        289,
+        378
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b111": {
+      "type": "text",
+      "text": "This data sheet was changed to reflect the new company name NXP Semiconductors. No changes were made to the content, except for the legal definitions and disclaimers.",
+      "bbox": [
+        117,
+        390,
+        855,
+        421
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b112": {
+      "type": "text",
+      "text": "Contact information",
+      "text_level": 2,
+      "bbox": [
+        117,
+        448,
+        275,
+        461
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b113": {
+      "type": "text",
+      "text": "For additional information please visit: http://www.nxp.com",
+      "bbox": [
+        117,
+        473,
+        547,
+        489
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b114": {
+      "type": "text",
+      "text": "For sales offices addresses send e-mail to: salesaddresses@nxp.com",
+      "bbox": [
+        117,
+        490,
+        628,
+        504
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b115": {
+      "type": "text",
+      "text": "© NXP B.V. 2009",
+      "text_level": 2,
+      "bbox": [
+        95,
+        707,
+        194,
+        719
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b116": {
+      "type": "text",
+      "text": "All rights are reserved. Reproduction in whole or in part is prohibited without the prior written consent of the copyright owner.",
+      "bbox": [
+        95,
+        726,
+        754,
+        737
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b117": {
+      "type": "text",
+      "text": "The information presented in this document does not form part of any quotation or contract, is believed to be accurate and reliable and may be changed without notice. No liability will be accepted by the publisher for any consequence of its use. Publication thereof does not convey nor imply any license under patent- or other industrial or intellectual property rights.",
+      "bbox": [
+        92,
+        739,
+        897,
+        769
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b118": {
+      "type": "footer",
+      "text": "Printed in The Netherlands",
+      "bbox": [
+        92,
+        771,
+        215,
+        781
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b119": {
+      "type": "footer",
+      "text": "R76/05/pp9",
+      "bbox": [
+        317,
+        771,
+        374,
+        781
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b120": {
+      "type": "footer",
+      "text": "Date of release: 2004 Aug 10",
+      "bbox": [
+        499,
+        771,
+        633,
+        781
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b121": {
+      "type": "footer",
+      "text": "Document order number: 9397 750 13541",
+      "bbox": [
+        710,
+        771,
+        904,
+        781
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b122": {
+      "type": "footer",
+      "text": "founded by",
+      "bbox": [
+        129,
+        837,
+        226,
+        853
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    },
+    "b123": {
+      "type": "footer",
+      "text": "PHILIPS",
+      "bbox": [
+        115,
+        868,
+        240,
+        891
+      ],
+      "page_idx": 8,
+      "source_file": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/1N4148_数据手册_content_list.json"
+    }
+  },
+  "images": {
+    "images/ec3e531bede4334bd2ff6ab6a6047a842a5800c0835340850f4f8fdd0a186570.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/ec3e531bede4334bd2ff6ab6a6047a842a5800c0835340850f4f8fdd0a186570.jpg",
+      "exists": true,
+      "block_ids": [
+        "b1"
+      ],
+      "sha256": "fbab86155a3a71a920bf9572af355cd80cd15b19659e4db18a89898aa53fa7fe"
+    },
+    "images/7f80a15ec3549f7c826be3fc621a3078fbb8a7239693ba498ac7e4e9a10a6ee4.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/7f80a15ec3549f7c826be3fc621a3078fbb8a7239693ba498ac7e4e9a10a6ee4.jpg",
+      "exists": true,
+      "block_ids": [
+        "b20"
+      ],
+      "sha256": "fa6e129c39efb521d2e75c44661514198e91afca7e76c8e9d98b258b42b3461c"
+    },
+    "images/3522a9959be303058b0ae6e7e01c7e772e22373cf928b02e1b5d0bb9c22f40a9.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/3522a9959be303058b0ae6e7e01c7e772e22373cf928b02e1b5d0bb9c22f40a9.jpg",
+      "exists": true,
+      "block_ids": [
+        "b21"
+      ],
+      "sha256": "701c3ee3498c06c4af4299b5a52134e3b46252118d4fad1a9b7ed71ec937ce1c"
+    },
+    "images/df1488ec02874fd3dd05bdf38521ff460273795bb826e85b64ff60ecb9f71f9e.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/df1488ec02874fd3dd05bdf38521ff460273795bb826e85b64ff60ecb9f71f9e.jpg",
+      "exists": true,
+      "block_ids": [
+        "b23"
+      ],
+      "sha256": "8f09a984dfdc5a30df6e2d42ac1005aaf26d6d2dd4320ffd52927ef179e8b886"
+    },
+    "images/49e751f4c57c30d6472da3d0b26feba62efb9179ee457d297a3ab3ed0462b09c.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/49e751f4c57c30d6472da3d0b26feba62efb9179ee457d297a3ab3ed0462b09c.jpg",
+      "exists": true,
+      "block_ids": [
+        "b31"
+      ],
+      "sha256": "64755b409ec809e6dd8d881c66407d429b7114324c6cc629f39a55b7741d5578"
+    },
+    "images/2b2f5faf1c845a5a328bf98895a6f0873173e6054b0fcd65733cccc57261d96d.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/2b2f5faf1c845a5a328bf98895a6f0873173e6054b0fcd65733cccc57261d96d.jpg",
+      "exists": true,
+      "block_ids": [
+        "b36"
+      ],
+      "sha256": "85019383f3965fa6624c3c34a8dc579c1c4d500543009baa4fe08a27565a95de"
+    },
+    "images/390fc915899ae17ba6d90108955384ec4e1ea65bbd516536a25169836e0016d3.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/390fc915899ae17ba6d90108955384ec4e1ea65bbd516536a25169836e0016d3.jpg",
+      "exists": true,
+      "block_ids": [
+        "b38"
+      ],
+      "sha256": "60d0aa31b61720bef4870ab4118810bb7b3f75936da177fc33deb636032d83af"
+    },
+    "images/939719b9f7a0ac4e6cff386ee5ceca09632fc65419ea0a4228e66f610665b381.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/939719b9f7a0ac4e6cff386ee5ceca09632fc65419ea0a4228e66f610665b381.jpg",
+      "exists": true,
+      "block_ids": [
+        "b47"
+      ],
+      "sha256": "535c5945d557e0b4d48e02e3fb16efec93a2874b40ad27da75aad304c3ef5c3c"
+    },
+    "images/f4b9fe642ce34fe8c244f0115396d2554ddfe2dc742f1dda5e543de6245a49cf.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/f4b9fe642ce34fe8c244f0115396d2554ddfe2dc742f1dda5e543de6245a49cf.jpg",
+      "exists": true,
+      "block_ids": [
+        "b49"
+      ],
+      "sha256": "bce8a164dd595a248bbb8cbb02bd83a1a406268b61600166957fd0be6bf22337"
+    },
+    "images/9379cf0b4a88be2aa8d56665fe54f2349dfcde6bafc3a371d51d33a8c7e4c4c4.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/9379cf0b4a88be2aa8d56665fe54f2349dfcde6bafc3a371d51d33a8c7e4c4c4.jpg",
+      "exists": true,
+      "block_ids": [
+        "b50"
+      ],
+      "sha256": "6de27cd679eab82a637f2e53b22ec68754d7bbef2de549bf5d96522642b40583"
+    },
+    "images/e8bc25a135bfeb1f19800353926434490b232c38a8272f20e88b25bb70fb3987.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/e8bc25a135bfeb1f19800353926434490b232c38a8272f20e88b25bb70fb3987.jpg",
+      "exists": true,
+      "block_ids": [
+        "b57"
+      ],
+      "sha256": "629a8d8f977a91de8576f38326ce3cc9e2919371b20be2e206a54a70afb9155f"
+    },
+    "images/45407a1aa5a055a493977f745f0fd97ca3dd4b55d62946e85ed4aac3b2f29e28.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/45407a1aa5a055a493977f745f0fd97ca3dd4b55d62946e85ed4aac3b2f29e28.jpg",
+      "exists": true,
+      "block_ids": [
+        "b58"
+      ],
+      "sha256": "e8f1f8b465a0fff2b3469563abc892553e829ccb88a91793e81c3792e3ba2190"
+    },
+    "images/8cc358074892fdc1928048088825e2669608ad0ac94f2ccc1c823fd45319ee51.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/8cc358074892fdc1928048088825e2669608ad0ac94f2ccc1c823fd45319ee51.jpg",
+      "exists": true,
+      "block_ids": [
+        "b64"
+      ],
+      "sha256": "ea7c9ec73cd21e995bc597f66f6b7d2a9f59ed910e884dc2656b4a54b75ab2f5"
+    },
+    "images/8e05396590f9664267fcbf378ba5772faf3ac3d3625370e3f1fb15124a06c266.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/8e05396590f9664267fcbf378ba5772faf3ac3d3625370e3f1fb15124a06c266.jpg",
+      "exists": true,
+      "block_ids": [
+        "b67"
+      ],
+      "sha256": "0f810e0e15456727c50008a22b45d8b2bbfd363b77f778f4f27ea5b4dc9ffc9b"
+    },
+    "images/7ffcf3c84edb424a54071c8a5800b083e40c78f65cf56cb17aa820395a95f391.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/7ffcf3c84edb424a54071c8a5800b083e40c78f65cf56cb17aa820395a95f391.jpg",
+      "exists": true,
+      "block_ids": [
+        "b75"
+      ],
+      "sha256": "d3090a40a65a68f67643adba7e561220a49f6e033a3a2ffaf7e62012f664d37f"
+    },
+    "images/c796573cc033260f515d4a8af46647203bde23bdb32d4969b6b106cd45426663.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/c796573cc033260f515d4a8af46647203bde23bdb32d4969b6b106cd45426663.jpg",
+      "exists": true,
+      "block_ids": [
+        "b76"
+      ],
+      "sha256": "8331e565531779e2d57953a4d58e4cea2dbd51b39885357b2cde9a3ac0a6e09c"
+    },
+    "images/5f0dd5b1e2ae21a62a78eba2902287201ec59cca506b17d6e30ef0affaa891ff.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/5f0dd5b1e2ae21a62a78eba2902287201ec59cca506b17d6e30ef0affaa891ff.jpg",
+      "exists": true,
+      "block_ids": [
+        "b77"
+      ],
+      "sha256": "63ceb3aa5154c68a2909711abd2c1fcff6d9c045a92fff06f59fec07ab8f111f"
+    },
+    "images/cd02e6806cc15b4fc055c28ae01f5b75c2e1023b26f188a1e009c12dcb074a48.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/cd02e6806cc15b4fc055c28ae01f5b75c2e1023b26f188a1e009c12dcb074a48.jpg",
+      "exists": true,
+      "block_ids": [
+        "b80"
+      ],
+      "sha256": "f3ce3a42407fd09c840dd73d52161a3513d0fc649e148f2bd3f38757bcfced95"
+    },
+    "images/a5129a8b17f1f3fc2113406ed873b9894269bb524b36ece785c47c8f3b2cc4cf.jpg": {
+      "source_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/a5129a8b17f1f3fc2113406ed873b9894269bb524b36ece785c47c8f3b2cc4cf.jpg",
+      "exists": true,
+      "block_ids": [
+        "b90"
+      ],
+      "sha256": "679ec54e7f768eea964f684221726fdf866413df4a2cb513c593de51d2571f39"
+    }
+  },
+  "source_pdf": "/Users/192y/电气/器件手册与模型/1N4148/1N4148_数据手册.pdf",
+  "source_pdf_evidence_note": "PDF page reference IDs pN use zero-based physical page index; visual assertions separately logged.",
+  "pdf_pages": {
+    "p0": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/1N4148/1N4148_数据手册.pdf",
+      "page_idx": 0,
+      "physical_page": 1,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "                    DISCRETE SEMICONDUCTORS\n\n\n\n\n  DATA SHEET\n\n\n\n\n                   M3D176\n\n\n\n\n  1N4148; 1N4448\n  High-speed diodes\nProduct data sheet                            2004 Aug 10\nSupersedes data of 2002 Jan 23\n"
+    },
+    "p1": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/1N4148/1N4148_数据手册.pdf",
+      "page_idx": 1,
+      "physical_page": 2,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "NXP Semiconductors                                                                                  Product data sheet\n\n\n  High-speed diodes                                                                           1N4148; 1N4448\n\nFEATURES\n• Hermetically sealed leaded glass SOD27 (DO-35)\n  package\n• High switching speed: max. 4 ns                                           k\n                                                            handbook, halfpage                          a\n• General application\n• Continuous reverse voltage: max. 100 V                                                                          MAM246\n\n\n• Repetitive peak reverse voltage: max. 100 V\n• Repetitive peak forward current: max. 450 mA.                The diodes are type branded.\n\n                                                               Fig.1      Simplified outline (SOD27; DO-35) and\nAPPLICATIONS\n                                                                          symbol.\n• High-speed switching.\n\n\nDESCRIPTION\nThe 1N4148 and 1N4448 are high-speed switching diodes       MARKING\nfabricated in planar technology, and encapsulated in\n                                                                   TYPE NUMBER                   MARKING CODE\nhermetically sealed leaded glass SOD27 (DO-35)\npackages.                                                   1N4148                            1N4148PH or 4148PH\n                                                            1N4448                            1N4448\n\nORDERING INFORMATION\n\n                                                                     PACKAGE\n      TYPE NUMBER\n                                NAME                              DESCRIPTION                               VERSION\n1N4148                              −      hermetically sealed glass package; axial leaded; 2 leads         SOD27\n1N4448\n\n\n\n\n2004 Aug 10                                             2\n"
+    },
+    "p2": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/1N4148/1N4148_数据手册.pdf",
+      "page_idx": 2,
+      "physical_page": 3,
+      "rendered_path": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/1N4148/source_pages/page_3.png",
+      "visually_inspected_full_page": true,
+      "text": "NXP Semiconductors                                                                                     Product data sheet\n\n\n     High-speed diodes                                                                      1N4148; 1N4448\n\nLIMITING VALUES\nIn accordance with the Absolute Maximum Rating System (IEC 60134).\n SYMBOL                 PARAMETER                               CONDITIONS                  MIN.       MAX.        UNIT\nVRRM        repetitive peak reverse voltage                                             −          100         V\nVR          continuous reverse voltage                                                  −          100         V\nIF          continuous forward current             see Fig.2; note 1                    −          200         mA\nIFRM        repetitive peak forward current                                             −          450         mA\nIFSM        non-repetitive peak forward current    square wave; Tj = 25 °C prior to\n                                                   surge; see Fig.4\n                                                     t = 1 µs                           −          4           A\n                                                     t = 1 ms                           −          1           A\n                                                     t=1s                               −          0.5         A\nPtot        total power dissipation                Tamb = 25 °C; note 1                 −          500         mW\nTstg        storage temperature                                                         −65        +200        °C\nTj          junction temperature                                                        −          200         °C\n\nNote\n1. Device mounted on an FR4 printed-circuit board; lead length 10 mm.\n\nELECTRICAL CHARACTERISTICS\nTj = 25 °C unless otherwise specified.\n\n SYMBOL                 PARAMETER                               CONDITIONS                  MIN.       MAX.        UNIT\nVF          forward voltage                         see Fig.3\n               1N4148                                  IF = 10 mA                       −          1           V\n               1N4448                                  IF = 5 mA                        0.62       0.72        V\n                                                       IF = 100 mA                      −          1           V\nIR          reverse current                         VR = 20 V; see Fig.5                           25          nA\n                                                    VR = 20 V; Tj = 150 °C; see Fig.5   −          50          µA\nIR          reverse current; 1N4448                 VR = 20 V; Tj = 100 °C; see Fig.5   −          3           µA\nCd          diode capacitance                       f = 1 MHz; VR = 0 V; see Fig.6      −          4           pF\ntrr         reverse recovery time                   when switched from IF = 10 mA to −             4           ns\n                                                    IR = 60 mA; RL = 100 Ω;\n                                                    measured at IR = 1 mA; see Fig.7\nVfr         forward recovery voltage                when switched from IF = 50 mA;      −          2.5         V\n                                                    tr = 20 ns; see Fig.8\n\n\nTHERMAL CHARACTERISTICS\n\n SYMBOL                    PARAMETER                                   CONDITIONS                  VALUE           UNIT\nRth(j-tp)   thermal resistance from junction to tie-point   lead length 10 mm                      240         K/W\nRth(j-a)    thermal resistance from junction to ambient     lead length 10 mm; note 1              350         K/W\n\nNote\n1. Device mounted on a printed-circuit board without metallization pad.\n\n\n2004 Aug 10                                                 3\n"
+    },
+    "p3": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/1N4148/1N4148_数据手册.pdf",
+      "page_idx": 3,
+      "physical_page": 4,
+      "rendered_path": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/1N4148/source_pages/page_4.png",
+      "visually_inspected_full_page": true,
+      "text": "NXP Semiconductors                                                                                                               Product data sheet\n\n\n  High-speed diodes                                                                                                  1N4148; 1N4448\n\nGRAPHICAL DATA\n\n\n                                                        mbg451                                                                            MBG464\n       300                                                                            600\n                                                                               handbook, halfpage\n\n       IF                                                                             IF\n      (mA)                                                                           (mA)\n\n       200                                                                            400\n\n                                                                                                                   (1)   (2)        (3)\n\n\n\n\n       100                                                                            200\n\n\n\n\n          0                                                                               0\n              0                     100                     200                               0                      1                             2\n                                            Tamb (°C)                                                                          VF (V)\n\n\n    Device mounted on an FR4 printed-circuit board; lead length 10 mm.            (1) Tj = 175 °C; typical values.\n                                                                                  (2) Tj = 25 °C; typical values.\n                                                                                  (3) Tj = 25 °C; maximum values.\n    Fig.2            Maximum permissible continuous forward\n                     current as a function of ambient                             Fig.3           Forward current as a function of forward\n                     temperature.                                                                 voltage.\n\n\n\n\n                                                                                                                                          MBG704\n        102\nhandbook, full pagewidth\n\n\n\n     IFSM\n      (A)\n\n\n\n          10\n\n\n\n\n             1\n\n\n\n\n       10−1\n                 1                         10                            102                                 103          tp (µs)             104\n\n    Based on square wave currents.\n    Tj = 25 °C prior to surge.\n\n\n                     Fig.4 Maximum permissible non-repetitive peak forward current as a function of pulse duration.\n\n\n2004 Aug 10                                                              4\n"
+    },
+    "p4": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/1N4148/1N4148_数据手册.pdf",
+      "page_idx": 4,
+      "physical_page": 5,
+      "rendered_path": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/1N4148/source_pages/page_5.png",
+      "visually_inspected_full_page": true,
+      "text": "NXP Semiconductors                                                                                                 Product data sheet\n\n\n  High-speed diodes                                                                                       1N4148; 1N4448\n\n\n\n                                                            mgd290                                                         MGD004\n      103                                                                         1.2\n                                                                          handbook, halfpage\n    IR                                                                          Cd\n   (µA)                                                                        (pF)\n      102\n                                                                                  1.0\n\n                                          (1)         (2)\n          10\n\n                                                                                  0.8\n\n          1\n\n\n                                                                                  0.6\n     10−1\n\n\n\n     10−2                                                                         0.4\n               0                   100                          200                     0                 10                   20\n                                                Tj (°C)                                                           VR (V)\n\n\n\n\n  (1) VR = 75 V; typical values.\n  (2) VR = 20 V; typical values.                                           f = 1 MHz; Tj = 25 °C.\n\n  Fig.5            Reverse current as a function of junction               Fig.6        Diode capacitance as a function of reverse\n                   temperature.                                                         voltage; typical values.\n\n\n\n\n2004 Aug 10                                                           5\n"
+    },
+    "p5": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/1N4148/1N4148_数据手册.pdf",
+      "page_idx": 5,
+      "physical_page": 6,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "NXP Semiconductors                                                                                                                        Product data sheet\n\n\n  High-speed diodes                                                                                                       1N4148; 1N4448\n\n\n\n\nhandbook, full pagewidth\n                                                                                           tr               tp\n                                                                                                                      t\n                                         D.U.T.                                            10%\n           RS = 50 Ω                IF                                                                                        IF              t rr\n                                                             SAMPLING                                                                                      t\n                                                           OSCILLOSCOPE\n       V = VR I F x R S                                         R i = 50 Ω\n\n                                                                                                 90%                                                 (1)\n                                                                                 VR\n                                                                MGA881\n\n                                                                                                   input signal                      output signal\n\n\n\n\n    (1) IR = 1 mA.\n\n\n                                      Fig.7 Reverse recovery voltage test circuit and waveforms.\n\n\n\n\n               I           1 kΩ     450 Ω\n                                                                             I                                            V\n                                                                                            90%\n\n        R S = 50 Ω\n                                            OSCILLOSCOPE                                                                           V fr\n                           D.U.T.\n                                                   R i = 50 Ω\n\n                                                                                      10%\n                                                  MGA882                                                          t                                            t\n                                                                                      tr               tp\n\n                                                                                                   input                                  output\n                                                                                                   signal                                 signal\n\n\n\n\n                                      Fig.8 Forward recovery voltage test circuit and waveforms.\n\n\n2004 Aug 10                                                                           6\n"
+    },
+    "p6": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/1N4148/1N4148_数据手册.pdf",
+      "page_idx": 6,
+      "physical_page": 7,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "NXP Semiconductors                                                                                         Product data sheet\n\n\n  High-speed diodes                                                                         1N4148; 1N4448\n\nPACKAGE OUTLINE\n\n  Hermetically sealed glass package; axial leaded; 2 leads                                                              SOD27\n\n\n\n\n                                                                             (1)\n\n\n                                                                                                             b\n\n\n                          D                                   L                    G1   L\n\n\n\n\n   DIMENSIONS (mm are the original dimensions)\n                                    G1                                                         0     1     2 mm\n                b         D                   L\n      UNIT\n               max.      max.      max.      min.                                                  scale\n\n       mm       0.56      1.85      4.25     25.4\n\n    Note\n    1. The marking band indicates the cathode.\n\n         OUTLINE                                            REFERENCES                   EUROPEAN\n                                                                                                            ISSUE DATE\n         VERSION                 IEC                JEDEC            JEITA              PROJECTION\n\n                                                                                                                 97-06-09\n            SOD27                A24                DO-35            SC-40\n                                                                                                                 05-12-22\n\n\n\n\n2004 Aug 10                                                              7\n"
+    },
+    "p7": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/1N4148/1N4148_数据手册.pdf",
+      "page_idx": 7,
+      "physical_page": 8,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "NXP Semiconductors                                                                                        Product data sheet\n\n\n  High-speed diodes                                                                             1N4148; 1N4448\n\nDATA SHEET STATUS\n\n        DOCUMENT              PRODUCT\n                                                                                DEFINITION\n         STATUS(1)            STATUS(2)\nObjective data sheet        Development       This document contains data from the objective specification for product\n                                              development.\nPreliminary data sheet      Qualification     This document contains data from the preliminary specification.\nProduct data sheet          Production        This document contains the product specification.\n\nNotes\n1. Please consult the most recently issued document before initiating or completing a design.\n2. The product status of device(s) described in this document may have changed since this document was published\n   and may differ in case of multiple devices. The latest product status information is available on the Internet at\n   URL http://www.nxp.com.\n\n\nDISCLAIMERS                                                       above those given in the Characteristics sections of this\n                                                                  document is not implied. Exposure to limiting values for\nGeneral ⎯ Information in this document is believed to be\n                                                                  extended periods may affect device reliability.\naccurate and reliable. However, NXP Semiconductors\ndoes not give any representations or warranties,                  Terms and conditions of sale ⎯ NXP Semiconductors\nexpressed or implied, as to the accuracy or completeness          products are sold subject to the general terms and\nof such information and shall have no liability for the           conditions of commercial sale, as published at\nconsequences of use of such information.                          http://www.nxp.com/profile/terms, including those\n                                                                  pertaining to warranty, intellectual property rights\nRight to make changes ⎯ NXP Semiconductors\n                                                                  infringement and limitation of liability, unless explicitly\nreserves the right to make changes to information\n                                                                  otherwise agreed to in writing by NXP Semiconductors. In\npublished in this document, including without limitation\n                                                                  case of any inconsistency or conflict between information\nspecifications and product descriptions, at any time and\n                                                                  in this document and such terms and conditions, the latter\nwithout notice. This document supersedes and replaces all\n                                                                  will prevail.\ninformation supplied prior to the publication hereof.\n                                                                  No offer to sell or license ⎯ Nothing in this document\nSuitability for use ⎯ NXP Semiconductors products are\n                                                                  may be interpreted or construed as an offer to sell products\nnot designed, authorized or warranted to be suitable for\n                                                                  that is open for acceptance or the grant, conveyance or\nuse in medical, military, aircraft, space or life support\n                                                                  implication of any license under any copyrights, patents or\nequipment, nor in applications where failure or malfunction\n                                                                  other industrial or intellectual property rights.\nof an NXP Semiconductors product can reasonably be\nexpected to result in personal injury, death or severe            Export control ⎯ This document as well as the item(s)\nproperty or environmental damage. NXP Semiconductors              described herein may be subject to export control\naccepts no liability for inclusion and/or use of NXP              regulations. Export might require a prior authorization from\nSemiconductors products in such equipment or                      national authorities.\napplications and therefore such inclusion and/or use is at\n                                                                  Quick reference data ⎯ The Quick reference data is an\nthe customer’s own risk.\n                                                                  extract of the product data given in the Limiting values and\nApplications ⎯ Applications that are described herein for         Characteristics sections of this document, and as such is\nany of these products are for illustrative purposes only.         not complete, exhaustive or legally binding.\nNXP Semiconductors makes no representation or\nwarranty that such applications will be suitable for the\nspecified use without further testing or modification.\nLimiting values ⎯ Stress above one or more limiting\nvalues (as defined in the Absolute Maximum Ratings\nSystem of IEC 60134) may cause permanent damage to\nthe device. Limiting values are stress ratings only and\noperation of the device at these or any other conditions\n\n2004 Aug 10                                                   8\n"
+    },
+    "p8": {
+      "source_pdf": "/Users/192y/电气/器件手册与模型/1N4148/1N4148_数据手册.pdf",
+      "page_idx": 8,
+      "physical_page": 9,
+      "rendered_path": null,
+      "visually_inspected_full_page": false,
+      "text": "  NXP Semiconductors\n\n\n\n\n      Customer notification\n\n      This data sheet was changed to reflect the new company name NXP Semiconductors. No changes were\n      made to the content, except for the legal definitions and disclaimers.\n\n\n      Contact information\n\n      For additional information please visit: http://www.nxp.com\n      For sales offices addresses send e-mail to: salesaddresses@nxp.com\n\n\n\n\n © NXP B.V. 2009\n\n All rights are reserved. Reproduction in whole or in part is prohibited without the prior written consent of the copyright owner.\n The information presented in this document does not form part of any quotation or contract, is believed to be accurate and reliable and may be changed\n without notice. No liability will be accepted by the publisher for any consequence of its use. Publication thereof does not convey nor imply any license\n under patent- or other industrial or intellectual property rights.\nPrinted in The Netherlands                 R76/05/pp9                        Date of release: 2004 Aug 10             Document order number: 9397 750 13541\n"
+    }
+  }
+}

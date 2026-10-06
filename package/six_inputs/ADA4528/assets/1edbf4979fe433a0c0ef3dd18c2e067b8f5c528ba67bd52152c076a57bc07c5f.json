@@ -1,0 +1,843 @@
+{
+  "device": "ADA4528-1_MSOP",
+  "status": "development_queue_not_executable_test_plan",
+  "required_features": [
+    {
+      "feature": "dc_amplification",
+      "priority": "first",
+      "reference_parameters": [
+        {
+          "id": "supply_abs",
+          "key": "supply_voltage",
+          "values": {
+            "max": 6
+          },
+          "unit": "V",
+          "conditions": "",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "absolute_maximum",
+          "state": "initial",
+          "evidence_refs": [
+            "b56",
+            "p5"
+          ]
+        },
+        {
+          "id": "supply_range",
+          "key": "supply_voltage",
+          "values": {
+            "min": 2.2,
+            "max": 5.5
+          },
+          "unit": "V",
+          "conditions": "Supply range used for PSRR specification; single supply",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "operating_range",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "b52",
+            "p2",
+            "p4"
+          ]
+        },
+        {
+          "id": "vos_2.5",
+          "key": "input_offset_voltage",
+          "values": {
+            "typ": 0.3,
+            "max": 2.5
+          },
+          "unit": "μV",
+          "conditions": "VSY=2.5 V; VCM=0..2.5 V; TA=25°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "vos_5",
+          "key": "input_offset_voltage",
+          "values": {
+            "typ": 0.3,
+            "max": 2.5
+          },
+          "unit": "μV",
+          "conditions": "VSY=5 V; VCM=0..5 V; TA=25°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b48",
+            "p3"
+          ]
+        },
+        {
+          "id": "vos_2.5_full_MSOP",
+          "key": "input_offset_voltage",
+          "values": {
+            "max": 4
+          },
+          "unit": "μV",
+          "conditions": "VSY=2.5 V; TA=-40..125°C",
+          "applies_to": [
+            "ADA4528-1_MSOP",
+            "ADA4528-2_MSOP"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "vos_5_full",
+          "key": "input_offset_voltage",
+          "values": {
+            "max": 4
+          },
+          "unit": "μV",
+          "conditions": "VSY=5 V; TA=-40..125°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b48",
+            "p3"
+          ]
+        },
+        {
+          "id": "aol_2.5_0",
+          "key": "open_loop_gain",
+          "values": {
+            "min": 130,
+            "typ": 140
+          },
+          "unit": "dB",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..2.4 V; TA=25°C",
+          "applies_to": [
+            "ADA4528-1_MSOP",
+            "ADA4528-1_LFCSP",
+            "ADA4528-2_MSOP",
+            "ADA4528-2_LFCSP"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "aol_2.5_0_full",
+          "key": "open_loop_gain",
+          "values": {
+            "min": 126
+          },
+          "unit": "dB",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..2.4 V; TA=-40..125°C",
+          "applies_to": [
+            "ADA4528-1_MSOP",
+            "ADA4528-1_LFCSP",
+            "ADA4528-2_MSOP",
+            "ADA4528-2_LFCSP"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "aol_2.5_1",
+          "key": "open_loop_gain",
+          "values": {
+            "min": 125,
+            "typ": 132
+          },
+          "unit": "dB",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..2.4 V; TA=25°C",
+          "applies_to": [
+            "ADA4528-1_MSOP",
+            "ADA4528-1_LFCSP"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "aol_2.5_1_full",
+          "key": "open_loop_gain",
+          "values": {
+            "min": 121
+          },
+          "unit": "dB",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..2.4 V; TA=-40..125°C",
+          "applies_to": [
+            "ADA4528-1_MSOP",
+            "ADA4528-1_LFCSP"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "aol_5_0",
+          "key": "open_loop_gain",
+          "values": {
+            "min": 127,
+            "typ": 139
+          },
+          "unit": "dB",
+          "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..4.9 V; TA=25°C",
+          "applies_to": [
+            "ADA4528-1_MSOP",
+            "ADA4528-1_LFCSP",
+            "ADA4528-2_MSOP",
+            "ADA4528-2_LFCSP"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b48",
+            "p3"
+          ]
+        },
+        {
+          "id": "aol_5_0_full",
+          "key": "open_loop_gain",
+          "values": {
+            "min": 125
+          },
+          "unit": "dB",
+          "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..4.9 V; TA=-40..125°C",
+          "applies_to": [
+            "ADA4528-1_MSOP",
+            "ADA4528-1_LFCSP",
+            "ADA4528-2_MSOP",
+            "ADA4528-2_LFCSP"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b48",
+            "p3"
+          ]
+        },
+        {
+          "id": "aol_5_1",
+          "key": "open_loop_gain",
+          "values": {
+            "min": 121,
+            "typ": 131
+          },
+          "unit": "dB",
+          "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..4.9 V; TA=25°C",
+          "applies_to": [
+            "ADA4528-1_MSOP",
+            "ADA4528-1_LFCSP",
+            "ADA4528-2_MSOP",
+            "ADA4528-2_LFCSP"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b48",
+            "p3"
+          ]
+        },
+        {
+          "id": "aol_5_1_full",
+          "key": "open_loop_gain",
+          "values": {
+            "min": 120
+          },
+          "unit": "dB",
+          "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..4.9 V; TA=-40..125°C",
+          "applies_to": [
+            "ADA4528-1_MSOP",
+            "ADA4528-1_LFCSP",
+            "ADA4528-2_MSOP",
+            "ADA4528-2_LFCSP"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b48",
+            "p3"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "直流增益及输入失调",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [],
+      "enabled": false
+    },
+    {
+      "feature": "output_limits",
+      "priority": "first",
+      "reference_parameters": [
+        {
+          "id": "voh_2.5_10",
+          "key": "output_voltage_high",
+          "values": {
+            "min": 2.49,
+            "typ": 2.495
+          },
+          "unit": "V",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "voh_2.5_10_full",
+          "key": "output_voltage_high",
+          "values": {
+            "min": 2.485
+          },
+          "unit": "V",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "vol_2.5_10",
+          "key": "output_voltage_low",
+          "values": {
+            "typ": 5,
+            "max": 10
+          },
+          "unit": "mV",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "vol_2.5_10_full",
+          "key": "output_voltage_low",
+          "values": {
+            "max": 15
+          },
+          "unit": "mV",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "voh_2.5_2",
+          "key": "output_voltage_high",
+          "values": {
+            "min": 2.46,
+            "typ": 2.48
+          },
+          "unit": "V",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "voh_2.5_2_full",
+          "key": "output_voltage_high",
+          "values": {
+            "min": 2.44
+          },
+          "unit": "V",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "vol_2.5_2",
+          "key": "output_voltage_low",
+          "values": {
+            "typ": 20,
+            "max": 40
+          },
+          "unit": "mV",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "vol_2.5_2_full",
+          "key": "output_voltage_low",
+          "values": {
+            "max": 60
+          },
+          "unit": "mV",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "voh_5_10",
+          "key": "output_voltage_high",
+          "values": {
+            "min": 4.99,
+            "typ": 4.995
+          },
+          "unit": "V",
+          "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b48",
+            "p3"
+          ]
+        },
+        {
+          "id": "voh_5_10_full",
+          "key": "output_voltage_high",
+          "values": {
+            "min": 4.98
+          },
+          "unit": "V",
+          "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b48",
+            "p3"
+          ]
+        },
+        {
+          "id": "vol_5_10",
+          "key": "output_voltage_low",
+          "values": {
+            "typ": 5,
+            "max": 10
+          },
+          "unit": "mV",
+          "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b48",
+            "p3"
+          ]
+        },
+        {
+          "id": "vol_5_10_full",
+          "key": "output_voltage_low",
+          "values": {
+            "max": 20
+          },
+          "unit": "mV",
+          "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b48",
+            "p3"
+          ]
+        },
+        {
+          "id": "voh_5_2",
+          "key": "output_voltage_high",
+          "values": {
+            "min": 4.96,
+            "typ": 4.98
+          },
+          "unit": "V",
+          "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b48",
+            "p3"
+          ]
+        },
+        {
+          "id": "voh_5_2_full",
+          "key": "output_voltage_high",
+          "values": {
+            "min": 4.94
+          },
+          "unit": "V",
+          "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b48",
+            "p3"
+          ]
+        },
+        {
+          "id": "vol_5_2",
+          "key": "output_voltage_low",
+          "values": {
+            "typ": 20,
+            "max": 40
+          },
+          "unit": "mV",
+          "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b48",
+            "p3"
+          ]
+        },
+        {
+          "id": "vol_5_2_full",
+          "key": "output_voltage_low",
+          "values": {
+            "max": 60
+          },
+          "unit": "mV",
+          "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b48",
+            "p3"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "输出摆幅和负载依赖",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [],
+      "enabled": false
+    },
+    {
+      "feature": "frequency_response",
+      "priority": "first",
+      "reference_parameters": [
+        {
+          "id": "gbp_2.5",
+          "key": "gain_bandwidth_product",
+          "values": {
+            "typ": 3
+          },
+          "unit": "MHz",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=100",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "gbp_5",
+          "key": "gain_bandwidth_product",
+          "values": {
+            "typ": 3.4
+          },
+          "unit": "MHz",
+          "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=100",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b52",
+            "p4"
+          ]
+        },
+        {
+          "id": "phase_2.5",
+          "key": "phase_margin",
+          "values": {
+            "typ": 57
+          },
+          "unit": "degree",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "phase_5",
+          "key": "phase_margin",
+          "values": {
+            "typ": 57
+          },
+          "unit": "degree",
+          "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b52",
+            "p4"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": true,
+      "selected_curve_files": [],
+      "required_template_capability": "频率响应",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [
+        "需要绑定对应特性的CSV及条件；目录中存在CSV不代表它适用于该特性"
+      ],
+      "enabled": false
+    },
+    {
+      "feature": "transient_response",
+      "priority": "later",
+      "reference_parameters": [
+        {
+          "id": "sr_2.5",
+          "key": "slew_rate",
+          "values": {
+            "typ": 0.45
+          },
+          "unit": "V/μs",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; RL=10 kΩ; CL=100 pF; AV=1",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p2"
+          ]
+        },
+        {
+          "id": "sr_5",
+          "key": "slew_rate",
+          "values": {
+            "typ": 0.5
+          },
+          "unit": "V/μs",
+          "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; RL=10 kΩ; CL=100 pF; AV=1",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b52",
+            "p4"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "大信号瞬态响应",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [],
+      "enabled": false
+    },
+    {
+      "feature": "noise",
+      "priority": "later",
+      "reference_parameters": [
+        {
+          "id": "density_2.5",
+          "key": "input_voltage_noise_density",
+          "values": {
+            "typ": 5.6
+          },
+          "unit": "nV/√Hz",
+          "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; f=1 kHz; AV=100",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p3"
+          ]
+        },
+        {
+          "id": "density_5",
+          "key": "input_voltage_noise_density",
+          "values": {
+            "typ": 5.9
+          },
+          "unit": "nV/√Hz",
+          "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; f=1 kHz; AV=100",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b52",
+            "p4"
+          ]
+        },
+        {
+          "id": "noise_density_cm_2.5",
+          "key": "input_voltage_noise_density",
+          "values": {
+            "typ": 5.5
+          },
+          "unit": "nV/√Hz",
+          "conditions": "VSY=2.5 V; VCM=2 V; TA=25°C; f=1 kHz; AV=100",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b40",
+            "p3"
+          ]
+        },
+        {
+          "id": "noise_density_cm_5",
+          "key": "input_voltage_noise_density",
+          "values": {
+            "typ": 5.3
+          },
+          "unit": "nV/√Hz",
+          "conditions": "VSY=5 V; VCM=4.5 V; TA=25°C; f=1 kHz; AV=100",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b52",
+            "p4"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "噪声分析",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [],
+      "enabled": false
+    }
+  ],
+  "required_inventory": "manual_inventory.json",
+  "execution_cases": [],
+  "unresolved": [
+    "完整覆盖清单复核",
+    "未绑定参考与测试接口",
+    "统一验收阈值"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "device": "ADA4528-1_MSOP",
+  "pins": [
+    {
+      "number": 1,
+      "label": "NIC",
+      "applies_to": [
+        "ADA4528-1_MSOP"
+      ],
+      "package": "MSOP",
+      "connection_note": "",
+      "evidence_refs": [
+        "b76",
+        "p6"
+      ]
+    },
+    {
+      "number": 2,
+      "label": "−IN",
+      "applies_to": [
+        "ADA4528-1_MSOP"
+      ],
+      "package": "MSOP",
+      "connection_note": "",
+      "evidence_refs": [
+        "b76",
+        "p6"
+      ]
+    },
+    {
+      "number": 3,
+      "label": "+IN",
+      "applies_to": [
+        "ADA4528-1_MSOP"
+      ],
+      "package": "MSOP",
+      "connection_note": "",
+      "evidence_refs": [
+        "b76",
+        "p6"
+      ]
+    },
+    {
+      "number": 4,
+      "label": "V−",
+      "applies_to": [
+        "ADA4528-1_MSOP"
+      ],
+      "package": "MSOP",
+      "connection_note": "",
+      "evidence_refs": [
+        "b76",
+        "p6"
+      ]
+    },
+    {
+      "number": 5,
+      "label": "NIC",
+      "applies_to": [
+        "ADA4528-1_MSOP"
+      ],
+      "package": "MSOP",
+      "connection_note": "",
+      "evidence_refs": [
+        "b76",
+        "p6"
+      ]
+    },
+    {
+      "number": 6,
+      "label": "OUT",
+      "applies_to": [
+        "ADA4528-1_MSOP"
+      ],
+      "package": "MSOP",
+      "connection_note": "",
+      "evidence_refs": [
+        "b76",
+        "p6"
+      ]
+    },
+    {
+      "number": 7,
+      "label": "V+",
+      "applies_to": [
+        "ADA4528-1_MSOP"
+      ],
+      "package": "MSOP",
+      "connection_note": "",
+      "evidence_refs": [
+        "b76",
+        "p6"
+      ]
+    },
+    {
+      "number": 8,
+      "label": "NIC",
+      "applies_to": [
+        "ADA4528-1_MSOP"
+      ],
+      "package": "MSOP",
+      "connection_note": "",
+      "evidence_refs": [
+        "b76",
+        "p6"
+      ]
+    }
+  ],
+  "topology": [],
+  "model_port_binding": null,
+  "status": "handbook_pin_evidence_preserved_model_binding_pending"
+}

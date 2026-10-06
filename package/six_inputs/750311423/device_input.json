@@ -1,0 +1,102 @@
+{
+  "schema_version": "unified-device-input-1",
+  "device": "750311423",
+  "category": "flyback_transformer",
+  "selected_variant": "750311423",
+  "materials": {
+    "manual": "assets/278e3ccc993c787ef700076458c141e4858bc16787737c741e8e0f2fe20b7a4e.pdf",
+    "electrical": "assets/a20fa52d9ab5b5b8264856de594938eac9770c97f1451e91930f26dfbe2e1f3d.json",
+    "evidence": "assets/d685aa0a41deda94425f9056573ef52ad8c8fa33fbf6194f9f740e4f8b8ed05d.json",
+    "ports": "assets/3183c743d0bff7f7916b55e1567378d97039d0e7abcf736db61f782f193f5716.json",
+    "inventory": "assets/7c51a2d42e99d33a1bd27a715aced47b812e7bc96737434ca68dda0e772d65f0.json",
+    "test_plan": "assets/f317dea9a05d156ae489d9d83d64c97d0d28e8764947dc640fc434779d31d6c1.json",
+    "acceptance": "assets/315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e.json",
+    "manual_page_evidence": "assets/2d55ca263cd9dd1ed4678dc850c3150018e907232cef403eafa3a23dceeb0279.json"
+  },
+  "coverage_plan": "coverage_plan.json",
+  "inventory": "inventory.json",
+  "reference_assets": [
+    {
+      "source_relative": "references/curves/electrical_with_curves.json",
+      "path": "assets/a20fa52d9ab5b5b8264856de594938eac9770c97f1451e91930f26dfbe2e1f3d.json",
+      "sha256": "a20fa52d9ab5b5b8264856de594938eac9770c97f1451e91930f26dfbe2e1f3d",
+      "role": "reference_data"
+    },
+    {
+      "source_relative": "reference_models/WE-FB.lib",
+      "path": "assets/ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934.lib",
+      "sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+      "role": "reference_interface_benchmark_only"
+    }
+  ],
+  "coverage_queue": "coverage_queue.json",
+  "fixture_drafts": "fixture_drafts.json",
+  "configured_task": null,
+  "configured_tests": 0,
+  "draft_tests": 6,
+  "acceptance_standard": {
+    "typical_tolerance_percent": 10,
+    "curve_mae_percent": 5.0,
+    "curve_max_error_percent": 10.0
+  },
+  "record_count": 18,
+  "review_status": "page_anchored_inventory_expanded_series_and_footnote_review_pending",
+  "model_fitting_ready": false,
+  "full_manual_coverage": false,
+  "delivery_eligible": false,
+  "template_selection": {
+    "status": "pending",
+    "source": "bundled_index",
+    "reference_models_are_starting_templates": false
+  },
+  "routes": {
+    "design": {
+      "provider": "qwen",
+      "model": "qwen3.8-max-0902"
+    },
+    "review": {
+      "provider": "glm",
+      "model": "glm-5.3"
+    }
+  },
+  "assets": {
+    "assets/649bfa557a38ce0ad6b8280ce5b703136581d7069c5f395d6de3442355da9ad4.json": "649bfa557a38ce0ad6b8280ce5b703136581d7069c5f395d6de3442355da9ad4",
+    "assets/278e3ccc993c787ef700076458c141e4858bc16787737c741e8e0f2fe20b7a4e.pdf": "278e3ccc993c787ef700076458c141e4858bc16787737c741e8e0f2fe20b7a4e",
+    "assets/a20fa52d9ab5b5b8264856de594938eac9770c97f1451e91930f26dfbe2e1f3d.json": "a20fa52d9ab5b5b8264856de594938eac9770c97f1451e91930f26dfbe2e1f3d",
+    "assets/d685aa0a41deda94425f9056573ef52ad8c8fa33fbf6194f9f740e4f8b8ed05d.json": "d685aa0a41deda94425f9056573ef52ad8c8fa33fbf6194f9f740e4f8b8ed05d",
+    "assets/3183c743d0bff7f7916b55e1567378d97039d0e7abcf736db61f782f193f5716.json": "3183c743d0bff7f7916b55e1567378d97039d0e7abcf736db61f782f193f5716",
+    "assets/7c51a2d42e99d33a1bd27a715aced47b812e7bc96737434ca68dda0e772d65f0.json": "7c51a2d42e99d33a1bd27a715aced47b812e7bc96737434ca68dda0e772d65f0",
+    "assets/f317dea9a05d156ae489d9d83d64c97d0d28e8764947dc640fc434779d31d6c1.json": "f317dea9a05d156ae489d9d83d64c97d0d28e8764947dc640fc434779d31d6c1",
+    "assets/315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e.json": "315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e",
+    "assets/ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934.lib": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+    "coverage_plan.json": "85b35c1c2cb5f805e07de742a198156aabedd3bc27de06c2a859a5abc2ad1945",
+    "assets/2d55ca263cd9dd1ed4678dc850c3150018e907232cef403eafa3a23dceeb0279.json": "2d55ca263cd9dd1ed4678dc850c3150018e907232cef403eafa3a23dceeb0279",
+    "assets/a5e0817c03801a244e4b17d76aaec304e658d4a1ed16b830613abda0111c55d3.json": "a5e0817c03801a244e4b17d76aaec304e658d4a1ed16b830613abda0111c55d3",
+    "assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+    "fixture_circuits/primary_inductance.cir": "87226f9b5dab989f7e718e1b3689fee21f7f39092450d01f8a60dda76be7ab88",
+    "fixture_circuits/dcr_N1.cir": "e205cc5bb97d0f14413a41417c988c91defb00e5d244e48fd742ac07a345d2ab",
+    "fixture_circuits/dcr_N2.cir": "78257c7cf694577610dcf04b547d858e24ac5bfaf5dc6044260eebc6c9592f8c",
+    "fixture_circuits/dcr_N3.cir": "03b7687217c0444cfecab5d723f3fac60d03c4d190e99e279452443eb7066d29",
+    "fixture_circuits/turns_N2.cir": "ca72b1e5d006d53d206222e21c71e5a99a539a653f442981b64a1a1f2c4e9209",
+    "fixture_circuits/turns_N3.cir": "8f5bdc0f63e8bc5439a7f88340b4324f9ef7a0abc3c3b274f00546d5d7175a50",
+    "fixture_drafts.json": "24e47a9cd154368d33b577e1abb3bdfa70d0c1f16b561985f0d028e5d3830285",
+    "inventory.json": "6283c60e44a1d69f9c82d398309dfed3899acdf210e8acffc54da1b29d13085b",
+    "coverage_queue.json": "c4dc6c86b86130a140f37355630e2e95d1b25533cd785ab7eff693acb9ff61a1"
+  },
+  "source_hashes": {
+    "/Users/192y/电气/六器件标准输入包_20261006/750311423/input_packet.json": "649bfa557a38ce0ad6b8280ce5b703136581d7069c5f395d6de3442355da9ad4",
+    "/Users/192y/电气/六器件标准输入包_20261006/750311423/manual/750311423_数据手册.pdf": "278e3ccc993c787ef700076458c141e4858bc16787737c741e8e0f2fe20b7a4e",
+    "/Users/192y/电气/六器件标准输入包_20261006/750311423/extraction/electrical.json": "a20fa52d9ab5b5b8264856de594938eac9770c97f1451e91930f26dfbe2e1f3d",
+    "/Users/192y/电气/六器件标准输入包_20261006/750311423/extraction/evidence_catalog.json": "d685aa0a41deda94425f9056573ef52ad8c8fa33fbf6194f9f740e4f8b8ed05d",
+    "/Users/192y/电气/六器件标准输入包_20261006/750311423/contracts/ports.json": "3183c743d0bff7f7916b55e1567378d97039d0e7abcf736db61f782f193f5716",
+    "/Users/192y/电气/六器件标准输入包_20261006/750311423/contracts/manual_inventory.json": "7c51a2d42e99d33a1bd27a715aced47b812e7bc96737434ca68dda0e772d65f0",
+    "/Users/192y/电气/六器件标准输入包_20261006/750311423/contracts/test_plan.json": "f317dea9a05d156ae489d9d83d64c97d0d28e8764947dc640fc434779d31d6c1",
+    "/Users/192y/电气/六器件标准输入包_20261006/750311423/contracts/acceptance.json": "315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e",
+    "/Users/192y/电气/六器件标准输入包_20261006/750311423/references/curves/electrical_with_curves.json": "a20fa52d9ab5b5b8264856de594938eac9770c97f1451e91930f26dfbe2e1f3d",
+    "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+    "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/manual_review/750311423/pages.json": "2d55ca263cd9dd1ed4678dc850c3150018e907232cef403eafa3a23dceeb0279",
+    "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/750311423/executable_tests.json": "a5e0817c03801a244e4b17d76aaec304e658d4a1ed16b830613abda0111c55d3",
+    "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/750311423/reference_benchmark.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2"
+  },
+  "status": "materials_and_drafts_with_execution_gaps"
+}

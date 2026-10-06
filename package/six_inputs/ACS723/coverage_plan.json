@@ -1,0 +1,2733 @@
+{
+  "schema_version": "coverage-plan-2",
+  "device": "ACS723KMATR-20AB-T",
+  "manual": {
+    "path": "/Users/192y/电气/六器件标准输入包_20261006/ACS723/manual/ACS723_数据手册.pdf",
+    "sha256": "1abcf3f034ac6f664b57934caddf1060f180f46efc5098be5f7a5579630e6e39"
+  },
+  "review_status": "page_anchored_inventory_expanded_series_and_footnote_review_pending",
+  "items": [
+    {
+      "id": "parameter:10AB_range",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_range",
+        "key": "optimized_current_range",
+        "values": {
+          "min": -10,
+          "max": 10
+        },
+        "unit": "A",
+        "conditions": "VCC=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        7
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:10AB_sensitivity",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_sensitivity",
+        "key": "sensitivity",
+        "values": {
+          "typ": 200
+        },
+        "unit": "mV/A",
+        "conditions": "VCC=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        7
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:10AB_zero",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_zero",
+        "key": "zero_current_output",
+        "values": {
+          "typ": "0.5 × VCC"
+        },
+        "unit": "V",
+        "conditions": "IP=0 A; VCC=5 V",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        7
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:10AB_error_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_error_warm",
+        "key": "total_output_error",
+        "values": {
+          "min": -2.5,
+          "typ": "±1.4",
+          "max": 2.5
+        },
+        "unit": "%",
+        "conditions": "IP=IPR(max); TA=25..125°C; VCC=5 V; typical band is ±3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        7
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:10AB_error_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_error_cold",
+        "key": "total_output_error",
+        "values": {
+          "typ": "±2.0"
+        },
+        "unit": "%",
+        "conditions": "IP=IPR(max); TA=-40..25°C; VCC=5 V; typical band is ±3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        7
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:20AB_range",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_range",
+        "key": "optimized_current_range",
+        "values": {
+          "min": -20,
+          "max": 20
+        },
+        "unit": "A",
+        "conditions": "VCC=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        8
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:20AB_sensitivity",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_sensitivity",
+        "key": "sensitivity",
+        "values": {
+          "typ": 100
+        },
+        "unit": "mV/A",
+        "conditions": "VCC=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        8
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:20AB_zero",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_zero",
+        "key": "zero_current_output",
+        "values": {
+          "typ": "0.5 × VCC"
+        },
+        "unit": "V",
+        "conditions": "IP=0 A; VCC=5 V",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        8
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:20AB_error_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_error_warm",
+        "key": "total_output_error",
+        "values": {
+          "min": -2,
+          "typ": "±1.3",
+          "max": 2
+        },
+        "unit": "%",
+        "conditions": "IP=IPR(max); TA=25..125°C; VCC=5 V; typical band is ±3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        8
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:20AB_error_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_error_cold",
+        "key": "total_output_error",
+        "values": {
+          "typ": "±2.0"
+        },
+        "unit": "%",
+        "conditions": "IP=IPR(max); TA=-40..25°C; VCC=5 V; typical band is ±3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        8
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:40AB_range",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_range",
+        "key": "optimized_current_range",
+        "values": {
+          "min": -40,
+          "max": 40
+        },
+        "unit": "A",
+        "conditions": "VCC=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        9
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:40AB_sensitivity",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_sensitivity",
+        "key": "sensitivity",
+        "values": {
+          "typ": 50
+        },
+        "unit": "mV/A",
+        "conditions": "VCC=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        9
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:40AB_zero",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_zero",
+        "key": "zero_current_output",
+        "values": {
+          "typ": "0.5 × VCC"
+        },
+        "unit": "V",
+        "conditions": "IP=0 A; VCC=5 V",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        9
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:40AB_error_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_error_warm",
+        "key": "total_output_error",
+        "values": {
+          "min": -2,
+          "typ": "±0.8",
+          "max": 2
+        },
+        "unit": "%",
+        "conditions": "IP=IPR(max); TA=25..125°C; VCC=5 V; typical band is ±3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        9
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:40AB_error_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_error_cold",
+        "key": "total_output_error",
+        "values": {
+          "typ": "±1.8"
+        },
+        "unit": "%",
+        "conditions": "IP=IPR(max); TA=-40..25°C; VCC=5 V; typical band is ±3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        9
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:vcc_abs",
+      "kind": "constraint",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vcc_abs",
+        "key": "supply_voltage",
+        "values": {
+          "max": 6
+        },
+        "unit": "V",
+        "conditions": "",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:vout_abs",
+      "kind": "constraint",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vout_abs",
+        "key": "output_voltage",
+        "values": {
+          "max": 25
+        },
+        "unit": "V",
+        "conditions": "",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:ip_abs",
+      "kind": "constraint",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "ip_abs",
+        "key": "continuous_primary_current",
+        "values": {
+          "max": 60
+        },
+        "unit": "A",
+        "conditions": "TA=25°C",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:tj_abs",
+      "kind": "constraint",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "tj_abs",
+        "key": "junction_temperature",
+        "values": {
+          "max": 165
+        },
+        "unit": "°C",
+        "conditions": "",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:ta",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "ta",
+        "key": "operating_ambient_temperature",
+        "values": {
+          "min": -40,
+          "max": 125
+        },
+        "unit": "°C",
+        "conditions": "",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "operating_range",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:tstg",
+      "kind": "constraint",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "tstg",
+        "key": "storage_temperature",
+        "values": {
+          "min": -65,
+          "max": 165
+        },
+        "unit": "°C",
+        "conditions": "",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:vcc",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vcc",
+        "key": "supply_voltage",
+        "values": {
+          "min": 4.5,
+          "typ": 5,
+          "max": 5.5
+        },
+        "unit": "V",
+        "conditions": "TA=-40..125°C",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:icc",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "icc",
+        "key": "supply_current",
+        "values": {
+          "typ": 9,
+          "max": 14
+        },
+        "unit": "mA",
+        "conditions": "VCC=4.5..5.5 V; TA=-40..125°C",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:cl",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "cl",
+        "key": "output_capacitive_load",
+        "values": {
+          "max": 10
+        },
+        "unit": "nF",
+        "conditions": "VIOUT to GND",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:rl",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "rl",
+        "key": "output_resistive_load",
+        "values": {
+          "min": 4.7
+        },
+        "unit": "kΩ",
+        "conditions": "VIOUT to GND",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:rip",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "rip",
+        "key": "primary_conductor_resistance",
+        "values": {
+          "typ": 0.85
+        },
+        "unit": "mΩ",
+        "conditions": "TA=25°C",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:bw80",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "bw80",
+        "key": "bandwidth",
+        "values": {
+          "typ": 80
+        },
+        "unit": "kHz",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=GND; small-signal -3 dB",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_crossing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:rise_time80",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "rise_time80",
+        "key": "rise_time",
+        "values": {
+          "typ": 4
+        },
+        "unit": "μs",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=GND; IP=IPR(max)",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:propagation_delay80",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "propagation_delay80",
+        "key": "propagation_delay",
+        "values": {
+          "typ": 2
+        },
+        "unit": "μs",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=GND; IP=IPR(max)",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:response_time80",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "response_time80",
+        "key": "response_time",
+        "values": {
+          "typ": 5
+        },
+        "unit": "μs",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=GND; IP=IPR(max)",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:noise80",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "noise80",
+        "key": "input_referred_noise",
+        "values": {
+          "typ": 62
+        },
+        "unit": "mA rms",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=GND",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:bw20",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "bw20",
+        "key": "bandwidth",
+        "values": {
+          "typ": 20
+        },
+        "unit": "kHz",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=VCC; small-signal -3 dB",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_crossing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:rise_time20",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "rise_time20",
+        "key": "rise_time",
+        "values": {
+          "typ": 17.5
+        },
+        "unit": "μs",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=VCC; IP=IPR(max)",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:propagation_delay20",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "propagation_delay20",
+        "key": "propagation_delay",
+        "values": {
+          "typ": 5
+        },
+        "unit": "μs",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=VCC; IP=IPR(max)",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:response_time20",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "response_time20",
+        "key": "response_time",
+        "values": {
+          "typ": 22.5
+        },
+        "unit": "μs",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=VCC; IP=IPR(max)",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:noise20",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "noise20",
+        "key": "input_referred_noise",
+        "values": {
+          "typ": 31
+        },
+        "unit": "mA rms",
+        "conditions": "VCC=5 V; TA=25°C; CL=1 nF; BW_SEL=VCC",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:poweron",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "poweron",
+        "key": "power_on_time",
+        "values": {
+          "typ": 64
+        },
+        "unit": "μs",
+        "conditions": "TA=25°C; IP=IPR(max); 90% steady state",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:vout_hi",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vout_hi",
+        "key": "output_saturation_high",
+        "values": {
+          "min": "VCC − 0.5"
+        },
+        "unit": "V",
+        "conditions": "TA=25°C; RL=4.7 kΩ",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:vout_lo",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vout_lo",
+        "key": "output_saturation_low",
+        "values": {
+          "max": 0.5
+        },
+        "unit": "V",
+        "conditions": "TA=25°C; RL=4.7 kΩ",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:isotest",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "isotest",
+        "key": "dielectric_strength_test",
+        "values": {
+          "value": 4800
+        },
+        "unit": "V",
+        "conditions": "60 s; agency test",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "isolation_specification",
+        "state": "initial",
+        "evidence_refs": [
+          "b53",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:working_basic",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "working_basic",
+        "key": "basic_isolation_working_voltage",
+        "values": {
+          "value": 1097
+        },
+        "unit": "V",
+        "conditions": "RMS or DC; distinct from 1550 V peak",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "isolation_specification",
+        "state": "initial",
+        "evidence_refs": [
+          "b53",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:working_reinforced",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "working_reinforced",
+        "key": "reinforced_isolation_working_voltage",
+        "values": {
+          "value": 565
+        },
+        "unit": "V",
+        "conditions": "RMS or DC; distinct from 800 V peak",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "isolation_specification",
+        "state": "initial",
+        "evidence_refs": [
+          "b53",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:10AB_sens_error_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_sens_error_warm",
+        "key": "sensitivity_error",
+        "values": {
+          "min": -2,
+          "typ": "±1.3",
+          "max": 2
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; TA=25..125°C; IP=IPR(max); typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        7
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:10AB_sens_error_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_sens_error_cold",
+        "key": "sensitivity_error",
+        "values": {
+          "typ": "±1.8"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; TA=-40..25°C; IP=IPR(max); typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        7
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:10AB_offset_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_offset_warm",
+        "key": "offset_voltage",
+        "values": {
+          "min": -15,
+          "typ": "±10",
+          "max": 15
+        },
+        "unit": "mV",
+        "conditions": "VCC=5 V; TA=25..125°C; IP=0 A; excludes external magnetic fields; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        7
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:10AB_offset_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_offset_cold",
+        "key": "offset_voltage",
+        "values": {
+          "typ": "±20"
+        },
+        "unit": "mV",
+        "conditions": "VCC=5 V; TA=-40..25°C; IP=0 A; excludes external magnetic fields; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        7
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:10AB_sensitivity_error_lifetime_drift",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_sensitivity_error_lifetime_drift",
+        "key": "sensitivity_error_lifetime_drift",
+        "values": {
+          "typ": "±1"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        7
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "qualification_constraint",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:10AB_total_output_error_lifetime_drift",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "10AB_total_output_error_lifetime_drift",
+        "key": "total_output_error_lifetime_drift",
+        "values": {
+          "typ": "±1"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-10AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b73",
+          "p6"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        7
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "qualification_constraint",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:20AB_sens_error_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_sens_error_warm",
+        "key": "sensitivity_error",
+        "values": {
+          "min": -1.5,
+          "typ": "±1.2",
+          "max": 1.5
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; TA=25..125°C; IP=IPR(max); typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        8
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:20AB_sens_error_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_sens_error_cold",
+        "key": "sensitivity_error",
+        "values": {
+          "typ": "±1.8"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; TA=-40..25°C; IP=IPR(max); typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        8
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:20AB_offset_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_offset_warm",
+        "key": "offset_voltage",
+        "values": {
+          "min": -10,
+          "typ": "±5",
+          "max": 10
+        },
+        "unit": "mV",
+        "conditions": "VCC=5 V; TA=25..125°C; IP=0 A; excludes external magnetic fields; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        8
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:20AB_offset_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_offset_cold",
+        "key": "offset_voltage",
+        "values": {
+          "typ": "±12"
+        },
+        "unit": "mV",
+        "conditions": "VCC=5 V; TA=-40..25°C; IP=0 A; excludes external magnetic fields; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        8
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:20AB_sensitivity_error_lifetime_drift",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_sensitivity_error_lifetime_drift",
+        "key": "sensitivity_error_lifetime_drift",
+        "values": {
+          "typ": "±1"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        8
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "constraint_audit_required",
+      "method_family": "qualification_constraint",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:20AB_total_output_error_lifetime_drift",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "20AB_total_output_error_lifetime_drift",
+        "key": "total_output_error_lifetime_drift",
+        "values": {
+          "typ": "±1"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-20AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b79",
+          "p7"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        8
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "constraint_audit_required",
+      "method_family": "qualification_constraint",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:40AB_sens_error_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_sens_error_warm",
+        "key": "sensitivity_error",
+        "values": {
+          "min": -1.5,
+          "typ": "±0.8",
+          "max": 1.5
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; TA=25..125°C; IP=IPR(max); typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        9
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:40AB_sens_error_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_sens_error_cold",
+        "key": "sensitivity_error",
+        "values": {
+          "typ": "±1.8"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; TA=-40..25°C; IP=IPR(max); typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        9
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:40AB_offset_warm",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_offset_warm",
+        "key": "offset_voltage",
+        "values": {
+          "min": -10,
+          "typ": "±4",
+          "max": 10
+        },
+        "unit": "mV",
+        "conditions": "VCC=5 V; TA=25..125°C; IP=0 A; excludes external magnetic fields; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        9
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:40AB_offset_cold",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_offset_cold",
+        "key": "offset_voltage",
+        "values": {
+          "typ": "±6"
+        },
+        "unit": "mV",
+        "conditions": "VCC=5 V; TA=-40..25°C; IP=0 A; excludes external magnetic fields; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        9
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:40AB_sensitivity_error_lifetime_drift",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_sensitivity_error_lifetime_drift",
+        "key": "sensitivity_error_lifetime_drift",
+        "values": {
+          "typ": "±1"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        9
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "qualification_constraint",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:40AB_total_output_error_lifetime_drift",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "40AB_total_output_error_lifetime_drift",
+        "key": "total_output_error_lifetime_drift",
+        "values": {
+          "typ": "±1"
+        },
+        "unit": "%",
+        "conditions": "VCC=5 V; typical ± values are 3 sigma",
+        "applies_to": [
+          "ACS723KMATR-40AB-T"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b85",
+          "p8"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        9
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "not_applicable",
+      "method_family": "qualification_constraint",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:noise_density",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "noise_density",
+        "key": "input_referred_noise_density",
+        "values": {
+          "typ": 220
+        },
+        "unit": "μA rms/√Hz",
+        "conditions": "TA=25°C; CL=1 nF; VCC=5 V",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:nonlinear",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "nonlinear",
+        "key": "nonlinearity",
+        "values": {
+          "typ": "±1"
+        },
+        "unit": "%",
+        "conditions": "IPR(min)<IP<IPR(max); VCC=5 V",
+        "applies_to": [
+          "ACS723"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b67",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:reverse_supply",
+      "kind": "constraint",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "reverse_supply_rating",
+        "values": {
+          "min": -0.1
+        },
+        "unit": "V",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        4
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:reverse_output",
+      "kind": "constraint",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "reverse_output_rating",
+        "values": {
+          "min": -0.1
+        },
+        "unit": "V",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        4
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:coupling",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "magnetic_coupling_factor",
+        "values": {
+          "typ": 4.5
+        },
+        "unit": "G/A",
+        "conditions": "VCC5V; ambient -40..125°C unless specified"
+      },
+      "pdf_pages": [
+        6
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:clearance",
+      "kind": "constraint",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "clearance",
+        "values": {
+          "min": 7.5
+        },
+        "unit": "mm",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        4
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:creepage",
+      "kind": "constraint",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "creepage",
+        "values": {
+          "min": 8.2
+        },
+        "unit": "mm",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        4
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:zero_output:average",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "zero_output_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=average"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:zero_output:plus3sigma",
+      "kind": "statistical_envelope",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "zero_output_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=plus3sigma"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:zero_output:minus3sigma",
+      "kind": "statistical_envelope",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "zero_output_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=minus3sigma"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:offset:average",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "offset_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=average"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:offset:plus3sigma",
+      "kind": "statistical_envelope",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "offset_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=plus3sigma"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:offset:minus3sigma",
+      "kind": "statistical_envelope",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "offset_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=minus3sigma"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:sensitivity:average",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "sensitivity_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=average"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:sensitivity:plus3sigma",
+      "kind": "statistical_envelope",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "sensitivity_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=plus3sigma"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:sensitivity:minus3sigma",
+      "kind": "statistical_envelope",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "sensitivity_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=minus3sigma"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:sensitivity_error:average",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "sensitivity_error_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=average"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:sensitivity_error:plus3sigma",
+      "kind": "statistical_envelope",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "sensitivity_error_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=plus3sigma"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:sensitivity_error:minus3sigma",
+      "kind": "statistical_envelope",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "sensitivity_error_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=minus3sigma"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:nonlinearity:average",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "nonlinearity_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=average"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:nonlinearity:plus3sigma",
+      "kind": "statistical_envelope",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "nonlinearity_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=plus3sigma"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:nonlinearity:minus3sigma",
+      "kind": "statistical_envelope",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "nonlinearity_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=minus3sigma"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:total_error:average",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "total_error_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=average"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:total_error:plus3sigma",
+      "kind": "statistical_envelope",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "total_error_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=plus3sigma"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:20AB:total_error:minus3sigma",
+      "kind": "statistical_envelope",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "total_error_temperature_curve",
+        "values": {},
+        "unit": "",
+        "conditions": "20AB; VCC5V; temperature axis; series=minus3sigma"
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:1",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "illustrative_output_distribution",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        13
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:2",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "illustrative_total_error",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        13
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:3",
+      "kind": "statistical_envelope",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "predicted_total_error",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        14
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:4",
+      "kind": "thermal_constraint",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "self_heating",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        15
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:5",
+      "kind": "thermal_constraint",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "maximum_continuous_current_temperature",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        15
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:6",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "PCB_thermal_fixture",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        15
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:7",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "power_on_definition",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        16
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:8",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "rise_delay_definition",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        16
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:9",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "response_definition",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        16
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:10",
+      "kind": "constraint",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "high_isolation_layout",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        17
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:11",
+      "kind": "constraint",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "package_dimensions",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        18
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "table:external_field",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "external_magnetic_field_error",
+        "values": {},
+        "unit": "",
+        "conditions": "Selected20AB column; external field is an additional excitation dimension"
+      },
+      "pdf_pages": [
+        14
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending"
+    }
+  ],
+  "counts": {
+    "not_applicable": 22,
+    "test_development_required": 37,
+    "constraint_audit_required": 19,
+    "scope_or_corner_review": 13,
+    "informational": 6
+  },
+  "model_fitting_gate": "blocked_until_test_and_constraint_obligations_resolved",
+  "acceptance_policy": {
+    "schema_version": "batch-acceptance-1",
+    "scope": "工程验收标准，不是厂家新增保证值",
+    "confirmed_by": "用户本侧聊明确采用",
+    "typical_relative_tolerance_percent": 10.0,
+    "curve_thresholds": {
+      "MAE_over_reference_span_percent": 5.0,
+      "max_error_over_reference_span_percent": 10.0
+    },
+    "hard_limits": "手册min/max独立检查",
+    "absolute_maximum": "约束审计，不作普通电气仿真通过承诺",
+    "complete_coverage_required": true,
+    "real_execution_required": true
+  },
+  "full_manual_coverage": false,
+  "source_inventory_sha256": "49c6873ba5221575da4abbf34c721dde1bbad84c698e41bb61feca397e9c0673",
+  "open_contract_issues": [
+    {
+      "reference_ids": [
+        "figure:20AB:*",
+        "parameter:20AB_*"
+      ],
+      "problem": "Three-sigma bands/lifetime drift are distinct from nominal targets; ambient and junction temperature differ"
+    }
+  ]
+}

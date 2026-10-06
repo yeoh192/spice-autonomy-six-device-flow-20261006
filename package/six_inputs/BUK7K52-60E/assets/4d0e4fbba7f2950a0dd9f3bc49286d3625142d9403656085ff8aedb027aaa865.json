@@ -1,0 +1,281 @@
+{
+  "part": "BUK7K52-60E",
+  "chart_id": "fig6",
+  "status": "auto_passed",
+  "human_review_required": false,
+  "method": "original_pdf_vector_path_digitization",
+  "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+  "source_pdf_sha256": "4272aefd6383ccab0790755ef94f526441c93ccf928df7532889dc31cc64454e",
+  "page_index": 5,
+  "mineru_image": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/7c1a8ccb504d21cd99a4dacfd74666fb65be9f875668a799b52bc2fda7bcb1e8.jpg",
+  "calibration": {
+    "plot_rect_pdf_pt": [
+      105.40148163,
+      394.91720581,
+      265.24578857,
+      554.8793335
+    ],
+    "x_axis": {
+      "quantity": "VDS",
+      "unit": "V",
+      "scale": "linear",
+      "range": [
+        0,
+        2
+      ]
+    },
+    "y_axis": {
+      "quantity": "ID",
+      "unit": "A",
+      "scale": "linear",
+      "range": [
+        0,
+        20
+      ]
+    },
+    "grid_drawing_ids": [
+      415,
+      416,
+      417,
+      418,
+      419,
+      420,
+      421,
+      422,
+      423,
+      424,
+      425,
+      426,
+      427,
+      428
+    ],
+    "calibration_method": "axis meaning read by current multimodal assistant; exact grid positions from PDF vector objects"
+  },
+  "common_conditions": "Tj=25°C; typical; VGS=4.5,5,5.5,6,6.5,10 V",
+  "series": [
+    {
+      "series_id": "vgs_0",
+      "condition": "VGS=4.5 V",
+      "status": "auto_passed",
+      "sample_count": 205,
+      "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/vgs_0.csv",
+      "visible_x_range": [
+        0.0,
+        2.0
+      ],
+      "y_range": [
+        5.47801795615558e-10,
+        1.987465719421505
+      ],
+      "extrapolated": false,
+      "source_pdf_drawing_ids": [
+        429
+      ],
+      "resampling_rmse_plot_px_at_300dpi": 0.017143484052442863,
+      "resampling_max_error_plot_px_at_300dpi": 0.09796415598373188,
+      "reconstruction_r2_in_axis_domain": 0.9999993924281012,
+      "y_resampling_rmse_in_axis_unit": 0.0005144262872721838,
+      "y_unit": "A",
+      "physical_model_fit_r2": null,
+      "independent_measurement_accuracy": null,
+      "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+      "dashed_source": false,
+      "rendered_ink_support_fraction": 1.0,
+      "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+    },
+    {
+      "series_id": "vgs_1",
+      "condition": "VGS=5 V",
+      "status": "auto_passed",
+      "sample_count": 205,
+      "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/vgs_1.csv",
+      "visible_x_range": [
+        0.0,
+        2.0
+      ],
+      "y_range": [
+        7.078539043529716e-10,
+        6.233171457291484
+      ],
+      "extrapolated": false,
+      "source_pdf_drawing_ids": [
+        430
+      ],
+      "resampling_rmse_plot_px_at_300dpi": 0.012980856623800044,
+      "resampling_max_error_plot_px_at_300dpi": 0.06633425340254462,
+      "reconstruction_r2_in_axis_domain": 0.9999999677806984,
+      "y_resampling_rmse_in_axis_unit": 0.00038951789835523583,
+      "y_unit": "A",
+      "physical_model_fit_r2": null,
+      "independent_measurement_accuracy": null,
+      "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+      "dashed_source": false,
+      "rendered_ink_support_fraction": 1.0,
+      "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+    },
+    {
+      "series_id": "vgs_2",
+      "condition": "VGS=5.5 V",
+      "status": "auto_passed",
+      "sample_count": 206,
+      "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/vgs_2.csv",
+      "visible_x_range": [
+        0.0,
+        2.0
+      ],
+      "y_range": [
+        8.291438371998945e-10,
+        12.284419522822459
+      ],
+      "extrapolated": false,
+      "source_pdf_drawing_ids": [
+        431
+      ],
+      "resampling_rmse_plot_px_at_300dpi": 0.013221580817558051,
+      "resampling_max_error_plot_px_at_300dpi": 0.06671604436074101,
+      "reconstruction_r2_in_axis_domain": 0.9999999924374223,
+      "y_resampling_rmse_in_axis_unit": 0.00039674133396917197,
+      "y_unit": "A",
+      "physical_model_fit_r2": null,
+      "independent_measurement_accuracy": null,
+      "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+      "dashed_source": false,
+      "rendered_ink_support_fraction": 1.0,
+      "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+    },
+    {
+      "series_id": "vgs_3",
+      "condition": "VGS=6 V",
+      "status": "auto_passed",
+      "sample_count": 206,
+      "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/vgs_3.csv",
+      "visible_x_range": [
+        0.0,
+        2.0
+      ],
+      "y_range": [
+        8.837690817716424e-10,
+        19.018148780381125
+      ],
+      "extrapolated": false,
+      "source_pdf_drawing_ids": [
+        432
+      ],
+      "resampling_rmse_plot_px_at_300dpi": 0.046403872527038835,
+      "resampling_max_error_plot_px_at_300dpi": 0.22060128336628776,
+      "reconstruction_r2_in_axis_domain": 0.9999999588002291,
+      "y_resampling_rmse_in_axis_unit": 0.0013924457704228856,
+      "y_unit": "A",
+      "physical_model_fit_r2": null,
+      "independent_measurement_accuracy": null,
+      "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+      "dashed_source": false,
+      "rendered_ink_support_fraction": 1.0,
+      "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+    },
+    {
+      "series_id": "vgs_4",
+      "condition": "VGS=6.5 V",
+      "status": "auto_passed",
+      "sample_count": 205,
+      "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/vgs_4.csv",
+      "visible_x_range": [
+        0.0,
+        1.1554886079162185
+      ],
+      "y_range": [
+        9.247060332071442e-10,
+        20.0
+      ],
+      "extrapolated": false,
+      "source_pdf_drawing_ids": [
+        433
+      ],
+      "resampling_rmse_plot_px_at_300dpi": 0.017176567777206303,
+      "resampling_max_error_plot_px_at_300dpi": 0.09333837478682958,
+      "reconstruction_r2_in_axis_domain": 0.9999999936847553,
+      "y_resampling_rmse_in_axis_unit": 0.0005154190340001586,
+      "y_unit": "A",
+      "physical_model_fit_r2": null,
+      "independent_measurement_accuracy": null,
+      "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+      "dashed_source": false,
+      "rendered_ink_support_fraction": 1.0,
+      "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+    },
+    {
+      "series_id": "vgs_5",
+      "condition": "VGS=10 V",
+      "status": "auto_passed",
+      "sample_count": 205,
+      "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/vgs_5.csv",
+      "visible_x_range": [
+        0.0,
+        0.8115054161567844
+      ],
+      "y_range": [
+        9.98890043464743e-10,
+        20.0
+      ],
+      "extrapolated": false,
+      "source_pdf_drawing_ids": [
+        434
+      ],
+      "resampling_rmse_plot_px_at_300dpi": 0.02688625759635459,
+      "resampling_max_error_plot_px_at_300dpi": 0.14304726257752995,
+      "reconstruction_r2_in_axis_domain": 0.9999999851472179,
+      "y_resampling_rmse_in_axis_unit": 0.000806778693970634,
+      "y_unit": "A",
+      "physical_model_fit_r2": null,
+      "independent_measurement_accuracy": null,
+      "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+      "dashed_source": false,
+      "rendered_ink_support_fraction": 1.0,
+      "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+    }
+  ],
+  "overlay": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/overlay.png",
+  "reconstructed": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/reconstructed.png",
+  "digitization_error_scope": "CSV resampling versus dense vector centreline, not experimental device accuracy, curve-label accuracy, or SPICE model fit",
+  "sampling_policy": "linear interpolation in plot/axis domain, adaptive maximum 0.25 pixel error at 300 dpi; clip to visible axes; do not extend curve endpoints",
+  "calibration_checks": {
+    "part": "BUK7K52-60E",
+    "chart_id": "fig6",
+    "note": "Grid geometry compared to declared linear/log scale. Does not independently verify OCR tick values or legend semantics.",
+    "x": {
+      "expected_grid_lines": 5,
+      "detected_grid_lines": 5,
+      "max_grid_alignment_error_px_at_300dpi": 0.002006791666708807,
+      "rmse_grid_alignment_px_at_300dpi": 0.0015454937320770266,
+      "matched_within_2px": 5,
+      "expected_tick_values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "y": {
+      "expected_grid_lines": 11,
+      "detected_grid_lines": 11,
+      "max_grid_alignment_error_px_at_300dpi": 0.0020100999999309956,
+      "rmse_grid_alignment_px_at_300dpi": 0.001200818599024693,
+      "matched_within_2px": 11,
+      "expected_tick_values": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0,
+        18.0,
+        20.0
+      ]
+    },
+    "status": "auto_passed"
+  }
+}

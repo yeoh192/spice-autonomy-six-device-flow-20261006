@@ -1,0 +1,189 @@
+{
+  "device": "750311423",
+  "status": "development_queue_not_executable_test_plan",
+  "required_features": [
+    {
+      "feature": "linear_windings",
+      "priority": "first",
+      "reference_parameters": [
+        {
+          "id": "inductance",
+          "key": "primary_inductance",
+          "values": {
+            "nominal": 50,
+            "tolerance": "±10%"
+          },
+          "unit": "μH",
+          "conditions": "N1; 10 kHz; 100 mV; 20°C; 33% RH",
+          "applies_to": [
+            "750311423"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b9",
+            "p0"
+          ]
+        },
+        {
+          "id": "turns",
+          "key": "turns_ratio",
+          "values": {
+            "value": "4:1:2"
+          },
+          "unit": "1",
+          "conditions": "N1:N2:N3",
+          "applies_to": [
+            "750311423"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b9",
+            "p0"
+          ]
+        },
+        {
+          "id": "rdc_N1",
+          "key": "dc_resistance",
+          "values": {
+            "nominal": 0.09,
+            "tolerance": "±20%"
+          },
+          "unit": "Ω",
+          "conditions": "N1; 20°C; 33% RH",
+          "applies_to": [
+            "750311423"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b9",
+            "p0"
+          ]
+        },
+        {
+          "id": "rdc_N2",
+          "key": "dc_resistance",
+          "values": {
+            "nominal": 0.012,
+            "tolerance": "±20%"
+          },
+          "unit": "Ω",
+          "conditions": "N2; 20°C; 33% RH",
+          "applies_to": [
+            "750311423"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b9",
+            "p0"
+          ]
+        },
+        {
+          "id": "rdc_N3",
+          "key": "dc_resistance",
+          "values": {
+            "nominal": 0.205,
+            "tolerance": "±10%"
+          },
+          "unit": "Ω",
+          "conditions": "N3; 20°C; 33% RH",
+          "applies_to": [
+            "750311423"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b9",
+            "p0"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "多绕组电感、匝比、直流电阻",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [],
+      "enabled": false
+    },
+    {
+      "feature": "leakage_inductance",
+      "priority": "later",
+      "reference_parameters": [
+        {
+          "id": "leakage_l",
+          "key": "leakage_inductance",
+          "values": {
+            "max": 1.2
+          },
+          "unit": "μH",
+          "conditions": "N1; 100 kHz; 100 mV; secondary shorting condition not specified",
+          "applies_to": [
+            "750311423"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b9",
+            "p0"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "漏感",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [
+        "原记录未明确次级短接条件，暂缓漏感标定"
+      ],
+      "enabled": false
+    },
+    {
+      "feature": "saturation",
+      "priority": "later",
+      "reference_parameters": [
+        {
+          "id": "isat",
+          "key": "saturation_current",
+          "values": {
+            "typ": 3.85
+          },
+          "unit": "A",
+          "conditions": "N1; |ΔL/L| <20%; 20°C; 33% RH",
+          "applies_to": [
+            "750311423"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b9",
+            "p0"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": true,
+      "selected_curve_files": [],
+      "required_template_capability": "非线性磁化；需足够曲线约束",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [
+        "缺少足够的非线性磁化参考曲线"
+      ],
+      "enabled": false
+    }
+  ],
+  "required_inventory": "manual_inventory.json",
+  "execution_cases": [],
+  "unresolved": [
+    "完整覆盖清单复核",
+    "未绑定参考与测试接口",
+    "统一验收阈值"
+  ]
+}

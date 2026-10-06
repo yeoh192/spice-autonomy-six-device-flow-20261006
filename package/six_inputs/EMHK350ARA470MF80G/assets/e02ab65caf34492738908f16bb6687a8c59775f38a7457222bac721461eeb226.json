@@ -1,0 +1,982 @@
+{
+  "cases": [
+    {
+      "id": "cap_120Hz",
+      "reference_ids": [
+        "parameter:cap",
+        "parameter:cap_tolerance"
+      ],
+      "model": {
+        "path": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/EMHK350ARA470MF80G/reference_benchmark_20.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 120
+        },
+        "measurement": {
+          "mode": "ac_series_capacitance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1000000.0
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "μF",
+        "limits": {
+          "min": 37.6,
+          "max": 56.4
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "47uF +/-20% handbook tolerance; series definition recorded explicitly",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 120
+          },
+          "measurement": {
+            "mode": "ac_series_capacitance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1000000.0
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "f2375d7abdc8e0fffa0cdf41b39d4399a2444e8d34f7a0ea1cc4f4a045709c54"
+    },
+    {
+      "id": "df_120Hz",
+      "reference_ids": [
+        "parameter:df"
+      ],
+      "model": {
+        "path": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/EMHK350ARA470MF80G/reference_benchmark_20.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 120
+        },
+        "measurement": {
+          "mode": "ac_dissipation_factor",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "1",
+        "limits": {
+          "max": 0.14
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 120
+          },
+          "measurement": {
+            "mode": "ac_dissipation_factor",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "6e5a1882c49cb92fe589cbe95e7b65c9aafb3c053e9594bed2710b0916ce6924"
+    },
+    {
+      "id": "esr_20_100000Hz",
+      "reference_ids": [
+        "parameter:esr20"
+      ],
+      "model": {
+        "path": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/EMHK350ARA470MF80G/reference_benchmark_20.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 100000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0,
+          "max": 0.3
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 100000
+          },
+          "measurement": {
+            "mode": "ac_resistance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "35aee012d630e5a71c469ac31cfd6e57e81cbf2597d7f3224425a9f06974c9b4"
+    },
+    {
+      "id": "esr_20_200000Hz",
+      "reference_ids": [
+        "parameter:esr20"
+      ],
+      "model": {
+        "path": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/EMHK350ARA470MF80G/reference_benchmark_20.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 200000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0,
+          "max": 0.3
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 200000
+          },
+          "measurement": {
+            "mode": "ac_resistance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "59c9664c6ace16c5bacb6d3df60a6ed9a88411128f711dd4913a203bcf6b37fd"
+    },
+    {
+      "id": "esr_20_400000Hz",
+      "reference_ids": [
+        "parameter:esr20"
+      ],
+      "model": {
+        "path": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/EMHK350ARA470MF80G/reference_benchmark_20.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 400000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0,
+          "max": 0.3
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 400000
+          },
+          "measurement": {
+            "mode": "ac_resistance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "7942f96247b94750f332236b07b84ad5322c87816c4cc27874c3dccd6b3486bf"
+    },
+    {
+      "id": "esr_-40_100000Hz",
+      "reference_ids": [
+        "parameter:esr-40"
+      ],
+      "model": {
+        "path": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/EMHK350ARA470MF80G/reference_benchmark_-40.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": -40,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 100000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+      "contract": {
+        "fixed": {
+          "temperature_C": -40,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 100000
+          },
+          "measurement": {
+            "mode": "ac_resistance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "09ca222272098174910a81a83634b4d35de26e954779b79266f4aed7f30d3c1e"
+    },
+    {
+      "id": "esr_-40_200000Hz",
+      "reference_ids": [
+        "parameter:esr-40"
+      ],
+      "model": {
+        "path": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/EMHK350ARA470MF80G/reference_benchmark_-40.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": -40,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 200000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+      "contract": {
+        "fixed": {
+          "temperature_C": -40,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 200000
+          },
+          "measurement": {
+            "mode": "ac_resistance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "d9477a0dfbdb365307915d09da8c315b775b9714eff2bb75f91920305b97f238"
+    },
+    {
+      "id": "esr_-40_400000Hz",
+      "reference_ids": [
+        "parameter:esr-40"
+      ],
+      "model": {
+        "path": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006/devices/EMHK350ARA470MF80G/reference_benchmark_-40.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": -40,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 400000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+      "contract": {
+        "fixed": {
+          "temperature_C": -40,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 400000
+          },
+          "measurement": {
+            "mode": "ac_resistance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "586a52a3441ea571f96fbfe2c384e4dd7189b687fc10f3c771c11f97fb1e84c9"
+    }
+  ],
+  "qualification_status": "draft_pending_independent_review",
+  "not_formal_acceptance": true
+}

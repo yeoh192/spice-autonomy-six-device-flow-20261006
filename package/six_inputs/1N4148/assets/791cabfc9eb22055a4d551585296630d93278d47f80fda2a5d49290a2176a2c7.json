@@ -1,0 +1,289 @@
+{
+  "device": "1N4148",
+  "status": "development_queue_not_executable_test_plan",
+  "required_features": [
+    {
+      "feature": "forward_iv",
+      "priority": "first",
+      "reference_parameters": [
+        {
+          "id": "vf10",
+          "key": "forward_voltage",
+          "values": {
+            "max": 1
+          },
+          "unit": "V",
+          "conditions": "IF=10 mA; Tj=25°C",
+          "applies_to": [
+            "1N4148"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b35",
+            "b36",
+            "p2"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": true,
+      "selected_curve_files": [
+        "input/curves/fig3/typ_25C.csv",
+        "input/curves/fig3/typ_175C.csv",
+        "input/curves/fig3/max_25C.csv"
+      ],
+      "required_template_capability": "正向非线性导通",
+      "template_support": "not_checked",
+      "input_sufficiency": "references_bound_not_yet_assessed",
+      "gaps": [
+        "尚需检查候选模板能力",
+        "尚需确定拟合区间、测试电路和误差标准"
+      ],
+      "enabled": false,
+      "curve_bindings": [
+        {
+          "path": "input/curves/fig3/typ_25C.csv",
+          "role": "fit_primary",
+          "condition": "(2) Tj=25 C, typical",
+          "x_unit": "V",
+          "y_unit": "mA",
+          "point_count": 203,
+          "visible_x_range": [
+            0.6079471911,
+            1.305393986
+          ],
+          "visible_y_range": [
+            1.408871802,
+            459.5589511
+          ],
+          "extrapolation_allowed": false
+        },
+        {
+          "path": "input/curves/fig3/typ_175C.csv",
+          "role": "temperature_validation",
+          "condition": "(1) Tj=175 C, typical",
+          "x_unit": "V",
+          "y_unit": "mA",
+          "point_count": 203,
+          "visible_x_range": [
+            0.3153464114,
+            1.279073525
+          ],
+          "visible_y_range": [
+            1.408871802,
+            450.5642501
+          ],
+          "extrapolation_allowed": false
+        },
+        {
+          "path": "input/curves/fig3/max_25C.csv",
+          "role": "maximum_boundary_reference",
+          "condition": "(3) Tj=25 C, maximum",
+          "x_unit": "V",
+          "y_unit": "mA",
+          "point_count": 202,
+          "visible_x_range": [
+            0.6873195051,
+            1.801221007
+          ],
+          "visible_y_range": [
+            2.36180468,
+            460.9901751
+          ],
+          "extrapolation_allowed": false
+        }
+      ]
+    },
+    {
+      "feature": "reverse_leakage",
+      "priority": "first",
+      "reference_parameters": [
+        {
+          "id": "ir25",
+          "key": "reverse_current",
+          "values": {
+            "max": 25
+          },
+          "unit": "nA",
+          "conditions": "VR=20 V; Tj=25°C",
+          "applies_to": [
+            "1N4148"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b35",
+            "b36",
+            "p2"
+          ]
+        },
+        {
+          "id": "ir150",
+          "key": "reverse_current",
+          "values": {
+            "max": 50
+          },
+          "unit": "μA",
+          "conditions": "VR=20 V; Tj=150°C",
+          "applies_to": [
+            "1N4148"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b36",
+            "p2"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [
+        "input/curves/fig5/vr20.csv",
+        "input/curves/fig5/vr75.csv"
+      ],
+      "required_template_capability": "反向漏电及条件依赖",
+      "template_support": "not_checked",
+      "input_sufficiency": "references_bound_not_yet_assessed",
+      "gaps": [
+        "尚需检查候选模板能力",
+        "尚需确定拟合区间、测试电路和误差标准"
+      ],
+      "enabled": false,
+      "curve_bindings": [
+        {
+          "path": "input/curves/fig5/vr20.csv",
+          "role": "temperature_reference",
+          "condition": "(2) VR=20 V, typical",
+          "x_unit": "°C",
+          "y_unit": "μA",
+          "point_count": 201,
+          "visible_x_range": [
+            29.49418256,
+            199.1573971
+          ],
+          "visible_y_range": [
+            0.01,
+            141.5361293
+          ],
+          "extrapolation_allowed": false
+        },
+        {
+          "path": "input/curves/fig5/vr75.csv",
+          "role": "temperature_reference",
+          "condition": "(1) VR=75 V, typical",
+          "x_unit": "°C",
+          "y_unit": "μA",
+          "point_count": 201,
+          "visible_x_range": [
+            24.16657816,
+            199.634077
+          ],
+          "visible_y_range": [
+            0.01757187716,
+            254.2819518
+          ],
+          "extrapolation_allowed": false
+        }
+      ]
+    },
+    {
+      "feature": "junction_capacitance",
+      "priority": "first",
+      "reference_parameters": [
+        {
+          "id": "cd",
+          "key": "diode_capacitance",
+          "values": {
+            "max": 4
+          },
+          "unit": "pF",
+          "conditions": "f=1 MHz; VR=0 V; Tj=25°C",
+          "applies_to": [
+            "1N4148"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b35",
+            "b36",
+            "p2"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": true,
+      "selected_curve_files": [
+        "input/curves/fig6/capacitance.csv"
+      ],
+      "required_template_capability": "电压相关结电容",
+      "template_support": "not_checked",
+      "input_sufficiency": "references_bound_not_yet_assessed",
+      "gaps": [
+        "尚需检查候选模板能力",
+        "尚需确定拟合区间、测试电路和误差标准"
+      ],
+      "enabled": false,
+      "curve_bindings": [
+        {
+          "path": "input/curves/fig6/capacitance.csv",
+          "role": "fit_reference",
+          "condition": "f=1 MHz; Tj=25 C; typical",
+          "x_unit": "V",
+          "y_unit": "pF",
+          "point_count": 203,
+          "visible_x_range": [
+            0.01582139538,
+            20.0
+          ],
+          "visible_y_range": [
+            0.8179115588,
+            0.9990172959
+          ],
+          "extrapolation_allowed": false
+        }
+      ]
+    },
+    {
+      "feature": "reverse_recovery",
+      "priority": "later",
+      "reference_parameters": [
+        {
+          "id": "trr",
+          "key": "reverse_recovery_time",
+          "values": {
+            "max": 4
+          },
+          "unit": "ns",
+          "conditions": "IF=10 mA to IR=60 mA; RL=100 Ω; measured at IR=1 mA; Tj=25°C",
+          "applies_to": [
+            "1N4148"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b35",
+            "b36",
+            "p2"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "瞬态电荷存储和恢复",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [],
+      "enabled": false
+    }
+  ],
+  "required_inventory": "manual_inventory.json",
+  "execution_cases": [],
+  "unresolved": [
+    "完整覆盖清单复核",
+    "未绑定参考与测试接口",
+    "统一验收阈值"
+  ]
+}

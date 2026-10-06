@@ -1,0 +1,28 @@
+{
+  "entries": 9068,
+  "categories": {
+    "unknown": 5523,
+    "bjt": 297,
+    "current_sensor": 24,
+    "opamp": 277,
+    "mosfet": 1410,
+    "analog_switch": 2,
+    "voltage_regulator": 14,
+    "resistor": 15,
+    "diode": 991,
+    "thermal_network": 1,
+    "transformer": 346,
+    "inductor": 19,
+    "optocoupler": 11,
+    "jfet": 138
+  },
+  "confidence": {
+    "unknown": 5523,
+    "declared": 2594,
+    "identity_and_ports_hint": 24,
+    "documented_hint": 774,
+    "topology_hint": 153
+  },
+  "integrity_check": "ok",
+  "electrical_acceptance": "not_evaluated"
+}

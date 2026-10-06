@@ -1,0 +1,527 @@
+{
+  "device": "BUK7K52-60E",
+  "status": "development_queue_not_executable_test_plan",
+  "required_features": [
+    {
+      "feature": "output_iv",
+      "priority": "first",
+      "reference_parameters": [
+        {
+          "id": "vth25",
+          "key": "gate_threshold_voltage",
+          "values": {
+            "min": 2.4,
+            "typ": 3,
+            "max": 4
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        {
+          "id": "vth175",
+          "key": "gate_threshold_voltage",
+          "values": {
+            "min": 1
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=175°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        {
+          "id": "vthcold",
+          "key": "gate_threshold_voltage",
+          "values": {
+            "max": 4.5
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=-55°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        {
+          "id": "rdson25",
+          "key": "drain_source_on_resistance",
+          "values": {
+            "typ": 35,
+            "max": 45
+          },
+          "unit": "mΩ",
+          "conditions": "FET1 and FET2; VGS=10 V; ID=5 A; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        {
+          "id": "rdson175",
+          "key": "drain_source_on_resistance",
+          "values": {
+            "typ": 78,
+            "max": 101
+          },
+          "unit": "mΩ",
+          "conditions": "FET1 and FET2; VGS=10 V; ID=5 A; Tj=175°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": true,
+      "selected_curve_files": [
+        "input/curves/fig6/vgs_0.csv",
+        "input/curves/fig6/vgs_1.csv",
+        "input/curves/fig6/vgs_2.csv",
+        "input/curves/fig6/vgs_3.csv",
+        "input/curves/fig6/vgs_4.csv",
+        "input/curves/fig6/vgs_5.csv"
+      ],
+      "required_template_capability": "输出特性；两个MOSFET分别实例化",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [
+        "尚需检查候选模板能力",
+        "尚需确定拟合区间和误差标准"
+      ],
+      "enabled": false,
+      "curve_bindings": [
+        {
+          "path": "input/curves/fig6/vgs_0.csv",
+          "role": "fit_reference",
+          "series_condition": "VGS=4.5 V",
+          "chart_conditions": "Tj=25°C; typical; VGS=4.5,5,5.5,6,6.5,10 V",
+          "x_axis": {
+            "quantity": "VDS",
+            "unit": "V",
+            "scale": "linear"
+          },
+          "y_axis": {
+            "quantity": "ID",
+            "unit": "A",
+            "scale": "linear"
+          },
+          "point_count": 205,
+          "extrapolation_allowed": false
+        },
+        {
+          "path": "input/curves/fig6/vgs_1.csv",
+          "role": "fit_reference",
+          "series_condition": "VGS=5 V",
+          "chart_conditions": "Tj=25°C; typical; VGS=4.5,5,5.5,6,6.5,10 V",
+          "x_axis": {
+            "quantity": "VDS",
+            "unit": "V",
+            "scale": "linear"
+          },
+          "y_axis": {
+            "quantity": "ID",
+            "unit": "A",
+            "scale": "linear"
+          },
+          "point_count": 205,
+          "extrapolation_allowed": false
+        },
+        {
+          "path": "input/curves/fig6/vgs_2.csv",
+          "role": "fit_reference",
+          "series_condition": "VGS=5.5 V",
+          "chart_conditions": "Tj=25°C; typical; VGS=4.5,5,5.5,6,6.5,10 V",
+          "x_axis": {
+            "quantity": "VDS",
+            "unit": "V",
+            "scale": "linear"
+          },
+          "y_axis": {
+            "quantity": "ID",
+            "unit": "A",
+            "scale": "linear"
+          },
+          "point_count": 206,
+          "extrapolation_allowed": false
+        },
+        {
+          "path": "input/curves/fig6/vgs_3.csv",
+          "role": "fit_reference",
+          "series_condition": "VGS=6 V",
+          "chart_conditions": "Tj=25°C; typical; VGS=4.5,5,5.5,6,6.5,10 V",
+          "x_axis": {
+            "quantity": "VDS",
+            "unit": "V",
+            "scale": "linear"
+          },
+          "y_axis": {
+            "quantity": "ID",
+            "unit": "A",
+            "scale": "linear"
+          },
+          "point_count": 206,
+          "extrapolation_allowed": false
+        },
+        {
+          "path": "input/curves/fig6/vgs_4.csv",
+          "role": "fit_reference",
+          "series_condition": "VGS=6.5 V",
+          "chart_conditions": "Tj=25°C; typical; VGS=4.5,5,5.5,6,6.5,10 V",
+          "x_axis": {
+            "quantity": "VDS",
+            "unit": "V",
+            "scale": "linear"
+          },
+          "y_axis": {
+            "quantity": "ID",
+            "unit": "A",
+            "scale": "linear"
+          },
+          "point_count": 205,
+          "extrapolation_allowed": false
+        },
+        {
+          "path": "input/curves/fig6/vgs_5.csv",
+          "role": "fit_reference",
+          "series_condition": "VGS=10 V",
+          "chart_conditions": "Tj=25°C; typical; VGS=4.5,5,5.5,6,6.5,10 V",
+          "x_axis": {
+            "quantity": "VDS",
+            "unit": "V",
+            "scale": "linear"
+          },
+          "y_axis": {
+            "quantity": "ID",
+            "unit": "A",
+            "scale": "linear"
+          },
+          "point_count": 205,
+          "extrapolation_allowed": false
+        }
+      ]
+    },
+    {
+      "feature": "transfer_iv",
+      "priority": "first",
+      "reference_parameters": [
+        {
+          "id": "vth25",
+          "key": "gate_threshold_voltage",
+          "values": {
+            "min": 2.4,
+            "typ": 3,
+            "max": 4
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        {
+          "id": "vth175",
+          "key": "gate_threshold_voltage",
+          "values": {
+            "min": 1
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=175°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        {
+          "id": "vthcold",
+          "key": "gate_threshold_voltage",
+          "values": {
+            "max": 4.5
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=-55°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": true,
+      "selected_curve_files": [
+        "input/curves/fig7/tj175.csv",
+        "input/curves/fig7/tj25.csv"
+      ],
+      "required_template_capability": "转移特性",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [
+        "尚需检查候选模板能力",
+        "尚需确定拟合区间和误差标准"
+      ],
+      "enabled": false,
+      "curve_bindings": [
+        {
+          "path": "input/curves/fig7/tj175.csv",
+          "role": "fit_reference",
+          "series_condition": "Tj=175 C",
+          "chart_conditions": "VDS=10 V; typical; Tj=25°C and 175°C",
+          "x_axis": {
+            "quantity": "VGS",
+            "unit": "V",
+            "scale": "linear"
+          },
+          "y_axis": {
+            "quantity": "ID",
+            "unit": "A",
+            "scale": "linear"
+          },
+          "point_count": 208,
+          "extrapolation_allowed": false
+        },
+        {
+          "path": "input/curves/fig7/tj25.csv",
+          "role": "fit_reference",
+          "series_condition": "Tj=25 C",
+          "chart_conditions": "VDS=10 V; typical; Tj=25°C and 175°C",
+          "x_axis": {
+            "quantity": "VGS",
+            "unit": "V",
+            "scale": "linear"
+          },
+          "y_axis": {
+            "quantity": "ID",
+            "unit": "A",
+            "scale": "linear"
+          },
+          "point_count": 207,
+          "extrapolation_allowed": false
+        }
+      ]
+    },
+    {
+      "feature": "body_diode",
+      "priority": "first",
+      "reference_parameters": [
+        {
+          "id": "vsd",
+          "key": "body_diode_forward_voltage",
+          "values": {
+            "typ": 0.83,
+            "max": 1.2
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; IS=5 A; VGS=0 V; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "体二极管",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [],
+      "enabled": false
+    },
+    {
+      "feature": "capacitances",
+      "priority": "later",
+      "reference_parameters": [
+        {
+          "id": "ciss",
+          "key": "input_capacitance",
+          "values": {
+            "typ": 401,
+            "max": 535
+          },
+          "unit": "pF",
+          "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        {
+          "id": "coss",
+          "key": "output_capacitance",
+          "values": {
+            "typ": 73,
+            "max": 87
+          },
+          "unit": "pF",
+          "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        {
+          "id": "crss",
+          "key": "reverse_transfer_capacitance",
+          "values": {
+            "typ": 53,
+            "max": 72
+          },
+          "unit": "pF",
+          "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "端口电容及偏压依赖",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [],
+      "enabled": false
+    },
+    {
+      "feature": "switching",
+      "priority": "later",
+      "reference_parameters": [
+        {
+          "id": "qg",
+          "key": "total_gate_charge",
+          "values": {
+            "typ": 9.2
+          },
+          "unit": "nC",
+          "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; VGS=10 V; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        {
+          "id": "tr",
+          "key": "rise_time",
+          "values": {
+            "typ": 5.1
+          },
+          "unit": "ns",
+          "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        {
+          "id": "tf",
+          "key": "fall_time",
+          "values": {
+            "typ": 5.4
+          },
+          "unit": "ns",
+          "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "栅电荷和开关瞬态",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [],
+      "enabled": false
+    }
+  ],
+  "required_inventory": "manual_inventory.json",
+  "execution_cases": [],
+  "unresolved": [
+    "完整覆盖清单复核",
+    "未绑定参考与测试接口",
+    "统一验收阈值"
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "device": "EMHK350ARA470MF80G",
+  "status": "development_queue_not_executable_test_plan",
+  "required_features": [
+    {
+      "feature": "capacitance",
+      "priority": "first",
+      "reference_parameters": [
+        {
+          "id": "cap",
+          "key": "capacitance",
+          "values": {
+            "nominal": 47
+          },
+          "unit": "μF",
+          "conditions": "20°C; 120 Hz",
+          "applies_to": [
+            "EMHK350ARA470MF80G"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b21",
+            "p0"
+          ]
+        },
+        {
+          "id": "cap_tolerance",
+          "key": "capacitance_tolerance",
+          "values": {
+            "min": -20,
+            "max": 20
+          },
+          "unit": "%",
+          "conditions": "20°C; 120 Hz",
+          "applies_to": [
+            "EMHK350ARA470MF80G"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b4",
+            "p0"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "电容及容差",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [
+        "需区分典型值、上限和等效模型假设",
+        "尚需检查模板及制定测试条件"
+      ],
+      "enabled": false
+    },
+    {
+      "feature": "esr",
+      "priority": "first",
+      "reference_parameters": [
+        {
+          "id": "esr20",
+          "key": "equivalent_series_resistance",
+          "values": {
+            "max": 0.3
+          },
+          "unit": "Ω",
+          "conditions": "20°C; 100..400 kHz; F80 initial",
+          "applies_to": [
+            "EMHK350ARA470MF80G"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b21",
+            "p0"
+          ]
+        },
+        {
+          "id": "esr-40",
+          "key": "equivalent_series_resistance",
+          "values": {
+            "max": 3.0
+          },
+          "unit": "Ω",
+          "conditions": "-40°C; 100..400 kHz; F80 initial",
+          "applies_to": [
+            "EMHK350ARA470MF80G"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b21",
+            "p0"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "串联损耗；保留频率和温度条件",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [
+        "需区分典型值、上限和等效模型假设",
+        "尚需检查模板及制定测试条件"
+      ],
+      "enabled": false
+    },
+    {
+      "feature": "leakage",
+      "priority": "first",
+      "reference_parameters": [
+        {
+          "id": "leakage",
+          "key": "leakage_current",
+          "values": {
+            "max": "0.01 × C × V"
+          },
+          "unit": "μA",
+          "conditions": "20°C; after 2 min; C in μF, V is rated voltage in V",
+          "applies_to": [
+            "EMHK350ARA470MF80G"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b4",
+            "p0"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": false,
+      "selected_curve_files": [],
+      "required_template_capability": "漏电等效行为",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [
+        "需区分典型值、上限和等效模型假设",
+        "尚需检查模板及制定测试条件"
+      ],
+      "enabled": false
+    },
+    {
+      "feature": "frequency_temperature_dependence",
+      "priority": "later",
+      "reference_parameters": [
+        {
+          "id": "impedance_ratio_-25",
+          "key": "impedance_ratio",
+          "values": {
+            "max": 2
+          },
+          "unit": "1",
+          "conditions": "Z(-25°C)/Z(20°C); 120 Hz",
+          "applies_to": [
+            "EMHK350ARA470MF80G"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b4",
+            "p0"
+          ]
+        },
+        {
+          "id": "impedance_ratio_-40",
+          "key": "impedance_ratio",
+          "values": {
+            "max": 3
+          },
+          "unit": "1",
+          "conditions": "Z(-40°C)/Z(20°C); 120 Hz",
+          "applies_to": [
+            "EMHK350ARA470MF80G"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b4",
+            "p0"
+          ]
+        }
+      ],
+      "missing_reference_keys": [],
+      "curve_reference_required": true,
+      "selected_curve_files": [],
+      "required_template_capability": "阻抗随频率和温度变化",
+      "template_support": "not_checked",
+      "input_sufficiency": "not_assessed",
+      "gaps": [
+        "需区分典型值、上限和等效模型假设",
+        "尚需检查模板及制定测试条件"
+      ],
+      "enabled": false
+    }
+  ],
+  "required_inventory": "manual_inventory.json",
+  "execution_cases": [],
+  "unresolved": [
+    "完整覆盖清单复核",
+    "未绑定参考与测试接口",
+    "统一验收阈值"
+  ]
+}

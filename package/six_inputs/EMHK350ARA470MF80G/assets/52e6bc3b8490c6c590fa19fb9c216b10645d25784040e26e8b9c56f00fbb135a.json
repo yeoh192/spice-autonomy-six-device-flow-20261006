@@ -1,0 +1,575 @@
+{
+  "schema_version": "electrical-multimodal-pilot-0.3",
+  "target": "EMHK350ARA470MF80G",
+  "category": "aluminum_electrolytic_capacitor",
+  "status": "auto_processed",
+  "identity": {
+    "manufacturer": "Nippon Chemi-Con",
+    "package": "SMD F80, terminal A",
+    "match_status": "series_rule",
+    "match_note": "标准品表为EMHK350□RA470MF80G；由型号编码图核对□=A端子，不把HA0替代尺寸并入。",
+    "evidence_refs": [
+      "b14",
+      "b16",
+      "b21",
+      "p0"
+    ]
+  },
+  "variants": [],
+  "parameters": [
+    {
+      "id": "cap",
+      "key": "capacitance",
+      "values": {
+        "nominal": 47
+      },
+      "unit": "μF",
+      "conditions": "20°C; 120 Hz",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b21",
+        "p0"
+      ]
+    },
+    {
+      "id": "cap_tolerance",
+      "key": "capacitance_tolerance",
+      "values": {
+        "min": -20,
+        "max": 20
+      },
+      "unit": "%",
+      "conditions": "20°C; 120 Hz",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b4",
+        "p0"
+      ]
+    },
+    {
+      "id": "rated_voltage",
+      "key": "rated_voltage",
+      "values": {
+        "rated": 35
+      },
+      "unit": "V",
+      "conditions": "",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "rated",
+      "state": "initial",
+      "evidence_refs": [
+        "b21",
+        "p0"
+      ]
+    },
+    {
+      "id": "temperature",
+      "key": "category_temperature",
+      "values": {
+        "min": -40,
+        "max": 125
+      },
+      "unit": "°C",
+      "conditions": "",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "operating_range",
+      "state": "initial",
+      "evidence_refs": [
+        "b4",
+        "p0"
+      ]
+    },
+    {
+      "id": "leakage",
+      "key": "leakage_current",
+      "values": {
+        "max": "0.01 × C × V"
+      },
+      "unit": "μA",
+      "conditions": "20°C; after 2 min; C in μF, V is rated voltage in V",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b4",
+        "p0"
+      ]
+    },
+    {
+      "id": "df",
+      "key": "dissipation_factor",
+      "values": {
+        "max": 0.14
+      },
+      "unit": "1",
+      "conditions": "20°C; 120 Hz",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b4",
+        "p0"
+      ]
+    },
+    {
+      "id": "impedance_ratio_-25",
+      "key": "impedance_ratio",
+      "values": {
+        "max": 2
+      },
+      "unit": "1",
+      "conditions": "Z(-25°C)/Z(20°C); 120 Hz",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b4",
+        "p0"
+      ]
+    },
+    {
+      "id": "impedance_ratio_-40",
+      "key": "impedance_ratio",
+      "values": {
+        "max": 3
+      },
+      "unit": "1",
+      "conditions": "Z(-40°C)/Z(20°C); 120 Hz",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b4",
+        "p0"
+      ]
+    },
+    {
+      "id": "esr20",
+      "key": "equivalent_series_resistance",
+      "values": {
+        "max": 0.3
+      },
+      "unit": "Ω",
+      "conditions": "20°C; 100..400 kHz; F80 initial",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b21",
+        "p0"
+      ]
+    },
+    {
+      "id": "esr-40",
+      "key": "equivalent_series_resistance",
+      "values": {
+        "max": 3.0
+      },
+      "unit": "Ω",
+      "conditions": "-40°C; 100..400 kHz; F80 initial",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b21",
+        "p0"
+      ]
+    },
+    {
+      "id": "ripple",
+      "key": "rated_ripple_current",
+      "values": {
+        "rated": 240
+      },
+      "unit": "mA rms",
+      "conditions": "125°C; 100..400 kHz",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "rated",
+      "state": "initial",
+      "evidence_refs": [
+        "b21",
+        "p0"
+      ]
+    },
+    {
+      "id": "ripple_factor120",
+      "key": "ripple_frequency_multiplier",
+      "values": {
+        "value": 0.4
+      },
+      "unit": "1",
+      "conditions": "47..100 μF row; frequency=120 Hz",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b18",
+        "p0"
+      ]
+    },
+    {
+      "id": "ripple_factor1000",
+      "key": "ripple_frequency_multiplier",
+      "values": {
+        "value": 0.75
+      },
+      "unit": "1",
+      "conditions": "47..100 μF row; frequency=1000 Hz",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b18",
+        "p0"
+      ]
+    },
+    {
+      "id": "ripple_factor10000",
+      "key": "ripple_frequency_multiplier",
+      "values": {
+        "value": 0.9
+      },
+      "unit": "1",
+      "conditions": "47..100 μF row; frequency=10000 Hz",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b18",
+        "p0"
+      ]
+    },
+    {
+      "id": "ripple_factor100000",
+      "key": "ripple_frequency_multiplier",
+      "values": {
+        "value": 1.0
+      },
+      "unit": "1",
+      "conditions": "47..100 μF row; frequency=100000 Hz",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b18",
+        "p0"
+      ]
+    },
+    {
+      "id": "endurance",
+      "key": "endurance_duration",
+      "values": {
+        "value": 2000
+      },
+      "unit": "h",
+      "conditions": "125°C; rated voltage applied; restore to 20°C before checking",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "qualification_test",
+      "state": "initial",
+      "evidence_refs": [
+        "b4",
+        "p0"
+      ]
+    },
+    {
+      "id": "endurance_cap",
+      "key": "capacitance_change",
+      "values": {
+        "min": -30,
+        "max": 30
+      },
+      "unit": "%",
+      "conditions": "After endurance test; relative to initial",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "after_endurance",
+      "evidence_refs": [
+        "b4",
+        "p0"
+      ]
+    },
+    {
+      "id": "endurance_df",
+      "key": "dissipation_factor_relative_limit",
+      "values": {
+        "max": 300
+      },
+      "unit": "% of initial specified value",
+      "conditions": "After endurance test",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "after_endurance",
+      "evidence_refs": [
+        "b4",
+        "p0"
+      ]
+    },
+    {
+      "id": "endurance_esr",
+      "key": "equivalent_series_resistance",
+      "values": {
+        "max": 6.0
+      },
+      "unit": "Ω",
+      "conditions": "F80; -40°C; 400 kHz; after endurance test",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "after_endurance",
+      "evidence_refs": [
+        "b4",
+        "p0"
+      ]
+    },
+    {
+      "id": "shelf",
+      "key": "shelf_life_duration",
+      "values": {
+        "value": 1000
+      },
+      "unit": "h",
+      "conditions": "125°C; no voltage; restore to 20°C; specified voltage-treatment preconditioning",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "qualification_test",
+      "state": "initial",
+      "evidence_refs": [
+        "b4",
+        "p0"
+      ]
+    },
+    {
+      "id": "dim_D",
+      "key": "package_dimension_D",
+      "values": {
+        "nominal": 6.3,
+        "tolerance": "±0.5"
+      },
+      "unit": "mm",
+      "conditions": "F80; see drawing for axis",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "mechanical",
+      "state": "initial",
+      "evidence_refs": [
+        "b14",
+        "p0"
+      ]
+    },
+    {
+      "id": "dim_L",
+      "key": "package_dimension_L",
+      "values": {
+        "nominal": 7.7,
+        "tolerance": "±0.3"
+      },
+      "unit": "mm",
+      "conditions": "F80; see drawing for axis",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "mechanical",
+      "state": "initial",
+      "evidence_refs": [
+        "b14",
+        "p0"
+      ]
+    },
+    {
+      "id": "dim_A",
+      "key": "package_dimension_A",
+      "values": {
+        "nominal": 6.6,
+        "tolerance": "±0.2"
+      },
+      "unit": "mm",
+      "conditions": "F80; see drawing for axis",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "mechanical",
+      "state": "initial",
+      "evidence_refs": [
+        "b14",
+        "p0"
+      ]
+    },
+    {
+      "id": "dim_B",
+      "key": "package_dimension_B",
+      "values": {
+        "nominal": 6.6,
+        "tolerance": "±0.2"
+      },
+      "unit": "mm",
+      "conditions": "F80; see drawing for axis",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "mechanical",
+      "state": "initial",
+      "evidence_refs": [
+        "b14",
+        "p0"
+      ]
+    },
+    {
+      "id": "dim_C",
+      "key": "package_dimension_C",
+      "values": {
+        "nominal": 7.2,
+        "tolerance": "±0.2"
+      },
+      "unit": "mm",
+      "conditions": "F80; see drawing for axis",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "mechanical",
+      "state": "initial",
+      "evidence_refs": [
+        "b14",
+        "p0"
+      ]
+    },
+    {
+      "id": "dim_W",
+      "key": "terminal_width_W",
+      "values": {
+        "min": 0.5,
+        "max": 0.8
+      },
+      "unit": "mm",
+      "conditions": "F80",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "mechanical",
+      "state": "initial",
+      "evidence_refs": [
+        "b14",
+        "p0"
+      ]
+    },
+    {
+      "id": "dim_P",
+      "key": "terminal_spacing_P",
+      "values": {
+        "value": 1.9
+      },
+      "unit": "mm",
+      "conditions": "F80; no tolerance stated in row",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "rating_kind": "mechanical",
+      "state": "initial",
+      "evidence_refs": [
+        "b14",
+        "p0"
+      ]
+    }
+  ],
+  "pins": [
+    {
+      "number": null,
+      "label": "+",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "package": "SMD F80, terminal A",
+      "connection_note": "Positive terminal; drawing has polarity mark, not a numeric pin number",
+      "evidence_refs": [
+        "b7",
+        "b8",
+        "p0"
+      ]
+    },
+    {
+      "number": null,
+      "label": "−",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "package": "SMD F80, terminal A",
+      "connection_note": "Negative terminal; no invented numeric pin number",
+      "evidence_refs": [
+        "b7",
+        "b8",
+        "p0"
+      ]
+    }
+  ],
+  "topology": [],
+  "curves": [],
+  "review": [
+    {
+      "code": "CONDITION_SEPARATED",
+      "detail": "初始ESR 3 Ω与耐久后ESR 6 Ω条件不同，分别存储；漏电流保留公式，未额外计算。",
+      "evidence_refs": [
+        "b4",
+        "b21",
+        "p0"
+      ],
+      "blocks_direct_spice_generation": false
+    },
+    {
+      "code": "NO_ELECTRICAL_CURVES",
+      "detail": "该两页资料没有待数字化的电气特性曲线；尺寸和编码图按图解核对。",
+      "evidence_refs": [
+        "p0"
+      ],
+      "blocks_direct_spice_generation": false
+    }
+  ],
+  "automation": {
+    "human_review_required": false,
+    "previous_extraction_status": "needs_review",
+    "curve_scope": "8 previously identified charts only; empty curves does not mean source has no curves",
+    "source_electrical_sha256": "5a3d0a3b242466a4c68f7753a13a73ba8a97b7a75c9a752caed359a644d4c767",
+    "metrics_file": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/digitization_summary.json"
+  }
+}

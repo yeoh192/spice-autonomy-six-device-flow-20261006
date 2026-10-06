@@ -1,0 +1,28 @@
+{
+  "schema": "test-method-1",
+  "id": "gate_charge_regions",
+  "version": "1.0.0",
+  "family": "mosfet_n_channel",
+  "keys": [
+    "gate_source_charge",
+    "gate_drain_charge",
+    "gate_plateau_voltage"
+  ],
+  "figures": [],
+  "stage": "interface_or_definition_required",
+  "authoring": "GPT-assisted engineering draft",
+  "qwen_qualified": false,
+  "live_validated": false,
+  "meaning": "Fig.14定义已纳入；尚需受验证的Miller区段端点/平台解析器，不能用固定VGS代替QGS/QGD分界",
+  "reason": "Fig.14定义已纳入；尚需受验证的Miller区段端点/平台解析器，不能用固定VGS代替QGS/QGD分界",
+  "required": [
+    "明确端口语义",
+    "原手册条件及证据",
+    "测量单位与参考数据",
+    "独立审查",
+    "已知电路校准",
+    "真实DUT试运行"
+  ],
+  "acceptance_policy": "手册极限与典型值容差分别核对；不存在的容差保持pending",
+  "reuse_scope": "参数化方法不是任何器件已验证证明；具体契约需校准并试跑"
+}

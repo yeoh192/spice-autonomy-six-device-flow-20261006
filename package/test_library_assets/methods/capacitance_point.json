@@ -1,0 +1,28 @@
+{
+  "schema": "test-method-1",
+  "id": "capacitance_point",
+  "version": "1.0.0",
+  "family": "mosfet_n_channel",
+  "keys": [
+    "input_capacitance",
+    "output_capacitance",
+    "reverse_transfer_capacitance"
+  ],
+  "figures": [],
+  "stage": "executable_draft",
+  "authoring": "GPT-assisted engineering draft",
+  "qwen_qualified": false,
+  "live_validated": false,
+  "meaning": "单频交流端口电流法Ciss/Coss/Crss",
+  "reason": "单频交流端口电流法Ciss/Coss/Crss",
+  "required": [
+    "明确端口语义",
+    "原手册条件及证据",
+    "测量单位与参考数据",
+    "独立审查",
+    "已知电路校准",
+    "真实DUT试运行"
+  ],
+  "acceptance_policy": "手册极限与典型值容差分别核对；不存在的容差保持pending",
+  "reuse_scope": "参数化方法不是任何器件已验证证明；具体契约需校准并试跑"
+}

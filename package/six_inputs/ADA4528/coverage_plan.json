@@ -1,0 +1,5066 @@
+{
+  "schema_version": "coverage-plan-2",
+  "device": "ADA4528-1_MSOP",
+  "manual": {
+    "path": "/Users/192y/电气/六器件标准输入包_20261006/ADA4528/manual/ADA4528_数据手册.pdf",
+    "sha256": "fce0580e62c03c6e03b5777611bfbbf28574e03bf033de3d691f3c095861592f"
+  },
+  "review_status": "page_anchored_inventory_expanded_series_and_footnote_review_pending",
+  "items": [
+    {
+      "id": "parameter:supply_abs",
+      "kind": "constraint",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "supply_abs",
+        "key": "supply_voltage",
+        "values": {
+          "max": 6
+        },
+        "unit": "V",
+        "conditions": "",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b56",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:supply_range",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "supply_range",
+        "key": "supply_voltage",
+        "values": {
+          "min": 2.2,
+          "max": 5.5
+        },
+        "unit": "V",
+        "conditions": "Supply range used for PSRR specification; single supply",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "operating_range",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "b52",
+          "p2",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3,
+        5
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:temperature",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "temperature",
+        "key": "operating_temperature",
+        "values": {
+          "min": -40,
+          "max": 125
+        },
+        "unit": "°C",
+        "conditions": "",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "operating_range",
+        "state": "initial",
+        "evidence_refs": [
+          "b56",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:storage",
+      "kind": "constraint",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "storage",
+        "key": "storage_temperature",
+        "values": {
+          "min": -65,
+          "max": 150
+        },
+        "unit": "°C",
+        "conditions": "",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b56",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:thermal_ja_MSOP",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "thermal_ja_MSOP",
+        "key": "thermal_resistance_junction_ambient",
+        "values": {
+          "value": 142
+        },
+        "unit": "°C/W",
+        "conditions": "4-layer JEDEC board; exposed pad soldered where applicable",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-2_MSOP"
+        ],
+        "rating_kind": "thermal",
+        "state": "initial",
+        "evidence_refs": [
+          "b61",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:thermal_jc_MSOP",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "thermal_jc_MSOP",
+        "key": "thermal_resistance_junction_case",
+        "values": {
+          "value": 45
+        },
+        "unit": "°C/W",
+        "conditions": "Case measured at package top; footnote 1 is not part of numeric value",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-2_MSOP"
+        ],
+        "rating_kind": "thermal",
+        "state": "initial",
+        "evidence_refs": [
+          "b61",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:thermal_ja_LFCSP",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "thermal_ja_LFCSP",
+        "key": "thermal_resistance_junction_ambient",
+        "values": {
+          "value": 83.5
+        },
+        "unit": "°C/W",
+        "conditions": "4-layer JEDEC board; exposed pad soldered where applicable",
+        "applies_to": [
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "thermal",
+        "state": "initial",
+        "evidence_refs": [
+          "b61",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:thermal_jc_LFCSP",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "thermal_jc_LFCSP",
+        "key": "thermal_resistance_junction_case",
+        "values": {
+          "value": 48.5
+        },
+        "unit": "°C/W",
+        "conditions": "Case measured at package top; footnote 1 is not part of numeric value",
+        "applies_to": [
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "thermal",
+        "state": "initial",
+        "evidence_refs": [
+          "b61",
+          "p5"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:vos_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vos_2.5",
+        "key": "input_offset_voltage",
+        "values": {
+          "typ": 0.3,
+          "max": 2.5
+        },
+        "unit": "μV",
+        "conditions": "VSY=2.5 V; VCM=0..2.5 V; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:cmrr_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "cmrr_2.5",
+        "key": "common_mode_rejection_ratio",
+        "values": {
+          "min": 135,
+          "typ": 158
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.5 V; VCM=0..2.5 V; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:cmrr_full_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "cmrr_full_2.5",
+        "key": "common_mode_rejection_ratio",
+        "values": {
+          "min": 116
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.5 V; VCM=0..2.5 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:rin_diff_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "rin_diff_2.5",
+        "key": "differential_input_resistance",
+        "values": {
+          "typ": 225
+        },
+        "unit": "kΩ",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:rin_cm_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "rin_cm_2.5",
+        "key": "common_mode_input_resistance",
+        "values": {
+          "typ": 1
+        },
+        "unit": "GΩ",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:cin_diff_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "cin_diff_2.5",
+        "key": "differential_input_capacitance",
+        "values": {
+          "typ": 15
+        },
+        "unit": "pF",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_parallel_capacitance",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:cin_cm_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "cin_cm_2.5",
+        "key": "common_mode_input_capacitance",
+        "values": {
+          "typ": 30
+        },
+        "unit": "pF",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_parallel_capacitance",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:icc_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "icc_2.5",
+        "key": "supply_current_per_amplifier",
+        "values": {
+          "typ": 1.4,
+          "max": 1.7
+        },
+        "unit": "mA",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; IO=0 mA",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:icc_full_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "icc_full_2.5",
+        "key": "supply_current_per_amplifier",
+        "values": {
+          "max": 2.1
+        },
+        "unit": "mA",
+        "conditions": "VSY=2.5 V; TA=-40..125°C; IO=0 mA",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:psrr_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "psrr_2.5",
+        "key": "power_supply_rejection_ratio",
+        "values": {
+          "min": 130,
+          "typ": 150
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.2..5.5 V; TA=25°C; specified in 2.5 V table",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:sr_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "sr_2.5",
+        "key": "slew_rate",
+        "values": {
+          "typ": 0.45
+        },
+        "unit": "V/μs",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_slope",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:gbp_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "gbp_2.5",
+        "key": "gain_bandwidth_product",
+        "values": {
+          "typ": 3
+        },
+        "unit": "MHz",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_crossing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:bw_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "bw_2.5",
+        "key": "closed_loop_bandwidth_minus3dB",
+        "values": {
+          "typ": 6.2
+        },
+        "unit": "MHz",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_crossing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:noise_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "noise_2.5",
+        "key": "input_voltage_noise_peak_to_peak",
+        "values": {
+          "typ": 97
+        },
+        "unit": "nV p-p",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; 0.1..10 Hz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:density_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "density_2.5",
+        "key": "input_voltage_noise_density",
+        "values": {
+          "typ": 5.6
+        },
+        "unit": "nV/√Hz",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; f=1 kHz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:current_density_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "current_density_2.5",
+        "key": "input_current_noise_density",
+        "values": {
+          "typ": 0.7
+        },
+        "unit": "pA/√Hz",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; f=1 kHz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:recovery_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "recovery_2.5",
+        "key": "overload_recovery_time",
+        "values": {
+          "typ": 50
+        },
+        "unit": "μs",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; RL=10 kΩ; CL=100 pF; AV=-10",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:vos_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vos_5",
+        "key": "input_offset_voltage",
+        "values": {
+          "typ": 0.3,
+          "max": 2.5
+        },
+        "unit": "μV",
+        "conditions": "VSY=5 V; VCM=0..5 V; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:cmrr_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "cmrr_5",
+        "key": "common_mode_rejection_ratio",
+        "values": {
+          "min": 137,
+          "typ": 160
+        },
+        "unit": "dB",
+        "conditions": "VSY=5 V; VCM=0..5 V; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:cmrr_full_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "cmrr_full_5",
+        "key": "common_mode_rejection_ratio",
+        "values": {
+          "min": 122
+        },
+        "unit": "dB",
+        "conditions": "VSY=5 V; VCM=0..5 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:rin_diff_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "rin_diff_5",
+        "key": "differential_input_resistance",
+        "values": {
+          "typ": 190
+        },
+        "unit": "kΩ",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:rin_cm_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "rin_cm_5",
+        "key": "common_mode_input_resistance",
+        "values": {
+          "typ": 1
+        },
+        "unit": "GΩ",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:cin_diff_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "cin_diff_5",
+        "key": "differential_input_capacitance",
+        "values": {
+          "typ": 16.5
+        },
+        "unit": "pF",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_parallel_capacitance",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:cin_cm_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "cin_cm_5",
+        "key": "common_mode_input_capacitance",
+        "values": {
+          "typ": 33
+        },
+        "unit": "pF",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_parallel_capacitance",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:icc_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "icc_5",
+        "key": "supply_current_per_amplifier",
+        "values": {
+          "typ": 1.5,
+          "max": 1.8
+        },
+        "unit": "mA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; IO=0 mA",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:icc_full_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "icc_full_5",
+        "key": "supply_current_per_amplifier",
+        "values": {
+          "max": 2.2
+        },
+        "unit": "mA",
+        "conditions": "VSY=5 V; TA=-40..125°C; IO=0 mA",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:psrr_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "psrr_5",
+        "key": "power_supply_rejection_ratio",
+        "values": {
+          "min": 130,
+          "typ": 150
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.2..5.5 V; TA=25°C; specified in 5 V table",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:sr_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "sr_5",
+        "key": "slew_rate",
+        "values": {
+          "typ": 0.5
+        },
+        "unit": "V/μs",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_slope",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:gbp_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "gbp_5",
+        "key": "gain_bandwidth_product",
+        "values": {
+          "typ": 3.4
+        },
+        "unit": "MHz",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_crossing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:bw_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "bw_5",
+        "key": "closed_loop_bandwidth_minus3dB",
+        "values": {
+          "typ": 6.5
+        },
+        "unit": "MHz",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_crossing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:noise_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "noise_5",
+        "key": "input_voltage_noise_peak_to_peak",
+        "values": {
+          "typ": 99
+        },
+        "unit": "nV p-p",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; 0.1..10 Hz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:density_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "density_5",
+        "key": "input_voltage_noise_density",
+        "values": {
+          "typ": 5.9
+        },
+        "unit": "nV/√Hz",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; f=1 kHz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:current_density_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "current_density_5",
+        "key": "input_current_noise_density",
+        "values": {
+          "typ": 0.5
+        },
+        "unit": "pA/√Hz",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; f=1 kHz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:recovery_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "recovery_5",
+        "key": "overload_recovery_time",
+        "values": {
+          "typ": 50
+        },
+        "unit": "μs",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; RL=10 kΩ; CL=100 pF; AV=-10",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:vos_2.5_full_MSOP",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vos_2.5_full_MSOP",
+        "key": "input_offset_voltage",
+        "values": {
+          "max": 4
+        },
+        "unit": "μV",
+        "conditions": "VSY=2.5 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-2_MSOP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:drift_2.5_MSOP",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "drift_2.5_MSOP",
+        "key": "offset_voltage_drift",
+        "values": {
+          "typ": 0.002,
+          "max": 0.015
+        },
+        "unit": "μV/°C",
+        "conditions": "VSY=2.5 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-2_MSOP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:vos_2.5_full_LFCSP",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "vos_2.5_full_LFCSP",
+        "key": "input_offset_voltage",
+        "values": {
+          "max": 4.3
+        },
+        "unit": "μV",
+        "conditions": "VSY=2.5 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:drift_2.5_LFCSP",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "drift_2.5_LFCSP",
+        "key": "offset_voltage_drift",
+        "values": {
+          "max": 0.018
+        },
+        "unit": "μV/°C",
+        "conditions": "VSY=2.5 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:vos_5_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vos_5_full",
+        "key": "input_offset_voltage",
+        "values": {
+          "max": 4
+        },
+        "unit": "μV",
+        "conditions": "VSY=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:drift_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "drift_5",
+        "key": "offset_voltage_drift",
+        "values": {
+          "typ": 0.002,
+          "max": 0.015
+        },
+        "unit": "μV/°C",
+        "conditions": "VSY=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:ib_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "ib_2.5",
+        "key": "input_bias_current",
+        "values": {
+          "typ": 220,
+          "max": 400
+        },
+        "unit": "pA",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:ib_2.5_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "ib_2.5_full",
+        "key": "input_bias_current",
+        "values": {
+          "max": 600
+        },
+        "unit": "pA",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:ios_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "ios_2.5",
+        "key": "input_offset_current",
+        "values": {
+          "typ": 440,
+          "max": 800
+        },
+        "unit": "pA",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:ios_2.5_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "ios_2.5_full",
+        "key": "input_offset_current",
+        "values": {
+          "max": 1000
+        },
+        "unit": "pA",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:ib_5_1",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "ib_5_1",
+        "key": "input_bias_current",
+        "values": {
+          "typ": 90,
+          "max": 200
+        },
+        "unit": "pA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:ib_5_full_1",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "ib_5_full_1",
+        "key": "input_bias_current",
+        "values": {
+          "max": 300
+        },
+        "unit": "pA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:ios_5_1",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "ios_5_1",
+        "key": "input_offset_current",
+        "values": {
+          "typ": 180,
+          "max": 400
+        },
+        "unit": "pA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:ios_5_full_1",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "ios_5_full_1",
+        "key": "input_offset_current",
+        "values": {
+          "max": 500
+        },
+        "unit": "pA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:ib_5_2",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "ib_5_2",
+        "key": "input_bias_current",
+        "values": {
+          "typ": 125,
+          "max": 250
+        },
+        "unit": "pA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:ib_5_full_2",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "ib_5_full_2",
+        "key": "input_bias_current",
+        "values": {
+          "max": 350
+        },
+        "unit": "pA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:ios_5_2",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "ios_5_2",
+        "key": "input_offset_current",
+        "values": {
+          "typ": 250,
+          "max": 500
+        },
+        "unit": "pA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:ios_5_full_2",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "ios_5_full_2",
+        "key": "input_offset_current",
+        "values": {
+          "max": 600
+        },
+        "unit": "pA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:vin_range_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vin_range_2.5",
+        "key": "input_voltage_range",
+        "values": {
+          "min": 0,
+          "max": 2.5
+        },
+        "unit": "V",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:aol_2.5_0",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "aol_2.5_0",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 130,
+          "typ": 140
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..2.4 V; TA=25°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:aol_2.5_0_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "aol_2.5_0_full",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 126
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..2.4 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:aol_2.5_1",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "aol_2.5_1",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 125,
+          "typ": 132
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..2.4 V; TA=25°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:aol_2.5_1_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "aol_2.5_1_full",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 121
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..2.4 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:aol_2.5_2",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "aol_2.5_2",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 122,
+          "typ": 132
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..2.4 V; TA=25°C",
+        "applies_to": [
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:aol_2.5_2_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": false,
+      "reference_evidence": {
+        "id": "aol_2.5_2_full",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 119
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..2.4 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "not_applicable",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:voh_2.5_10",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "voh_2.5_10",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 2.49,
+          "typ": 2.495
+        },
+        "unit": "V",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:voh_2.5_10_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "voh_2.5_10_full",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 2.485
+        },
+        "unit": "V",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:vol_2.5_10",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vol_2.5_10",
+        "key": "output_voltage_low",
+        "values": {
+          "typ": 5,
+          "max": 10
+        },
+        "unit": "mV",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:vol_2.5_10_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vol_2.5_10_full",
+        "key": "output_voltage_low",
+        "values": {
+          "max": 15
+        },
+        "unit": "mV",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:voh_2.5_2",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "voh_2.5_2",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 2.46,
+          "typ": 2.48
+        },
+        "unit": "V",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:voh_2.5_2_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "voh_2.5_2_full",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 2.44
+        },
+        "unit": "V",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:vol_2.5_2",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vol_2.5_2",
+        "key": "output_voltage_low",
+        "values": {
+          "typ": 20,
+          "max": 40
+        },
+        "unit": "mV",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:vol_2.5_2_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vol_2.5_2_full",
+        "key": "output_voltage_low",
+        "values": {
+          "max": 60
+        },
+        "unit": "mV",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:isc_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "isc_2.5",
+        "key": "short_circuit_current",
+        "values": {
+          "typ": "±30"
+        },
+        "unit": "mA",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:zout_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "zout_2.5",
+        "key": "closed_loop_output_impedance",
+        "values": {
+          "typ": 0.1
+        },
+        "unit": "Ω",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C; f=1 kHz; AV=10",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:psrr_full_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "psrr_full_2.5",
+        "key": "power_supply_rejection_ratio",
+        "values": {
+          "min": 127
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.2..5.5 V; TA=-40..125°C; specified in 2.5 V table",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:settling_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "settling_2.5",
+        "key": "settling_time_to_0.1_percent",
+        "values": {
+          "typ": 7
+        },
+        "unit": "μs",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C; VIN=1.5 V step; RL=10 kΩ; CL=100 pF; AV=-1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:ugc_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "ugc_2.5",
+        "key": "unity_gain_crossover",
+        "values": {
+          "typ": 4
+        },
+        "unit": "MHz",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_crossing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:phase_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "phase_2.5",
+        "key": "phase_margin",
+        "values": {
+          "typ": 57
+        },
+        "unit": "degree",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_phase_margin",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:noise_density_cm_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "noise_density_cm_2.5",
+        "key": "input_voltage_noise_density",
+        "values": {
+          "typ": 5.5
+        },
+        "unit": "nV/√Hz",
+        "conditions": "VSY=2.5 V; VCM=2 V; TA=25°C; f=1 kHz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:current_noise_2.5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "current_noise_2.5",
+        "key": "input_current_noise_peak_to_peak",
+        "values": {
+          "typ": 10
+        },
+        "unit": "pA p-p",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C; 0.1..10 Hz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:vin_range_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vin_range_5",
+        "key": "input_voltage_range",
+        "values": {
+          "min": 0,
+          "max": 5
+        },
+        "unit": "V",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:aol_5_0",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "aol_5_0",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 127,
+          "typ": 139
+        },
+        "unit": "dB",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..4.9 V; TA=25°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:aol_5_0_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "aol_5_0_full",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 125
+        },
+        "unit": "dB",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..4.9 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:aol_5_1",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "aol_5_1",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 121,
+          "typ": 131
+        },
+        "unit": "dB",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..4.9 V; TA=25°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:aol_5_1_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "aol_5_1_full",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 120
+        },
+        "unit": "dB",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..4.9 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:voh_5_10",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "voh_5_10",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 4.99,
+          "typ": 4.995
+        },
+        "unit": "V",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:voh_5_10_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "voh_5_10_full",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 4.98
+        },
+        "unit": "V",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:vol_5_10",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vol_5_10",
+        "key": "output_voltage_low",
+        "values": {
+          "typ": 5,
+          "max": 10
+        },
+        "unit": "mV",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:vol_5_10_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vol_5_10_full",
+        "key": "output_voltage_low",
+        "values": {
+          "max": 20
+        },
+        "unit": "mV",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:voh_5_2",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "voh_5_2",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 4.96,
+          "typ": 4.98
+        },
+        "unit": "V",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:voh_5_2_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "voh_5_2_full",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 4.94
+        },
+        "unit": "V",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:vol_5_2",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vol_5_2",
+        "key": "output_voltage_low",
+        "values": {
+          "typ": 20,
+          "max": 40
+        },
+        "unit": "mV",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:vol_5_2_full",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "vol_5_2_full",
+        "key": "output_voltage_low",
+        "values": {
+          "max": 60
+        },
+        "unit": "mV",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:isc_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "isc_5",
+        "key": "short_circuit_current",
+        "values": {
+          "typ": "±40"
+        },
+        "unit": "mA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:zout_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "zout_5",
+        "key": "closed_loop_output_impedance",
+        "values": {
+          "typ": 0.1
+        },
+        "unit": "Ω",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C; f=1 kHz; AV=10",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:psrr_full_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "psrr_full_5",
+        "key": "power_supply_rejection_ratio",
+        "values": {
+          "min": 127
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.2..5.5 V; TA=-40..125°C; specified in 5 V table",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "parameter:settling_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "settling_5",
+        "key": "settling_time_to_0.1_percent",
+        "values": {
+          "typ": 10
+        },
+        "unit": "μs",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C; VIN=4 V step; RL=10 kΩ; CL=100 pF; AV=-1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:ugc_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "ugc_5",
+        "key": "unity_gain_crossover",
+        "values": {
+          "typ": 4
+        },
+        "unit": "MHz",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_crossing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:phase_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "phase_5",
+        "key": "phase_margin",
+        "values": {
+          "typ": 57
+        },
+        "unit": "degree",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "ac_phase_margin",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:noise_density_cm_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "noise_density_cm_5",
+        "key": "input_voltage_noise_density",
+        "values": {
+          "typ": 5.3
+        },
+        "unit": "nV/√Hz",
+        "conditions": "VSY=5 V; VCM=4.5 V; TA=25°C; f=1 kHz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:current_noise_5",
+      "kind": "test_or_constraint_pending_classification",
+      "applicable": true,
+      "reference_evidence": {
+        "id": "current_noise_5",
+        "key": "input_current_noise_peak_to_peak",
+        "values": {
+          "typ": 10
+        },
+        "unit": "pA p-p",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C; 0.1..10 Hz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:input_abs",
+      "kind": "constraint",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "input_voltage_rating",
+        "values": {
+          "relative_rail_margin": 0.3
+        },
+        "unit": "V",
+        "conditions": "See table4 footnote; solder60s if relevant"
+      },
+      "pdf_pages": [
+        6
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:input_current_abs",
+      "kind": "constraint",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "input_current_rating",
+        "values": {
+          "max_absolute": 10
+        },
+        "unit": "mA",
+        "conditions": "See table4 footnote; solder60s if relevant"
+      },
+      "pdf_pages": [
+        6
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "parameter:differential_abs",
+      "kind": "constraint",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "differential_input_rating",
+        "values": {
+          "relative_supply": 1
+        },
+        "unit": "V",
+        "conditions": "See table4 footnote; solder60s if relevant"
+      },
+      "pdf_pages": [
+        6
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:short_duration",
+      "kind": "constraint",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "short_circuit_duration",
+        "values": {
+          "duration": "indefinite"
+        },
+        "unit": "s",
+        "conditions": "See table4 footnote; solder60s if relevant"
+      },
+      "pdf_pages": [
+        6
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:junction",
+      "kind": "constraint",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "junction_temperature",
+        "values": {
+          "min": -65,
+          "max": 150
+        },
+        "unit": "°C",
+        "conditions": "See table4 footnote; solder60s if relevant"
+      },
+      "pdf_pages": [
+        6
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "parameter:lead_solder",
+      "kind": "constraint",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "solder_temperature",
+        "values": {
+          "max": 300
+        },
+        "unit": "°C",
+        "conditions": "See table4 footnote; solder60s if relevant"
+      },
+      "pdf_pages": [
+        6
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:1",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "ADA4528-1 Pin Configuration, 8-Lead MSOP",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        1
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:2",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "ADA4528-1 Pin Configuration, 8-Lead LFCSP",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        1
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:3",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Voltage Noise Density vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        1
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:4",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "ADA4528-1 Pin Configuration, 8-Lead MSOP",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        7
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:5",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "ADA4528-1 Pin Configuration, 8-Lead LFCSP",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        7
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:6",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "ADA4528-2 Pin Configuration, 8-Lead MSOP",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        8
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:7",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "ADA4528-2 Pin Configuration, 8-Lead LFCSP",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        8
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:8",
+      "kind": "statistical_distribution",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Input Offset Voltage Distribution",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        9
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:9",
+      "kind": "statistical_distribution",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Input Offset Voltage Drift Distribution",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        9
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:10",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Input Offset Voltage vs. Common-Mode Voltage",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        9
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:11",
+      "kind": "statistical_distribution",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Input Offset Voltage Distribution",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        9
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:12",
+      "kind": "statistical_distribution",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Input Offset Voltage Drift Distribution",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        9
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:13",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Input Offset Voltage vs. Common-Mode Voltage",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        9
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:14",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Input Bias Current vs. Temperature",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        10
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:15",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Input Bias Current vs. Common-Mode Voltage",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        10
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:16",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Output Voltage (VOL) to Supply Rail vs. Load Current",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        10
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:17",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Input Bias Current vs. Temperature",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        10
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:18",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Input Bias Current vs. Common-Mode Voltage",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        10
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:19",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Output Voltage (VOL) to Supply Rail vs. Load Current",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        10
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:20",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Output Voltage (VOH) to Supply Rail vs. Load Current",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:21",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Output Voltage (VOL) to Supply Rail vs. Temperature",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:22",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Output Voltage (VOH) to Supply Rail vs. Temperature",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:23",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Output Voltage (VOH) to Supply Rail vs. Load Current",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:24",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Output Voltage (VOL) to Supply Rail vs. Temperature",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:25",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Output Voltage (VOH) to Supply Rail vs. Temperature",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        11
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:26",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Supply Current vs. Supply Voltage",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        12
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:27",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Open-Loop Gain and Phase vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        12
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "figure:28",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Closed-Loop Gain vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        12
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "figure:29",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Supply Current vs. Temperature",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        12
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:30",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Open-Loop Gain and Phase vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        12
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "figure:31",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Closed-Loop Gain vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        12
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "ac_gain_db",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "figure:32",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "CMRR vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        13
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:33",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "PSRR vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        13
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:34",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Closed-Loop Output Impedance vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        13
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:35",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "CMRR vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        13
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:36",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "PSRR vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        13
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:37",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Closed-Loop Output Impedance vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        13
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:38",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Large Signal Transient Response",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        14
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:39",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Small Signal Transient Response",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        14
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:40",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Small Signal Overshoot vs. Load Capacitance",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        14
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "ac_parallel_capacitance",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "figure:41",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Large Signal Transient Response",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        14
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:42",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Small Signal Transient Response",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        14
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:43",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Small Signal Overshoot vs. Load Capacitance",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        14
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "ac_parallel_capacitance",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+    },
+    {
+      "id": "figure:44",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Positive Overload Recovery",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        15
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:45",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Negative Overload Recovery",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        15
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:46",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Positive Settling Time to 0.1%",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        15
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:47",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Positive Overload Recovery",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        15
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:48",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Negative Overload Recovery",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        15
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:49",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Positive Settling Time to 0.1%",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        15
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:50",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Negative Settling Time to 0.1%",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        16
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:51",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Voltage Noise Density vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        16
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:52",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Current Noise Density vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        16
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:53",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Negative Settling Time to 0.1%",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        16
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:54",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Voltage Noise Density vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        16
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:55",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Current Noise Density vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        16
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:56",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "0.1 Hz to 10 Hz Noise",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        17
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:57",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "THD + N vs. Amplitude",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        17
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:58",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "THD + N vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        17
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:59",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "0.1 Hz to 10 Hz Noise",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        17
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:60",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "THD + N vs. Amplitude",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        17
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:61",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "THD + N vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        17
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:62",
+      "kind": "scope_review",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Channel Separation vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        18
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:63",
+      "kind": "scope_review",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Channel Separation vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        18
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:64",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Rail-to-Rail Input and Output",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        19
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:65",
+      "kind": "not_applicable",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Competitor A: Voltage Noise Density vs. Closed-Loop Gain",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        20
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "not_applicable",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:66",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Voltage Noise Density vs. Frequency with Different Gain",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        20
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:67",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Voltage Noise Density vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        21
+      ],
+      "added_from_manual_review": true,
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:68",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Voltage Follower",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        21
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:69",
+      "kind": "scope_review",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Supply Current vs. Supply Voltage (Voltage Follower)",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        21
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:70",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Comparator A",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        21
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:71",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Comparator B",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        21
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:72",
+      "kind": "scope_review",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Supply Current vs. Supply Voltage (Comparator A and",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        22
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:73",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Mismatch in Seebeck Voltages Causes",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        22
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding"
+    },
+    {
+      "id": "figure:74",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "8-Lead Mini Small Outline Package [MSOP]",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        23
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "figure:75",
+      "kind": "informational",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "8-Lead Lead Frame Chip Scale Package [LFCSP]",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        23
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    },
+    {
+      "id": "manual:unlabelled_series_audit",
+      "kind": "scope_review",
+      "applicable": true,
+      "bindings": [],
+      "reference_evidence": {
+        "key": "Audit multitrace plots and figure continuation captions before freezing series count"
+      },
+      "pdf_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "plan_status": "scope_or_corner_review",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending"
+    }
+  ],
+  "counts": {
+    "constraint_audit_required": 10,
+    "test_development_required": 144,
+    "not_applicable": 11,
+    "informational": 12,
+    "scope_or_corner_review": 9
+  },
+  "model_fitting_gate": "blocked_until_test_and_constraint_obligations_resolved",
+  "acceptance_policy": {
+    "schema_version": "batch-acceptance-1",
+    "scope": "工程验收标准，不是厂家新增保证值",
+    "confirmed_by": "用户本侧聊明确采用",
+    "typical_relative_tolerance_percent": 10.0,
+    "curve_thresholds": {
+      "MAE_over_reference_span_percent": 5.0,
+      "max_error_over_reference_span_percent": 10.0
+    },
+    "hard_limits": "手册min/max独立检查",
+    "absolute_maximum": "约束审计，不作普通电气仿真通过承诺",
+    "complete_coverage_required": true,
+    "real_execution_required": true
+  },
+  "full_manual_coverage": false,
+  "source_inventory_sha256": "281f22bc300bf2cf8b00af9d862248c17e4cc1009014d6471cb95960dd88ecc2",
+  "open_contract_issues": [
+    {
+      "reference_ids": [
+        "manual:unlabelled_series_audit"
+      ],
+      "problem": "Resolve numbered figure trace count, dual-channel examples, device sample distributions and comparator examples before complete-review flag"
+    }
+  ]
+}

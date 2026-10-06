@@ -1,0 +1,11 @@
+Declarative SPICE workflow circuit
+.options plotwinsize=0
+.temp 20
+.options method=trap
+.include "model.lib"
+XDUT P N AUXP AUXN SECP SECN REFERENCE_XFMR
+IDRIVE AUXN AUXP 0
+RGROUND AUXN 0 9.9999999999999995e-07
+.dc IDRIVE 0 0.01 0.002
+.save v(auxn) v(auxp)
+.end

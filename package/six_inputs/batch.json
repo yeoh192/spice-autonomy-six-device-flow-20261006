@@ -1,0 +1,136 @@
+{
+  "schema_version": "unified-input-batch-1",
+  "framework_version": "0.2.4-six-inputs",
+  "source_manifest_sha256": "a94bd0a8787dfcc5ea14ea2982dd2c64d10f31801e4e653f3b0ab96e77afe242",
+  "devices": [
+    {
+      "device": "BUK7K52-60E",
+      "folder": "BUK7K52-60E",
+      "input": "BUK7K52-60E/device_input.json",
+      "sha256": "6b7be6268b076b8b4a778be2a76db5e1354e512d50b7df35b8555f82ea8a120c",
+      "configured_tests": 23,
+      "draft_tests": 0,
+      "record_count": 82,
+      "status": "configured_scope_available_with_gaps"
+    },
+    {
+      "device": "1N4148",
+      "folder": "1N4148",
+      "input": "1N4148/device_input.json",
+      "sha256": "fc85f24a73e9eb6b57fbe6a00b78c18f67220156980ffdd6c7b554b20c80d315",
+      "configured_tests": 6,
+      "draft_tests": 0,
+      "record_count": 31,
+      "status": "configured_scope_available_with_gaps"
+    },
+    {
+      "device": "EMHK350ARA470MF80G",
+      "folder": "EMHK350ARA470MF80G",
+      "input": "EMHK350ARA470MF80G/device_input.json",
+      "sha256": "4471b9096f700d9895965218f4a2824f4284e9aaf114a4236bb88b78be6c9e31",
+      "configured_tests": 0,
+      "draft_tests": 8,
+      "record_count": 31,
+      "status": "materials_and_drafts_with_execution_gaps"
+    },
+    {
+      "device": "750311423",
+      "folder": "750311423",
+      "input": "750311423/device_input.json",
+      "sha256": "7b2cb5eb5ceb1af6ba90dcbf5c12dbd8b9b4bac8b8c242d9670afc1a4da132cb",
+      "configured_tests": 0,
+      "draft_tests": 6,
+      "record_count": 18,
+      "status": "materials_and_drafts_with_execution_gaps"
+    },
+    {
+      "device": "ACS723KMATR-20AB-T",
+      "folder": "ACS723",
+      "input": "ACS723/device_input.json",
+      "sha256": "a565b1be2b5e33fbf5200c22664271d6fb825528136356d3b491881a3a519ee0",
+      "configured_tests": 0,
+      "draft_tests": 0,
+      "record_count": 97,
+      "status": "materials_and_drafts_with_execution_gaps"
+    },
+    {
+      "device": "ADA4528-1_MSOP",
+      "folder": "ADA4528",
+      "input": "ADA4528/device_input.json",
+      "sha256": "d837609440b03b964347350fff6a3fdd228b27e8d94e3a507aaf6d796416a5fa",
+      "configured_tests": 0,
+      "draft_tests": 0,
+      "record_count": 186,
+      "status": "materials_and_drafts_with_execution_gaps"
+    }
+  ],
+  "execution_order": [
+    "BUK7K52-60E",
+    "1N4148",
+    "EMHK350ARA470MF80G",
+    "750311423",
+    "ACS723KMATR-20AB-T",
+    "ADA4528-1_MSOP"
+  ],
+  "measurement_primitives": [
+    {
+      "mode": "ac_resistance",
+      "native_unit": "ohm",
+      "status": "implemented_current_version_calibration_required",
+      "qualified_device_fixture": false
+    },
+    {
+      "mode": "ac_impedance_magnitude",
+      "native_unit": "ohm",
+      "status": "implemented_current_version_calibration_required",
+      "qualified_device_fixture": false
+    },
+    {
+      "mode": "ac_series_capacitance",
+      "native_unit": "F",
+      "status": "implemented_current_version_calibration_required",
+      "qualified_device_fixture": false
+    },
+    {
+      "mode": "ac_parallel_capacitance",
+      "native_unit": "F",
+      "status": "implemented_current_version_calibration_required",
+      "qualified_device_fixture": false
+    },
+    {
+      "mode": "ac_inductance",
+      "native_unit": "H",
+      "status": "implemented_current_version_calibration_required",
+      "qualified_device_fixture": false
+    },
+    {
+      "mode": "ac_dissipation_factor",
+      "native_unit": "1",
+      "status": "implemented_current_version_calibration_required",
+      "qualified_device_fixture": false
+    },
+    {
+      "mode": "ac_gain_magnitude",
+      "native_unit": "1",
+      "status": "implemented_current_version_calibration_required",
+      "qualified_device_fixture": false
+    },
+    {
+      "mode": "ac_gain_db",
+      "native_unit": "dB",
+      "status": "implemented_current_version_calibration_required",
+      "qualified_device_fixture": false
+    },
+    {
+      "mode": "ac_phase",
+      "native_unit": "degree",
+      "status": "implemented_current_version_calibration_required",
+      "qualified_device_fixture": false
+    }
+  ],
+  "api_calls": 0,
+  "simulations": 0,
+  "model_fitting_ready": false,
+  "full_batch_delivery": false,
+  "historical_calibrations_are_current_receipts": false
+}

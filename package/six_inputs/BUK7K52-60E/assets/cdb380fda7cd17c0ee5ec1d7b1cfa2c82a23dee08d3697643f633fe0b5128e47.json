@@ -1,0 +1,143 @@
+{
+  "device": "BUK7K52-60E",
+  "pins": [
+    {
+      "number": 1,
+      "label": "S1",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "number": 2,
+      "label": "G1",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "number": 3,
+      "label": "S2",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "number": 4,
+      "label": "G2",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "number": 5,
+      "label": "D2",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "number": 6,
+      "label": "D2",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "number": 7,
+      "label": "D1",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "number": 8,
+      "label": "D1",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    }
+  ],
+  "topology": [
+    {
+      "type": "n_channel_mosfet",
+      "id": "FET1",
+      "gate_pin": 2,
+      "source_pin": 1,
+      "drain_pins": [
+        7,
+        8
+      ],
+      "body_diode_direction": "source_to_drain",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "type": "n_channel_mosfet",
+      "id": "FET2",
+      "gate_pin": 4,
+      "source_pin": 3,
+      "drain_pins": [
+        5,
+        6
+      ],
+      "body_diode_direction": "source_to_drain",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    }
+  ],
+  "model_port_binding": null,
+  "status": "handbook_pin_evidence_preserved_model_binding_pending"
+}

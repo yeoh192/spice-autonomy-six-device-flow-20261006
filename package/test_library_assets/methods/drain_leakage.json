@@ -1,0 +1,26 @@
+{
+  "schema": "test-method-1",
+  "id": "drain_leakage",
+  "version": "1.0.0",
+  "family": "mosfet_n_channel",
+  "keys": [
+    "drain_leakage_current"
+  ],
+  "figures": [],
+  "stage": "executable_draft",
+  "authoring": "GPT-assisted engineering draft",
+  "qwen_qualified": false,
+  "live_validated": false,
+  "meaning": "固定VDS/VGS/Tj，测实际漏极电源电流",
+  "reason": "固定VDS/VGS/Tj，测实际漏极电源电流",
+  "required": [
+    "明确端口语义",
+    "原手册条件及证据",
+    "测量单位与参考数据",
+    "独立审查",
+    "已知电路校准",
+    "真实DUT试运行"
+  ],
+  "acceptance_policy": "手册极限与典型值容差分别核对；不存在的容差保持pending",
+  "reuse_scope": "参数化方法不是任何器件已验证证明；具体契约需校准并试跑"
+}

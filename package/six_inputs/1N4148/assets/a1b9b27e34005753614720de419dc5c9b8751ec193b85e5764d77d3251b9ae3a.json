@@ -1,0 +1,186 @@
+{
+  "part": "1N4148",
+  "chart_id": "fig3",
+  "status": "auto_passed",
+  "human_review_required": false,
+  "method": "original_pdf_vector_path_digitization",
+  "source_pdf": "/Users/192y/电气/器件手册与模型/1N4148/1N4148_数据手册.pdf",
+  "source_pdf_sha256": "cc5a33f31a2690a270cc8961b33a9d412dac473e2cfe77faa16ef79502f56400",
+  "page_index": 3,
+  "mineru_image": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/f4b9fe642ce34fe8c244f0115396d2554ddfe2dc742f1dda5e543de6245a49cf.jpg",
+  "calibration": {
+    "plot_rect_pdf_pt": [
+      348.2309875488281,
+      178.3289794921875,
+      508.7909851074219,
+      338.8890075683594
+    ],
+    "x_axis": {
+      "quantity": "VF",
+      "unit": "V",
+      "scale": "linear",
+      "range": [
+        0,
+        2
+      ]
+    },
+    "y_axis": {
+      "quantity": "IF",
+      "unit": "mA",
+      "scale": "linear",
+      "range": [
+        0,
+        600
+      ]
+    },
+    "grid_drawing_ids": [
+      26
+    ],
+    "calibration_method": "axis meaning read by current multimodal assistant; exact grid positions from PDF vector objects"
+  },
+  "common_conditions": "(1)175°C typical; (2)25°C typical; (3)25°C maximum",
+  "series": [
+    {
+      "series_id": "typ_175C",
+      "condition": "(1) Tj=175 C, typical",
+      "status": "auto_passed",
+      "sample_count": 203,
+      "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_175C.csv",
+      "visible_x_range": [
+        0.31534641139049235,
+        1.2790735246320728
+      ],
+      "y_range": [
+        1.4088718020554505,
+        450.56425007759594
+      ],
+      "extrapolated": false,
+      "source_pdf_drawing_ids": [
+        31
+      ],
+      "resampling_rmse_plot_px_at_300dpi": 0.0022704605882106254,
+      "resampling_max_error_plot_px_at_300dpi": 0.009030317763839928,
+      "reconstruction_r2_in_axis_domain": 0.9999999998032013,
+      "y_resampling_rmse_in_axis_unit": 0.002036287166985435,
+      "y_unit": "mA",
+      "physical_model_fit_r2": null,
+      "independent_measurement_accuracy": null,
+      "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+      "dashed_source": true,
+      "rendered_ink_support_fraction": null,
+      "rendered_ink_support_note": "not evaluated over dash gaps; continuous centreline comes from dashed PDF path"
+    },
+    {
+      "series_id": "typ_25C",
+      "condition": "(2) Tj=25 C, typical",
+      "status": "auto_passed",
+      "sample_count": 203,
+      "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_25C.csv",
+      "visible_x_range": [
+        0.6079471910560839,
+        1.3053939858170047
+      ],
+      "y_range": [
+        1.4088718020554505,
+        459.55895112759737
+      ],
+      "extrapolated": false,
+      "source_pdf_drawing_ids": [
+        30
+      ],
+      "resampling_rmse_plot_px_at_300dpi": 0.004996619385637297,
+      "resampling_max_error_plot_px_at_300dpi": 0.03244184899221144,
+      "reconstruction_r2_in_axis_domain": 0.9999999990820946,
+      "y_resampling_rmse_in_axis_unit": 0.004481272207989643,
+      "y_unit": "mA",
+      "physical_model_fit_r2": null,
+      "independent_measurement_accuracy": null,
+      "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+      "dashed_source": false,
+      "rendered_ink_support_fraction": 1.0,
+      "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+    },
+    {
+      "series_id": "max_25C",
+      "condition": "(3) Tj=25 C, maximum",
+      "status": "auto_passed",
+      "sample_count": 202,
+      "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/max_25C.csv",
+      "visible_x_range": [
+        0.6873195051347308,
+        1.8012210072549575
+      ],
+      "y_range": [
+        2.3618046803115087,
+        460.9901751130106
+      ],
+      "extrapolated": false,
+      "source_pdf_drawing_ids": [
+        32
+      ],
+      "resampling_rmse_plot_px_at_300dpi": 0.004089467467945614,
+      "resampling_max_error_plot_px_at_300dpi": 0.01284810028797286,
+      "reconstruction_r2_in_axis_domain": 0.999999999368625,
+      "y_resampling_rmse_in_axis_unit": 0.0036676831864079725,
+      "y_unit": "mA",
+      "physical_model_fit_r2": null,
+      "independent_measurement_accuracy": null,
+      "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+      "dashed_source": false,
+      "rendered_ink_support_fraction": 1.0,
+      "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+    }
+  ],
+  "overlay": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/overlay.png",
+  "reconstructed": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/reconstructed.png",
+  "digitization_error_scope": "CSV resampling versus dense vector centreline, not experimental device accuracy, curve-label accuracy, or SPICE model fit",
+  "sampling_policy": "linear interpolation in plot/axis domain, adaptive maximum 0.25 pixel error at 300 dpi; clip to visible axes; do not extend curve endpoints",
+  "calibration_checks": {
+    "part": "1N4148",
+    "chart_id": "fig3",
+    "note": "Grid geometry compared to declared linear/log scale. Does not independently verify OCR tick values or legend semantics.",
+    "x": {
+      "expected_grid_lines": 11,
+      "detected_grid_lines": 11,
+      "max_grid_alignment_error_px_at_300dpi": 6.20524088409032e-05,
+      "rmse_grid_alignment_px_at_300dpi": 5.705689966083381e-05,
+      "matched_within_2px": 11,
+      "expected_tick_values": [
+        0.0,
+        0.2,
+        0.4,
+        0.6000000000000001,
+        0.8,
+        1.0,
+        1.2000000000000002,
+        1.4000000000000001,
+        1.6,
+        1.8,
+        2.0
+      ]
+    },
+    "y": {
+      "expected_grid_lines": 13,
+      "detected_grid_lines": 25,
+      "max_grid_alignment_error_px_at_300dpi": 8.544921878221128e-05,
+      "rmse_grid_alignment_px_at_300dpi": 4.535639380147915e-05,
+      "matched_within_2px": 13,
+      "expected_tick_values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        350.0,
+        400.0,
+        450.0,
+        500.0,
+        550.0,
+        600.0
+      ]
+    },
+    "status": "auto_passed"
+  }
+}

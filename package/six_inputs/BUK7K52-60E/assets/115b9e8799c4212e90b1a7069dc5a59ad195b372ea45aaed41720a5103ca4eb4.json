@@ -1,0 +1,169 @@
+{
+  "part": "BUK7K52-60E",
+  "chart_id": "fig7",
+  "status": "auto_passed",
+  "human_review_required": false,
+  "method": "original_pdf_vector_path_digitization",
+  "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+  "source_pdf_sha256": "4272aefd6383ccab0790755ef94f526441c93ccf928df7532889dc31cc64454e",
+  "page_index": 5,
+  "mineru_image": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/1b543b7b6450f3e42e59130806b7e6a6c1ef1941637a6e7abac6770a0dae76b3.jpg",
+  "calibration": {
+    "plot_rect_pdf_pt": [
+      353.00146484,
+      394.91720581,
+      512.8458252,
+      554.8793335
+    ],
+    "x_axis": {
+      "quantity": "VGS",
+      "unit": "V",
+      "scale": "linear",
+      "range": [
+        0,
+        7
+      ]
+    },
+    "y_axis": {
+      "quantity": "ID",
+      "unit": "A",
+      "scale": "linear",
+      "range": [
+        0,
+        25
+      ]
+    },
+    "grid_drawing_ids": [
+      450,
+      451,
+      452,
+      453,
+      454,
+      455,
+      456,
+      457,
+      458,
+      459,
+      460,
+      461,
+      462,
+      463,
+      464,
+      465,
+      466,
+      467,
+      468
+    ],
+    "calibration_method": "axis meaning read by current multimodal assistant; exact grid positions from PDF vector objects"
+  },
+  "common_conditions": "VDS=10 V; typical; Tj=25°C and 175°C",
+  "series": [
+    {
+      "series_id": "tj25",
+      "condition": "Tj=25 C",
+      "status": "auto_passed",
+      "sample_count": 207,
+      "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig7/tj25.csv",
+      "visible_x_range": [
+        3.75432868487642,
+        6.287155529059617
+      ],
+      "y_range": [
+        0.0,
+        25.0
+      ],
+      "extrapolated": false,
+      "source_pdf_drawing_ids": [
+        469
+      ],
+      "resampling_rmse_plot_px_at_300dpi": 0.00379800799244154,
+      "resampling_max_error_plot_px_at_300dpi": 0.02179730127285969,
+      "reconstruction_r2_in_axis_domain": 0.9999999996901672,
+      "y_resampling_rmse_in_axis_unit": 0.00014245902004262164,
+      "y_unit": "A",
+      "physical_model_fit_r2": null,
+      "independent_measurement_accuracy": null,
+      "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+      "dashed_source": false,
+      "rendered_ink_support_fraction": 1.0,
+      "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+    },
+    {
+      "series_id": "tj175",
+      "condition": "Tj=175 C",
+      "status": "auto_passed",
+      "sample_count": 208,
+      "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig7/tj175.csv",
+      "visible_x_range": [
+        3.296683786788622,
+        6.433689642742596
+      ],
+      "y_range": [
+        0.0,
+        25.0
+      ],
+      "extrapolated": false,
+      "source_pdf_drawing_ids": [
+        470
+      ],
+      "resampling_rmse_plot_px_at_300dpi": 0.0035620470587375466,
+      "resampling_max_error_plot_px_at_300dpi": 0.02117810887701429,
+      "reconstruction_r2_in_axis_domain": 0.9999999997286766,
+      "y_resampling_rmse_in_axis_unit": 0.00013360839006744247,
+      "y_unit": "A",
+      "physical_model_fit_r2": null,
+      "independent_measurement_accuracy": null,
+      "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+      "dashed_source": false,
+      "rendered_ink_support_fraction": 1.0,
+      "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+    }
+  ],
+  "overlay": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig7/overlay.png",
+  "reconstructed": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig7/reconstructed.png",
+  "digitization_error_scope": "CSV resampling versus dense vector centreline, not experimental device accuracy, curve-label accuracy, or SPICE model fit",
+  "sampling_policy": "linear interpolation in plot/axis domain, adaptive maximum 0.25 pixel error at 300 dpi; clip to visible axes; do not extend curve endpoints",
+  "calibration_checks": {
+    "part": "BUK7K52-60E",
+    "chart_id": "fig7",
+    "note": "Grid geometry compared to declared linear/log scale. Does not independently verify OCR tick values or legend semantics.",
+    "x": {
+      "expected_grid_lines": 8,
+      "detected_grid_lines": 8,
+      "max_grid_alignment_error_px_at_300dpi": 0.017842023809559276,
+      "rmse_grid_alignment_px_at_300dpi": 0.010638617569026065,
+      "matched_within_2px": 8,
+      "expected_tick_values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0
+      ]
+    },
+    "y": {
+      "expected_grid_lines": 11,
+      "detected_grid_lines": 11,
+      "max_grid_alignment_error_px_at_300dpi": 0.0020100999999309956,
+      "rmse_grid_alignment_px_at_300dpi": 0.001200818599024693,
+      "matched_within_2px": 11,
+      "expected_tick_values": [
+        0.0,
+        2.5,
+        5.0,
+        7.5,
+        10.0,
+        12.5,
+        15.0,
+        17.5,
+        20.0,
+        22.5,
+        25.0
+      ]
+    },
+    "status": "auto_passed"
+  }
+}

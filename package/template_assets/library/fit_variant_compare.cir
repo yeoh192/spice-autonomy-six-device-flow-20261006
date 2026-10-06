@@ -1,0 +1,28 @@
+* Parameter-fit screening against JSMICRO p.3 transfer curve.
+.model FIT_A VDMOS(Rg=25 Vto=1.60 Rd=.20 Rs=1.10 Rb=.20 Kp=.17 mtriode=1.25 Lambda=.015 Cgdmax=24p Cgdmin=8p Cgs=34p Cjo=17p Is=2p N=1.15 Vj=.75 M=.4 TT=18n Vds=60 Ron=2.1)
+.model FIT_B VDMOS(Rg=25 Vto=1.55 Rd=.20 Rs=1.25 Rb=.20 Kp=.19 mtriode=1.25 Lambda=.015 Cgdmax=24p Cgdmin=8p Cgs=34p Cjo=17p Is=2p N=1.15 Vj=.75 M=.4 TT=18n Vds=60 Ron=2.1)
+.model FIT_C VDMOS(Rg=25 Vto=1.65 Rd=.20 Rs=1.25 Rb=.20 Kp=.20 mtriode=1.25 Lambda=.015 Cgdmax=24p Cgdmin=8p Cgs=34p Cjo=17p Is=2p N=1.15 Vj=.75 M=.4 TT=18n Vds=60 Ron=2.1)
+.model FIT_D VDMOS(Rg=25 Vto=1.60 Rd=.20 Rs=1.40 Rb=.20 Kp=.20 mtriode=1.25 Lambda=.015 Cgdmax=24p Cgdmin=8p Cgs=34p Cjo=17p Is=2p N=1.15 Vj=.75 M=.4 TT=18n Vds=60 Ron=2.1)
+VGS g 0 0
+VA da 0 10
+VB db 0 10
+VC dc 0 10
+VD dd 0 10
+MA da g 0 0 FIT_A
+MB db g 0 0 FIT_B
+MC dc g 0 0 FIT_C
+MD dd g 0 0 FIT_D
+.dc VGS 0 7 0.02
+.meas DC A4 FIND -I(VA) AT=4
+.meas DC A5 FIND -I(VA) AT=5
+.meas DC A6 FIND -I(VA) AT=6
+.meas DC B4 FIND -I(VB) AT=4
+.meas DC B5 FIND -I(VB) AT=5
+.meas DC B6 FIND -I(VB) AT=6
+.meas DC C4 FIND -I(VC) AT=4
+.meas DC C5 FIND -I(VC) AT=5
+.meas DC C6 FIND -I(VC) AT=6
+.meas DC D4 FIND -I(VD) AT=4
+.meas DC D5 FIND -I(VD) AT=5
+.meas DC D6 FIND -I(VD) AT=6
+.end

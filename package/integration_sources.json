@@ -1,0 +1,77 @@
+{
+  "source_threads": {
+    "index": "01a0e5f9-2930-7663-8b5b-3a552158d358",
+    "diagnostic_repair": "01a10ac0-c58e-7e62-8606-6cfd853cc72e"
+  },
+  "source_code_hashes": {
+    "tools/index_templates.py": "49329d5d83142b4723a3f182349dff5ac3dfca9c95203ea759a21afa0a781de1",
+    "tools/classify_templates.py": "dccb297de9ccdff5dd727ae225b376b9e92d36f67e7177de2fb6cc952123cbb0",
+    "tools/search_templates.py": "d91a4844003447e117a3170400767c48e04dee1899e9e34676059623c46dbaf7",
+    "tools/review_templates.py": "14155e4e63ae9499c8cfea4b8b5b5f7e48d2fd0c0004ef616666cf2eaf5165e1",
+    "automation/spice/template_selection.py": "33c0ee0a7b55898a945b00f5dd026471655d9475a1f4ec50a3af0f44350948a2",
+    "automation/spice/repair_diagnosis.py": "8546ec22f6d979e22194c57a638b03dabbab42ac0679039926050081a7902204"
+  },
+  "index_sha256": "7a62e5969f33514696c0cbddae3eb764560470d0ef30f8567cd60ec2e371f108",
+  "code_reuse": "Index/classification/search/review modules preserve algorithms with relative-import adaptation. Template selection and diagnostic experiments are integrated with the new scheduler, role routes, full regression and unified budgets.",
+  "new_integration": [
+    "indexed shortlist review and identical baseline ranking",
+    "generic B-source topology and sensed-vs-connected checks",
+    "audited stopping and failed-experiment feedback",
+    "shared RAW cache with runner/parser/model/circuit verification",
+    "test method qualification and row/series scope expansion",
+    "DC terminal normalization and independent historical recheck",
+    "frozen project tolerances included in method qualification identity",
+    "one-launch indexed start, test qualification, model patch and complete regression",
+    "shared immutable targets, active model and signed interval residuals for design/review/diagnosis roles",
+    "separate design approval from calibration, DUT trial and post-trial qualification",
+    "actual-skeleton numeric-parameter, B-expression and same-subcircuit rewire adapters",
+    "typed fixture vs evidence-review recovery and versioned qualification receipts",
+    "portable six-device material/coverage/port/reference adapter with no silent requirement loss",
+    "AC native units, complete sweep/reference acceptance, differential trace and signed phase",
+    "draft/reference-only segregation and configured-regression scope gate",
+    "current-version 20-oracle bounded calibration entry (not live-run during delivery)"
+  ],
+  "live_api_calls": 0,
+  "live_ltspice_runs": 0,
+  "version": "0.2.4-six-inputs",
+  "merged_packages": [
+    {
+      "name": "spice-autonomy-v2-test-library",
+      "manifest": "package_manifest.json",
+      "manifest_sha256": "9e5d695c5936ef5c36ac2d23e357757d8d16950452982a985e613d8ef07084e6"
+    },
+    {
+      "name": "spice-autonomy-v2-dc-hotfix",
+      "manifest": "manifest.json",
+      "manifest_sha256": "4a7380060e6a67df9297e6a41399a6a20848b6bb2a86deabeb5cdfda58f75e7f"
+    }
+  ],
+  "parent_package": {
+    "name": "spice-autonomy-v2-evidence-routing",
+    "version": "0.2.3-evidence-routing",
+    "manifest_sha256": "cf5d7f1e5d75b0ecbe4870395c2a8e3d961f98573c07c5250d421be836d886f1"
+  },
+  "input_interface_merge": {
+    "source": "/Users/192y/电气/六器件标准输入包_20261006/stages/coverage_interfaces_20261006",
+    "source_code_hashes": {
+      "ac_measurements.py": "8c3cbcc0908d1babed276b122aaf5f479ed0c31585fec5670d305e4c3f1df5ea",
+      "ac_calibration.py": "de0c9bcf3998cd760e6c8ea2a881820df81c62cc4a4397e3d10361ca47cf4b3e",
+      "spice.py": "2152be886f5c0612c595c98a793f6f943210275cc9b2d9625a9afe32fd086692"
+    },
+    "strategy": "Keep right control modules; integrate AC, bounded sweeps and differential traces, with guarded input snapshots. No historical receipt promoted.",
+    "live_api_calls": 0,
+    "live_ltspice_runs": 0
+  },
+  "offline_verification": {
+    "framework_tests": 160,
+    "legacy_combined_tests": 268,
+    "input_devices": 6,
+    "inventory_records": 445,
+    "configured_tests": 29,
+    "unqualified_fixture_drafts": 14,
+    "archived_raw_replays": 29,
+    "current_version_live_calibration": false,
+    "live_api_calls": 0,
+    "live_ltspice_runs": 0
+  }
+}

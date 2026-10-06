@@ -1,0 +1,146 @@
+{
+  "device": "750311423",
+  "pins": [
+    {
+      "number": 3,
+      "label": "N1_dot",
+      "applies_to": [
+        "750311423"
+      ],
+      "package": "EP13 WE-FB",
+      "connection_note": "Dot polarity from schematic",
+      "evidence_refs": [
+        "p0"
+      ]
+    },
+    {
+      "number": 5,
+      "label": "N1_other",
+      "applies_to": [
+        "750311423"
+      ],
+      "package": "EP13 WE-FB",
+      "connection_note": "Opposite winding end",
+      "evidence_refs": [
+        "p0"
+      ]
+    },
+    {
+      "number": 6,
+      "label": "N2_dot",
+      "applies_to": [
+        "750311423"
+      ],
+      "package": "EP13 WE-FB",
+      "connection_note": "Dot polarity from schematic",
+      "evidence_refs": [
+        "p0"
+      ]
+    },
+    {
+      "number": 7,
+      "label": "N2_dot",
+      "applies_to": [
+        "750311423"
+      ],
+      "package": "EP13 WE-FB",
+      "connection_note": "Dot polarity from schematic",
+      "evidence_refs": [
+        "p0"
+      ]
+    },
+    {
+      "number": 9,
+      "label": "N2_other",
+      "applies_to": [
+        "750311423"
+      ],
+      "package": "EP13 WE-FB",
+      "connection_note": "Opposite winding end",
+      "evidence_refs": [
+        "p0"
+      ]
+    },
+    {
+      "number": 10,
+      "label": "N2_other",
+      "applies_to": [
+        "750311423"
+      ],
+      "package": "EP13 WE-FB",
+      "connection_note": "Opposite winding end",
+      "evidence_refs": [
+        "p0"
+      ]
+    },
+    {
+      "number": 2,
+      "label": "N3_dot",
+      "applies_to": [
+        "750311423"
+      ],
+      "package": "EP13 WE-FB",
+      "connection_note": "Dot polarity from schematic",
+      "evidence_refs": [
+        "p0"
+      ]
+    },
+    {
+      "number": 1,
+      "label": "N3_other",
+      "applies_to": [
+        "750311423"
+      ],
+      "package": "EP13 WE-FB",
+      "connection_note": "Opposite winding end",
+      "evidence_refs": [
+        "p0"
+      ]
+    }
+  ],
+  "topology": [
+    {
+      "type": "winding",
+      "id": "N1",
+      "dotted_pins": [
+        3
+      ],
+      "other_pins": [
+        5
+      ],
+      "evidence_refs": [
+        "p0"
+      ]
+    },
+    {
+      "type": "winding",
+      "id": "N2",
+      "dotted_pins": [
+        6,
+        7
+      ],
+      "other_pins": [
+        9,
+        10
+      ],
+      "evidence_refs": [
+        "p0"
+      ]
+    },
+    {
+      "type": "winding",
+      "id": "N3",
+      "dotted_pins": [
+        2
+      ],
+      "other_pins": [
+        1
+      ],
+      "evidence_refs": [
+        "p0"
+      ]
+    }
+  ],
+  "model_port_binding": null,
+  "status": "handbook_pin_evidence_preserved_model_binding_pending"
+}

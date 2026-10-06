@@ -1,0 +1,20 @@
+.subckt ACS37032 IP+ IP- DUT_GND FAULT VOUT VDD
+Rp IP+ IP- 0.68m
+XSet_BW N006 N007 N006 opamp Aol=100K GBW=5MEG
+B§OutputStage N007 DUT_GND V=(((V(IP+)-V(IP-))/0.68m*{sensitivity}+(1.65)))
+B§VSat_High N004 DUT_GND V=3
+XBuffer N006 VOUT N004 N008 VOUT level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+B§ICC DUT_GND VDD I=20mA
+B§VSat_Low N008 DUT_GND V=150m
+M1 FAULT N002 DUT_GND N003 NMOS l=1u w=84u
+B§Compare1 N001 DUT_GND V=if((abs(I(Rp))>(IRpMAX)), V(VDD), 0)
+B§Compare2 N005 DUT_GND V=if(((abs(I(Rp))<=IRpMAX)-(0.06*IRpMAX)), V(VDD),0)
+A1 N001 N005 0 0 0 0 Q 0 SRFLOP Vhigh=3.3
+B§Set_Delay1 N002 DUT_GND V=delay(V(Q),45ns)
+.model NMOS NMOS
+.model PMOS PMOS
+.lib "opamp.sub"
+.lib "UniversalOPAmps2.sub"
+.backanno
+.ends ACS37032
+.end

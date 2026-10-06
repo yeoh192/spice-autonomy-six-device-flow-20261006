@@ -1,0 +1,294 @@
+[
+  {
+    "page": 1,
+    "text": "High heat resistance, 125℃\nMHK\nAIchipTM- Series\n・Endurance : 2,000 hours at 125℃\n・Specified ESR after endurance\n・For automobile modules and other high temperature applications\n・Solvent resistant type (see PRECAUTIONS AND GUIDELINES)\n・RoHS2 Compliant\n・AEC-Q200 compliant : Please contact Chemi-Con for more details, test data, information.\n◆SPECIFICATIONS\nItems Characteristics\nCategory\n-40 to +125℃\nTemperature Range\nRated Voltage Range 35Vdc\nCapacitance Tolerance ±20%(M) (at 20℃, 120Hz)\nLeakage Current I=0.01CV\nWhere, I : Max. leakage current (µA), C : Nominal capacitance (µF), V : Rated voltage (V) (at 20℃ after 2 minute)\nDissipation Factor Rated voltage(Vdc) 35V\n(tanδ) tanδ (Max.) 0.14 (at 20℃, 120Hz)\nLow Temperature Rated voltage(Vdc) 35V\nCharacteristics Z(-25℃)/Z(+20℃) 2\n(Max. impedance Ratio)\nZ(-40℃)/Z(+20℃) 3 (at 120Hz)\nEndurance The following specifications shall be satisfied when the capacitors are restored to 20℃ after the rated voltage is applied for 2,000 hours\nat 125℃.\nCapacitance change ≦±30% of the initial value\nD.F. (tanδ) ≦300% of the initial specified value\nLeakage current ≦The initial specified value\nF80 6.0\nESR（Ω max./-40℃, 400kHz）\nHA0 4.5\nShelf life The following specifications shall be satisfied when the capacitors are restored to 20℃ after exposing them for 1,000 hours at 125℃ without\nvoltage applied. Before the measurement, the capacitor shall be preconditioned by applying voltage according to Item 4.1 of JIS C 5101-4.\nCapacitance change ≦±30% of the initial value\nD.F. (tanδ) ≦300% of the initial specified value\nLeakage current ≦The initial specified value\n◆DIMENSIONS [mm]\nSize code D L A B C W P\nF80 6.3 7.7 6.6 6.6 7.2 0.5 to 0.8 1.9\nHA0 8 10.0 8.3 8.3 9.0 0.7 to 1.1 3.1\nProduct specifications in this catalog are subject to change without notice.Request our product specifications before purchase and/or use. Please use our products based on the information contained in this catalog and product specifications.\n5.0±Dφ\nW\n0.3max. A±0.2\nL±0.3 (Note)\n2.0±B\nP\n2.0±C\n● Terminal Code : A\n● Size code : F80, HA0\nNote : L±0.5 for HA0\n5.0±Dφ\n2.0±B\n0.3max. W\nL±0.3 (Note) A±0.2\nNote : L±0.5 for HA0\nP\n2.0±C\nALUMINUM ELECTROLYTIC CAPACITORS\nMHK\nLower ESR\nMHJ\n◆MARKING\n● Terminal Code : G(Vibration resistant structure) EX) 35V47µF\n● Size code : F80, HA0\n3A\n47\nVHK\n●Rated voltage symbol\nRated voltage (Vdc) Symbol\n35 V\n: Supportive terminals\n◆PART NUMBERING SYSTEM ◆RATED RIPPLE CURRENT MULTIPLIERS\nE 1 M 2 H 3 K 4 3 5 5 6 0 7 A 8 R 9 A 10 11 12 13 M 14 F 15 8 16 0 17 G 18 ・Frequency Multipliers\nSupplement code Capacitance(µF) Frequency(Hz) 120 1k 10k 100k\nSize code 47to100 0.40 0.75 0.90 1.00\nCapacitance tolerance code 220 0.50 0.85 0.94 1.00\nCapacitance code (ex. 47µF:470,100µF:101) The deterioration of aluminum electrolytic capacitors\nTaping code accelerates their life due to the internal heating produced\nTerminal code by ripple current. For details, refer to Section \"5-3 Ripple\nVoltage code (ex.35V:350) Current Effect on Lifetime\" in the catalog, Technical Note.\nSeries code\nCategory\nPlease refer to \"Product code guide (surface mount type)\"\n◆STANDARD RATINGS\nESR\nWV Cap Size code （Ω max./100k to 400kHz) Rated ripple current Part No.\n(Vdc) (µF) (mArms/125℃, 100k to 400kHz)\n20℃ -40℃\n47 F80 0.30 3.0 240 EMHK350□RA470MF80G\n35 100 F80 0.30 3.0 240 EMHK350□RA101MF80G\n220 HA0 0.20 2.0 330 EMHK350□RA221MHA0G\nCAT. No. E1001A 2026",
+    "tables": [
+      [
+        [
+          "Items",
+          "Characteristics",
+          null,
+          null,
+          null
+        ],
+        [
+          "Category\nTemperature Range",
+          "-40 to +125℃",
+          null,
+          null,
+          null
+        ],
+        [
+          "Rated Voltage Range",
+          "35Vdc",
+          null,
+          null,
+          null
+        ],
+        [
+          "Capacitance Tolerance",
+          "±20%(M) (at 20℃, 120Hz)",
+          null,
+          null,
+          null
+        ],
+        [
+          "Leakage Current",
+          "I=0.01CV\nWhere, I : Max. leakage current (µA), C : Nominal capacitance (µF), V : Rated voltage (V) (at 20℃ after 2 minute)",
+          null,
+          null,
+          null
+        ],
+        [
+          "Dissipation Factor\n(tanδ)",
+          "Rated voltage(Vdc)",
+          "35V",
+          "(at 20℃, 120Hz)",
+          null
+        ],
+        [
+          null,
+          "tanδ (Max.)",
+          "0.14",
+          null,
+          null
+        ],
+        [
+          "Low Temperature\nCharacteristics\n(Max. impedance Ratio)",
+          "Rated voltage(Vdc)",
+          "35V",
+          "(at 120Hz)",
+          null
+        ],
+        [
+          null,
+          "Z(-25℃)/Z(+20℃)",
+          "2",
+          null,
+          null
+        ],
+        [
+          null,
+          "Z(-40℃)/Z(+20℃)",
+          "3",
+          null,
+          null
+        ],
+        [
+          "Endurance",
+          "The following specifications shall be satisfied when the capacitors are restored to 20℃ after the rated voltage is applied for 2,000 hours\nat 125℃.\nCapacitance change ≦±30% of the initial value\nD.F. (tanδ) ≦300% of the initial specified value\nLeakage current ≦The initial specified value\nF80 6.0\nESR（Ω max./-40℃, 400kHz）\nHA0 4.5",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Capacitance change",
+          "≦±30% of the initial value",
+          null,
+          null
+        ],
+        [
+          null,
+          "D.F. (tanδ)",
+          "≦300% of the initial specified value",
+          null,
+          null
+        ],
+        [
+          null,
+          "Leakage current",
+          "≦The initial specified value",
+          null,
+          null
+        ],
+        [
+          null,
+          "ESR（Ω max./-40℃, 400kHz）",
+          "F80",
+          null,
+          "6.0"
+        ],
+        [
+          null,
+          null,
+          "HA0",
+          null,
+          "4.5"
+        ],
+        [
+          "Shelf life",
+          "The following specifications shall be satisfied when the capacitors are restored to 20℃ after exposing them for 1,000 hours at 125℃ without\nvoltage applied. Before the measurement, the capacitor shall be preconditioned by applying voltage according to Item 4.1 of JIS C 5101-4.\nCapacitance change ≦±30% of the initial value\nD.F. (tanδ) ≦300% of the initial specified value\nLeakage current ≦The initial specified value",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Capacitance change",
+          "≦±30% of the initial value",
+          null,
+          null
+        ],
+        [
+          null,
+          "D.F. (tanδ)",
+          "≦300% of the initial specified value",
+          null,
+          null
+        ],
+        [
+          null,
+          "Leakage current",
+          "≦The initial specified value",
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          "",
+          "",
+          "",
+          "2.0±C\nP"
+        ]
+      ],
+      [
+        [
+          "Rated voltage (Vdc)",
+          "Symbol"
+        ]
+      ],
+      [
+        [
+          "Size code",
+          "D",
+          "L",
+          "A",
+          "B",
+          "C",
+          "W",
+          "P"
+        ],
+        [
+          "F80",
+          "6.3",
+          "7.7",
+          "6.6",
+          "6.6",
+          "7.2",
+          "0.5 to 0.8",
+          "1.9"
+        ],
+        [
+          "HA0",
+          "8",
+          "10.0",
+          "8.3",
+          "8.3",
+          "9.0",
+          "0.7 to 1.1",
+          "3.1"
+        ]
+      ],
+      [
+        [
+          "",
+          ""
+        ]
+      ],
+      [
+        [
+          "F",
+          "8",
+          "0"
+        ]
+      ],
+      [
+        [
+          "Capacitance(µF) Frequency(Hz)",
+          null,
+          null,
+          "120",
+          "1k",
+          "10k",
+          "100k"
+        ],
+        [
+          "47",
+          "to",
+          "100",
+          "0.40",
+          "0.75",
+          "0.90",
+          "1.00"
+        ],
+        [
+          "220",
+          null,
+          null,
+          "0.50",
+          "0.85",
+          "0.94",
+          "1.00"
+        ]
+      ],
+      [
+        [
+          "WV\n(Vdc)",
+          "Cap\n(µF)",
+          "Size code",
+          "ESR\n（Ω max./100k to 400kHz)",
+          null,
+          "Rated ripple current\n(mArms/125℃, 100k to 400kHz)",
+          "Part No."
+        ],
+        [
+          null,
+          null,
+          null,
+          "20℃",
+          "-40℃",
+          null,
+          null
+        ],
+        [
+          "35",
+          "47\n100\n220",
+          "F80",
+          "0.30",
+          "3.0",
+          "240",
+          "EMHK350□RA470MF80G"
+        ],
+        [
+          null,
+          null,
+          "F80",
+          "0.30",
+          "3.0",
+          "240",
+          "EMHK350□RA101MF80G"
+        ],
+        [
+          null,
+          null,
+          "HA0",
+          "0.20",
+          "2.0",
+          "330",
+          "EMHK350□RA221MHA0G"
+        ]
+      ]
+    ],
+    "width": 595.276,
+    "height": 841.89
+  },
+  {
+    "page": 2,
+    "text": "ALUMINUM ELECTROLYTIC CAPACITORS\nProduct Guide\n■ Always read \"Notes on Use\" before using the product in order to enable you to use the product correctly and prevent any faults\nand accidents from occurring.\n■ Request the Product Specification on the product of NIPPON CHEMI-CON CORPORATION to refer to it as well as this brochure\nprior to the order of the products. Some specific notes on use of the ordered product may be described in the specifications.\n■ The products listed in this catalog are designed and manufactured for general electronics equipment use and are not intended for\nuse in applications that can adversely affect human life; where the malfunction of equipment may cause damage to life or\nproperty. In addition, our products are not intended to be used in specific applications that may cause a major social impact.\nPlease consult with us in advance of usage of our products in the following listed applications. ① Aerospace equipment ② Power\ngeneration equipment such as thermal power, nuclear power etc. ③ Medical equipment ④ Transport equipment (automobiles,\ntrains, ships, etc.) ⑤ Transportation control equipment ⑥ Disaster prevention / crime prevention equipment ⑦ Highly publicized\ninformation processing equipment ⑧ Submarine equipment ⑨ Other applications that are not considered general-purpose\napplications.\n■ The circuits described as examples in this catalog and the \"delivery specifications\" are featured in order to show the operations\nand usage of our products, however, this fact does not guarantee that the circuits are available to function in your equipment\nsystems. We are not in any case responsible for any failures or damage caused by the use of information contained herein. You\nshould examine our products, of which the characteristics are described in the \"delivery specifications\" and other documents, and\ndetermine whether or not our products suit your requirements according to the specifications of your equipment systems.\nTherefore, you bear final responsibility regarding the use of our products.\nPlease make sure that you take appropriate safety measures such as use of redundant design and malfunction prevention\nmeasures in order to prevent fatal accidents and/or fires in the event any of our products malfunction.\n■ We strongly recommend our customers to purchase Nippon Chemi-Con products only through our official sales channels. We\nassume no responsibility for any defects or damages caused by using products purchased from outside our official sales channel\nor of counterfeit goods. In addition, we will ask the customer to pay the investigation cost for products purchased outside our\nofficial sales channel.\n■ We reserve the right to discontinue production and delivery of products. We do not guarantee that all the products included in this\ncatalog will be available in the future.\nThe aforementioned does not apply in the case of individual agreements deviating from the foregoing for customer-specific\nproducts\n■ We continually strive to improve the quality and reliability of our products, but in any case that our product does not meet our\npublished specifications, please stop using it promptly and contact us immediately. As for compensation for non-conforming\ngoods delivered by Chemi-Con, we will limit it only to goods found in non-compliance of our published specifications. This may be\naccomplished by a no cost replacement of non-conforming individual products, a credit of the piece price paid per each individual\nnon-conforming product, or in other ways deemed necessary.\nIn addition, we have an established system with enhanced traceability, therefore we will limit the applicable lot items for any\npotential compensation.\nPart Numbering System\nPart Numbering System (Appendix)\nStandardization\nAvailable Items by Manufacturing Locations\nEnvironmental Measures\nTechnical Note\nPrecautions and Guidelines\nRecommended Soldering Conditions\nTaping, Lead-preforming and Packaging\nAvailable Terminals for Snap-in and Screw Mount Type\nProduct specifications in this catalog are subject to change without notice.Request our product specifications before purchase and/or use. Please use our products based on the information contained in this catalog and product specifications.\nCAT. No. E1001A 2026",
+    "tables": [],
+    "width": 595.276,
+    "height": 841.89
+  }
+]

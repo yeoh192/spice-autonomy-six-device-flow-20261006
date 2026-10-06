@@ -1,0 +1,1828 @@
+{
+  "schema_version": "electrical-multimodal-pilot-0.3",
+  "target": "BUK7K52-60E",
+  "category": "dual_n_channel_mosfet",
+  "status": "auto_processed",
+  "identity": {
+    "manufacturer": "Nexperia",
+    "package": "LFPAK56D (SOT1205)",
+    "match_status": "exact",
+    "match_note": "目标型号在原始资料中明确出现。",
+    "evidence_refs": [
+      "b21",
+      "b23",
+      "b25",
+      "p1"
+    ]
+  },
+  "variants": [],
+  "parameters": [
+    {
+      "id": "vds",
+      "key": "drain_source_voltage",
+      "values": {
+        "max": 60
+      },
+      "unit": "V",
+      "conditions": "Tj=25..175°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "absolute_maximum",
+      "state": "initial",
+      "evidence_refs": [
+        "b27",
+        "p1"
+      ]
+    },
+    {
+      "id": "vdgr",
+      "key": "drain_gate_voltage",
+      "values": {
+        "max": 60
+      },
+      "unit": "V",
+      "conditions": "RGS=20 kΩ",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "absolute_maximum",
+      "state": "initial",
+      "evidence_refs": [
+        "b27",
+        "p1"
+      ]
+    },
+    {
+      "id": "id25",
+      "key": "drain_current",
+      "values": {
+        "max": 15.4
+      },
+      "unit": "A",
+      "conditions": "Tmb=25°C; VGS=10 V",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "absolute_maximum",
+      "state": "initial",
+      "evidence_refs": [
+        "b27",
+        "p1"
+      ]
+    },
+    {
+      "id": "id100",
+      "key": "drain_current",
+      "values": {
+        "max": 12.6
+      },
+      "unit": "A",
+      "conditions": "Tmb=100°C; VGS=10 V",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "absolute_maximum",
+      "state": "initial",
+      "evidence_refs": [
+        "b27",
+        "p1"
+      ]
+    },
+    {
+      "id": "idm",
+      "key": "peak_drain_current",
+      "values": {
+        "max": 71
+      },
+      "unit": "A",
+      "conditions": "Tmb=25°C; tp≤10 μs",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "absolute_maximum",
+      "state": "initial",
+      "evidence_refs": [
+        "b27",
+        "p1"
+      ]
+    },
+    {
+      "id": "ptot",
+      "key": "total_power_dissipation",
+      "values": {
+        "max": 32
+      },
+      "unit": "W",
+      "conditions": "Tmb=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "absolute_maximum",
+      "state": "initial",
+      "evidence_refs": [
+        "b27",
+        "p1"
+      ]
+    },
+    {
+      "id": "vgs",
+      "key": "gate_source_voltage",
+      "values": {
+        "min": -20,
+        "max": 20
+      },
+      "unit": "V",
+      "conditions": "DC; Tj≤175°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "absolute_maximum",
+      "state": "initial",
+      "evidence_refs": [
+        "b27",
+        "p1"
+      ]
+    },
+    {
+      "id": "tj",
+      "key": "junction_temperature",
+      "values": {
+        "min": -55,
+        "max": 175
+      },
+      "unit": "°C",
+      "conditions": "",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "absolute_maximum",
+      "state": "initial",
+      "evidence_refs": [
+        "b27",
+        "b33",
+        "p1",
+        "p2"
+      ]
+    },
+    {
+      "id": "tstg",
+      "key": "storage_temperature",
+      "values": {
+        "min": -55,
+        "max": 175
+      },
+      "unit": "°C",
+      "conditions": "",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "absolute_maximum",
+      "state": "initial",
+      "evidence_refs": [
+        "b27",
+        "b33",
+        "p1",
+        "p2"
+      ]
+    },
+    {
+      "id": "eas",
+      "key": "nonrepetitive_avalanche_energy",
+      "values": {
+        "max": 11.6
+      },
+      "unit": "mJ",
+      "conditions": "ID=15.4 A; Vsup≤60 V; VGS=10 V; initial Tj=25°C; single pulse; Tj(max)=175°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "absolute_maximum",
+      "state": "initial",
+      "evidence_refs": [
+        "b33",
+        "p2"
+      ]
+    },
+    {
+      "id": "rthjmb",
+      "key": "thermal_resistance_junction_mounting_base",
+      "values": {
+        "max": 4.68
+      },
+      "unit": "K/W",
+      "conditions": "",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b51",
+        "p3"
+      ]
+    },
+    {
+      "id": "rthja",
+      "key": "thermal_resistance_junction_ambient",
+      "values": {
+        "typ": 95
+      },
+      "unit": "K/W",
+      "conditions": "minimum PCB footprint; source mounting conditions apply",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b51",
+        "p3"
+      ]
+    },
+    {
+      "id": "breakdown-55",
+      "key": "drain_source_breakdown_voltage",
+      "values": {
+        "min": 54
+      },
+      "unit": "V",
+      "conditions": "FET1 and FET2; ID=250 μA; VGS=0 V; Tj=-55°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b63",
+        "p4"
+      ]
+    },
+    {
+      "id": "breakdown25",
+      "key": "drain_source_breakdown_voltage",
+      "values": {
+        "min": 60
+      },
+      "unit": "V",
+      "conditions": "FET1 and FET2; ID=250 μA; VGS=0 V; Tj=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b63",
+        "p4"
+      ]
+    },
+    {
+      "id": "vth25",
+      "key": "gate_threshold_voltage",
+      "values": {
+        "min": 2.4,
+        "typ": 3,
+        "max": 4
+      },
+      "unit": "V",
+      "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b63",
+        "p4"
+      ]
+    },
+    {
+      "id": "vth175",
+      "key": "gate_threshold_voltage",
+      "values": {
+        "min": 1
+      },
+      "unit": "V",
+      "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=175°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b63",
+        "p4"
+      ]
+    },
+    {
+      "id": "vthcold",
+      "key": "gate_threshold_voltage",
+      "values": {
+        "max": 4.5
+      },
+      "unit": "V",
+      "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=-55°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b63",
+        "p4"
+      ]
+    },
+    {
+      "id": "idss25",
+      "key": "drain_leakage_current",
+      "values": {
+        "typ": 0.02,
+        "max": 1
+      },
+      "unit": "μA",
+      "conditions": "FET1 and FET2; VDS=60 V; VGS=0 V; Tj=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b63",
+        "p4"
+      ]
+    },
+    {
+      "id": "idss175",
+      "key": "drain_leakage_current",
+      "values": {
+        "max": 500
+      },
+      "unit": "μA",
+      "conditions": "FET1 and FET2; VDS=60 V; VGS=0 V; Tj=175°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b63",
+        "p4"
+      ]
+    },
+    {
+      "id": "igss",
+      "key": "gate_leakage_current",
+      "values": {
+        "typ": 2,
+        "max": 100
+      },
+      "unit": "nA",
+      "conditions": "FET1 and FET2; VGS=-20 V or +20 V (two rows, same values); VDS=0 V; Tj=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b63",
+        "p4"
+      ]
+    },
+    {
+      "id": "rdson25",
+      "key": "drain_source_on_resistance",
+      "values": {
+        "typ": 35,
+        "max": 45
+      },
+      "unit": "mΩ",
+      "conditions": "FET1 and FET2; VGS=10 V; ID=5 A; Tj=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b63",
+        "p4"
+      ]
+    },
+    {
+      "id": "rdson175",
+      "key": "drain_source_on_resistance",
+      "values": {
+        "typ": 78,
+        "max": 101
+      },
+      "unit": "mΩ",
+      "conditions": "FET1 and FET2; VGS=10 V; ID=5 A; Tj=175°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b63",
+        "p4"
+      ]
+    },
+    {
+      "id": "qg",
+      "key": "total_gate_charge",
+      "values": {
+        "typ": 9.2
+      },
+      "unit": "nC",
+      "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; VGS=10 V; Tj=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b63",
+        "p4"
+      ]
+    },
+    {
+      "id": "qgs",
+      "key": "gate_source_charge",
+      "values": {
+        "typ": 2
+      },
+      "unit": "nC",
+      "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; VGS=10 V; Tj=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b63",
+        "p4"
+      ]
+    },
+    {
+      "id": "qgd",
+      "key": "gate_drain_charge",
+      "values": {
+        "typ": 3.5
+      },
+      "unit": "nC",
+      "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; VGS=10 V; Tj=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b63",
+        "p4"
+      ]
+    },
+    {
+      "id": "plateau",
+      "key": "gate_plateau_voltage",
+      "values": {
+        "typ": 5
+      },
+      "unit": "V",
+      "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; Tj=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b72",
+        "p5"
+      ]
+    },
+    {
+      "id": "ciss",
+      "key": "input_capacitance",
+      "values": {
+        "typ": 401,
+        "max": 535
+      },
+      "unit": "pF",
+      "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b72",
+        "p5"
+      ]
+    },
+    {
+      "id": "coss",
+      "key": "output_capacitance",
+      "values": {
+        "typ": 73,
+        "max": 87
+      },
+      "unit": "pF",
+      "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b72",
+        "p5"
+      ]
+    },
+    {
+      "id": "crss",
+      "key": "reverse_transfer_capacitance",
+      "values": {
+        "typ": 53,
+        "max": 72
+      },
+      "unit": "pF",
+      "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b72",
+        "p5"
+      ]
+    },
+    {
+      "id": "tdon",
+      "key": "turn_on_delay",
+      "values": {
+        "typ": 4.3
+      },
+      "unit": "ns",
+      "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b72",
+        "p5"
+      ]
+    },
+    {
+      "id": "tr",
+      "key": "rise_time",
+      "values": {
+        "typ": 5.1
+      },
+      "unit": "ns",
+      "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b72",
+        "p5"
+      ]
+    },
+    {
+      "id": "tdoff",
+      "key": "turn_off_delay",
+      "values": {
+        "typ": 8.4
+      },
+      "unit": "ns",
+      "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b72",
+        "p5"
+      ]
+    },
+    {
+      "id": "tf",
+      "key": "fall_time",
+      "values": {
+        "typ": 5.4
+      },
+      "unit": "ns",
+      "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b72",
+        "p5"
+      ]
+    },
+    {
+      "id": "vsd",
+      "key": "body_diode_forward_voltage",
+      "values": {
+        "typ": 0.83,
+        "max": 1.2
+      },
+      "unit": "V",
+      "conditions": "FET1 and FET2; IS=5 A; VGS=0 V; Tj=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b72",
+        "p5"
+      ]
+    },
+    {
+      "id": "trr",
+      "key": "body_diode_reverse_recovery_time",
+      "values": {
+        "typ": 17.6
+      },
+      "unit": "ns",
+      "conditions": "FET1 and FET2; IS=5 A; dIS/dt=-100 A/μs; VGS=0 V; VDS=30 V; Tj=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b72",
+        "p5"
+      ]
+    },
+    {
+      "id": "qr",
+      "key": "body_diode_recovered_charge",
+      "values": {
+        "typ": 12.3
+      },
+      "unit": "nC",
+      "conditions": "FET1 and FET2; IS=5 A; dIS/dt=-100 A/μs; VGS=0 V; VDS=30 V; Tj=25°C",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "rating_kind": "electrical_characteristic",
+      "state": "initial",
+      "evidence_refs": [
+        "b72",
+        "p5"
+      ]
+    }
+  ],
+  "pins": [
+    {
+      "number": 1,
+      "label": "S1",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "number": 2,
+      "label": "G1",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "number": 3,
+      "label": "S2",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "number": 4,
+      "label": "G2",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "number": 5,
+      "label": "D2",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "number": 6,
+      "label": "D2",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "number": 7,
+      "label": "D1",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "number": 8,
+      "label": "D1",
+      "applies_to": [
+        "BUK7K52-60E"
+      ],
+      "package": "LFPAK56D (SOT1205)",
+      "connection_note": "",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    }
+  ],
+  "topology": [
+    {
+      "type": "n_channel_mosfet",
+      "id": "FET1",
+      "gate_pin": 2,
+      "source_pin": 1,
+      "drain_pins": [
+        7,
+        8
+      ],
+      "body_diode_direction": "source_to_drain",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    },
+    {
+      "type": "n_channel_mosfet",
+      "id": "FET2",
+      "gate_pin": 4,
+      "source_pin": 3,
+      "drain_pins": [
+        5,
+        6
+      ],
+      "body_diode_direction": "source_to_drain",
+      "evidence_refs": [
+        "b21",
+        "p1"
+      ]
+    }
+  ],
+  "curves": [
+    {
+      "id": "fig5",
+      "label": "Transient thermal impedance",
+      "x_axis": {
+        "quantity": "tp",
+        "unit": "s",
+        "scale": "log10"
+      },
+      "y_axis": {
+        "quantity": "Zth(j-mb)",
+        "unit": "K/W",
+        "scale": "log10"
+      },
+      "conditions": "Duty factors 0.5,0.2,0.1,0.05,0.02 and single shot",
+      "image_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/cd38638b9e095227695292c2f27c33d8b8d32274586b55913aeedf80819491e3.jpg",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ],
+      "metadata_status": "visually_checked",
+      "digitization_status": "completed",
+      "coordinate_error": {
+        "scope": "resampling_vs_original_vector_not_device_accuracy",
+        "max_error_plot_pixels_at_300dpi": 6.0666104673146044e-05
+      },
+      "fit_r_squared": null,
+      "sampling": {
+        "part": "BUK7K52-60E",
+        "chart_id": "fig5",
+        "status": "auto_passed",
+        "human_review_required": false,
+        "method": "original_pdf_vector_path_digitization",
+        "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+        "source_pdf_sha256": "4272aefd6383ccab0790755ef94f526441c93ccf928df7532889dc31cc64454e",
+        "page_index": 4,
+        "mineru_image": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/cd38638b9e095227695292c2f27c33d8b8d32274586b55913aeedf80819491e3.jpg",
+        "calibration": {
+          "plot_rect_pdf_pt": [
+            94.66127014,
+            128.32455444,
+            500.30493164,
+            287.53057861
+          ],
+          "x_axis": {
+            "quantity": "tp",
+            "unit": "s",
+            "scale": "log10",
+            "range": [
+              1e-06,
+              1
+            ]
+          },
+          "y_axis": {
+            "quantity": "Zth(j-mb)",
+            "unit": "K/W",
+            "scale": "log10",
+            "range": [
+              0.01,
+              10
+            ]
+          },
+          "grid_drawing_ids": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95
+          ],
+          "calibration_method": "axis meaning read by current multimodal assistant; exact grid positions from PDF vector objects"
+        },
+        "common_conditions": "Duty factors 0.5,0.2,0.1,0.05,0.02 and single shot",
+        "series": [
+          {
+            "series_id": "duty_0",
+            "condition": "duty=0.5",
+            "status": "auto_passed",
+            "sample_count": 219,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig5/duty_0.csv",
+            "visible_x_range": [
+              1.0000000000545472e-06,
+              0.999998960646723
+            ],
+            "y_range": [
+              2.3541773037255003,
+              4.659282727863168
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              96,
+              97,
+              98,
+              99,
+              100,
+              101
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 3.4657096058494975e-06,
+            "resampling_max_error_plot_px_at_300dpi": 6.044223669713726e-05,
+            "reconstruction_r2_in_axis_domain": 0.9999999999999833,
+            "y_resampling_rmse_in_axis_unit": 1.3126602881531678e-07,
+            "y_unit": "K/W",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "y_resampling_rmse_log10": 1.5673470459972502e-08,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          },
+          {
+            "series_id": "duty_1",
+            "condition": "duty=0.2",
+            "status": "auto_passed",
+            "sample_count": 226,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig5/duty_1.csv",
+            "visible_x_range": [
+              1.0000000000545472e-06,
+              0.999998960646723
+            ],
+            "y_range": [
+              0.9627143782108155,
+              4.734606415269722
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              102,
+              103,
+              104,
+              105,
+              106,
+              107
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 2.4204053698589287e-06,
+            "resampling_max_error_plot_px_at_300dpi": 5.925051110485432e-05,
+            "reconstruction_r2_in_axis_domain": 0.9999999999999984,
+            "y_resampling_rmse_in_axis_unit": 1.0339958636597658e-07,
+            "y_unit": "K/W",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "y_resampling_rmse_log10": 1.0946142742513098e-08,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          },
+          {
+            "series_id": "duty_2",
+            "condition": "duty=0.1",
+            "status": "auto_passed",
+            "sample_count": 230,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig5/duty_2.csv",
+            "visible_x_range": [
+              1.0000000000545472e-06,
+              0.999998960646723
+            ],
+            "y_range": [
+              0.49450502753277475,
+              4.734606415269722
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              108,
+              109,
+              110,
+              111,
+              112,
+              113
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 2.532000962181493e-06,
+            "resampling_max_error_plot_px_at_300dpi": 6.052906087461452e-05,
+            "reconstruction_r2_in_axis_domain": 0.9999999999999991,
+            "y_resampling_rmse_in_axis_unit": 4.024185577694846e-08,
+            "y_unit": "K/W",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "y_resampling_rmse_log10": 1.1450827330175041e-08,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          },
+          {
+            "series_id": "duty_3",
+            "condition": "duty=0.05",
+            "status": "auto_passed",
+            "sample_count": 231,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig5/duty_3.csv",
+            "visible_x_range": [
+              1.0000000000545472e-06,
+              0.999998960646723
+            ],
+            "y_range": [
+              0.26228526179718625,
+              4.734606415269722
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              114,
+              115,
+              116,
+              117,
+              118,
+              119
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 3.309270423123015e-06,
+            "resampling_max_error_plot_px_at_300dpi": 6.059915804712546e-05,
+            "reconstruction_r2_in_axis_domain": 0.999999999999999,
+            "y_resampling_rmse_in_axis_unit": 8.887651631233551e-08,
+            "y_unit": "K/W",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "y_resampling_rmse_log10": 1.4965983331797305e-08,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          },
+          {
+            "series_id": "duty_4",
+            "condition": "duty=0.02",
+            "status": "auto_passed",
+            "sample_count": 230,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig5/duty_4.csv",
+            "visible_x_range": [
+              1.0000000000545472e-06,
+              0.999998960646723
+            ],
+            "y_range": [
+              0.12220611902428248,
+              4.734606415269722
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              120,
+              121,
+              122,
+              123,
+              124,
+              125
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 2.1140218266551183e-06,
+            "resampling_max_error_plot_px_at_300dpi": 5.930025572808973e-05,
+            "reconstruction_r2_in_axis_domain": 0.9999999999999997,
+            "y_resampling_rmse_in_axis_unit": 8.073859518973136e-08,
+            "y_unit": "K/W",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "y_resampling_rmse_log10": 9.56054095954897e-09,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          },
+          {
+            "series_id": "duty_5",
+            "condition": "single shot",
+            "status": "auto_passed",
+            "sample_count": 229,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig5/duty_5.csv",
+            "visible_x_range": [
+              1.0000000000545472e-06,
+              0.999998960646723
+            ],
+            "y_range": [
+              0.030200553701267643,
+              4.734606415269722
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              126,
+              127,
+              128,
+              129,
+              130,
+              131
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 3.3436642683646526e-06,
+            "resampling_max_error_plot_px_at_300dpi": 6.0666104673146044e-05,
+            "reconstruction_r2_in_axis_domain": 0.9999999999999996,
+            "y_resampling_rmse_in_axis_unit": 3.145169605564819e-08,
+            "y_unit": "K/W",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "y_resampling_rmse_log10": 1.5121527502704875e-08,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          }
+        ],
+        "overlay": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig5/overlay.png",
+        "reconstructed": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig5/reconstructed.png",
+        "digitization_error_scope": "CSV resampling versus dense vector centreline, not experimental device accuracy, curve-label accuracy, or SPICE model fit",
+        "sampling_policy": "linear interpolation in plot/axis domain, adaptive maximum 0.25 pixel error at 300 dpi; clip to visible axes; do not extend curve endpoints",
+        "calibration_checks": {
+          "part": "BUK7K52-60E",
+          "chart_id": "fig5",
+          "note": "Grid geometry compared to declared linear/log scale. Does not independently verify OCR tick values or legend semantics.",
+          "x": {
+            "expected_grid_lines": 55,
+            "detected_grid_lines": 55,
+            "max_grid_alignment_error_px_at_300dpi": 0.7662101893058567,
+            "rmse_grid_alignment_px_at_300dpi": 0.4364284258377086,
+            "matched_within_2px": 55,
+            "expected_tick_values": [
+              1e-06,
+              2e-06,
+              3e-06,
+              4e-06,
+              4.9999999999999996e-06,
+              6e-06,
+              7e-06,
+              8e-06,
+              9e-06,
+              1e-05,
+              2e-05,
+              3.0000000000000004e-05,
+              4e-05,
+              5e-05,
+              6.000000000000001e-05,
+              7.000000000000001e-05,
+              8e-05,
+              9e-05,
+              0.0001,
+              0.0002,
+              0.00030000000000000003,
+              0.0004,
+              0.0005,
+              0.0006000000000000001,
+              0.0007,
+              0.0008,
+              0.0009000000000000001,
+              0.001,
+              0.002,
+              0.003,
+              0.004,
+              0.005,
+              0.006,
+              0.007,
+              0.008,
+              0.009000000000000001,
+              0.01,
+              0.02,
+              0.03,
+              0.04,
+              0.05,
+              0.06,
+              0.07,
+              0.08,
+              0.09,
+              0.1,
+              0.2,
+              0.30000000000000004,
+              0.4,
+              0.5,
+              0.6000000000000001,
+              0.7000000000000001,
+              0.8,
+              0.9,
+              1.0
+            ]
+          },
+          "y": {
+            "expected_grid_lines": 28,
+            "detected_grid_lines": 28,
+            "max_grid_alignment_error_px_at_300dpi": 0.7535159280019835,
+            "rmse_grid_alignment_px_at_300dpi": 0.43321195795315814,
+            "matched_within_2px": 28,
+            "expected_tick_values": [
+              0.01,
+              0.02,
+              0.03,
+              0.04,
+              0.05,
+              0.06,
+              0.07,
+              0.08,
+              0.09,
+              0.1,
+              0.2,
+              0.30000000000000004,
+              0.4,
+              0.5,
+              0.6000000000000001,
+              0.7000000000000001,
+              0.8,
+              0.9,
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0,
+              7.0,
+              8.0,
+              9.0,
+              10.0
+            ]
+          },
+          "status": "auto_passed"
+        }
+      }
+    },
+    {
+      "id": "fig6",
+      "label": "Output characteristics",
+      "x_axis": {
+        "quantity": "VDS",
+        "unit": "V",
+        "scale": "linear"
+      },
+      "y_axis": {
+        "quantity": "ID",
+        "unit": "A",
+        "scale": "linear"
+      },
+      "conditions": "Tj=25°C; typical; VGS=4.5,5,5.5,6,6.5,10 V",
+      "image_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/7c1a8ccb504d21cd99a4dacfd74666fb65be9f875668a799b52bc2fda7bcb1e8.jpg",
+      "evidence_refs": [
+        "b73",
+        "p5"
+      ],
+      "metadata_status": "visually_checked",
+      "digitization_status": "completed",
+      "coordinate_error": {
+        "scope": "resampling_vs_original_vector_not_device_accuracy",
+        "max_error_plot_pixels_at_300dpi": 0.22060128336628776
+      },
+      "fit_r_squared": null,
+      "sampling": {
+        "part": "BUK7K52-60E",
+        "chart_id": "fig6",
+        "status": "auto_passed",
+        "human_review_required": false,
+        "method": "original_pdf_vector_path_digitization",
+        "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+        "source_pdf_sha256": "4272aefd6383ccab0790755ef94f526441c93ccf928df7532889dc31cc64454e",
+        "page_index": 5,
+        "mineru_image": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/7c1a8ccb504d21cd99a4dacfd74666fb65be9f875668a799b52bc2fda7bcb1e8.jpg",
+        "calibration": {
+          "plot_rect_pdf_pt": [
+            105.40148163,
+            394.91720581,
+            265.24578857,
+            554.8793335
+          ],
+          "x_axis": {
+            "quantity": "VDS",
+            "unit": "V",
+            "scale": "linear",
+            "range": [
+              0,
+              2
+            ]
+          },
+          "y_axis": {
+            "quantity": "ID",
+            "unit": "A",
+            "scale": "linear",
+            "range": [
+              0,
+              20
+            ]
+          },
+          "grid_drawing_ids": [
+            415,
+            416,
+            417,
+            418,
+            419,
+            420,
+            421,
+            422,
+            423,
+            424,
+            425,
+            426,
+            427,
+            428
+          ],
+          "calibration_method": "axis meaning read by current multimodal assistant; exact grid positions from PDF vector objects"
+        },
+        "common_conditions": "Tj=25°C; typical; VGS=4.5,5,5.5,6,6.5,10 V",
+        "series": [
+          {
+            "series_id": "vgs_0",
+            "condition": "VGS=4.5 V",
+            "status": "auto_passed",
+            "sample_count": 205,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/vgs_0.csv",
+            "visible_x_range": [
+              0.0,
+              2.0
+            ],
+            "y_range": [
+              5.47801795615558e-10,
+              1.987465719421505
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              429
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 0.017143484052442863,
+            "resampling_max_error_plot_px_at_300dpi": 0.09796415598373188,
+            "reconstruction_r2_in_axis_domain": 0.9999993924281012,
+            "y_resampling_rmse_in_axis_unit": 0.0005144262872721838,
+            "y_unit": "A",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          },
+          {
+            "series_id": "vgs_1",
+            "condition": "VGS=5 V",
+            "status": "auto_passed",
+            "sample_count": 205,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/vgs_1.csv",
+            "visible_x_range": [
+              0.0,
+              2.0
+            ],
+            "y_range": [
+              7.078539043529716e-10,
+              6.233171457291484
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              430
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 0.012980856623800044,
+            "resampling_max_error_plot_px_at_300dpi": 0.06633425340254462,
+            "reconstruction_r2_in_axis_domain": 0.9999999677806984,
+            "y_resampling_rmse_in_axis_unit": 0.00038951789835523583,
+            "y_unit": "A",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          },
+          {
+            "series_id": "vgs_2",
+            "condition": "VGS=5.5 V",
+            "status": "auto_passed",
+            "sample_count": 206,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/vgs_2.csv",
+            "visible_x_range": [
+              0.0,
+              2.0
+            ],
+            "y_range": [
+              8.291438371998945e-10,
+              12.284419522822459
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              431
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 0.013221580817558051,
+            "resampling_max_error_plot_px_at_300dpi": 0.06671604436074101,
+            "reconstruction_r2_in_axis_domain": 0.9999999924374223,
+            "y_resampling_rmse_in_axis_unit": 0.00039674133396917197,
+            "y_unit": "A",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          },
+          {
+            "series_id": "vgs_3",
+            "condition": "VGS=6 V",
+            "status": "auto_passed",
+            "sample_count": 206,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/vgs_3.csv",
+            "visible_x_range": [
+              0.0,
+              2.0
+            ],
+            "y_range": [
+              8.837690817716424e-10,
+              19.018148780381125
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              432
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 0.046403872527038835,
+            "resampling_max_error_plot_px_at_300dpi": 0.22060128336628776,
+            "reconstruction_r2_in_axis_domain": 0.9999999588002291,
+            "y_resampling_rmse_in_axis_unit": 0.0013924457704228856,
+            "y_unit": "A",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          },
+          {
+            "series_id": "vgs_4",
+            "condition": "VGS=6.5 V",
+            "status": "auto_passed",
+            "sample_count": 205,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/vgs_4.csv",
+            "visible_x_range": [
+              0.0,
+              1.1554886079162185
+            ],
+            "y_range": [
+              9.247060332071442e-10,
+              20.0
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              433
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 0.017176567777206303,
+            "resampling_max_error_plot_px_at_300dpi": 0.09333837478682958,
+            "reconstruction_r2_in_axis_domain": 0.9999999936847553,
+            "y_resampling_rmse_in_axis_unit": 0.0005154190340001586,
+            "y_unit": "A",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          },
+          {
+            "series_id": "vgs_5",
+            "condition": "VGS=10 V",
+            "status": "auto_passed",
+            "sample_count": 205,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/vgs_5.csv",
+            "visible_x_range": [
+              0.0,
+              0.8115054161567844
+            ],
+            "y_range": [
+              9.98890043464743e-10,
+              20.0
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              434
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 0.02688625759635459,
+            "resampling_max_error_plot_px_at_300dpi": 0.14304726257752995,
+            "reconstruction_r2_in_axis_domain": 0.9999999851472179,
+            "y_resampling_rmse_in_axis_unit": 0.000806778693970634,
+            "y_unit": "A",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          }
+        ],
+        "overlay": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/overlay.png",
+        "reconstructed": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig6/reconstructed.png",
+        "digitization_error_scope": "CSV resampling versus dense vector centreline, not experimental device accuracy, curve-label accuracy, or SPICE model fit",
+        "sampling_policy": "linear interpolation in plot/axis domain, adaptive maximum 0.25 pixel error at 300 dpi; clip to visible axes; do not extend curve endpoints",
+        "calibration_checks": {
+          "part": "BUK7K52-60E",
+          "chart_id": "fig6",
+          "note": "Grid geometry compared to declared linear/log scale. Does not independently verify OCR tick values or legend semantics.",
+          "x": {
+            "expected_grid_lines": 5,
+            "detected_grid_lines": 5,
+            "max_grid_alignment_error_px_at_300dpi": 0.002006791666708807,
+            "rmse_grid_alignment_px_at_300dpi": 0.0015454937320770266,
+            "matched_within_2px": 5,
+            "expected_tick_values": [
+              0.0,
+              0.5,
+              1.0,
+              1.5,
+              2.0
+            ]
+          },
+          "y": {
+            "expected_grid_lines": 11,
+            "detected_grid_lines": 11,
+            "max_grid_alignment_error_px_at_300dpi": 0.0020100999999309956,
+            "rmse_grid_alignment_px_at_300dpi": 0.001200818599024693,
+            "matched_within_2px": 11,
+            "expected_tick_values": [
+              0.0,
+              2.0,
+              4.0,
+              6.0,
+              8.0,
+              10.0,
+              12.0,
+              14.0,
+              16.0,
+              18.0,
+              20.0
+            ]
+          },
+          "status": "auto_passed"
+        }
+      }
+    },
+    {
+      "id": "fig7",
+      "label": "Transfer characteristics",
+      "x_axis": {
+        "quantity": "VGS",
+        "unit": "V",
+        "scale": "linear"
+      },
+      "y_axis": {
+        "quantity": "ID",
+        "unit": "A",
+        "scale": "linear"
+      },
+      "conditions": "VDS=10 V; typical; Tj=25°C and 175°C",
+      "image_path": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/1b543b7b6450f3e42e59130806b7e6a6c1ef1941637a6e7abac6770a0dae76b3.jpg",
+      "evidence_refs": [
+        "b75",
+        "p5"
+      ],
+      "metadata_status": "visually_checked",
+      "digitization_status": "completed",
+      "coordinate_error": {
+        "scope": "resampling_vs_original_vector_not_device_accuracy",
+        "max_error_plot_pixels_at_300dpi": 0.02179730127285969
+      },
+      "fit_r_squared": null,
+      "sampling": {
+        "part": "BUK7K52-60E",
+        "chart_id": "fig7",
+        "status": "auto_passed",
+        "human_review_required": false,
+        "method": "original_pdf_vector_path_digitization",
+        "source_pdf": "/Users/192y/电气/器件手册与模型/BUK7K52-60E/BUK7K52-60E_数据手册.pdf",
+        "source_pdf_sha256": "4272aefd6383ccab0790755ef94f526441c93ccf928df7532889dc31cc64454e",
+        "page_index": 5,
+        "mineru_image": "/Users/192y/电气/抽样JSON（MInerU）/BUK7K52-60E_数据手册/images/1b543b7b6450f3e42e59130806b7e6a6c1ef1941637a6e7abac6770a0dae76b3.jpg",
+        "calibration": {
+          "plot_rect_pdf_pt": [
+            353.00146484,
+            394.91720581,
+            512.8458252,
+            554.8793335
+          ],
+          "x_axis": {
+            "quantity": "VGS",
+            "unit": "V",
+            "scale": "linear",
+            "range": [
+              0,
+              7
+            ]
+          },
+          "y_axis": {
+            "quantity": "ID",
+            "unit": "A",
+            "scale": "linear",
+            "range": [
+              0,
+              25
+            ]
+          },
+          "grid_drawing_ids": [
+            450,
+            451,
+            452,
+            453,
+            454,
+            455,
+            456,
+            457,
+            458,
+            459,
+            460,
+            461,
+            462,
+            463,
+            464,
+            465,
+            466,
+            467,
+            468
+          ],
+          "calibration_method": "axis meaning read by current multimodal assistant; exact grid positions from PDF vector objects"
+        },
+        "common_conditions": "VDS=10 V; typical; Tj=25°C and 175°C",
+        "series": [
+          {
+            "series_id": "tj25",
+            "condition": "Tj=25 C",
+            "status": "auto_passed",
+            "sample_count": 207,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig7/tj25.csv",
+            "visible_x_range": [
+              3.75432868487642,
+              6.287155529059617
+            ],
+            "y_range": [
+              0.0,
+              25.0
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              469
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 0.00379800799244154,
+            "resampling_max_error_plot_px_at_300dpi": 0.02179730127285969,
+            "reconstruction_r2_in_axis_domain": 0.9999999996901672,
+            "y_resampling_rmse_in_axis_unit": 0.00014245902004262164,
+            "y_unit": "A",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          },
+          {
+            "series_id": "tj175",
+            "condition": "Tj=175 C",
+            "status": "auto_passed",
+            "sample_count": 208,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig7/tj175.csv",
+            "visible_x_range": [
+              3.296683786788622,
+              6.433689642742596
+            ],
+            "y_range": [
+              0.0,
+              25.0
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              470
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 0.0035620470587375466,
+            "resampling_max_error_plot_px_at_300dpi": 0.02117810887701429,
+            "reconstruction_r2_in_axis_domain": 0.9999999997286766,
+            "y_resampling_rmse_in_axis_unit": 0.00013360839006744247,
+            "y_unit": "A",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          }
+        ],
+        "overlay": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig7/overlay.png",
+        "reconstructed": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/BUK7K52-60E/fig7/reconstructed.png",
+        "digitization_error_scope": "CSV resampling versus dense vector centreline, not experimental device accuracy, curve-label accuracy, or SPICE model fit",
+        "sampling_policy": "linear interpolation in plot/axis domain, adaptive maximum 0.25 pixel error at 300 dpi; clip to visible axes; do not extend curve endpoints",
+        "calibration_checks": {
+          "part": "BUK7K52-60E",
+          "chart_id": "fig7",
+          "note": "Grid geometry compared to declared linear/log scale. Does not independently verify OCR tick values or legend semantics.",
+          "x": {
+            "expected_grid_lines": 8,
+            "detected_grid_lines": 8,
+            "max_grid_alignment_error_px_at_300dpi": 0.017842023809559276,
+            "rmse_grid_alignment_px_at_300dpi": 0.010638617569026065,
+            "matched_within_2px": 8,
+            "expected_tick_values": [
+              0.0,
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0,
+              7.0
+            ]
+          },
+          "y": {
+            "expected_grid_lines": 11,
+            "detected_grid_lines": 11,
+            "max_grid_alignment_error_px_at_300dpi": 0.0020100999999309956,
+            "rmse_grid_alignment_px_at_300dpi": 0.001200818599024693,
+            "matched_within_2px": 11,
+            "expected_tick_values": [
+              0.0,
+              2.5,
+              5.0,
+              7.5,
+              10.0,
+              12.5,
+              15.0,
+              17.5,
+              20.0,
+              22.5,
+              25.0
+            ]
+          },
+          "status": "auto_passed"
+        }
+      }
+    }
+  ],
+  "review": [
+    {
+      "code": "CURVE_DIGITIZATION_PENDING",
+      "detail": "Fig.5–7已数字化；其余曲线不在本轮队列，缺失的物理模型参数仍须自动处理或报告失败，不设置人工批准。",
+      "evidence_refs": [
+        "p4",
+        "p5"
+      ],
+      "blocks_direct_spice_generation": true
+    }
+  ],
+  "automation": {
+    "human_review_required": false,
+    "previous_extraction_status": "needs_review",
+    "curve_scope": "8 previously identified charts only; empty curves does not mean source has no curves",
+    "source_electrical_sha256": "c5c9172fde29ae81d413902f9e603cc0ee2b1b54ee2d8b29ef6682c173af7add",
+    "metrics_file": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/digitization_summary.json"
+  }
+}

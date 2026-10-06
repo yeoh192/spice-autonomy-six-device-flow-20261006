@@ -1,0 +1,1598 @@
+[
+  {
+    "page": 1,
+    "text": "ACS723KMA\nHigh Accuracy, Hall-Effect-Based Current Sensor IC\nin High Isolation SOIC16 Package\nNot for New Design\nThe ACS723KMA is in production but has been determined to be\nNOT FOR NEW DESIGN. This classification indicates that sale of\nthis device is currently restricted to existing customer applications.\nThe device should not be purchased for new design applications\nbecause obsolescence in the near future is probable. Samples are no\nlonger available.\nDate of status change: March 14, 2025\nRecommended Substitutions:\nFor existing customer transition, and for new customers or new ap-\nplications, refer to ACS37002 (recommended for its high accuracy and\nincluded features) or ACS724.\nNOTE: For detailed information on purchasing options, contact your\nlocal Allegro field applications engineer or sales representative.\nAllegro MicroSystems reserves the right to make, from time to time, revisions to the anticipated product life cycle plan for a\nproduct to accommodate changes in production capabilities, alternative product availabilities, or market demand. The infor-\nmation included herein is believed to be accurate and reliable. However, Allegro MicroSystems assumes no responsibility for\nits use; nor for any infringements of patents or other rights of third parties which may result from its use.",
+    "tables": [],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 2,
+    "text": "ACS723KMA\nHigh Accuracy, Hall-Effect-Based Current Sensor IC\nin High Isolation SOIC16 Package\nFEATURES AND BENEFITS DESCRIPTION\n• Patented integrated digital temperature compensation The Allegro™ ACS723 current sensor IC is an economical and\ncircuitry allows for near closed loop accuracy over precise solution for AC or DC current sensing in industrial,\ntemperature in an open loop sensor commercial, and communication systems. The small package\n• UL60950-1 (ed. 2) certified is ideal for space constrained applications while also saving\n□ Dielectric Strength Voltage = 4.8 kVrms costs due to reduced board area. Typical applications include\n□ Basic Isolation Working Voltage = 1097 Vrms motor control, load detection and management, switched-mode\n□ Reinforced Isolation Working Voltage = 565 Vrms power supplies, and overcurrent fault protection.\n• Industry-leading noise performance with greatly\nThe device consists of a precise, low-offset, linear Hall sensor\nimproved bandwidth through proprietary amplifier and\ncircuit with a copper conduction path located near the surface of\nfilter design techniques\nthe die. Applied current flowing through this copper conduction\n• Pin-selectable band width: 80 kHz for high bandwidth\npath generates a magnetic field which is sensed by the integrated\napplications or 20 kHz for low noise performance\nHall IC and converted into a proportional voltage. Device\n• 0.85 mΩ primary conductor resistance for low power\naccuracy is optimized through the close proximity of the\nloss and high inrush current withstand capability\nmagnetic field to the Hall transducer. A precise, proportional\n• Low-profile SOIC16 package suitable for space-\nvoltage is provided by the low-offset, chopper-stabilized\nconstrained applications\nBiCMOS Hall IC, which includes Allegro’s patented digital\n• 4.5 to 5.5 V, single supply operation\ntemperature compensation, resulting in extremely accurate\n• Output voltage proportional to AC or DC current\nperformance over temperature. The output of the device has\n• Factory-trimmed sensitivity and quiescent output voltage\na positive slope when an increasing current flows through the\nfor improved accuracy\nprimary copper conduction path (from pins 1 through 4, to pins\nContinued on the next page…\n5 through 8), which is the path used for current sensing. The\ninternal resistance of this conductive path is 0.85 mΩ typical,\nTÜV America\nCertificate Number: providing low power loss.\nU8V 16 03 54214 040\nCB Certificate Number:\nCB 16 03 54214 039\nUS-32210-M1-UL The terminals of the conductive path are electrically isolated\nfrom the sensor leads (pins 9 through 16). This allows the\nPACKAGE: 16-pin SOICW (suffix MA) ACS723 current sensor IC to be used in high-side current sense\napplications without the use of high-side differential amplifiers\nor other costly isolation techniques.\nContinued on the next page…\nNot to scale\n16\nACS723 NC\n1\nIP+ The ACS723 outputs an\n+I 2 IP+ GND 15 analog signal, V IOUT , that\nP 3 changes, proportionally, with\nIP+ 14\n4 NC the bidirectional AC or DC\nIP+ primary sensed current, I ,\n13 P\nBW_SEL within the specified measure-\nI\nP 12 ment range. The BW_SEL pin\nVIOUT can be used to select one of\n5 6 IP– NC 11 C L m th i e z e tw th o e b n a o n i d s w e i p d e th rf s o t r o m o a p n t c i- e.\n–I IP–\nP 7 10 Grounding the BW_SEL pin\nIP– VCC\n8 C puts the part in the high\nIP– NC 9 0. B 1 YP (cid:31) A F SS bandwidth (80 kHz) mode.\nTypical Application\nACS723-DS, Rev. 6 March 12, 2025\nMCO-0000547",
+    "tables": [
+      [
+        [
+          "2"
+        ],
+        [
+          "3"
+        ],
+        [
+          "4"
+        ]
+      ],
+      [
+        [
+          "14"
+        ],
+        [
+          "13"
+        ]
+      ],
+      [
+        [
+          "6\n7"
+        ],
+        [
+          "8"
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 3,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nFEATURES AND BENEFITS (continued) DESCRIPTION (continued)\n• Chopper stabilization results in extremely stable quiescent The ACS723 is provided in a low-profile surface mount SOIC16\noutput voltage package. The leadframe is plated with 100% matte tin, which is\n• Nearly zero magnetic hysteresis compatible with standard lead (Pb) free printed circuit board assembly\n• Ratiometric output from supply voltage processes. Internally, the device is Pb-free, except for flip-chip high-\ntemperature Pb-based solder balls, currently exempt from RoHS.\nThe device is fully calibrated prior to shipment from the factory.\nSELECTION GUIDE\nSens(Typ) at V = 5.0 V\nPart Number I (A) CC T (°C) Packing [1]\nPR (mV/A) A\nACS723KMATR-10AB-T ±10 200\nACS723KMATR-20AB-T ±20 100 –40 to 125 Tape and Reel, 3000 pieces per reel\nACS723KMATR-40AB-T ±40 50\n[1] Contact Allegro for additional packing options.\n2\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [
+      [
+        [
+          "Part Number",
+          "I (A)\nPR",
+          "Sens(Typ) at V = 5.0 V\nCC\n(mV/A)",
+          "T (°C)\nA",
+          "Packing [1]"
+        ],
+        [
+          "ACS723KMATR-10AB-T",
+          "±10",
+          "200",
+          "–40 to 125",
+          "Tape and Reel, 3000 pieces per reel"
+        ],
+        [
+          "ACS723KMATR-20AB-T",
+          "±20",
+          "100",
+          null,
+          null
+        ],
+        [
+          "ACS723KMATR-40AB-T",
+          "±40",
+          "50",
+          null,
+          null
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 4,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nSPECIFICATIONS\nABSOLUTE MAXIMUM RATINGS\nCharacteristic Symbol Notes Rating Units\nSupply Voltage V 6 V\nCC\nReverse Supply Voltage V –0.1 V\nRCC\nOutput Voltage V 25 V\nIOUT\nReverse Output Voltage V –0.1 V\nRIOUT\nMaximum Continuous Current I T = 25°C 60 A\nCMAX A\nOperating Ambient Temperature T Range K –40 to 125 °C\nA\nJunction Temperature T 165 °C\nJ(max)\nStorage Temperature T –65 to 165 °C\nstg\nISOLATION CHARACTERISTICS\nCharacteristic Symbol Notes Rating Unit\nAgency type-tested for 60 seconds per UL 60950-1\nDielectric Strength Test Voltage V (edition. 2). Production tested at 3000 V for 1 second, 4800 V\nISO RMS RMS\nin accordance with UL 60950-1 (edition. 2).\n1550 V\nMaximum approved working voltage for basic (single) PK\nWorking Voltage for Basic Isolation V\nWVBI isolation according to UL 60950-1 (edition 2)\n1097 V or VDC\nRMS\n800 V\nMaximum approved working voltage for reinforced PK\nWorking Voltage for Reinforced Isolation V\nWVRI isolation according to UL 60950-1 (edition 2)\n565 V or VDC\nRMS\nMinimum distance through air from IP leads to signal\nClearance D 7.5 mm\ncl leads.\nMinimum distance along package body from IP leads to\nCreepage D 8.2 mm\ncr signal leads\n3\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [
+      [
+        [
+          "Characteristic",
+          "Symbol",
+          "Notes",
+          "Rating",
+          "Units"
+        ],
+        [
+          "Supply Voltage",
+          "V\nCC",
+          "",
+          "6",
+          "V"
+        ],
+        [
+          "Reverse Supply Voltage",
+          "V\nRCC",
+          "",
+          "–0.1",
+          "V"
+        ],
+        [
+          "Output Voltage",
+          "V\nIOUT",
+          "",
+          "25",
+          "V"
+        ],
+        [
+          "Reverse Output Voltage",
+          "V\nRIOUT",
+          "",
+          "–0.1",
+          "V"
+        ],
+        [
+          "Maximum Continuous Current",
+          "I\nCMAX",
+          "T = 25°C\nA",
+          "60",
+          "A"
+        ],
+        [
+          "Operating Ambient Temperature",
+          "T\nA",
+          "Range K",
+          "–40 to 125",
+          "°C"
+        ],
+        [
+          "Junction Temperature",
+          "T\nJ(max)",
+          "",
+          "165",
+          "°C"
+        ],
+        [
+          "Storage Temperature",
+          "T\nstg",
+          "",
+          "–65 to 165",
+          "°C"
+        ]
+      ],
+      [
+        [
+          "Characteristic",
+          "Symbol",
+          "Notes",
+          "Rating",
+          "Unit"
+        ],
+        [
+          "Dielectric Strength Test Voltage",
+          "V\nISO",
+          "Agency type-tested for 60 seconds per UL 60950-1\n(edition. 2). Production tested at 3000 V for 1 second,\nRMS\nin accordance with UL 60950-1 (edition. 2).",
+          "4800",
+          "V\nRMS"
+        ],
+        [
+          "Working Voltage for Basic Isolation",
+          "V\nWVBI",
+          "Maximum approved working voltage for basic (single)\nisolation according to UL 60950-1 (edition 2)",
+          "1550",
+          "V\nPK"
+        ],
+        [
+          null,
+          null,
+          null,
+          "1097",
+          "V or VDC\nRMS"
+        ],
+        [
+          "Working Voltage for Reinforced Isolation",
+          "V\nWVRI",
+          "Maximum approved working voltage for reinforced\nisolation according to UL 60950-1 (edition 2)",
+          "800",
+          "V\nPK"
+        ],
+        [
+          null,
+          null,
+          null,
+          "565",
+          "V or VDC\nRMS"
+        ],
+        [
+          "Clearance",
+          "D\ncl",
+          "Minimum distance through air from IP leads to signal\nleads.",
+          "7.5",
+          "mm"
+        ],
+        [
+          "Creepage",
+          "D\ncr",
+          "Minimum distance along package body from IP leads to\nsignal leads",
+          "8.2",
+          "mm"
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 5,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nVCC\nMaster Current\nToAll Subcircuits\nSupply Programming\nControl\nPOR\nHall\nCurrent Temperature EEPROM and\nDrive Sensor Control Logic\nOffset\nIP+\nControl\nIP+ Sensitivity\nIP+ Control\nIP+\net\nsn\nOff\nati\no\nTuned\nmi\nc\nc\nell\nFilter\nVIOUT\nan\nIP – na\nyC\nIP D\n–\nIP\n–\nIP\n–\nBW_SEL GND\nFunctional Block Diagram\nTerminal List Table\nIP+ 1 16 NC\nNumber Name Description\nIP+ 2 15 GND\nIP+ 3 14 NC 1, 2, 3, 4 IP+ Terminals for current being sensed; fused internally\nIP+ 4 13 BW_SEL 5, 6, 7, 8 IP- Terminals for current being sensed; fused internally\nIP- 5 12 VIOUT No internal connection; recommended to be left unconnected in order to\n9, 16 NC\nIP- 6 11 NC maintain high creepage.\nIP- 7 10 VCC 10 VCC Device power supply terminal\nIP- 8 9 NC No internal connection; recommended to connect to GND for the best ESD\n11, 14 NC\nperformance\nPinout Diagram 12 VIOUT Analog output signal\n13 BW_SEL Terminal for selecting 20 kHz or 80 kHz bandwidth\n15 GND Signal ground terminal\n4\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [
+      [
+        [
+          "Number",
+          "Name",
+          "Description"
+        ],
+        [
+          "1, 2, 3, 4",
+          "IP+",
+          "Terminals for current being sensed; fused internally"
+        ],
+        [
+          "5, 6, 7, 8",
+          "IP-",
+          "Terminals for current being sensed; fused internally"
+        ],
+        [
+          "9, 16",
+          "NC",
+          "No internal connection; recommended to be left unconnected in order to\nmaintain high creepage."
+        ],
+        [
+          "10",
+          "VCC",
+          "Device power supply terminal"
+        ],
+        [
+          "11, 14",
+          "NC",
+          "No internal connection; recommended to connect to GND for the best ESD\nperformance"
+        ],
+        [
+          "12",
+          "VIOUT",
+          "Analog output signal"
+        ],
+        [
+          "13",
+          "BW_SEL",
+          "Terminal for selecting 20 kHz or 80 kHz bandwidth"
+        ],
+        [
+          "15",
+          "GND",
+          "Signal ground terminal"
+        ]
+      ],
+      [
+        [
+          "4"
+        ],
+        [
+          "5"
+        ]
+      ],
+      [
+        [
+          "13"
+        ],
+        [
+          "12"
+        ]
+      ],
+      [
+        [
+          "7"
+        ],
+        [
+          "8"
+        ]
+      ],
+      [
+        [
+          "10"
+        ],
+        [
+          "9"
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 6,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nCOMMON ELECTRICAL CHARACTERISTICS [1]: Valid through the full range of T = –40°C to 125°C, and at V = 5 V,\nA CC\nunless otherwise specified\nCharacteristic Symbol Test Conditions Min. Typ. Max. Units\nSupply Voltage V 4.5 5 5.5 V\nCC\nSupply Current I V within V (min) and V (max) – 9 14 mA\nCC CC CC CC\nOutput Capacitance Load C VIOUT to GND – – 10 nF\nL\nOutput Resistive Load R VIOUT to GND 4.7 – – kΩ\nL\nPrimary Conductor Resistance R T = 25°C – 0.85 – mΩ\nIP A\nMagnetic Coupling Factor C – 4.5 – G/A\nF\nI = I (max), T = 25°C, C = 1 nF,\nP P A L – 4 – μs\nBW_SEL tied to GND\nRise Time t\nr\nI = I (max), T = 25°C, C = 1 nF,\nP P A L – 17.5 – μs\nBW_SEL tied to VCC\nI = I (max), T = 25°C, C = 1 nF,\nP P A L – 2 – μs\nBW_SEL tied to GND\nPropagation Delay t\npd\nI = I (max), T = 25°C, C = 1 nF,\nP P A L – 5 – μs\nBW_SEL tied to VCC\nI = I (max), T = 25°C, C = 1 nF,\nP P A L – 5 – μs\nBW_SEL tied to GND\nResponse Time t\nRESPONSE\nI = I (max), T = 25°C, C = 1 nF,\nP P A L – 22.5 – μs\nBW_SEL tied to VCC\nSmall signal –3 dB; C = 1 nF,\nL – 80 – kHz\nBW_SEL tied to GND\nInternal Bandwidth BWi\nSmall signal –3 dB; C = 1nF,\nL – 20 – kHz\nBW_SEL tied to VCC\nInput referenced noise density; µA /\nNoise Density I – 220 – (rms)\nND T = 25°C, C = 1 nF √Hz\nA L\nInput referenced noise; BWi = 80 kHz,\n– 62 – mA\nT = 25°C, C = 1 nF (rms)\nA L\nNoise I\nN\nInput referenced noise; BWi = 20 kHz,\n– 31 – mA\nT = 25°C, C = 1 nF (rms)\nA L\nNonlinearity E Through full range of I – ±1 %\nLIN P\nV R = 4.7 kΩ, T = 25°C V – 0.5 – – V\nSaturation Voltage [2] OH L A CC\nV R = 4.7 kΩ, T = 25°C – – 0.5 V\nOL L A\nOutput reaches 90% of steady-state\nPower-On Time t – 64 – μs\nPO level, T = 25°C, I = I (max) applied\nA P PR\n[1] Device may be operated at higher primary current levels, IP , ambient temperatures, TA , and internal leadframe temperatures, provided the Maximum Junction Tempera-\nture, TJ(max), is not exceeded.\n[2] The sensor IC will continue to respond to current beyond the range of IP until the high or low saturation voltage; however, the nonlinearity in this region will be worse than\nthrough the rest of the measurement range.\n5\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [
+      [
+        [
+          "Characteristic",
+          "Symbol",
+          "Test Conditions",
+          "Min.",
+          "Typ.",
+          "Max.",
+          "Units"
+        ],
+        [
+          "Supply Voltage",
+          "V\nCC",
+          "",
+          "4.5",
+          "5",
+          "5.5",
+          "V"
+        ],
+        [
+          "Supply Current",
+          "I\nCC",
+          "V within V (min) and V (max)\nCC CC CC",
+          "–",
+          "9",
+          "14",
+          "mA"
+        ],
+        [
+          "Output Capacitance Load",
+          "C\nL",
+          "VIOUT to GND",
+          "–",
+          "–",
+          "10",
+          "nF"
+        ],
+        [
+          "Output Resistive Load",
+          "R\nL",
+          "VIOUT to GND",
+          "4.7",
+          "–",
+          "–",
+          "kΩ"
+        ],
+        [
+          "Primary Conductor Resistance",
+          "R\nIP",
+          "T = 25°C\nA",
+          "–",
+          "0.85",
+          "–",
+          "mΩ"
+        ],
+        [
+          "Magnetic Coupling Factor",
+          "C\nF",
+          "",
+          "–",
+          "4.5",
+          "–",
+          "G/A"
+        ],
+        [
+          "Rise Time",
+          "t\nr",
+          "I = I (max), T = 25°C, C = 1 nF,\nP P A L\nBW_SEL tied to GND",
+          "–",
+          "4",
+          "–",
+          "μs"
+        ],
+        [
+          null,
+          null,
+          "I = I (max), T = 25°C, C = 1 nF,\nP P A L\nBW_SEL tied to VCC",
+          "–",
+          "17.5",
+          "–",
+          "μs"
+        ],
+        [
+          "Propagation Delay",
+          "t\npd",
+          "I = I (max), T = 25°C, C = 1 nF,\nP P A L\nBW_SEL tied to GND",
+          "–",
+          "2",
+          "–",
+          "μs"
+        ],
+        [
+          null,
+          null,
+          "I = I (max), T = 25°C, C = 1 nF,\nP P A L\nBW_SEL tied to VCC",
+          "–",
+          "5",
+          "–",
+          "μs"
+        ],
+        [
+          "Response Time",
+          "t\nRESPONSE",
+          "I = I (max), T = 25°C, C = 1 nF,\nP P A L\nBW_SEL tied to GND",
+          "–",
+          "5",
+          "–",
+          "μs"
+        ],
+        [
+          null,
+          null,
+          "I = I (max), T = 25°C, C = 1 nF,\nP P A L\nBW_SEL tied to VCC",
+          "–",
+          "22.5",
+          "–",
+          "μs"
+        ],
+        [
+          "Internal Bandwidth",
+          "BWi",
+          "Small signal –3 dB; C = 1 nF,\nL\nBW_SEL tied to GND",
+          "–",
+          "80",
+          "–",
+          "kHz"
+        ],
+        [
+          null,
+          null,
+          "Small signal –3 dB; C = 1nF,\nL\nBW_SEL tied to VCC",
+          "–",
+          "20",
+          "–",
+          "kHz"
+        ],
+        [
+          "Noise Density",
+          "I\nND",
+          "Input referenced noise density;\nT = 25°C, C = 1 nF\nA L",
+          "–",
+          "220",
+          "–",
+          "µA /\n(rms)\n√Hz"
+        ],
+        [
+          "Noise",
+          "I\nN",
+          "Input referenced noise; BWi = 80 kHz,\nT = 25°C, C = 1 nF\nA L",
+          "–",
+          "62",
+          "–",
+          "mA\n(rms)"
+        ],
+        [
+          null,
+          null,
+          "Input referenced noise; BWi = 20 kHz,\nT = 25°C, C = 1 nF\nA L",
+          "–",
+          "31",
+          "–",
+          "mA\n(rms)"
+        ],
+        [
+          "Nonlinearity",
+          "E\nLIN",
+          "Through full range of I\nP",
+          "–",
+          "±1",
+          "",
+          "%"
+        ],
+        [
+          "Saturation Voltage [2]",
+          "V\nOH",
+          "R = 4.7 kΩ, T = 25°C\nL A",
+          "V – 0.5\nCC",
+          "–",
+          "–",
+          "V"
+        ],
+        [
+          null,
+          "V\nOL",
+          "R = 4.7 kΩ, T = 25°C\nL A",
+          "–",
+          "–",
+          "0.5",
+          "V"
+        ],
+        [
+          "Power-On Time",
+          "t\nPO",
+          "Output reaches 90% of steady-state\nlevel, T = 25°C, I = I (max) applied\nA P PR",
+          "–",
+          "64",
+          "–",
+          "μs"
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 7,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nxKMATR-10AB PERFORMANCE CHARACTERISTICS: T Range K, valid at T = – 40°C to 125°C, V = 5.0 V,\nA A CC\nunless otherwise specified\nCharacteristic Symbol Test Conditions Min. Typ.[1] Max. Units\nNOMINAL PERFORMANCE\nCurrent Sensing Range I –10 – 10 A\nPR\nSensitivity Sens I < I < I – 200 – mV/A\nPR(min) P PR(max)\nV ×\nZero Current Output Voltage V Bidirectional; I = 0 A – CC – V\nIOUT(Q) P 0.5\nACCURACY PERFORMANCE\nI = I , T = 25°C to 125°C –2.5 ±1.4 2.5 %\nTotal Output Error [2] E P PR(max) A\nTOT\nI = I , T = –40°C to 25°C – ±2 – %\nP PR(max) A\nTOTAL OUTPUT ERROR COMPONENTS [3]: E = E + 100 × V /(Sens × I )\nTOT SENS OE P\nT = 25°C to 125°C; measured at I = I –2 ±1.3 2 %\nA P PR(max)\nSensitivity Error E\nSENS\nT = –40°C to 25°C; measured at I = I – ±1.8 – %\nA P PR(max)\nI = 0 A; T = 25°C to 125°C –15 ±10 15 mV\nOffset Voltage [4] V P A\nOE\nI = 0 A; T = -40°C to 25°C – ±20 – mV\nP A\nLIFETIME DRIFT CHARACTERISTICS\nSensitivity Error Lifetime Drift E – ±1 – %\nsens_drift\nTotal Output Error Lifetime Drift E – ±1 – %\ntot_drift\n[1] Typical values with +/- are 3 sigma values.\n[2] Percentage of IP , with IP = IPR(max)\n[3] A single part will not have both the maximum/minimum sensitivity error and maximum/minimum offset voltage, as that would violate the maximum/minimum total output\nerror specification. Also, 3 sigma distribution values are combined by taking the square root of the sum of the squares. See Application Information section.\n[4] Offset Voltage does not incorporate any error due to external magnetic fields. See section: Impact of External Magnetic Fields.\n6\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [
+      [
+        [
+          "Characteristic",
+          "Symbol",
+          "Test Conditions",
+          "Min.",
+          "Typ.[1]",
+          "Max.",
+          "Units"
+        ],
+        [
+          "NOMINAL PERFORMANCE",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Current Sensing Range",
+          "I\nPR",
+          "",
+          "–10",
+          "–",
+          "10",
+          "A"
+        ],
+        [
+          "Sensitivity",
+          "Sens",
+          "I < I < I\nPR(min) P PR(max)",
+          "–",
+          "200",
+          "–",
+          "mV/A"
+        ],
+        [
+          "Zero Current Output Voltage",
+          "V\nIOUT(Q)",
+          "Bidirectional; I = 0 A\nP",
+          "–",
+          "V ×\nCC\n0.5",
+          "–",
+          "V"
+        ],
+        [
+          "ACCURACY PERFORMANCE",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Total Output Error [2]",
+          "E\nTOT",
+          "I = I , T = 25°C to 125°C\nP PR(max) A",
+          "–2.5",
+          "±1.4",
+          "2.5",
+          "%"
+        ],
+        [
+          null,
+          null,
+          "I = I , T = –40°C to 25°C\nP PR(max) A",
+          "–",
+          "±2",
+          "–",
+          "%"
+        ],
+        [
+          "TOTAL OUTPUT ERROR COMPONENTS [3]: E = E + 100 × V /(Sens × I )\nTOT SENS OE P",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Sensitivity Error",
+          "E\nSENS",
+          "T = 25°C to 125°C; measured at I = I\nA P PR(max)",
+          "–2",
+          "±1.3",
+          "2",
+          "%"
+        ],
+        [
+          null,
+          null,
+          "T = –40°C to 25°C; measured at I = I\nA P PR(max)",
+          "–",
+          "±1.8",
+          "–",
+          "%"
+        ],
+        [
+          "Offset Voltage [4]",
+          "V\nOE",
+          "I = 0 A; T = 25°C to 125°C\nP A",
+          "–15",
+          "±10",
+          "15",
+          "mV"
+        ],
+        [
+          null,
+          null,
+          "I = 0 A; T = -40°C to 25°C\nP A",
+          "–",
+          "±20",
+          "–",
+          "mV"
+        ],
+        [
+          "LIFETIME DRIFT CHARACTERISTICS",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Sensitivity Error Lifetime Drift",
+          "E\nsens_drift",
+          "",
+          "–",
+          "±1",
+          "–",
+          "%"
+        ],
+        [
+          "Total Output Error Lifetime Drift",
+          "E\ntot_drift",
+          "",
+          "–",
+          "±1",
+          "–",
+          "%"
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 8,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nxKMATR-20AB PERFORMANCE CHARACTERISTICS: T Range K, valid at T = – 40°C to 125°C, V = 5.0 V,\nA A CC\nunless otherwise specified\nCharacteristic Symbol Test Conditions Min. Typ.[1] Max. Units\nNOMINAL PERFORMANCE\nCurrent Sensing Range I –20 – 20 A\nPR\nSensitivity Sens I < I < I – 100 – mV/A\nPR(min) P PR(max)\nV ×\nZero Current Output Voltage V Bidirectional; I = 0 A – CC – V\nIOUT(Q) P 0.5\nACCURACY PERFORMANCE\nI = I , T = 25°C to 125°C –2 ±1.3 2 %\nTotal Output Error [2] E P PR(max) A\nTOT\nI = I , T = –40°C to 25°C – ±2 – %\nP PR(max) A\nTOTAL OUTPUT ERROR COMPONENTS [3]: E = E + 100 × V /(Sens × I )\nTOT SENS OE P\nT = 25°C to 125°C; measured at I = I –1.5 ±1.2 1.5 %\nA P PR(max)\nSensitivity Error E\nSENS\nT = –40°C to 25°C; measured at I = I – ±1.8 – %\nA P PR(max)\nI = 0 A; T = 25°C to 125°C –10 ±5 10 mV\nOffset Voltage [4] V P A\nOE\nI = 0 A; T = –40°C to 25°C – ±12 – mV\nP A\nLIFETIME DRIFT CHARACTERISTICS\nSensitivity Error Lifetime Drift E – ±1 – %\nsens_drift\nTotal Output Error Lifetime Drift E – ±1 – %\ntot_drift\n[1] Typical values with +/- are 3 sigma values.\n[2] Percentage of IP , with IP = IPR(max)\n[3] A single part will not have both the maximum/minimum sensitivity error and maximum/minimum offset voltage, as that would violate the maximum/minimum total output\nerror specification. Also, 3 sigma distribution values are combined by taking the square root of the sum of the squares. See Application Information section.\n[4] Offset Voltage does not incorporate any error due to external magnetic fields. See section: Impact of External Magnetic Fields.\n7\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [
+      [
+        [
+          "Characteristic",
+          "Symbol",
+          "Test Conditions",
+          "Min.",
+          "Typ.[1]",
+          "Max.",
+          "Units"
+        ],
+        [
+          "NOMINAL PERFORMANCE",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Current Sensing Range",
+          "I\nPR",
+          "",
+          "–20",
+          "–",
+          "20",
+          "A"
+        ],
+        [
+          "Sensitivity",
+          "Sens",
+          "I < I < I\nPR(min) P PR(max)",
+          "–",
+          "100",
+          "–",
+          "mV/A"
+        ],
+        [
+          "Zero Current Output Voltage",
+          "V\nIOUT(Q)",
+          "Bidirectional; I = 0 A\nP",
+          "–",
+          "V ×\nCC\n0.5",
+          "–",
+          "V"
+        ],
+        [
+          "ACCURACY PERFORMANCE",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Total Output Error [2]",
+          "E\nTOT",
+          "I = I , T = 25°C to 125°C\nP PR(max) A",
+          "–2",
+          "±1.3",
+          "2",
+          "%"
+        ],
+        [
+          null,
+          null,
+          "I = I , T = –40°C to 25°C\nP PR(max) A",
+          "–",
+          "±2",
+          "–",
+          "%"
+        ],
+        [
+          "TOTAL OUTPUT ERROR COMPONENTS [3]: E = E + 100 × V /(Sens × I )\nTOT SENS OE P",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Sensitivity Error",
+          "E\nSENS",
+          "T = 25°C to 125°C; measured at I = I\nA P PR(max)",
+          "–1.5",
+          "±1.2",
+          "1.5",
+          "%"
+        ],
+        [
+          null,
+          null,
+          "T = –40°C to 25°C; measured at I = I\nA P PR(max)",
+          "–",
+          "±1.8",
+          "–",
+          "%"
+        ],
+        [
+          "Offset Voltage [4]",
+          "V\nOE",
+          "I = 0 A; T = 25°C to 125°C\nP A",
+          "–10",
+          "±5",
+          "10",
+          "mV"
+        ],
+        [
+          null,
+          null,
+          "I = 0 A; T = –40°C to 25°C\nP A",
+          "–",
+          "±12",
+          "–",
+          "mV"
+        ],
+        [
+          "LIFETIME DRIFT CHARACTERISTICS",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Sensitivity Error Lifetime Drift",
+          "E\nsens_drift",
+          "",
+          "–",
+          "±1",
+          "–",
+          "%"
+        ],
+        [
+          "Total Output Error Lifetime Drift",
+          "E\ntot_drift",
+          "",
+          "–",
+          "±1",
+          "–",
+          "%"
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 9,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nxKMATR-40AB PERFORMANCE CHARACTERISTICS: T Range K, valid at T = – 40°C to 125°C, V = 5.0 V,\nA A CC\nunless otherwise specified\nCharacteristic Symbol Test Conditions Min. Typ. [1] Max. Units\nNOMINAL PERFORMANCE\nCurrent Sensing Range I –40 – 40 A\nPR\nSensitivity Sens I < I < I – 50 – mV/A\nPR(min) P PR(max)\nV ×\nZero Current Output Voltage V Bidirectional; I = 0 A – CC – V\nIOUT(Q) P 0.5\nACCURACY PERFORMANCE\nI = I , T = 25°C to 125°C –2 ±0.8 2 %\nTotal Output Error [2] E P PR(max) A\nTOT\nI = I , T = –40°C to 25°C – ±1.8 – %\nP PR(max) A\nTOTAL OUTPUT ERROR COMPONENTS [3]: E = E + 100 × V /(Sens × I )\nTOT SENS OE P\nT = 25°C to 125°C; measured at I = I –1.5 ±0.8 1.5 %\nA P PR(max)\nSensitivity Error E\nSENS\nT = –40°C to 25°C; measured at I = I – ±1.8 – %\nA P PR(max)\nI = 0 A; T = 25°C to 125°C –10 ±4 10 mV\nOffset Voltage [4] V P A\nOE\nI = 0 A; T = –40°C to 25°C – ±6 – mV\nP A\nLIFETIME DRIFT CHARACTERISTICS\nSensitivity Error Lifetime Drift E – ±1 – %\nsens_drift\nTotal Output Error Lifetime Drift E – ±1 – %\ntot_drift\n[1] Typical values with +/- are 3 sigma values.\n[2] Percentage of IP , with IP = IPR(max)\n[3] A single part will not have both the maximum/minimum sensitivity error and maximum/minimum offset voltage, as that would violate the maximum/minimum total output\nerror specification. Also, 3 sigma distribution values are combined by taking the square root of the sum of the squares. See Application Information section.\n[4] Offset Voltage does not incorporate any error due to external magnetic fields. See section: Impact of External Magnetic Fields.\n8\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [
+      [
+        [
+          "Characteristic",
+          "Symbol",
+          "Test Conditions",
+          "Min.",
+          "Typ. [1]",
+          "Max.",
+          "Units"
+        ],
+        [
+          "NOMINAL PERFORMANCE",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Current Sensing Range",
+          "I\nPR",
+          "",
+          "–40",
+          "–",
+          "40",
+          "A"
+        ],
+        [
+          "Sensitivity",
+          "Sens",
+          "I < I < I\nPR(min) P PR(max)",
+          "–",
+          "50",
+          "–",
+          "mV/A"
+        ],
+        [
+          "Zero Current Output Voltage",
+          "V\nIOUT(Q)",
+          "Bidirectional; I = 0 A\nP",
+          "–",
+          "V ×\nCC\n0.5",
+          "–",
+          "V"
+        ],
+        [
+          "ACCURACY PERFORMANCE",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Total Output Error [2]",
+          "E\nTOT",
+          "I = I , T = 25°C to 125°C\nP PR(max) A",
+          "–2",
+          "±0.8",
+          "2",
+          "%"
+        ],
+        [
+          null,
+          null,
+          "I = I , T = –40°C to 25°C\nP PR(max) A",
+          "–",
+          "±1.8",
+          "–",
+          "%"
+        ],
+        [
+          "TOTAL OUTPUT ERROR COMPONENTS [3]: E = E + 100 × V /(Sens × I )\nTOT SENS OE P",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Sensitivity Error",
+          "E\nSENS",
+          "T = 25°C to 125°C; measured at I = I\nA P PR(max)",
+          "–1.5",
+          "±0.8",
+          "1.5",
+          "%"
+        ],
+        [
+          null,
+          null,
+          "T = –40°C to 25°C; measured at I = I\nA P PR(max)",
+          "–",
+          "±1.8",
+          "–",
+          "%"
+        ],
+        [
+          "Offset Voltage [4]",
+          "V\nOE",
+          "I = 0 A; T = 25°C to 125°C\nP A",
+          "–10",
+          "±4",
+          "10",
+          "mV"
+        ],
+        [
+          null,
+          null,
+          "I = 0 A; T = –40°C to 25°C\nP A",
+          "–",
+          "±6",
+          "–",
+          "mV"
+        ],
+        [
+          "LIFETIME DRIFT CHARACTERISTICS",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Sensitivity Error Lifetime Drift",
+          "E\nsens_drift",
+          "",
+          "–",
+          "±1",
+          "–",
+          "%"
+        ],
+        [
+          "Total Output Error Lifetime Drift",
+          "E\ntot_drift",
+          "",
+          "–",
+          "±1",
+          "–",
+          "%"
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 10,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nCHARACTERISTIC PERFORMANCE\nxKMATR-10AB Key Parameters\nZero Current Output Voltage vs. Temperature Offset Voltage vs. Temperature\n2525 25\n2520 20\n2515 15\n2510 V) 10\nm\nm V) 2505 g e ( 5\nV\n( IOUT(Q) 2\n2\n5\n4\n0\n9\n0\n5 et\nV\nolt a\n-\n0\n5\ns\n2490 Off -10\n2485 -15\n2480 -20\n2475 -25\n-50 0 50 100 150 -50 0 50 100 150\nTemperature (ºC) Temperature (ºC)\nSensitivity vs. Temperature Sensitivity Error vs. Temperature\n205 2.5\n204 2.0\n203 1.5\nA) 202 %) 1.0\nm\nV/\n201 or\n(\n0.5\nS e\nn\nsiti\nvit y\n(\n1\n2\n1\n9\n0\n9\n9\n0\n8 e n\nsiti\nvit\ny\nErr\n-\n-\n1\n0\n0\n.\n.\n.\n0\n5\n0\nS\n197 -1.5\n196 -2.0\n195 -2.5\n-50 0 50 100 150 -50 0 50 100 150\nTemperature (ºC) Temperature (ºC)\nNonlinearity vs. Temperature Total Error at I vs. Temperature\nPR(max)\n1.5 2.5\n2.0\n1.0\n1.5\nN o\nnli\nn\ne\narit\ny (\n%)\n-\n0\n0\n0\n.\n.\n.\n0\n5\n5\nT ot\nal\nErr\nor\n(\n%)\n-\n-\n1\n1\n0\n0\n0\n.\n.\n.\n.\n.\n0\n0\n5\n0\n5\n-1.5\n-1.0\n-2.0\n-1.5 -2.5\n-50 0 50 100 150 -50 0 50 100 150\nTemperature (ºC) Temperature (ºC)\n+3 Sigma Average -3 Sigma\n9\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [
+      [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 11,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nxKMATR-20AB Key Parameters\nZero Current Output Voltage vs. Temperature Offset Voltage vs. Temperature\n2520 20\n2515 15\n2510 10\nV)\nm\nm\nV) 2505\ng e\n( 5\nV\n( IOUT(Q) 2\n2\n5\n4\n0\n9\n0\n5 et\nV\nolt a\n-\n0\n5\ns\n2490\nOff\n-10\n2485 -15\n2480 -20\n-50 0 50 100 150 -50 0 50 100 150\nTemperature (ºC) Temperature (ºC)\nSensitivity vs. Temperature Sensitivity Error vs. Temperature\n103 2.5\n2.0\n102\n1.5\nm\nV/\nA)\n101\nor\n(\n%) 1\n0\n.\n.\n0\n5\nS e n\nsiti\nvit y\n(\n10\n9\n0\n9 e n siti\nvit\ny\nErr\n- - 1\n0\n0 .\n.\n. 0\n0\n5\nS\n98 -1.5\n-2.0\n97 -2.5\n-50 0 50 100 150 -50 0 50 100 150\nTemperature (ºC) Temperature (ºC)\nNonlinearity vs. Temperature Total Error at I vs. Temperature\nPR(max)\n1.0 3.0\n0.8\n2.0\n0.6\nN o\nnli\nn\ne\narit\ny (\n%)\n-\n-\n0\n0\n0\n0\n0\n.\n.\n.\n.\n.\n0\n2\n4\n2\n4\nT ot\nal\nErr\nor\n(\n%)\n-1\n0\n1\n.\n.\n.\n0\n0\n0\n-0.6\n-2.0\n-0.8\n-1.0 -3.0\n-50 0 50 100 150 -50 0 50 100 150\nTemperature (ºC) Temperature (ºC)\n+3 Sigma Average -3 Sigma\n10\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [
+      [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 12,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nxKMATR-40AB Key Parameters\nZero Current Output Voltage vs. Temperature Offset Voltage vs. Temperature\n2508 8\n2506 6\n2504 4\nV)\nm\nm\nV) 2502\ng e\n( 2\nV\n( IOUT(Q)\n2\n2\n4\n5\n9\n0\n8\n0\net\nV\nolt a\n-2\n0\ns\n2496\nOff\n-4\n2494 -6\n2492 -8\n-50 0 50 100 150 -50 0 50 100 150\nTemperature (ºC) Temperature (ºC)\nSensitivity vs. Temperature Sensitivity Error vs. Temperature\n51.5 2.5\n2.0\n51.0\n1.5\nm\nV/ A) 50.5\nor\n( %) 1\n0\n.\n.\n0\n5\nS e n\nsiti\nvit y\n(\n5\n4\n0\n9\n.\n.\n0\n5 e n siti\nvit\ny\nErr\n- -\n0\n1 0\n.\n. .\n0\n0 5\nS\n49.0 -1.5\n-2.0\n48.5 -2.5\n-50 0 50 100 150 -50 0 50 100 150\nTemperature (ºC) Temperature (ºC)\nNonlinearity vs. Temperature Total Error at I vs. Temperature\nPR(max)\n0.5 2.5\n0.4 2.0\n0.3 1.5\no\nnli\nn\ne\narit\ny (\n%)\n-\n0\n0\n0\n0\n.\n.\n.\n.\n0\n1\n2\n1\not\nal\nErr\nor\n(\n%)\n-\n0\n0\n1\n0\n.\n.\n.\n.\n0\n5\n0\n5\nN -0.2 T -1.0\n-0.3 -1.5\n-0.4 -2.0\n-0.5 -2.5\n-50 0 50 100 150 -50 0 50 100 150\nTemperature (ºC) Temperature (ºC)\n+3 Sigma Average -3 Sigma\n11\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [
+      [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 13,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nSensitivity (Sens)\nThe change in sensor IC output in response to a 1 A change\nthrough the primary conductor. The sensitivity is the product\nof the magnetic coupling factor (G / A) (1 G = 0.1 mT)and the\nlinear IC amplifier gain (mV/G). The linear IC amplifier gain is\nprogrammed at the factory to optimize the sensitivity (mV/A) for\nthe full-scale current of the device.\nNonlinearity (E )\nLIN\nThe nonlinearity is a measure of how linear the output of the sen-\nsor IC is over the full current measurement range. The nonlinear-\nity is calculated as:\n{ [ 1–\n12\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com\n[ {\nDEFINITIONS OF ACCURACY CHARACTERISTICS\ndue to sensitivity error, and at relatively low currents, E will TOT\nbe mostly due to Offset Voltage (V ). In fact, at I = 0, E\nOE P TOT\napproaches infinity due to the offset. This is illustrated in Figures\n1 and 2. Figure 1 shows a distribution of output voltages versus I\nP\nat 25°C and across temperature. Figure 2 shows the correspond-\ning E versus I .\nTOT P\nAccuracy Across\nIncreasing Temperature\nVIOUT (V)\nAccuracy at\n25°C Only\nAccuracy Across Ideal VIOUT\nTemperature\nE = V IOUT (I PR(max)) – V IOUT(Q) × 100 (%) A 25 c ° c C ur O ac n y ly at\nLIN 2 × V IOUT (I PR(max)/2) –V IOUT(Q)\nwhere V (I ) is the output of the sensor IC with the\nIPR(min) VIOUT(Q) +IP (A)\nIOUT PR(max)\nmaximum measurement current flowing through it and\n–IP (A)\nV (I /2) is the output of the sensor IC with half of the\nIOUT PR(max)\nmaximum measurement current flowing through it.\nFull Scale IP\nIPR(max)\nZero Current Output Voltage (V )\nIOUT(Q) 0 A\nThe output of the sensor when the primary current is zero. For\na unipolar supply voltage, itnominally remains at 0.5 × V for Accuracy at\nCC 25°C Only\na bidirectional device and 0.1 × V for a unidirectional device. Decreasing\nCC Accuracy Across VIOUT (V)\nFor example, in the case of a bidirectional output device, V = Temperature\nCC\n5.0 V translates into V = 2.50 V. Variation in V can Figure 1: Output Voltage versus Sensed Current\nIOUT(Q) IOUT(Q)\nbe attributed to the resolution of the Allegro linear IC quiescent\nvoltage trim and thermal drift.\n+ETOT\nOffset Voltage (V )\nOE\nThe deviation of the device output from its ideal quiescent value\nof 0.5 × V (bidirectional) or 0.1 × V (unidirectional) due to\nCC CC\nnonmagnetic causes. To convert this voltage to amperes, divide\nby the device sensitivity, Sens. Across Temperature\n25°C Only\nTotal Output Error (E )\nTOT\nThe difference between the current measurement from the sensor\n–IP +IP\nIC and the actual current (I ), relative to the actual current. This\nP\nis equivalent to the difference between the ideal output voltage\nand the actual output voltage, divided by the ideal sensitivity,\nrelative to the current flowing through the primary conduction\npath:\nV (I ) – V (I )\nIOUT_ideal P IOUT P\nE TOT (I P )=\nSens\nideal\n(I\nP\n) × I\nP\n× 100 (%) –ETOT\nThe Total Output Error incorporates all sources of error and is a\nFigure 2: Total Output Error versus Sensed Current\nfunction of I . At relatively high currents, E will be mostly\nP TOT",
+    "tables": [
+      [
+        [
+          null,
+          "",
+          null,
+          null
+        ],
+        [
+          "",
+          null,
+          null,
+          null
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          null,
+          "",
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null,
+          "",
+          null,
+          ""
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          "",
+          "",
+          ""
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          "",
+          "",
+          ""
+        ],
+        [
+          null,
+          null,
+          "",
+          "",
+          "",
+          null,
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          null,
+          null,
+          null
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          "",
+          null,
+          null,
+          null
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 14,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nAPPLICATION INFORMATION\nImpact of External Magnetic Fields ±3 sigma value for Total Error (E TOT ) as a function of the sensed\ncurrent (I ) is estimated as:\nP\nThe ACS723 works by sensing the magnetic field created by the\ncurrent flowing through the package. However, the sensor cannot (100 × V )2\nE (I ) = E 2+ OE\ndifferentiate between fields created by the current flow and exter- TOT P SENS Sens × I\nP\nnal magnetic fields. This means that external magnetic fields can\ncause errors in the output of the sensor. Magnetic fields which are Here, E and V are the ±3 sigma values for those error\nSENS OE\nperpendicular to the surface of the package affect the output of terms. If there is an average sensitivity error or average offset\nthe sensor, as it only senses fields in that one plane. The error in voltage, then the average Total Error is estimated as:\nAmperes can be quantified as:\n100 × V\nE (I ) = E + OEAVG\nB TOTAVG P SENSAVG Sens × I\nError(B) = P\nC\nF\nThe resulting total error will be a sum of E and E .\nTOT TOT_AVG\nwhere B is the strength of the external field perpendicular to the\nUsing these equations and the 3 sigma distributions for Sensitiv-\nsurface of the package in Gauss, and C is the coupling factor in\nF ity Error and Offset Voltage, the Total Error vs. sensed current\nG/A. Then, multiplying by the sensitivity of the part (Sens) gives\n(I ) is below for the ACS723KMATR-40AB. As expected, as one\nP\nthe error in mV.\ngoes towards zero current, the error in percent goes towards infin-\nFor example, an external field of 1 Gauss will result in around ity due to division by zero (refer to Figure 3).\n0.22 A of error. If the ACS723KMATR-10AB, which has a nomi-\nnal sensitivity of 200 mV/A, is being used, that equates to 44 mV 15.00\nof error on the output of the sensor. d)\ne\nur 10.00\nTable 1: External Magnetic Field (Gauss) Impact a s\ne\nm -40C+3sig\nExternal Field Error (A) Error (mV) nt 5.00 -40C-3sig\n(Ga\n0\n1\nu\n.5\nss)\n0\n0\n.\n.\n2\n11\n2\n10\n4\n2\nA\n4\n2\nB 20\n2\n1\nA\n1\n2\nB 40\n1\n6\nA\n1\nB\n%\nof\nc\nurr e\n0.00\n1\n2\n2\n2\n5\n5\n5\nC\nC\nC\n+\n+\n-\n3\n3\n3\ns\ns\ns\ni\ni\ni\ng\ng\ng\n2 0.44 88 44 22 or\n( -5.00 125C-3sig\nErr\nEstimating Total Error vs. Sensed Current al\n-10.00\not\nT\nThe Performance Characteristics tables give distribution (±3 -15.00\n0 5 10 15 20 25 30 35 40\nsigma) values for Total Error at I ; however, one often\nPR(max) Current (A)\nwants to know what error to expect at a particular current. This\ncan be estimated by using the distribution data for the compo- Figure 3: Predicted Total Error as a Function of Sensed\nnents of Total Error, Sensitivity Error and Offset Voltage. The Current for the ACS723KMATR-40AB\n13\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [
+      [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      [
+        [
+          "External Field\n(Gauss)",
+          "Error (A)",
+          "Error (mV)",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "10AB",
+          "20AB",
+          "40AB"
+        ],
+        [
+          "0.5",
+          "0.11",
+          "22",
+          "11",
+          "6"
+        ],
+        [
+          "1",
+          "0.22",
+          "44",
+          "22",
+          "11"
+        ],
+        [
+          "2",
+          "0.44",
+          "88",
+          "44",
+          "22"
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 15,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nThermal Rise vs. Primary Current The thermal capacity of the ACS723 should be verified by the\nend user in the application’s specific conditions. The maximum\nSelf-heating due to the flow of current should be considered dur-\njunction temperature, T (165℃), should not be exceeded.\nJ(MAX)\ning the design of any current sensing system. The sensor, printed\nFurther information on this application testing is available in\ncircuit board (PCB), and contacts to the PCB will generate heat as\nthe DC and Transient Current Capability application note on the\ncurrent moves through the system.\nAllegro website.\nThe thermal response is highly dependent on PCB layout, copper\nASEK723 Evaluation Board Layout\nthickness, cooling techniques, and the profile of the injected current.\nThe current profile includes peak current, current “on-time”, and Thermal data shown in Figure 4 and Figure 5 was collected using\nduty cycle. While the data presented in this section was collected the ASEK723 Evaluation Board (TED-85-0738-003). This board\nwith direct current (DC), these numbers may be used to approximate includes 1280 mm2 of 4 oz. copper (0.1388) connected to pins 1\nthermal response for both AC signals and current pulses. through 4, and to pins 5 through 8, with thermal vias connecting\nthe layers. Top and Bottom layers of the PCB are shown below in\nThe plot in Figure 4 shows the measured rise in steady-state die\nFigure 6.\ntemperature of the ACS723 versus continuous current at an ambi-\nent temperature, T , of 25 °C. The thermal offset curves may be\nA\ndirectly applied to other values of T . Conversely, Figure 5 shows\nA\nthe maximum continuous current at a given T . Surges beyond the\nA\nmaximum current listed in Figure 5 are allowed given the maxi-\nmum junction temperature, T (165℃), is not exceeded.\nJ(MAX)\nFigure 4: Self-Heating in the MA Package\nDue to Current Flow\nFigure 6: Top and Bottom Layers\nfor ASEK723 Evaluation Board\nFigure 5: Maximum Continuous Current at a Given T\nA\n14\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 16,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nDEFINITIONS OF DYNAMIC RESPONSE CHARACTERISTICS\nPower-On Time (t )\nPO V\nVCC\nWhen the supply is ramped to its operating voltage, the device VCC(typ.)\nrequires a finite time to power its internal components before 90% VIOUT VIOUT\nresponding to an input magnetic field.\nPower-On Time (t ) is defined as the time it takes for the output\nPO\nvoltage to settle within ±10% of its steady state value under an\nVCC(min.)\ntPO\napplied magnetic field, after the power supply has reached its t1 t2\nminimum specified operating voltage (V ) as shown in the\nCC(min) t1= time at which power supply reaches\nchart at right (refer to Figure 7). minimum specified operating voltage\nt2= time at which output voltage settles\nRise Time (t ) within ±10% of its steady state value\nr under an applied magnetic field\nThe time interval between: a) when the sensor IC reaches 10%\n0\nof its full scale value; and b) when it reaches 90% of its full scale t\nFigure 7: Power-On Time\nvalue (refer to Figure 8). The rise time to a step response is used\nto derive the bandwidth of the current sensor IC, in which ƒ(–3\ndB) = 0.35 / t. Both t and t are detrimentally affected by\nr r RESPONSE (%) Primary Current\neddy current losses observed in the conductive IC ground plane.\n90\nPropagation Delay (t )\nVIOUT\npd\nThe propagation delay is measured as the time interval between: Rise Time, tr\na) when the primary current signal reaches 20% of its final value; 20\n10\nand b) when the device reaches 20% of its output corresponding 0\nto the applied current (refer to Figure 8).\nPropagation Delay, tpd t\nResponse Time (t )\nRESPONSE Figure 8: Rise Time and Propagation Delay\nThe time interval between: a) when the primary current signal\nreaches 90% of its final value; and b) when the device reaches\n90% of its output corresponding to the applied current (refer to\n(%) Primary Current\nFigure 9).\n90\nVIOUT\nResponse Time, tRESPONSE\n0\nt\nFigure 9: Response Time\n15\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [
+      [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          null
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 17,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nNOTTO SCALE\nAll dimensions in millimeters.\n15.75\n9.54\n0.65 1.27\nPackage Outline\n2.25 Slot in PCB to maintain >8 mm creepage\nonce part is on PCB\n7.25 1.27\n3.56\n17.27\nCurrent Current\nIn Out\nPerimeter holes for stitching to the other,\nmatching current trace design, layers of\n21.51\nthe PCB for enhanced thermal capability.\nFigure 10: High-Isolation PCB Layout\n16\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [
+      [
+        [
+          "",
+          ""
+        ]
+      ],
+      [
+        [
+          "",
+          ""
+        ]
+      ],
+      [
+        [
+          "",
+          ""
+        ]
+      ],
+      [
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 18,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nPACKAGE OUTLINE DRAWING\nFor Reference Only–Not for Tooling Use\n(Reference Allegro DWG-0000388, Rev. 1 and JEDEC MS-013AA)\nNOTTO SCALE\nDimensions in millimeters\nDimensions exclusive of moldflash, gate burrs, and dambar protrusions\nExact case and lead configuration at supplier discretion within limits shown\n10.21 ±0.10 8°\n0°\n16\n9° ±2°\n0.32\n0.23\nR0.76 ±0.13\n7.50 ±0.10 10.31 ±0.20\nA\n0.76 ±0.25\n1.40 REF\n1 2\nBranded Face\n0.25 BSC\nSEATING PLANE\n16× 2.54 ±0.10 CC GAUGE PLANE\n0.10 C SEATING\nPLANE\n0.30\n1.27 BSC\n0.10\n0.41 ±0.05\n0.65 1.27\nXXXXXXXX\n16 Lot Number\n2.25\n1\nB Standard Branding Reference View\nLine 1: Part Number\nLine 2: Assembly Lot Number\n9.50\nA Terminal #1 mark area\nB Branding scale and appearance at supplier discretion\n1 2\nC Reference land pattern layout (reference IPC7351 SOIC127P600X175-8M);\nC PCB Layout Reference View all pads a minimum of 0.20 mm from all adjacent pads; adjust as necessary\nto meet application process requirements and PCB layout tolerances\nFigure 11: Package MA, 16-pin SOICW\n17\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [
+      [
+        [
+          "R0.76 ±0.13",
+          null,
+          ""
+        ],
+        [
+          "A",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ],
+      [
+        [
+          "",
+          ""
+        ]
+      ],
+      [
+        [
+          "XXXXXXXX\nLot Number"
+        ],
+        [
+          ""
+        ]
+      ],
+      [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  },
+  {
+    "page": 19,
+    "text": "High Accuracy, Hall-Effect-Based Current Sensor IC\nACS723KMA\nin High Isolation SOIC16 Package\nREVISION HISTORY\nNumber Date Description\n– February 23, 2015 Initial release\n1 April 13, 2016 Corrected Package Outline Drawing branding information (page 16).\n2 December 17, 2018 Updated certificate numbers and minor editorial updates\n3 June 3, 2019 Updated TUV certificate mark\nAdded Maximum Continuous Current to Absolute Maximum Ratings table (page 3) and thermal data section\n4 September 4, 2019\n(page 14)\n5 September 8, 2022 Updated package drawing (page 17) and minor editorial updates\nChanged product status to not for new design (added cover sheet), removed thermal characteristics table\n6 March 12, 2025\n(page 3), and removed reference to ASEK files on the Allegro web site (page 14).\nCopyright 2025, Allegro MicroSystems.\nAllegro MicroSystems reserves the right to make, from time to time, such departures from the detail specifications as may be required to permit\nimprovements in the performance, reliability, or manufacturability of its products. Before placing an order, the user is cautioned to verify that the\ninformation being relied upon is current.\nAllegro’s products are not to be used in any devices or systems, including but not limited to life support devices or systems, in which a failure of\nAllegro’s product can reasonably be expected to cause bodily harm.\nThe information included herein is believed to be accurate and reliable. However, Allegro MicroSystems assumes no responsibility for its use; nor\nfor any infringement of patents or other rights of third parties which may result from its use.\nCopies of this document are considered uncontrolled documents.\nFor the latest version of this document, visit our website:\nwww.allegromicro.com\n18\nAllegro MicroSystems\n955 Perimeter Road\nManchester, NH 03103-3353 U.S.A.\nwww.allegromicro.com",
+    "tables": [
+      [
+        [
+          "Number",
+          "Date",
+          "Description"
+        ],
+        [
+          "–",
+          "February 23, 2015",
+          "Initial release"
+        ],
+        [
+          "1",
+          "April 13, 2016",
+          "Corrected Package Outline Drawing branding information (page 16)."
+        ],
+        [
+          "2",
+          "December 17, 2018",
+          "Updated certificate numbers and minor editorial updates"
+        ],
+        [
+          "3",
+          "June 3, 2019",
+          "Updated TUV certificate mark"
+        ],
+        [
+          "4",
+          "September 4, 2019",
+          "Added Maximum Continuous Current to Absolute Maximum Ratings table (page 3) and thermal data section\n(page 14)"
+        ],
+        [
+          "5",
+          "September 8, 2022",
+          "Updated package drawing (page 17) and minor editorial updates"
+        ],
+        [
+          "6",
+          "March 12, 2025",
+          "Changed product status to not for new design (added cover sheet), removed thermal characteristics table\n(page 3), and removed reference to ASEK files on the Allegro web site (page 14)."
+        ]
+      ]
+    ],
+    "width": 612.0,
+    "height": 792.0
+  }
+]

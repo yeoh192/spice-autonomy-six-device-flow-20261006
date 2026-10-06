@@ -1,0 +1,36 @@
+{
+  "device": "EMHK350ARA470MF80G",
+  "pins": [
+    {
+      "number": null,
+      "label": "+",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "package": "SMD F80, terminal A",
+      "connection_note": "Positive terminal; drawing has polarity mark, not a numeric pin number",
+      "evidence_refs": [
+        "b7",
+        "b8",
+        "p0"
+      ]
+    },
+    {
+      "number": null,
+      "label": "−",
+      "applies_to": [
+        "EMHK350ARA470MF80G"
+      ],
+      "package": "SMD F80, terminal A",
+      "connection_note": "Negative terminal; no invented numeric pin number",
+      "evidence_refs": [
+        "b7",
+        "b8",
+        "p0"
+      ]
+    }
+  ],
+  "topology": [],
+  "model_port_binding": null,
+  "status": "handbook_pin_evidence_preserved_model_binding_pending"
+}

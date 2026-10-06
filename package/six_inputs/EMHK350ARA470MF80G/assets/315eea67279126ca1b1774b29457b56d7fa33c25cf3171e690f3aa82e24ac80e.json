@@ -1,0 +1,21 @@
+{
+  "scope": "selected_variant_handbook_data_and_curves",
+  "limits_policy": "保留手册min/max；绝对最大值归约束审计；不得据仿真宣称破坏边界得到验证",
+  "typical_tolerance_percent": 10,
+  "curve_thresholds": {
+    "MAE_over_reference_span_percent": 5.0,
+    "max_error_over_reference_span_percent": 10.0
+  },
+  "threshold_status": "confirmed_project_engineering_standard",
+  "delivery_gates": [
+    "完整手册逐行/逐系列复核",
+    "实际测试条件和端口绑定",
+    "测试方案校准与执行证据",
+    "规格与曲线验收",
+    "完整回归无退化",
+    "来源与依赖清楚",
+    "通用入口一次启动与恢复验证"
+  ],
+  "status": "not_accepted",
+  "confirmation_source": "../../batch_acceptance.json"
+}

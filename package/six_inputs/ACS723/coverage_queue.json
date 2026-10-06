@@ -1,0 +1,1266 @@
+{
+  "items": [
+    {
+      "reference_id": "parameter:10AB_range",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        7
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:10AB_sensitivity",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        7
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:10AB_zero",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        7
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:10AB_error_warm",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        7
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:10AB_error_cold",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        7
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:20AB_range",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        8
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:20AB_sensitivity",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        8
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:20AB_zero",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        8
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:20AB_error_warm",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        8
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:20AB_error_cold",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        8
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:40AB_range",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        9
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:40AB_sensitivity",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        9
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:40AB_zero",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        9
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:40AB_error_warm",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        9
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:40AB_error_cold",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        9
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:vcc_abs",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:vout_abs",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:ip_abs",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:tj_abs",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:ta",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:tstg",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:vcc",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:icc",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:cl",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:rl",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:rip",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:bw80",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "ac_crossing",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:rise_time80",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:propagation_delay80",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:response_time80",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:noise80",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:bw20",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "ac_crossing",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:rise_time20",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:propagation_delay20",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:response_time20",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:noise20",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:poweron",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:vout_hi",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:vout_lo",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:isotest",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:working_basic",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:working_reinforced",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:10AB_sens_error_warm",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        7
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:10AB_sens_error_cold",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        7
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:10AB_offset_warm",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        7
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:10AB_offset_cold",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        7
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:10AB_sensitivity_error_lifetime_drift",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "qualification_constraint",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        7
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:10AB_total_output_error_lifetime_drift",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "qualification_constraint",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        7
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:20AB_sens_error_warm",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        8
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:20AB_sens_error_cold",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        8
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:20AB_offset_warm",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        8
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:20AB_offset_cold",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        8
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:20AB_sensitivity_error_lifetime_drift",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "constraint_audit_required",
+      "method_family": "qualification_constraint",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        8
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:20AB_total_output_error_lifetime_drift",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "constraint_audit_required",
+      "method_family": "qualification_constraint",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        8
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:40AB_sens_error_warm",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        9
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:40AB_sens_error_cold",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        9
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:40AB_offset_warm",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        9
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:40AB_offset_cold",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        9
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:40AB_sensitivity_error_lifetime_drift",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "qualification_constraint",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        9
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:40AB_total_output_error_lifetime_drift",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "not_applicable",
+      "method_family": "qualification_constraint",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        9
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:noise_density",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "noise_or_distortion",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:nonlinear",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:reverse_supply",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:reverse_output",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:coupling",
+      "source_kind": "test",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        6
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:clearance",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:creepage",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:zero_output:average",
+      "source_kind": "test",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:zero_output:plus3sigma",
+      "source_kind": "statistical_envelope",
+      "plan_status": "scope_or_corner_review",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:zero_output:minus3sigma",
+      "source_kind": "statistical_envelope",
+      "plan_status": "scope_or_corner_review",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:offset:average",
+      "source_kind": "test",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:offset:plus3sigma",
+      "source_kind": "statistical_envelope",
+      "plan_status": "scope_or_corner_review",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:offset:minus3sigma",
+      "source_kind": "statistical_envelope",
+      "plan_status": "scope_or_corner_review",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:sensitivity:average",
+      "source_kind": "test",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:sensitivity:plus3sigma",
+      "source_kind": "statistical_envelope",
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:sensitivity:minus3sigma",
+      "source_kind": "statistical_envelope",
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:sensitivity_error:average",
+      "source_kind": "test",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:sensitivity_error:plus3sigma",
+      "source_kind": "statistical_envelope",
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:sensitivity_error:minus3sigma",
+      "source_kind": "statistical_envelope",
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:nonlinearity:average",
+      "source_kind": "test",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:nonlinearity:plus3sigma",
+      "source_kind": "statistical_envelope",
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:nonlinearity:minus3sigma",
+      "source_kind": "statistical_envelope",
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:total_error:average",
+      "source_kind": "test",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:total_error:plus3sigma",
+      "source_kind": "statistical_envelope",
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:20AB:total_error:minus3sigma",
+      "source_kind": "statistical_envelope",
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        11
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:1",
+      "source_kind": "informational",
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        13
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:2",
+      "source_kind": "informational",
+      "plan_status": "informational",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        13
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:3",
+      "source_kind": "statistical_envelope",
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        14
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:4",
+      "source_kind": "thermal_constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        15
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:5",
+      "source_kind": "thermal_constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        15
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:6",
+      "source_kind": "informational",
+      "plan_status": "informational",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        15
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:7",
+      "source_kind": "informational",
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        16
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:8",
+      "source_kind": "informational",
+      "plan_status": "informational",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        16
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:9",
+      "source_kind": "informational",
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        16
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:10",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        17
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:11",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        18
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "table:external_field",
+      "source_kind": "test",
+      "plan_status": "test_development_required",
+      "method_family": "dc_derived",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        14
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    }
+  ],
+  "review_status": "page_anchored_inventory_expanded_series_and_footnote_review_pending"
+}

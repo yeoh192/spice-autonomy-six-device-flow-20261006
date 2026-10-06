@@ -1,0 +1,32 @@
+* Second fit screening: trade low-VGS match against high-current source degeneration.
+.model FIT_E VDMOS(Rg=25 Vto=1.55 Rd=.20 Rs=1.80 Rb=.20 Kp=.23 mtriode=1.25 Lambda=.015 Cgdmax=24p Cgdmin=8p Cgs=34p Cjo=17p Is=2p N=1.15 Vj=.75 M=.4 TT=18n Vds=60 Ron=2.1)
+.model FIT_F VDMOS(Rg=25 Vto=1.50 Rd=.20 Rs=2.10 Rb=.20 Kp=.25 mtriode=1.25 Lambda=.015 Cgdmax=24p Cgdmin=8p Cgs=34p Cjo=17p Is=2p N=1.15 Vj=.75 M=.4 TT=18n Vds=60 Ron=2.1)
+.model FIT_G VDMOS(Rg=25 Vto=1.60 Rd=.20 Rs=1.80 Rb=.20 Kp=.22 mtriode=1.25 Lambda=.015 Cgdmax=24p Cgdmin=8p Cgs=34p Cjo=17p Is=2p N=1.15 Vj=.75 M=.4 TT=18n Vds=60 Ron=2.1)
+.model FIT_H VDMOS(Rg=25 Vto=1.55 Rd=.20 Rs=1.60 Rb=.20 Kp=.21 mtriode=1.25 Lambda=.015 Cgdmax=24p Cgdmin=8p Cgs=34p Cjo=17p Is=2p N=1.15 Vj=.75 M=.4 TT=18n Vds=60 Ron=2.1)
+VGS g 0 0
+VE de 0 10
+VF df 0 10
+VGX dg 0 10
+VH dh 0 10
+ME de g 0 0 FIT_E
+MF df g 0 0 FIT_F
+MG dg g 0 0 FIT_G
+MH dh g 0 0 FIT_H
+.dc VGS 0 7 0.02
+.meas DC E3 FIND -I(VE) AT=3
+.meas DC E4 FIND -I(VE) AT=4
+.meas DC E5 FIND -I(VE) AT=5
+.meas DC E6 FIND -I(VE) AT=6
+.meas DC F3 FIND -I(VF) AT=3
+.meas DC F4 FIND -I(VF) AT=4
+.meas DC F5 FIND -I(VF) AT=5
+.meas DC F6 FIND -I(VF) AT=6
+.meas DC G3 FIND -I(VGX) AT=3
+.meas DC G4 FIND -I(VGX) AT=4
+.meas DC G5 FIND -I(VGX) AT=5
+.meas DC G6 FIND -I(VGX) AT=6
+.meas DC H3 FIND -I(VH) AT=3
+.meas DC H4 FIND -I(VH) AT=4
+.meas DC H5 FIND -I(VH) AT=5
+.meas DC H6 FIND -I(VH) AT=6
+.end

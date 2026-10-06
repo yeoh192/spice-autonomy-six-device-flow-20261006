@@ -1,0 +1,549 @@
+{
+  "items": [
+    {
+      "reference_id": "parameter:vrrm",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:vr",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:if",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:ifrm",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:p",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:tj",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:ifsm_1 μs",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:ifsm_1 ms",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:ifsm_1 s",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:tstg",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:vf10",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:ir25",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:ir150",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:cd",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "ac_parallel_capacitance",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:trr",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:vfr",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:rthtp",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "parameter:rtha",
+      "source_kind": "test_or_constraint_pending_classification",
+      "plan_status": "test_development_required",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending",
+      "pdf_pages": [
+        3
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": []
+    },
+    {
+      "reference_id": "figure:fig2",
+      "source_kind": "series_group",
+      "plan_status": "series_group",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": [
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig2/max_if.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig2/max_if.csv",
+          "path": "assets/b8a8f4c83cae1172875bc8819f2d189dc34b41cd11a7052c84cc492a984d6188.csv",
+          "sha256": "b8a8f4c83cae1172875bc8819f2d189dc34b41cd11a7052c84cc492a984d6188",
+          "role": "reference_data"
+        }
+      ]
+    },
+    {
+      "reference_id": "figure:fig2:max_if",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": [
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig2/max_if.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig2/max_if.csv",
+          "path": "assets/b8a8f4c83cae1172875bc8819f2d189dc34b41cd11a7052c84cc492a984d6188.csv",
+          "sha256": "b8a8f4c83cae1172875bc8819f2d189dc34b41cd11a7052c84cc492a984d6188",
+          "role": "reference_data"
+        }
+      ]
+    },
+    {
+      "reference_id": "figure:fig3",
+      "source_kind": "series_group",
+      "plan_status": "series_group",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": [
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/max_25C.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig3/max_25C.csv",
+          "path": "assets/f402bb8a75af3970109fb20a9f1b2df9a024330db6fb4664b56ab133519162e5.csv",
+          "sha256": "f402bb8a75af3970109fb20a9f1b2df9a024330db6fb4664b56ab133519162e5",
+          "role": "reference_data"
+        },
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_175C.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig3/typ_175C.csv",
+          "path": "assets/4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211.csv",
+          "sha256": "4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211",
+          "role": "reference_data"
+        },
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_25C.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig3/typ_25C.csv",
+          "path": "assets/5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3.csv",
+          "sha256": "5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3",
+          "role": "reference_data"
+        }
+      ]
+    },
+    {
+      "reference_id": "figure:fig3:typ_175C",
+      "source_kind": "test",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": [
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_175C.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig3/typ_175C.csv",
+          "path": "assets/4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211.csv",
+          "sha256": "4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211",
+          "role": "reference_data"
+        }
+      ]
+    },
+    {
+      "reference_id": "figure:fig3:typ_25C",
+      "source_kind": "test",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": [
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_25C.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig3/typ_25C.csv",
+          "path": "assets/5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3.csv",
+          "sha256": "5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3",
+          "role": "reference_data"
+        }
+      ]
+    },
+    {
+      "reference_id": "figure:fig3:max_25C",
+      "source_kind": "corner_envelope",
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": [
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/max_25C.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig3/max_25C.csv",
+          "path": "assets/f402bb8a75af3970109fb20a9f1b2df9a024330db6fb4664b56ab133519162e5.csv",
+          "sha256": "f402bb8a75af3970109fb20a9f1b2df9a024330db6fb4664b56ab133519162e5",
+          "role": "reference_data"
+        }
+      ]
+    },
+    {
+      "reference_id": "figure:fig4",
+      "source_kind": "series_group",
+      "plan_status": "series_group",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": [
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig4/surge.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig4/surge.csv",
+          "path": "assets/83071ab5e9a90356337361a90d1a0a76d72edde3fd60b20637bd42c0e3e9a4e7.csv",
+          "sha256": "83071ab5e9a90356337361a90d1a0a76d72edde3fd60b20637bd42c0e3e9a4e7",
+          "role": "reference_data"
+        }
+      ]
+    },
+    {
+      "reference_id": "figure:fig4:surge",
+      "source_kind": "constraint",
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        4
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": [
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig4/surge.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig4/surge.csv",
+          "path": "assets/83071ab5e9a90356337361a90d1a0a76d72edde3fd60b20637bd42c0e3e9a4e7.csv",
+          "sha256": "83071ab5e9a90356337361a90d1a0a76d72edde3fd60b20637bd42c0e3e9a4e7",
+          "role": "reference_data"
+        }
+      ]
+    },
+    {
+      "reference_id": "figure:fig5",
+      "source_kind": "series_group",
+      "plan_status": "series_group",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        5
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": [
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/vr20.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig5/vr20.csv",
+          "path": "assets/6bd776b5e839b976597c0c563bc1f20036c7e1b02e0c92d763b1737d66ac7b34.csv",
+          "sha256": "6bd776b5e839b976597c0c563bc1f20036c7e1b02e0c92d763b1737d66ac7b34",
+          "role": "reference_data"
+        },
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/vr75.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig5/vr75.csv",
+          "path": "assets/5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51.csv",
+          "sha256": "5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51",
+          "role": "reference_data"
+        }
+      ]
+    },
+    {
+      "reference_id": "figure:fig5:vr75",
+      "source_kind": "test",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        5
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": [
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/vr75.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig5/vr75.csv",
+          "path": "assets/5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51.csv",
+          "sha256": "5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51",
+          "role": "reference_data"
+        }
+      ]
+    },
+    {
+      "reference_id": "figure:fig5:vr20",
+      "source_kind": "test",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "pdf_pages": [
+        5
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": [
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/vr20.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig5/vr20.csv",
+          "path": "assets/6bd776b5e839b976597c0c563bc1f20036c7e1b02e0c92d763b1737d66ac7b34.csv",
+          "sha256": "6bd776b5e839b976597c0c563bc1f20036c7e1b02e0c92d763b1737d66ac7b34",
+          "role": "reference_data"
+        }
+      ]
+    },
+    {
+      "reference_id": "figure:fig6",
+      "source_kind": "series_group",
+      "plan_status": "series_group",
+      "method_family": "ac_parallel_capacitance",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+      "pdf_pages": [
+        5
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": [
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig6/capacitance.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig6/capacitance.csv",
+          "path": "assets/d7ef18958bc4e92ee61697a4a67e1de530816bb7390bb5571aedcccebf823844.csv",
+          "sha256": "d7ef18958bc4e92ee61697a4a67e1de530816bb7390bb5571aedcccebf823844",
+          "role": "reference_data"
+        }
+      ]
+    },
+    {
+      "reference_id": "figure:fig6:capacitance",
+      "source_kind": "test",
+      "plan_status": "test_development_required",
+      "method_family": "ac_parallel_capacitance",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+      "pdf_pages": [
+        5
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_asset_bindings": [
+        {
+          "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig6/capacitance.csv",
+          "status": "snapshot_bound",
+          "source_relative": "references/curves/fig6/capacitance.csv",
+          "path": "assets/d7ef18958bc4e92ee61697a4a67e1de530816bb7390bb5571aedcccebf823844.csv",
+          "sha256": "d7ef18958bc4e92ee61697a4a67e1de530816bb7390bb5571aedcccebf823844",
+          "role": "reference_data"
+        }
+      ]
+    }
+  ],
+  "review_status": "page_anchored_inventory_expanded_series_and_footnote_review_pending"
+}

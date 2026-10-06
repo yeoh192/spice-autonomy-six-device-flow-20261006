@@ -1,0 +1,14 @@
+.subckt ACS37003 IP+ IP- DUT_GND NC NC VCC VOUT VREF NC NC
+Rp IP+ IP- 0.265m
+XSet_BW N002 front_end N002 opamp Aol=100K GBW=400k
+B§OutputStage front_end DUT_GND V=delay(((V(IP+)-V(IP-))/0.265m*{sensitivity}+(QVO_typ), .016u))
+B§Set_VREF VREF DUT_GND V={QVO_typ}
+B§VSat_High N001 DUT_GND V=V(VCC)-0.3
+VSat_Low N003 DUT_GND 150mV
+XBuffer N002 VOUT N001 N003 VOUT level2 Avol=1Meg GBW=10Meg Slew=10Meg Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+B1 DUT_GND VCC I=if({VCC_typ}==5, 15mA, 12mA)
+.lib "opamp.sub"
+.lib "UniversalOpAmp2.lib"
+.backanno
+.ends ACS37003
+.end

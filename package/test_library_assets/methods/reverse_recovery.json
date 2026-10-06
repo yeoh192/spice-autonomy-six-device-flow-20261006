@@ -1,0 +1,27 @@
+{
+  "schema": "test-method-1",
+  "id": "reverse_recovery",
+  "version": "1.0.0",
+  "family": "mosfet_n_channel",
+  "keys": [
+    "body_diode_reverse_recovery_time",
+    "body_diode_recovered_charge"
+  ],
+  "figures": [],
+  "stage": "interface_or_definition_required",
+  "authoring": "GPT-assisted engineering draft",
+  "qwen_qualified": false,
+  "live_validated": false,
+  "meaning": "需要实际dIS/dt、30V反偏、电流过零及恢复终点定义和校准；仅积分电流不证明QR测量有效",
+  "reason": "需要实际dIS/dt、30V反偏、电流过零及恢复终点定义和校准；仅积分电流不证明QR测量有效",
+  "required": [
+    "明确端口语义",
+    "原手册条件及证据",
+    "测量单位与参考数据",
+    "独立审查",
+    "已知电路校准",
+    "真实DUT试运行"
+  ],
+  "acceptance_policy": "手册极限与典型值容差分别核对；不存在的容差保持pending",
+  "reuse_scope": "参数化方法不是任何器件已验证证明；具体契约需校准并试跑"
+}

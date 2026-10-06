@@ -1,0 +1,216 @@
+{
+  "device": "ACS723KMATR-20AB-T",
+  "pins": [
+    {
+      "number": 1,
+      "label": "IP+",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "Internally fused conductor group",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    },
+    {
+      "number": 2,
+      "label": "IP+",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "Internally fused conductor group",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    },
+    {
+      "number": 3,
+      "label": "IP+",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "Internally fused conductor group",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    },
+    {
+      "number": 4,
+      "label": "IP+",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "Internally fused conductor group",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    },
+    {
+      "number": 5,
+      "label": "IP−",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "Internally fused conductor group",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    },
+    {
+      "number": 6,
+      "label": "IP−",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "Internally fused conductor group",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    },
+    {
+      "number": 7,
+      "label": "IP−",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "Internally fused conductor group",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    },
+    {
+      "number": 8,
+      "label": "IP−",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "Internally fused conductor group",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    },
+    {
+      "number": 9,
+      "label": "NC",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "Leave unconnected for maximum creepage",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    },
+    {
+      "number": 16,
+      "label": "NC",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "Leave unconnected for maximum creepage",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    },
+    {
+      "number": 11,
+      "label": "NC",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "Connection to GND recommended for ESD performance",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    },
+    {
+      "number": 14,
+      "label": "NC",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "Connection to GND recommended for ESD performance",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    },
+    {
+      "number": 10,
+      "label": "VCC",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    },
+    {
+      "number": 12,
+      "label": "VIOUT",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    },
+    {
+      "number": 13,
+      "label": "BW_SEL",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    },
+    {
+      "number": 15,
+      "label": "GND",
+      "applies_to": [
+        "ACS723"
+      ],
+      "package": "MA, 16-pin SOIC",
+      "connection_note": "",
+      "evidence_refs": [
+        "b61",
+        "p4"
+      ]
+    }
+  ],
+  "topology": [],
+  "model_port_binding": null,
+  "status": "handbook_pin_evidence_preserved_model_binding_pending"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "test-method-1",
+  "id": "switching_times",
+  "version": "1.0.0",
+  "family": "mosfet_n_channel",
+  "keys": [
+    "turn_on_delay",
+    "rise_time",
+    "turn_off_delay",
+    "fall_time"
+  ],
+  "figures": [],
+  "stage": "interface_or_definition_required",
+  "authoring": "GPT-assisted engineering draft",
+  "qwen_qualified": false,
+  "live_validated": false,
+  "meaning": "手册同时给VDS=48V、RL=5Ω、ID=5A；需要明确电路和10/90%时间定义，不能擅自删条件或改RL",
+  "reason": "手册同时给VDS=48V、RL=5Ω、ID=5A；需要明确电路和10/90%时间定义，不能擅自删条件或改RL",
+  "required": [
+    "明确端口语义",
+    "原手册条件及证据",
+    "测量单位与参考数据",
+    "独立审查",
+    "已知电路校准",
+    "真实DUT试运行"
+  ],
+  "acceptance_policy": "手册极限与典型值容差分别核对；不存在的容差保持pending",
+  "reuse_scope": "参数化方法不是任何器件已验证证明；具体契约需校准并试跑"
+}
