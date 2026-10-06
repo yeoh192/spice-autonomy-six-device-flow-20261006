@@ -74,6 +74,14 @@ def run(batch,output,calibration,runner,previous,check_only=False,resume=False,e
                 if match:row['coverage']=match['counts'];row['coverage_inventory']=str(Path(match['folder'])/'manual_inventory.json')
         result['inventory_development']={'returncode':development_code,'report':str(development/'summary.json')}
         result['draft_qualification']={"returncode":code,"report":str(folder/'summary.json')}
+        iteration=output/'model_iteration'
+        iteration_code=None
+        if final_code==0:
+            iteration_command=[sys.executable,str(Path(__file__).with_name('iterate_models.py')),'--batch',str(batch),'--source-runtime',str(output),'--output',str(iteration)]
+            if check_only:iteration_command+=['--check-only']
+            if resume and iteration.exists():iteration_command+=['--resume']
+            iteration_code=execute(iteration_command).returncode
+        result['model_iteration']={'returncode':iteration_code,'report':str(iteration/'summary.json'),'status':'blocked_coverage_failure' if final_code else 'dispatched'}
         result['status']='stopped_with_evidence' if final_code else 'prepared_with_gaps' if check_only else 'finished_with_gaps'
         save(output/'summary.json',result)
         print('六器件批次结束；全覆盖验收未通过。报告：'+str(output/'summary.json'),flush=True)

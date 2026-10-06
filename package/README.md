@@ -14,3 +14,6 @@ runs before inventory development, and final method qualification receipts are
 imported after draft repair. See [COVERAGE_BINDING.md](COVERAGE_BINDING.md) for
 separate counts, review budgets and standalone use. Source inputs remain unchanged;
 full coverage and electrical acceptance are still reported independently.
+
+## 模型迭代（v0.2.9）
+保留覆盖确认与资格回写，随后接入Qwen模型补丁→GLM审查→全部活动测试回归→保留或回退→再次迭代。目前BUK23项、1N4148六项可进入模型迭代；其余四器件缺正式候选或正式活动测试时明确阻塞。参考接口模型不会自动变成交付候选。详见MODEL_ITERATION.md。

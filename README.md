@@ -31,3 +31,19 @@ bash package/RUN_SIX_DEVICES.sh --run
 详情参见[开发范围](package/CAPABILITY_DEVELOPMENT.md)与[验证说明](package/VALIDATION_CAPABILITY_DEVELOPMENT.md)。第三方手册、模型和模板保留原版权与来源，本仓库不另行授予这些材料的许可。
 
 0.2.9把证据核对、绑定确认和覆盖报告回写接入批次。新增方法资格在实测证据验证后登记，参考模型方法与器件达标分别统计。参见[覆盖确认说明](package/COVERAGE_BINDING.md)，包括新增API预算及独立复核命令。
+
+## v0.2.9：批次模型迭代
+
+测试开发和草案修复之后，新增Qwen模型补丁→GLM审查实际差异→完整活动回归→保留或回退→再次迭代。普通优化最多3轮，诊断修复最多3轮，预算共享。
+
+当前BUK23项与1N4148六项可进入模型迭代；其他四器件缺正式候选或有资格的活动测试，明确阻塞。参考模型不直接转成交付候选。完整活动回归不等于整个手册全覆盖。
+
+已有批次可单独启动新阶段，默认原用户工作目录：
+
+```bash
+bash package/RUN_MODEL_ITERATION.sh /Users/192y/电气/D2S-FLOW-six-capabilities_20261006-160903_74908 --run
+```
+
+其他目录请替换第一个参数。旧模型、实际电路、运行器、完整RAW、依赖哈希和原签名全部匹配时复用历史仿真。新模型仍须真实回归。历史29条真实基线曾只读核对；本次合并覆盖功能后依赖签名发生变化，不匹配的缓存将重新仿真。未执行真实模型迭代API或新LTspice仿真。合并后242项离线检查通过。
+
+中断后在生成的工作目录执行 `bash RESUME_MODEL_ITERATION.sh`。新建任务的 `RUN_SIX_DEVICES.sh` 已自动包含模型迭代阶段。详情参见[模型迭代范围](package/MODEL_ITERATION.md)和[验证记录](package/VALIDATION_MODEL_ITERATION.md)。

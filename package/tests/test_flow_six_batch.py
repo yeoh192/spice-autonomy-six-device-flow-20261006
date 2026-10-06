@@ -20,8 +20,8 @@ class SixBatchTests(unittest.TestCase):
    with patch('six_batch.validate_batch'):
     result=run(root/'batch.json',root/'out',root/'cal.json',root/'runner',root/'previous',check_only=True,execute=execute)
    stages=[Path(c[1]).name for c in calls]
-   self.assertEqual(stages,['coverage_audit.py','develop_inventory.py','spice_flow.py','coverage_audit.py'])
-   self.assertIn('--coverage',calls[1]);self.assertIn('--previous',calls[-1]);self.assertFalse(result['full_batch_delivery'])
+   self.assertEqual(stages,['coverage_audit.py','develop_inventory.py','spice_flow.py','coverage_audit.py','iterate_models.py'])
+   self.assertIn('--coverage',calls[1]);self.assertIn('--previous',calls[-2]);self.assertIn('--source-runtime',calls[-1]);self.assertFalse(result['full_batch_delivery'])
  def test_coverage_corruption_stops_before_paid_development(self):
   import tempfile
   from pathlib import Path
