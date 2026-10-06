@@ -14,7 +14,7 @@ TERMINAL={'authentication','credentials','api_configuration','budget','cache_cor
 def queue(packet,inventory):
     result=[]
     for item in inventory['items']:
-        if not item.get('applicable',True) or item.get('binding_complete'):continue
+        if not item.get('applicable',True) or item.get('binding_complete') or item.get('method_binding_complete') or item.get('constraint_audit_status')=='declared_test_setup_checked':continue
         if item.get('kind')!='test':
             result.append({'reference_id':item['id'],'status':'constraint_or_classification_review_required','item':item});continue
         if item.get('bindings'):
@@ -103,17 +103,21 @@ class Developer(Workflow):
             receipts.append({'expected':expected,'tolerance':tol,'result':result})
         return receipts
 
-def run(batch,runner,output,check_only=False,resume=False,max_items=6,transport=None,simulation_transport=None):
+def run(batch,runner,output,check_only=False,resume=False,max_items=6,transport=None,simulation_transport=None,coverage=None):
     batch=Path(batch).resolve();runner=Path(runner).resolve();output=Path(output).resolve();validate_batch(batch)
     if not 1<=max_items<=50:raise Fault('input','每器件本轮开发上限为1至50项')
     code={f.name:digest(f) for f in Path(__file__).parent.glob('*.py')}
-    identity=fingerprint({'batch':digest(batch),'runner':digest(runner),'code':code,'max_items':max_items,'test_backend':bool(transport or simulation_transport)})
+    identity=fingerprint({'batch':digest(batch),'runner':digest(runner),'code':code,'max_items':max_items,'coverage':digest(Path(coverage)/'summary.json') if coverage else None,'test_backend':bool(transport or simulation_transport)})
     if output.exists() and not resume:raise Fault('input','请使用新开发目录或--resume')
     output.mkdir(parents=True,exist_ok=True)
     manifest=read(batch);report={'default_per_device_budgets':{'api_calls':max_items*18,'simulations':max_items*12,'seconds':1200},'schema':'inventory-development-1','status':'prepared' if check_only else 'completed_with_gaps','devices':[],'full_batch_delivery':False,'reference_models_modified':False,'test_backend':bool(transport or simulation_transport)}
     with file_lock(output/'.development.lock'):
         for row in manifest['devices']:
-            root=(batch.parent/row['input']).parent;packet=read(root/'device_input.json');inventory=read(root/packet['inventory']);jobs=queue(packet,inventory)
+            root=(batch.parent/row['input']).parent;packet=read(root/'device_input.json');inventory=read(root/packet['inventory'])
+            if coverage:
+                from .coverage_binding import load_overlay
+                inventory=load_overlay(root,packet,inventory,coverage)
+            jobs=queue(packet,inventory)
             dev={'device':packet['device'],'queue':[{'reference_id':j['reference_id'],'status':j['status']} for j in jobs],'qualified':[],'results':[],'delivery_passed':False};report['devices'].append(dev)
             save(output/'summary.json',report)
             folder=output/row['folder']

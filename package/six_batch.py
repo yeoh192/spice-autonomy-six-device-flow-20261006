@@ -10,7 +10,7 @@ def aggregate(rows):
             "scope":"configured regression plus inventory-driven development and supervised draft qualification; not six-device full coverage",
             "devices":rows}
 
-def run(batch,output,calibration,runner,previous,check_only=False,resume=False,execute=None):
+def run(batch,output,calibration,runner,previous,check_only=False,resume=False,execute=None,coverage=None):
     batch=Path(batch).resolve();output=Path(output).resolve()
     validate_batch(batch)
     execute=execute or subprocess.run
@@ -42,8 +42,21 @@ def run(batch,output,calibration,runner,previous,check_only=False,resume=False,e
                 row['stages'].append({"stage":"draft_qualification","status":"queued_shared_qualification"})
             row['stages'].append({'stage':'inventory_development','status':'queued_shared_development'})
             rows.append(row);save(output/'summary.json',aggregate(rows))
+        prior_coverage=coverage
+        coverage=output/'coverage_configured'
+        def audit(destination, extra=None):
+            cmd=[sys.executable,str(Path(__file__).with_name('coverage_audit.py')),
+                 '--batch',str(batch),'--runtime',str(output),'--output',str(destination)]
+            if check_only:cmd+=['--check-only']
+            if resume and destination.exists():cmd+=['--resume']
+            return execute(cmd+(extra or [])).returncode
+        coverage_code=audit(coverage,['--previous',str(prior_coverage)] if prior_coverage else None)
+        if coverage_code:
+            result=aggregate(rows);result['status']='stopped_with_evidence'
+            result['coverage']={'returncode':coverage_code,'report':str(coverage/'summary.json'),'fault':str(coverage/'failure.json')}
+            save(output/'summary.json',result);return result
         development=output/'inventory_development'
-        command=[sys.executable,str(Path(__file__).with_name('develop_inventory.py')),'--batch',str(batch),'--runner',str(runner),'--output',str(development)]
+        command=[sys.executable,str(Path(__file__).with_name('develop_inventory.py')),'--batch',str(batch),'--runner',str(runner),'--output',str(development),'--coverage',str(coverage)]
         if check_only:command+=['--check-only']
         if resume and development.exists():command+=['--resume']
         development_code=execute(command).returncode
@@ -51,9 +64,17 @@ def run(batch,output,calibration,runner,previous,check_only=False,resume=False,e
         args=['repair-drafts','--batch',str(batch),'--calibration',str(Path(calibration).resolve()),'--runner',str(Path(runner).resolve()),'--previous',str(Path(previous).resolve()),'--output',str(folder),'--rounds','3']
         if check_only:args+=['--check-only']
         code=child(args,folder)
-        result=aggregate(rows);result['inventory_development']={'returncode':development_code,'report':str(development/'summary.json')}
+        final_coverage=output/'coverage_final'
+        final_code=audit(final_coverage,['--import-only','--previous',str(coverage),'--development',str(development),'--qualification',str(folder)])
+        result=aggregate(rows);result['coverage']={'returncode':final_code,'report':str(final_coverage/'summary.json')}
+        if final_code==0:
+            coverage_report=json.loads((final_coverage/'summary.json').read_text()) if (final_coverage/'summary.json').exists() else {}
+            for row in rows:
+                match=next((d for d in coverage_report.get('devices',[]) if d['device']==row['device']),None)
+                if match:row['coverage']=match['counts'];row['coverage_inventory']=str(Path(match['folder'])/'manual_inventory.json')
+        result['inventory_development']={'returncode':development_code,'report':str(development/'summary.json')}
         result['draft_qualification']={"returncode":code,"report":str(folder/'summary.json')}
-        result['status']='prepared_with_gaps' if check_only else 'finished_with_gaps'
+        result['status']='stopped_with_evidence' if final_code else 'prepared_with_gaps' if check_only else 'finished_with_gaps'
         save(output/'summary.json',result)
         print('六器件批次结束；全覆盖验收未通过。报告：'+str(output/'summary.json'),flush=True)
         return result
@@ -61,6 +82,7 @@ def run(batch,output,calibration,runner,previous,check_only=False,resume=False,e
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     for name in ('batch','output','calibration','runner','previous'):ap.add_argument('--'+name,type=Path,required=True)
+    ap.add_argument('--coverage',type=Path,help='复用上次已验证的覆盖清单，待确认记录仍会审查')
     ap.add_argument('--check-only',action='store_true');ap.add_argument('--resume',action='store_true')
     a=ap.parse_args()
     if not a.check_only:
@@ -71,5 +93,5 @@ def main():
                 key=getpass.getpass('请输入'+label+' API Key（隐藏输入，不保存）：')
                 if not key.strip():raise ValueError('密钥为空')
                 os.environ[name]=key.strip()
-    run(a.batch,a.output,a.calibration,a.runner,a.previous,a.check_only,a.resume)
+    run(a.batch,a.output,a.calibration,a.runner,a.previous,a.check_only,a.resume,coverage=a.coverage)
 if __name__=='__main__':main()

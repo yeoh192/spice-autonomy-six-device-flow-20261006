@@ -8,3 +8,9 @@
 ## 启动
 运行bash RUN_SIX_DEVICES.sh --run。在当前Mac隔离安装、离线检查，通过后隐藏输入两家密钥，执行六器件现有配置测试、清单自动开发和14项草案自动修复。新开发每器件最多6项，剩余队列及依赖缺口保存在summary，不代表全部手册完成。
 原始输入与历史结果不修改。用户授权真实API和仿真后自行执行，本次仅离线验证。
+
+Coverage writeback is now part of the batch: evidence-backed binding confirmation
+runs before inventory development, and final method qualification receipts are
+imported after draft repair. See [COVERAGE_BINDING.md](COVERAGE_BINDING.md) for
+separate counts, review budgets and standalone use. Source inputs remain unchanged;
+full coverage and electrical acceptance are still reported independently.

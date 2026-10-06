@@ -34,6 +34,7 @@ RESUME
 python3 six_batch.py "${args[@]}" --output runs/precheck --check-only
 printf '\n六器件批次目录：%s\n' "$work_dir"
 if [[ "$mode" == --run ]]; then
+ echo '覆盖确认另有预算：每记录最多8次物理API请求、每器件20分钟；BUK43条最多344次。缺少本地实测证据时不请求。'
  echo '新增清单开发每器件最多6项；每器件API上限108次、仿真72项、20分钟；14项草案修复另计。'
  python3 six_batch.py "${args[@]}" --output runs/six_batch
 else
