@@ -1,0 +1,6364 @@
+{
+  "review_status": "page_anchored_inventory_expanded_series_and_footnote_review_pending",
+  "items": [
+    {
+      "id": "parameter:vds",
+      "label": "drain_source_voltage",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "p1"
+      ],
+      "reference_evidence": {
+        "id": "vds",
+        "key": "drain_source_voltage",
+        "values": {
+          "max": 60
+        },
+        "unit": "V",
+        "conditions": "Tj=25..175°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "p1"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        2
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:vds",
+        "label": "drain_source_voltage",
+        "kind": "constraint",
+        "evidence": [
+          "b27",
+          "p1"
+        ],
+        "reference_evidence": {
+          "id": "vds",
+          "key": "drain_source_voltage",
+          "values": {
+            "max": 60
+          },
+          "unit": "V",
+          "conditions": "Tj=25..175°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "absolute_maximum",
+          "state": "initial",
+          "evidence_refs": [
+            "b27",
+            "p1"
+          ]
+        },
+        "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          2
+        ],
+        "plan_status": "constraint_audit_required",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "parameter:vdgr",
+      "label": "drain_gate_voltage",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "p1"
+      ],
+      "reference_evidence": {
+        "id": "vdgr",
+        "key": "drain_gate_voltage",
+        "values": {
+          "max": 60
+        },
+        "unit": "V",
+        "conditions": "RGS=20 kΩ",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "p1"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        2
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:vdgr",
+        "label": "drain_gate_voltage",
+        "kind": "constraint",
+        "evidence": [
+          "b27",
+          "p1"
+        ],
+        "reference_evidence": {
+          "id": "vdgr",
+          "key": "drain_gate_voltage",
+          "values": {
+            "max": 60
+          },
+          "unit": "V",
+          "conditions": "RGS=20 kΩ",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "absolute_maximum",
+          "state": "initial",
+          "evidence_refs": [
+            "b27",
+            "p1"
+          ]
+        },
+        "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          2
+        ],
+        "plan_status": "constraint_audit_required",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "parameter:id25",
+      "label": "drain_current",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "p1"
+      ],
+      "reference_evidence": {
+        "id": "id25",
+        "key": "drain_current",
+        "values": {
+          "max": 15.4
+        },
+        "unit": "A",
+        "conditions": "Tmb=25°C; VGS=10 V",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "p1"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        2
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:id25",
+        "label": "drain_current",
+        "kind": "constraint",
+        "evidence": [
+          "b27",
+          "p1"
+        ],
+        "reference_evidence": {
+          "id": "id25",
+          "key": "drain_current",
+          "values": {
+            "max": 15.4
+          },
+          "unit": "A",
+          "conditions": "Tmb=25°C; VGS=10 V",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "absolute_maximum",
+          "state": "initial",
+          "evidence_refs": [
+            "b27",
+            "p1"
+          ]
+        },
+        "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          2
+        ],
+        "plan_status": "constraint_audit_required",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "parameter:id100",
+      "label": "drain_current",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "p1"
+      ],
+      "reference_evidence": {
+        "id": "id100",
+        "key": "drain_current",
+        "values": {
+          "max": 12.6
+        },
+        "unit": "A",
+        "conditions": "Tmb=100°C; VGS=10 V",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "p1"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        2
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:id100",
+        "label": "drain_current",
+        "kind": "constraint",
+        "evidence": [
+          "b27",
+          "p1"
+        ],
+        "reference_evidence": {
+          "id": "id100",
+          "key": "drain_current",
+          "values": {
+            "max": 12.6
+          },
+          "unit": "A",
+          "conditions": "Tmb=100°C; VGS=10 V",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "absolute_maximum",
+          "state": "initial",
+          "evidence_refs": [
+            "b27",
+            "p1"
+          ]
+        },
+        "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          2
+        ],
+        "plan_status": "constraint_audit_required",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "parameter:idm",
+      "label": "peak_drain_current",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "p1"
+      ],
+      "reference_evidence": {
+        "id": "idm",
+        "key": "peak_drain_current",
+        "values": {
+          "max": 71
+        },
+        "unit": "A",
+        "conditions": "Tmb=25°C; tp≤10 μs",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "p1"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        2
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:idm",
+        "label": "peak_drain_current",
+        "kind": "constraint",
+        "evidence": [
+          "b27",
+          "p1"
+        ],
+        "reference_evidence": {
+          "id": "idm",
+          "key": "peak_drain_current",
+          "values": {
+            "max": 71
+          },
+          "unit": "A",
+          "conditions": "Tmb=25°C; tp≤10 μs",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "absolute_maximum",
+          "state": "initial",
+          "evidence_refs": [
+            "b27",
+            "p1"
+          ]
+        },
+        "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          2
+        ],
+        "plan_status": "constraint_audit_required",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "parameter:ptot",
+      "label": "total_power_dissipation",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "p1"
+      ],
+      "reference_evidence": {
+        "id": "ptot",
+        "key": "total_power_dissipation",
+        "values": {
+          "max": 32
+        },
+        "unit": "W",
+        "conditions": "Tmb=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "p1"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        2
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:ptot",
+        "label": "total_power_dissipation",
+        "kind": "constraint",
+        "evidence": [
+          "b27",
+          "p1"
+        ],
+        "reference_evidence": {
+          "id": "ptot",
+          "key": "total_power_dissipation",
+          "values": {
+            "max": 32
+          },
+          "unit": "W",
+          "conditions": "Tmb=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "absolute_maximum",
+          "state": "initial",
+          "evidence_refs": [
+            "b27",
+            "p1"
+          ]
+        },
+        "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          2
+        ],
+        "plan_status": "constraint_audit_required",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "parameter:vgs",
+      "label": "gate_source_voltage",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "p1"
+      ],
+      "reference_evidence": {
+        "id": "vgs",
+        "key": "gate_source_voltage",
+        "values": {
+          "min": -20,
+          "max": 20
+        },
+        "unit": "V",
+        "conditions": "DC; Tj≤175°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "p1"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        2
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:vgs",
+        "label": "gate_source_voltage",
+        "kind": "constraint",
+        "evidence": [
+          "b27",
+          "p1"
+        ],
+        "reference_evidence": {
+          "id": "vgs",
+          "key": "gate_source_voltage",
+          "values": {
+            "min": -20,
+            "max": 20
+          },
+          "unit": "V",
+          "conditions": "DC; Tj≤175°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "absolute_maximum",
+          "state": "initial",
+          "evidence_refs": [
+            "b27",
+            "p1"
+          ]
+        },
+        "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          2
+        ],
+        "plan_status": "constraint_audit_required",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "parameter:tj",
+      "label": "junction_temperature",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "b33",
+        "p1",
+        "p2"
+      ],
+      "reference_evidence": {
+        "id": "tj",
+        "key": "junction_temperature",
+        "values": {
+          "min": -55,
+          "max": 175
+        },
+        "unit": "°C",
+        "conditions": "",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "b33",
+          "p1",
+          "p2"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        2,
+        3
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:tj",
+        "label": "junction_temperature",
+        "kind": "constraint",
+        "evidence": [
+          "b27",
+          "b33",
+          "p1",
+          "p2"
+        ],
+        "reference_evidence": {
+          "id": "tj",
+          "key": "junction_temperature",
+          "values": {
+            "min": -55,
+            "max": 175
+          },
+          "unit": "°C",
+          "conditions": "",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "absolute_maximum",
+          "state": "initial",
+          "evidence_refs": [
+            "b27",
+            "b33",
+            "p1",
+            "p2"
+          ]
+        },
+        "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          2,
+          3
+        ],
+        "plan_status": "constraint_audit_required",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "parameter:tstg",
+      "label": "storage_temperature",
+      "kind": "constraint",
+      "evidence": [
+        "b27",
+        "b33",
+        "p1",
+        "p2"
+      ],
+      "reference_evidence": {
+        "id": "tstg",
+        "key": "storage_temperature",
+        "values": {
+          "min": -55,
+          "max": 175
+        },
+        "unit": "°C",
+        "conditions": "",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b27",
+          "b33",
+          "p1",
+          "p2"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        2,
+        3
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:tstg",
+        "label": "storage_temperature",
+        "kind": "constraint",
+        "evidence": [
+          "b27",
+          "b33",
+          "p1",
+          "p2"
+        ],
+        "reference_evidence": {
+          "id": "tstg",
+          "key": "storage_temperature",
+          "values": {
+            "min": -55,
+            "max": 175
+          },
+          "unit": "°C",
+          "conditions": "",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "absolute_maximum",
+          "state": "initial",
+          "evidence_refs": [
+            "b27",
+            "b33",
+            "p1",
+            "p2"
+          ]
+        },
+        "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          2,
+          3
+        ],
+        "plan_status": "constraint_audit_required",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "parameter:eas",
+      "label": "nonrepetitive_avalanche_energy",
+      "kind": "constraint",
+      "evidence": [
+        "b33",
+        "p2"
+      ],
+      "reference_evidence": {
+        "id": "eas",
+        "key": "nonrepetitive_avalanche_energy",
+        "values": {
+          "max": 11.6
+        },
+        "unit": "mJ",
+        "conditions": "ID=15.4 A; Vsup≤60 V; VGS=10 V; initial Tj=25°C; single pulse; Tj(max)=175°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "absolute_maximum",
+        "state": "initial",
+        "evidence_refs": [
+          "b33",
+          "p2"
+        ]
+      },
+      "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        3
+      ],
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:eas",
+        "label": "nonrepetitive_avalanche_energy",
+        "kind": "constraint",
+        "evidence": [
+          "b33",
+          "p2"
+        ],
+        "reference_evidence": {
+          "id": "eas",
+          "key": "nonrepetitive_avalanche_energy",
+          "values": {
+            "max": 11.6
+          },
+          "unit": "mJ",
+          "conditions": "ID=15.4 A; Vsup≤60 V; VGS=10 V; initial Tj=25°C; single pulse; Tj(max)=175°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "absolute_maximum",
+          "state": "initial",
+          "evidence_refs": [
+            "b33",
+            "p2"
+          ]
+        },
+        "reason": "额定值需使用范围/约束核对，不把损坏边界当普通拟合曲线",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          3
+        ],
+        "plan_status": "constraint_audit_required",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "parameter:rthjmb",
+      "label": "thermal_resistance_junction_mounting_base",
+      "kind": "test",
+      "evidence": [
+        "b51",
+        "p3"
+      ],
+      "reference_evidence": {
+        "id": "rthjmb",
+        "key": "thermal_resistance_junction_mounting_base",
+        "values": {
+          "max": 4.68
+        },
+        "unit": "K/W",
+        "conditions": "",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b51",
+          "p3"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:rthjmb",
+        "label": "thermal_resistance_junction_mounting_base",
+        "kind": "test",
+        "evidence": [
+          "b51",
+          "p3"
+        ],
+        "reference_evidence": {
+          "id": "rthjmb",
+          "key": "thermal_resistance_junction_mounting_base",
+          "values": {
+            "max": 4.68
+          },
+          "unit": "K/W",
+          "conditions": "",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b51",
+            "p3"
+          ]
+        },
+        "reason": "尚未生成对应测试；手册有参数参考",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          4
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "thermal_network",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:rthja",
+      "label": "thermal_resistance_junction_ambient",
+      "kind": "test",
+      "evidence": [
+        "b51",
+        "p3"
+      ],
+      "reference_evidence": {
+        "id": "rthja",
+        "key": "thermal_resistance_junction_ambient",
+        "values": {
+          "typ": 95
+        },
+        "unit": "K/W",
+        "conditions": "minimum PCB footprint; source mounting conditions apply",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b51",
+          "p3"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        4
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:rthja",
+        "label": "thermal_resistance_junction_ambient",
+        "kind": "test",
+        "evidence": [
+          "b51",
+          "p3"
+        ],
+        "reference_evidence": {
+          "id": "rthja",
+          "key": "thermal_resistance_junction_ambient",
+          "values": {
+            "typ": 95
+          },
+          "unit": "K/W",
+          "conditions": "minimum PCB footprint; source mounting conditions apply",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b51",
+            "p3"
+          ]
+        },
+        "reason": "尚未生成对应测试；手册有参数参考",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          4
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "thermal_network",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:breakdown-55",
+      "label": "drain_source_breakdown_voltage",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "breakdown-55",
+        "key": "drain_source_breakdown_voltage",
+        "values": {
+          "min": 54
+        },
+        "unit": "V",
+        "conditions": "FET1 and FET2; ID=250 μA; VGS=0 V; Tj=-55°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "已完成击穿下限验证，并接入统一回归；不证明温度曲线拟合。",
+      "bindings": [
+        "manual_breakdown_55"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_breakdown_55",
+          "expected": {
+            "current_A": 0.00025,
+            "temperature_C": -55.0,
+            "fixed_gate_source_V": 0,
+            "measurement": "v(d)",
+            "unit": "V",
+            "limits": {
+              "min": 54
+            },
+            "typical": null,
+            "kind": "dc_current_voltage"
+          }
+        }
+      ],
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:breakdown-55",
+        "label": "drain_source_breakdown_voltage",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "breakdown-55",
+          "key": "drain_source_breakdown_voltage",
+          "values": {
+            "min": 54
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; ID=250 μA; VGS=0 V; Tj=-55°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "已完成击穿下限验证，并接入统一回归；不证明温度曲线拟合。",
+        "bindings": [
+          "manual_breakdown_55"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "manual_breakdown_55",
+            "expected": {
+              "current_A": 0.00025,
+              "temperature_C": -55.0,
+              "fixed_gate_source_V": 0,
+              "measurement": "v(d)",
+              "unit": "V",
+              "limits": {
+                "min": 54
+              },
+              "typical": null,
+              "kind": "dc_current_voltage"
+            }
+          }
+        ],
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:breakdown25",
+      "label": "drain_source_breakdown_voltage",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "breakdown25",
+        "key": "drain_source_breakdown_voltage",
+        "values": {
+          "min": 60
+        },
+        "unit": "V",
+        "conditions": "FET1 and FET2; ID=250 μA; VGS=0 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "已完成击穿下限验证，并接入统一回归；不证明温度曲线拟合。",
+      "bindings": [
+        "manual_breakdown25"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_breakdown25",
+          "expected": {
+            "current_A": 0.00025,
+            "temperature_C": 25.0,
+            "fixed_gate_source_V": 0,
+            "measurement": "v(d)",
+            "unit": "V",
+            "limits": {
+              "min": 60
+            },
+            "typical": null,
+            "kind": "dc_current_voltage"
+          }
+        }
+      ],
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:breakdown25",
+        "label": "drain_source_breakdown_voltage",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "breakdown25",
+          "key": "drain_source_breakdown_voltage",
+          "values": {
+            "min": 60
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; ID=250 μA; VGS=0 V; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "已完成击穿下限验证，并接入统一回归；不证明温度曲线拟合。",
+        "bindings": [
+          "manual_breakdown25"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "manual_breakdown25",
+            "expected": {
+              "current_A": 0.00025,
+              "temperature_C": 25.0,
+              "fixed_gate_source_V": 0,
+              "measurement": "v(d)",
+              "unit": "V",
+              "limits": {
+                "min": 60
+              },
+              "typical": null,
+              "kind": "dc_current_voltage"
+            }
+          }
+        ],
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:vth25",
+      "label": "gate_threshold_voltage",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "vth25",
+        "key": "gate_threshold_voltage",
+        "values": {
+          "min": 2.4,
+          "typ": 3,
+          "max": 4
+        },
+        "unit": "V",
+        "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "已有规格测试绑定",
+      "bindings": [
+        "threshold_25C"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "threshold_25C",
+          "expected": {
+            "kind": "threshold",
+            "temperature_C": 25,
+            "current_A": 0.001,
+            "typical": 3,
+            "limits": {
+              "min": 2.4,
+              "max": 4
+            }
+          }
+        }
+      ],
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:vth25",
+        "label": "gate_threshold_voltage",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "vth25",
+          "key": "gate_threshold_voltage",
+          "values": {
+            "min": 2.4,
+            "typ": 3,
+            "max": 4
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "已有规格测试绑定",
+        "bindings": [
+          "threshold_25C"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "threshold_25C",
+            "expected": {
+              "kind": "threshold",
+              "temperature_C": 25,
+              "current_A": 0.001,
+              "typical": 3,
+              "limits": {
+                "min": 2.4,
+                "max": 4
+              }
+            }
+          }
+        ],
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:vth175",
+      "label": "gate_threshold_voltage",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "vth175",
+        "key": "gate_threshold_voltage",
+        "values": {
+          "min": 1
+        },
+        "unit": "V",
+        "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=175°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "已有规格测试绑定",
+      "bindings": [
+        "threshold_175C"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "threshold_175C",
+          "expected": {
+            "kind": "threshold",
+            "temperature_C": 175,
+            "current_A": 0.001,
+            "typical": null,
+            "limits": {
+              "min": 1
+            }
+          }
+        }
+      ],
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:vth175",
+        "label": "gate_threshold_voltage",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "vth175",
+          "key": "gate_threshold_voltage",
+          "values": {
+            "min": 1
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=175°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "已有规格测试绑定",
+        "bindings": [
+          "threshold_175C"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "threshold_175C",
+            "expected": {
+              "kind": "threshold",
+              "temperature_C": 175,
+              "current_A": 0.001,
+              "typical": null,
+              "limits": {
+                "min": 1
+              }
+            }
+          }
+        ],
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:vthcold",
+      "label": "gate_threshold_voltage",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "vthcold",
+        "key": "gate_threshold_voltage",
+        "values": {
+          "max": 4.5
+        },
+        "unit": "V",
+        "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=-55°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "已有规格测试绑定",
+      "bindings": [
+        "threshold_minus55C"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "threshold_minus55C",
+          "expected": {
+            "kind": "threshold",
+            "temperature_C": -55,
+            "current_A": 0.001,
+            "typical": null,
+            "limits": {
+              "max": 4.5
+            }
+          }
+        }
+      ],
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:vthcold",
+        "label": "gate_threshold_voltage",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "vthcold",
+          "key": "gate_threshold_voltage",
+          "values": {
+            "max": 4.5
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; ID=1 mA; VDS=VGS; Tj=-55°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "已有规格测试绑定",
+        "bindings": [
+          "threshold_minus55C"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "threshold_minus55C",
+            "expected": {
+              "kind": "threshold",
+              "temperature_C": -55,
+              "current_A": 0.001,
+              "typical": null,
+              "limits": {
+                "max": 4.5
+              }
+            }
+          }
+        ],
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:idss25",
+      "label": "drain_leakage_current",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "idss25",
+        "key": "drain_leakage_current",
+        "values": {
+          "typ": 0.02,
+          "max": 1
+        },
+        "unit": "μA",
+        "conditions": "FET1 and FET2; VDS=60 V; VGS=0 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+      "bindings": [
+        "manual_idss25"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_idss25",
+          "expected": {
+            "kind": "leakage",
+            "temperature_C": 25,
+            "vds_V": 60,
+            "vgs_V": 0,
+            "limits": {
+              "max": 1e-06
+            },
+            "typical": 2e-08,
+            "terminal": "drain"
+          }
+        }
+      ],
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:idss25",
+        "label": "drain_leakage_current",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "idss25",
+          "key": "drain_leakage_current",
+          "values": {
+            "typ": 0.02,
+            "max": 1
+          },
+          "unit": "μA",
+          "conditions": "FET1 and FET2; VDS=60 V; VGS=0 V; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+        "bindings": [
+          "manual_idss25"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "manual_idss25",
+            "expected": {
+              "kind": "leakage",
+              "temperature_C": 25,
+              "vds_V": 60,
+              "vgs_V": 0,
+              "limits": {
+                "max": 1e-06
+              },
+              "typical": 2e-08,
+              "terminal": "drain"
+            }
+          }
+        ],
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:idss175",
+      "label": "drain_leakage_current",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "idss175",
+        "key": "drain_leakage_current",
+        "values": {
+          "max": 500
+        },
+        "unit": "μA",
+        "conditions": "FET1 and FET2; VDS=60 V; VGS=0 V; Tj=175°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+      "bindings": [
+        "manual_idss175"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_idss175",
+          "expected": {
+            "kind": "leakage",
+            "temperature_C": 175,
+            "vds_V": 60,
+            "vgs_V": 0,
+            "limits": {
+              "max": 0.0005
+            },
+            "typical": null,
+            "terminal": "drain"
+          }
+        }
+      ],
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:idss175",
+        "label": "drain_leakage_current",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "idss175",
+          "key": "drain_leakage_current",
+          "values": {
+            "max": 500
+          },
+          "unit": "μA",
+          "conditions": "FET1 and FET2; VDS=60 V; VGS=0 V; Tj=175°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+        "bindings": [
+          "manual_idss175"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "manual_idss175",
+            "expected": {
+              "kind": "leakage",
+              "temperature_C": 175,
+              "vds_V": 60,
+              "vgs_V": 0,
+              "limits": {
+                "max": 0.0005
+              },
+              "typical": null,
+              "terminal": "drain"
+            }
+          }
+        ],
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:igss_minus20",
+      "label": "gate_leakage_current",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "igss_minus20",
+        "key": "gate_leakage_current",
+        "values": {
+          "typ": 2,
+          "max": 100
+        },
+        "unit": "nA",
+        "conditions": "FET1 and FET2; VGS=-20 V; VDS=0 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+      "bindings": [
+        "manual_igss_minus20"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_igss_minus20",
+          "expected": {
+            "kind": "leakage",
+            "temperature_C": 25,
+            "vds_V": 0,
+            "vgs_V": -20,
+            "limits": {
+              "max": 1.0000000000000001e-07
+            },
+            "typical": 2e-09,
+            "terminal": "gate"
+          }
+        }
+      ],
+      "series": {
+        "table": 7,
+        "row": "IGSS",
+        "gate_voltage_V": -20
+      },
+      "scope_review": "row_split_only_not_live_requalified",
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:igss_minus20",
+        "label": "gate_leakage_current",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "igss_minus20",
+          "key": "gate_leakage_current",
+          "values": {
+            "typ": 2,
+            "max": 100
+          },
+          "unit": "nA",
+          "conditions": "FET1 and FET2; VGS=-20 V; VDS=0 V; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+        "bindings": [
+          "manual_igss_minus20"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "manual_igss_minus20",
+            "expected": {
+              "kind": "leakage",
+              "temperature_C": 25,
+              "vds_V": 0,
+              "vgs_V": -20,
+              "limits": {
+                "max": 1.0000000000000001e-07
+              },
+              "typical": 2e-09,
+              "terminal": "gate"
+            }
+          }
+        ],
+        "series": {
+          "table": 7,
+          "row": "IGSS",
+          "gate_voltage_V": -20
+        },
+        "scope_review": "row_split_only_not_live_requalified",
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:igss_plus20",
+      "label": "gate_leakage_current",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "igss_plus20",
+        "key": "gate_leakage_current",
+        "values": {
+          "typ": 2,
+          "max": 100
+        },
+        "unit": "nA",
+        "conditions": "FET1 and FET2; VGS=20 V; VDS=0 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+      "bindings": [
+        "manual_igss_plus20"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_igss_plus20",
+          "expected": {
+            "kind": "leakage",
+            "temperature_C": 25,
+            "vds_V": 0,
+            "vgs_V": 20,
+            "limits": {
+              "max": 1.0000000000000001e-07
+            },
+            "typical": 2e-09,
+            "terminal": "gate"
+          }
+        }
+      ],
+      "series": {
+        "table": 7,
+        "row": "IGSS",
+        "gate_voltage_V": 20
+      },
+      "scope_review": "row_split_only_not_live_requalified",
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:igss_plus20",
+        "label": "gate_leakage_current",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "igss_plus20",
+          "key": "gate_leakage_current",
+          "values": {
+            "typ": 2,
+            "max": 100
+          },
+          "unit": "nA",
+          "conditions": "FET1 and FET2; VGS=20 V; VDS=0 V; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+        "bindings": [
+          "manual_igss_plus20"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "manual_igss_plus20",
+            "expected": {
+              "kind": "leakage",
+              "temperature_C": 25,
+              "vds_V": 0,
+              "vgs_V": 20,
+              "limits": {
+                "max": 1.0000000000000001e-07
+              },
+              "typical": 2e-09,
+              "terminal": "gate"
+            }
+          }
+        ],
+        "series": {
+          "table": 7,
+          "row": "IGSS",
+          "gate_voltage_V": 20
+        },
+        "scope_review": "row_split_only_not_live_requalified",
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:rdson25",
+      "label": "drain_source_on_resistance",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "rdson25",
+        "key": "drain_source_on_resistance",
+        "values": {
+          "typ": 35,
+          "max": 45
+        },
+        "unit": "mΩ",
+        "conditions": "FET1 and FET2; VGS=10 V; ID=5 A; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "已有规格测试绑定",
+      "bindings": [
+        "rdson_25C"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "rdson_25C",
+          "expected": {
+            "kind": "rdson",
+            "temperature_C": 25,
+            "current_A": 5,
+            "vgs_V": 10,
+            "typical": 0.035,
+            "limits": {
+              "max": 0.045
+            }
+          }
+        }
+      ],
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:rdson25",
+        "label": "drain_source_on_resistance",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "rdson25",
+          "key": "drain_source_on_resistance",
+          "values": {
+            "typ": 35,
+            "max": 45
+          },
+          "unit": "mΩ",
+          "conditions": "FET1 and FET2; VGS=10 V; ID=5 A; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "已有规格测试绑定",
+        "bindings": [
+          "rdson_25C"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "rdson_25C",
+            "expected": {
+              "kind": "rdson",
+              "temperature_C": 25,
+              "current_A": 5,
+              "vgs_V": 10,
+              "typical": 0.035,
+              "limits": {
+                "max": 0.045
+              }
+            }
+          }
+        ],
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "dc_resistance",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:rdson175",
+      "label": "drain_source_on_resistance",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "rdson175",
+        "key": "drain_source_on_resistance",
+        "values": {
+          "typ": 78,
+          "max": 101
+        },
+        "unit": "mΩ",
+        "conditions": "FET1 and FET2; VGS=10 V; ID=5 A; Tj=175°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "已有规格测试绑定",
+      "bindings": [
+        "rdson_175C"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "rdson_175C",
+          "expected": {
+            "kind": "rdson",
+            "temperature_C": 175,
+            "current_A": 5,
+            "vgs_V": 10,
+            "typical": 0.078,
+            "limits": {
+              "max": 0.101
+            }
+          }
+        }
+      ],
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:rdson175",
+        "label": "drain_source_on_resistance",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "rdson175",
+          "key": "drain_source_on_resistance",
+          "values": {
+            "typ": 78,
+            "max": 101
+          },
+          "unit": "mΩ",
+          "conditions": "FET1 and FET2; VGS=10 V; ID=5 A; Tj=175°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "已有规格测试绑定",
+        "bindings": [
+          "rdson_175C"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "rdson_175C",
+            "expected": {
+              "kind": "rdson",
+              "temperature_C": 175,
+              "current_A": 5,
+              "vgs_V": 10,
+              "typical": 0.078,
+              "limits": {
+                "max": 0.101
+              }
+            }
+          }
+        ],
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "dc_resistance",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:qg",
+      "label": "total_gate_charge",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "qg",
+        "key": "total_gate_charge",
+        "values": {
+          "typ": 9.2
+        },
+        "unit": "nC",
+        "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; VGS=10 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "charge_regions",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:qg",
+        "label": "total_gate_charge",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "qg",
+          "key": "total_gate_charge",
+          "values": {
+            "typ": 9.2
+          },
+          "unit": "nC",
+          "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; VGS=10 V; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "尚未生成对应测试；手册有参数参考",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "charge_regions",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:qgs",
+      "label": "gate_source_charge",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "qgs",
+        "key": "gate_source_charge",
+        "values": {
+          "typ": 2
+        },
+        "unit": "nC",
+        "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; VGS=10 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "charge_regions",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:qgs",
+        "label": "gate_source_charge",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "qgs",
+          "key": "gate_source_charge",
+          "values": {
+            "typ": 2
+          },
+          "unit": "nC",
+          "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; VGS=10 V; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "尚未生成对应测试；手册有参数参考",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "charge_regions",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:qgd",
+      "label": "gate_drain_charge",
+      "kind": "test",
+      "evidence": [
+        "b63",
+        "p4"
+      ],
+      "reference_evidence": {
+        "id": "qgd",
+        "key": "gate_drain_charge",
+        "values": {
+          "typ": 3.5
+        },
+        "unit": "nC",
+        "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; VGS=10 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b63",
+          "p4"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        5
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "charge_regions",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:qgd",
+        "label": "gate_drain_charge",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "qgd",
+          "key": "gate_drain_charge",
+          "values": {
+            "typ": 3.5
+          },
+          "unit": "nC",
+          "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; VGS=10 V; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "尚未生成对应测试；手册有参数参考",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "charge_regions",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:plateau",
+      "label": "gate_plateau_voltage",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "plateau",
+        "key": "gate_plateau_voltage",
+        "values": {
+          "typ": 5
+        },
+        "unit": "V",
+        "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "charge_regions",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:plateau",
+        "label": "gate_plateau_voltage",
+        "kind": "test",
+        "evidence": [
+          "b72",
+          "p5"
+        ],
+        "reference_evidence": {
+          "id": "plateau",
+          "key": "gate_plateau_voltage",
+          "values": {
+            "typ": 5
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; ID=5 A; VDS=48 V; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        "reason": "尚未生成对应测试；手册有参数参考",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          6
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "charge_regions",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:ciss",
+      "label": "input_capacitance",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "ciss",
+        "key": "input_capacitance",
+        "values": {
+          "typ": 401,
+          "max": 535
+        },
+        "unit": "pF",
+        "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+      "bindings": [
+        "manual_ciss"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_ciss",
+          "expected": {
+            "kind": "capacitance",
+            "temperature_C": 25,
+            "vds_V": 25,
+            "vgs_V": 0,
+            "limits": {
+              "max": 5.35e-10
+            },
+            "typical": 4.01e-10,
+            "quantity": "ciss",
+            "frequency_Hz": 1000000.0
+          }
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "ac_parallel_capacitance",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+      "source_record": {
+        "id": "parameter:ciss",
+        "label": "input_capacitance",
+        "kind": "test",
+        "evidence": [
+          "b72",
+          "p5"
+        ],
+        "reference_evidence": {
+          "id": "ciss",
+          "key": "input_capacitance",
+          "values": {
+            "typ": 401,
+            "max": 535
+          },
+          "unit": "pF",
+          "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+        "bindings": [
+          "manual_ciss"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "manual_ciss",
+            "expected": {
+              "kind": "capacitance",
+              "temperature_C": 25,
+              "vds_V": 25,
+              "vgs_V": 0,
+              "limits": {
+                "max": 5.35e-10
+              },
+              "typical": 4.01e-10,
+              "quantity": "ciss",
+              "frequency_Hz": 1000000.0
+            }
+          }
+        ],
+        "pdf_pages": [
+          6
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "ac_parallel_capacitance",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:coss",
+      "label": "output_capacitance",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "coss",
+        "key": "output_capacitance",
+        "values": {
+          "typ": 73,
+          "max": 87
+        },
+        "unit": "pF",
+        "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+      "bindings": [
+        "manual_coss"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_coss",
+          "expected": {
+            "kind": "capacitance",
+            "temperature_C": 25,
+            "vds_V": 25,
+            "vgs_V": 0,
+            "limits": {
+              "max": 8.7e-11
+            },
+            "typical": 7.299999999999999e-11,
+            "quantity": "coss",
+            "frequency_Hz": 1000000.0
+          }
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "ac_parallel_capacitance",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+      "source_record": {
+        "id": "parameter:coss",
+        "label": "output_capacitance",
+        "kind": "test",
+        "evidence": [
+          "b72",
+          "p5"
+        ],
+        "reference_evidence": {
+          "id": "coss",
+          "key": "output_capacitance",
+          "values": {
+            "typ": 73,
+            "max": 87
+          },
+          "unit": "pF",
+          "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+        "bindings": [
+          "manual_coss"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "manual_coss",
+            "expected": {
+              "kind": "capacitance",
+              "temperature_C": 25,
+              "vds_V": 25,
+              "vgs_V": 0,
+              "limits": {
+                "max": 8.7e-11
+              },
+              "typical": 7.299999999999999e-11,
+              "quantity": "coss",
+              "frequency_Hz": 1000000.0
+            }
+          }
+        ],
+        "pdf_pages": [
+          6
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "ac_parallel_capacitance",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:crss",
+      "label": "reverse_transfer_capacitance",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "crss",
+        "key": "reverse_transfer_capacitance",
+        "values": {
+          "typ": 53,
+          "max": 72
+        },
+        "unit": "pF",
+        "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+      "bindings": [
+        "manual_crss"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "manual_crss",
+          "expected": {
+            "kind": "capacitance",
+            "temperature_C": 25,
+            "vds_V": 25,
+            "vgs_V": 0,
+            "limits": {
+              "max": 7.2e-11
+            },
+            "typical": 5.3e-11,
+            "quantity": "crss",
+            "frequency_Hz": 1000000.0
+          }
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "ac_parallel_capacitance",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+      "source_record": {
+        "id": "parameter:crss",
+        "label": "reverse_transfer_capacitance",
+        "kind": "test",
+        "evidence": [
+          "b72",
+          "p5"
+        ],
+        "reference_evidence": {
+          "id": "crss",
+          "key": "reverse_transfer_capacitance",
+          "values": {
+            "typ": 53,
+            "max": 72
+          },
+          "unit": "pF",
+          "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+        "bindings": [
+          "manual_crss"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "manual_crss",
+            "expected": {
+              "kind": "capacitance",
+              "temperature_C": 25,
+              "vds_V": 25,
+              "vgs_V": 0,
+              "limits": {
+                "max": 7.2e-11
+              },
+              "typical": 5.3e-11,
+              "quantity": "crss",
+              "frequency_Hz": 1000000.0
+            }
+          }
+        ],
+        "pdf_pages": [
+          6
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "ac_parallel_capacitance",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:tdon",
+      "label": "turn_on_delay",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "tdon",
+        "key": "turn_on_delay",
+        "values": {
+          "typ": 4.3
+        },
+        "unit": "ns",
+        "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:tdon",
+        "label": "turn_on_delay",
+        "kind": "test",
+        "evidence": [
+          "b72",
+          "p5"
+        ],
+        "reference_evidence": {
+          "id": "tdon",
+          "key": "turn_on_delay",
+          "values": {
+            "typ": 4.3
+          },
+          "unit": "ns",
+          "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        "reason": "尚未生成对应测试；手册有参数参考",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          6
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "transient_timing",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:tr",
+      "label": "rise_time",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "tr",
+        "key": "rise_time",
+        "values": {
+          "typ": 5.1
+        },
+        "unit": "ns",
+        "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:tr",
+        "label": "rise_time",
+        "kind": "test",
+        "evidence": [
+          "b72",
+          "p5"
+        ],
+        "reference_evidence": {
+          "id": "tr",
+          "key": "rise_time",
+          "values": {
+            "typ": 5.1
+          },
+          "unit": "ns",
+          "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        "reason": "尚未生成对应测试；手册有参数参考",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          6
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "transient_timing",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:tdoff",
+      "label": "turn_off_delay",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "tdoff",
+        "key": "turn_off_delay",
+        "values": {
+          "typ": 8.4
+        },
+        "unit": "ns",
+        "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:tdoff",
+        "label": "turn_off_delay",
+        "kind": "test",
+        "evidence": [
+          "b72",
+          "p5"
+        ],
+        "reference_evidence": {
+          "id": "tdoff",
+          "key": "turn_off_delay",
+          "values": {
+            "typ": 8.4
+          },
+          "unit": "ns",
+          "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        "reason": "尚未生成对应测试；手册有参数参考",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          6
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "transient_timing",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:tf",
+      "label": "fall_time",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "tf",
+        "key": "fall_time",
+        "values": {
+          "typ": 5.4
+        },
+        "unit": "ns",
+        "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:tf",
+        "label": "fall_time",
+        "kind": "test",
+        "evidence": [
+          "b72",
+          "p5"
+        ],
+        "reference_evidence": {
+          "id": "tf",
+          "key": "fall_time",
+          "values": {
+            "typ": 5.4
+          },
+          "unit": "ns",
+          "conditions": "FET1 and FET2; VDS=48 V; RL=5 Ω; VGS=10 V; RG(ext)=5 Ω; Tj=25°C; ID=5 A",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        "reason": "尚未生成对应测试；手册有参数参考",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          6
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "transient_timing",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:vsd",
+      "label": "body_diode_forward_voltage",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "vsd",
+        "key": "body_diode_forward_voltage",
+        "values": {
+          "typ": 0.83,
+          "max": 1.2
+        },
+        "unit": "V",
+        "conditions": "FET1 and FET2; IS=5 A; VGS=0 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "已有规格测试绑定",
+      "bindings": [
+        "body_diode_25C"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "body_diode_25C",
+          "expected": {
+            "kind": "body_diode",
+            "temperature_C": 25,
+            "current_A": 5,
+            "typical": 0.83,
+            "limits": {
+              "max": 1.2
+            }
+          }
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:vsd",
+        "label": "body_diode_forward_voltage",
+        "kind": "test",
+        "evidence": [
+          "b72",
+          "p5"
+        ],
+        "reference_evidence": {
+          "id": "vsd",
+          "key": "body_diode_forward_voltage",
+          "values": {
+            "typ": 0.83,
+            "max": 1.2
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; IS=5 A; VGS=0 V; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        "reason": "已有规格测试绑定",
+        "bindings": [
+          "body_diode_25C"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "body_diode_25C",
+            "expected": {
+              "kind": "body_diode",
+              "temperature_C": 25,
+              "current_A": 5,
+              "typical": 0.83,
+              "limits": {
+                "max": 1.2
+              }
+            }
+          }
+        ],
+        "pdf_pages": [
+          6
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:trr",
+      "label": "body_diode_reverse_recovery_time",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "trr",
+        "key": "body_diode_reverse_recovery_time",
+        "values": {
+          "typ": 17.6
+        },
+        "unit": "ns",
+        "conditions": "FET1 and FET2; IS=5 A; dIS/dt=-100 A/μs; VGS=0 V; VDS=30 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "transient_timing",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:trr",
+        "label": "body_diode_reverse_recovery_time",
+        "kind": "test",
+        "evidence": [
+          "b72",
+          "p5"
+        ],
+        "reference_evidence": {
+          "id": "trr",
+          "key": "body_diode_reverse_recovery_time",
+          "values": {
+            "typ": 17.6
+          },
+          "unit": "ns",
+          "conditions": "FET1 and FET2; IS=5 A; dIS/dt=-100 A/μs; VGS=0 V; VDS=30 V; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        "reason": "尚未生成对应测试；手册有参数参考",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          6
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "transient_timing",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "parameter:qr",
+      "label": "body_diode_recovered_charge",
+      "kind": "test",
+      "evidence": [
+        "b72",
+        "p5"
+      ],
+      "reference_evidence": {
+        "id": "qr",
+        "key": "body_diode_recovered_charge",
+        "values": {
+          "typ": 12.3
+        },
+        "unit": "nC",
+        "conditions": "FET1 and FET2; IS=5 A; dIS/dt=-100 A/μs; VGS=0 V; VDS=30 V; Tj=25°C",
+        "applies_to": [
+          "BUK7K52-60E"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b72",
+          "p5"
+        ]
+      },
+      "reason": "尚未生成对应测试；手册有参数参考",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [
+        6
+      ],
+      "plan_status": "test_development_required",
+      "method_family": "charge_regions",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "parameter:qr",
+        "label": "body_diode_recovered_charge",
+        "kind": "test",
+        "evidence": [
+          "b72",
+          "p5"
+        ],
+        "reference_evidence": {
+          "id": "qr",
+          "key": "body_diode_recovered_charge",
+          "values": {
+            "typ": 12.3
+          },
+          "unit": "nC",
+          "conditions": "FET1 and FET2; IS=5 A; dIS/dt=-100 A/μs; VGS=0 V; VDS=30 V; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        "reason": "尚未生成对应测试；手册有参数参考",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [
+          6
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "charge_regions",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:1",
+      "label": "连续漏极电流随安装基座温度",
+      "kind": "constraint",
+      "evidence": [
+        "PDF Fig.1"
+      ],
+      "reference_evidence": {},
+      "reason": "额定范围图，需单独约束核对",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [],
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:1",
+        "label": "连续漏极电流随安装基座温度",
+        "kind": "constraint",
+        "evidence": [
+          "PDF Fig.1"
+        ],
+        "reference_evidence": {},
+        "reason": "额定范围图，需单独约束核对",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [],
+        "plan_status": "constraint_audit_required",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "figure:2",
+      "label": "归一化功耗随安装基座温度",
+      "kind": "constraint",
+      "evidence": [
+        "PDF Fig.2"
+      ],
+      "reference_evidence": {},
+      "reason": "额定范围图，需单独约束核对",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [],
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:2",
+        "label": "归一化功耗随安装基座温度",
+        "kind": "constraint",
+        "evidence": [
+          "PDF Fig.2"
+        ],
+        "reference_evidence": {},
+        "reason": "额定范围图，需单独约束核对",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [],
+        "plan_status": "constraint_audit_required",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "figure:3",
+      "label": "雪崩电流与雪崩时间",
+      "kind": "constraint",
+      "evidence": [
+        "PDF Fig.3"
+      ],
+      "reference_evidence": {},
+      "reason": "额定范围图，需单独约束核对",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [],
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:3",
+        "label": "雪崩电流与雪崩时间",
+        "kind": "constraint",
+        "evidence": [
+          "PDF Fig.3"
+        ],
+        "reference_evidence": {},
+        "reason": "额定范围图，需单独约束核对",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [],
+        "plan_status": "constraint_audit_required",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "figure:4",
+      "label": "安全工作区",
+      "kind": "constraint",
+      "evidence": [
+        "PDF Fig.4"
+      ],
+      "reference_evidence": {},
+      "reason": "额定范围图，需单独约束核对",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [],
+      "plan_status": "constraint_audit_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:4",
+        "label": "安全工作区",
+        "kind": "constraint",
+        "evidence": [
+          "PDF Fig.4"
+        ],
+        "reference_evidence": {},
+        "reason": "额定范围图，需单独约束核对",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [],
+        "plan_status": "constraint_audit_required",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "figure:5:single",
+      "label": "thermal_impedance_pulse",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.5"
+      ],
+      "reference_evidence": {
+        "key": "thermal_impedance_pulse",
+        "values": {},
+        "unit": "K/W",
+        "conditions": "single shot"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "duty": 0
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:5:single",
+        "label": "thermal_impedance_pulse",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.5"
+        ],
+        "reference_evidence": {
+          "key": "thermal_impedance_pulse",
+          "values": {},
+          "unit": "K/W",
+          "conditions": "single shot"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "duty": 0
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "thermal_network",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:5:0_02",
+      "label": "thermal_impedance_pulse",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.5"
+      ],
+      "reference_evidence": {
+        "key": "thermal_impedance_pulse",
+        "values": {},
+        "unit": "K/W",
+        "conditions": "duty=0.02"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "duty": 0.02
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:5:0_02",
+        "label": "thermal_impedance_pulse",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.5"
+        ],
+        "reference_evidence": {
+          "key": "thermal_impedance_pulse",
+          "values": {},
+          "unit": "K/W",
+          "conditions": "duty=0.02"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "duty": 0.02
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "thermal_network",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:5:0_05",
+      "label": "thermal_impedance_pulse",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.5"
+      ],
+      "reference_evidence": {
+        "key": "thermal_impedance_pulse",
+        "values": {},
+        "unit": "K/W",
+        "conditions": "duty=0.05"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "duty": 0.05
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:5:0_05",
+        "label": "thermal_impedance_pulse",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.5"
+        ],
+        "reference_evidence": {
+          "key": "thermal_impedance_pulse",
+          "values": {},
+          "unit": "K/W",
+          "conditions": "duty=0.05"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "duty": 0.05
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "thermal_network",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:5:0_1",
+      "label": "thermal_impedance_pulse",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.5"
+      ],
+      "reference_evidence": {
+        "key": "thermal_impedance_pulse",
+        "values": {},
+        "unit": "K/W",
+        "conditions": "duty=0.1"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "duty": 0.1
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:5:0_1",
+        "label": "thermal_impedance_pulse",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.5"
+        ],
+        "reference_evidence": {
+          "key": "thermal_impedance_pulse",
+          "values": {},
+          "unit": "K/W",
+          "conditions": "duty=0.1"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "duty": 0.1
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "thermal_network",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:5:0_2",
+      "label": "thermal_impedance_pulse",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.5"
+      ],
+      "reference_evidence": {
+        "key": "thermal_impedance_pulse",
+        "values": {},
+        "unit": "K/W",
+        "conditions": "duty=0.2"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "duty": 0.2
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:5:0_2",
+        "label": "thermal_impedance_pulse",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.5"
+        ],
+        "reference_evidence": {
+          "key": "thermal_impedance_pulse",
+          "values": {},
+          "unit": "K/W",
+          "conditions": "duty=0.2"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "duty": 0.2
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "thermal_network",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:5:0_5",
+      "label": "thermal_impedance_pulse",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.5"
+      ],
+      "reference_evidence": {
+        "key": "thermal_impedance_pulse",
+        "values": {},
+        "unit": "K/W",
+        "conditions": "duty=0.5"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "duty": 0.5
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "thermal_network",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:5:0_5",
+        "label": "thermal_impedance_pulse",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.5"
+        ],
+        "reference_evidence": {
+          "key": "thermal_impedance_pulse",
+          "values": {},
+          "unit": "K/W",
+          "conditions": "duty=0.5"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "duty": 0.5
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "thermal_network",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:6",
+      "label": "输出特性",
+      "kind": "informational",
+      "evidence": [
+        "PDF Fig.6"
+      ],
+      "reference_evidence": {},
+      "reason": "已有全部系列测试绑定",
+      "bindings": [
+        "fig6_vgs_0",
+        "fig6_vgs_3",
+        "fig6_vgs_1",
+        "fig6_vgs_4",
+        "fig6_vgs_2",
+        "fig6_vgs_5"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "fig6_vgs_0",
+          "expected": {
+            "kind": "output",
+            "condition": "VGS=4.5 V",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 25,
+            "vgs_V": 4.5,
+            "acceptance": null
+          }
+        },
+        {
+          "test_id": "fig6_vgs_1",
+          "expected": {
+            "kind": "output",
+            "condition": "VGS=5 V",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 25,
+            "vgs_V": 5.0,
+            "acceptance": null
+          }
+        },
+        {
+          "test_id": "fig6_vgs_2",
+          "expected": {
+            "kind": "output",
+            "condition": "VGS=5.5 V",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 25,
+            "vgs_V": 5.5,
+            "acceptance": null
+          }
+        },
+        {
+          "test_id": "fig6_vgs_3",
+          "expected": {
+            "kind": "output",
+            "condition": "VGS=6 V",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 25,
+            "vgs_V": 6.0,
+            "acceptance": null
+          }
+        },
+        {
+          "test_id": "fig6_vgs_4",
+          "expected": {
+            "kind": "output",
+            "condition": "VGS=6.5 V",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 25,
+            "vgs_V": 6.5,
+            "acceptance": null
+          }
+        },
+        {
+          "test_id": "fig6_vgs_5",
+          "expected": {
+            "kind": "output",
+            "condition": "VGS=10 V",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 25,
+            "vgs_V": 10.0,
+            "acceptance": null
+          }
+        }
+      ],
+      "pdf_pages": [],
+      "children": [
+        "figure:6:fig6_vgs_0",
+        "figure:6:fig6_vgs_1",
+        "figure:6:fig6_vgs_2",
+        "figure:6:fig6_vgs_3",
+        "figure:6:fig6_vgs_4",
+        "figure:6:fig6_vgs_5"
+      ],
+      "plan_status": "series_group",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:6",
+        "label": "输出特性",
+        "kind": "series_group",
+        "evidence": [
+          "PDF Fig.6"
+        ],
+        "reference_evidence": {},
+        "reason": "已有全部系列测试绑定",
+        "bindings": [
+          "fig6_vgs_0",
+          "fig6_vgs_1",
+          "fig6_vgs_2",
+          "fig6_vgs_3",
+          "fig6_vgs_4",
+          "fig6_vgs_5"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "fig6_vgs_0",
+            "expected": {
+              "kind": "output",
+              "condition": "VGS=4.5 V",
+              "x_unit": "V",
+              "y_unit": "A",
+              "temperature_C": 25,
+              "vgs_V": 4.5,
+              "acceptance": null
+            }
+          },
+          {
+            "test_id": "fig6_vgs_1",
+            "expected": {
+              "kind": "output",
+              "condition": "VGS=5 V",
+              "x_unit": "V",
+              "y_unit": "A",
+              "temperature_C": 25,
+              "vgs_V": 5.0,
+              "acceptance": null
+            }
+          },
+          {
+            "test_id": "fig6_vgs_2",
+            "expected": {
+              "kind": "output",
+              "condition": "VGS=5.5 V",
+              "x_unit": "V",
+              "y_unit": "A",
+              "temperature_C": 25,
+              "vgs_V": 5.5,
+              "acceptance": null
+            }
+          },
+          {
+            "test_id": "fig6_vgs_3",
+            "expected": {
+              "kind": "output",
+              "condition": "VGS=6 V",
+              "x_unit": "V",
+              "y_unit": "A",
+              "temperature_C": 25,
+              "vgs_V": 6.0,
+              "acceptance": null
+            }
+          },
+          {
+            "test_id": "fig6_vgs_4",
+            "expected": {
+              "kind": "output",
+              "condition": "VGS=6.5 V",
+              "x_unit": "V",
+              "y_unit": "A",
+              "temperature_C": 25,
+              "vgs_V": 6.5,
+              "acceptance": null
+            }
+          },
+          {
+            "test_id": "fig6_vgs_5",
+            "expected": {
+              "kind": "output",
+              "condition": "VGS=10 V",
+              "x_unit": "V",
+              "y_unit": "A",
+              "temperature_C": 25,
+              "vgs_V": 10.0,
+              "acceptance": null
+            }
+          }
+        ],
+        "pdf_pages": [],
+        "children": [
+          "figure:6:fig6_vgs_0",
+          "figure:6:fig6_vgs_1",
+          "figure:6:fig6_vgs_2",
+          "figure:6:fig6_vgs_3",
+          "figure:6:fig6_vgs_4",
+          "figure:6:fig6_vgs_5"
+        ],
+        "plan_status": "series_group",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "series_group",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [
+        {
+          "test_id": "fig6_vgs_0",
+          "path": "assets/1191f60dbae1a2ce4c01ace4126ec9291e68e57b221d280dd50ed6556d86bc75.csv",
+          "sha256": "1191f60dbae1a2ce4c01ace4126ec9291e68e57b221d280dd50ed6556d86bc75",
+          "condition": "VGS=4.5 V"
+        },
+        {
+          "test_id": "fig6_vgs_1",
+          "path": "assets/a12f53022401b7456d3706fc02014e540b7a6789a347729367a58be4d1858907.csv",
+          "sha256": "a12f53022401b7456d3706fc02014e540b7a6789a347729367a58be4d1858907",
+          "condition": "VGS=5 V"
+        },
+        {
+          "test_id": "fig6_vgs_2",
+          "path": "assets/adcef449a9bff81fd24d0c5606937d277fb99a925447d5caf6590fe73858c14a.csv",
+          "sha256": "adcef449a9bff81fd24d0c5606937d277fb99a925447d5caf6590fe73858c14a",
+          "condition": "VGS=5.5 V"
+        },
+        {
+          "test_id": "fig6_vgs_3",
+          "path": "assets/bf0e2bc2bdb67310b9929cdeecf731851f7f424a2b82098f6f21d6fa53572f10.csv",
+          "sha256": "bf0e2bc2bdb67310b9929cdeecf731851f7f424a2b82098f6f21d6fa53572f10",
+          "condition": "VGS=6 V"
+        },
+        {
+          "test_id": "fig6_vgs_4",
+          "path": "assets/3699103924100635f2a5ff1b4c516184039c1e2afd5ca923589a57b195c130d2.csv",
+          "sha256": "3699103924100635f2a5ff1b4c516184039c1e2afd5ca923589a57b195c130d2",
+          "condition": "VGS=6.5 V"
+        },
+        {
+          "test_id": "fig6_vgs_5",
+          "path": "assets/5bfef909ce5e303a306d31adabc81c51159e0b8b394b04f6245f8576118d95b3.csv",
+          "sha256": "5bfef909ce5e303a306d31adabc81c51159e0b8b394b04f6245f8576118d95b3",
+          "condition": "VGS=10 V"
+        }
+      ],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "informational"
+    },
+    {
+      "id": "figure:6:fig6_vgs_0",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [
+        "fig6_vgs_0"
+      ],
+      "reference_evidence": {
+        "key": "output_curve",
+        "values": {},
+        "unit": "A",
+        "conditions": "VGS=4.5 V"
+      },
+      "pdf_pages": [
+        6
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:6:fig6_vgs_0",
+        "kind": "test",
+        "applicable": true,
+        "binding_complete": true,
+        "bindings": [
+          "fig6_vgs_0"
+        ],
+        "reference_evidence": {
+          "key": "output_curve",
+          "values": {},
+          "unit": "A",
+          "conditions": "VGS=4.5 V"
+        },
+        "pdf_pages": [
+          6
+        ],
+        "added_from_manual_review": true,
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "label": "output_curve",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [
+        {
+          "test_id": "fig6_vgs_0",
+          "path": "assets/1191f60dbae1a2ce4c01ace4126ec9291e68e57b221d280dd50ed6556d86bc75.csv",
+          "sha256": "1191f60dbae1a2ce4c01ace4126ec9291e68e57b221d280dd50ed6556d86bc75",
+          "condition": "VGS=4.5 V"
+        }
+      ],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:6:fig6_vgs_1",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [
+        "fig6_vgs_1"
+      ],
+      "reference_evidence": {
+        "key": "output_curve",
+        "values": {},
+        "unit": "A",
+        "conditions": "VGS=5 V"
+      },
+      "pdf_pages": [
+        6
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:6:fig6_vgs_1",
+        "kind": "test",
+        "applicable": true,
+        "binding_complete": true,
+        "bindings": [
+          "fig6_vgs_1"
+        ],
+        "reference_evidence": {
+          "key": "output_curve",
+          "values": {},
+          "unit": "A",
+          "conditions": "VGS=5 V"
+        },
+        "pdf_pages": [
+          6
+        ],
+        "added_from_manual_review": true,
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "label": "output_curve",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [
+        {
+          "test_id": "fig6_vgs_1",
+          "path": "assets/a12f53022401b7456d3706fc02014e540b7a6789a347729367a58be4d1858907.csv",
+          "sha256": "a12f53022401b7456d3706fc02014e540b7a6789a347729367a58be4d1858907",
+          "condition": "VGS=5 V"
+        }
+      ],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:6:fig6_vgs_2",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [
+        "fig6_vgs_2"
+      ],
+      "reference_evidence": {
+        "key": "output_curve",
+        "values": {},
+        "unit": "A",
+        "conditions": "VGS=5.5 V"
+      },
+      "pdf_pages": [
+        6
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:6:fig6_vgs_2",
+        "kind": "test",
+        "applicable": true,
+        "binding_complete": true,
+        "bindings": [
+          "fig6_vgs_2"
+        ],
+        "reference_evidence": {
+          "key": "output_curve",
+          "values": {},
+          "unit": "A",
+          "conditions": "VGS=5.5 V"
+        },
+        "pdf_pages": [
+          6
+        ],
+        "added_from_manual_review": true,
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "label": "output_curve",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [
+        {
+          "test_id": "fig6_vgs_2",
+          "path": "assets/adcef449a9bff81fd24d0c5606937d277fb99a925447d5caf6590fe73858c14a.csv",
+          "sha256": "adcef449a9bff81fd24d0c5606937d277fb99a925447d5caf6590fe73858c14a",
+          "condition": "VGS=5.5 V"
+        }
+      ],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:6:fig6_vgs_3",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [
+        "fig6_vgs_3"
+      ],
+      "reference_evidence": {
+        "key": "output_curve",
+        "values": {},
+        "unit": "A",
+        "conditions": "VGS=6 V"
+      },
+      "pdf_pages": [
+        6
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:6:fig6_vgs_3",
+        "kind": "test",
+        "applicable": true,
+        "binding_complete": true,
+        "bindings": [
+          "fig6_vgs_3"
+        ],
+        "reference_evidence": {
+          "key": "output_curve",
+          "values": {},
+          "unit": "A",
+          "conditions": "VGS=6 V"
+        },
+        "pdf_pages": [
+          6
+        ],
+        "added_from_manual_review": true,
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "label": "output_curve",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [
+        {
+          "test_id": "fig6_vgs_3",
+          "path": "assets/bf0e2bc2bdb67310b9929cdeecf731851f7f424a2b82098f6f21d6fa53572f10.csv",
+          "sha256": "bf0e2bc2bdb67310b9929cdeecf731851f7f424a2b82098f6f21d6fa53572f10",
+          "condition": "VGS=6 V"
+        }
+      ],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:6:fig6_vgs_4",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [
+        "fig6_vgs_4"
+      ],
+      "reference_evidence": {
+        "key": "output_curve",
+        "values": {},
+        "unit": "A",
+        "conditions": "VGS=6.5 V"
+      },
+      "pdf_pages": [
+        6
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:6:fig6_vgs_4",
+        "kind": "test",
+        "applicable": true,
+        "binding_complete": true,
+        "bindings": [
+          "fig6_vgs_4"
+        ],
+        "reference_evidence": {
+          "key": "output_curve",
+          "values": {},
+          "unit": "A",
+          "conditions": "VGS=6.5 V"
+        },
+        "pdf_pages": [
+          6
+        ],
+        "added_from_manual_review": true,
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "label": "output_curve",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [
+        {
+          "test_id": "fig6_vgs_4",
+          "path": "assets/3699103924100635f2a5ff1b4c516184039c1e2afd5ca923589a57b195c130d2.csv",
+          "sha256": "3699103924100635f2a5ff1b4c516184039c1e2afd5ca923589a57b195c130d2",
+          "condition": "VGS=6.5 V"
+        }
+      ],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:6:fig6_vgs_5",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [
+        "fig6_vgs_5"
+      ],
+      "reference_evidence": {
+        "key": "output_curve",
+        "values": {},
+        "unit": "A",
+        "conditions": "VGS=10 V"
+      },
+      "pdf_pages": [
+        6
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:6:fig6_vgs_5",
+        "kind": "test",
+        "applicable": true,
+        "binding_complete": true,
+        "bindings": [
+          "fig6_vgs_5"
+        ],
+        "reference_evidence": {
+          "key": "output_curve",
+          "values": {},
+          "unit": "A",
+          "conditions": "VGS=10 V"
+        },
+        "pdf_pages": [
+          6
+        ],
+        "added_from_manual_review": true,
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "label": "output_curve",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [
+        {
+          "test_id": "fig6_vgs_5",
+          "path": "assets/5bfef909ce5e303a306d31adabc81c51159e0b8b394b04f6245f8576118d95b3.csv",
+          "sha256": "5bfef909ce5e303a306d31adabc81c51159e0b8b394b04f6245f8576118d95b3",
+          "condition": "VGS=10 V"
+        }
+      ],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:7",
+      "label": "转移特性",
+      "kind": "informational",
+      "evidence": [
+        "PDF Fig.7"
+      ],
+      "reference_evidence": {},
+      "reason": "已有全部系列测试绑定",
+      "bindings": [
+        "fig7_tj25",
+        "fig7_tj175"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [
+        {
+          "test_id": "fig7_tj25",
+          "expected": {
+            "kind": "transfer",
+            "condition": "Tj=25 C",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 25.0,
+            "vds_V": 10,
+            "acceptance": null
+          }
+        },
+        {
+          "test_id": "fig7_tj175",
+          "expected": {
+            "kind": "transfer",
+            "condition": "Tj=175 C",
+            "x_unit": "V",
+            "y_unit": "A",
+            "temperature_C": 175.0,
+            "vds_V": 10,
+            "acceptance": null
+          }
+        }
+      ],
+      "pdf_pages": [],
+      "children": [
+        "figure:7:fig7_tj25",
+        "figure:7:fig7_tj175"
+      ],
+      "plan_status": "series_group",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:7",
+        "label": "转移特性",
+        "kind": "series_group",
+        "evidence": [
+          "PDF Fig.7"
+        ],
+        "reference_evidence": {},
+        "reason": "已有全部系列测试绑定",
+        "bindings": [
+          "fig7_tj25",
+          "fig7_tj175"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "fig7_tj25",
+            "expected": {
+              "kind": "transfer",
+              "condition": "Tj=25 C",
+              "x_unit": "V",
+              "y_unit": "A",
+              "temperature_C": 25.0,
+              "vds_V": 10,
+              "acceptance": null
+            }
+          },
+          {
+            "test_id": "fig7_tj175",
+            "expected": {
+              "kind": "transfer",
+              "condition": "Tj=175 C",
+              "x_unit": "V",
+              "y_unit": "A",
+              "temperature_C": 175.0,
+              "vds_V": 10,
+              "acceptance": null
+            }
+          }
+        ],
+        "pdf_pages": [],
+        "children": [
+          "figure:7:fig7_tj25",
+          "figure:7:fig7_tj175"
+        ],
+        "plan_status": "series_group",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "series_group",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [
+        {
+          "test_id": "fig7_tj25",
+          "path": "assets/8b2c33026c054930bd3e3a4a9670a04b97d61c35162592b12749e0c7399402e1.csv",
+          "sha256": "8b2c33026c054930bd3e3a4a9670a04b97d61c35162592b12749e0c7399402e1",
+          "condition": "Tj=25 C"
+        },
+        {
+          "test_id": "fig7_tj175",
+          "path": "assets/9d8c38797568d1f2ea9cf6a382c9d901efeacb082384657069377df32cd8f1e6.csv",
+          "sha256": "9d8c38797568d1f2ea9cf6a382c9d901efeacb082384657069377df32cd8f1e6",
+          "condition": "Tj=175 C"
+        }
+      ],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "informational"
+    },
+    {
+      "id": "figure:7:fig7_tj25",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [
+        "fig7_tj25"
+      ],
+      "reference_evidence": {
+        "key": "transfer_curve",
+        "values": {},
+        "unit": "A",
+        "conditions": "Tj=25 C"
+      },
+      "pdf_pages": [
+        6
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:7:fig7_tj25",
+        "kind": "test",
+        "applicable": true,
+        "binding_complete": true,
+        "bindings": [
+          "fig7_tj25"
+        ],
+        "reference_evidence": {
+          "key": "transfer_curve",
+          "values": {},
+          "unit": "A",
+          "conditions": "Tj=25 C"
+        },
+        "pdf_pages": [
+          6
+        ],
+        "added_from_manual_review": true,
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "label": "transfer_curve",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [
+        {
+          "test_id": "fig7_tj25",
+          "path": "assets/8b2c33026c054930bd3e3a4a9670a04b97d61c35162592b12749e0c7399402e1.csv",
+          "sha256": "8b2c33026c054930bd3e3a4a9670a04b97d61c35162592b12749e0c7399402e1",
+          "condition": "Tj=25 C"
+        }
+      ],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:7:fig7_tj175",
+      "kind": "test",
+      "applicable": true,
+      "binding_complete": false,
+      "bindings": [
+        "fig7_tj175"
+      ],
+      "reference_evidence": {
+        "key": "transfer_curve",
+        "values": {},
+        "unit": "A",
+        "conditions": "Tj=175 C"
+      },
+      "pdf_pages": [
+        6
+      ],
+      "added_from_manual_review": true,
+      "plan_status": "existing_test_requires_scope_audit",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:7:fig7_tj175",
+        "kind": "test",
+        "applicable": true,
+        "binding_complete": true,
+        "bindings": [
+          "fig7_tj175"
+        ],
+        "reference_evidence": {
+          "key": "transfer_curve",
+          "values": {},
+          "unit": "A",
+          "conditions": "Tj=175 C"
+        },
+        "pdf_pages": [
+          6
+        ],
+        "added_from_manual_review": true,
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "label": "transfer_curve",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [
+        {
+          "test_id": "fig7_tj175",
+          "path": "assets/9d8c38797568d1f2ea9cf6a382c9d901efeacb082384657069377df32cd8f1e6.csv",
+          "sha256": "9d8c38797568d1f2ea9cf6a382c9d901efeacb082384657069377df32cd8f1e6",
+          "condition": "Tj=175 C"
+        }
+      ],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:8:typ",
+      "label": "resistance_gate_curve",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.8"
+      ],
+      "reference_evidence": {
+        "key": "resistance_gate_curve",
+        "values": {},
+        "unit": "mΩ",
+        "conditions": "Tj=25°C; ID=5 A"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [
+        "figure_8_typ_g4p5_i5",
+        "figure_8_typ_g10_i5",
+        "figure_8_typ_g6_i5"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "corner": "typ"
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "figure:8:typ",
+        "label": "resistance_gate_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.8"
+        ],
+        "reference_evidence": {
+          "key": "resistance_gate_curve",
+          "values": {},
+          "unit": "mΩ",
+          "conditions": "Tj=25°C; ID=5 A"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "corner": "typ"
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "dc_resistance",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:9:min",
+      "label": "subthreshold_current",
+      "kind": "constraint",
+      "evidence": [
+        "PDF Fig.9"
+      ],
+      "reference_evidence": {
+        "key": "subthreshold_current",
+        "values": {},
+        "unit": "A",
+        "conditions": "Tj=25°C; VDS=5 V"
+      },
+      "reason": "范围、统计或角落需专门审计；单一典型SPICE模型不能自动证明统计包络",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "corner": "min"
+      },
+      "pdf_pages": [],
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "figure:9:min",
+        "label": "subthreshold_current",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.9"
+        ],
+        "reference_evidence": {
+          "key": "subthreshold_current",
+          "values": {},
+          "unit": "A",
+          "conditions": "Tj=25°C; VDS=5 V"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "corner": "min"
+        },
+        "pdf_pages": [],
+        "plan_status": "scope_or_corner_review",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "figure:9:typ",
+      "label": "subthreshold_current",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.9"
+      ],
+      "reference_evidence": {
+        "key": "subthreshold_current",
+        "values": {},
+        "unit": "A",
+        "conditions": "Tj=25°C; VDS=5 V"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [
+        "figure_9_typ_g4",
+        "figure_9_typ_g2",
+        "figure_9_typ_g3"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "corner": "typ"
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "figure:9:typ",
+        "label": "subthreshold_current",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.9"
+        ],
+        "reference_evidence": {
+          "key": "subthreshold_current",
+          "values": {},
+          "unit": "A",
+          "conditions": "Tj=25°C; VDS=5 V"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "corner": "typ"
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:9:max",
+      "label": "subthreshold_current",
+      "kind": "constraint",
+      "evidence": [
+        "PDF Fig.9"
+      ],
+      "reference_evidence": {
+        "key": "subthreshold_current",
+        "values": {},
+        "unit": "A",
+        "conditions": "Tj=25°C; VDS=5 V"
+      },
+      "reason": "范围、统计或角落需专门审计；单一典型SPICE模型不能自动证明统计包络",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "corner": "max"
+      },
+      "pdf_pages": [],
+      "plan_status": "scope_or_corner_review",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "figure:9:max",
+        "label": "subthreshold_current",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.9"
+        ],
+        "reference_evidence": {
+          "key": "subthreshold_current",
+          "values": {},
+          "unit": "A",
+          "conditions": "Tj=25°C; VDS=5 V"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "corner": "max"
+        },
+        "pdf_pages": [],
+        "plan_status": "scope_or_corner_review",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "figure:10:min",
+      "label": "threshold_temperature_curve",
+      "kind": "constraint",
+      "evidence": [
+        "PDF Fig.10"
+      ],
+      "reference_evidence": {
+        "key": "threshold_temperature_curve",
+        "values": {},
+        "unit": "V",
+        "conditions": "ID=1 mA; VDS=VGS"
+      },
+      "reason": "范围、统计或角落需专门审计；单一典型SPICE模型不能自动证明统计包络",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "corner": "min"
+      },
+      "pdf_pages": [],
+      "plan_status": "scope_or_corner_review",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:10:min",
+        "label": "threshold_temperature_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.10"
+        ],
+        "reference_evidence": {
+          "key": "threshold_temperature_curve",
+          "values": {},
+          "unit": "V",
+          "conditions": "ID=1 mA; VDS=VGS"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "corner": "min"
+        },
+        "pdf_pages": [],
+        "plan_status": "scope_or_corner_review",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "figure:10:typ",
+      "label": "threshold_temperature_curve",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.10"
+      ],
+      "reference_evidence": {
+        "key": "threshold_temperature_curve",
+        "values": {},
+        "unit": "V",
+        "conditions": "ID=1 mA; VDS=VGS"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [
+        "figure_10_typ_t175",
+        "figure_10_typ_t25",
+        "figure_10_typ_tminus55"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "corner": "typ"
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:10:typ",
+        "label": "threshold_temperature_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.10"
+        ],
+        "reference_evidence": {
+          "key": "threshold_temperature_curve",
+          "values": {},
+          "unit": "V",
+          "conditions": "ID=1 mA; VDS=VGS"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "corner": "typ"
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:10:max",
+      "label": "threshold_temperature_curve",
+      "kind": "constraint",
+      "evidence": [
+        "PDF Fig.10"
+      ],
+      "reference_evidence": {
+        "key": "threshold_temperature_curve",
+        "values": {},
+        "unit": "V",
+        "conditions": "ID=1 mA; VDS=VGS"
+      },
+      "reason": "范围、统计或角落需专门审计；单一典型SPICE模型不能自动证明统计包络",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "corner": "max"
+      },
+      "pdf_pages": [],
+      "plan_status": "scope_or_corner_review",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:10:max",
+        "label": "threshold_temperature_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.10"
+        ],
+        "reference_evidence": {
+          "key": "threshold_temperature_curve",
+          "values": {},
+          "unit": "V",
+          "conditions": "ID=1 mA; VDS=VGS"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "corner": "max"
+        },
+        "pdf_pages": [],
+        "plan_status": "scope_or_corner_review",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "figure:11:vgs_5_5",
+      "label": "resistance_current_curve",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.11"
+      ],
+      "reference_evidence": {
+        "key": "resistance_current_curve",
+        "values": {},
+        "unit": "mΩ",
+        "conditions": "Tj=25°C; VGS=5.5 V"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [
+        "figure_11_vgs_5_5_g5p5_i1",
+        "figure_11_vgs_5_5_g5p5_i10",
+        "figure_11_vgs_5_5_g5p5_i5"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "gate_voltage_V": 5.5
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "figure:11:vgs_5_5",
+        "label": "resistance_current_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.11"
+        ],
+        "reference_evidence": {
+          "key": "resistance_current_curve",
+          "values": {},
+          "unit": "mΩ",
+          "conditions": "Tj=25°C; VGS=5.5 V"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "gate_voltage_V": 5.5
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "dc_resistance",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:11:vgs_6",
+      "label": "resistance_current_curve",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.11"
+      ],
+      "reference_evidence": {
+        "key": "resistance_current_curve",
+        "values": {},
+        "unit": "mΩ",
+        "conditions": "Tj=25°C; VGS=6 V"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [
+        "figure_11_vgs_6_g6p0_i5",
+        "figure_11_vgs_6_g6p0_i1",
+        "figure_11_vgs_6_g6p0_i10"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "gate_voltage_V": 6
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "figure:11:vgs_6",
+        "label": "resistance_current_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.11"
+        ],
+        "reference_evidence": {
+          "key": "resistance_current_curve",
+          "values": {},
+          "unit": "mΩ",
+          "conditions": "Tj=25°C; VGS=6 V"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "gate_voltage_V": 6
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "dc_resistance",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:11:vgs_6_5",
+      "label": "resistance_current_curve",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.11"
+      ],
+      "reference_evidence": {
+        "key": "resistance_current_curve",
+        "values": {},
+        "unit": "mΩ",
+        "conditions": "Tj=25°C; VGS=6.5 V"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [
+        "figure_11_vgs_6_5_g6p5_i5",
+        "figure_11_vgs_6_5_g6p5_i1",
+        "figure_11_vgs_6_5_g6p5_i10"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "gate_voltage_V": 6.5
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "figure:11:vgs_6_5",
+        "label": "resistance_current_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.11"
+        ],
+        "reference_evidence": {
+          "key": "resistance_current_curve",
+          "values": {},
+          "unit": "mΩ",
+          "conditions": "Tj=25°C; VGS=6.5 V"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "gate_voltage_V": 6.5
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "dc_resistance",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:11:vgs_7",
+      "label": "resistance_current_curve",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.11"
+      ],
+      "reference_evidence": {
+        "key": "resistance_current_curve",
+        "values": {},
+        "unit": "mΩ",
+        "conditions": "Tj=25°C; VGS=7 V"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [
+        "figure_11_vgs_7_g7p0_i1",
+        "figure_11_vgs_7_g7p0_i10",
+        "figure_11_vgs_7_g7p0_i5"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "gate_voltage_V": 7
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "figure:11:vgs_7",
+        "label": "resistance_current_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.11"
+        ],
+        "reference_evidence": {
+          "key": "resistance_current_curve",
+          "values": {},
+          "unit": "mΩ",
+          "conditions": "Tj=25°C; VGS=7 V"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "gate_voltage_V": 7
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "dc_resistance",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:11:vgs_8",
+      "label": "resistance_current_curve",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.11"
+      ],
+      "reference_evidence": {
+        "key": "resistance_current_curve",
+        "values": {},
+        "unit": "mΩ",
+        "conditions": "Tj=25°C; VGS=8 V"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [
+        "figure_11_vgs_8_g8p0_i10",
+        "figure_11_vgs_8_g8p0_i1",
+        "figure_11_vgs_8_g8p0_i5"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "gate_voltage_V": 8
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "figure:11:vgs_8",
+        "label": "resistance_current_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.11"
+        ],
+        "reference_evidence": {
+          "key": "resistance_current_curve",
+          "values": {},
+          "unit": "mΩ",
+          "conditions": "Tj=25°C; VGS=8 V"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "gate_voltage_V": 8
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "dc_resistance",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:11:vgs_10",
+      "label": "resistance_current_curve",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.11"
+      ],
+      "reference_evidence": {
+        "key": "resistance_current_curve",
+        "values": {},
+        "unit": "mΩ",
+        "conditions": "Tj=25°C; VGS=10 V"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [
+        "figure_11_vgs_10_g10p0_i5",
+        "figure_11_vgs_10_g10p0_i1",
+        "figure_11_vgs_10_g10p0_i10"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "gate_voltage_V": 10
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "figure:11:vgs_10",
+        "label": "resistance_current_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.11"
+        ],
+        "reference_evidence": {
+          "key": "resistance_current_curve",
+          "values": {},
+          "unit": "mΩ",
+          "conditions": "Tj=25°C; VGS=10 V"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "gate_voltage_V": 10
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "dc_resistance",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:12:normalized",
+      "label": "normalized_resistance_temperature",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.12"
+      ],
+      "reference_evidence": {
+        "key": "normalized_resistance_temperature",
+        "values": {},
+        "unit": "1",
+        "conditions": "a=RDSon(Tj)/RDSon(25°C)"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "normalization_temperature_C": 25
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "dc_resistance",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "figure:12:normalized",
+        "label": "normalized_resistance_temperature",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.12"
+        ],
+        "reference_evidence": {
+          "key": "normalized_resistance_temperature",
+          "values": {},
+          "unit": "1",
+          "conditions": "a=RDSon(Tj)/RDSon(25°C)"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "normalization_temperature_C": 25
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "dc_resistance",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:13:vds_14",
+      "label": "gate_charge_curve",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.13"
+      ],
+      "reference_evidence": {
+        "key": "gate_charge_curve",
+        "values": {},
+        "unit": "V",
+        "conditions": "Tj=25°C; ID=5 A; VDS=14 V"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "drain_voltage_V": 14,
+        "x_unit": "nC"
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "charge_regions",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:13:vds_14",
+        "label": "gate_charge_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.13"
+        ],
+        "reference_evidence": {
+          "key": "gate_charge_curve",
+          "values": {},
+          "unit": "V",
+          "conditions": "Tj=25°C; ID=5 A; VDS=14 V"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "drain_voltage_V": 14,
+          "x_unit": "nC"
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "charge_regions",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:13:vds_48",
+      "label": "gate_charge_curve",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.13"
+      ],
+      "reference_evidence": {
+        "key": "gate_charge_curve",
+        "values": {},
+        "unit": "V",
+        "conditions": "Tj=25°C; ID=5 A; VDS=48 V"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "drain_voltage_V": 48,
+        "x_unit": "nC"
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "charge_regions",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:13:vds_48",
+        "label": "gate_charge_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.13"
+        ],
+        "reference_evidence": {
+          "key": "gate_charge_curve",
+          "values": {},
+          "unit": "V",
+          "conditions": "Tj=25°C; ID=5 A; VDS=48 V"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "drain_voltage_V": 48,
+          "x_unit": "nC"
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "charge_regions",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:14",
+      "label": "栅极电荷波形定义",
+      "kind": "informational",
+      "evidence": [
+        "PDF Fig.14"
+      ],
+      "reference_evidence": {},
+      "reason": "定义/封装示意，不属于数值拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [],
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:14",
+        "label": "栅极电荷波形定义",
+        "kind": "informational",
+        "evidence": [
+          "PDF Fig.14"
+        ],
+        "reference_evidence": {},
+        "reason": "定义/封装示意，不属于数值拟合曲线",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [],
+        "plan_status": "informational",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "informational",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "informational"
+    },
+    {
+      "id": "figure:15:ciss",
+      "label": "capacitance_bias_curve",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.15"
+      ],
+      "reference_evidence": {
+        "key": "capacitance_bias_curve",
+        "values": {},
+        "unit": "pF",
+        "conditions": "VGS=0 V; f=1 MHz"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [
+        "figure_15_ciss_v5",
+        "figure_15_ciss_v48",
+        "figure_15_ciss_v25"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "quantity": "ciss",
+        "temperature_evidence": "not_printed_in_figure_caption"
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "ac_parallel_capacitance",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+      "source_record": {
+        "id": "figure:15:ciss",
+        "label": "capacitance_bias_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.15"
+        ],
+        "reference_evidence": {
+          "key": "capacitance_bias_curve",
+          "values": {},
+          "unit": "pF",
+          "conditions": "VGS=0 V; f=1 MHz"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "quantity": "ciss",
+          "temperature_evidence": "not_printed_in_figure_caption"
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "ac_parallel_capacitance",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:15:coss",
+      "label": "capacitance_bias_curve",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.15"
+      ],
+      "reference_evidence": {
+        "key": "capacitance_bias_curve",
+        "values": {},
+        "unit": "pF",
+        "conditions": "VGS=0 V; f=1 MHz"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [
+        "figure_15_coss_v25",
+        "figure_15_coss_v48",
+        "figure_15_coss_v5"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "quantity": "coss",
+        "temperature_evidence": "not_printed_in_figure_caption"
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "ac_parallel_capacitance",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+      "source_record": {
+        "id": "figure:15:coss",
+        "label": "capacitance_bias_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.15"
+        ],
+        "reference_evidence": {
+          "key": "capacitance_bias_curve",
+          "values": {},
+          "unit": "pF",
+          "conditions": "VGS=0 V; f=1 MHz"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "quantity": "coss",
+          "temperature_evidence": "not_printed_in_figure_caption"
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "ac_parallel_capacitance",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:15:crss",
+      "label": "capacitance_bias_curve",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.15"
+      ],
+      "reference_evidence": {
+        "key": "capacitance_bias_curve",
+        "values": {},
+        "unit": "pF",
+        "conditions": "VGS=0 V; f=1 MHz"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [
+        "figure_15_crss_v48",
+        "figure_15_crss_v25",
+        "figure_15_crss_v5"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "quantity": "crss",
+        "temperature_evidence": "not_printed_in_figure_caption"
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "ac_parallel_capacitance",
+      "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+      "source_record": {
+        "id": "figure:15:crss",
+        "label": "capacitance_bias_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.15"
+        ],
+        "reference_evidence": {
+          "key": "capacitance_bias_curve",
+          "values": {},
+          "unit": "pF",
+          "conditions": "VGS=0 V; f=1 MHz"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "quantity": "crss",
+          "temperature_evidence": "not_printed_in_figure_caption"
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "ac_parallel_capacitance",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:16:tj_25",
+      "label": "diode_forward_curve",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.16"
+      ],
+      "reference_evidence": {
+        "key": "diode_forward_curve",
+        "values": {},
+        "unit": "A",
+        "conditions": "VGS=0 V; Tj=25°C"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [
+        "figure_16_tj_25_i5",
+        "figure_16_tj_25_i1",
+        "figure_16_tj_25_i10"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "temperature_C": 25
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:16:tj_25",
+        "label": "diode_forward_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.16"
+        ],
+        "reference_evidence": {
+          "key": "diode_forward_curve",
+          "values": {},
+          "unit": "A",
+          "conditions": "VGS=0 V; Tj=25°C"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "temperature_C": 25
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:16:tj_175",
+      "label": "diode_forward_curve",
+      "kind": "test",
+      "evidence": [
+        "PDF Fig.16"
+      ],
+      "reference_evidence": {
+        "key": "diode_forward_curve",
+        "values": {},
+        "unit": "A",
+        "conditions": "VGS=0 V; Tj=175°C"
+      },
+      "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+      "bindings": [
+        "figure_16_tj_175_i10",
+        "figure_16_tj_175_i5",
+        "figure_16_tj_175_i1"
+      ],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "series": {
+        "temperature_C": 175
+      },
+      "pdf_pages": [],
+      "reference_status": "digitization_or_series_review_required",
+      "plan_status": "test_development_required",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:16:tj_175",
+        "label": "diode_forward_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.16"
+        ],
+        "reference_evidence": {
+          "key": "diode_forward_curve",
+          "values": {},
+          "unit": "A",
+          "conditions": "VGS=0 V; Tj=175°C"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "temperature_C": 175
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "test",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending",
+      "status": "uncovered"
+    },
+    {
+      "id": "figure:17",
+      "label": "封装尺寸图",
+      "kind": "informational",
+      "evidence": [
+        "PDF Fig.17"
+      ],
+      "reference_evidence": {},
+      "reason": "定义/封装示意，不属于数值拟合曲线",
+      "bindings": [],
+      "binding_complete": false,
+      "legacy_bindings": [],
+      "pdf_pages": [],
+      "plan_status": "informational",
+      "method_family": "contract_review",
+      "capability_status": "adapter_or_contract_pending",
+      "source_record": {
+        "id": "figure:17",
+        "label": "封装尺寸图",
+        "kind": "informational",
+        "evidence": [
+          "PDF Fig.17"
+        ],
+        "reference_evidence": {},
+        "reason": "定义/封装示意，不属于数值拟合曲线",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "pdf_pages": [],
+        "plan_status": "informational",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending"
+      },
+      "source_kind": "informational",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "informational"
+    },
+    {
+      "id": "parameter:is",
+      "label": "source_current_rating",
+      "kind": "constraint",
+      "evidence": [
+        "PDF Table.5 page.3",
+        "test_library_assets/provenance/buk_manual_evidence.json"
+      ],
+      "reference_evidence": {
+        "key": "source_current_rating",
+        "values": {
+          "max": 15.4
+        },
+        "unit": "A",
+        "conditions": "Tmb=25°C",
+        "rating_kind": "absolute_maximum"
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "reason": "额定值属于使用范围/约束审计；普通电气仿真不能证明封装损坏边界",
+      "pdf_pages": [],
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:is",
+        "label": "source_current_rating",
+        "kind": "constraint",
+        "evidence": [
+          "PDF Table.5 page.3",
+          "test_library_assets/provenance/buk_manual_evidence.json"
+        ],
+        "reference_evidence": {
+          "key": "source_current_rating",
+          "values": {
+            "max": 15.4
+          },
+          "unit": "A",
+          "conditions": "Tmb=25°C",
+          "rating_kind": "absolute_maximum"
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "reason": "额定值属于使用范围/约束审计；普通电气仿真不能证明封装损坏边界",
+        "pdf_pages": [],
+        "plan_status": "constraint_audit_required",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    },
+    {
+      "id": "parameter:ism",
+      "label": "peak_source_current_rating",
+      "kind": "constraint",
+      "evidence": [
+        "PDF Table.5 page.3",
+        "test_library_assets/provenance/buk_manual_evidence.json"
+      ],
+      "reference_evidence": {
+        "key": "peak_source_current_rating",
+        "values": {
+          "max": 71
+        },
+        "unit": "A",
+        "conditions": "pulsed; tp≤10 μs; Tmb=25°C",
+        "rating_kind": "absolute_maximum"
+      },
+      "bindings": [],
+      "binding_complete": false,
+      "reason": "额定值属于使用范围/约束审计；普通电气仿真不能证明封装损坏边界",
+      "pdf_pages": [],
+      "plan_status": "constraint_audit_required",
+      "method_family": "dc_sample",
+      "capability_status": "existing_primitive_requires_fixture_binding",
+      "source_record": {
+        "id": "parameter:ism",
+        "label": "peak_source_current_rating",
+        "kind": "constraint",
+        "evidence": [
+          "PDF Table.5 page.3",
+          "test_library_assets/provenance/buk_manual_evidence.json"
+        ],
+        "reference_evidence": {
+          "key": "peak_source_current_rating",
+          "values": {
+            "max": 71
+          },
+          "unit": "A",
+          "conditions": "pulsed; tp≤10 μs; Tmb=25°C",
+          "rating_kind": "absolute_maximum"
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "reason": "额定值属于使用范围/约束审计；普通电气仿真不能证明封装损坏边界",
+        "pdf_pages": [],
+        "plan_status": "constraint_audit_required",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding"
+      },
+      "source_kind": "constraint",
+      "classification_review_pending": false,
+      "reference_asset_bindings": [],
+      "configured_reference_bindings": [],
+      "status": "constraint_review_pending"
+    }
+  ],
+  "full_manual_coverage": false,
+  "open_contract_issues": [
+    {
+      "reference_ids": [
+        "parameter:tdon",
+        "parameter:tr",
+        "parameter:tdoff",
+        "parameter:tf"
+      ],
+      "problem": "VDS48V/RL5ohm/ID5A printed together; clarify fixture/ID interpretation before freezing waveform"
+    },
+    {
+      "reference_ids": [
+        "figure:15:ciss",
+        "figure:15:coss",
+        "figure:15:crss"
+      ],
+      "problem": "Figure caption does not explicitly state temperature; preserve uncertainty"
+    },
+    {
+      "reference_ids": [
+        "parameter:qg",
+        "parameter:qgs",
+        "parameter:qgd"
+      ],
+      "problem": "Single-channel model versus two-channel package scope; do not substitute package total"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/BUK7K52-60E/assets/4272aefd6383ccab0790755ef94f526441c93ccf928df7532889dc31cc64454e.pdf",
+      "sha256": "4272aefd6383ccab0790755ef94f526441c93ccf928df7532889dc31cc64454e"
+    }
+  ]
+}

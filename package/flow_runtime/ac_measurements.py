@@ -8,6 +8,7 @@ MODES = {
     "ac_series_capacitance": "F", "ac_parallel_capacitance": "F",
     "ac_inductance": "H", "ac_dissipation_factor": "1",
     "ac_gain_magnitude": "1", "ac_gain_db": "dB", "ac_phase": "degree",
+    "ac_current_ratio": "1", "ac_reactance_ratio": "1",
 }
 
 
@@ -32,7 +33,11 @@ def validate(a, m, signal_validator):
         raise Fault("proposal", "复数测量需要AC分析")
     signal_validator(m["signal"]); signal_validator(m["denominator"])
     sig, den = m["signal"].lower(), m["denominator"].lower()
-    if m["mode"].startswith("ac_gain") or m["mode"] == "ac_phase":
+    if m["mode"]=="ac_current_ratio":
+        if not (sig.startswith("i(") and den.startswith("i(")):raise Fault("proposal","Current ratio requires two actual current probes")
+    elif m["mode"]=="ac_reactance_ratio":
+        if not (sig.startswith("v(") and den.startswith("v(")):raise Fault("proposal","Reactance ratio requires two actual voltage probes")
+    elif m["mode"].startswith("ac_gain") or m["mode"] == "ac_phase":
         if not (sig.startswith("v(") and den.startswith("v(")):
             raise Fault("proposal", "增益与相位必须为实际输出电压/输入电压")
     elif not (sig.startswith("v(") and den.startswith("i(")):
@@ -62,7 +67,11 @@ def measure(a, m, data, reference, interpolate):
         if abs(i) < 1e-24:
             raise Fault("fixture", "交流分母为零，激励或测量绑定不成立")
         z=sign*v/i; mode=m["mode"]; w=2*math.pi*f
-        if mode == "ac_resistance": val=z.real
+        if mode == "ac_reactance_ratio":
+            if v.imag <= 0 or i.imag <= 0:raise Fault("fixture","Reactance comparison requires two inductive biased ports")
+            val=sign*v.imag/i.imag
+        elif mode == "ac_current_ratio": val=abs(z)
+        elif mode == "ac_resistance": val=z.real
         elif mode == "ac_impedance_magnitude" or mode == "ac_gain_magnitude": val=abs(z)
         elif mode == "ac_inductance":
             if z.imag <= 0: raise Fault("fixture", "端口未呈感性，不能报告正电感")

@@ -5,16 +5,17 @@
     {
       "device": "BUK7K52-60E",
       "source_identity": "ae6cb4461f688474311da8d03722027118a9c6c5bea6110a3f037d8b11e8cc57",
-      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_final_coverage/BUK7K52-60E",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_final_coverage/BUK7K52-60E",
       "counts": {
         "records": 82,
         "test_records": 58,
         "configured_binding_records": 23,
+        "available_method_binding_records": 37,
         "configured_binding_pending": 23,
-        "tests_without_method": 35,
-        "partial_method_records": 0,
+        "tests_without_method": 21,
+        "partial_method_records": 37,
         "device_bindings_confirmed": 0,
-        "reference_methods_qualified": 0,
+        "reference_methods_qualified": 37,
         "electrical_pass": 0,
         "electrical_fail": 0,
         "electrical_pending": 0,
@@ -23,20 +24,411 @@
         "constraints_pending": 20,
         "informational": 4,
         "informational_review_pending": 2,
-        "registered_method_tests": 0,
-        "benchmark_test_pass": 0,
-        "benchmark_test_fail": 0
+        "registered_method_tests": 65,
+        "benchmark_test_pass": 18,
+        "benchmark_test_fail": 5
       },
-      "diagnostics": [],
+      "diagnostics": [
+        {
+          "reference_id": "figure:10:typ",
+          "status": "reference_method_qualified",
+          "test": "figure_10_typ_tminus55",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:ciss",
+          "status": "reference_method_qualified",
+          "test": "manual_ciss",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:6:fig6_vgs_0",
+          "status": "reference_method_qualified",
+          "test": "fig6_vgs_0",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_10",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_10_g10p0_i10",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:15:coss",
+          "status": "reference_method_qualified",
+          "test": "figure_15_coss_v5",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:16:tj_25",
+          "status": "reference_method_qualified",
+          "test": "figure_16_tj_25_i1",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_8",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_8_g8p0_i10",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_6",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_6_g6p0_i10",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:8:typ",
+          "status": "reference_method_qualified",
+          "test": "figure_8_typ_g4p5_i5",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:15:ciss",
+          "status": "reference_method_qualified",
+          "test": "figure_15_ciss_v25",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_7",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_7_g7p0_i1",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:9:typ",
+          "status": "reference_method_qualified",
+          "test": "figure_9_typ_g3",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:6:fig6_vgs_1",
+          "status": "reference_method_qualified",
+          "test": "fig6_vgs_1",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:15:coss",
+          "status": "reference_method_qualified",
+          "test": "figure_15_coss_v25",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:crss",
+          "status": "reference_method_qualified",
+          "test": "manual_crss",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:idss175",
+          "status": "reference_method_qualified",
+          "test": "manual_idss175",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:vth175",
+          "status": "reference_method_qualified",
+          "test": "threshold_175C",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_6_5",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_6_5_g6p5_i10",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:coss",
+          "status": "reference_method_qualified",
+          "test": "manual_coss",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_6_5",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_6_5_g6p5_i5",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:6:fig6_vgs_3",
+          "status": "reference_method_qualified",
+          "test": "fig6_vgs_3",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:igss_plus20",
+          "status": "reference_method_qualified",
+          "test": "manual_igss_plus20",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:15:ciss",
+          "status": "reference_method_qualified",
+          "test": "figure_15_ciss_v48",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:16:tj_175",
+          "status": "reference_method_qualified",
+          "test": "figure_16_tj_175_i1",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_10",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_10_g10p0_i1",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_7",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_7_g7p0_i10",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:7:fig7_tj25",
+          "status": "reference_method_qualified",
+          "test": "fig7_tj25",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:15:coss",
+          "status": "reference_method_qualified",
+          "test": "figure_15_coss_v48",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:vsd",
+          "status": "reference_method_qualified",
+          "test": "body_diode_25C",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:igss_minus20",
+          "status": "reference_method_qualified",
+          "test": "manual_igss_minus20",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:vth25",
+          "status": "reference_method_qualified",
+          "test": "threshold_25C",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:15:crss",
+          "status": "reference_method_qualified",
+          "test": "figure_15_crss_v48",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:breakdown25",
+          "status": "reference_method_qualified",
+          "test": "manual_breakdown25",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:rdson25",
+          "status": "reference_method_qualified",
+          "test": "rdson_25C",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:9:typ",
+          "status": "reference_method_qualified",
+          "test": "figure_9_typ_g4",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:6:fig6_vgs_2",
+          "status": "reference_method_qualified",
+          "test": "fig6_vgs_2",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_6_5",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_6_5_g6p5_i1",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_8",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_8_g8p0_i1",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:8:typ",
+          "status": "reference_method_qualified",
+          "test": "figure_8_typ_g10_i5",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:6:fig6_vgs_5",
+          "status": "reference_method_qualified",
+          "test": "fig6_vgs_5",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_5_5",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_5_5_g5p5_i10",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:8:typ",
+          "status": "reference_method_qualified",
+          "test": "figure_8_typ_g6_i5",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:15:crss",
+          "status": "reference_method_qualified",
+          "test": "figure_15_crss_v25",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:rdson175",
+          "status": "reference_method_qualified",
+          "test": "rdson_175C",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_6",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_6_g6p0_i1",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:idss25",
+          "status": "reference_method_qualified",
+          "test": "manual_idss25",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_6",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_6_g6p0_i5",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:7:fig7_tj175",
+          "status": "reference_method_qualified",
+          "test": "fig7_tj175",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:16:tj_175",
+          "status": "reference_method_qualified",
+          "test": "figure_16_tj_175_i5",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_10",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_10_g10p0_i5",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:15:ciss",
+          "status": "reference_method_qualified",
+          "test": "figure_15_ciss_v5",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:10:typ",
+          "status": "reference_method_qualified",
+          "test": "figure_10_typ_t175",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:10:typ",
+          "status": "reference_method_qualified",
+          "test": "figure_10_typ_t25",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:16:tj_175",
+          "status": "reference_method_qualified",
+          "test": "figure_16_tj_175_i10",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:16:tj_25",
+          "status": "reference_method_qualified",
+          "test": "figure_16_tj_25_i5",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_5_5",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_5_5_g5p5_i5",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:16:tj_25",
+          "status": "reference_method_qualified",
+          "test": "figure_16_tj_25_i10",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_5_5",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_5_5_g5p5_i1",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:6:fig6_vgs_4",
+          "status": "reference_method_qualified",
+          "test": "fig6_vgs_4",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:vthcold",
+          "status": "reference_method_qualified",
+          "test": "threshold_minus55C",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_7",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_7_g7p0_i5",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:11:vgs_8",
+          "status": "reference_method_qualified",
+          "test": "figure_11_vgs_8_g8p0_i5",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:9:typ",
+          "status": "reference_method_qualified",
+          "test": "figure_9_typ_g2",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:15:crss",
+          "status": "reference_method_qualified",
+          "test": "figure_15_crss_v5",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:breakdown-55",
+          "status": "reference_method_qualified",
+          "test": "manual_breakdown_55",
+          "scope": "exact_conditions_only"
+        }
+      ],
       "hashes": {
-        "manual_inventory.json": "c1bf4b425ad5e5757fd56b6fb5cc014e651476d9aa9b61acc21fe4dea6e8bc02",
-        "binding_receipts.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        "manual_inventory.json": "532748cf3e417d5f7b19c48407288ca3b4d3c3202d8df8a32742520bf6476db6",
+        "binding_receipts.json": "e1ca7fc6a67d24949b79b9bbc3cbc188bd052a9df9d0d3edca3f68bcf3356db4"
       },
       "usage": {
         "api_calls": 0,
         "simulations": 0,
         "repairs": 0,
-        "seconds": 0.0004505420000000121
+        "seconds": 0.0006367079999999997
       },
       "budgets": {
         "api_calls": 1,
@@ -48,16 +440,17 @@
     {
       "device": "1N4148",
       "source_identity": "99372b2122ed2ddae73d40c9de9ead3a332c0ae886766bad4798fbbab12a0a41",
-      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_final_coverage/1N4148",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_final_coverage/1N4148",
       "counts": {
         "records": 31,
         "test_records": 13,
         "configured_binding_records": 0,
+        "available_method_binding_records": 11,
         "configured_binding_pending": 0,
-        "tests_without_method": 7,
-        "partial_method_records": 6,
+        "tests_without_method": 2,
+        "partial_method_records": 11,
         "device_bindings_confirmed": 0,
-        "reference_methods_qualified": 6,
+        "reference_methods_qualified": 11,
         "electrical_pass": 0,
         "electrical_fail": 0,
         "electrical_pending": 0,
@@ -66,9 +459,9 @@
         "constraints_pending": 13,
         "informational": 5,
         "informational_review_pending": 5,
-        "registered_method_tests": 6,
-        "benchmark_test_pass": 5,
-        "benchmark_test_fail": 1
+        "registered_method_tests": 17,
+        "benchmark_test_pass": 10,
+        "benchmark_test_fail": 7
       },
       "diagnostics": [
         {
@@ -78,9 +471,51 @@
           "scope": "exact_conditions_only"
         },
         {
+          "reference_id": "figure:fig5:vr75",
+          "status": "reference_method_qualified",
+          "test": "figure_fig5_vr75_point200",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:fig6:capacitance",
+          "status": "reference_method_qualified",
+          "test": "figure_fig6_capacitance_point0",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:fig5:vr20",
+          "status": "reference_method_qualified",
+          "test": "figure_fig5_vr20_point0",
+          "scope": "exact_conditions_only"
+        },
+        {
           "reference_id": "parameter:ir25",
           "status": "reference_method_qualified",
           "test": "reverse_20V_25C",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:fig6:capacitance",
+          "status": "reference_method_qualified",
+          "test": "figure_fig6_capacitance_point101",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:fig6:capacitance",
+          "status": "reference_method_qualified",
+          "test": "figure_fig6_capacitance_point202",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:fig5:vr75",
+          "status": "reference_method_qualified",
+          "test": "figure_fig5_vr75_point100",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:trr",
+          "status": "reference_method_qualified",
+          "test": "reverse_recovery_10mA_60mA_100ohm",
           "scope": "exact_conditions_only"
         },
         {
@@ -102,6 +537,30 @@
           "scope": "exact_conditions_only"
         },
         {
+          "reference_id": "parameter:vfr",
+          "status": "reference_method_qualified",
+          "test": "forward_recovery_peak_50mA_20ns",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:fig5:vr20",
+          "status": "reference_method_qualified",
+          "test": "figure_fig5_vr20_point100",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:fig5:vr20",
+          "status": "reference_method_qualified",
+          "test": "figure_fig5_vr20_point200",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:fig5:vr75",
+          "status": "reference_method_qualified",
+          "test": "figure_fig5_vr75_point0",
+          "scope": "exact_conditions_only"
+        },
+        {
           "reference_id": "parameter:cd",
           "status": "reference_method_qualified",
           "test": "capacitance_zero_bias",
@@ -109,14 +568,14 @@
         }
       ],
       "hashes": {
-        "manual_inventory.json": "882dd6facd21f73be0a4cf72b163f81aea3a5cb3233b2249be480540da75d374",
-        "binding_receipts.json": "d03ced29a1824a472e1f739437ad38de05550bb2923a1d2fe3a4e8cc0ef52421"
+        "manual_inventory.json": "965011076aecf78c45d7fb097e8ec0d53613ff8dea306a8f2bf5c95103acfd36",
+        "binding_receipts.json": "92d23aef89198ec63a6a37845fd50a37cc64448cedf95175fc6b790d3ac890f2"
       },
       "usage": {
         "api_calls": 0,
         "simulations": 0,
         "repairs": 0,
-        "seconds": 0.0004359170000000079
+        "seconds": 0.0003664170000001743
       },
       "budgets": {
         "api_calls": 1,
@@ -128,16 +587,17 @@
     {
       "device": "EMHK350ARA470MF80G",
       "source_identity": "25f99540074058bf78fd85c17df71a760101f0e8a608eb228614f40337579d7b",
-      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_final_coverage/EMHK350ARA470MF80G",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_final_coverage/EMHK350ARA470MF80G",
       "counts": {
         "records": 31,
         "test_records": 8,
         "configured_binding_records": 0,
+        "available_method_binding_records": 6,
         "configured_binding_pending": 0,
-        "tests_without_method": 3,
-        "partial_method_records": 5,
+        "tests_without_method": 2,
+        "partial_method_records": 6,
         "device_bindings_confirmed": 0,
-        "reference_methods_qualified": 5,
+        "reference_methods_qualified": 6,
         "electrical_pass": 0,
         "electrical_fail": 0,
         "electrical_pending": 0,
@@ -146,8 +606,8 @@
         "constraints_pending": 23,
         "informational": 0,
         "informational_review_pending": 0,
-        "registered_method_tests": 8,
-        "benchmark_test_pass": 8,
+        "registered_method_tests": 9,
+        "benchmark_test_pass": 9,
         "benchmark_test_fail": 0
       },
       "diagnostics": [
@@ -173,6 +633,12 @@
           "reference_id": "parameter:df",
           "status": "reference_method_qualified",
           "test": "df_120Hz",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:impedance_ratio_-40",
+          "status": "reference_method_qualified",
+          "test": "impedance_ratio_minus40_room_120Hz",
           "scope": "exact_conditions_only"
         },
         {
@@ -207,14 +673,14 @@
         }
       ],
       "hashes": {
-        "manual_inventory.json": "a796c794c5d93c8cba1244e7b2a0444c30256c34e8b4009f4b1684602530dc20",
-        "binding_receipts.json": "7525342cc956087bb2a25e3bf99b7b7d556689a5c105ed3ca7ed3d4d8d110c6e"
+        "manual_inventory.json": "99455976248043723eb034322e34ef7563963eafada8523bc426d1db737a2ce5",
+        "binding_receipts.json": "2f0273641d87950bda8b907cbd9f0c45e555ff56d22e701436175b08ab849f50"
       },
       "usage": {
         "api_calls": 0,
         "simulations": 0,
         "repairs": 0,
-        "seconds": 0.000423750000000056
+        "seconds": 0.0003106669999999312
       },
       "budgets": {
         "api_calls": 1,
@@ -226,11 +692,12 @@
     {
       "device": "750311423",
       "source_identity": "5ad235180c4764a21705fc84dd7044e74e83d4d18a7dc9286d869f2bb8bdbfc2",
-      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_final_coverage/750311423",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_final_coverage/750311423",
       "counts": {
         "records": 18,
         "test_records": 7,
         "configured_binding_records": 0,
+        "available_method_binding_records": 5,
         "configured_binding_pending": 0,
         "tests_without_method": 2,
         "partial_method_records": 5,
@@ -256,6 +723,11 @@
           "scope": "exact_conditions_only"
         },
         {
+          "test": "leakage_secondary",
+          "status": "diagnostic_method_only",
+          "gap": "Manual shorting condition unspecified; alternatives are diagnostic only"
+        },
+        {
           "reference_id": "parameter:turns",
           "status": "reference_method_qualified",
           "test": "turns_N3",
@@ -266,6 +738,11 @@
           "status": "reference_method_qualified",
           "test": "dcr_N3",
           "scope": "exact_conditions_only"
+        },
+        {
+          "test": "leakage_secondary_and_aux",
+          "status": "diagnostic_method_only",
+          "gap": "Manual shorting condition unspecified; alternatives are diagnostic only"
         },
         {
           "reference_id": "parameter:turns",
@@ -294,7 +771,7 @@
         "api_calls": 0,
         "simulations": 0,
         "repairs": 0,
-        "seconds": 0.0003722919999999963
+        "seconds": 0.00021791599999998468
       },
       "budgets": {
         "api_calls": 1,
@@ -306,11 +783,12 @@
     {
       "device": "ACS723KMATR-20AB-T",
       "source_identity": "217cec5d46c80fa723766ddda58a2cc652ec54ff569eea3fc2c407a5ed31a584",
-      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_final_coverage/ACS723KMATR-20AB-T",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_final_coverage/ACS723KMATR-20AB-T",
       "counts": {
         "records": 97,
         "test_records": 37,
         "configured_binding_records": 0,
+        "available_method_binding_records": 8,
         "configured_binding_pending": 0,
         "tests_without_method": 29,
         "partial_method_records": 8,
@@ -499,7 +977,7 @@
         "api_calls": 0,
         "simulations": 0,
         "repairs": 0,
-        "seconds": 0.0003401249999999134
+        "seconds": 0.00027733300000010175
       },
       "budgets": {
         "api_calls": 1,
@@ -511,11 +989,12 @@
     {
       "device": "ADA4528-1_MSOP",
       "source_identity": "7f6fd00d6818e400818ef2474f50a0278433ffb19af18161638b2f0ce5302846",
-      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_final_coverage/ADA4528-1_MSOP",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_final_coverage/ADA4528-1_MSOP",
       "counts": {
         "records": 186,
         "test_records": 144,
         "configured_binding_records": 0,
+        "available_method_binding_records": 32,
         "configured_binding_pending": 0,
         "tests_without_method": 112,
         "partial_method_records": 32,
@@ -927,7 +1406,7 @@
         "api_calls": 0,
         "simulations": 0,
         "repairs": 0,
-        "seconds": 0.0003911250000001587
+        "seconds": 0.00048487500000016226
       },
       "budgets": {
         "api_calls": 1,
@@ -940,8 +1419,8 @@
   "full_manual_coverage": false,
   "test_backend": false,
   "simulations": 0,
-  "coverage_semantics": "Registered exact-point methods reduce missing-method counts; full record coverage and model delivery remain independently pending",
-  "qualified_tests": 111,
-  "diagnostic_only_tests": 1,
-  "authoritative_report": "runs/registered_final_coverage/summary.json"
+  "qualified_tests": 190,
+  "diagnostic_only": 3,
+  "coverage_semantics": "Exact-condition method availability; full records and model delivery remain pending",
+  "authoritative_report": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_final_coverage/summary.json"
 }

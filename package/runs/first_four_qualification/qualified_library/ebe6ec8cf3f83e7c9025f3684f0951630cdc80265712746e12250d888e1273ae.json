@@ -1,0 +1,293 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "figure_fig5_vr75_point0",
+    "protocol": {
+      "temperature_C": 24.16657816,
+      "device_nodes": {
+        "A": "P",
+        "K": "0"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VREVERSE",
+          "nodes": [
+            "P",
+            "0"
+          ],
+          "value": {
+            "dc": 75
+          }
+        },
+        {
+          "kind": "V",
+          "name": "VDUMMY",
+          "nodes": [
+            "UNUSED",
+            "0"
+          ],
+          "value": {
+            "dc": 0
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "dc",
+        "source": "VDUMMY",
+        "start": 0,
+        "stop": 1,
+        "step": 1
+      },
+      "measurement": {
+        "mode": "sample",
+        "signal": "i(vreverse)",
+        "at": 1,
+        "absolute": true,
+        "scale": 1000000.0
+      },
+      "checks": []
+    },
+    "expectation": {
+      "unit": "μA",
+      "typical": 0.01757187716,
+      "typical_relative_tolerance_percent": 10,
+      "limits": {}
+    },
+    "reference_ids": [
+      "figure:fig5:vr75"
+    ],
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+      "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+      "entry": "LEAKAGE_FITTED_1N4148",
+      "declared_ports": [
+        "A",
+        "K"
+      ],
+      "ports": [
+        "A",
+        "K"
+      ],
+      "provenance": {
+        "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+        "not_new_index_selection": true
+      }
+    },
+    "device": "1N4148",
+    "input_folder": "1N4148",
+    "reference_evidence": [
+      {
+        "id": "figure:fig5:vr75",
+        "kind": "test",
+        "applicable": true,
+        "binding_complete": false,
+        "bindings": [],
+        "reference_evidence": {
+          "key": "Reverse current versus junction temperature",
+          "values": {},
+          "unit": "μA",
+          "conditions": "(1) VR=75 V, typical",
+          "source_sampling": {
+            "series_id": "vr75",
+            "condition": "(1) VR=75 V, typical",
+            "status": "auto_passed",
+            "sample_count": 201,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/vr75.csv",
+            "visible_x_range": [
+              24.16657815961968,
+              199.63407697136213
+            ],
+            "y_range": [
+              0.017571877161562964,
+              254.2819517778227
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              5
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 0.0011061356441340712,
+            "resampling_max_error_plot_px_at_300dpi": 0.004056975020934791,
+            "reconstruction_r2_in_axis_domain": 0.9999999999525757,
+            "y_resampling_rmse_in_axis_unit": 9.466683647953584e-05,
+            "y_unit": "μA",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "y_resampling_rmse_log10": 8.272957295697876e-06,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          }
+        },
+        "pdf_pages": [
+          5
+        ],
+        "added_from_manual_review": true,
+        "reference_csv": {
+          "path": "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig5/vr75.csv",
+          "sha256": "5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51"
+        },
+        "reference_status": "csv_present",
+        "plan_status": "test_development_required",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding",
+        "source_record": {
+          "id": "figure:fig5:vr75",
+          "kind": "test",
+          "applicable": true,
+          "binding_complete": false,
+          "bindings": [],
+          "reference_evidence": {
+            "key": "Reverse current versus junction temperature",
+            "values": {},
+            "unit": "μA",
+            "conditions": "(1) VR=75 V, typical",
+            "source_sampling": {
+              "series_id": "vr75",
+              "condition": "(1) VR=75 V, typical",
+              "status": "auto_passed",
+              "sample_count": 201,
+              "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/vr75.csv",
+              "visible_x_range": [
+                24.16657815961968,
+                199.63407697136213
+              ],
+              "y_range": [
+                0.017571877161562964,
+                254.2819517778227
+              ],
+              "extrapolated": false,
+              "source_pdf_drawing_ids": [
+                5
+              ],
+              "resampling_rmse_plot_px_at_300dpi": 0.0011061356441340712,
+              "resampling_max_error_plot_px_at_300dpi": 0.004056975020934791,
+              "reconstruction_r2_in_axis_domain": 0.9999999999525757,
+              "y_resampling_rmse_in_axis_unit": 9.466683647953584e-05,
+              "y_unit": "μA",
+              "physical_model_fit_r2": null,
+              "independent_measurement_accuracy": null,
+              "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+              "dashed_source": false,
+              "y_resampling_rmse_log10": 8.272957295697876e-06,
+              "rendered_ink_support_fraction": 1.0,
+              "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+            }
+          },
+          "pdf_pages": [
+            5
+          ],
+          "added_from_manual_review": true,
+          "reference_csv": {
+            "path": "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig5/vr75.csv",
+            "sha256": "5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51"
+          },
+          "reference_status": "csv_present",
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding"
+        },
+        "source_kind": "test",
+        "label": "Reverse current versus junction temperature",
+        "evidence": [
+          "pdf_page:5"
+        ],
+        "classification_review_pending": false,
+        "reference_asset_bindings": [
+          {
+            "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/vr75.csv",
+            "status": "snapshot_bound",
+            "source_relative": "references/curves/fig5/vr75.csv",
+            "path": "assets/5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51.csv",
+            "sha256": "5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51",
+            "role": "reference_data"
+          }
+        ],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "Local source, topology and measurement review; no claim of GLM approval"
+    },
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "scope": "Exact-condition method only; manual ranges, dual-instance and complete curve coverage remain open",
+    "sampled_reference": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51.csv",
+      "sha256": "5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51",
+      "x": 24.16657816,
+      "y": 0.01757187716,
+      "row_index": 0
+    },
+    "scope_note": "Three actual reference points only; full curve MAE/max acceptance pending"
+  },
+  "receipt": {
+    "device": "1N4148",
+    "id": "figure_fig5_vr75_point0",
+    "reference_ids": [
+      "figure:fig5:vr75"
+    ],
+    "scope": "Exact-condition method only; manual ranges, dual-instance and complete curve coverage remain open",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "Local source, topology and measurement review; no claim of GLM approval"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+    "calibrations": [
+      {
+        "expected": 400.0,
+        "result": {
+          "value": 400.0
+        },
+        "error": 0.0,
+        "tolerance": 0.04,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/0cd1056bccc239933d4295d0dc08bc5e4e7b4873f3b7fb963e008025edf47991",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "260e0709d7c8df77a265776d4d97e5942276fc646540176d4292886db74b6947",
+          "test.raw": "8704f48b5d0721079eea1c488f76e6482e02e79da993ae902421bf1900945bbf",
+          "test.log": "9d4aad978fcc4c228bc50e9ff6989d6fc4b01da508003eb6ecab9edeaf6f0d95",
+          "execution.json": "f4b149ffb15b9331efcbb2e93d8c55b6a0c0dddc0decdadec5ad96e08538003f"
+        }
+      },
+      {
+        "expected": 800.0,
+        "result": {
+          "value": 800.0
+        },
+        "error": 0.0,
+        "tolerance": 0.08,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/f83e23aded369fdd8c90d2470833c934e357895b8e177cb354d201cf8540c254",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "3ddb730edff31660840975ce10ea54f48d3f7d2fd30cdf218878e9a393079d8b",
+          "test.raw": "fb025bffcfaea4ded5d6a25eb6af8f026e2e1613112c76330c3ddcd5b199c83f",
+          "test.log": "cc890ea37e6da439345a8b9019cb978702c618e0c9c59599b54b9e91fb2eb2f5",
+          "execution.json": "9bdd123fcd1629230b12b7ee5086eeb5178ba913500fbe375b8c0ee455c0b724"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 95370953.43895327
+      },
+      "acceptance": "fail",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/ab069d8381060d1f23563f37e0efb23a287c6b2fd9902ad3b593fcf771f9c0dc",
+      "artifacts": {
+        "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "test.cir": "9a0774f91006b270a2d97ca6bc7e2da7893262814a35c1ed35d4019ef389a550",
+        "test.raw": "51a8abaa426ba35924d5113d425e7f621c1fa8870454f6d00ea7443b483a6350",
+        "test.log": "80e5d5e24b6d11dbd8449aaea867042f8b5225b60f78d0dd6e2560dd2ffeb4b6",
+        "execution.json": "b536464d001809a4a69826c48e5ae10a60ba556186e9c198717bd86e3fe7d0b2"
+      }
+    },
+    "protocol_sha256": "ba7dea0d42b5c4c39a83b6659c9c5da983ac1a8c419bd42204a16217db00db47"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

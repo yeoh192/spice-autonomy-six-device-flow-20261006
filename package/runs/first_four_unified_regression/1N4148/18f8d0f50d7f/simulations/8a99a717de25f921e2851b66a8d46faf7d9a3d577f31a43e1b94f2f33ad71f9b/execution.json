@@ -1,0 +1,10 @@
+{
+  "returncode": 0,
+  "elapsed_seconds": 4.086521584,
+  "argv": [
+    "/Applications/LTspice.app/Contents/SharedSupport/ltspice/LTspice/run_ltspice",
+    "-b",
+    "-ascii",
+    "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_unified_regression/1N4148/18f8d0f50d7f/simulations/8a99a717de25f921e2851b66a8d46faf7d9a3d577f31a43e1b94f2f33ad71f9b/test.cir"
+  ]
+}

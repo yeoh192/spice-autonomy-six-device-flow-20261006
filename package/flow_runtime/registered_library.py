@@ -1,5 +1,5 @@
 """Import locally reviewed, real-calibrated methods without claiming device delivery."""
-import copy
+import copy,csv
 from pathlib import Path
 from .state import read,digest,fingerprint,Fault,artifacts_valid
 from .spice import render,raw_data,measure,acceptance,load_reference
@@ -30,6 +30,16 @@ def verified_records(library):
             error=result['metrics']['max_absolute_error'] if reference else abs(result['value']-expected)
             tolerance=1e-9 if reference else max(abs(expected)*1e-4,1e-10)
             if result!=cal['result'] or error!=cal['error'] or expected!=cal['expected'] or cal['tolerance']!=tolerance or error>tolerance:raise Fault('calibration','Replayed calibration did not match independent oracle')
+        sampled=case.get('sampled_reference')
+        if sampled:
+            if digest(sampled['path'])!=sampled['sha256']:raise Fault('cache_corrupt','Sampled curve reference changed')
+            with Path(sampled['path']).open() as source:
+                rows=list(csv.DictReader(source))
+            row=rows[sampled['row_index']]
+            if float(row['x'])!=sampled['x'] or float(row['y'])!=sampled['y'] or case['expectation'].get('typical')!=sampled['y']:raise Fault('coverage_evidence','Sampled reference does not match frozen CSV row')
+            assets=[a for item in case['reference_evidence'] for a in item.get('reference_asset_bindings',[])]
+            if not any(a.get('sha256')==sampled['sha256'] for a in assets):raise Fault('coverage_evidence','Sampled CSV is not bound to the manual record')
+            proof[sampled['path']]=sampled['sha256']
         trial=receipt['trial'];folder=Path(trial['folder'])
         if (folder/'test.cir').read_text()!=render(case['protocol'],case['model']):raise Fault('coverage_protocol','Actual circuit differs from recipe')
         reference=None

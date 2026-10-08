@@ -1,0 +1,2457 @@
+{
+  "schema": 1,
+  "identity": "7893571194025511438e33df2d6d6797358b962c19ece8313c6c0f422de9b1c4",
+  "limits": {
+    "api_calls": 0,
+    "simulations": 2,
+    "repairs": 0,
+    "seconds": 1800
+  },
+  "usage": {
+    "api_calls": 0,
+    "simulations": 1,
+    "repairs": 0,
+    "seconds": 4.106383124999999
+  },
+  "status": "finished_with_gaps",
+  "events": [
+    {
+      "time": 1791466002.496353,
+      "stage": "preflight",
+      "status": "completed",
+      "detail": {
+        "tests": 1,
+        "missing": 8
+      }
+    },
+    {
+      "time": 1791466002.4980109,
+      "stage": "configured_regression",
+      "status": "running",
+      "detail": {
+        "tests": 1,
+        "model_sha256": "5548121815949d1d7718d1b7c57d0c631f7c9725b216a69456906152f2ecd491"
+      }
+    },
+    {
+      "time": 1791466006.584982,
+      "stage": "impedance_ratio_minus40_room_120Hz",
+      "status": "completed",
+      "detail": {
+        "acceptance": "pass"
+      }
+    },
+    {
+      "time": 1791466006.587004,
+      "stage": "configured_regression",
+      "status": "completed",
+      "detail": {}
+    },
+    {
+      "time": 1791466006.58905,
+      "stage": "input_scope_gate",
+      "status": "fitting_not_enabled",
+      "detail": {
+        "schema": "unified-device-input-1",
+        "execution_scope": "configured_regression_only",
+        "model_fitting_ready": false
+      }
+    }
+  ],
+  "requests": {},
+  "simulations": {
+    "5cb5ac35b9dddfa78c31ce12825ad9a53292ba3835c64219cb9e1c531d3e7106": {
+      "status": "completed",
+      "hashes": {
+        "model.lib": "5548121815949d1d7718d1b7c57d0c631f7c9725b216a69456906152f2ecd491",
+        "test.cir": "35cd9d3974bbc0a644eac620641f5a888228a8ee3a51b300bae366962f17168b",
+        "test.raw": "e3ef6433df7a0bf3f7edcfcd76e303a662cc20307f261562e2ed68eac939dddf",
+        "test.log": "f37a31da1a7c3492617051a07d83f2a3a360458ab62dafb537c7c6eb096de8dc",
+        "execution.json": "0f9e761f2bc1ac034cbbbac82ce68d0860e238b4f2326bda8ab5b4ac569c509e"
+      }
+    }
+  },
+  "plans": {},
+  "patches": {},
+  "checkpoints": {
+    "workflow": {
+      "cases": [
+        {
+          "id": "impedance_ratio_minus40_room_120Hz",
+          "reference_ids": [
+            "parameter:impedance_ratio_-40"
+          ],
+          "model": {
+            "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/gpt_test_library/comparison_models/cap_cold_room.lib",
+            "entry": "COMPARISON_CAP",
+            "declared_ports": [
+              "P20",
+              "N20",
+              "PCOLD",
+              "NCOLD"
+            ],
+            "ports": [
+              "P20",
+              "N20",
+              "PCOLD",
+              "NCOLD"
+            ],
+            "sha256": "5548121815949d1d7718d1b7c57d0c631f7c9725b216a69456906152f2ecd491",
+            "provenance": {
+              "kind": "vendor_reference_only",
+              "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+              "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+              "note": "Reference interface benchmark only; prohibited as selected modeling template"
+            }
+          },
+          "protocol": {
+            "temperature_C": 20,
+            "device_nodes": {
+              "P20": "P20",
+              "N20": "0",
+              "PCOLD": "PCOLD",
+              "NCOLD": "0"
+            },
+            "components": [
+              {
+                "kind": "V",
+                "name": "VROOM",
+                "nodes": [
+                  "P20",
+                  "0"
+                ],
+                "value": {
+                  "dc": 0,
+                  "ac": 0.1
+                }
+              },
+              {
+                "kind": "V",
+                "name": "VCOLD",
+                "nodes": [
+                  "PCOLD",
+                  "0"
+                ],
+                "value": {
+                  "dc": 0,
+                  "ac": 0.1
+                }
+              }
+            ],
+            "analysis": {
+              "kind": "ac",
+              "frequency_Hz": 120
+            },
+            "measurement": {
+              "mode": "ac_current_ratio",
+              "signal": "i(vroom)",
+              "denominator": "i(vcold)"
+            },
+            "checks": []
+          },
+          "expectation": {
+            "unit": "1",
+            "limits": {
+              "max": 3
+            }
+          },
+          "review_status": "independent_agent_review_required",
+          "delivery_eligible": false,
+          "scope_note": "Ratio of distinct vendor -40°C and20°C subcircuits under equal100mV excitation; no temperature interpolation",
+          "qualification_status": "awaiting_real_calibration_and_trial",
+          "model_role": "reference_interface_benchmark_only",
+          "device": "EMHK350ARA470MF80G",
+          "input_folder": "EMHK350ARA470MF80G",
+          "reference_evidence": [
+            {
+              "id": "parameter:impedance_ratio_-40",
+              "kind": "test",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "impedance_ratio_-40",
+                "key": "impedance_ratio",
+                "values": {
+                  "max": 3
+                },
+                "unit": "1",
+                "conditions": "Z(-40°C)/Z(20°C); 120 Hz",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b4",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "temperature_impedance_ratio",
+              "capability_status": "adapter_or_contract_pending",
+              "source_record": {
+                "id": "parameter:impedance_ratio_-40",
+                "kind": "test_or_constraint_pending_classification",
+                "applicable": true,
+                "reference_evidence": {
+                  "id": "impedance_ratio_-40",
+                  "key": "impedance_ratio",
+                  "values": {
+                    "max": 3
+                  },
+                  "unit": "1",
+                  "conditions": "Z(-40°C)/Z(20°C); 120 Hz",
+                  "applies_to": [
+                    "EMHK350ARA470MF80G"
+                  ],
+                  "rating_kind": "electrical_characteristic",
+                  "state": "initial",
+                  "evidence_refs": [
+                    "b4",
+                    "p0"
+                  ]
+                },
+                "bindings": [],
+                "binding_complete": false,
+                "pdf_pages": [
+                  1
+                ],
+                "plan_status": "test_development_required",
+                "method_family": "temperature_impedance_ratio",
+                "capability_status": "adapter_or_contract_pending"
+              },
+              "source_kind": "test_or_constraint_pending_classification",
+              "label": "impedance_ratio",
+              "evidence": [
+                "b4",
+                "p0"
+              ],
+              "classification_review_pending": true,
+              "reference_asset_bindings": [],
+              "configured_reference_bindings": []
+            }
+          ],
+          "authorship": {
+            "designer": "GPT/Codex",
+            "review": "Local source, topology and measurement review; no claim of GLM approval"
+          },
+          "scope": "Exact-condition method only; manual ranges, dual-instance and complete curve coverage remain open"
+        }
+      ],
+      "inventory": {
+        "review_status": "page_anchored_inventory_expanded_series_and_footnote_review_pending",
+        "items": [
+          {
+            "id": "parameter:cap",
+            "kind": "test",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "cap",
+              "key": "capacitance",
+              "values": {
+                "nominal": 47
+              },
+              "unit": "μF",
+              "conditions": "20°C; 120 Hz",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b21",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_parallel_capacitance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+            "source_record": {
+              "id": "parameter:cap",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "cap",
+                "key": "capacitance",
+                "values": {
+                  "nominal": 47
+                },
+                "unit": "μF",
+                "conditions": "20°C; 120 Hz",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b21",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "ac_parallel_capacitance",
+              "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "capacitance",
+            "evidence": [
+              "b21",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:cap_tolerance",
+            "kind": "test",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "cap_tolerance",
+              "key": "capacitance_tolerance",
+              "values": {
+                "min": -20,
+                "max": 20
+              },
+              "unit": "%",
+              "conditions": "20°C; 120 Hz",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b4",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_parallel_capacitance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+            "source_record": {
+              "id": "parameter:cap_tolerance",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "cap_tolerance",
+                "key": "capacitance_tolerance",
+                "values": {
+                  "min": -20,
+                  "max": 20
+                },
+                "unit": "%",
+                "conditions": "20°C; 120 Hz",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b4",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "ac_parallel_capacitance",
+              "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "capacitance_tolerance",
+            "evidence": [
+              "b4",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:rated_voltage",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "rated_voltage",
+              "key": "rated_voltage",
+              "values": {
+                "rated": 35
+              },
+              "unit": "V",
+              "conditions": "",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "rated",
+              "state": "initial",
+              "evidence_refs": [
+                "b21",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding",
+            "source_record": {
+              "id": "parameter:rated_voltage",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "rated_voltage",
+                "key": "rated_voltage",
+                "values": {
+                  "rated": 35
+                },
+                "unit": "V",
+                "conditions": "",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "rated",
+                "state": "initial",
+                "evidence_refs": [
+                  "b21",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "dc_sample",
+              "capability_status": "existing_primitive_requires_fixture_binding"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "rated_voltage",
+            "evidence": [
+              "b21",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:temperature",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "temperature",
+              "key": "category_temperature",
+              "values": {
+                "min": -40,
+                "max": 125
+              },
+              "unit": "°C",
+              "conditions": "",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "operating_range",
+              "state": "initial",
+              "evidence_refs": [
+                "b4",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:temperature",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "temperature",
+                "key": "category_temperature",
+                "values": {
+                  "min": -40,
+                  "max": 125
+                },
+                "unit": "°C",
+                "conditions": "",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "operating_range",
+                "state": "initial",
+                "evidence_refs": [
+                  "b4",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "category_temperature",
+            "evidence": [
+              "b4",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:leakage",
+            "kind": "test",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "leakage",
+              "key": "leakage_current",
+              "values": {
+                "max": "0.01 × C × V"
+              },
+              "unit": "μA",
+              "conditions": "20°C; after 2 min; C in μF, V is rated voltage in V",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b4",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding",
+            "source_record": {
+              "id": "parameter:leakage",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "leakage",
+                "key": "leakage_current",
+                "values": {
+                  "max": "0.01 × C × V"
+                },
+                "unit": "μA",
+                "conditions": "20°C; after 2 min; C in μF, V is rated voltage in V",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b4",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "dc_sample",
+              "capability_status": "existing_primitive_requires_fixture_binding"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "leakage_current",
+            "evidence": [
+              "b4",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:df",
+            "kind": "test",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "df",
+              "key": "dissipation_factor",
+              "values": {
+                "max": 0.14
+              },
+              "unit": "1",
+              "conditions": "20°C; 120 Hz",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b4",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_dissipation_factor",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+            "source_record": {
+              "id": "parameter:df",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "df",
+                "key": "dissipation_factor",
+                "values": {
+                  "max": 0.14
+                },
+                "unit": "1",
+                "conditions": "20°C; 120 Hz",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b4",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "ac_dissipation_factor",
+              "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "dissipation_factor",
+            "evidence": [
+              "b4",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:impedance_ratio_-25",
+            "kind": "test",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "impedance_ratio_-25",
+              "key": "impedance_ratio",
+              "values": {
+                "max": 2
+              },
+              "unit": "1",
+              "conditions": "Z(-25°C)/Z(20°C); 120 Hz",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b4",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "temperature_impedance_ratio",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:impedance_ratio_-25",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "impedance_ratio_-25",
+                "key": "impedance_ratio",
+                "values": {
+                  "max": 2
+                },
+                "unit": "1",
+                "conditions": "Z(-25°C)/Z(20°C); 120 Hz",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b4",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "temperature_impedance_ratio",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "impedance_ratio",
+            "evidence": [
+              "b4",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:impedance_ratio_-40",
+            "kind": "test",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "impedance_ratio_-40",
+              "key": "impedance_ratio",
+              "values": {
+                "max": 3
+              },
+              "unit": "1",
+              "conditions": "Z(-40°C)/Z(20°C); 120 Hz",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b4",
+                "p0"
+              ]
+            },
+            "bindings": [
+              "impedance_ratio_minus40_room_120Hz"
+            ],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "temperature_impedance_ratio",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:impedance_ratio_-40",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "impedance_ratio_-40",
+                "key": "impedance_ratio",
+                "values": {
+                  "max": 3
+                },
+                "unit": "1",
+                "conditions": "Z(-40°C)/Z(20°C); 120 Hz",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b4",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "temperature_impedance_ratio",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "impedance_ratio",
+            "evidence": [
+              "b4",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": [],
+            "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending"
+          },
+          {
+            "id": "parameter:esr20",
+            "kind": "test",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "esr20",
+              "key": "equivalent_series_resistance",
+              "values": {
+                "max": 0.3
+              },
+              "unit": "Ω",
+              "conditions": "20°C; 100..400 kHz; F80 initial",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b21",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_resistance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+            "source_record": {
+              "id": "parameter:esr20",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "esr20",
+                "key": "equivalent_series_resistance",
+                "values": {
+                  "max": 0.3
+                },
+                "unit": "Ω",
+                "conditions": "20°C; 100..400 kHz; F80 initial",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b21",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "ac_resistance",
+              "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "equivalent_series_resistance",
+            "evidence": [
+              "b21",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:esr-40",
+            "kind": "test",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "esr-40",
+              "key": "equivalent_series_resistance",
+              "values": {
+                "max": 3.0
+              },
+              "unit": "Ω",
+              "conditions": "-40°C; 100..400 kHz; F80 initial",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b21",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_resistance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+            "source_record": {
+              "id": "parameter:esr-40",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "esr-40",
+                "key": "equivalent_series_resistance",
+                "values": {
+                  "max": 3.0
+                },
+                "unit": "Ω",
+                "conditions": "-40°C; 100..400 kHz; F80 initial",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b21",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "ac_resistance",
+              "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "equivalent_series_resistance",
+            "evidence": [
+              "b21",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:ripple",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "ripple",
+              "key": "rated_ripple_current",
+              "values": {
+                "rated": 240
+              },
+              "unit": "mA rms",
+              "conditions": "125°C; 100..400 kHz",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "rated",
+              "state": "initial",
+              "evidence_refs": [
+                "b21",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding",
+            "source_record": {
+              "id": "parameter:ripple",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "ripple",
+                "key": "rated_ripple_current",
+                "values": {
+                  "rated": 240
+                },
+                "unit": "mA rms",
+                "conditions": "125°C; 100..400 kHz",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "rated",
+                "state": "initial",
+                "evidence_refs": [
+                  "b21",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "dc_sample",
+              "capability_status": "existing_primitive_requires_fixture_binding"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "rated_ripple_current",
+            "evidence": [
+              "b21",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:ripple_factor120",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "ripple_factor120",
+              "key": "ripple_frequency_multiplier",
+              "values": {
+                "value": 0.4
+              },
+              "unit": "1",
+              "conditions": "47..100 μF row; frequency=120 Hz",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b18",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:ripple_factor120",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "ripple_factor120",
+                "key": "ripple_frequency_multiplier",
+                "values": {
+                  "value": 0.4
+                },
+                "unit": "1",
+                "conditions": "47..100 μF row; frequency=120 Hz",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b18",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "ripple_frequency_multiplier",
+            "evidence": [
+              "b18",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:ripple_factor1000",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "ripple_factor1000",
+              "key": "ripple_frequency_multiplier",
+              "values": {
+                "value": 0.75
+              },
+              "unit": "1",
+              "conditions": "47..100 μF row; frequency=1000 Hz",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b18",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:ripple_factor1000",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "ripple_factor1000",
+                "key": "ripple_frequency_multiplier",
+                "values": {
+                  "value": 0.75
+                },
+                "unit": "1",
+                "conditions": "47..100 μF row; frequency=1000 Hz",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b18",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "ripple_frequency_multiplier",
+            "evidence": [
+              "b18",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:ripple_factor10000",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "ripple_factor10000",
+              "key": "ripple_frequency_multiplier",
+              "values": {
+                "value": 0.9
+              },
+              "unit": "1",
+              "conditions": "47..100 μF row; frequency=10000 Hz",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b18",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:ripple_factor10000",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "ripple_factor10000",
+                "key": "ripple_frequency_multiplier",
+                "values": {
+                  "value": 0.9
+                },
+                "unit": "1",
+                "conditions": "47..100 μF row; frequency=10000 Hz",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b18",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "ripple_frequency_multiplier",
+            "evidence": [
+              "b18",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:ripple_factor100000",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "ripple_factor100000",
+              "key": "ripple_frequency_multiplier",
+              "values": {
+                "value": 1.0
+              },
+              "unit": "1",
+              "conditions": "47..100 μF row; frequency=100000 Hz",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b18",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:ripple_factor100000",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "ripple_factor100000",
+                "key": "ripple_frequency_multiplier",
+                "values": {
+                  "value": 1.0
+                },
+                "unit": "1",
+                "conditions": "47..100 μF row; frequency=100000 Hz",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b18",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "ripple_frequency_multiplier",
+            "evidence": [
+              "b18",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:endurance",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "endurance",
+              "key": "endurance_duration",
+              "values": {
+                "value": 2000
+              },
+              "unit": "h",
+              "conditions": "125°C; rated voltage applied; restore to 20°C before checking",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "qualification_test",
+              "state": "initial",
+              "evidence_refs": [
+                "b4",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "qualification_constraint",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:endurance",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "endurance",
+                "key": "endurance_duration",
+                "values": {
+                  "value": 2000
+                },
+                "unit": "h",
+                "conditions": "125°C; rated voltage applied; restore to 20°C before checking",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "qualification_test",
+                "state": "initial",
+                "evidence_refs": [
+                  "b4",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "qualification_constraint",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "endurance_duration",
+            "evidence": [
+              "b4",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:endurance_cap",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "endurance_cap",
+              "key": "capacitance_change",
+              "values": {
+                "min": -30,
+                "max": 30
+              },
+              "unit": "%",
+              "conditions": "After endurance test; relative to initial",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "after_endurance",
+              "evidence_refs": [
+                "b4",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "ac_parallel_capacitance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+            "source_record": {
+              "id": "parameter:endurance_cap",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "endurance_cap",
+                "key": "capacitance_change",
+                "values": {
+                  "min": -30,
+                  "max": 30
+                },
+                "unit": "%",
+                "conditions": "After endurance test; relative to initial",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "after_endurance",
+                "evidence_refs": [
+                  "b4",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "ac_parallel_capacitance",
+              "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "capacitance_change",
+            "evidence": [
+              "b4",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:endurance_df",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "endurance_df",
+              "key": "dissipation_factor_relative_limit",
+              "values": {
+                "max": 300
+              },
+              "unit": "% of initial specified value",
+              "conditions": "After endurance test",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "after_endurance",
+              "evidence_refs": [
+                "b4",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "ac_dissipation_factor",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+            "source_record": {
+              "id": "parameter:endurance_df",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "endurance_df",
+                "key": "dissipation_factor_relative_limit",
+                "values": {
+                  "max": 300
+                },
+                "unit": "% of initial specified value",
+                "conditions": "After endurance test",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "after_endurance",
+                "evidence_refs": [
+                  "b4",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "ac_dissipation_factor",
+              "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "dissipation_factor_relative_limit",
+            "evidence": [
+              "b4",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:endurance_esr",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "endurance_esr",
+              "key": "equivalent_series_resistance",
+              "values": {
+                "max": 6.0
+              },
+              "unit": "Ω",
+              "conditions": "F80; -40°C; 400 kHz; after endurance test",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "after_endurance",
+              "evidence_refs": [
+                "b4",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "ac_resistance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+            "source_record": {
+              "id": "parameter:endurance_esr",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "endurance_esr",
+                "key": "equivalent_series_resistance",
+                "values": {
+                  "max": 6.0
+                },
+                "unit": "Ω",
+                "conditions": "F80; -40°C; 400 kHz; after endurance test",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "after_endurance",
+                "evidence_refs": [
+                  "b4",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "ac_resistance",
+              "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "equivalent_series_resistance",
+            "evidence": [
+              "b4",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:shelf",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "shelf",
+              "key": "shelf_life_duration",
+              "values": {
+                "value": 1000
+              },
+              "unit": "h",
+              "conditions": "125°C; no voltage; restore to 20°C; specified voltage-treatment preconditioning",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "qualification_test",
+              "state": "initial",
+              "evidence_refs": [
+                "b4",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "qualification_constraint",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:shelf",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "shelf",
+                "key": "shelf_life_duration",
+                "values": {
+                  "value": 1000
+                },
+                "unit": "h",
+                "conditions": "125°C; no voltage; restore to 20°C; specified voltage-treatment preconditioning",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "qualification_test",
+                "state": "initial",
+                "evidence_refs": [
+                  "b4",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "qualification_constraint",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "shelf_life_duration",
+            "evidence": [
+              "b4",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:dim_D",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "dim_D",
+              "key": "package_dimension_D",
+              "values": {
+                "nominal": 6.3,
+                "tolerance": "±0.5"
+              },
+              "unit": "mm",
+              "conditions": "F80; see drawing for axis",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "mechanical",
+              "state": "initial",
+              "evidence_refs": [
+                "b14",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:dim_D",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "dim_D",
+                "key": "package_dimension_D",
+                "values": {
+                  "nominal": 6.3,
+                  "tolerance": "±0.5"
+                },
+                "unit": "mm",
+                "conditions": "F80; see drawing for axis",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "mechanical",
+                "state": "initial",
+                "evidence_refs": [
+                  "b14",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "package_dimension_D",
+            "evidence": [
+              "b14",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:dim_L",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "dim_L",
+              "key": "package_dimension_L",
+              "values": {
+                "nominal": 7.7,
+                "tolerance": "±0.3"
+              },
+              "unit": "mm",
+              "conditions": "F80; see drawing for axis",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "mechanical",
+              "state": "initial",
+              "evidence_refs": [
+                "b14",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:dim_L",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "dim_L",
+                "key": "package_dimension_L",
+                "values": {
+                  "nominal": 7.7,
+                  "tolerance": "±0.3"
+                },
+                "unit": "mm",
+                "conditions": "F80; see drawing for axis",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "mechanical",
+                "state": "initial",
+                "evidence_refs": [
+                  "b14",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "package_dimension_L",
+            "evidence": [
+              "b14",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:dim_A",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "dim_A",
+              "key": "package_dimension_A",
+              "values": {
+                "nominal": 6.6,
+                "tolerance": "±0.2"
+              },
+              "unit": "mm",
+              "conditions": "F80; see drawing for axis",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "mechanical",
+              "state": "initial",
+              "evidence_refs": [
+                "b14",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:dim_A",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "dim_A",
+                "key": "package_dimension_A",
+                "values": {
+                  "nominal": 6.6,
+                  "tolerance": "±0.2"
+                },
+                "unit": "mm",
+                "conditions": "F80; see drawing for axis",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "mechanical",
+                "state": "initial",
+                "evidence_refs": [
+                  "b14",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "package_dimension_A",
+            "evidence": [
+              "b14",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:dim_B",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "dim_B",
+              "key": "package_dimension_B",
+              "values": {
+                "nominal": 6.6,
+                "tolerance": "±0.2"
+              },
+              "unit": "mm",
+              "conditions": "F80; see drawing for axis",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "mechanical",
+              "state": "initial",
+              "evidence_refs": [
+                "b14",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:dim_B",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "dim_B",
+                "key": "package_dimension_B",
+                "values": {
+                  "nominal": 6.6,
+                  "tolerance": "±0.2"
+                },
+                "unit": "mm",
+                "conditions": "F80; see drawing for axis",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "mechanical",
+                "state": "initial",
+                "evidence_refs": [
+                  "b14",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "package_dimension_B",
+            "evidence": [
+              "b14",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:dim_C",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "dim_C",
+              "key": "package_dimension_C",
+              "values": {
+                "nominal": 7.2,
+                "tolerance": "±0.2"
+              },
+              "unit": "mm",
+              "conditions": "F80; see drawing for axis",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "mechanical",
+              "state": "initial",
+              "evidence_refs": [
+                "b14",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:dim_C",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "dim_C",
+                "key": "package_dimension_C",
+                "values": {
+                  "nominal": 7.2,
+                  "tolerance": "±0.2"
+                },
+                "unit": "mm",
+                "conditions": "F80; see drawing for axis",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "mechanical",
+                "state": "initial",
+                "evidence_refs": [
+                  "b14",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "package_dimension_C",
+            "evidence": [
+              "b14",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:dim_W",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "dim_W",
+              "key": "terminal_width_W",
+              "values": {
+                "min": 0.5,
+                "max": 0.8
+              },
+              "unit": "mm",
+              "conditions": "F80",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "mechanical",
+              "state": "initial",
+              "evidence_refs": [
+                "b14",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:dim_W",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "dim_W",
+                "key": "terminal_width_W",
+                "values": {
+                  "min": 0.5,
+                  "max": 0.8
+                },
+                "unit": "mm",
+                "conditions": "F80",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "mechanical",
+                "state": "initial",
+                "evidence_refs": [
+                  "b14",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "terminal_width_W",
+            "evidence": [
+              "b14",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:dim_P",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "dim_P",
+              "key": "terminal_spacing_P",
+              "values": {
+                "value": 1.9
+              },
+              "unit": "mm",
+              "conditions": "F80; no tolerance stated in row",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "mechanical",
+              "state": "initial",
+              "evidence_refs": [
+                "b14",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:dim_P",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "dim_P",
+                "key": "terminal_spacing_P",
+                "values": {
+                  "value": 1.9
+                },
+                "unit": "mm",
+                "conditions": "F80; no tolerance stated in row",
+                "applies_to": [
+                  "EMHK350ARA470MF80G"
+                ],
+                "rating_kind": "mechanical",
+                "state": "initial",
+                "evidence_refs": [
+                  "b14",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "terminal_spacing_P",
+            "evidence": [
+              "b14",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:endurance_leakage",
+            "kind": "constraint",
+            "applicable": true,
+            "binding_complete": false,
+            "bindings": [],
+            "reference_evidence": {
+              "key": "leakage_after_endurance",
+              "values": {
+                "max_uA": 16.45
+              },
+              "unit": "μA",
+              "conditions": "125°C, 2000h at rated voltage; restore to20°C"
+            },
+            "pdf_pages": [
+              1
+            ],
+            "added_from_manual_review": true,
+            "plan_status": "constraint_audit_required",
+            "method_family": "qualification_constraint",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:endurance_leakage",
+              "kind": "qualification_constraint",
+              "applicable": true,
+              "binding_complete": false,
+              "bindings": [],
+              "reference_evidence": {
+                "key": "leakage_after_endurance",
+                "values": {
+                  "max_uA": 16.45
+                },
+                "unit": "μA",
+                "conditions": "125°C, 2000h at rated voltage; restore to20°C"
+              },
+              "pdf_pages": [
+                1
+              ],
+              "added_from_manual_review": true,
+              "plan_status": "constraint_audit_required",
+              "method_family": "qualification_constraint",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "qualification_constraint",
+            "label": "leakage_after_endurance",
+            "evidence": [
+              "pdf_page:1"
+            ],
+            "classification_review_pending": false,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:shelf_cap",
+            "kind": "constraint",
+            "applicable": true,
+            "binding_complete": false,
+            "bindings": [],
+            "reference_evidence": {
+              "key": "capacitance_after_shelf_life",
+              "values": {
+                "change_min_percent": -30,
+                "change_max_percent": 30
+              },
+              "unit": "%",
+              "conditions": "125°C,1000h; JIS preconditioning; restore20°C"
+            },
+            "pdf_pages": [
+              1
+            ],
+            "added_from_manual_review": true,
+            "plan_status": "constraint_audit_required",
+            "method_family": "qualification_constraint",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:shelf_cap",
+              "kind": "qualification_constraint",
+              "applicable": true,
+              "binding_complete": false,
+              "bindings": [],
+              "reference_evidence": {
+                "key": "capacitance_after_shelf_life",
+                "values": {
+                  "change_min_percent": -30,
+                  "change_max_percent": 30
+                },
+                "unit": "%",
+                "conditions": "125°C,1000h; JIS preconditioning; restore20°C"
+              },
+              "pdf_pages": [
+                1
+              ],
+              "added_from_manual_review": true,
+              "plan_status": "constraint_audit_required",
+              "method_family": "qualification_constraint",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "qualification_constraint",
+            "label": "capacitance_after_shelf_life",
+            "evidence": [
+              "pdf_page:1"
+            ],
+            "classification_review_pending": false,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:shelf_df",
+            "kind": "constraint",
+            "applicable": true,
+            "binding_complete": false,
+            "bindings": [],
+            "reference_evidence": {
+              "key": "dissipation_after_shelf_life",
+              "values": {
+                "max_fraction_initial_spec": 3
+              },
+              "unit": "1",
+              "conditions": "Same shelf-life and preconditioning"
+            },
+            "pdf_pages": [
+              1
+            ],
+            "added_from_manual_review": true,
+            "plan_status": "constraint_audit_required",
+            "method_family": "qualification_constraint",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:shelf_df",
+              "kind": "qualification_constraint",
+              "applicable": true,
+              "binding_complete": false,
+              "bindings": [],
+              "reference_evidence": {
+                "key": "dissipation_after_shelf_life",
+                "values": {
+                  "max_fraction_initial_spec": 3
+                },
+                "unit": "1",
+                "conditions": "Same shelf-life and preconditioning"
+              },
+              "pdf_pages": [
+                1
+              ],
+              "added_from_manual_review": true,
+              "plan_status": "constraint_audit_required",
+              "method_family": "qualification_constraint",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "qualification_constraint",
+            "label": "dissipation_after_shelf_life",
+            "evidence": [
+              "pdf_page:1"
+            ],
+            "classification_review_pending": false,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:shelf_leakage",
+            "kind": "constraint",
+            "applicable": true,
+            "binding_complete": false,
+            "bindings": [],
+            "reference_evidence": {
+              "key": "leakage_after_shelf_life",
+              "values": {
+                "max_uA": 16.45
+              },
+              "unit": "μA",
+              "conditions": "Same shelf-life and preconditioning"
+            },
+            "pdf_pages": [
+              1
+            ],
+            "added_from_manual_review": true,
+            "plan_status": "constraint_audit_required",
+            "method_family": "qualification_constraint",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:shelf_leakage",
+              "kind": "qualification_constraint",
+              "applicable": true,
+              "binding_complete": false,
+              "bindings": [],
+              "reference_evidence": {
+                "key": "leakage_after_shelf_life",
+                "values": {
+                  "max_uA": 16.45
+                },
+                "unit": "μA",
+                "conditions": "Same shelf-life and preconditioning"
+              },
+              "pdf_pages": [
+                1
+              ],
+              "added_from_manual_review": true,
+              "plan_status": "constraint_audit_required",
+              "method_family": "qualification_constraint",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "qualification_constraint",
+            "label": "leakage_after_shelf_life",
+            "evidence": [
+              "pdf_page:1"
+            ],
+            "classification_review_pending": false,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          }
+        ],
+        "full_manual_coverage": false,
+        "open_contract_issues": [],
+        "sources": [
+          {
+            "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/EMHK350ARA470MF80G/assets/8b60da7d50773812f4a63d54d7798c9ce98d6c5b4b1f6bd044ccf0898b8dc15a.pdf",
+            "sha256": "8b60da7d50773812f4a63d54d7798c9ce98d6c5b4b1f6bd044ccf0898b8dc15a"
+          }
+        ]
+      },
+      "model_path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_unified_regression/EMHK350ARA470MF80G/554812181594/models/input_model.lib",
+      "model_sha256": "5548121815949d1d7718d1b7c57d0c631f7c9725b216a69456906152f2ecd491",
+      "results": [
+        {
+          "value": 1.1464670261438463,
+          "test": "impedance_ratio_minus40_room_120Hz",
+          "execution": "completed",
+          "acceptance": "pass",
+          "model_sha256": "5548121815949d1d7718d1b7c57d0c631f7c9725b216a69456906152f2ecd491",
+          "protocol_sha256": "a08c32f015857a14c02622467af22cde260c846ce8c614b06332fe0322d37e5c",
+          "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_unified_regression/EMHK350ARA470MF80G/554812181594/simulations/5cb5ac35b9dddfa78c31ce12825ad9a53292ba3835c64219cb9e1c531d3e7106",
+          "unit": "1",
+          "artifact_hashes": {
+            "model.lib": "5548121815949d1d7718d1b7c57d0c631f7c9725b216a69456906152f2ecd491",
+            "test.cir": "35cd9d3974bbc0a644eac620641f5a888228a8ee3a51b300bae366962f17168b",
+            "test.raw": "e3ef6433df7a0bf3f7edcfcd76e303a662cc20307f261562e2ed68eac939dddf",
+            "test.log": "f37a31da1a7c3492617051a07d83f2a3a360458ab62dafb537c7c6eb096de8dc",
+            "execution.json": "0f9e761f2bc1ac034cbbbac82ce68d0860e238b4f2326bda8ab5b4ac569c509e"
+          }
+        }
+      ],
+      "gaps": [],
+      "developed": [],
+      "optimization_index": 0,
+      "active_model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/gpt_test_library/comparison_models/cap_cold_room.lib",
+        "entry": "COMPARISON_CAP",
+        "declared_ports": [
+          "P20",
+          "N20",
+          "PCOLD",
+          "NCOLD"
+        ],
+        "ports": [
+          "P20",
+          "N20",
+          "PCOLD",
+          "NCOLD"
+        ],
+        "sha256": "5548121815949d1d7718d1b7c57d0c631f7c9725b216a69456906152f2ecd491",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "selected": true
+    }
+  },
+  "reservations": {}
+}

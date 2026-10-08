@@ -35,9 +35,9 @@ def install(source, repo, isolated=False):
     pairs.append((source / "coverage_audit.py", repo / "coverage_audit.py"))
     pairs.append((source / "iterate_models.py", repo / "iterate_models.py"))
     pairs.append((source / "complete_five_tests.py", repo / "complete_five_tests.py"))
-    for name in ('gpt_corrected_tests.py','use_gpt_test_library.py','run_gpt_registered_batch.py','prepare_test_families.py','extend_static_families.py','extend_sensor_families.py','RUN_REGISTERED_COVERAGE_FAMILIES.sh','RUN_GPT_CORRECTED_TESTS.sh','REGISTERED_COVERAGE_FAMILIES.md'):
+    for name in ('gpt_corrected_tests.py','use_gpt_test_library.py','run_gpt_registered_batch.py','prepare_test_families.py','extend_static_families.py','extend_sensor_families.py','extend_first_four_bindings.py','audit_registered_run.py','RUN_FIRST_FOUR_BINDINGS.sh','FIRST_FOUR_BINDINGS.md','RUN_REGISTERED_COVERAGE_FAMILIES.sh','RUN_GPT_CORRECTED_TESTS.sh','REGISTERED_COVERAGE_FAMILIES.md'):
         pairs.append((source/name,repo/name))
-    for folder in ('six_inputs','gpt_test_library','runs/gpt_correction','runs/acs_parameter_scope','runs/family_qualification_corrected','runs/static_family_qualification','runs/sensor_family_qualification'):
+    for folder in ('six_inputs','gpt_test_library','runs/gpt_correction','runs/acs_parameter_scope','runs/family_qualification_corrected','runs/static_family_qualification','runs/sensor_family_qualification','runs/first_four_qualification','runs/diode_dynamic_qualification'):
         pairs += [(p,repo/p.relative_to(source)) for p in sorted((source/folder).rglob('*')) if p.is_file() and '__pycache__' not in p.parts]
     pairs += [(p, repo / p.relative_to(source)) for p in sorted((source / "flow_runtime").rglob("*.py"))]
     pairs += [(p, repo / p.relative_to(source)) for p in sorted((source / "template_assets").rglob("*")) if p.is_file()]

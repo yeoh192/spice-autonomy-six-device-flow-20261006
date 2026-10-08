@@ -1,0 +1,8 @@
+Declarative SPICE workflow circuit
+.options plotwinsize=0
+.temp 25
+.options method=trap
+VORACLE P 0 PWL(0 0 2.0000000000000001e-09 0 4.0000000000000002e-09 1 8.0000000000000005e-09 0 2e-08 0)
+.tran 0 2e-08 0 9.9999999999999994e-12
+.save v(p)
+.end

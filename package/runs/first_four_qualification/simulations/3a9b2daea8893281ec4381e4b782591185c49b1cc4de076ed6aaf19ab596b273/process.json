@@ -1,0 +1,10 @@
+{
+  "pid": 72806,
+  "argv": [
+    "/Applications/LTspice.app/Contents/SharedSupport/ltspice/LTspice/run_ltspice",
+    "-b",
+    "-ascii",
+    "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/3a9b2daea8893281ec4381e4b782591185c49b1cc4de076ed6aaf19ab596b273/test.cir"
+  ],
+  "started": 1791465099.0345302
+}

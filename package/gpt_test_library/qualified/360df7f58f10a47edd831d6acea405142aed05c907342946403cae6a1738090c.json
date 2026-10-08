@@ -1,0 +1,270 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "leakage_secondary",
+    "reference_ids": [
+      "parameter:leakage_l"
+    ],
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+      "entry": "REFERENCE_XFMR",
+      "declared_ports": [
+        "P1",
+        "N1",
+        "P3",
+        "N3",
+        "P2",
+        "N2"
+      ],
+      "ports": [
+        "P1",
+        "N1",
+        "P3",
+        "N3",
+        "P2",
+        "N2"
+      ],
+      "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "provenance": {
+        "kind": "vendor_reference_only",
+        "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+        "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+        "note": "Reference interface benchmark only; prohibited as selected modeling template"
+      }
+    },
+    "protocol": {
+      "temperature_C": 20,
+      "device_nodes": {
+        "P1": "P",
+        "N1": "N",
+        "P3": "AUXP",
+        "N3": "AUXN",
+        "P2": "SECP",
+        "N2": "SECN"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VDRIVE",
+          "nodes": [
+            "P",
+            "N"
+          ],
+          "value": {
+            "dc": 0,
+            "ac": 0.1
+          }
+        },
+        {
+          "kind": "R",
+          "name": "RGROUND",
+          "nodes": [
+            "N",
+            "0"
+          ],
+          "value": 1e-06
+        },
+        {
+          "kind": "R",
+          "name": "RAUX",
+          "nodes": [
+            "AUXN",
+            "0"
+          ],
+          "value": 1e-06
+        },
+        {
+          "kind": "R",
+          "name": "RSEC",
+          "nodes": [
+            "SECN",
+            "0"
+          ],
+          "value": 1e-06
+        },
+        {
+          "kind": "R",
+          "name": "RSHORTSEC",
+          "nodes": [
+            "SECP",
+            "SECN"
+          ],
+          "value": 1e-06
+        }
+      ],
+      "analysis": {
+        "kind": "ac",
+        "frequency_Hz": 100000
+      },
+      "measurement": {
+        "mode": "ac_inductance",
+        "signal": "v(p,n)",
+        "denominator": "i(vdrive)",
+        "sign": -1,
+        "scale": 1000000.0
+      },
+      "checks": []
+    },
+    "expectation": {
+      "unit": "μH",
+      "limits": {
+        "max": 1.2
+      }
+    },
+    "review_status": "independent_agent_review_required",
+    "delivery_eligible": false,
+    "scope_note": "N1 10kHz100mV; secondary/aux open-circuit convention pending review;33%RH is environment metadata",
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "model_role": "reference_interface_benchmark_only",
+    "device": "750311423",
+    "input_folder": "750311423",
+    "reference_evidence": [
+      {
+        "id": "parameter:leakage_l",
+        "kind": "test",
+        "applicable": true,
+        "reference_evidence": {
+          "id": "leakage_l",
+          "key": "leakage_inductance",
+          "values": {
+            "max": 1.2
+          },
+          "unit": "μH",
+          "conditions": "N1; 100 kHz; 100 mV; secondary shorting condition not specified",
+          "applies_to": [
+            "750311423"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b9",
+            "p0"
+          ]
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          1
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "ac_inductance",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+        "source_record": {
+          "id": "parameter:leakage_l",
+          "kind": "test_or_constraint_pending_classification",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "leakage_l",
+            "key": "leakage_inductance",
+            "values": {
+              "max": 1.2
+            },
+            "unit": "μH",
+            "conditions": "N1; 100 kHz; 100 mV; secondary shorting condition not specified",
+            "applies_to": [
+              "750311423"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b9",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_inductance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+        },
+        "source_kind": "test_or_constraint_pending_classification",
+        "label": "leakage_inductance",
+        "evidence": [
+          "b9",
+          "p0"
+        ],
+        "classification_review_pending": true,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "Local source, topology and measurement review; no claim of GLM approval"
+    },
+    "scope": "Exact-condition method only; manual ranges, dual-instance and complete curve coverage remain open",
+    "coverage_registration_allowed": false,
+    "definition_gap": "Manual shorting condition unspecified; alternatives are diagnostic only"
+  },
+  "receipt": {
+    "device": "750311423",
+    "id": "leakage_secondary",
+    "reference_ids": [
+      "parameter:leakage_l"
+    ],
+    "scope": "Exact-condition method only; manual ranges, dual-instance and complete curve coverage remain open",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "Local source, topology and measurement review; no claim of GLM approval"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+    "calibrations": [
+      {
+        "expected": 1000.0,
+        "result": {
+          "value": 1000.0
+        },
+        "error": 0.0,
+        "tolerance": 0.1,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/35997d1e372ca6415db67643092271b5d374cfd9626ccfb94967e6513b5dea36",
+        "artifacts": {
+          "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "test.cir": "11a67e7375354170f866fac96700596696add599c9f6b9752cdec984def92ef8",
+          "test.raw": "4c3421cba07061adc3a232019a504c78c2f21a8884072d9c87fadcef076ed529",
+          "test.log": "683e90b3dbdbead1ec1ec1071f81a55ed56548aeacb8dfa42b141087bf22cc71",
+          "execution.json": "56e6f8c88448a7935ada4d8f050996ebecdf5f7c55363988da1cf6ad0f6e86d4"
+        }
+      },
+      {
+        "expected": 2000.0,
+        "result": {
+          "value": 2000.0
+        },
+        "error": 0.0,
+        "tolerance": 0.2,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/cda65665f89df659ffa713c73cc823fde8bc1207e3d7ae637fd839966d10470f",
+        "artifacts": {
+          "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "test.cir": "8630a0e81534a7b8d07d5402b9517eabc3de6950709ca9f7ed314898f62b1e89",
+          "test.raw": "b40c1ee65cdecaf295959fe2c935621d84031de6222d1202de6072affc4746ee",
+          "test.log": "744e3d38bdcd6073547baad05ac2f9bac0fbd368b2fa0eef695d7d489deafca6",
+          "execution.json": "ba0d780c2caf42a97f3240ad54fe2c98cd3687aab5ebf127728a20e709dd9fab"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 0.6018424224265786
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/af09db3b518ba02ecb510af8812b4ec5361af8317d9ff91c8f1ac720d71105ee",
+      "artifacts": {
+        "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "test.cir": "58679e9cf7ba0cb92fd82e88b78cab01452e02906eec378bf9d2916d6773664c",
+        "test.raw": "c33a628d95631f284a77cf60ecf5d61a7d9378997f5ef4487de730e2a4f5d8d0",
+        "test.log": "e36a8955ef5aebcecf1531bfb138fe845baf02a4b766bb9877503759557e9e40",
+        "execution.json": "25f2e2f2003a7e1964589e6ab8c589c0520f32b6166ddc7cfbc9b5e75b2417a6"
+      }
+    },
+    "protocol_sha256": "ea660d9c96825871f0fedf916f24856c2fbb054f3bbd0436b683250c1527798d"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

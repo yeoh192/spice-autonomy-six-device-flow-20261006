@@ -1,0 +1,11 @@
+Declarative SPICE workflow circuit
+.options plotwinsize=0
+.temp 25
+.options method=trap
+IA 0 P 0 AC 0.59999999999999998
+IB 0 Q 0 AC 0.29999999999999999
+RA P 0 1000
+RB Q 0 1000
+.ac lin 1 1000 1000
+.save i(ia) i(ib)
+.end

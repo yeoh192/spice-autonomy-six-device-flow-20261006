@@ -14,7 +14,18 @@ def protocols(mode):
            "measurement":{"mode":mode,"signal":"v(p)","denominator":"i(vcal)","sign":-1}}
         def element(kind,name,n1,n2,value):
             p["components"].append({"kind":kind,"name":name,"nodes":[n1,n2],"value":value})
-        if mode in ("ac_gain_magnitude","ac_gain_db","ac_phase"):
+        if mode in ("ac_current_ratio","ac_reactance_ratio"):
+            p["components"]=[{"kind":"I","name":"IA","nodes":["0","P"],"value":{"dc":0,"ac":factor*.3}}, {"kind":"I","name":"IB","nodes":["0","Q"],"value":{"dc":0,"ac":factor*.3}}]
+            if mode=="ac_reactance_ratio":
+                element("L","LA","P","0",factor*1e-3);element("L","LB","Q","0",1e-3)
+                p["measurement"].update(signal="v(p)",denominator="v(q)",sign=1)
+            else:
+                element("R","RA","P","0",1000);element("R","RB","Q","0",1000)
+                p["components"][0]["value"]["ac"]=factor*.3
+                p["components"][1]["value"]["ac"]=.3
+                p["measurement"].update(signal="i(ia)",denominator="i(ib)",sign=1)
+            expected=factor
+        elif mode in ("ac_gain_magnitude","ac_gain_db","ac_phase"):
             element("R","RA","P","O",r); element("R","RB","O","0",factor*r)
             p["measurement"].update(signal="v(o)",denominator="v(p)",sign=1)
             g=factor/(1+factor)

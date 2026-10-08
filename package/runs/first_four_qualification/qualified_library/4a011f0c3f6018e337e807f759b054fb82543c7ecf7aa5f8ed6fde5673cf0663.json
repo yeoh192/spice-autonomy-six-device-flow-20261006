@@ -1,0 +1,319 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "manual_coss",
+    "protocol": {
+      "temperature_C": 25,
+      "device_nodes": {
+        "D": "D",
+        "G": "G",
+        "S": "0"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VD",
+          "nodes": [
+            "D",
+            "0"
+          ],
+          "value": {
+            "dc": 25,
+            "ac": 1
+          }
+        },
+        {
+          "kind": "V",
+          "name": "VG",
+          "nodes": [
+            "G",
+            "0"
+          ],
+          "value": {
+            "dc": 0,
+            "ac": 0
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "ac",
+        "frequency_Hz": 1000000.0
+      },
+      "measurement": {
+        "mode": "capacitance",
+        "signal": "i(vd)",
+        "sign": -1
+      }
+    },
+    "expectation": {
+      "unit": "F",
+      "limits": {
+        "max": 8.7e-11
+      },
+      "typical": 7.299999999999999e-11,
+      "thresholds": {},
+      "typical_relative_tolerance_percent": 10
+    },
+    "contract": {
+      "fixed": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "D": "D",
+          "G": "G",
+          "S": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VD",
+            "nodes": [
+              "D",
+              "0"
+            ],
+            "value": {
+              "dc": 25,
+              "ac": 1
+            }
+          },
+          {
+            "kind": "V",
+            "name": "VG",
+            "nodes": [
+              "G",
+              "0"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0
+            }
+          }
+        ],
+        "measurement": {
+          "mode": "capacitance",
+          "signal": "i(vd)",
+          "sign": -1
+        }
+      }
+    },
+    "evidence": [
+      "b72",
+      "p5"
+    ],
+    "origin": "migrated_existing_test",
+    "device": "BUK7K52-60E",
+    "input_folder": "BUK7K52-60E",
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/BUK7K52-60E/assets/6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc.lib",
+      "entry": "BUK7K52-60E",
+      "ports": [
+        "D",
+        "G",
+        "S"
+      ],
+      "declared_ports": [
+        "DRAIN",
+        "GATE",
+        "SOURCE"
+      ],
+      "sha256": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+      "provenance": {
+        "kind": "legacy_unverified",
+        "note": "继承旧试验模型；非厂商来源尚未证明"
+      }
+    },
+    "reference_ids": [
+      "parameter:coss"
+    ],
+    "reference_evidence": [
+      {
+        "id": "parameter:coss",
+        "label": "output_capacitance",
+        "kind": "test",
+        "evidence": [
+          "b72",
+          "p5"
+        ],
+        "reference_evidence": {
+          "id": "coss",
+          "key": "output_capacitance",
+          "values": {
+            "typ": 73,
+            "max": 87
+          },
+          "unit": "pF",
+          "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+        "bindings": [
+          "manual_coss"
+        ],
+        "binding_complete": false,
+        "legacy_bindings": [
+          {
+            "test_id": "manual_coss",
+            "expected": {
+              "kind": "capacitance",
+              "temperature_C": 25,
+              "vds_V": 25,
+              "vgs_V": 0,
+              "limits": {
+                "max": 8.7e-11
+              },
+              "typical": 7.299999999999999e-11,
+              "quantity": "coss",
+              "frequency_Hz": 1000000.0
+            }
+          }
+        ],
+        "pdf_pages": [
+          6
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "ac_parallel_capacitance",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+        "source_record": {
+          "id": "parameter:coss",
+          "label": "output_capacitance",
+          "kind": "test",
+          "evidence": [
+            "b72",
+            "p5"
+          ],
+          "reference_evidence": {
+            "id": "coss",
+            "key": "output_capacitance",
+            "values": {
+              "typ": 73,
+              "max": 87
+            },
+            "unit": "pF",
+            "conditions": "FET1 and FET2; VGS=0 V; VDS=25 V; f=1 MHz; Tj=25°C",
+            "applies_to": [
+              "BUK7K52-60E"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b72",
+              "p5"
+            ]
+          },
+          "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+          "bindings": [
+            "manual_coss"
+          ],
+          "binding_complete": true,
+          "legacy_bindings": [
+            {
+              "test_id": "manual_coss",
+              "expected": {
+                "kind": "capacitance",
+                "temperature_C": 25,
+                "vds_V": 25,
+                "vgs_V": 0,
+                "limits": {
+                  "max": 8.7e-11
+                },
+                "typical": 7.299999999999999e-11,
+                "quantity": "coss",
+                "frequency_Hz": 1000000.0
+              }
+            }
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "plan_status": "existing_test_requires_scope_audit",
+          "method_family": "ac_parallel_capacitance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+        },
+        "source_kind": "test",
+        "classification_review_pending": false,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "Migrated engineering circuit; qualified by GPT/Codex tooling",
+      "review": "One three-terminal FET instance; FET1/FET2 physical package binding remains pending"
+    },
+    "scope": "Single FET instance, original declared conditions; dual-package full coverage pending"
+  },
+  "receipt": {
+    "device": "BUK7K52-60E",
+    "id": "manual_coss",
+    "reference_ids": [
+      "parameter:coss"
+    ],
+    "scope": "Single FET instance, original declared conditions; dual-package full coverage pending",
+    "authorship": {
+      "designer": "Migrated engineering circuit; qualified by GPT/Codex tooling",
+      "review": "One three-terminal FET instance; FET1/FET2 physical package binding remains pending"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+    "calibrations": [
+      {
+        "expected": 1e-09,
+        "result": {
+          "value": 9.999999999999999e-10
+        },
+        "error": 2.0679515313825692e-25,
+        "tolerance": 1e-10,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/8a71ec081be18a2e8ebde4a7b4ff3f24ace3dc80acf3b3dde5298204b64513f7",
+        "artifacts": {
+          "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+          "test.cir": "2c01e6c13f97eaf2c767047ddf99e25a826bf46732a3566a7b23b185376247f5",
+          "test.raw": "0ced1807bb972b95435c82b308bd5d544a04d597583bddfaf4a8837e60fc23b1",
+          "test.log": "0b5b9518073779ff58215b00f8ece8eb1b5dbb410fe6cd64c678a5ffd6ff0e8e",
+          "execution.json": "97920b8890dda308903ccdededf5bdc68f8de08391722ade5fdf3c116231b4e2"
+        }
+      },
+      {
+        "expected": 2e-09,
+        "result": {
+          "value": 1.9999999999999997e-09
+        },
+        "error": 4.1359030627651384e-25,
+        "tolerance": 1e-10,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/456b8ebb07322dc1217681b70e452a02f4555a16cb3f4179dddb9ebbbb3e5303",
+        "artifacts": {
+          "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+          "test.cir": "4fc4733e3282efdb1b99c2382b7fba0f362f8e909754dd812c8badaf4782142c",
+          "test.raw": "a9bc751476e1c65b30a6dfa5d41af13647c8d50736480d210502ff4dd7cd8884",
+          "test.log": "6d1fb1b3efcf101e36c99ec71cb85912edec9c70825d2f84e62917282dee562c",
+          "execution.json": "5a04909b45a180b6df63368ccda82bd1f8b72b89c34b89113f37cf87027dfbca"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 7.115271488856464e-11
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/de1f44d8b37e05da2d90ed0175b9e7f2319635928e1c660e2bbd0f3327099998",
+      "artifacts": {
+        "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+        "test.cir": "88ef6c338e8c3eb04ab4c5efea321ada723f0f5fa316f9715d49adbaa150336c",
+        "test.raw": "ece60267c6fc4a01d212cdc7e6126126884c13ad1eeb0566e6fad5efac8a82c0",
+        "test.log": "1d6eb3b03d8c0b389ef9407afcb0c1c534bf2ac2f99548d207c9c2e1ef4ebf73",
+        "execution.json": "3763d289801756622fef0c2734837c663b6299e56daf8fc596bebafdd2367fe6"
+      }
+    },
+    "protocol_sha256": "91214a1158007004c17ca955a6924f55077c04589eee8d6ec5a084e86f726bff"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

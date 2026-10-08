@@ -1,0 +1,1595 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "fig6_vgs_1",
+    "protocol": {
+      "temperature_C": 25,
+      "device_nodes": {
+        "D": "D",
+        "G": "G",
+        "S": "0"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VG",
+          "nodes": [
+            "G",
+            "0"
+          ],
+          "value": {
+            "dc": 5.0
+          }
+        },
+        {
+          "kind": "V",
+          "name": "VD",
+          "nodes": [
+            "D",
+            "0"
+          ],
+          "value": {
+            "dc": 0
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "dc",
+        "source": "VD",
+        "start": 0.0,
+        "stop": 2.0,
+        "step": 0.001
+      },
+      "measurement": {
+        "mode": "curve",
+        "signal": "i(vd)",
+        "sign": -1
+      }
+    },
+    "expectation": {
+      "unit": "A",
+      "limits": {},
+      "typical": null,
+      "thresholds": {
+        "MAE_over_reference_span_percent": 5.0,
+        "max_error_over_reference_span_percent": 10.0
+      }
+    },
+    "contract": {
+      "fixed": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "D": "D",
+          "G": "G",
+          "S": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VG",
+            "nodes": [
+              "G",
+              "0"
+            ],
+            "value": {
+              "dc": 5.0
+            }
+          },
+          {
+            "kind": "V",
+            "name": "VD",
+            "nodes": [
+              "D",
+              "0"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "measurement": {
+          "mode": "curve",
+          "signal": "i(vd)",
+          "sign": -1
+        }
+      }
+    },
+    "evidence": [],
+    "origin": "migrated_existing_test",
+    "reference": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/BUK7K52-60E/assets/a12f53022401b7456d3706fc02014e540b7a6789a347729367a58be4d1858907.csv",
+      "sha256": "a12f53022401b7456d3706fc02014e540b7a6789a347729367a58be4d1858907",
+      "condition": "VGS=5 V"
+    },
+    "device": "BUK7K52-60E",
+    "input_folder": "BUK7K52-60E",
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/BUK7K52-60E/assets/6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc.lib",
+      "entry": "BUK7K52-60E",
+      "ports": [
+        "D",
+        "G",
+        "S"
+      ],
+      "declared_ports": [
+        "DRAIN",
+        "GATE",
+        "SOURCE"
+      ],
+      "sha256": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+      "provenance": {
+        "kind": "legacy_unverified",
+        "note": "继承旧试验模型；非厂商来源尚未证明"
+      }
+    },
+    "reference_ids": [
+      "figure:6",
+      "figure:6:fig6_vgs_1"
+    ],
+    "reference_evidence": [
+      {
+        "id": "figure:6",
+        "label": "输出特性",
+        "kind": "informational",
+        "evidence": [
+          "PDF Fig.6"
+        ],
+        "reference_evidence": {},
+        "reason": "已有全部系列测试绑定",
+        "bindings": [
+          "fig6_vgs_0",
+          "fig6_vgs_1",
+          "fig6_vgs_2",
+          "fig6_vgs_3",
+          "fig6_vgs_4",
+          "fig6_vgs_5"
+        ],
+        "binding_complete": true,
+        "legacy_bindings": [
+          {
+            "test_id": "fig6_vgs_0",
+            "expected": {
+              "kind": "output",
+              "condition": "VGS=4.5 V",
+              "x_unit": "V",
+              "y_unit": "A",
+              "temperature_C": 25,
+              "vgs_V": 4.5,
+              "acceptance": null
+            }
+          },
+          {
+            "test_id": "fig6_vgs_1",
+            "expected": {
+              "kind": "output",
+              "condition": "VGS=5 V",
+              "x_unit": "V",
+              "y_unit": "A",
+              "temperature_C": 25,
+              "vgs_V": 5.0,
+              "acceptance": null
+            }
+          },
+          {
+            "test_id": "fig6_vgs_2",
+            "expected": {
+              "kind": "output",
+              "condition": "VGS=5.5 V",
+              "x_unit": "V",
+              "y_unit": "A",
+              "temperature_C": 25,
+              "vgs_V": 5.5,
+              "acceptance": null
+            }
+          },
+          {
+            "test_id": "fig6_vgs_3",
+            "expected": {
+              "kind": "output",
+              "condition": "VGS=6 V",
+              "x_unit": "V",
+              "y_unit": "A",
+              "temperature_C": 25,
+              "vgs_V": 6.0,
+              "acceptance": null
+            }
+          },
+          {
+            "test_id": "fig6_vgs_4",
+            "expected": {
+              "kind": "output",
+              "condition": "VGS=6.5 V",
+              "x_unit": "V",
+              "y_unit": "A",
+              "temperature_C": 25,
+              "vgs_V": 6.5,
+              "acceptance": null
+            }
+          },
+          {
+            "test_id": "fig6_vgs_5",
+            "expected": {
+              "kind": "output",
+              "condition": "VGS=10 V",
+              "x_unit": "V",
+              "y_unit": "A",
+              "temperature_C": 25,
+              "vgs_V": 10.0,
+              "acceptance": null
+            }
+          }
+        ],
+        "pdf_pages": [],
+        "children": [
+          "figure:6:fig6_vgs_0",
+          "figure:6:fig6_vgs_1",
+          "figure:6:fig6_vgs_2",
+          "figure:6:fig6_vgs_3",
+          "figure:6:fig6_vgs_4",
+          "figure:6:fig6_vgs_5"
+        ],
+        "plan_status": "series_group",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending",
+        "source_record": {
+          "id": "figure:6",
+          "label": "输出特性",
+          "kind": "series_group",
+          "evidence": [
+            "PDF Fig.6"
+          ],
+          "reference_evidence": {},
+          "reason": "已有全部系列测试绑定",
+          "bindings": [
+            "fig6_vgs_0",
+            "fig6_vgs_1",
+            "fig6_vgs_2",
+            "fig6_vgs_3",
+            "fig6_vgs_4",
+            "fig6_vgs_5"
+          ],
+          "binding_complete": true,
+          "legacy_bindings": [
+            {
+              "test_id": "fig6_vgs_0",
+              "expected": {
+                "kind": "output",
+                "condition": "VGS=4.5 V",
+                "x_unit": "V",
+                "y_unit": "A",
+                "temperature_C": 25,
+                "vgs_V": 4.5,
+                "acceptance": null
+              }
+            },
+            {
+              "test_id": "fig6_vgs_1",
+              "expected": {
+                "kind": "output",
+                "condition": "VGS=5 V",
+                "x_unit": "V",
+                "y_unit": "A",
+                "temperature_C": 25,
+                "vgs_V": 5.0,
+                "acceptance": null
+              }
+            },
+            {
+              "test_id": "fig6_vgs_2",
+              "expected": {
+                "kind": "output",
+                "condition": "VGS=5.5 V",
+                "x_unit": "V",
+                "y_unit": "A",
+                "temperature_C": 25,
+                "vgs_V": 5.5,
+                "acceptance": null
+              }
+            },
+            {
+              "test_id": "fig6_vgs_3",
+              "expected": {
+                "kind": "output",
+                "condition": "VGS=6 V",
+                "x_unit": "V",
+                "y_unit": "A",
+                "temperature_C": 25,
+                "vgs_V": 6.0,
+                "acceptance": null
+              }
+            },
+            {
+              "test_id": "fig6_vgs_4",
+              "expected": {
+                "kind": "output",
+                "condition": "VGS=6.5 V",
+                "x_unit": "V",
+                "y_unit": "A",
+                "temperature_C": 25,
+                "vgs_V": 6.5,
+                "acceptance": null
+              }
+            },
+            {
+              "test_id": "fig6_vgs_5",
+              "expected": {
+                "kind": "output",
+                "condition": "VGS=10 V",
+                "x_unit": "V",
+                "y_unit": "A",
+                "temperature_C": 25,
+                "vgs_V": 10.0,
+                "acceptance": null
+              }
+            }
+          ],
+          "pdf_pages": [],
+          "children": [
+            "figure:6:fig6_vgs_0",
+            "figure:6:fig6_vgs_1",
+            "figure:6:fig6_vgs_2",
+            "figure:6:fig6_vgs_3",
+            "figure:6:fig6_vgs_4",
+            "figure:6:fig6_vgs_5"
+          ],
+          "plan_status": "series_group",
+          "method_family": "contract_review",
+          "capability_status": "adapter_or_contract_pending"
+        },
+        "source_kind": "series_group",
+        "classification_review_pending": false,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": [
+          {
+            "test_id": "fig6_vgs_0",
+            "path": "assets/1191f60dbae1a2ce4c01ace4126ec9291e68e57b221d280dd50ed6556d86bc75.csv",
+            "sha256": "1191f60dbae1a2ce4c01ace4126ec9291e68e57b221d280dd50ed6556d86bc75",
+            "condition": "VGS=4.5 V"
+          },
+          {
+            "test_id": "fig6_vgs_1",
+            "path": "assets/a12f53022401b7456d3706fc02014e540b7a6789a347729367a58be4d1858907.csv",
+            "sha256": "a12f53022401b7456d3706fc02014e540b7a6789a347729367a58be4d1858907",
+            "condition": "VGS=5 V"
+          },
+          {
+            "test_id": "fig6_vgs_2",
+            "path": "assets/adcef449a9bff81fd24d0c5606937d277fb99a925447d5caf6590fe73858c14a.csv",
+            "sha256": "adcef449a9bff81fd24d0c5606937d277fb99a925447d5caf6590fe73858c14a",
+            "condition": "VGS=5.5 V"
+          },
+          {
+            "test_id": "fig6_vgs_3",
+            "path": "assets/bf0e2bc2bdb67310b9929cdeecf731851f7f424a2b82098f6f21d6fa53572f10.csv",
+            "sha256": "bf0e2bc2bdb67310b9929cdeecf731851f7f424a2b82098f6f21d6fa53572f10",
+            "condition": "VGS=6 V"
+          },
+          {
+            "test_id": "fig6_vgs_4",
+            "path": "assets/3699103924100635f2a5ff1b4c516184039c1e2afd5ca923589a57b195c130d2.csv",
+            "sha256": "3699103924100635f2a5ff1b4c516184039c1e2afd5ca923589a57b195c130d2",
+            "condition": "VGS=6.5 V"
+          },
+          {
+            "test_id": "fig6_vgs_5",
+            "path": "assets/5bfef909ce5e303a306d31adabc81c51159e0b8b394b04f6245f8576118d95b3.csv",
+            "sha256": "5bfef909ce5e303a306d31adabc81c51159e0b8b394b04f6245f8576118d95b3",
+            "condition": "VGS=10 V"
+          }
+        ]
+      },
+      {
+        "id": "figure:6:fig6_vgs_1",
+        "kind": "test",
+        "applicable": true,
+        "binding_complete": false,
+        "bindings": [
+          "fig6_vgs_1"
+        ],
+        "reference_evidence": {
+          "key": "output_curve",
+          "values": {},
+          "unit": "A",
+          "conditions": "VGS=5 V"
+        },
+        "pdf_pages": [
+          6
+        ],
+        "added_from_manual_review": true,
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "contract_review",
+        "capability_status": "adapter_or_contract_pending",
+        "source_record": {
+          "id": "figure:6:fig6_vgs_1",
+          "kind": "test",
+          "applicable": true,
+          "binding_complete": true,
+          "bindings": [
+            "fig6_vgs_1"
+          ],
+          "reference_evidence": {
+            "key": "output_curve",
+            "values": {},
+            "unit": "A",
+            "conditions": "VGS=5 V"
+          },
+          "pdf_pages": [
+            6
+          ],
+          "added_from_manual_review": true,
+          "plan_status": "existing_test_requires_scope_audit",
+          "method_family": "contract_review",
+          "capability_status": "adapter_or_contract_pending"
+        },
+        "source_kind": "test",
+        "label": "output_curve",
+        "evidence": [
+          "pdf_page:6"
+        ],
+        "classification_review_pending": false,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": [
+          {
+            "test_id": "fig6_vgs_1",
+            "path": "assets/a12f53022401b7456d3706fc02014e540b7a6789a347729367a58be4d1858907.csv",
+            "sha256": "a12f53022401b7456d3706fc02014e540b7a6789a347729367a58be4d1858907",
+            "condition": "VGS=5 V"
+          }
+        ]
+      }
+    ],
+    "authorship": {
+      "designer": "Migrated engineering circuit; qualified by GPT/Codex tooling",
+      "review": "One three-terminal FET instance; FET1/FET2 physical package binding remains pending"
+    },
+    "scope": "Single FET instance, original declared conditions; dual-package full coverage pending"
+  },
+  "receipt": {
+    "device": "BUK7K52-60E",
+    "id": "fig6_vgs_1",
+    "reference_ids": [
+      "figure:6",
+      "figure:6:fig6_vgs_1"
+    ],
+    "scope": "Single FET instance, original declared conditions; dual-package full coverage pending",
+    "authorship": {
+      "designer": "Migrated engineering circuit; qualified by GPT/Codex tooling",
+      "review": "One three-terminal FET instance; FET1/FET2 physical package binding remains pending"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+    "calibrations": [
+      {
+        "expected": 0,
+        "result": {
+          "metrics": {
+            "MAE": 0.0,
+            "RMSE": 0.0,
+            "max_absolute_error": 0.0,
+            "MAE_over_reference_span_percent": 0.0,
+            "max_error_over_reference_span_percent": 0.0
+          },
+          "comparison": [
+            {
+              "x": 0.0,
+              "reference_y": 0.0,
+              "simulated_y": -0.0
+            },
+            {
+              "x": 1.0,
+              "reference_y": 0.001,
+              "simulated_y": 0.001
+            },
+            {
+              "x": 2.0,
+              "reference_y": 0.002,
+              "simulated_y": 0.002
+            }
+          ]
+        },
+        "error": 0.0,
+        "tolerance": 1e-09,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/a8dc9cf475f9fb77a53d1a40522306dfc73e7d1458b06f23a801d958dd6c5536",
+        "artifacts": {
+          "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+          "test.cir": "26138a8effe3722e0b75ea9c3d97fb9bdb1eafd8c9f335a478e33a16e375d248",
+          "test.raw": "b520efe839acdbf0cda778d71d3bb84efa8d8c586461d5ef2d32d8d5bf11561b",
+          "test.log": "b15feab99af41818bb3755a2c5af0ba1e7bb903bf76a6e6deec133ae594fb55b",
+          "execution.json": "f887454fb19e001c2fbdd0372622e6d128e1c1aaadd5b7cd8246a2b78fe12c1d"
+        }
+      },
+      {
+        "expected": 0,
+        "result": {
+          "metrics": {
+            "MAE": 0.0,
+            "RMSE": 0.0,
+            "max_absolute_error": 0.0,
+            "MAE_over_reference_span_percent": 0.0,
+            "max_error_over_reference_span_percent": 0.0
+          },
+          "comparison": [
+            {
+              "x": 0.0,
+              "reference_y": 0.0,
+              "simulated_y": -0.0
+            },
+            {
+              "x": 1.0,
+              "reference_y": 0.0005,
+              "simulated_y": 0.0005
+            },
+            {
+              "x": 2.0,
+              "reference_y": 0.001,
+              "simulated_y": 0.001
+            }
+          ]
+        },
+        "error": 0.0,
+        "tolerance": 1e-09,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/7680d0b1d9406f80761c245a660cb25cb09d7cd189e6cce9acc5683c9bf9a471",
+        "artifacts": {
+          "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+          "test.cir": "23f4f8ea080bd5c83e1d7c0833b11a2ac244dad23d131102c00d15492503f1e0",
+          "test.raw": "0908a3d175fad7b74d1b2a6bbbf1b440d9d90d85697b4df137f62f3c9afcd5fb",
+          "test.log": "f77ef77cffd341e4338f0cc175bad5dd182094cc62bf1e1ee29e69f4bba86124",
+          "execution.json": "16d0f631819efdc5c3a75f615d8372fdad89f7af159bb4293046c5004759f196"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "metrics": {
+          "MAE": 0.17040262593821334,
+          "RMSE": 0.21262427206507858,
+          "max_absolute_error": 0.39846545015939405,
+          "MAE_over_reference_span_percent": 2.733802962634671,
+          "max_error_over_reference_span_percent": 6.392659867508675
+        },
+        "comparison": [
+          {
+            "x": 0.0,
+            "reference_y": 7.078539044e-10,
+            "simulated_y": -8.358032322925143e-12
+          },
+          {
+            "x": 0.01,
+            "reference_y": 0.1211989658,
+            "simulated_y": 0.1242137381893649
+          },
+          {
+            "x": 0.02,
+            "reference_y": 0.2518824705,
+            "simulated_y": 0.247241135836461
+          },
+          {
+            "x": 0.03,
+            "reference_y": 0.3863127265,
+            "simulated_y": 0.3690785530577791
+          },
+          {
+            "x": 0.04,
+            "reference_y": 0.5225252007,
+            "simulated_y": 0.4897223917838858
+          },
+          {
+            "x": 0.05,
+            "reference_y": 0.6594421602,
+            "simulated_y": 0.609169096533833
+          },
+          {
+            "x": 0.06,
+            "reference_y": 0.7962475006,
+            "simulated_y": 0.7274151551939454
+          },
+          {
+            "x": 0.07,
+            "reference_y": 0.9321034564,
+            "simulated_y": 0.8444570997927485
+          },
+          {
+            "x": 0.08,
+            "reference_y": 1.065848129,
+            "simulated_y": 0.9602915072713927
+          },
+          {
+            "x": 0.09,
+            "reference_y": 1.195260708,
+            "simulated_y": 1.074915000248808
+          },
+          {
+            "x": 0.0988750335,
+            "reference_y": 1.301249476,
+            "simulated_y": 1.1756261413020552
+          },
+          {
+            "x": 0.1,
+            "reference_y": 1.313697365,
+            "simulated_y": 1.18832424778229
+          },
+          {
+            "x": 0.11,
+            "reference_y": 1.42516414,
+            "simulated_y": 1.300515966122148
+          },
+          {
+            "x": 0.12,
+            "reference_y": 1.53747647,
+            "simulated_y": 1.411486919460216
+          },
+          {
+            "x": 0.13,
+            "reference_y": 1.650154773,
+            "simulated_y": 1.521233920672529
+          },
+          {
+            "x": 0.14,
+            "reference_y": 1.762947386,
+            "simulated_y": 1.629753832054973
+          },
+          {
+            "x": 0.15,
+            "reference_y": 1.875697924,
+            "simulated_y": 1.737043566051995
+          },
+          {
+            "x": 0.16,
+            "reference_y": 1.988296892,
+            "simulated_y": 1.843100085977881
+          },
+          {
+            "x": 0.17,
+            "reference_y": 2.100660004,
+            "simulated_y": 1.947920406730134
+          },
+          {
+            "x": 0.18,
+            "reference_y": 2.212717141,
+            "simulated_y": 2.051501595495182
+          },
+          {
+            "x": 0.19,
+            "reference_y": 2.324405985,
+            "simulated_y": 2.153840772444624
+          },
+          {
+            "x": 0.2,
+            "reference_y": 2.435668119,
+            "simulated_y": 2.254935111423691
+          },
+          {
+            "x": 0.21,
+            "reference_y": 2.546445882,
+            "simulated_y": 2.354781840629556
+          },
+          {
+            "x": 0.22,
+            "reference_y": 2.656680568,
+            "simulated_y": 2.453378243280696
+          },
+          {
+            "x": 0.23,
+            "reference_y": 2.766310231,
+            "simulated_y": 2.550721658275791
+          },
+          {
+            "x": 0.24,
+            "reference_y": 2.875268184,
+            "simulated_y": 2.646809480842563
+          },
+          {
+            "x": 0.25,
+            "reference_y": 2.983480386,
+            "simulated_y": 2.741639163175989
+          },
+          {
+            "x": 0.26,
+            "reference_y": 3.090863879,
+            "simulated_y": 2.835208215065222
+          },
+          {
+            "x": 0.27,
+            "reference_y": 3.197323499,
+            "simulated_y": 2.927514204509293
+          },
+          {
+            "x": 0.28,
+            "reference_y": 3.302748513,
+            "simulated_y": 3.018554758321386
+          },
+          {
+            "x": 0.29,
+            "reference_y": 3.407007599,
+            "simulated_y": 3.10832756272049
+          },
+          {
+            "x": 0.3,
+            "reference_y": 3.509943028,
+            "simulated_y": 3.196830363910806
+          },
+          {
+            "x": 0.31,
+            "reference_y": 3.611360314,
+            "simulated_y": 3.284060968648987
+          },
+          {
+            "x": 0.32,
+            "reference_y": 3.71101623,
+            "simulated_y": 3.370017244797793
+          },
+          {
+            "x": 0.33,
+            "reference_y": 3.80859713,
+            "simulated_y": 3.454697121866218
+          },
+          {
+            "x": 0.34,
+            "reference_y": 3.903686044,
+            "simulated_y": 3.53809859153688
+          },
+          {
+            "x": 0.35,
+            "reference_y": 3.99570947,
+            "simulated_y": 3.620219708178297
+          },
+          {
+            "x": 0.36,
+            "reference_y": 4.083833759,
+            "simulated_y": 3.701058589343461
+          },
+          {
+            "x": 0.37,
+            "reference_y": 4.166767711,
+            "simulated_y": 3.780613416254084
+          },
+          {
+            "x": 0.38,
+            "reference_y": 4.242298712,
+            "simulated_y": 3.85888243426956
+          },
+          {
+            "x": 0.3893749225,
+            "reference_y": 4.302501565,
+            "simulated_y": 3.931088256459196
+          },
+          {
+            "x": 0.39,
+            "reference_y": 4.306015618,
+            "simulated_y": 3.935863953341027
+          },
+          {
+            "x": 0.4,
+            "reference_y": 4.359294134,
+            "simulated_y": 4.011556348449517
+          },
+          {
+            "x": 0.41,
+            "reference_y": 4.408246494,
+            "simulated_y": 4.085958060029782
+          },
+          {
+            "x": 0.42,
+            "reference_y": 4.454035043,
+            "simulated_y": 4.159067594376609
+          },
+          {
+            "x": 0.43,
+            "reference_y": 4.49737437,
+            "simulated_y": 4.230883524035789
+          },
+          {
+            "x": 0.44,
+            "reference_y": 4.538741157,
+            "simulated_y": 4.301404488179173
+          },
+          {
+            "x": 0.45,
+            "reference_y": 4.578471944,
+            "simulated_y": 4.370629192961474
+          },
+          {
+            "x": 0.46,
+            "reference_y": 4.616814742,
+            "simulated_y": 4.438556411862237
+          },
+          {
+            "x": 0.47,
+            "reference_y": 4.653958548,
+            "simulated_y": 4.505184986009681
+          },
+          {
+            "x": 0.48,
+            "reference_y": 4.690050868,
+            "simulated_y": 4.570513824487136
+          },
+          {
+            "x": 0.49,
+            "reference_y": 4.725209954,
+            "simulated_y": 4.634541904622552
+          },
+          {
+            "x": 0.5,
+            "reference_y": 4.759531822,
+            "simulated_y": 4.697268272259976
+          },
+          {
+            "x": 0.51,
+            "reference_y": 4.793095399,
+            "simulated_y": 4.758692042014104
+          },
+          {
+            "x": 0.52,
+            "reference_y": 4.825967168,
+            "simulated_y": 4.818812397505667
+          },
+          {
+            "x": 0.53,
+            "reference_y": 4.85820306,
+            "simulated_y": 4.877628591579423
+          },
+          {
+            "x": 0.54,
+            "reference_y": 4.889850237,
+            "simulated_y": 4.935139946504478
+          },
+          {
+            "x": 0.55,
+            "reference_y": 4.920950014,
+            "simulated_y": 4.991345854155043
+          },
+          {
+            "x": 0.56,
+            "reference_y": 4.951537627,
+            "simulated_y": 5.04624577617335
+          },
+          {
+            "x": 0.57,
+            "reference_y": 4.981643788,
+            "simulated_y": 5.099839244114604
+          },
+          {
+            "x": 0.58,
+            "reference_y": 5.011294904,
+            "simulated_y": 5.152125859571925
+          },
+          {
+            "x": 0.59,
+            "reference_y": 5.040514751,
+            "simulated_y": 5.203105294284342
+          },
+          {
+            "x": 0.6,
+            "reference_y": 5.069323474,
+            "simulated_y": 5.252777290223889
+          },
+          {
+            "x": 0.61,
+            "reference_y": 5.097739306,
+            "simulated_y": 5.3011416596662
+          },
+          {
+            "x": 0.62,
+            "reference_y": 5.125777724,
+            "simulated_y": 5.34819828523996
+          },
+          {
+            "x": 0.63,
+            "reference_y": 5.153452398,
+            "simulated_y": 5.393947119959194
+          },
+          {
+            "x": 0.64,
+            "reference_y": 5.180775377,
+            "simulated_y": 5.438388187235432
+          },
+          {
+            "x": 0.65,
+            "reference_y": 5.207756902,
+            "simulated_y": 5.481521580871913
+          },
+          {
+            "x": 0.66,
+            "reference_y": 5.234405697,
+            "simulated_y": 5.523347465037432
+          },
+          {
+            "x": 0.67,
+            "reference_y": 5.26072877,
+            "simulated_y": 5.563866074223824
+          },
+          {
+            "x": 0.68,
+            "reference_y": 5.286732324,
+            "simulated_y": 5.603077713180937
+          },
+          {
+            "x": 0.69,
+            "reference_y": 5.312420916,
+            "simulated_y": 5.640982756836138
+          },
+          {
+            "x": 0.7,
+            "reference_y": 5.337797497,
+            "simulated_y": 5.677581650192906
+          },
+          {
+            "x": 0.71,
+            "reference_y": 5.362864205,
+            "simulated_y": 5.71287490821112
+          },
+          {
+            "x": 0.72,
+            "reference_y": 5.38762144,
+            "simulated_y": 5.746863115670067
+          },
+          {
+            "x": 0.73,
+            "reference_y": 5.412068104,
+            "simulated_y": 5.779546927010756
+          },
+          {
+            "x": 0.74,
+            "reference_y": 5.436201586,
+            "simulated_y": 5.810927066160389
+          },
+          {
+            "x": 0.75,
+            "reference_y": 5.460017647,
+            "simulated_y": 5.841004326339771
+          },
+          {
+            "x": 0.76,
+            "reference_y": 5.483509674,
+            "simulated_y": 5.869779569851175
+          },
+          {
+            "x": 0.77,
+            "reference_y": 5.506669111,
+            "simulated_y": 5.897253727847328
+          },
+          {
+            "x": 0.78,
+            "reference_y": 5.529484414,
+            "simulated_y": 5.923427800085392
+          },
+          {
+            "x": 0.79,
+            "reference_y": 5.551940743,
+            "simulated_y": 5.948302854658891
+          },
+          {
+            "x": 0.8,
+            "reference_y": 5.57401899,
+            "simulated_y": 5.971880027716338
+          },
+          {
+            "x": 0.81,
+            "reference_y": 5.595695073,
+            "simulated_y": 5.994160523159394
+          },
+          {
+            "x": 0.82,
+            "reference_y": 5.616937779,
+            "simulated_y": 6.015145612324204
+          },
+          {
+            "x": 0.83,
+            "reference_y": 5.637706408,
+            "simulated_y": 6.034836633646705
+          },
+          {
+            "x": 0.84,
+            "reference_y": 5.657947687,
+            "simulated_y": 6.053234992310308
+          },
+          {
+            "x": 0.85,
+            "reference_y": 5.677588859,
+            "simulated_y": 6.070342159876077
+          },
+          {
+            "x": 0.86,
+            "reference_y": 5.696528816,
+            "simulated_y": 6.08615967389926
+          },
+          {
+            "x": 0.87,
+            "reference_y": 5.714618877,
+            "simulated_y": 6.100689137525706
+          },
+          {
+            "x": 0.88,
+            "reference_y": 5.73162652,
+            "simulated_y": 6.113932219074854
+          },
+          {
+            "x": 0.8852498672,
+            "reference_y": 5.739998501,
+            "simulated_y": 6.1203691019912645
+          },
+          {
+            "x": 0.89,
+            "reference_y": 5.747210217,
+            "simulated_y": 6.125890651606369
+          },
+          {
+            "x": 0.9,
+            "reference_y": 5.761186463,
+            "simulated_y": 6.127543231457366
+          },
+          {
+            "x": 0.91,
+            "reference_y": 5.773861509,
+            "simulated_y": 6.12798046760895
+          },
+          {
+            "x": 0.92,
+            "reference_y": 5.785515208,
+            "simulated_y": 6.128417713302724
+          },
+          {
+            "x": 0.93,
+            "reference_y": 5.796339397,
+            "simulated_y": 6.128854968538576
+          },
+          {
+            "x": 0.94,
+            "reference_y": 5.806472922,
+            "simulated_y": 6.129292233315937
+          },
+          {
+            "x": 0.95,
+            "reference_y": 5.816019654,
+            "simulated_y": 6.129729507634693
+          },
+          {
+            "x": 0.96,
+            "reference_y": 5.825059739,
+            "simulated_y": 6.130166791494162
+          },
+          {
+            "x": 0.97,
+            "reference_y": 5.833656861,
+            "simulated_y": 6.130604084893434
+          },
+          {
+            "x": 0.98,
+            "reference_y": 5.84186241,
+            "simulated_y": 6.131041387832738
+          },
+          {
+            "x": 0.99,
+            "reference_y": 5.84971858,
+            "simulated_y": 6.131478700311277
+          },
+          {
+            "x": 1.0,
+            "reference_y": 5.857260425,
+            "simulated_y": 6.131916022328824
+          },
+          {
+            "x": 1.01,
+            "reference_y": 5.864517993,
+            "simulated_y": 6.132353353884355
+          },
+          {
+            "x": 1.02,
+            "reference_y": 5.871516379,
+            "simulated_y": 6.132790694977984
+          },
+          {
+            "x": 1.03,
+            "reference_y": 5.878277677,
+            "simulated_y": 6.13322804560903
+          },
+          {
+            "x": 1.04,
+            "reference_y": 5.884820728,
+            "simulated_y": 6.133665405777492
+          },
+          {
+            "x": 1.05,
+            "reference_y": 5.891162372,
+            "simulated_y": 6.134102775481551
+          },
+          {
+            "x": 1.06,
+            "reference_y": 5.897317176,
+            "simulated_y": 6.134540154722117
+          },
+          {
+            "x": 1.07,
+            "reference_y": 5.903298316,
+            "simulated_y": 6.13497754349828
+          },
+          {
+            "x": 1.08,
+            "reference_y": 5.909117426,
+            "simulated_y": 6.135414941809131
+          },
+          {
+            "x": 1.09,
+            "reference_y": 5.914785009,
+            "simulated_y": 6.135852349654897
+          },
+          {
+            "x": 1.1,
+            "reference_y": 5.920310451,
+            "simulated_y": 6.136289767034668
+          },
+          {
+            "x": 1.11,
+            "reference_y": 5.925702337,
+            "simulated_y": 6.136727193947763
+          },
+          {
+            "x": 1.12,
+            "reference_y": 5.930968566,
+            "simulated_y": 6.137164630394636
+          },
+          {
+            "x": 1.13,
+            "reference_y": 5.936116191,
+            "simulated_y": 6.137602076373923
+          },
+          {
+            "x": 1.14,
+            "reference_y": 5.941151768,
+            "simulated_y": 6.138039531885624
+          },
+          {
+            "x": 1.15,
+            "reference_y": 5.94608141,
+            "simulated_y": 6.138476996929057
+          },
+          {
+            "x": 1.16,
+            "reference_y": 5.95091068,
+            "simulated_y": 6.138914471503767
+          },
+          {
+            "x": 1.17,
+            "reference_y": 5.955644751,
+            "simulated_y": 6.139351955609527
+          },
+          {
+            "x": 1.18,
+            "reference_y": 5.96028842,
+            "simulated_y": 6.139789449245882
+          },
+          {
+            "x": 1.19,
+            "reference_y": 5.964846237,
+            "simulated_y": 6.140226952411467
+          },
+          {
+            "x": 1.2,
+            "reference_y": 5.969322448,
+            "simulated_y": 6.140664465106966
+          },
+          {
+            "x": 1.21,
+            "reference_y": 5.973721039,
+            "simulated_y": 6.14110198733124
+          },
+          {
+            "x": 1.22,
+            "reference_y": 5.978045774,
+            "simulated_y": 6.14153951908429
+          },
+          {
+            "x": 1.23,
+            "reference_y": 5.982300226,
+            "simulated_y": 6.141977060365434
+          },
+          {
+            "x": 1.24,
+            "reference_y": 5.986487793,
+            "simulated_y": 6.14241461117399
+          },
+          {
+            "x": 1.25,
+            "reference_y": 5.990611725,
+            "simulated_y": 6.14285217150973
+          },
+          {
+            "x": 1.26,
+            "reference_y": 5.994675138,
+            "simulated_y": 6.143289741371973
+          },
+          {
+            "x": 1.27,
+            "reference_y": 5.99868104,
+            "simulated_y": 6.143727320760718
+          },
+          {
+            "x": 1.28,
+            "reference_y": 6.002632342,
+            "simulated_y": 6.144164909675055
+          },
+          {
+            "x": 1.29,
+            "reference_y": 6.00653188,
+            "simulated_y": 6.144602508114531
+          },
+          {
+            "x": 1.3,
+            "reference_y": 6.010382352,
+            "simulated_y": 6.145040116079372
+          },
+          {
+            "x": 1.31,
+            "reference_y": 6.014186566,
+            "simulated_y": 6.145477733567532
+          },
+          {
+            "x": 1.32,
+            "reference_y": 6.01794719,
+            "simulated_y": 6.14591536057992
+          },
+          {
+            "x": 1.33,
+            "reference_y": 6.021666902,
+            "simulated_y": 6.146352997116082
+          },
+          {
+            "x": 1.34,
+            "reference_y": 6.025348398,
+            "simulated_y": 6.146790643174654
+          },
+          {
+            "x": 1.35,
+            "reference_y": 6.028994425,
+            "simulated_y": 6.147228298756318
+          },
+          {
+            "x": 1.36,
+            "reference_y": 6.032607756,
+            "simulated_y": 6.147665963859481
+          },
+          {
+            "x": 1.37,
+            "reference_y": 6.036191258,
+            "simulated_y": 6.148103638484372
+          },
+          {
+            "x": 1.38,
+            "reference_y": 6.039747923,
+            "simulated_y": 6.148541322630081
+          },
+          {
+            "x": 1.39,
+            "reference_y": 6.043280871,
+            "simulated_y": 6.148979016296607
+          },
+          {
+            "x": 1.4,
+            "reference_y": 6.046793447,
+            "simulated_y": 6.14941671948327
+          },
+          {
+            "x": 1.41,
+            "reference_y": 6.05028921,
+            "simulated_y": 6.149854432189159
+          },
+          {
+            "x": 1.42,
+            "reference_y": 6.053772065,
+            "simulated_y": 6.150292154414956
+          },
+          {
+            "x": 1.43,
+            "reference_y": 6.057246321,
+            "simulated_y": 6.15072988615907
+          },
+          {
+            "x": 1.44,
+            "reference_y": 6.060716787,
+            "simulated_y": 6.151167627421273
+          },
+          {
+            "x": 1.45,
+            "reference_y": 6.064188938,
+            "simulated_y": 6.151605378201793
+          },
+          {
+            "x": 1.46,
+            "reference_y": 6.067669108,
+            "simulated_y": 6.152043138499494
+          },
+          {
+            "x": 1.47,
+            "reference_y": 6.071164738,
+            "simulated_y": 6.152480908313692
+          },
+          {
+            "x": 1.48,
+            "reference_y": 6.074684793,
+            "simulated_y": 6.15291868764416
+          },
+          {
+            "x": 1.49,
+            "reference_y": 6.078240247,
+            "simulated_y": 6.153356476490899
+          },
+          {
+            "x": 1.5,
+            "reference_y": 6.081844988,
+            "simulated_y": 6.153794274853226
+          },
+          {
+            "x": 1.51,
+            "reference_y": 6.085516991,
+            "simulated_y": 6.154232082730232
+          },
+          {
+            "x": 1.52,
+            "reference_y": 6.089280491,
+            "simulated_y": 6.154669900121689
+          },
+          {
+            "x": 1.53,
+            "reference_y": 6.093169715,
+            "simulated_y": 6.155107727027371
+          },
+          {
+            "x": 1.54,
+            "reference_y": 6.097235742,
+            "simulated_y": 6.155545563446822
+          },
+          {
+            "x": 1.540625073,
+            "reference_y": 6.097497367,
+            "simulated_y": 6.155572931746316
+          },
+          {
+            "x": 1.55,
+            "reference_y": 6.101202303,
+            "simulated_y": 6.155983409379132
+          },
+          {
+            "x": 1.56,
+            "reference_y": 6.104989272,
+            "simulated_y": 6.156421264824303
+          },
+          {
+            "x": 1.57,
+            "reference_y": 6.10864364,
+            "simulated_y": 6.156859129781651
+          },
+          {
+            "x": 1.58,
+            "reference_y": 6.112191533,
+            "simulated_y": 6.157297004250267
+          },
+          {
+            "x": 1.59,
+            "reference_y": 6.115651459,
+            "simulated_y": 6.157734888230607
+          },
+          {
+            "x": 1.6,
+            "reference_y": 6.11903708,
+            "simulated_y": 6.158172781721532
+          },
+          {
+            "x": 1.61,
+            "reference_y": 6.122358863,
+            "simulated_y": 6.158610684723044
+          },
+          {
+            "x": 1.62,
+            "reference_y": 6.125625017,
+            "simulated_y": 6.159048597234232
+          },
+          {
+            "x": 1.63,
+            "reference_y": 6.12884213,
+            "simulated_y": 6.159486519254642
+          },
+          {
+            "x": 1.64,
+            "reference_y": 6.132015559,
+            "simulated_y": 6.159924450784274
+          },
+          {
+            "x": 1.65,
+            "reference_y": 6.135149779,
+            "simulated_y": 6.160362391822218
+          },
+          {
+            "x": 1.66,
+            "reference_y": 6.138248512,
+            "simulated_y": 6.160800342368248
+          },
+          {
+            "x": 1.67,
+            "reference_y": 6.141314961,
+            "simulated_y": 6.16123830242168
+          },
+          {
+            "x": 1.68,
+            "reference_y": 6.144351843,
+            "simulated_y": 6.161676271982515
+          },
+          {
+            "x": 1.69,
+            "reference_y": 6.147361526,
+            "simulated_y": 6.162114251049388
+          },
+          {
+            "x": 1.7,
+            "reference_y": 6.150346069,
+            "simulated_y": 6.162552239622755
+          },
+          {
+            "x": 1.71,
+            "reference_y": 6.153307298,
+            "simulated_y": 6.162990237701706
+          },
+          {
+            "x": 1.72,
+            "reference_y": 6.15624682,
+            "simulated_y": 6.163428245285331
+          },
+          {
+            "x": 1.73,
+            "reference_y": 6.159166034,
+            "simulated_y": 6.16386626237454
+          },
+          {
+            "x": 1.74,
+            "reference_y": 6.162066261,
+            "simulated_y": 6.164304288967742
+          },
+          {
+            "x": 1.75,
+            "reference_y": 6.164948612,
+            "simulated_y": 6.164742325064935
+          },
+          {
+            "x": 1.76,
+            "reference_y": 6.16781415,
+            "simulated_y": 6.165180370664984
+          },
+          {
+            "x": 1.77,
+            "reference_y": 6.17066381,
+            "simulated_y": 6.165618425767661
+          },
+          {
+            "x": 1.78,
+            "reference_y": 6.173498445,
+            "simulated_y": 6.166056490373649
+          },
+          {
+            "x": 1.79,
+            "reference_y": 6.176318838,
+            "simulated_y": 6.166494564481127
+          },
+          {
+            "x": 1.8,
+            "reference_y": 6.179125709,
+            "simulated_y": 6.166932648090324
+          },
+          {
+            "x": 1.81,
+            "reference_y": 6.181919719,
+            "simulated_y": 6.167370741199875
+          },
+          {
+            "x": 1.82,
+            "reference_y": 6.184701476,
+            "simulated_y": 6.167808843810462
+          },
+          {
+            "x": 1.83,
+            "reference_y": 6.187471528,
+            "simulated_y": 6.168246955920949
+          },
+          {
+            "x": 1.84,
+            "reference_y": 6.190230417,
+            "simulated_y": 6.168685077531109
+          },
+          {
+            "x": 1.85,
+            "reference_y": 6.192978624,
+            "simulated_y": 6.169123208640713
+          },
+          {
+            "x": 1.86,
+            "reference_y": 6.195716591,
+            "simulated_y": 6.169561349248397
+          },
+          {
+            "x": 1.87,
+            "reference_y": 6.198444758,
+            "simulated_y": 6.169999499355072
+          },
+          {
+            "x": 1.88,
+            "reference_y": 6.201163501,
+            "simulated_y": 6.170437658958463
+          },
+          {
+            "x": 1.89,
+            "reference_y": 6.20387321,
+            "simulated_y": 6.170875828059707
+          },
+          {
+            "x": 1.9,
+            "reference_y": 6.206574224,
+            "simulated_y": 6.171314006658122
+          },
+          {
+            "x": 1.91,
+            "reference_y": 6.209266879,
+            "simulated_y": 6.171752194752344
+          },
+          {
+            "x": 1.92,
+            "reference_y": 6.21195149,
+            "simulated_y": 6.1721903923426
+          },
+          {
+            "x": 1.93,
+            "reference_y": 6.214628341,
+            "simulated_y": 6.172628599427981
+          },
+          {
+            "x": 1.94,
+            "reference_y": 6.217297728,
+            "simulated_y": 6.173066816008713
+          },
+          {
+            "x": 1.95,
+            "reference_y": 6.219959916,
+            "simulated_y": 6.173505042083889
+          },
+          {
+            "x": 1.96,
+            "reference_y": 6.222615152,
+            "simulated_y": 6.173943277653279
+          },
+          {
+            "x": 1.97,
+            "reference_y": 6.225263693,
+            "simulated_y": 6.174381522715976
+          },
+          {
+            "x": 1.98,
+            "reference_y": 6.227905773,
+            "simulated_y": 6.174819777271296
+          },
+          {
+            "x": 1.99,
+            "reference_y": 6.230541621,
+            "simulated_y": 6.175258041319921
+          },
+          {
+            "x": 2.0,
+            "reference_y": 6.233171457,
+            "simulated_y": 6.175696314860488
+          }
+        ]
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/af8d461b8bd8201303c33a9ff95419682539a3a1545f52af630b98e0029c7f50",
+      "artifacts": {
+        "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+        "test.cir": "77b7b0c1b9d80f20dbf04428614c499c31f3beda60ec9583dbdea1f1ee054bd2",
+        "test.raw": "50529b68fb8feffb0c05739c3ade7d48088390168829cc1ff32eb42df5b988f6",
+        "test.log": "c9b832c43a437591a0c8e7eda2de3896ebd9ff7fda0c3cd70daf90165f8dd786",
+        "execution.json": "f8d2c7f46a0a62fd5f56367252d6b765787807b1c097305c68cbb4e458a29b39"
+      }
+    },
+    "protocol_sha256": "3beb8c7d5be3b597a589de29a5416ae671e54a5411e44e2632f030c497626ed6"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

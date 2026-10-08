@@ -16,6 +16,9 @@ def reference(case):
 
 def oracles(case):
  p=case['protocol'];m=p['measurement']
+ if m['mode'] in ('transient_peak','transient_recovery'):
+  from flow_runtime.transient_metrology import oracles as transient_oracles
+  return transient_oracles(case)
  if m['mode'] in ('dc_slope','dc_sensitivity_error_percent','dc_linearity_percent'):
   from flow_runtime.dc_transfer import oracles as transfer_oracles
   return transfer_oracles(case)
@@ -34,11 +37,14 @@ def oracles(case):
   return result
  if m['mode']=='curve':
   a=p['analysis'];name=a['source'];signal=m['signal'].lower()
-  if a['kind']!='dc' or signal!='i('+name.lower()+')' or not name.startswith('V'):raise Fault('capability','Curve calibration unavailable')
+  if a['kind']!='dc' or not re.fullmatch(r'i\(v[a-z0-9_.-]+\)',signal) or not name.startswith('V'):raise Fault('capability','Curve calibration unavailable')
   out=[]
   for resistance in (1000,2000):
    q=copy.deepcopy(p);q['device_nodes']={};q['checks']=[]
    q['components']=[{'kind':'R','name':'RCAL','nodes':['P','0'],'value':resistance},{'kind':'V','name':name,'nodes':['P','0'],'value':{'dc':0}}]
+   if signal!='i('+name.lower()+')':
+    probe=re.fullmatch(r'i\(([^)]+)\)',signal)[1]
+    q['components']=[{'kind':'R','name':'RCAL','nodes':['Q','0'],'value':resistance},{'kind':'V','name':name,'nodes':['P','0'],'value':{'dc':0}},{'kind':'V','name':probe,'nodes':['Q','P'],'value':{'dc':0}}]
    xs=[a['start'],(a['start']+a['stop'])/2,a['stop']]
    expected=[(x,-x/resistance*m.get('sign',1)*m.get('scale',1)) for x in xs]
    out.append((q,0,expected))

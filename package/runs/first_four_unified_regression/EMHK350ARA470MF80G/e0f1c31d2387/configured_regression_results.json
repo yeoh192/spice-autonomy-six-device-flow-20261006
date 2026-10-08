@@ -1,0 +1,53 @@
+[
+  {
+    "value": 1.3425488825103553,
+    "test": "esr_-40_100000Hz",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+    "protocol_sha256": "09ca222272098174910a81a83634b4d35de26e954779b79266f4aed7f30d3c1e",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_unified_regression/EMHK350ARA470MF80G/e0f1c31d2387/simulations/3cfa4cd457cdf829bc9119ff54124b739a80cfb36c203292870fc90f04ca041d",
+    "unit": "Ω",
+    "artifact_hashes": {
+      "model.lib": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+      "test.cir": "e4211a0f5eb1d916217416539a6f8dbff8ef91d08ce291ffe26ac05a31fdc4b0",
+      "test.raw": "1d110de5179c0ece4a518588c32984a6dc15f2b4bc960073f79ed734b7a20dab",
+      "test.log": "985f69abe7541922d1012e84cf83a2d2f25300b3527219f4cf6010e4664a78e5",
+      "execution.json": "f04fddca8fc1c8c5bb5e4d0226db94650bddb5ac38196d7284938aaac88c1462"
+    }
+  },
+  {
+    "value": 1.2756984044190962,
+    "test": "esr_-40_400000Hz",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+    "protocol_sha256": "586a52a3441ea571f96fbfe2c384e4dd7189b687fc10f3c771c11f97fb1e84c9",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_unified_regression/EMHK350ARA470MF80G/e0f1c31d2387/simulations/512235c38f990458284149c81e751fb4efe1702f7eec0870e77999b5400ae7f3",
+    "unit": "Ω",
+    "artifact_hashes": {
+      "model.lib": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+      "test.cir": "7e18a9e6b3aa99b6f746111f4a0aac42d8a81ea703ec02eb09e2364cb2178749",
+      "test.raw": "3e03183d67dc9b51b412e1aa5ced75e39b2649b032647f8c94a08d406247d126",
+      "test.log": "6ef51fe91a40454cb8b0aef1decb7c70a9bc6c26e3af828a31381a710358135e",
+      "execution.json": "6deda925c4582381e7e090b871638a6ea10a72e860db9209ab0d0f60da5b5f51"
+    }
+  },
+  {
+    "value": 1.305293111914007,
+    "test": "esr_-40_200000Hz",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+    "protocol_sha256": "d9477a0dfbdb365307915d09da8c315b775b9714eff2bb75f91920305b97f238",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_unified_regression/EMHK350ARA470MF80G/e0f1c31d2387/simulations/11d94a5875bcd33f89d51bc7e28bca6b32a43cb29a7cdb4ae1a2e3b1823a1ae0",
+    "unit": "Ω",
+    "artifact_hashes": {
+      "model.lib": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+      "test.cir": "66f7c624323ffb59c10b522ba14af9a8df086720d3356b0ad72e231b27acb276",
+      "test.raw": "e615dc241527eacfbc37265258327bebde3f8181c603e2d34cdb71d3b36a9e05",
+      "test.log": "155d09842a0ab7e8b3ce52796de6d7a205ddafdfff92dea0f4f9012468c9d11c",
+      "execution.json": "7baeed9d5607ab273836e3a4183bfad2c23f04e62228c2f2b2795b26a057cdf4"
+    }
+  }
+]

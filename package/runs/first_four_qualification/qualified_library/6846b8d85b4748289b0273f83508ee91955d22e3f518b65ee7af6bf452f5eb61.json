@@ -1,0 +1,290 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "body_diode_25C",
+    "protocol": {
+      "temperature_C": 25,
+      "device_nodes": {
+        "D": "0",
+        "G": "S",
+        "S": "S"
+      },
+      "components": [
+        {
+          "kind": "I",
+          "name": "IDRIVE",
+          "nodes": [
+            "0",
+            "S"
+          ],
+          "value": {
+            "dc": 0
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "dc",
+        "source": "IDRIVE",
+        "start": 4.95,
+        "stop": 5.05,
+        "step": 0.005
+      },
+      "measurement": {
+        "mode": "sample",
+        "signal": "v(s)",
+        "at": 5
+      }
+    },
+    "expectation": {
+      "unit": "V",
+      "limits": {
+        "max": 1.2
+      },
+      "typical": 0.83,
+      "thresholds": {},
+      "typical_relative_tolerance_percent": 10
+    },
+    "contract": {
+      "fixed": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "D": "0",
+          "G": "S",
+          "S": "S"
+        },
+        "components": [
+          {
+            "kind": "I",
+            "name": "IDRIVE",
+            "nodes": [
+              "0",
+              "S"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "measurement": {
+          "mode": "sample",
+          "signal": "v(s)",
+          "at": 5
+        }
+      }
+    },
+    "evidence": [
+      "b72",
+      "p5"
+    ],
+    "origin": "migrated_existing_test",
+    "device": "BUK7K52-60E",
+    "input_folder": "BUK7K52-60E",
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/BUK7K52-60E/assets/6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc.lib",
+      "entry": "BUK7K52-60E",
+      "ports": [
+        "D",
+        "G",
+        "S"
+      ],
+      "declared_ports": [
+        "DRAIN",
+        "GATE",
+        "SOURCE"
+      ],
+      "sha256": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+      "provenance": {
+        "kind": "legacy_unverified",
+        "note": "继承旧试验模型；非厂商来源尚未证明"
+      }
+    },
+    "reference_ids": [
+      "parameter:vsd"
+    ],
+    "reference_evidence": [
+      {
+        "id": "parameter:vsd",
+        "label": "body_diode_forward_voltage",
+        "kind": "test",
+        "evidence": [
+          "b72",
+          "p5"
+        ],
+        "reference_evidence": {
+          "id": "vsd",
+          "key": "body_diode_forward_voltage",
+          "values": {
+            "typ": 0.83,
+            "max": 1.2
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; IS=5 A; VGS=0 V; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b72",
+            "p5"
+          ]
+        },
+        "reason": "已有规格测试绑定",
+        "bindings": [
+          "body_diode_25C"
+        ],
+        "binding_complete": false,
+        "legacy_bindings": [
+          {
+            "test_id": "body_diode_25C",
+            "expected": {
+              "kind": "body_diode",
+              "temperature_C": 25,
+              "current_A": 5,
+              "typical": 0.83,
+              "limits": {
+                "max": 1.2
+              }
+            }
+          }
+        ],
+        "pdf_pages": [
+          6
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding",
+        "source_record": {
+          "id": "parameter:vsd",
+          "label": "body_diode_forward_voltage",
+          "kind": "test",
+          "evidence": [
+            "b72",
+            "p5"
+          ],
+          "reference_evidence": {
+            "id": "vsd",
+            "key": "body_diode_forward_voltage",
+            "values": {
+              "typ": 0.83,
+              "max": 1.2
+            },
+            "unit": "V",
+            "conditions": "FET1 and FET2; IS=5 A; VGS=0 V; Tj=25°C",
+            "applies_to": [
+              "BUK7K52-60E"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b72",
+              "p5"
+            ]
+          },
+          "reason": "已有规格测试绑定",
+          "bindings": [
+            "body_diode_25C"
+          ],
+          "binding_complete": true,
+          "legacy_bindings": [
+            {
+              "test_id": "body_diode_25C",
+              "expected": {
+                "kind": "body_diode",
+                "temperature_C": 25,
+                "current_A": 5,
+                "typical": 0.83,
+                "limits": {
+                  "max": 1.2
+                }
+              }
+            }
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "plan_status": "existing_test_requires_scope_audit",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding"
+        },
+        "source_kind": "test",
+        "classification_review_pending": false,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "Migrated engineering circuit; qualified by GPT/Codex tooling",
+      "review": "One three-terminal FET instance; FET1/FET2 physical package binding remains pending"
+    },
+    "scope": "Single FET instance, original declared conditions; dual-package full coverage pending"
+  },
+  "receipt": {
+    "device": "BUK7K52-60E",
+    "id": "body_diode_25C",
+    "reference_ids": [
+      "parameter:vsd"
+    ],
+    "scope": "Single FET instance, original declared conditions; dual-package full coverage pending",
+    "authorship": {
+      "designer": "Migrated engineering circuit; qualified by GPT/Codex tooling",
+      "review": "One three-terminal FET instance; FET1/FET2 physical package binding remains pending"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+    "calibrations": [
+      {
+        "expected": 0.4,
+        "result": {
+          "value": 0.4
+        },
+        "error": 0.0,
+        "tolerance": 4e-05,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/d84fc6e1da73695f3357e803513d4a983e784be7f0ffc4d2698b022f3a6a5215",
+        "artifacts": {
+          "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+          "test.cir": "7e90937820aa4a60cae7461ad50d13aafc7e5deecf38904cf9e3c7a22b577629",
+          "test.raw": "860bf8e004b938be892a764c33d10dfcc5744123f8555b303191b079be82212d",
+          "test.log": "15cb6c62ba9e04d88cbb734e0017a88102bd67d0618d59cd8bab1ee2357a56e6",
+          "execution.json": "e308e8d8537c9d31cacabb18f209ca865cdca27c382ed37f071c5ddc9a7bea5e"
+        }
+      },
+      {
+        "expected": 0.8,
+        "result": {
+          "value": 0.8
+        },
+        "error": 0.0,
+        "tolerance": 8e-05,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/3a9b2daea8893281ec4381e4b782591185c49b1cc4de076ed6aaf19ab596b273",
+        "artifacts": {
+          "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+          "test.cir": "0f3bc3375a49b838f1365c7c12e1506f13624286df5df904d7caf3334e9809dd",
+          "test.raw": "f054137345b02b9f5ee690375fa0046a1b37a6632e4d5746c80f1542ec1ac22f",
+          "test.log": "773b5f46b5a5dfc25788f31201d126cd1c43814aa2295ca6fc1552cc792842c2",
+          "execution.json": "acccfa87efdf73a4a86982308bd2ade1ac14b2e30e0bb2d7fab5325f4cf8d949"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 0.8282543676376221
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/974bbabe44e271299415865425bc36bc6b491c4ae03edbd45cc61ae0eba587c8",
+      "artifacts": {
+        "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+        "test.cir": "806dba07c542cb6c601468c50e34c2ddae69fb7d3702db9ed3a1b1da17f2f8b4",
+        "test.raw": "4ba272e60d8f7115d54e3c2b7568031ce74214325b100bd6498d0f17eb8daead",
+        "test.log": "dc437b5f180dd6f0427d650b3d58ee5fbde047a3f7f585c51d38bfb05b6bb17b",
+        "execution.json": "621da3895e42395f527379e46f5093211d60bf29bd4b4338f681d728639ea345"
+      }
+    },
+    "protocol_sha256": "f7e6526a4dcbcc002f10d9d5714067bcec77e2e026d6d34d5a1e8bf15c362264"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

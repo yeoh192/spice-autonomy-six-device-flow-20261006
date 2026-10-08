@@ -1,0 +1,354 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "manual_igss_minus20",
+    "protocol": {
+      "temperature_C": 25,
+      "device_nodes": {
+        "D": "D",
+        "G": "G",
+        "S": "0"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VD",
+          "nodes": [
+            "D",
+            "0"
+          ],
+          "value": {
+            "dc": 0
+          }
+        },
+        {
+          "kind": "V",
+          "name": "VG",
+          "nodes": [
+            "G",
+            "0"
+          ],
+          "value": {
+            "dc": -20
+          }
+        },
+        {
+          "kind": "V",
+          "name": "VDUMMY",
+          "nodes": [
+            "UNUSED",
+            "0"
+          ],
+          "value": {
+            "dc": 0
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "dc",
+        "source": "VDUMMY",
+        "start": 0,
+        "stop": 1,
+        "step": 1
+      },
+      "measurement": {
+        "mode": "sample",
+        "at": 0,
+        "signal": "i(vg)",
+        "sign": -1,
+        "absolute": true
+      }
+    },
+    "expectation": {
+      "unit": "A",
+      "limits": {
+        "max": 1.0000000000000001e-07
+      },
+      "typical": 2e-09,
+      "thresholds": {},
+      "typical_relative_tolerance_percent": 10
+    },
+    "contract": {
+      "fixed": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "D": "D",
+          "G": "G",
+          "S": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VD",
+            "nodes": [
+              "D",
+              "0"
+            ],
+            "value": {
+              "dc": 0
+            }
+          },
+          {
+            "kind": "V",
+            "name": "VG",
+            "nodes": [
+              "G",
+              "0"
+            ],
+            "value": {
+              "dc": -20
+            }
+          },
+          {
+            "kind": "V",
+            "name": "VDUMMY",
+            "nodes": [
+              "UNUSED",
+              "0"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "measurement": {
+          "mode": "sample",
+          "at": 0,
+          "signal": "i(vg)",
+          "sign": -1,
+          "absolute": true
+        }
+      }
+    },
+    "evidence": [
+      "b63",
+      "p4"
+    ],
+    "origin": "migrated_existing_test",
+    "device": "BUK7K52-60E",
+    "input_folder": "BUK7K52-60E",
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/BUK7K52-60E/assets/6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc.lib",
+      "entry": "BUK7K52-60E",
+      "ports": [
+        "D",
+        "G",
+        "S"
+      ],
+      "declared_ports": [
+        "DRAIN",
+        "GATE",
+        "SOURCE"
+      ],
+      "sha256": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+      "provenance": {
+        "kind": "legacy_unverified",
+        "note": "继承旧试验模型；非厂商来源尚未证明"
+      }
+    },
+    "reference_ids": [
+      "parameter:igss_minus20"
+    ],
+    "reference_evidence": [
+      {
+        "id": "parameter:igss_minus20",
+        "label": "gate_leakage_current",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "igss_minus20",
+          "key": "gate_leakage_current",
+          "values": {
+            "typ": 2,
+            "max": 100
+          },
+          "unit": "nA",
+          "conditions": "FET1 and FET2; VGS=-20 V; VDS=0 V; Tj=25°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+        "bindings": [
+          "manual_igss_minus20"
+        ],
+        "binding_complete": false,
+        "legacy_bindings": [
+          {
+            "test_id": "manual_igss_minus20",
+            "expected": {
+              "kind": "leakage",
+              "temperature_C": 25,
+              "vds_V": 0,
+              "vgs_V": -20,
+              "limits": {
+                "max": 1.0000000000000001e-07
+              },
+              "typical": 2e-09,
+              "terminal": "gate"
+            }
+          }
+        ],
+        "series": {
+          "table": 7,
+          "row": "IGSS",
+          "gate_voltage_V": -20
+        },
+        "scope_review": "row_split_only_not_live_requalified",
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding",
+        "source_record": {
+          "id": "parameter:igss_minus20",
+          "label": "gate_leakage_current",
+          "kind": "test",
+          "evidence": [
+            "b63",
+            "p4"
+          ],
+          "reference_evidence": {
+            "id": "igss_minus20",
+            "key": "gate_leakage_current",
+            "values": {
+              "typ": 2,
+              "max": 100
+            },
+            "unit": "nA",
+            "conditions": "FET1 and FET2; VGS=-20 V; VDS=0 V; Tj=25°C",
+            "applies_to": [
+              "BUK7K52-60E"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b63",
+              "p4"
+            ]
+          },
+          "reason": "建模前已绑定现有生成器；实际验证尚未运行",
+          "bindings": [
+            "manual_igss_minus20"
+          ],
+          "binding_complete": true,
+          "legacy_bindings": [
+            {
+              "test_id": "manual_igss_minus20",
+              "expected": {
+                "kind": "leakage",
+                "temperature_C": 25,
+                "vds_V": 0,
+                "vgs_V": -20,
+                "limits": {
+                  "max": 1.0000000000000001e-07
+                },
+                "typical": 2e-09,
+                "terminal": "gate"
+              }
+            }
+          ],
+          "series": {
+            "table": 7,
+            "row": "IGSS",
+            "gate_voltage_V": -20
+          },
+          "scope_review": "row_split_only_not_live_requalified",
+          "pdf_pages": [
+            5
+          ],
+          "plan_status": "existing_test_requires_scope_audit",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding"
+        },
+        "source_kind": "test",
+        "classification_review_pending": false,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "Migrated engineering circuit; qualified by GPT/Codex tooling",
+      "review": "One three-terminal FET instance; FET1/FET2 physical package binding remains pending"
+    },
+    "scope": "Single FET instance, original declared conditions; dual-package full coverage pending"
+  },
+  "receipt": {
+    "device": "BUK7K52-60E",
+    "id": "manual_igss_minus20",
+    "reference_ids": [
+      "parameter:igss_minus20"
+    ],
+    "scope": "Single FET instance, original declared conditions; dual-package full coverage pending",
+    "authorship": {
+      "designer": "Migrated engineering circuit; qualified by GPT/Codex tooling",
+      "review": "One three-terminal FET instance; FET1/FET2 physical package binding remains pending"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+    "calibrations": [
+      {
+        "expected": 0.0004,
+        "result": {
+          "value": 0.0004
+        },
+        "error": 0.0,
+        "tolerance": 4e-08,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/03d3f61698c4170c1c8f2e1077fe18fff8053c402c894076f6d77843e7790db5",
+        "artifacts": {
+          "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+          "test.cir": "4934c790b60feece58ce446f70edf8265028391d685dbc9d09b996f5ae9966ce",
+          "test.raw": "a64e29cce96d7b6647509ec98c49d3687d112743200581bd4517fab37734eef5",
+          "test.log": "33609dc56ca35d303730684ff88bdda187f4e15dccde1e40f352125211a03876",
+          "execution.json": "570b360fbf124e87ae9ddca96c849a15ea3607969f014eddb19401357e5d57be"
+        }
+      },
+      {
+        "expected": 0.0008,
+        "result": {
+          "value": 0.0008
+        },
+        "error": 0.0,
+        "tolerance": 8e-08,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/0bf21bd9f057f8aedc5605c21bc90a32498a4caa15df668cc28f0ddeab7c48ad",
+        "artifacts": {
+          "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+          "test.cir": "bcb058864aa8de90fcf04f511f68c8a5c1ef3dda07eabbb72dc956ab3a2e16ec",
+          "test.raw": "a8e17d6706d95f852e1b60712c6eb32866c306c30a0ae5cf01d9afb4dc0d3915",
+          "test.log": "e34886c62a8f36ef3ffe0bde2db179c673be95d4d23246f2a724c27668375134",
+          "execution.json": "a06ef5e3222652337e53859254844689d111e01b442da4fee86513cf82e2c624"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 2.004526322707534e-09
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/9718037219bc088e28b9640200ca85a0fda5ff7ac9050502d31d907a2c27f4ef",
+      "artifacts": {
+        "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+        "test.cir": "7de26e615e89d456b2c553044c8ff0e9eb97bd54dcbac5e4ef4b279a4dbc6881",
+        "test.raw": "fa5c9ac80312cf3a9d70734f5c8c7c6110e60bdb4ca6e72d0934b02ac55e81ff",
+        "test.log": "a8ab54daf26761f4d64f8b44d3e9f67e2f2ce2a548a6ec70a4a62eb6984ca7dc",
+        "execution.json": "85f0e133390aa5afa329dec431c727e77a3054f98c7dadc7c857bb1be2227063"
+      }
+    },
+    "protocol_sha256": "a5686856edc14c40c6d908dcf994ed227d5b8308907717521b0bec7bb6600729"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

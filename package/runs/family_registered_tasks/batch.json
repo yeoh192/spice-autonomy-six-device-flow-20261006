@@ -13,12 +13,12 @@
     },
     {
       "device": "750311423",
-      "tests": 6,
+      "tests": 8,
       "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_registered_tasks/750311423/d3b5f88f3dde/task.json"
     },
     {
       "device": "1N4148",
-      "tests": 6,
+      "tests": 20,
       "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_registered_tasks/1N4148/18f8d0f50d7f/task.json"
     },
     {
@@ -30,8 +30,18 @@
       "device": "ACS723KMATR-20AB-T",
       "tests": 27,
       "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_registered_tasks/ACS723KMATR-20AB-T/91ed7b8d39fb/task.json"
+    },
+    {
+      "device": "BUK7K52-60E",
+      "tests": 65,
+      "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_registered_tasks/BUK7K52-60E/6fd866bf51c5/task.json"
+    },
+    {
+      "device": "EMHK350ARA470MF80G",
+      "tests": 1,
+      "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_registered_tasks/EMHK350ARA470MF80G/554812181594/task.json"
     }
   ],
-  "qualified_methods": 111,
+  "qualified_methods": 193,
   "full_manual_coverage": false
 }

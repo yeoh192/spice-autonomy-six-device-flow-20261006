@@ -230,10 +230,14 @@ def validate_protocol(protocol, model, contract=None):
         if "absolute" in m and not isinstance(m["absolute"], bool):
             raise Fault("proposal", "absolute需要布尔值")
         mode = m["mode"]
-        if mode not in ("sample", "curve", "ratio_curve", "capacitance", "integral_to_crossing", "dc_current_max", "dc_current_difference", "dc_slope", "dc_sensitivity_error_percent", "dc_linearity_percent") and mode not in ac_measurements.MODES:
+        if mode not in ("sample", "curve", "ratio_curve", "capacitance", "integral_to_crossing", "dc_current_max", "dc_current_difference", "dc_slope", "dc_sensitivity_error_percent", "dc_linearity_percent", "transient_peak", "transient_recovery") and mode not in ac_measurements.MODES:
             raise Fault("proposal", "测量解析接口未实现")
         if mode in ac_measurements.MODES:
             ac_measurements.validate(a, m, _signal)
+        elif mode in ("transient_peak", "transient_recovery"):
+            if a["kind"] != "tran" or not 0 <= finite(m["start_s"]) < finite(m["at"]) <= a["stop_s"]:raise Fault("proposal","Invalid transient window")
+            if mode == "transient_recovery":
+                if not m["signal"].lower().startswith("i(") or m.get("absolute") or m.get("sign",1)!=1 or m["target"]["signal"]!=m["signal"] or m["target"]["direction"]!="rising" or not finite(m["target"]["value"])<0:raise Fault("proposal","Recovery requires signed actual current and negative return threshold")
         elif mode == "ratio_curve":
             if a["kind"] != "dc" or not m["signal"].lower().startswith("v(") or not _signal(m["denominator"]).startswith("i("):
                 raise Fault("proposal", "电阻曲线必须为DC端口电压除以实际支路电流")
@@ -419,6 +423,10 @@ def measure(protocol, data, reference=None):
         if m["mode"] == "capacitance":
             value = sign * ys[0].imag / (2 * math.pi * a["frequency_Hz"]) * scale
             return {"value": value}
+        if m["mode"] in ("transient_peak","transient_recovery"):
+            from .transient_metrology import value
+            actual=[y.real*sign*(1 if m["mode"]=="transient_recovery" else scale) for y in ys]
+            return value(m,xs,actual,interpolate)
         ys = [y.real * sign * scale for y in ys]
         if m['mode'] in ('dc_slope','dc_sensitivity_error_percent','dc_linearity_percent'):
             from .dc_transfer import value
@@ -506,7 +514,7 @@ def validate_measurement_unit(case):
     units = {"V": ("V", 1), "mV": ("V", 1e-3), "A": ("A", 1), "mA": ("A", 1e-3),
              "uA": ("A", 1e-6), "μA": ("A", 1e-6), "µA": ("A", 1e-6), "nA": ("A", 1e-9), "F": ("F", 1), "pF": ("F", 1e-12), "nF": ("F", 1e-9),
              "C": ("C", 1), "nC": ("C", 1e-9), "uC": ("C", 1e-6), "ohm": ("ohm", 1), "Ω": ("ohm", 1), "mΩ": ("ohm", 1e-3)}
-    units.update({"uV":("V",1e-6),"μV":("V",1e-6),"pA":("A",1e-12),"uF":("F",1e-6),"μF":("F",1e-6),"H":("H",1),"uH":("H",1e-6),"μH":("H",1e-6),"1":("1",1),"dB":("dB",1),"degree":("degree",1),"mV/A":("V/A",1e-3),"%":("%",1)})
+    units.update({"uV":("V",1e-6),"μV":("V",1e-6),"pA":("A",1e-12),"uF":("F",1e-6),"μF":("F",1e-6),"H":("H",1),"uH":("H",1e-6),"μH":("H",1e-6),"s":("s",1),"ns":("s",1e-9),"1":("1",1),"dB":("dB",1),"degree":("degree",1),"mV/A":("V/A",1e-3),"%":("%",1)})
     if mode in ac_measurements.MODES and "at" not in m and "frequency_Hz" not in p["analysis"] and not case.get("reference"):
         raise Fault("missing_data", "交流频扫验收需要参考曲线或明确采样频率，不能以无阈值样本作为标量")
     if unit == "oracle_native":
@@ -519,7 +527,9 @@ def validate_measurement_unit(case):
         raise Fault("proposal", "电容/电荷必须测量电流，不能积分电压后冒充电荷")
     native = "F" if mode == "capacitance" else "C" if mode == "integral_to_crossing" and signal_dimension == "A" else signal_dimension
     expected_scale = 1 / factor
-    if mode in ac_measurements.MODES:
+    if mode == "transient_recovery":
+        native = "s"
+    elif mode in ac_measurements.MODES:
         native = ac_measurements.MODES[mode]
     if mode=='dc_slope':native='V/A'
     if mode in ('dc_sensitivity_error_percent','dc_linearity_percent'):native='%'

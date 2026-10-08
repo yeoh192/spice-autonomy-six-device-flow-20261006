@@ -5,6 +5,7 @@ mode="${1:---check-only}"
 python3 prepare_test_families.py --output runs/family_mapping
 python3 extend_static_families.py
 python3 extend_sensor_families.py
+python3 extend_first_four_bindings.py
 if [ "$mode" = "--run" ]; then
   if [ ! -f runs/family_qualification_corrected/summary.json ]; then
     python3 gpt_corrected_tests.py --catalog gpt_test_library/family_cases.json --output runs/family_qualification_corrected
@@ -16,6 +17,12 @@ if [ "$mode" = "--run" ]; then
       python3 gpt_corrected_tests.py --catalog "$catalog" --output "runs/${kind}_family_qualification"
     fi
   done
+  if [ ! -f runs/first_four_qualification/summary.json ]; then
+    python3 gpt_corrected_tests.py --catalog gpt_test_library/first_four_cases.json --output runs/first_four_qualification
+  fi
+  if [ ! -f runs/diode_dynamic_qualification/summary.json ]; then
+    python3 gpt_corrected_tests.py --catalog gpt_test_library/diode_dynamic_cases.json --output runs/diode_dynamic_qualification
+  fi
   output="runs/family_unified_$(date +%Y%m%d-%H%M%S)_$$"
   python3 run_gpt_registered_batch.py --families --output "$output"
 elif [ "$mode" = "--check-only" ]; then

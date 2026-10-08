@@ -1,0 +1,236 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "impedance_ratio_minus40_room_120Hz",
+    "reference_ids": [
+      "parameter:impedance_ratio_-40"
+    ],
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/gpt_test_library/comparison_models/cap_cold_room.lib",
+      "entry": "COMPARISON_CAP",
+      "declared_ports": [
+        "P20",
+        "N20",
+        "PCOLD",
+        "NCOLD"
+      ],
+      "ports": [
+        "P20",
+        "N20",
+        "PCOLD",
+        "NCOLD"
+      ],
+      "sha256": "5548121815949d1d7718d1b7c57d0c631f7c9725b216a69456906152f2ecd491",
+      "provenance": {
+        "kind": "vendor_reference_only",
+        "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+        "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+        "note": "Reference interface benchmark only; prohibited as selected modeling template"
+      }
+    },
+    "protocol": {
+      "temperature_C": 20,
+      "device_nodes": {
+        "P20": "P20",
+        "N20": "0",
+        "PCOLD": "PCOLD",
+        "NCOLD": "0"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VROOM",
+          "nodes": [
+            "P20",
+            "0"
+          ],
+          "value": {
+            "dc": 0,
+            "ac": 0.1
+          }
+        },
+        {
+          "kind": "V",
+          "name": "VCOLD",
+          "nodes": [
+            "PCOLD",
+            "0"
+          ],
+          "value": {
+            "dc": 0,
+            "ac": 0.1
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "ac",
+        "frequency_Hz": 120
+      },
+      "measurement": {
+        "mode": "ac_current_ratio",
+        "signal": "i(vroom)",
+        "denominator": "i(vcold)"
+      },
+      "checks": []
+    },
+    "expectation": {
+      "unit": "1",
+      "limits": {
+        "max": 3
+      }
+    },
+    "review_status": "independent_agent_review_required",
+    "delivery_eligible": false,
+    "scope_note": "Ratio of distinct vendor -40°C and20°C subcircuits under equal100mV excitation; no temperature interpolation",
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "model_role": "reference_interface_benchmark_only",
+    "device": "EMHK350ARA470MF80G",
+    "input_folder": "EMHK350ARA470MF80G",
+    "reference_evidence": [
+      {
+        "id": "parameter:impedance_ratio_-40",
+        "kind": "test",
+        "applicable": true,
+        "reference_evidence": {
+          "id": "impedance_ratio_-40",
+          "key": "impedance_ratio",
+          "values": {
+            "max": 3
+          },
+          "unit": "1",
+          "conditions": "Z(-40°C)/Z(20°C); 120 Hz",
+          "applies_to": [
+            "EMHK350ARA470MF80G"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b4",
+            "p0"
+          ]
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          1
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "temperature_impedance_ratio",
+        "capability_status": "adapter_or_contract_pending",
+        "source_record": {
+          "id": "parameter:impedance_ratio_-40",
+          "kind": "test_or_constraint_pending_classification",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "impedance_ratio_-40",
+            "key": "impedance_ratio",
+            "values": {
+              "max": 3
+            },
+            "unit": "1",
+            "conditions": "Z(-40°C)/Z(20°C); 120 Hz",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b4",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "temperature_impedance_ratio",
+          "capability_status": "adapter_or_contract_pending"
+        },
+        "source_kind": "test_or_constraint_pending_classification",
+        "label": "impedance_ratio",
+        "evidence": [
+          "b4",
+          "p0"
+        ],
+        "classification_review_pending": true,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "Local source, topology and measurement review; no claim of GLM approval"
+    },
+    "scope": "Exact-condition method only; manual ranges, dual-instance and complete curve coverage remain open"
+  },
+  "receipt": {
+    "device": "EMHK350ARA470MF80G",
+    "id": "impedance_ratio_minus40_room_120Hz",
+    "reference_ids": [
+      "parameter:impedance_ratio_-40"
+    ],
+    "scope": "Exact-condition method only; manual ranges, dual-instance and complete curve coverage remain open",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "Local source, topology and measurement review; no claim of GLM approval"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "5548121815949d1d7718d1b7c57d0c631f7c9725b216a69456906152f2ecd491",
+    "calibrations": [
+      {
+        "expected": 1,
+        "result": {
+          "value": 1.0
+        },
+        "error": 0.0,
+        "tolerance": 0.0001,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/24946354bef57930cc8e0f4113d47c517eb74ec98002714ee531c80236b2eca4",
+        "artifacts": {
+          "model.lib": "5548121815949d1d7718d1b7c57d0c631f7c9725b216a69456906152f2ecd491",
+          "test.cir": "cf26d4ba88acac6443bc2d1f4da9784ed29de4a610cfb02e0daec7391917bae6",
+          "test.raw": "2ad8149f66cc660fb80da6b7a7c87d558548a6e513c1a08610c6004292e877c6",
+          "test.log": "8468090886435ced1c82b37c54b45d9c52cbb9c90b11ba9a6355fcee5563c70a",
+          "execution.json": "9d8185e536acaf00cec597c4ca39d2f09227dd1029e5cc025f5ad10dd34de3b6"
+        }
+      },
+      {
+        "expected": 2,
+        "result": {
+          "value": 2.0
+        },
+        "error": 0.0,
+        "tolerance": 0.0002,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/7ff4bc49370b2a3a846c2d3808af59799065f35582f4fd0ede2cfd38e9362dd9",
+        "artifacts": {
+          "model.lib": "5548121815949d1d7718d1b7c57d0c631f7c9725b216a69456906152f2ecd491",
+          "test.cir": "fd98393cd1fe17cdde62b32d1c06a5d09628bb0f76f7ad514f8ecdb7f8cbc7fd",
+          "test.raw": "1923cdf6c56b89f80e9e89c693e79514229d110b43cfc925e16286997b04de3b",
+          "test.log": "9ef67aa61275a024fc27d8cb5059b3787d2818de438941a5fc4ed1b7d16dabbe",
+          "execution.json": "924c0d87623cd198e693ceb616c1b4d54081f2f0f90c87d1f82f10db6fb91545"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 1.1464670261438463
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/5cb5ac35b9dddfa78c31ce12825ad9a53292ba3835c64219cb9e1c531d3e7106",
+      "artifacts": {
+        "model.lib": "5548121815949d1d7718d1b7c57d0c631f7c9725b216a69456906152f2ecd491",
+        "test.cir": "35cd9d3974bbc0a644eac620641f5a888228a8ee3a51b300bae366962f17168b",
+        "test.raw": "d91f24794acb716a8e73593166d7147b8da36534dbce8070471c93ef8fdb1632",
+        "test.log": "e934c8c520a4c0180f6fc823569ffdd8974494991911a077a40c7219a1b7e3fc",
+        "execution.json": "54c84a6935e3de54748a8fe5e6c6bfd7b6842da58176dd37c531a211a5aaddc2"
+      }
+    },
+    "protocol_sha256": "a08c32f015857a14c02622467af22cde260c846ce8c614b06332fe0322d37e5c"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

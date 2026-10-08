@@ -1,0 +1,9 @@
+Declarative SPICE workflow circuit
+.options plotwinsize=0
+.temp 25
+.options method=trap
+IORACLE P 0 PWL(0 0.01 4.0000000000000002e-09 0.01 6e-09 -0.01 8.0000000000000005e-09 -0.01 1.6000000000000001e-08 0 2e-08 0)
+RCAL P 0 1000
+.tran 0 2e-08 0 9.9999999999999994e-12
+.save i(ioracle)
+.end

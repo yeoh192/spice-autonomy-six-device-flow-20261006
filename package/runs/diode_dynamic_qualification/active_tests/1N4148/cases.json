@@ -1,0 +1,211 @@
+{
+  "device": "1N4148",
+  "cases": [
+    {
+      "id": "reverse_recovery_10mA_60mA_100ohm",
+      "protocol": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "A": "A",
+          "K": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VSW",
+            "nodes": [
+              "DRIVE",
+              "0"
+            ],
+            "value": {
+              "pwl": [
+                [
+                  0,
+                  1.741494841604204
+                ],
+                [
+                  2e-07,
+                  1.741494841604204
+                ],
+                [
+                  2.001e-07,
+                  -5.258505158395796
+                ],
+                [
+                  5e-07,
+                  -5.258505158395796
+                ]
+              ]
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RLOAD",
+            "nodes": [
+              "DRIVE",
+              "PROBE"
+            ],
+            "value": 100
+          },
+          {
+            "kind": "V",
+            "name": "VSENSE",
+            "nodes": [
+              "PROBE",
+              "A"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "tran",
+          "stop_s": 5e-07,
+          "max_step_s": 1e-11
+        },
+        "measurement": {
+          "mode": "transient_recovery",
+          "signal": "i(vsense)",
+          "start_s": 1.99e-07,
+          "at": 5e-07,
+          "scale": 1000000000.0,
+          "target": {
+            "signal": "i(vsense)",
+            "value": -0.001,
+            "direction": "rising"
+          }
+        },
+        "checks": [
+          {
+            "signal": "i(vsense)",
+            "from": 1.9e-07,
+            "to": 1.99e-07,
+            "min": 0.00999,
+            "max": 0.01001
+          },
+          {
+            "signal": "i(vsense)",
+            "from": 2.001e-07,
+            "to": 2.001e-07,
+            "min": -0.061,
+            "max": -0.059
+          }
+        ]
+      },
+      "expectation": {
+        "unit": "ns",
+        "limits": {
+          "max": 4
+        }
+      },
+      "reference_ids": [
+        "parameter:trr"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+        "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "entry": "LEAKAGE_FITTED_1N4148",
+        "declared_ports": [
+          "A",
+          "K"
+        ],
+        "ports": [
+          "A",
+          "K"
+        ],
+        "provenance": {
+          "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+          "not_new_index_selection": true
+        }
+      },
+      "device": "1N4148",
+      "input_folder": "1N4148",
+      "reference_evidence": [
+        {
+          "id": "parameter:trr",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "trr",
+            "key": "reverse_recovery_time",
+            "values": {
+              "max": 4
+            },
+            "unit": "ns",
+            "conditions": "IF=10 mA to IR=60 mA; RL=100 Ω; measured at IR=1 mA; Tj=25°C",
+            "applies_to": [
+              "1N4148"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b35",
+              "b36",
+              "p2"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            3
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "transient_timing",
+          "capability_status": "adapter_or_contract_pending",
+          "source_record": {
+            "id": "parameter:trr",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "trr",
+              "key": "reverse_recovery_time",
+              "values": {
+                "max": 4
+              },
+              "unit": "ns",
+              "conditions": "IF=10 mA to IR=60 mA; RL=100 Ω; measured at IR=1 mA; Tj=25°C",
+              "applies_to": [
+                "1N4148"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b35",
+                "b36",
+                "p2"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              3
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "transient_timing",
+            "capability_status": "adapter_or_contract_pending"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "reverse_recovery_time",
+          "evidence": [
+            "b35",
+            "b36",
+            "p2"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "Local source, topology and measurement review; no claim of GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "Exact-condition method only; manual ranges, dual-instance and complete curve coverage remain open",
+      "scope_note": "Actual pre-edge10mA and reverse-edge60mA bias checks mandatory; duration from zero crossing to rising-1mA return threshold"
+    }
+  ],
+  "full_manual_coverage": false,
+  "origin": "GPT authored and real calibrated; registered for exact-condition regression"
+}

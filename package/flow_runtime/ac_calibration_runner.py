@@ -10,7 +10,9 @@ MODEL = {"entry": "Oracle", "ports": ["P", "N"], "declared_ports": ["P", "N"]}
 
 def fixtures():
     rows = []
+    # Preserve the existing20-fixture calibration suite; ratio methods qualify their own two physical oracles.
     for mode in MODES:
+        if mode in ("ac_current_ratio","ac_reactance_ratio"):continue
         for n, (p, expected) in enumerate(protocols(mode), 1):
             rows.append({"id": mode + "_" + str(n), "protocol": p, "expected": expected})
     p, expected = protocols("ac_series_capacitance")[0]

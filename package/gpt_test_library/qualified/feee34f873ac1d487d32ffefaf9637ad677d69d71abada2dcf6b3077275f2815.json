@@ -1,0 +1,315 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "manual_breakdown_55",
+    "protocol": {
+      "temperature_C": -55.0,
+      "device_nodes": {
+        "D": "D",
+        "G": "G",
+        "S": "0"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VG",
+          "nodes": [
+            "G",
+            "0"
+          ],
+          "value": {
+            "dc": 0
+          }
+        },
+        {
+          "kind": "I",
+          "name": "IDRIVE",
+          "nodes": [
+            "0",
+            "D"
+          ],
+          "value": {
+            "dc": 0
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "dc",
+        "source": "IDRIVE",
+        "start": 0.0002475,
+        "stop": 0.0002525,
+        "step": 2.5e-07
+      },
+      "measurement": {
+        "mode": "sample",
+        "signal": "v(d)",
+        "at": 0.00025
+      }
+    },
+    "expectation": {
+      "unit": "V",
+      "limits": {
+        "min": 54
+      },
+      "typical": null,
+      "thresholds": {}
+    },
+    "contract": {
+      "fixed": {
+        "temperature_C": -55.0,
+        "device_nodes": {
+          "D": "D",
+          "G": "G",
+          "S": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VG",
+            "nodes": [
+              "G",
+              "0"
+            ],
+            "value": {
+              "dc": 0
+            }
+          },
+          {
+            "kind": "I",
+            "name": "IDRIVE",
+            "nodes": [
+              "0",
+              "D"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "measurement": {
+          "mode": "sample",
+          "signal": "v(d)",
+          "at": 0.00025
+        }
+      }
+    },
+    "evidence": [
+      "b63",
+      "p4"
+    ],
+    "origin": "migrated_existing_test",
+    "device": "BUK7K52-60E",
+    "input_folder": "BUK7K52-60E",
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/BUK7K52-60E/assets/6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc.lib",
+      "entry": "BUK7K52-60E",
+      "ports": [
+        "D",
+        "G",
+        "S"
+      ],
+      "declared_ports": [
+        "DRAIN",
+        "GATE",
+        "SOURCE"
+      ],
+      "sha256": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+      "provenance": {
+        "kind": "legacy_unverified",
+        "note": "继承旧试验模型；非厂商来源尚未证明"
+      }
+    },
+    "reference_ids": [
+      "parameter:breakdown-55"
+    ],
+    "reference_evidence": [
+      {
+        "id": "parameter:breakdown-55",
+        "label": "drain_source_breakdown_voltage",
+        "kind": "test",
+        "evidence": [
+          "b63",
+          "p4"
+        ],
+        "reference_evidence": {
+          "id": "breakdown-55",
+          "key": "drain_source_breakdown_voltage",
+          "values": {
+            "min": 54
+          },
+          "unit": "V",
+          "conditions": "FET1 and FET2; ID=250 μA; VGS=0 V; Tj=-55°C",
+          "applies_to": [
+            "BUK7K52-60E"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b63",
+            "p4"
+          ]
+        },
+        "reason": "已完成击穿下限验证，并接入统一回归；不证明温度曲线拟合。",
+        "bindings": [
+          "manual_breakdown_55"
+        ],
+        "binding_complete": false,
+        "legacy_bindings": [
+          {
+            "test_id": "manual_breakdown_55",
+            "expected": {
+              "current_A": 0.00025,
+              "temperature_C": -55.0,
+              "fixed_gate_source_V": 0,
+              "measurement": "v(d)",
+              "unit": "V",
+              "limits": {
+                "min": 54
+              },
+              "typical": null,
+              "kind": "dc_current_voltage"
+            }
+          }
+        ],
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "existing_test_requires_scope_audit",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding",
+        "source_record": {
+          "id": "parameter:breakdown-55",
+          "label": "drain_source_breakdown_voltage",
+          "kind": "test",
+          "evidence": [
+            "b63",
+            "p4"
+          ],
+          "reference_evidence": {
+            "id": "breakdown-55",
+            "key": "drain_source_breakdown_voltage",
+            "values": {
+              "min": 54
+            },
+            "unit": "V",
+            "conditions": "FET1 and FET2; ID=250 μA; VGS=0 V; Tj=-55°C",
+            "applies_to": [
+              "BUK7K52-60E"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b63",
+              "p4"
+            ]
+          },
+          "reason": "已完成击穿下限验证，并接入统一回归；不证明温度曲线拟合。",
+          "bindings": [
+            "manual_breakdown_55"
+          ],
+          "binding_complete": true,
+          "legacy_bindings": [
+            {
+              "test_id": "manual_breakdown_55",
+              "expected": {
+                "current_A": 0.00025,
+                "temperature_C": -55.0,
+                "fixed_gate_source_V": 0,
+                "measurement": "v(d)",
+                "unit": "V",
+                "limits": {
+                  "min": 54
+                },
+                "typical": null,
+                "kind": "dc_current_voltage"
+              }
+            }
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "plan_status": "existing_test_requires_scope_audit",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding"
+        },
+        "source_kind": "test",
+        "classification_review_pending": false,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "Migrated engineering circuit; qualified by GPT/Codex tooling",
+      "review": "One three-terminal FET instance; FET1/FET2 physical package binding remains pending"
+    },
+    "scope": "Single FET instance, original declared conditions; dual-package full coverage pending"
+  },
+  "receipt": {
+    "device": "BUK7K52-60E",
+    "id": "manual_breakdown_55",
+    "reference_ids": [
+      "parameter:breakdown-55"
+    ],
+    "scope": "Single FET instance, original declared conditions; dual-package full coverage pending",
+    "authorship": {
+      "designer": "Migrated engineering circuit; qualified by GPT/Codex tooling",
+      "review": "One three-terminal FET instance; FET1/FET2 physical package binding remains pending"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+    "calibrations": [
+      {
+        "expected": 0.4,
+        "result": {
+          "value": 0.4
+        },
+        "error": 0.0,
+        "tolerance": 4e-05,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/74d705e07fe30cb231e62aedf5fc1e29e817a852eff02b5f752e621a6206f82c",
+        "artifacts": {
+          "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+          "test.cir": "e518421f42220bccc86d75fee20ec20e0e34975d5c93b35b17bf61cf9330b539",
+          "test.raw": "036edba61a8e6d49c3e6edeb9ae23a98a1816d196546447c569685040ec63a36",
+          "test.log": "daed01a7522fd80ba441feeb816c04eb53ac4efd591eed56f9666675a97ca302",
+          "execution.json": "0044ed28f3f65ecaacb8a1e24ab8f6bfbe8ca3765139d948cda859aa2aba8007"
+        }
+      },
+      {
+        "expected": 0.8,
+        "result": {
+          "value": 0.8
+        },
+        "error": 0.0,
+        "tolerance": 8e-05,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/ad110d3466ef0ea560588092daafeefdad82f304f3a55d6f6b5bb22b73c1c366",
+        "artifacts": {
+          "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+          "test.cir": "53f1aeb19be79e4215d6abf5ffb0b18d7d1259e0bd5db4daa0c951c34f8bfd54",
+          "test.raw": "cb5ef2fb36758497c8814f4a5942c3c07c864c81aa49fcc40b36a1e734897bb2",
+          "test.log": "fb8a27ea8ef09ebe80e87fc7ae6c08369b137d7b807b36291147de7e181428a4",
+          "execution.json": "742231f6f3b1a35ccd88d903e15eb65db5b0beca2cc6976c05bc16b0e733a304"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 66.00000044981634
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/dc43a046f90b5ae45cf78be2fb23b226fb6940a5b14705a4eb39a0a5a9de362b",
+      "artifacts": {
+        "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+        "test.cir": "202ece8cf442e300ec3ff775fafcc75e4fb7eac9773c0493ad811e7088d93939",
+        "test.raw": "f80a6995bee451951c49f42209236a63919b62717770ba0a03c376a518753fbe",
+        "test.log": "cf51b2666e0dbcfd252b0fb59753f1c2bc5c7039892a61c404cdf88c3e0bc6cb",
+        "execution.json": "704accb581b3e16b285a2acd98e373c32f9ee4eff0eda59a1af904e36ba3a941"
+      }
+    },
+    "protocol_sha256": "b8dabafe7687e89097722f6cb5d52376bcd011a3516d410c22e9ce385a065960"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

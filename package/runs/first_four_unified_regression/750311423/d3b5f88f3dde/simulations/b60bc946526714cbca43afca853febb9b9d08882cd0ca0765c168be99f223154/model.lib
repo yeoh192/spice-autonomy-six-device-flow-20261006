@@ -1,0 +1,24 @@
+.subckt	750311423		3  5  2  1  6  9		
+.param RxLkg=966.74ohm					
+.param Leakage=0.6uh					
+Rlkg	3	3a	{RxLkg}		
+L_Lkg	3	3a	{Leakage}	Rser=0.01mohm	
+Lpri1	3a	5	49.4uH	Rser=90mohm	
+Laux1	2	1	12.5uH	Rser=205mohm	
+Lsec1	6	9	3.125uH	Rser=12mohm	
+K Lpri1  Laux1  Lsec1        1					
+.param Cprm1=19.26pf					
+.param Rdmp1=80561.43ohm					
+Cpri1	3	5	{Cprm1}	Rser=10mohm	
+Rdmp1	3	5	{Rdmp1}		
+Rg3	3	0	20meg		
+Rg5	2	0	20meg		
+Rg7	5	0	20meg		
+Rg9	1	0	20meg		
+Rg11	6	0	20meg		
+Rg19	9	0	20meg		
+.ends					
+
+.subckt REFERENCE_XFMR P1 N1 P3 N3 P2 N2
+XREF P1 N1 P3 N3 P2 N2 750311423
+.ends REFERENCE_XFMR

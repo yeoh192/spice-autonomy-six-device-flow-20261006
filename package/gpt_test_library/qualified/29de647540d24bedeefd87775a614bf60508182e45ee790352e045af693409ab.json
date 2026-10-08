@@ -1,0 +1,214 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "figure_11_vgs_6_g6p0_i10",
+    "protocol": {
+      "temperature_C": 25,
+      "device_nodes": {
+        "D": "D",
+        "G": "G",
+        "S": "0"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VG",
+          "nodes": [
+            "G",
+            "0"
+          ],
+          "value": {
+            "dc": 6.0
+          }
+        },
+        {
+          "kind": "I",
+          "name": "IDRIVE",
+          "nodes": [
+            "0",
+            "D"
+          ],
+          "value": {
+            "dc": 0
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "dc",
+        "source": "IDRIVE",
+        "start": 9.9,
+        "stop": 10.1,
+        "step": 0.01
+      },
+      "measurement": {
+        "mode": "sample",
+        "signal": "v(d)",
+        "at": 10,
+        "scale": 100.0
+      }
+    },
+    "expectation": {
+      "unit": "mΩ",
+      "limits": {}
+    },
+    "evidence": [],
+    "origin": "migrated_existing_test",
+    "device": "BUK7K52-60E",
+    "input_folder": "BUK7K52-60E",
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/BUK7K52-60E/assets/6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc.lib",
+      "entry": "BUK7K52-60E",
+      "ports": [
+        "D",
+        "G",
+        "S"
+      ],
+      "declared_ports": [
+        "DRAIN",
+        "GATE",
+        "SOURCE"
+      ],
+      "sha256": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+      "provenance": {
+        "kind": "legacy_unverified",
+        "note": "继承旧试验模型；非厂商来源尚未证明"
+      }
+    },
+    "reference_ids": [
+      "figure:11:vgs_6"
+    ],
+    "reference_evidence": [
+      {
+        "id": "figure:11:vgs_6",
+        "label": "resistance_current_curve",
+        "kind": "test",
+        "evidence": [
+          "PDF Fig.11"
+        ],
+        "reference_evidence": {
+          "key": "resistance_current_curve",
+          "values": {},
+          "unit": "mΩ",
+          "conditions": "Tj=25°C; VGS=6 V"
+        },
+        "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+        "bindings": [],
+        "binding_complete": false,
+        "legacy_bindings": [],
+        "series": {
+          "gate_voltage_V": 6
+        },
+        "pdf_pages": [],
+        "reference_status": "digitization_or_series_review_required",
+        "plan_status": "test_development_required",
+        "method_family": "dc_resistance",
+        "capability_status": "existing_primitive_requires_fixture_binding",
+        "source_record": {
+          "id": "figure:11:vgs_6",
+          "label": "resistance_current_curve",
+          "kind": "test",
+          "evidence": [
+            "PDF Fig.11"
+          ],
+          "reference_evidence": {
+            "key": "resistance_current_curve",
+            "values": {},
+            "unit": "mΩ",
+            "conditions": "Tj=25°C; VGS=6 V"
+          },
+          "reason": "逐系列登记；仍需数字化数据、条件/测量核验与实际执行",
+          "bindings": [],
+          "binding_complete": false,
+          "legacy_bindings": [],
+          "series": {
+            "gate_voltage_V": 6
+          },
+          "pdf_pages": [],
+          "reference_status": "digitization_or_series_review_required",
+          "plan_status": "test_development_required",
+          "method_family": "dc_resistance",
+          "capability_status": "existing_primitive_requires_fixture_binding"
+        },
+        "source_kind": "test",
+        "classification_review_pending": false,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "Local source, topology and measurement review; no claim of GLM approval"
+    },
+    "scope": "Exact-condition method only; manual ranges, dual-instance and complete curve coverage remain open",
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "scope_note": "Reference digitization missing in input for this series; measurements register only partial method availability, never curve acceptance"
+  },
+  "receipt": {
+    "device": "BUK7K52-60E",
+    "id": "figure_11_vgs_6_g6p0_i10",
+    "reference_ids": [
+      "figure:11:vgs_6"
+    ],
+    "scope": "Exact-condition method only; manual ranges, dual-instance and complete curve coverage remain open",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "Local source, topology and measurement review; no claim of GLM approval"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+    "calibrations": [
+      {
+        "expected": 40.0,
+        "result": {
+          "value": 40.0
+        },
+        "error": 0.0,
+        "tolerance": 0.004,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/b5a8f74967dbcf0c515e4778c983e1306b013a7969febd87bbeebd49b79dec36",
+        "artifacts": {
+          "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+          "test.cir": "e60087e77bda5023f76ec5f415293e143b75569fde2d78324db29d2b7a0e3d9a",
+          "test.raw": "953dd50ebe70baf31800f5ae3c43e58b756d1df9940c9df25a19f3bc98b71ab1",
+          "test.log": "fb888ee171865a788e06689022f2eaecc4830361ea13443ca1b5e2b782ccc64f",
+          "execution.json": "fc224ede97f726ed8402da4b15303944dfc21dcccf8dfe60bb29d75c43e81a72"
+        }
+      },
+      {
+        "expected": 80.0,
+        "result": {
+          "value": 80.0
+        },
+        "error": 0.0,
+        "tolerance": 0.008,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/ea45def2c70223c7c346e2cd72dcc10d8dc37076949c39d525c86819680c68a2",
+        "artifacts": {
+          "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+          "test.cir": "036024f9eabd82f0ac2623fc716c71e466731ce249cc6b8eea1b4b96a6424638",
+          "test.raw": "9464d10fe5e2893d485dd639c784330d7a62dc1a63189e69587dff37b86f63eb",
+          "test.log": "f0359fbdbe26e3a0cc497038471e1e2e8508cafb48f32414f671de87bea921e5",
+          "execution.json": "41d5cc74469d1d14633e8bf82caf2b7a9606e33e116dbebcb3af77a8f7c12e76"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 62.81873315037592
+      },
+      "acceptance": "pending",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/5db6ad720342616c1aa3e15bc51d9a55ffcb897eb742f2115e11e3406247bc9d",
+      "artifacts": {
+        "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+        "test.cir": "9cc9f6f9e3ae298df6d4cc5083e56810a8c28c1233546b81f66495834cebcbed",
+        "test.raw": "fdbf7cebf70e9b6bb23a57b8cae18fe01f67e7d5cdbfbf97bb8621377835209c",
+        "test.log": "c3a5606afb502d21b9320b6ee2a9029300d5cb3dad81b7dd720dfa41b05a112d",
+        "execution.json": "4cc568607c41d0bbed9c11487e270a1b944cd2095a14b874ea4cbbb259a73509"
+      }
+    },
+    "protocol_sha256": "3d356ec20155141f8c320c5026fdaf3b86fdd90c4be8df4b722d132279fbc828"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

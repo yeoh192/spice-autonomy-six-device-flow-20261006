@@ -39,6 +39,7 @@ def counts(inventory):
     methods = [i for i in tests if i.get('method_binding_complete') and i.get('coverage_receipt')]
     return {'records': len(items), 'test_records': len(tests),
             'configured_binding_records': sum(bool(i.get('bindings')) for i in tests),
+            'available_method_binding_records': sum(bool(i.get('bindings') or i.get('method_bindings')) for i in tests),
             'configured_binding_pending': sum(bool(i.get('bindings')) and not i.get('binding_complete') for i in tests),
             'tests_without_method': sum(not i.get('bindings') and not i.get('method_bindings') and not i.get('method_binding_complete') for i in tests),
             'partial_method_records': sum(bool(i.get('method_bindings')) and not i.get('method_binding_complete') for i in tests),

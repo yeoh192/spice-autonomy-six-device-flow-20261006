@@ -1,0 +1,65 @@
+{
+  "tests": 20,
+  "missing": [
+    "parameter:vf10",
+    "parameter:ir25",
+    "parameter:ir150",
+    "parameter:cd",
+    "parameter:trr",
+    "parameter:vfr",
+    "parameter:rthtp",
+    "parameter:rtha",
+    "figure:fig3:typ_175C",
+    "figure:fig3:typ_25C",
+    "figure:fig5:vr75",
+    "figure:fig5:vr20",
+    "figure:fig6:capacitance"
+  ],
+  "constraints": [
+    "parameter:vrrm",
+    "parameter:vr",
+    "parameter:if",
+    "parameter:ifrm",
+    "parameter:p",
+    "parameter:tj",
+    "parameter:ifsm_1 μs",
+    "parameter:ifsm_1 ms",
+    "parameter:ifsm_1 s",
+    "parameter:tstg",
+    "figure:fig2:max_if",
+    "figure:fig3:max_25C",
+    "figure:fig4:surge"
+  ],
+  "inventory_review": "page_anchored_inventory_expanded_series_and_footnote_review_pending",
+  "interfaces": {
+    "circuit": "R/C/L, independent V/I (DC/AC/PWL), numeric diode and voltage-controlled release switch fixtures, one DUT with task-defined pins",
+    "analysis": "DC sweep, single-frequency or bounded linear AC sweep, transient",
+    "measurement": "sample, dc_current_max (max absolute input current), dc_current_difference (actual probe difference), dc_slope, dc_sensitivity_error_percent, dc_linearity_percent, curve, ratio_curve (actual V/I), capacitance, complex V/I impedance/ESR/C/L/loss and voltage-ratio gain/dB/phase, integral_to_crossing with explicit integration start and target",
+    "forbidden": "arbitrary Python/shell, external model files, changes to immutable reference/acceptance/ports"
+  },
+  "model_provenance": {
+    "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+    "not_new_index_selection": true
+  },
+  "budgets": {
+    "api_calls": 0,
+    "simulations": 40,
+    "repairs": 0,
+    "seconds": 1800
+  },
+  "needs_structured_contract": [
+    "parameter:vf10",
+    "parameter:ir25",
+    "parameter:ir150",
+    "parameter:cd",
+    "parameter:trr",
+    "parameter:vfr",
+    "parameter:rthtp",
+    "parameter:rtha",
+    "figure:fig3:typ_175C",
+    "figure:fig3:typ_25C",
+    "figure:fig5:vr75",
+    "figure:fig5:vr20",
+    "figure:fig6:capacitance"
+  ]
+}

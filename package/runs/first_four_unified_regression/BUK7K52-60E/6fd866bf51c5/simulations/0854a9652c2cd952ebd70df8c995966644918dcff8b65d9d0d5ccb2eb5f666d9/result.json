@@ -1,0 +1,35 @@
+{
+  "value": 2.105648212370182,
+  "test": "figure_10_typ_t175",
+  "execution": "completed",
+  "acceptance": "pending",
+  "model_sha256": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+  "protocol_sha256": "acee864ca1728fa32ff864be0550878e3b11abe05e469dc456ac49dfaa7df6f6",
+  "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_unified_regression/BUK7K52-60E/6fd866bf51c5/simulations/0854a9652c2cd952ebd70df8c995966644918dcff8b65d9d0d5ccb2eb5f666d9",
+  "unit": "V",
+  "artifact_hashes": {
+    "model.lib": "6fd866bf51c59c7ee1c369bef495ea5cd4b4931a6c91dc61fb6f31473c2d5cdc",
+    "test.cir": "1d19b14ed9980c377bc77849063ce67f1ee37f4de9c86ef45323c63329880f6d",
+    "test.raw": "bc2872c45bf5346e4ccded30929360b04791449f95af80ddfcd1b1d7e3bde871",
+    "test.log": "21f6e81949d26bc5d1ed1066a01fdca7a66992fda18ab871f73005d288e66f81",
+    "execution.json": "9def9d0a1f89ce41091414617c3c39e6fa1c4cd36f73e23265e3bf8c5e4ed3cd"
+  },
+  "raw_normalization": {
+    "raw_points": 22,
+    "parsed_points": 21,
+    "normalizations": [
+      {
+        "kind": "dc_terminal_duplicate",
+        "axis": 0.00101,
+        "source_indices": [
+          20,
+          21
+        ],
+        "kept_source_index": 21,
+        "max_absolute_signal_difference": 2.5788093762635356e-06,
+        "relative_consistency_tolerance": 1e-05,
+        "absolute_consistency_tolerance": 1e-15
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "tests": 3,
+  "missing": [
+    "parameter:cap",
+    "parameter:cap_tolerance",
+    "parameter:leakage",
+    "parameter:df",
+    "parameter:impedance_ratio_-25",
+    "parameter:impedance_ratio_-40",
+    "parameter:esr20",
+    "parameter:esr-40"
+  ],
+  "constraints": [
+    "parameter:rated_voltage",
+    "parameter:temperature",
+    "parameter:ripple",
+    "parameter:ripple_factor120",
+    "parameter:ripple_factor1000",
+    "parameter:ripple_factor10000",
+    "parameter:ripple_factor100000",
+    "parameter:endurance",
+    "parameter:endurance_cap",
+    "parameter:endurance_df",
+    "parameter:endurance_esr",
+    "parameter:shelf",
+    "parameter:dim_D",
+    "parameter:dim_L",
+    "parameter:dim_A",
+    "parameter:dim_B",
+    "parameter:dim_C",
+    "parameter:dim_W",
+    "parameter:dim_P",
+    "parameter:endurance_leakage",
+    "parameter:shelf_cap",
+    "parameter:shelf_df",
+    "parameter:shelf_leakage"
+  ],
+  "inventory_review": "page_anchored_inventory_expanded_series_and_footnote_review_pending",
+  "interfaces": {
+    "circuit": "R/C/L, independent V/I (DC/AC/PWL), numeric diode and voltage-controlled release switch fixtures, one DUT with task-defined pins",
+    "analysis": "DC sweep, single-frequency or bounded linear AC sweep, transient",
+    "measurement": "sample, dc_current_max (max absolute input current), dc_current_difference (actual probe difference), dc_slope, dc_sensitivity_error_percent, dc_linearity_percent, curve, ratio_curve (actual V/I), capacitance, complex V/I impedance/ESR/C/L/loss and voltage-ratio gain/dB/phase, integral_to_crossing with explicit integration start and target",
+    "forbidden": "arbitrary Python/shell, external model files, changes to immutable reference/acceptance/ports"
+  },
+  "model_provenance": {
+    "kind": "vendor_reference_only",
+    "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+    "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+    "note": "Reference interface benchmark only; prohibited as selected modeling template"
+  },
+  "budgets": {
+    "api_calls": 0,
+    "simulations": 6,
+    "repairs": 0,
+    "seconds": 1800
+  },
+  "needs_structured_contract": [
+    "parameter:cap",
+    "parameter:cap_tolerance",
+    "parameter:leakage",
+    "parameter:df",
+    "parameter:impedance_ratio_-25",
+    "parameter:impedance_ratio_-40",
+    "parameter:esr20",
+    "parameter:esr-40"
+  ]
+}

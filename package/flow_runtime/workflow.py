@@ -23,6 +23,9 @@ INTERFACES = {
 def calibration_protocols(case):
     """Trusted analytic oracles; expected values are NOT supplied by an agent."""
     mode = case["protocol"]["measurement"]["mode"]
+    if mode in ("transient_peak","transient_recovery"):
+        from .transient_metrology import oracles
+        return [(p,e) for p,e,_ in oracles(case)]
     if mode in ('dc_current_max','dc_current_difference'):
         from .static_metrology import current_oracles
         return [(p,e) for p,e,_ in current_oracles(case)]

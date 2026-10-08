@@ -9,17 +9,21 @@ from flow_runtime.project_standard import expectation_with_standard
 ROOT=Path(__file__).resolve().parent
 
 def records(include_families=False):
- current=json.loads((ROOT/'gpt_test_library/cases.json').read_text())['cases']
+ current=json.loads((ROOT/'gpt_test_library/cases.json').read_text())['cases'];excluded={}
  if include_families:
-  for name in ('family_cases.json','extended_family_cases.json','sensor_family_cases.json'):current+=json.loads((ROOT/'gpt_test_library'/name).read_text())['cases']
+  for name in ('family_cases.json','extended_family_cases.json','sensor_family_cases.json','first_four_cases.json','diode_dynamic_cases.json'):
+   catalog=json.loads((ROOT/'gpt_test_library'/name).read_text());current+=catalog['cases']
+   excluded.update({(x['device'],x['id']):x['reason'] for x in catalog.get('excluded_case_ids',[])})
  lookup={(c['device'],c['id']):c for c in current};out={}
  folders=[ROOT/'runs/gpt_correction/qualified_library',ROOT/'runs/acs_parameter_scope/qualified_library']
  if include_families:
-  for name in ('family_qualification_corrected','static_family_qualification','sensor_family_qualification'):folders.append(ROOT/'runs'/name/'qualified_library')
+  for name in ('family_qualification_corrected','static_family_qualification','sensor_family_qualification','first_four_qualification','diode_dynamic_qualification'):folders.append(ROOT/'runs'/name/'qualified_library')
  for folder in folders:
   for path in folder.glob('*.json'):
    if digest(path)!=path.with_suffix('.sha256').read_text().strip():raise Fault('cache_corrupt','Library receipt changed')
-   record=json.loads(path.read_text());old=record['case'];key=(old['device'],old['id']);case=lookup[key]
+   record=json.loads(path.read_text());old=record['case'];key=(old['device'],old['id'])
+   if key in excluded:continue
+   case=lookup[key]
    if fingerprint(old['protocol'])!=fingerprint(case['protocol']) or old['model']['sha256']!=case['model']['sha256']:raise Fault('cache_corrupt','Registered fixture or model changed')
    receipt=record['receipt']
    if len(receipt['calibrations'])!=2:raise Fault('calibration','Two independent calibrations required')
@@ -29,6 +33,8 @@ def records(include_families=False):
    if not artifacts_valid(Path(trial['folder']),trial['artifacts']):raise Fault('cache_corrupt','Real trial evidence invalid')
    if digest(case['model']['path'])!=case['model']['sha256']:raise Fault('cache_corrupt','Model changed')
    revised=copy.deepcopy(record);revised['case']=case
+   if old['reference_ids']!=case['reference_ids']:
+    revised['registration_reference_filter']={'reason':'Exclude informational parent groups; bind only their actual handbook test records','original_reference_ids':old['reference_ids'],'registered_reference_ids':case['reference_ids'],'new_simulations':0}
    revised['receipt']['trial']['acceptance']=acceptance(trial['result'],case['expectation'])
    if old['expectation']!=case['expectation']:revised['acceptance_revision']={'reason':'Apply frozen project 10% tolerance and explicit measured quantity; original simulation unchanged','old':old['expectation'],'new':case['expectation'],'new_simulations':0}
    out[key]=revised
@@ -37,6 +43,14 @@ def records(include_families=False):
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--output',type=Path,required=True);ap.add_argument('--families',action='store_true');a=ap.parse_args()
  verified=records(a.families);ledger=ROOT/'gpt_test_library/qualified';ledger.mkdir(exist_ok=True)
+ if a.families:
+  import shutil
+  excluded=json.loads((ROOT/'gpt_test_library/first_four_cases.json').read_text()).get('excluded_case_ids',[])
+  for row in excluded:
+   p=ledger/(fingerprint({'device':row['device'],'id':row['id']})+'.json')
+   if p.exists():
+    archive=ROOT/'gpt_test_library/superseded_informational_parents';archive.mkdir(exist_ok=True)
+    for f in (p,p.with_suffix('.sha256')):shutil.move(str(f),str(archive/f.name))
  for record in verified:
   c=record['case'];p=ledger/(fingerprint({'device':c['device'],'id':c['id']})+'.json');save(p,record);p.with_suffix('.sha256').write_text(digest(p)+'\n')
  grouped={}

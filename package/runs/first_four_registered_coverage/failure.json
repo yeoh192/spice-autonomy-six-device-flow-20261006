@@ -1,0 +1,9 @@
+{
+  "status": "stopped_with_evidence",
+  "full_manual_coverage": false,
+  "fault": {
+    "kind": "coverage_binding",
+    "message": "Registered method references unknown record",
+    "evidence": {}
+  }
+}

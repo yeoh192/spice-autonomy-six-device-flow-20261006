@@ -1,0 +1,11 @@
+Declarative SPICE workflow circuit
+.options plotwinsize=0
+.temp 25
+.options method=trap
+.include "model.lib"
+XDUT D G 0 BUK7K52-60E
+VG G 0 8
+IDRIVE 0 D 0
+.dc IDRIVE 4.9500000000000002 5.0499999999999998 0.0050000000000000001
+.save v(d)
+.end

@@ -1,0 +1,14 @@
+Title: /Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/796695520e03a94182f6f9b245ae9be94f66f97d6d2a14f34652f22376d92591/test.cir
+Date: Thu Oct  8 21:16:02 2026
+Plotname: AC Analysis
+Flags: complex forward linear nocompression
+No. Variables: 2
+No. Points:            1
+Offset:    0.0000000000000000e+00
+Command: Linear Technology Corporation LTspice
+Variables:
+	0	frequency	frequency
+	1	I(VD)	device_current
+Values:
+0		1.000000000000000e+06,0.000000000000000e+00
+	-1.874027475423645e-07,-3.815952079975204e-04

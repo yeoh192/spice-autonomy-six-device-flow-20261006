@@ -1,0 +1,9 @@
+Declarative SPICE workflow circuit
+.options plotwinsize=0
+.temp 25
+.options method=trap
+RCAL P 0 2000
+VD P 0 0
+.dc VD 0 2 0.001
+.save i(vd)
+.end

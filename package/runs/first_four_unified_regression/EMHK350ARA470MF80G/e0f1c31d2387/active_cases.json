@@ -1,0 +1,626 @@
+[
+  {
+    "id": "esr_-40_100000Hz",
+    "reference_ids": [
+      "parameter:esr-40"
+    ],
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/EMHK350ARA470MF80G/assets/e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306.lib",
+      "entry": "REFERENCE_CAP",
+      "declared_ports": [
+        "P",
+        "N"
+      ],
+      "ports": [
+        "P",
+        "N"
+      ],
+      "sha256": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+      "provenance": {
+        "kind": "vendor_reference_only",
+        "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+        "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+        "note": "Reference interface benchmark only; prohibited as selected modeling template"
+      }
+    },
+    "protocol": {
+      "temperature_C": -40,
+      "device_nodes": {
+        "P": "P",
+        "N": "N"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VDRIVE",
+          "nodes": [
+            "P",
+            "N"
+          ],
+          "value": {
+            "dc": 0,
+            "ac": 0.1
+          }
+        },
+        {
+          "kind": "R",
+          "name": "RGROUND",
+          "nodes": [
+            "N",
+            "0"
+          ],
+          "value": 1e-06
+        }
+      ],
+      "analysis": {
+        "kind": "ac",
+        "frequency_Hz": 100000
+      },
+      "measurement": {
+        "mode": "ac_resistance",
+        "signal": "v(p,n)",
+        "denominator": "i(vdrive)",
+        "sign": -1,
+        "scale": 1
+      },
+      "checks": []
+    },
+    "expectation": {
+      "unit": "Ω",
+      "limits": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    "review_status": "independent_agent_review_required",
+    "delivery_eligible": false,
+    "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+    "contract": {
+      "fixed": {
+        "temperature_C": -40,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 100000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      }
+    },
+    "protocol_sha256": "09ca222272098174910a81a83634b4d35de26e954779b79266f4aed7f30d3c1e",
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "model_role": "reference_interface_benchmark_only",
+    "actual_circuit": {
+      "path": "fixture_circuits/esr_-40_100000Hz.cir",
+      "sha256": "e4211a0f5eb1d916217416539a6f8dbff8ef91d08ce291ffe26ac05a31fdc4b0"
+    },
+    "device": "EMHK350ARA470MF80G",
+    "input_folder": "EMHK350ARA470MF80G",
+    "reference_evidence": [
+      {
+        "id": "parameter:esr-40",
+        "kind": "test",
+        "applicable": true,
+        "reference_evidence": {
+          "id": "esr-40",
+          "key": "equivalent_series_resistance",
+          "values": {
+            "max": 3.0
+          },
+          "unit": "Ω",
+          "conditions": "-40°C; 100..400 kHz; F80 initial",
+          "applies_to": [
+            "EMHK350ARA470MF80G"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b21",
+            "p0"
+          ]
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          1
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "ac_resistance",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+        "source_record": {
+          "id": "parameter:esr-40",
+          "kind": "test_or_constraint_pending_classification",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "esr-40",
+            "key": "equivalent_series_resistance",
+            "values": {
+              "max": 3.0
+            },
+            "unit": "Ω",
+            "conditions": "-40°C; 100..400 kHz; F80 initial",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b21",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_resistance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+        },
+        "source_kind": "test_or_constraint_pending_classification",
+        "label": "equivalent_series_resistance",
+        "evidence": [
+          "b21",
+          "p0"
+        ],
+        "classification_review_pending": true,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "scope": "exact declared conditions; remaining handbook coverage is open"
+  },
+  {
+    "id": "esr_-40_400000Hz",
+    "reference_ids": [
+      "parameter:esr-40"
+    ],
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/EMHK350ARA470MF80G/assets/e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306.lib",
+      "entry": "REFERENCE_CAP",
+      "declared_ports": [
+        "P",
+        "N"
+      ],
+      "ports": [
+        "P",
+        "N"
+      ],
+      "sha256": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+      "provenance": {
+        "kind": "vendor_reference_only",
+        "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+        "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+        "note": "Reference interface benchmark only; prohibited as selected modeling template"
+      }
+    },
+    "protocol": {
+      "temperature_C": -40,
+      "device_nodes": {
+        "P": "P",
+        "N": "N"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VDRIVE",
+          "nodes": [
+            "P",
+            "N"
+          ],
+          "value": {
+            "dc": 0,
+            "ac": 0.1
+          }
+        },
+        {
+          "kind": "R",
+          "name": "RGROUND",
+          "nodes": [
+            "N",
+            "0"
+          ],
+          "value": 1e-06
+        }
+      ],
+      "analysis": {
+        "kind": "ac",
+        "frequency_Hz": 400000
+      },
+      "measurement": {
+        "mode": "ac_resistance",
+        "signal": "v(p,n)",
+        "denominator": "i(vdrive)",
+        "sign": -1,
+        "scale": 1
+      },
+      "checks": []
+    },
+    "expectation": {
+      "unit": "Ω",
+      "limits": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    "review_status": "independent_agent_review_required",
+    "delivery_eligible": false,
+    "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+    "contract": {
+      "fixed": {
+        "temperature_C": -40,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 400000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      }
+    },
+    "protocol_sha256": "586a52a3441ea571f96fbfe2c384e4dd7189b687fc10f3c771c11f97fb1e84c9",
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "model_role": "reference_interface_benchmark_only",
+    "actual_circuit": {
+      "path": "fixture_circuits/esr_-40_400000Hz.cir",
+      "sha256": "7e18a9e6b3aa99b6f746111f4a0aac42d8a81ea703ec02eb09e2364cb2178749"
+    },
+    "device": "EMHK350ARA470MF80G",
+    "input_folder": "EMHK350ARA470MF80G",
+    "reference_evidence": [
+      {
+        "id": "parameter:esr-40",
+        "kind": "test",
+        "applicable": true,
+        "reference_evidence": {
+          "id": "esr-40",
+          "key": "equivalent_series_resistance",
+          "values": {
+            "max": 3.0
+          },
+          "unit": "Ω",
+          "conditions": "-40°C; 100..400 kHz; F80 initial",
+          "applies_to": [
+            "EMHK350ARA470MF80G"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b21",
+            "p0"
+          ]
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          1
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "ac_resistance",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+        "source_record": {
+          "id": "parameter:esr-40",
+          "kind": "test_or_constraint_pending_classification",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "esr-40",
+            "key": "equivalent_series_resistance",
+            "values": {
+              "max": 3.0
+            },
+            "unit": "Ω",
+            "conditions": "-40°C; 100..400 kHz; F80 initial",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b21",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_resistance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+        },
+        "source_kind": "test_or_constraint_pending_classification",
+        "label": "equivalent_series_resistance",
+        "evidence": [
+          "b21",
+          "p0"
+        ],
+        "classification_review_pending": true,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "scope": "exact declared conditions; remaining handbook coverage is open"
+  },
+  {
+    "id": "esr_-40_200000Hz",
+    "reference_ids": [
+      "parameter:esr-40"
+    ],
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/EMHK350ARA470MF80G/assets/e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306.lib",
+      "entry": "REFERENCE_CAP",
+      "declared_ports": [
+        "P",
+        "N"
+      ],
+      "ports": [
+        "P",
+        "N"
+      ],
+      "sha256": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+      "provenance": {
+        "kind": "vendor_reference_only",
+        "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+        "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+        "note": "Reference interface benchmark only; prohibited as selected modeling template"
+      }
+    },
+    "protocol": {
+      "temperature_C": -40,
+      "device_nodes": {
+        "P": "P",
+        "N": "N"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VDRIVE",
+          "nodes": [
+            "P",
+            "N"
+          ],
+          "value": {
+            "dc": 0,
+            "ac": 0.1
+          }
+        },
+        {
+          "kind": "R",
+          "name": "RGROUND",
+          "nodes": [
+            "N",
+            "0"
+          ],
+          "value": 1e-06
+        }
+      ],
+      "analysis": {
+        "kind": "ac",
+        "frequency_Hz": 200000
+      },
+      "measurement": {
+        "mode": "ac_resistance",
+        "signal": "v(p,n)",
+        "denominator": "i(vdrive)",
+        "sign": -1,
+        "scale": 1
+      },
+      "checks": []
+    },
+    "expectation": {
+      "unit": "Ω",
+      "limits": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    "review_status": "independent_agent_review_required",
+    "delivery_eligible": false,
+    "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+    "contract": {
+      "fixed": {
+        "temperature_C": -40,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 200000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      }
+    },
+    "protocol_sha256": "d9477a0dfbdb365307915d09da8c315b775b9714eff2bb75f91920305b97f238",
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "model_role": "reference_interface_benchmark_only",
+    "actual_circuit": {
+      "path": "fixture_circuits/esr_-40_200000Hz.cir",
+      "sha256": "66f7c624323ffb59c10b522ba14af9a8df086720d3356b0ad72e231b27acb276"
+    },
+    "device": "EMHK350ARA470MF80G",
+    "input_folder": "EMHK350ARA470MF80G",
+    "reference_evidence": [
+      {
+        "id": "parameter:esr-40",
+        "kind": "test",
+        "applicable": true,
+        "reference_evidence": {
+          "id": "esr-40",
+          "key": "equivalent_series_resistance",
+          "values": {
+            "max": 3.0
+          },
+          "unit": "Ω",
+          "conditions": "-40°C; 100..400 kHz; F80 initial",
+          "applies_to": [
+            "EMHK350ARA470MF80G"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b21",
+            "p0"
+          ]
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          1
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "ac_resistance",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+        "source_record": {
+          "id": "parameter:esr-40",
+          "kind": "test_or_constraint_pending_classification",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "esr-40",
+            "key": "equivalent_series_resistance",
+            "values": {
+              "max": 3.0
+            },
+            "unit": "Ω",
+            "conditions": "-40°C; 100..400 kHz; F80 initial",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b21",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_resistance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+        },
+        "source_kind": "test_or_constraint_pending_classification",
+        "label": "equivalent_series_resistance",
+        "evidence": [
+          "b21",
+          "p0"
+        ],
+        "classification_review_pending": true,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "scope": "exact declared conditions; remaining handbook coverage is open"
+  }
+]

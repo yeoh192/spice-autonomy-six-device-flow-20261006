@@ -1,0 +1,13 @@
+{
+  "offline_tests": 271,
+  "qualification_records": 190,
+  "handbook_registerable_methods": 187,
+  "diagnostic_only": 3,
+  "new_qualified_current_methods": 79,
+  "new_handbook_registerable_methods": 77,
+  "first_four_current_unified_tests": 99,
+  "superseded_informational_parent_tests": 3,
+  "api_calls": 0,
+  "full_manual_coverage": false,
+  "authoritative_coverage": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_final_coverage/summary.json"
+}

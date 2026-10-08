@@ -1,0 +1,277 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "figure_fig6_capacitance_point0",
+    "protocol": {
+      "temperature_C": 25,
+      "device_nodes": {
+        "A": "P",
+        "K": "0"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VAC",
+          "nodes": [
+            "P",
+            "0"
+          ],
+          "value": {
+            "dc": -0.01582139538,
+            "ac": 1
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "ac",
+        "frequency_Hz": 1000000.0
+      },
+      "measurement": {
+        "mode": "capacitance",
+        "signal": "i(vac)",
+        "sign": -1,
+        "scale": 1000000000000.0
+      },
+      "checks": []
+    },
+    "expectation": {
+      "unit": "pF",
+      "typical": 0.9990172959,
+      "typical_relative_tolerance_percent": 10,
+      "limits": {}
+    },
+    "reference_ids": [
+      "figure:fig6:capacitance"
+    ],
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+      "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+      "entry": "LEAKAGE_FITTED_1N4148",
+      "declared_ports": [
+        "A",
+        "K"
+      ],
+      "ports": [
+        "A",
+        "K"
+      ],
+      "provenance": {
+        "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+        "not_new_index_selection": true
+      }
+    },
+    "device": "1N4148",
+    "input_folder": "1N4148",
+    "reference_evidence": [
+      {
+        "id": "figure:fig6:capacitance",
+        "kind": "test",
+        "applicable": true,
+        "binding_complete": false,
+        "bindings": [],
+        "reference_evidence": {
+          "key": "Diode capacitance versus reverse voltage",
+          "values": {},
+          "unit": "pF",
+          "conditions": "f=1 MHz; Tj=25 C; typical",
+          "source_sampling": {
+            "series_id": "capacitance",
+            "condition": "f=1 MHz; Tj=25 C; typical",
+            "status": "auto_passed",
+            "sample_count": 203,
+            "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig6/capacitance.csv",
+            "visible_x_range": [
+              0.01582139537712664,
+              20.0
+            ],
+            "y_range": [
+              0.8179115587501338,
+              0.9990172958739237
+            ],
+            "extrapolated": false,
+            "source_pdf_drawing_ids": [
+              29
+            ],
+            "resampling_rmse_plot_px_at_300dpi": 0.006035141044270046,
+            "resampling_max_error_plot_px_at_300dpi": 0.02180066255803581,
+            "reconstruction_r2_in_axis_domain": 0.999999983982983,
+            "y_resampling_rmse_in_axis_unit": 7.216955444514748e-06,
+            "y_unit": "pF",
+            "physical_model_fit_r2": null,
+            "independent_measurement_accuracy": null,
+            "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+            "dashed_source": false,
+            "rendered_ink_support_fraction": 1.0,
+            "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+          }
+        },
+        "pdf_pages": [
+          5
+        ],
+        "added_from_manual_review": true,
+        "reference_csv": {
+          "path": "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig6/capacitance.csv",
+          "sha256": "d7ef18958bc4e92ee61697a4a67e1de530816bb7390bb5571aedcccebf823844"
+        },
+        "reference_status": "csv_present",
+        "plan_status": "test_development_required",
+        "method_family": "ac_parallel_capacitance",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+        "source_record": {
+          "id": "figure:fig6:capacitance",
+          "kind": "test",
+          "applicable": true,
+          "binding_complete": false,
+          "bindings": [],
+          "reference_evidence": {
+            "key": "Diode capacitance versus reverse voltage",
+            "values": {},
+            "unit": "pF",
+            "conditions": "f=1 MHz; Tj=25 C; typical",
+            "source_sampling": {
+              "series_id": "capacitance",
+              "condition": "f=1 MHz; Tj=25 C; typical",
+              "status": "auto_passed",
+              "sample_count": 203,
+              "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig6/capacitance.csv",
+              "visible_x_range": [
+                0.01582139537712664,
+                20.0
+              ],
+              "y_range": [
+                0.8179115587501338,
+                0.9990172958739237
+              ],
+              "extrapolated": false,
+              "source_pdf_drawing_ids": [
+                29
+              ],
+              "resampling_rmse_plot_px_at_300dpi": 0.006035141044270046,
+              "resampling_max_error_plot_px_at_300dpi": 0.02180066255803581,
+              "reconstruction_r2_in_axis_domain": 0.999999983982983,
+              "y_resampling_rmse_in_axis_unit": 7.216955444514748e-06,
+              "y_unit": "pF",
+              "physical_model_fit_r2": null,
+              "independent_measurement_accuracy": null,
+              "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+              "dashed_source": false,
+              "rendered_ink_support_fraction": 1.0,
+              "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+            }
+          },
+          "pdf_pages": [
+            5
+          ],
+          "added_from_manual_review": true,
+          "reference_csv": {
+            "path": "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig6/capacitance.csv",
+            "sha256": "d7ef18958bc4e92ee61697a4a67e1de530816bb7390bb5571aedcccebf823844"
+          },
+          "reference_status": "csv_present",
+          "plan_status": "test_development_required",
+          "method_family": "ac_parallel_capacitance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+        },
+        "source_kind": "test",
+        "label": "Diode capacitance versus reverse voltage",
+        "evidence": [
+          "pdf_page:5"
+        ],
+        "classification_review_pending": false,
+        "reference_asset_bindings": [
+          {
+            "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig6/capacitance.csv",
+            "status": "snapshot_bound",
+            "source_relative": "references/curves/fig6/capacitance.csv",
+            "path": "assets/d7ef18958bc4e92ee61697a4a67e1de530816bb7390bb5571aedcccebf823844.csv",
+            "sha256": "d7ef18958bc4e92ee61697a4a67e1de530816bb7390bb5571aedcccebf823844",
+            "role": "reference_data"
+          }
+        ],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "Local source, topology and measurement review; no claim of GLM approval"
+    },
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "scope": "Exact-condition method only; manual ranges, dual-instance and complete curve coverage remain open",
+    "sampled_reference": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/d7ef18958bc4e92ee61697a4a67e1de530816bb7390bb5571aedcccebf823844.csv",
+      "sha256": "d7ef18958bc4e92ee61697a4a67e1de530816bb7390bb5571aedcccebf823844",
+      "x": 0.01582139538,
+      "y": 0.9990172959,
+      "row_index": 0
+    },
+    "scope_note": "Three actual reference points only; full curve MAE/max acceptance pending"
+  },
+  "receipt": {
+    "device": "1N4148",
+    "id": "figure_fig6_capacitance_point0",
+    "reference_ids": [
+      "figure:fig6:capacitance"
+    ],
+    "scope": "Exact-condition method only; manual ranges, dual-instance and complete curve coverage remain open",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "Local source, topology and measurement review; no claim of GLM approval"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+    "calibrations": [
+      {
+        "expected": 1000.0000000000001,
+        "result": {
+          "value": 999.9999999999999
+        },
+        "error": 2.2737367544323206e-13,
+        "tolerance": 0.10000000000000002,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/bd8d162fe18690c206d7f632fe6eed23361a00ca89b5973da01649c4faaa9183",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "2c01e6c13f97eaf2c767047ddf99e25a826bf46732a3566a7b23b185376247f5",
+          "test.raw": "dbca16f2b47b4f2c7710d3ea6490d0f720cb0c5ac3a18eae90b3b795d54cacab",
+          "test.log": "87f927b46d8eb97520fbdad6c394cb09da5972cd8edd133ed7ca8c82ba284057",
+          "execution.json": "d6621b1e8b14bdfb09989dd7bccd28831f97db6c0bd6baac50cffc1664f339d2"
+        }
+      },
+      {
+        "expected": 2000.0000000000002,
+        "result": {
+          "value": 1999.9999999999998
+        },
+        "error": 4.547473508864641e-13,
+        "tolerance": 0.20000000000000004,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/878c9bd6a97b883d3b3d3b1a193a0b4c1e13ca061f98e19e16570a4678ca2b61",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "4fc4733e3282efdb1b99c2382b7fba0f362f8e909754dd812c8badaf4782142c",
+          "test.raw": "2d61ad2ae75b4fffe611b22be5990c1d850d85c7acfcfe342af71ae1b089a360",
+          "test.log": "b2f9800b80b0a6ffd33a2481ff891be207b31e55f56973f9f0f0c75604ddb5c1",
+          "execution.json": "6c7ba4675702709bc6a31e3d385da998da9d860e48abea937b3d4c9de00e19f1"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 1.038696792081216
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/7f4b410594ad983e36414a0ef1a1d021addf70fe1b39b79dcfae1608c872bc6e",
+      "artifacts": {
+        "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "test.cir": "5d345f2e797710a16b8e01ad24359b8333dfa1089df2ff30a0565db0922a2a92",
+        "test.raw": "5e0ff69ba0a90b9afe72ce42bdab727b859912b6846f907058868e49957c9c24",
+        "test.log": "1c9f644a9ae250c45a64c23d1761c7bc95aff9a34c3b4e6587898d94db3e4774",
+        "execution.json": "aad3ec04fc7c27ff09965370f269dd042fe53a1590a3825eae1c2965e2a590f9"
+      }
+    },
+    "protocol_sha256": "debc8df6db6760cc5f2f9b4ef2069c5fd4446f8cb2a744dca43b9386228a732e"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

@@ -1,0 +1,10 @@
+Declarative SPICE workflow circuit
+.options plotwinsize=0
+.temp 25
+.options method=trap
+.include "model.lib"
+XDUT A 0 LEAKAGE_FITTED_1N4148
+IFORCE 0 A PWL(0 0 9.9999999999999995e-08 0 1.1999999999999999e-07 0.050000000000000003 4.9999999999999998e-07 0.050000000000000003)
+.tran 0 4.9999999999999998e-07 0 1e-10
+.save v(a)
+.end

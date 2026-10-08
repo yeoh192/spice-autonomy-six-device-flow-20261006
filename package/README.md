@@ -29,3 +29,8 @@ full coverage and electrical acceptance are still reported independently.
 ## v0.3.3 覆盖回写与测试族
 
 新库通过 `coverage_audit.py --gpt-library gpt_test_library --import-only` 回写；所有实际校准、模型和波形重新核验。新增ACS/ADA测试族映射及10项真实验证方法，合计32项。运行 `bash RUN_REGISTERED_COVERAGE_FAMILIES.sh --check-only` 可离线生成覆盖报告；`--run` 执行统一回归。完整说明见 [REGISTERED_COVERAGE_FAMILIES.md](REGISTERED_COVERAGE_FAMILIES.md)。其余生成器与全手册交付仍有缺口。
+
+
+## v0.3.4 前四器件绑定
+
+新增方法、恢复测量与低温阻抗比较已完成真实资格和统一回归，见[FIRST_FOUR_BINDINGS.md](FIRST_FOUR_BINDINGS.md)。当前库190项真实记录，3项诊断不计覆盖；前四器件已登记方法65、17、9、6，缺方法记录21、2、2、2。使用RUN_FIRST_FOUR_BINDINGS.sh --check-only核对与回写，--run执行当前99项前四器件回归。模型正式验收仍未通过。

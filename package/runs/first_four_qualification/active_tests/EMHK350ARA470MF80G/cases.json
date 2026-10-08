@@ -1,0 +1,172 @@
+{
+  "device": "EMHK350ARA470MF80G",
+  "cases": [
+    {
+      "id": "impedance_ratio_minus40_room_120Hz",
+      "reference_ids": [
+        "parameter:impedance_ratio_-40"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/gpt_test_library/comparison_models/cap_cold_room.lib",
+        "entry": "COMPARISON_CAP",
+        "declared_ports": [
+          "P20",
+          "N20",
+          "PCOLD",
+          "NCOLD"
+        ],
+        "ports": [
+          "P20",
+          "N20",
+          "PCOLD",
+          "NCOLD"
+        ],
+        "sha256": "5548121815949d1d7718d1b7c57d0c631f7c9725b216a69456906152f2ecd491",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P20": "P20",
+          "N20": "0",
+          "PCOLD": "PCOLD",
+          "NCOLD": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VROOM",
+            "nodes": [
+              "P20",
+              "0"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "V",
+            "name": "VCOLD",
+            "nodes": [
+              "PCOLD",
+              "0"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 120
+        },
+        "measurement": {
+          "mode": "ac_current_ratio",
+          "signal": "i(vroom)",
+          "denominator": "i(vcold)"
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "1",
+        "limits": {
+          "max": 3
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "Ratio of distinct vendor -40°C and20°C subcircuits under equal100mV excitation; no temperature interpolation",
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "model_role": "reference_interface_benchmark_only",
+      "device": "EMHK350ARA470MF80G",
+      "input_folder": "EMHK350ARA470MF80G",
+      "reference_evidence": [
+        {
+          "id": "parameter:impedance_ratio_-40",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "impedance_ratio_-40",
+            "key": "impedance_ratio",
+            "values": {
+              "max": 3
+            },
+            "unit": "1",
+            "conditions": "Z(-40°C)/Z(20°C); 120 Hz",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b4",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "temperature_impedance_ratio",
+          "capability_status": "adapter_or_contract_pending",
+          "source_record": {
+            "id": "parameter:impedance_ratio_-40",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "impedance_ratio_-40",
+              "key": "impedance_ratio",
+              "values": {
+                "max": 3
+              },
+              "unit": "1",
+              "conditions": "Z(-40°C)/Z(20°C); 120 Hz",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b4",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "temperature_impedance_ratio",
+            "capability_status": "adapter_or_contract_pending"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "impedance_ratio",
+          "evidence": [
+            "b4",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "Local source, topology and measurement review; no claim of GLM approval"
+      },
+      "scope": "Exact-condition method only; manual ranges, dual-instance and complete curve coverage remain open"
+    }
+  ],
+  "full_manual_coverage": false,
+  "origin": "GPT authored and real calibrated; registered for exact-condition regression"
+}

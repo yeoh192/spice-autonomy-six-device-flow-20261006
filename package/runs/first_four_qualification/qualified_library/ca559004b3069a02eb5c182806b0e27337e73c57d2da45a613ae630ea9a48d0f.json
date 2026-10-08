@@ -1,0 +1,659 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "figure_fig5_point0",
+    "protocol": {
+      "temperature_C": 29.49418256,
+      "device_nodes": {
+        "A": "P",
+        "K": "0"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VREVERSE",
+          "nodes": [
+            "P",
+            "0"
+          ],
+          "value": {
+            "dc": 20
+          }
+        },
+        {
+          "kind": "V",
+          "name": "VDUMMY",
+          "nodes": [
+            "UNUSED",
+            "0"
+          ],
+          "value": {
+            "dc": 0
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "dc",
+        "source": "VDUMMY",
+        "start": 0,
+        "stop": 1,
+        "step": 1
+      },
+      "measurement": {
+        "mode": "sample",
+        "signal": "i(vreverse)",
+        "at": 1,
+        "absolute": true,
+        "scale": 1000000.0
+      },
+      "checks": []
+    },
+    "expectation": {
+      "unit": "μA",
+      "typical": 0.01,
+      "typical_relative_tolerance_percent": 10,
+      "limits": {}
+    },
+    "reference_ids": [
+      "figure:fig5"
+    ],
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+      "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+      "entry": "LEAKAGE_FITTED_1N4148",
+      "declared_ports": [
+        "A",
+        "K"
+      ],
+      "ports": [
+        "A",
+        "K"
+      ],
+      "provenance": {
+        "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+        "not_new_index_selection": true
+      }
+    },
+    "device": "1N4148",
+    "input_folder": "1N4148",
+    "reference_evidence": [
+      {
+        "id": "figure:fig5",
+        "kind": "informational",
+        "reference_evidence": {
+          "id": "fig5",
+          "label": "Reverse current versus junction temperature",
+          "x_axis": {
+            "quantity": "Tj",
+            "unit": "°C",
+            "scale": "linear"
+          },
+          "y_axis": {
+            "quantity": "IR",
+            "unit": "μA",
+            "scale": "log10"
+          },
+          "conditions": "(1)VR=75 V typical; (2)VR=20 V typical",
+          "image_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/e8bc25a135bfeb1f19800353926434490b232c38a8272f20e88b25bb70fb3987.jpg",
+          "evidence_refs": [
+            "b57",
+            "p4"
+          ],
+          "metadata_status": "visually_checked",
+          "digitization_status": "completed",
+          "coordinate_error": {
+            "scope": "resampling_vs_original_vector_not_device_accuracy",
+            "max_error_plot_pixels_at_300dpi": 0.005373533641043575
+          },
+          "fit_r_squared": null,
+          "sampling": {
+            "part": "1N4148",
+            "chart_id": "fig5",
+            "status": "auto_passed",
+            "human_review_required": false,
+            "method": "original_pdf_vector_path_digitization",
+            "source_pdf": "/Users/192y/电气/器件手册与模型/1N4148/1N4148_数据手册.pdf",
+            "source_pdf_sha256": "cc5a33f31a2690a270cc8961b33a9d412dac473e2cfe77faa16ef79502f56400",
+            "page_index": 4,
+            "mineru_image": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/e8bc25a135bfeb1f19800353926434490b232c38a8272f20e88b25bb70fb3987.jpg",
+            "calibration": {
+              "plot_rect_pdf_pt": [
+                89.58499908447266,
+                171.26702880859375,
+                250.2779998779297,
+                331.7130126953125
+              ],
+              "x_axis": {
+                "quantity": "Tj",
+                "unit": "°C",
+                "scale": "linear",
+                "range": [
+                  0,
+                  200
+                ]
+              },
+              "y_axis": {
+                "quantity": "IR",
+                "unit": "μA",
+                "scale": "log10",
+                "range": [
+                  0.01,
+                  1000
+                ]
+              },
+              "grid_drawing_ids": [
+                3
+              ],
+              "calibration_method": "axis meaning read by current multimodal assistant; exact grid positions from PDF vector objects"
+            },
+            "common_conditions": "(1)VR=75 V typical; (2)VR=20 V typical",
+            "series": [
+              {
+                "series_id": "vr75",
+                "condition": "(1) VR=75 V, typical",
+                "status": "auto_passed",
+                "sample_count": 201,
+                "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/vr75.csv",
+                "visible_x_range": [
+                  24.16657815961968,
+                  199.63407697136213
+                ],
+                "y_range": [
+                  0.017571877161562964,
+                  254.2819517778227
+                ],
+                "extrapolated": false,
+                "source_pdf_drawing_ids": [
+                  5
+                ],
+                "resampling_rmse_plot_px_at_300dpi": 0.0011061356441340712,
+                "resampling_max_error_plot_px_at_300dpi": 0.004056975020934791,
+                "reconstruction_r2_in_axis_domain": 0.9999999999525757,
+                "y_resampling_rmse_in_axis_unit": 9.466683647953584e-05,
+                "y_unit": "μA",
+                "physical_model_fit_r2": null,
+                "independent_measurement_accuracy": null,
+                "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+                "dashed_source": false,
+                "y_resampling_rmse_log10": 8.272957295697876e-06,
+                "rendered_ink_support_fraction": 1.0,
+                "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+              },
+              {
+                "series_id": "vr20",
+                "condition": "(2) VR=20 V, typical",
+                "status": "auto_passed",
+                "sample_count": 201,
+                "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/vr20.csv",
+                "visible_x_range": [
+                  29.494182561938675,
+                  199.1573970866408
+                ],
+                "y_range": [
+                  0.01,
+                  141.53612927173376
+                ],
+                "extrapolated": false,
+                "source_pdf_drawing_ids": [
+                  5
+                ],
+                "resampling_rmse_plot_px_at_300dpi": 0.0014394709955273248,
+                "resampling_max_error_plot_px_at_300dpi": 0.005373533641043575,
+                "reconstruction_r2_in_axis_domain": 0.9999999999185821,
+                "y_resampling_rmse_in_axis_unit": 6.193759255148551e-05,
+                "y_unit": "μA",
+                "physical_model_fit_r2": null,
+                "independent_measurement_accuracy": null,
+                "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+                "dashed_source": false,
+                "y_resampling_rmse_log10": 1.0766023260837958e-05,
+                "rendered_ink_support_fraction": 1.0,
+                "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+              }
+            ],
+            "overlay": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/overlay.png",
+            "reconstructed": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/reconstructed.png",
+            "digitization_error_scope": "CSV resampling versus dense vector centreline, not experimental device accuracy, curve-label accuracy, or SPICE model fit",
+            "sampling_policy": "linear interpolation in plot/axis domain, adaptive maximum 0.25 pixel error at 300 dpi; clip to visible axes; do not extend curve endpoints",
+            "calibration_checks": {
+              "part": "1N4148",
+              "chart_id": "fig5",
+              "note": "Grid geometry compared to declared linear/log scale. Does not independently verify OCR tick values or legend semantics.",
+              "x": {
+                "expected_grid_lines": 11,
+                "detected_grid_lines": 11,
+                "max_grid_alignment_error_px_at_300dpi": 0.7554131825765253,
+                "rmse_grid_alignment_px_at_300dpi": 0.42644384828580173,
+                "matched_within_2px": 11,
+                "expected_tick_values": [
+                  0.0,
+                  20.0,
+                  40.0,
+                  60.0,
+                  80.0,
+                  100.0,
+                  120.0,
+                  140.0,
+                  160.0,
+                  180.0,
+                  200.0
+                ]
+              },
+              "y": {
+                "expected_grid_lines": 46,
+                "detected_grid_lines": 54,
+                "max_grid_alignment_error_px_at_300dpi": 0.015888165034520323,
+                "rmse_grid_alignment_px_at_300dpi": 0.005109790837866174,
+                "matched_within_2px": 46,
+                "expected_tick_values": [
+                  0.01,
+                  0.02,
+                  0.03,
+                  0.04,
+                  0.05,
+                  0.06,
+                  0.07,
+                  0.08,
+                  0.09,
+                  0.1,
+                  0.2,
+                  0.30000000000000004,
+                  0.4,
+                  0.5,
+                  0.6000000000000001,
+                  0.7000000000000001,
+                  0.8,
+                  0.9,
+                  1.0,
+                  2.0,
+                  3.0,
+                  4.0,
+                  5.0,
+                  6.0,
+                  7.0,
+                  8.0,
+                  9.0,
+                  10.0,
+                  20.0,
+                  30.0,
+                  40.0,
+                  50.0,
+                  60.0,
+                  70.0,
+                  80.0,
+                  90.0,
+                  100.0,
+                  200.0,
+                  300.0,
+                  400.0,
+                  500.0,
+                  600.0,
+                  700.0,
+                  800.0,
+                  900.0,
+                  1000.0
+                ]
+              },
+              "status": "auto_passed"
+            }
+          }
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          5
+        ],
+        "children": [
+          "figure:fig5:vr75",
+          "figure:fig5:vr20"
+        ],
+        "plan_status": "series_group",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding",
+        "source_record": {
+          "id": "figure:fig5",
+          "kind": "series_group",
+          "reference_evidence": {
+            "id": "fig5",
+            "label": "Reverse current versus junction temperature",
+            "x_axis": {
+              "quantity": "Tj",
+              "unit": "°C",
+              "scale": "linear"
+            },
+            "y_axis": {
+              "quantity": "IR",
+              "unit": "μA",
+              "scale": "log10"
+            },
+            "conditions": "(1)VR=75 V typical; (2)VR=20 V typical",
+            "image_path": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/e8bc25a135bfeb1f19800353926434490b232c38a8272f20e88b25bb70fb3987.jpg",
+            "evidence_refs": [
+              "b57",
+              "p4"
+            ],
+            "metadata_status": "visually_checked",
+            "digitization_status": "completed",
+            "coordinate_error": {
+              "scope": "resampling_vs_original_vector_not_device_accuracy",
+              "max_error_plot_pixels_at_300dpi": 0.005373533641043575
+            },
+            "fit_r_squared": null,
+            "sampling": {
+              "part": "1N4148",
+              "chart_id": "fig5",
+              "status": "auto_passed",
+              "human_review_required": false,
+              "method": "original_pdf_vector_path_digitization",
+              "source_pdf": "/Users/192y/电气/器件手册与模型/1N4148/1N4148_数据手册.pdf",
+              "source_pdf_sha256": "cc5a33f31a2690a270cc8961b33a9d412dac473e2cfe77faa16ef79502f56400",
+              "page_index": 4,
+              "mineru_image": "/Users/192y/电气/抽样JSON（MInerU）/1N4148_数据手册/images/e8bc25a135bfeb1f19800353926434490b232c38a8272f20e88b25bb70fb3987.jpg",
+              "calibration": {
+                "plot_rect_pdf_pt": [
+                  89.58499908447266,
+                  171.26702880859375,
+                  250.2779998779297,
+                  331.7130126953125
+                ],
+                "x_axis": {
+                  "quantity": "Tj",
+                  "unit": "°C",
+                  "scale": "linear",
+                  "range": [
+                    0,
+                    200
+                  ]
+                },
+                "y_axis": {
+                  "quantity": "IR",
+                  "unit": "μA",
+                  "scale": "log10",
+                  "range": [
+                    0.01,
+                    1000
+                  ]
+                },
+                "grid_drawing_ids": [
+                  3
+                ],
+                "calibration_method": "axis meaning read by current multimodal assistant; exact grid positions from PDF vector objects"
+              },
+              "common_conditions": "(1)VR=75 V typical; (2)VR=20 V typical",
+              "series": [
+                {
+                  "series_id": "vr75",
+                  "condition": "(1) VR=75 V, typical",
+                  "status": "auto_passed",
+                  "sample_count": 201,
+                  "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/vr75.csv",
+                  "visible_x_range": [
+                    24.16657815961968,
+                    199.63407697136213
+                  ],
+                  "y_range": [
+                    0.017571877161562964,
+                    254.2819517778227
+                  ],
+                  "extrapolated": false,
+                  "source_pdf_drawing_ids": [
+                    5
+                  ],
+                  "resampling_rmse_plot_px_at_300dpi": 0.0011061356441340712,
+                  "resampling_max_error_plot_px_at_300dpi": 0.004056975020934791,
+                  "reconstruction_r2_in_axis_domain": 0.9999999999525757,
+                  "y_resampling_rmse_in_axis_unit": 9.466683647953584e-05,
+                  "y_unit": "μA",
+                  "physical_model_fit_r2": null,
+                  "independent_measurement_accuracy": null,
+                  "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+                  "dashed_source": false,
+                  "y_resampling_rmse_log10": 8.272957295697876e-06,
+                  "rendered_ink_support_fraction": 1.0,
+                  "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+                },
+                {
+                  "series_id": "vr20",
+                  "condition": "(2) VR=20 V, typical",
+                  "status": "auto_passed",
+                  "sample_count": 201,
+                  "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/vr20.csv",
+                  "visible_x_range": [
+                    29.494182561938675,
+                    199.1573970866408
+                  ],
+                  "y_range": [
+                    0.01,
+                    141.53612927173376
+                  ],
+                  "extrapolated": false,
+                  "source_pdf_drawing_ids": [
+                    5
+                  ],
+                  "resampling_rmse_plot_px_at_300dpi": 0.0014394709955273248,
+                  "resampling_max_error_plot_px_at_300dpi": 0.005373533641043575,
+                  "reconstruction_r2_in_axis_domain": 0.9999999999185821,
+                  "y_resampling_rmse_in_axis_unit": 6.193759255148551e-05,
+                  "y_unit": "μA",
+                  "physical_model_fit_r2": null,
+                  "independent_measurement_accuracy": null,
+                  "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+                  "dashed_source": false,
+                  "y_resampling_rmse_log10": 1.0766023260837958e-05,
+                  "rendered_ink_support_fraction": 1.0,
+                  "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+                }
+              ],
+              "overlay": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/overlay.png",
+              "reconstructed": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/reconstructed.png",
+              "digitization_error_scope": "CSV resampling versus dense vector centreline, not experimental device accuracy, curve-label accuracy, or SPICE model fit",
+              "sampling_policy": "linear interpolation in plot/axis domain, adaptive maximum 0.25 pixel error at 300 dpi; clip to visible axes; do not extend curve endpoints",
+              "calibration_checks": {
+                "part": "1N4148",
+                "chart_id": "fig5",
+                "note": "Grid geometry compared to declared linear/log scale. Does not independently verify OCR tick values or legend semantics.",
+                "x": {
+                  "expected_grid_lines": 11,
+                  "detected_grid_lines": 11,
+                  "max_grid_alignment_error_px_at_300dpi": 0.7554131825765253,
+                  "rmse_grid_alignment_px_at_300dpi": 0.42644384828580173,
+                  "matched_within_2px": 11,
+                  "expected_tick_values": [
+                    0.0,
+                    20.0,
+                    40.0,
+                    60.0,
+                    80.0,
+                    100.0,
+                    120.0,
+                    140.0,
+                    160.0,
+                    180.0,
+                    200.0
+                  ]
+                },
+                "y": {
+                  "expected_grid_lines": 46,
+                  "detected_grid_lines": 54,
+                  "max_grid_alignment_error_px_at_300dpi": 0.015888165034520323,
+                  "rmse_grid_alignment_px_at_300dpi": 0.005109790837866174,
+                  "matched_within_2px": 46,
+                  "expected_tick_values": [
+                    0.01,
+                    0.02,
+                    0.03,
+                    0.04,
+                    0.05,
+                    0.06,
+                    0.07,
+                    0.08,
+                    0.09,
+                    0.1,
+                    0.2,
+                    0.30000000000000004,
+                    0.4,
+                    0.5,
+                    0.6000000000000001,
+                    0.7000000000000001,
+                    0.8,
+                    0.9,
+                    1.0,
+                    2.0,
+                    3.0,
+                    4.0,
+                    5.0,
+                    6.0,
+                    7.0,
+                    8.0,
+                    9.0,
+                    10.0,
+                    20.0,
+                    30.0,
+                    40.0,
+                    50.0,
+                    60.0,
+                    70.0,
+                    80.0,
+                    90.0,
+                    100.0,
+                    200.0,
+                    300.0,
+                    400.0,
+                    500.0,
+                    600.0,
+                    700.0,
+                    800.0,
+                    900.0,
+                    1000.0
+                  ]
+                },
+                "status": "auto_passed"
+              }
+            }
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            5
+          ],
+          "children": [
+            "figure:fig5:vr75",
+            "figure:fig5:vr20"
+          ],
+          "plan_status": "series_group",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding"
+        },
+        "source_kind": "series_group",
+        "label": "figure:fig5",
+        "evidence": [
+          "b57",
+          "p4"
+        ],
+        "classification_review_pending": false,
+        "reason": "原计划状态为series_group；保留原记录及依据，不代表该组的子曲线已验证",
+        "reference_asset_bindings": [
+          {
+            "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/vr20.csv",
+            "status": "snapshot_bound",
+            "source_relative": "references/curves/fig5/vr20.csv",
+            "path": "assets/6bd776b5e839b976597c0c563bc1f20036c7e1b02e0c92d763b1737d66ac7b34.csv",
+            "sha256": "6bd776b5e839b976597c0c563bc1f20036c7e1b02e0c92d763b1737d66ac7b34",
+            "role": "reference_data"
+          },
+          {
+            "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig5/vr75.csv",
+            "status": "snapshot_bound",
+            "source_relative": "references/curves/fig5/vr75.csv",
+            "path": "assets/5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51.csv",
+            "sha256": "5b7a79bad3252f16f924db1c778688029a91c33fb3d020a679156edb21c6de51",
+            "role": "reference_data"
+          }
+        ],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "Local source, topology and measurement review; no claim of GLM approval"
+    },
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "scope": "Exact-condition method only; manual ranges, dual-instance and complete curve coverage remain open",
+    "sampled_reference": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/6bd776b5e839b976597c0c563bc1f20036c7e1b02e0c92d763b1737d66ac7b34.csv",
+      "sha256": "6bd776b5e839b976597c0c563bc1f20036c7e1b02e0c92d763b1737d66ac7b34",
+      "x": 29.49418256,
+      "y": 0.01,
+      "row_index": 0
+    },
+    "scope_note": "Three actual reference points only; full curve MAE/max acceptance pending"
+  },
+  "receipt": {
+    "device": "1N4148",
+    "id": "figure_fig5_point0",
+    "reference_ids": [
+      "figure:fig5"
+    ],
+    "scope": "Exact-condition method only; manual ranges, dual-instance and complete curve coverage remain open",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "Local source, topology and measurement review; no claim of GLM approval"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+    "calibrations": [
+      {
+        "expected": 400.0,
+        "result": {
+          "value": 400.0
+        },
+        "error": 0.0,
+        "tolerance": 0.04,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/0cd1056bccc239933d4295d0dc08bc5e4e7b4873f3b7fb963e008025edf47991",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "260e0709d7c8df77a265776d4d97e5942276fc646540176d4292886db74b6947",
+          "test.raw": "8704f48b5d0721079eea1c488f76e6482e02e79da993ae902421bf1900945bbf",
+          "test.log": "9d4aad978fcc4c228bc50e9ff6989d6fc4b01da508003eb6ecab9edeaf6f0d95",
+          "execution.json": "f4b149ffb15b9331efcbb2e93d8c55b6a0c0dddc0decdadec5ad96e08538003f"
+        }
+      },
+      {
+        "expected": 800.0,
+        "result": {
+          "value": 800.0
+        },
+        "error": 0.0,
+        "tolerance": 0.08,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/f83e23aded369fdd8c90d2470833c934e357895b8e177cb354d201cf8540c254",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "3ddb730edff31660840975ce10ea54f48d3f7d2fd30cdf218878e9a393079d8b",
+          "test.raw": "fb025bffcfaea4ded5d6a25eb6af8f026e2e1613112c76330c3ddcd5b199c83f",
+          "test.log": "cc890ea37e6da439345a8b9019cb978702c618e0c9c59599b54b9e91fb2eb2f5",
+          "execution.json": "9bdd123fcd1629230b12b7ee5086eeb5178ba913500fbe375b8c0ee455c0b724"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 24123828.297053043
+      },
+      "acceptance": "fail",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/first_four_qualification/simulations/a854dcf8f3ddbb4ca10b12e92d48a67eb1f56e88da5b74a58494595cb1b38752",
+      "artifacts": {
+        "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "test.cir": "4dc90f3a4d312faa37f77bf054939125648412dfcec840fb47326abba2a98acd",
+        "test.raw": "baa269c2ba6ef013a556be94a1d486d7466988ef75a9cf5f929a55e8404d3084",
+        "test.log": "7f09b487a0e4d8e84310d5ab4a869500ea42819b6673d79520a32c15f9f8c519",
+        "execution.json": "2e0c8e05b88017af5320e9e242141290622a13c6fbd9ad1633423ff3dfacdb2e"
+      }
+    },
+    "protocol_sha256": "28b2e4303215bb1004d524f082dc3dba6c9cddc77077895b5a363a126dfe0530"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}
