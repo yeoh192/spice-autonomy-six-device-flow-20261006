@@ -375,14 +375,17 @@ def qualification_sources(root, packet, development=None, qualification=None):
             if dev['device']!=packet['device']:continue
             folder=inside(runtime/root.name,runtime)
             state=read(folder/'state.json')
-            checkpoint=state['checkpoints']['workflow'];model=checkpoint['active_model']
             for row in dev.get('qualified',[]):
+                record_key=row.get('workflow_key')
+                checkpoint_key=record_key+':workflow' if record_key else 'workflow'
+                checkpoint=state['checkpoints'][checkpoint_key];model=checkpoint['active_model']
+                descriptor_folder=inside(folder/'records'/record_key,folder) if record_key else folder
                 case=row['case'];rid=row['reference_id']
                 if rid not in items:raise Fault('cache_corrupt','新方法引用未知手册记录')
-                descriptors=[p for p in (folder/'capabilities').glob('*.json') if read(p).get('case')==case]
+                descriptors=[p for p in (descriptor_folder/'capabilities').glob('*.json') if read(p).get('case')==case]
                 if len(descriptors)!=1:raise Fault('cache_corrupt','缺少唯一方法实测资格收据')
                 descriptor=descriptors[0];saved=read(descriptor)
-                ledger=state.get('plans',{}).get(descriptor.stem)
+                ledger=state.get('plans',{}).get(record_key+':'+descriptor.stem if record_key else descriptor.stem)
                 if not ledger or ledger.get('status')!='registered' or ledger.get('case')!=case:
                     raise Fault('cache_corrupt','方法收据与注册账本不同')
                 post=saved.get('post_trial_review',{})

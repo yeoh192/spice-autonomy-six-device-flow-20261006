@@ -97,7 +97,52 @@ def path_get(value, path):
     return value
 
 
+def protocol_shapes(protocol):
+    """Reject untrusted JSON container types before accessing their members."""
+    def expect(value, cls, path):
+        if not isinstance(value, cls):
+            raise Fault("proposal", path + "需要" + cls.__name__ + "，实际为" + type(value).__name__)
+        return value
+    expect(protocol, dict, "protocol")
+    for field in ("device_nodes", "analysis", "measurement"):
+        expect(protocol.get(field), dict, "protocol." + field)
+    for port, node in protocol["device_nodes"].items():
+        expect(port, str, "device_nodes.key")
+        expect(node, str, "device_nodes." + port)
+    components = expect(protocol.get("components"), list, "protocol.components")
+    for index, component in enumerate(components):
+        path = "components[" + str(index) + "]"
+        expect(component, dict, path)
+        for field in ("name", "kind"):
+            expect(component.get(field), str, path + "." + field)
+        for node in expect(component.get("nodes"), list, path + ".nodes"):
+            expect(node, str, path + ".nodes[]")
+        if component["kind"] in ("D", "S"):
+            expect(component.get("model"), str, path + ".model")
+        value = component.get("value")
+        if isinstance(value, dict) and "pwl" in value:
+            for pair in expect(value["pwl"], list, path + ".value.pwl"):
+                expect(pair, list, path + ".value.pwl[]")
+                if len(pair) != 2:
+                    raise Fault("proposal", path + ".value.pwl[]需要两个数值")
+    for name, parameters in expect(protocol.get("models", {}), dict, "protocol.models").items():
+        expect(name, str, "models.key")
+        expect(parameters, dict, "models." + name)
+    analysis = protocol["analysis"]
+    expect(analysis.get("kind"), str, "analysis.kind")
+    if "source" in analysis:
+        expect(analysis["source"], str, "analysis.source")
+    measurement = protocol["measurement"]
+    expect(measurement.get("mode"), str, "measurement.mode")
+    if "target" in measurement:
+        expect(measurement["target"], dict, "measurement.target")
+    for check in expect(protocol.get("checks", []), list, "protocol.checks"):
+        expect(check, dict, "checks[]")
+    return protocol
+
+
 def validate_protocol(protocol, model, contract=None):
+    protocol_shapes(protocol)
     if not isinstance(protocol, dict) or set(protocol) - {"components", "models", "device_nodes", "analysis", "measurement", "checks", "temperature_C", "method"}:
         raise Fault("proposal", "电路接口字段未知")
     try:

@@ -28,9 +28,9 @@ class InventoryDevelopmentTests(unittest.TestCase):
    source=p['components'][0]['value']['dc'];axis=[p['analysis']['start'],p['analysis']['stop']]
    data={'axis':axis,'signals':{'v(p)':[complex(.3+source)]*2,'v(n)':[complex(.3)]*2},'complete':True}
    self.assertAlmostEqual(measure(p,data)['value'],expected)
- def test_unimplemented_current_sample_oracle_blocks(self):
+ def test_current_sample_has_independent_oracles(self):
   p=self.protocol();p['measurement']['signal']='i(VSUP)'
-  with self.assertRaises(Fault):cd.sample_oracles(p)
+  self.assertEqual(len(cd.sample_oracles(p)),2)
  def test_same_nodes_block(self):
   p=self.protocol();p['measurement']['signal']='v(P,P)'
   with self.assertRaises(Fault):cd.sample_oracles(p)
@@ -110,3 +110,43 @@ class InventoryDevelopmentTests(unittest.TestCase):
    root=Path(t);(root/'m.lib').write_text('.subckt SENSOR P N\n.lib missing.sub\n.ends SENSOR\n')
    with self.assertRaises(Fault) as e:cd.reference_model(root,{'device':'SENSORKMATR-20AB-T','reference_assets':[{'role':'reference_interface_benchmark_only','path':'m.lib'}]},root/'out')
    self.assertEqual(e.exception.kind,'model_dependency_gap')
+
+ def test_malformed_json_feedback_then_valid_qualifies_without_manual_edit(self):
+  with tempfile.TemporaryDirectory() as t:
+   root=Path(t);runner=root/'runner';runner.write_text('offline runner')
+   model={'path':'m.lib','entry':'DEMO','ports':['P','N'],'declared_ports':['P','N']}
+   (root/'m.lib').write_text('.subckt DEMO P N\nR1 P N 1000\n.ends\n');model['sha256']=digest(root/'m.lib')
+   save(root/'task.json',{'model':model})
+   item=self.item(pdf_pages=[1]);item['reference_evidence']['values']['typ']=.5
+   save(root/'inventory.json',{'review_status':'pending','items':[item]})
+   save(root/'ports.json',{'pins':['P','N']});save(root/'pages.json',[{'page':1,'text':'TA=25°C'}])
+   packet={'device':'DEMO','inventory':'inventory.json','configured_task':'task.json','materials':{'ports':'ports.json','manual_page_evidence':'pages.json'},'routes':{'design':{'provider':'qwen','model':'offline'},'review':{'provider':'glm','model':'offline'}},'acceptance_standard':{'typical_tolerance_percent':10,'curve_mae_percent':5,'curve_max_error_percent':10}}
+   save(root/'device_input.json',packet);save(root/'batch.json',{'devices':[{'input':'device_input.json','folder':'DEMO'}]})
+   protocol={'temperature_C':25,'device_nodes':{'P':'P','N':'N'},'components':[{'kind':'V','name':'VDRIVE','nodes':['P','N'],'value':{'dc':0}},{'kind':'V','name':'VCM','nodes':['N','0'],'value':{'dc':.3}}],'analysis':{'kind':'dc','source':'VDRIVE','start':0,'stop':1,'step':.1},'measurement':{'mode':'sample','signal':'v(P,N)','at':.5},'checks':[]}
+   calls=[]
+   def transport(role,route,context,tokens):
+    calls.append(role)
+    if role=='contract_normalizer':
+     candidate=copy.deepcopy(protocol)
+     count=calls.count('contract_normalizer')
+     if count==1:candidate['models']=[]
+     if count==2:
+      self.assertIn('protocol.models',context['feedback']['message'])
+      candidate['analysis']=[candidate['analysis']]
+     if count==3:self.assertIn('protocol.analysis',context['feedback']['message'])
+     return {'decision':'propose','protocol':candidate,'condition_bindings':[{'quote':'25°C','protocol_path':'temperature_C'}],'unresolved_conditions':[]},{}
+    if role=='test_designer':return {'decision':'propose','protocol':copy.deepcopy(protocol)},{}
+    if context.get('stage')=='post_trial_review':return {'decision':'approve','conditions_complete':True,'measurement_correct':True,'approved_protocol_sha256':context['protocol_sha256']},{}
+    return {'decision':'approve','conditions_complete':True},{}
+   def backend(p,m,folder):
+    a=p['analysis'];xs=[a['start']+i*a['step'] for i in range(round((a['stop']-a['start'])/a['step'])+1)]
+    c=next((x for x in p['components'] if x['name']=='VORACLE'),None)
+    ys=[c['value']['dc'] if c else x for x in xs]
+    rows=['Title: mock voltage oracle','Plotname: DC transfer characteristic','Flags: real','No. Variables: 3','No. Points: '+str(len(xs)),'Variables:','0 voltage voltage','1 v(p) voltage','2 v(n) voltage','Values:']
+    for i,(x,y) in enumerate(zip(xs,ys)):rows.extend([str(i)+' '+str(x),str(.3+y),'.3'])
+    (folder/'test.raw').write_text('\n'.join(rows)+'\n');(folder/'test.log').write_text('offline analytic voltage')
+   with patch.object(cd,'validate_batch'):
+    report=cd.run(root/'batch.json',runner,root/'out',transport=transport,simulation_transport=backend)
+   self.assertEqual(len(report['devices'][0]['qualified']),1,report)
+   self.assertIn('contract_normalizer',calls);self.assertIn('test_designer',calls);self.assertEqual(calls.count('test_reviewer'),3)
+   self.assertTrue(report['test_backend']);self.assertFalse(report['full_batch_delivery'])

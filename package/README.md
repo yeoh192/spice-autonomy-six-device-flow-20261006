@@ -17,3 +17,6 @@ full coverage and electrical acceptance are still reported independently.
 
 ## 模型迭代（v0.2.9）
 保留覆盖确认与资格回写，随后接入Qwen模型补丁→GLM审查→全部活动测试回归→保留或回退→再次迭代。目前BUK23项、1N4148六项可进入模型迭代；其余四器件缺正式候选或正式活动测试时明确阻塞。参考接口模型不会自动变成交付候选。详见MODEL_ITERATION.md。
+
+## 五器件测试能力补齐（0.3.0开发版）
+新增完整可整理队列的测试开发与资格回写入口，详见TEST_COMPLETION.md。默认离线预检，真实执行使用RUN_FIVE_TEST_COMPLETION.sh --run。正式模型交付状态与测试方法资格分别报告。

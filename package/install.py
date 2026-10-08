@@ -34,6 +34,7 @@ def install(source, repo, isolated=False):
     pairs = [(source / "spice_flow.py", repo / "spice_flow.py"), (source / "six_batch.py", repo / "six_batch.py"), (source / "develop_inventory.py", repo / "develop_inventory.py")]
     pairs.append((source / "coverage_audit.py", repo / "coverage_audit.py"))
     pairs.append((source / "iterate_models.py", repo / "iterate_models.py"))
+    pairs.append((source / "complete_five_tests.py", repo / "complete_five_tests.py"))
     pairs += [(p, repo / p.relative_to(source)) for p in sorted((source / "flow_runtime").rglob("*.py"))]
     pairs += [(p, repo / p.relative_to(source)) for p in sorted((source / "template_assets").rglob("*")) if p.is_file()]
     pairs += [(p, repo / p.relative_to(source)) for p in sorted((source / "test_library_assets").rglob("*")) if p.is_file()]

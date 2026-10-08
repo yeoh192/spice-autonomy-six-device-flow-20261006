@@ -10,6 +10,7 @@ from .spice import (acceptance, load_reference, measure, model_text, render,
                     validate_model, validate_protocol, validate_measurement_unit)
 from .task import component
 from .contracts import can_extract, extracted_contract
+from .development_interfaces import interface_evidence
 
 INTERFACES = {
     "circuit": "R/C/L, independent V/I (DC/AC/PWL), numeric diode and voltage-controlled release switch fixtures, one DUT with task-defined pins",
@@ -352,6 +353,7 @@ class Workflow:
                 shared = bundle(self)
                 context = {"task": "Return {decision:propose,protocol:{...}} or defer with reason. Build a circuit using only the declared interfaces.",
                     "interfaces": INTERFACES, "model_interface": {k: self.task["model"][k] for k in ("entry", "ports", "declared_ports")},
+                    "interface_evidence": interface_evidence(self,item),
                     "reference": item, "contract": contract, "feedback": feedback,
                     "shared_evidence": shared, "stage": "design"}
                 proposal = self.agents.ask("test_designer", context)
@@ -369,6 +371,7 @@ class Workflow:
                 validate_measurement_unit(case)
                 circuit = render(p, self.task["model"])
                 review = self.agents.ask("test_reviewer", {"task": "Review the proposed circuit against immutable conditions and measurement. Calibration and DUT trial follow approval; absent future trial results are not proposal prerequisites. Return {decision:approve|revise,issues:[],evidence_ids:[]}.",
+                    "interface_evidence": interface_evidence(self,item,p),
                     "reference": item, "contract": contract, "actual_circuit": circuit, "protocol": p,
                     "shared_evidence": shared, "stage": "design_review", "protocol_sha256": fingerprint(p),
                     "calibration_oracles": "Trusted independent resistor/capacitor tests verify measurement primitives; they do not prove DUT fixture correctness."})
@@ -430,7 +433,7 @@ class Workflow:
                     "task": "Translate supplied evidence into an executable measurement contract. Return {decision:propose, protocol:{...}, condition_bindings:[{quote,protocol_path}], unresolved_conditions:[], measurement_rationale}. The quote must be an exact substring of reference_evidence.conditions. Paths use components@NAME/value/dc, components@NAME/value/pwl/INDEX/1, measurement/at, measurement/target/value or temperature_C. Every numeric manual condition must bind to a real circuit value in SI units. Never invent ports, data, measurement tolerance or unresolved dual-channel/package conditions. Use defer when evidence is insufficient. Output measurement must use the original reference unit (scale integral for nC if necessary).",
                     "reference": item, "interfaces": INTERFACES,
                     "model_interface": {k: self.task["model"][k] for k in ("entry", "ports", "declared_ports")},
-                    "feedback": feedback, "shared_evidence": bundle(self)})
+                    "feedback": feedback, "interface_evidence": interface_evidence(self,item), "shared_evidence": bundle(self)})
                 if proposal.get("decision") == "defer":
                     return {"reference_id": item["id"], "kind": "contract_deferred", "reason": proposal.get("reason")}
                 validate_protocol(proposal["protocol"], self.task["model"])
@@ -442,7 +445,8 @@ class Workflow:
                 validate_measurement_unit({"protocol": proposal["protocol"], "expectation": contract["expectation"]})
                 review = self.agents.ask("test_reviewer", {
                     "task": "Review the evidence interpretation, all qualitative and numeric manual conditions, unit scaling and measurement meaning, against the actual circuit. Return decision approve|revise plus conditions_complete:true only if every supplied manual condition is represented. Do not assume a single-channel model represents a multi-channel package.",
-                    "reference": item, "proposal": proposal, "derived_contract": contract,
+                    "interface_evidence": interface_evidence(self,item,proposal["protocol"]),
+                    "shared_evidence": bundle(self), "reference": item, "proposal": proposal, "derived_contract": contract,
                     "actual_circuit": render(proposal["protocol"], self.task["model"])})
                 if review.get("decision") != "approve" or review.get("conditions_complete") is not True:
                     raise Fault("review", "手册条件整理未通过独立审查", review)
