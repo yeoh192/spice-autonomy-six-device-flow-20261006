@@ -1,0 +1,15 @@
+Declarative SPICE workflow circuit
+.options plotwinsize=0
+.temp 25
+.options method=trap
+.include "model.lib"
+XDUT IN NIN VCC 0 OUT REFERENCE_INTERFACE
+VSUP VCC 0 5
+VDUMMY UNUSED 0 0
+VCM IN 0 2.5099999999999998
+RLOAD OUT CMLOAD 10000
+VLOAD CMLOAD 0 2.5
+VNEG NIN 0 2.4900000000000002
+.dc VDUMMY 0 1 1
+.save v(out)
+.end

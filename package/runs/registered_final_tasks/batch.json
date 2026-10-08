@@ -1,0 +1,37 @@
+{
+  "schema": "gpt-registered-regression-batch-1",
+  "tasks": [
+    {
+      "device": "ADA4528-1_MSOP",
+      "tests": 64,
+      "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_final_tasks/ADA4528-1_MSOP/dc359f7a24ce/task.json"
+    },
+    {
+      "device": "EMHK350ARA470MF80G",
+      "tests": 5,
+      "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_final_tasks/EMHK350ARA470MF80G/b089c114ab95/task.json"
+    },
+    {
+      "device": "750311423",
+      "tests": 6,
+      "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_final_tasks/750311423/d3b5f88f3dde/task.json"
+    },
+    {
+      "device": "1N4148",
+      "tests": 6,
+      "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_final_tasks/1N4148/18f8d0f50d7f/task.json"
+    },
+    {
+      "device": "EMHK350ARA470MF80G",
+      "tests": 3,
+      "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_final_tasks/EMHK350ARA470MF80G/e0f1c31d2387/task.json"
+    },
+    {
+      "device": "ACS723KMATR-20AB-T",
+      "tests": 27,
+      "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_final_tasks/ACS723KMATR-20AB-T/91ed7b8d39fb/task.json"
+    }
+  ],
+  "qualified_methods": 111,
+  "full_manual_coverage": false
+}

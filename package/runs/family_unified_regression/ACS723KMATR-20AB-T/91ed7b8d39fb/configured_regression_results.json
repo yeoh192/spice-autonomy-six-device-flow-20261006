@@ -1,0 +1,36 @@
+[
+  {
+    "value": 0.6500000000000001,
+    "test": "conductor_resistance_25C",
+    "execution": "completed",
+    "acceptance": "fail",
+    "model_sha256": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+    "protocol_sha256": "0abb833b469bc99f5d6ef566865830ee9d78a0cea88c51aa319fedba345e0bf7",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_unified_regression/ACS723KMATR-20AB-T/91ed7b8d39fb/simulations/9784207626d80fab37d12540ef77d9eb399e69b83c6ad41971b8d086964c4351",
+    "unit": "mΩ",
+    "artifact_hashes": {
+      "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+      "test.cir": "1deca82beeb845e110589d5909968851bde76f608c3c77e557658beca0d4f1c6",
+      "test.raw": "67875150ea54c3b1ba57803ba210ef422d6f58dd1f8dc824cd64356bbc3c1f3e",
+      "test.log": "1c1cb3b4d05e8ce1208cfe2c70a9ace24c7def9568971054cb0e57831e983022",
+      "execution.json": "c2c12f329933d02952f92092e9a18729b07ce3e020fe342c2994227c28bb3ba2"
+    }
+  },
+  {
+    "value": 2.499975000425274,
+    "test": "family_20AB_zero_V5_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+    "protocol_sha256": "d988c370bc3f566caf27de733bdea8fcf6e0a0369dd5d05472d1e0face542395",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_unified_regression/ACS723KMATR-20AB-T/91ed7b8d39fb/simulations/a692b2ebf4255ca9d2eab0a1c896fde36d314d9c6b064d7eef0cecc42a1590ca",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+      "test.cir": "5c5c4c8a2b1ef404bd88268b173d9cf11c787025d17d77bba8568d07842602bf",
+      "test.raw": "7d9f7d7b072d071997268bc6c426804651c0a0a15ff0d65c6954cf6f14f3f660",
+      "test.log": "c1801baa6f83962660799f60e369bd15b688364cc16f996948f8176b3ec96b1c",
+      "execution.json": "8056359f3c1a7080c97ac647fefcb5e1d411d7a01e10e2b17dc4794048bc6954"
+    }
+  }
+]

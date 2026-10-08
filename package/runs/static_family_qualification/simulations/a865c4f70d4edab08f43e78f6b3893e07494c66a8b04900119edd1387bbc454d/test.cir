@@ -1,0 +1,12 @@
+Declarative SPICE workflow circuit
+.options plotwinsize=0
+.temp 25
+.options method=trap
+VIP 0 A 0
+ICAL1 A 0 8.0000000000000003e-10
+VIM 0 B 0
+ICAL2 B 0 -2.0000000000000001e-10
+VDUMMY UNUSED 0 0
+.dc VDUMMY 0 1 1
+.save i(vim) i(vip)
+.end

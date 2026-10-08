@@ -1,0 +1,15 @@
+LTspice 26.0.2 for MacOS
+Circuit: /Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/9f0641a63e27a748a3c92a3cfc66fb91238538583c071c432df3d8816799ea68/test.cir
+Start Time: Thu Oct  8 20:02:57 2026
+Options:plotwinsize=0 method=trap
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 25
+method = trap
+AsciiRawFile = true
+Total elapsed time: 0.074 seconds.
+
+Files loaded:
+/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/9f0641a63e27a748a3c92a3cfc66fb91238538583c071c432df3d8816799ea68/test.cir
+

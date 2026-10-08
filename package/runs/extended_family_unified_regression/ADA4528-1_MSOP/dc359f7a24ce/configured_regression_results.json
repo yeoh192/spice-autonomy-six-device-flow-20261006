@@ -1,0 +1,1090 @@
+[
+  {
+    "value": 1.500622137407811,
+    "test": "supply_current_5V_25C",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "dce789b9be26bf226bfe4d20043635c43a7ee5fd617ed0342fdf4c73132102ff",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/d737a99bba3d73703f7d93589252dde67c9632386fd1da4e91195a198f4bf6eb",
+    "unit": "mA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "adea2470d5029d56a555da6a9132af9f14940518e586f058748e873de7713bdf",
+      "test.raw": "84590a4a3670284d06437b64fc54fbf0caf211e5da180cca74ec2df8093a3d18",
+      "test.log": "c52d67bb843f0d5c7ca4842ee0a4967dd8ce2b73b385bc3949a81e06862e6afc",
+      "execution.json": "205adecc51be9d70ed2423ec34e909d7ad921a97323a8d21328501881527bda1"
+    }
+  },
+  {
+    "value": 9.640757383942708,
+    "test": "family_vol_2p5_2_V2p5_T25",
+    "execution": "completed",
+    "acceptance": "fail",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "926a777d547378f78b06b5b1dc15c611294e7e9a248e1deeef65cef0beccb96c",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/45782bc9b4ea76b01732c51fe9c7a7c3b8e491dfed99e1d0746a021a9bb070bf",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "93c193e65da76eca5a5ac7e4440154d04be60f3fb53c87fb1e4ec9c2ad411ec1",
+      "test.raw": "67af7fdf71035ef0eb9f34f299712da051e0da77ef2986f03008a3d99e2cde62",
+      "test.log": "f965e2700549e9cdfaccc770ccbfaffabd52c4024bfcc303f8dc7498dfb932ef",
+      "execution.json": "09fd71a55fe79f7562b59873779d0156657632866fa23426052151cfeea81a60"
+    }
+  },
+  {
+    "value": 1.929211379078185,
+    "test": "family_vol_2p5_10_V2p5_T25",
+    "execution": "completed",
+    "acceptance": "fail",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "ec3077abd3d6637e6bd77a03b55114c8144deed3b97f2037304bae6cf1488735",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/c911ab6202fb231cab1fff056505b67e904d9246b7ae2c028f0e1bf186f7083b",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "38c4ec41f06ebeff304c67d61b7fed71b51b6126d325d7c0da8b5ad9613f4832",
+      "test.raw": "310dcf163b0929d80cec576baed3e877d783ef448a6e6ea741b7be7471fc745f",
+      "test.log": "3c57a9bb936aed442861585b472bd3933fb103203fc07985ae07249da8af6f39",
+      "execution.json": "b88dae90342282ded20b9198db8d8fe9d55805234f82c0c47cc454ba2a940d73"
+    }
+  },
+  {
+    "value": 2.489184279428462,
+    "test": "family_voh_2p5_2_V2p5_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "fe2e6d1bc30fdaf3bc3c1e46c664ef50623fca7600698140c89a2c057ee3a12b",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/713fe722f3c7beee590d1ff58d138da85216948f473209ff47899525c53cff82",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "d702cd839581aa45b755988ddb8a5764f4807d1176d9b3b1c48ee92d94fe6314",
+      "test.raw": "c8a73c0124728f2b0f04151bef64d1e172c42dbbbc5f9d21ab118d9fc99c94c4",
+      "test.log": "11f7dc2ba4052435b3231d17d65da6897af734fcef4b63e0fa557f97361bce0f",
+      "execution.json": "bb180d8c22f62df2610c3017a7605aed44daea45fdb7b81c8b32b0b80384ffec"
+    }
+  },
+  {
+    "value": 19.42396702079564,
+    "test": "family_vol_5_2_V5p0_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "d370c1c862ea115af62b6f917ac1b572885114ec25b967c5ddc609d8f2634fb4",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/b39a9b21b916c39a8125e93d072ddd9a032e4c97cd4f8af20e5b37bfd591ad91",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "f7ad51d353d55e332ec6c7d02610c54a542774de8fc5a7f9c56e8bddd166ca8a",
+      "test.raw": "a50b2dd0fbb2790672ea765d7eb37a3f9f7a47960393c8f7dbb73db968a09502",
+      "test.log": "b39ba6ae813aa1242f8b637f02b10c34deb2464111580983b9bec90f3bc28701",
+      "execution.json": "44dbe12dd4d6b9c256c6f3d37e020c1788cde6e122692abe7b11755660eb2821"
+    }
+  },
+  {
+    "value": 2.497830841313407,
+    "test": "family_voh_2p5_10_V2p5_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "7b6d95a3f6136f5d650a1539ca762f6e3a4925e7a03f288eb4ebce30a4363e03",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/bd9ed45ff1c1ee857d8c6f051405bcdd6647d4228970b218e78d440167d5d858",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "66ae5dc0796edc06fee798b99008adff4e52dc6e672af2ed4b86904bbc2f0e0c",
+      "test.raw": "843f68b78537de233ac18a9b11efa09ae7f375709e4921c8dd9cdf04bda56a58",
+      "test.log": "382abf5cd76e1b2f8b875db33a41deab6ec7ad130ad5bf4f3711f79855c8265f",
+      "execution.json": "956b980fa13c50b5a9d8562ab7471099ddb980582c7ec78e753a406dc8d97438"
+    }
+  },
+  {
+    "value": 4.978250037186565,
+    "test": "family_voh_5_2_V5p0_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "518fb064ec30bef178569f63dd13ff6274bc5666224a7af575d0b45b3efcf80a",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/645ad8947b04ec47b4f1fcc7bc0ced54015be59845ad3369a4cce4b16351215e",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "6455c62056c6df6720274c2d054bb7304ddd90defeced85b9591894888cfa071",
+      "test.raw": "9c4203ff6b3155714b8871f495b7477e4d3915aeb75827e7c4698f0031388c65",
+      "test.log": "93924f50537db5bd9ab34029879a6279c85a4eeacc3bd731d4954dcbf4dd3347",
+      "execution.json": "dba54892507ed0c77dc2c16636082ff57cbb6d5d4e791d822125a42095edf0ed"
+    }
+  },
+  {
+    "value": 3.864027603988419,
+    "test": "family_vol_5_10_V5p0_T25",
+    "execution": "completed",
+    "acceptance": "fail",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "f5feaf8fcc9a76114f13c8b40ca00826cacc1ec02e369293ac89c2773d1cbcc5",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/8bdcbaa661ad7150048fab56bad5919898ab142433f3555d261e6f2bb8e9d0b5",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "8e4980f22193ab39f062916aa5444ad14a99ae5bad3272a95b744761e239a56e",
+      "test.raw": "33d8759ef857195f82892ce79873b1121a03bcd28e4a24c3172ac7fd894227d8",
+      "test.log": "c67cff5360bab51cabbfc796f5ac7c8625ee2612d316dc1ccb60cbe1d536550b",
+      "execution.json": "a8dc2eb68a3373584fe86aa8bc019707800329d5ee4f3b4f7be09dd971537f2d"
+    }
+  },
+  {
+    "value": 4.995656967528453,
+    "test": "family_voh_5_10_V5p0_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "7d376f15b3afd4480b460fe24c7165d49541979ee651e8c3f1c7fd1c18f067de",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/1bfb1217b2278db5e2af2332516ff4812179518dad26c24cb44e6135eb44545e",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "bac23164cabad6dad66e6e4bfa649dfaacaf2df6982cc37e47f28676a3be4ec9",
+      "test.raw": "15145b2c1387cf4b8d95e2d3900893c8cb040036b076d4a1e96781147f6f6bca",
+      "test.log": "cac242cbb4f837df45dafe59f0d892b7e8db47bb1e6bfffddcb421b9125cb18a",
+      "execution.json": "d26ea1cfd7f44994f485db80e180541473e09d33a9991fbafef1bd24e360028c"
+    }
+  },
+  {
+    "value": 1.40059693112056,
+    "test": "family_icc_2p5_V2p5_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "0cfd54feec40b18304c1cd2da870dc33037d754b2e5c89a3bf56e4f42a67b5b1",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/b92170a1bb4beec5f7a4842cf5fb3f36b5ae134f767c586603811648d48a10c2",
+    "unit": "mA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "3748704fd57031abc1dbd86b1a6072f6696c63dd44e2270d9c884e58290adad6",
+      "test.raw": "1df95b1af51c0aa77d738406a3d0f2d6af48c6ee450477013089fcf2d9e171cf",
+      "test.log": "cde3385a5d70facee2683cbad4790575aec771e64842d2de03bb004ad976a68c",
+      "execution.json": "53110a5c841c07ef4b7866fa86385d09f97b50a45b62e38bd847627ce3af1e1e"
+    }
+  },
+  {
+    "value": 87.50331362272767,
+    "test": "static_ib_5_1_T25_CM2p5",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "7c4bf17268dcd9eee42e74c2357ada4af962c371129ff8affd7797014661c623",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/47a6db05018f02ab7e2327e705318732b30b286719d8ba778067b919d79f8660",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "7416fe47914a1b068729a19b7a8e56e784ef5dd48b6ed8b6b3c2e63d6ebadf87",
+      "test.raw": "11e0ea6130f65652b1005608ed1f5a7f93da68ec55ed0fca0b4eb7e129b6c7d7",
+      "test.log": "f3f950d426d2b9591685c996252126693c61e3d62c844a9eb8c2e30b3cf85795",
+      "execution.json": "356a9180381b929b63878a25a5082ee551d2e0eee0320976ed39fb6c1a8014fa"
+    }
+  },
+  {
+    "value": 2.497830841313407,
+    "test": "family_voh_2p5_10_full_V2p5_T125",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "4f1aecbdc22c8fa79c1bdfb9cdf348822b6715e48775bbe096b55f4950356126",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/91bcec02dc8fa25386df74392f0764a1ffb3341d68f3b18240ec26ea69efe2eb",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "80322be3b65f1ad88e73c5d8f9352dc9bb9c4b2cbf1e83a460a2a63d4ab82613",
+      "test.raw": "728e687633e8fe6b7d57e270638af3ddb6e6b3262ad1c787dcce5f241d43cd5f",
+      "test.log": "1995f36c11c02f860f88729470b87501c09b8bfe0811df578fae768d42a4a38f",
+      "execution.json": "3e6683fb8796447428f36d3bc7644c0e2049a05ee871f1aafbc7c018c559365b"
+    }
+  },
+  {
+    "value": 3.864027603988419,
+    "test": "family_vol_5_10_full_V5p0_T125",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "668a39a6646f1d2381ffdeccea7f4ab6df8604117b2e687c75bd24c0c2541aab",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/75856638ac6d91e2963bdd3d43fe5ea3b382d3c96c832cff60e242319d8670be",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "ba0ecb6afd44a6e49c21d284e2b926ffef2f2384c5ba9901290ca6cca6ed6fe2",
+      "test.raw": "50476e480dfbcf3d617e2e2b905843948542a52bc2fd951de0a68412b9a93d19",
+      "test.log": "92995906cf0a09dfcfc94c0591c2da1bf39862753d7043f38b00ed0f317c13e6",
+      "execution.json": "6cb397202f9f7bd69878e65b778444b3d5be70865229171de3a1962455098647"
+    }
+  },
+  {
+    "value": 4.995656967528453,
+    "test": "family_voh_5_10_full_V5p0_Tm40",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "cf85ab5235b3d13ba120c734828a38444dcd1c3b27aa948ef4702598d78586bc",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/7be7bfe06b1b2db5a541909a4434f7eba1f0e71d5d47d107e16d3378e6acf18b",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "bbc89a870833b3dabade30822d5cc28b68aefb79dcaddeafd7a5a61ca38deab6",
+      "test.raw": "e0c5ac7f0f5b01be19a8ae1617e8ea898d58a002d40c78168490df8feb29b8dd",
+      "test.log": "c53742b49e848df270c004dcc693cd80d07161f3e81a9df7e328f44e24c107d2",
+      "execution.json": "e055ff2661e6d5337517b1adc2fe4fe403922c85164f60a3414bcfe656a4d8ad"
+    }
+  },
+  {
+    "value": 19.42396702079564,
+    "test": "family_vol_5_2_full_V5p0_T125",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "28c9880afbda9670178fe6ef05de6147b0904cfdbc5193755947172a626565e8",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/1ceb61026e8bd7556fdf27ae4485dd7aeae588d5a469152d8c89021e85f1ab5b",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "5a660b91d73b6586d0313f35168ce2fc72e3758849abe861d7092c5080d7ea94",
+      "test.raw": "dd93e340df776afcd4027d7e81b18f42b9e235ebeef8aa983183251025b435ea",
+      "test.log": "331fe661e004f88da0e4a35b24699e392ef00c39129a620b79728cc155975f8c",
+      "execution.json": "a3b5e6c62bf621cfd4b4148a36326aec03a3568b4b1a9633d6473d15610fc41c"
+    }
+  },
+  {
+    "value": 175.00662534132528,
+    "test": "static_ios_5_full_1_Tm40_CM2p5",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "408791e03aae2a9b941ec4d937eba4d84b5b46ec33da8da89c5b04c9e7622ea8",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/8495983e1403b8f6c574904368784546fad68b859dfe2efeb364beda4de78d99",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "07ebf7466db0c38cd4e238210c95a3d93d7782b6206c5226f3714ae70b404003",
+      "test.raw": "f0a39f22e0bae990fded74b1e86ab9c13c193f70d0e05e03aaa0746a49117c93",
+      "test.log": "c52522cb78b31e56864552050c436279652c40c0aa4e3e97ba9f708e8a5315f3",
+      "execution.json": "6780d648e03ec5e0f6f3cf6cdef83d4319d37cf61efba7e0605a262b64a622f0"
+    }
+  },
+  {
+    "value": 1.929211379078185,
+    "test": "family_vol_2p5_10_full_V2p5_Tm40",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "953b0f25b7d797d941e7d5fa5ce5b2f2843275c56b996a5f98ababef72187b75",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/1e48e13ad986e26fef931b60a7a1b4d5df5e0e85f6bc66b6ae223ae476e50afb",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "faff11a7c99fa2cfdae4fe807dbdf695f619930c6bd279998812033f9a028811",
+      "test.raw": "a4d73c98b82bddc6a85b997f87f461ee89d6841df5141463ef8a68852c182afc",
+      "test.log": "406f9653f7c7cdc575599c12ffd9785a3c098c06f5201fd62034d9231245069f",
+      "execution.json": "0e36a28afb6fb9e26bcf1090f6df1a5d453c8b5b084982ecc28a5f0ba1dd12c7"
+    }
+  },
+  {
+    "value": 0.46509631390634354,
+    "test": "static_vos_5_full_T125_CM2p5",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "70fb422e78800b62f6606255e146d2000845c7063cae3edf57b9eda7bdb3575e",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/3937429e30b4595d1884b4aca5554b9019da899abd82440e77c57e51b8640569",
+    "unit": "μV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "e6925e8df1e353d533ba273c901a2a4c6bf925d2b6d6004e0053f8f347c22b78",
+      "test.raw": "8bca1559317c735f31131167cf2bd9d99af18f140e93312ff7440b7b06a339dd",
+      "test.log": "c33ec1fa1984c1a8d8e6ed5ccbe2b81e10d35b94e22cfaf68fcedeeb32daf938",
+      "execution.json": "75d97aff625078331abdc5a95e56512335e7346345e3d65ee694daa8b002305b"
+    }
+  },
+  {
+    "value": 1.40059693112056,
+    "test": "family_icc_full_2p5_V2p5_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "0cfd54feec40b18304c1cd2da870dc33037d754b2e5c89a3bf56e4f42a67b5b1",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/b92170a1bb4beec5f7a4842cf5fb3f36b5ae134f767c586603811648d48a10c2",
+    "unit": "mA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "3748704fd57031abc1dbd86b1a6072f6696c63dd44e2270d9c884e58290adad6",
+      "test.raw": "1df95b1af51c0aa77d738406a3d0f2d6af48c6ee450477013089fcf2d9e171cf",
+      "test.log": "cde3385a5d70facee2683cbad4790575aec771e64842d2de03bb004ad976a68c",
+      "execution.json": "53110a5c841c07ef4b7866fa86385d09f97b50a45b62e38bd847627ce3af1e1e"
+    }
+  },
+  {
+    "value": 3.864027603988419,
+    "test": "family_vol_5_10_full_V5p0_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "f5feaf8fcc9a76114f13c8b40ca00826cacc1ec02e369293ac89c2773d1cbcc5",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/8bdcbaa661ad7150048fab56bad5919898ab142433f3555d261e6f2bb8e9d0b5",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "8e4980f22193ab39f062916aa5444ad14a99ae5bad3272a95b744761e239a56e",
+      "test.raw": "33d8759ef857195f82892ce79873b1121a03bcd28e4a24c3172ac7fd894227d8",
+      "test.log": "c67cff5360bab51cabbfc796f5ac7c8625ee2612d316dc1ccb60cbe1d536550b",
+      "execution.json": "a8dc2eb68a3373584fe86aa8bc019707800329d5ee4f3b4f7be09dd971537f2d"
+    }
+  },
+  {
+    "value": 2.489184279428462,
+    "test": "family_voh_2p5_2_full_V2p5_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "fe2e6d1bc30fdaf3bc3c1e46c664ef50623fca7600698140c89a2c057ee3a12b",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/713fe722f3c7beee590d1ff58d138da85216948f473209ff47899525c53cff82",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "d702cd839581aa45b755988ddb8a5764f4807d1176d9b3b1c48ee92d94fe6314",
+      "test.raw": "c8a73c0124728f2b0f04151bef64d1e172c42dbbbc5f9d21ab118d9fc99c94c4",
+      "test.log": "11f7dc2ba4052435b3231d17d65da6897af734fcef4b63e0fa557f97361bce0f",
+      "execution.json": "bb180d8c22f62df2610c3017a7605aed44daea45fdb7b81c8b32b0b80384ffec"
+    }
+  },
+  {
+    "value": 2.497830841313407,
+    "test": "family_voh_2p5_10_full_V2p5_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "7b6d95a3f6136f5d650a1539ca762f6e3a4925e7a03f288eb4ebce30a4363e03",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/bd9ed45ff1c1ee857d8c6f051405bcdd6647d4228970b218e78d440167d5d858",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "66ae5dc0796edc06fee798b99008adff4e52dc6e672af2ed4b86904bbc2f0e0c",
+      "test.raw": "843f68b78537de233ac18a9b11efa09ae7f375709e4921c8dd9cdf04bda56a58",
+      "test.log": "382abf5cd76e1b2f8b875db33a41deab6ec7ad130ad5bf4f3711f79855c8265f",
+      "execution.json": "956b980fa13c50b5a9d8562ab7471099ddb980582c7ec78e753a406dc8d97438"
+    }
+  },
+  {
+    "value": 1.40059693112056,
+    "test": "family_icc_full_2p5_V2p5_Tm40",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "eafd30822e6f5354f51a6780df28c3ad80476a6396609c9704d0d08c449ce199",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/d888ecafb6668bbae2f2e6c6c06c7116434ce233a5566587451a3fc68f24f453",
+    "unit": "mA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "fde2d186c78c961103f469cb45db8c984eef438c9f070aa884408b2d3465f455",
+      "test.raw": "94498433a6506610d949bd3522248075ebc4b0df4c668b5676938addfd58938c",
+      "test.log": "69ad4e21afd49e16755d95f976b013d1252e6a426695bddd1bd852a21a811318",
+      "execution.json": "be84c05a071f41e77af2042e1244d42f9c67f6cef030990e75c8152a7cd47744"
+    }
+  },
+  {
+    "value": 9.640757383942708,
+    "test": "family_vol_2p5_2_full_V2p5_T125",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "85882fed2bcc43e0551074c48a7fbfcc5e5dc530afb316631733711c96c44b10",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/b969f81193a1978b619ec4a4a71fdb48c09439724c8f5466b44619fb0aaef877",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "4eb6a47094d9d494f57424b40dac79f2fdf784103ce820fabf7a35fd0c2f08a0",
+      "test.raw": "d511b533ae30354185d23e9c5d9c50092a6475169c68834f8e1eb3e00308ae27",
+      "test.log": "b2d8d4e1a96cd0f660324806b7e2fa5345a9c2568e336065c552e4a6f358defa",
+      "execution.json": "a725a21ea405a158296e86c797c562b18027fe5215200828ac4f16401d977fe0"
+    }
+  },
+  {
+    "value": 218.6155458050454,
+    "test": "static_ib_2p5_full_Tm40_CM1p25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "37f6c1c274db36ca823389f427e17284b0b778fd8564d5e236aa60b40161d32d",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/738ab8decafaf2bf0b12756c88df9f4a70174a3cfa70411d2144acb702a2a6fd",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "9465d4b515560b493cacfcc9c72ac1b70879faba2912d034c4c3a594eda13dc8",
+      "test.raw": "de3e403bf21e50263e5afc86d3af0c7e9d81b27d569aeadcae2dd12252806805",
+      "test.log": "4ba0df2ec451b75094d810a2a41dce1abedc7ad1b48eac6c61e351e2b76a2fee",
+      "execution.json": "9ea0eb839f4ca3f50f75984c9bd24b20df99b6fff8d8391abf7c8285810bddc2"
+    }
+  },
+  {
+    "value": 1.40059693112056,
+    "test": "family_icc_full_2p5_V2p5_T125",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "ed9958b4d4e7557145bed3eb96c320c4d650ef4d9ee7552f24841fd701ed16d8",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/3afd8d7bf97b3754c407d2536460121fe390193be6dea9101091f9453b7bae65",
+    "unit": "mA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "c28c973415bd9b1ceca60ee182e8499e27ff2f2bcfbd1a026c00458211123460",
+      "test.raw": "0415946a2e35249d30df4487239d91188a2565b0123fb13f5fd326382cfbeed8",
+      "test.log": "f04e39f96d272324ff2d64a88976dd466678cfa3e3c5cc5daab23576d1b55b21",
+      "execution.json": "10024159cfd0baf3d256d70a4f5e8bcb23174fb8d98669b9996bcf477b10751f"
+    }
+  },
+  {
+    "value": 218.6155458050454,
+    "test": "static_ib_2p5_T25_CM1p25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "c963ddb68f5dff93de9fc91fbf31a9365fb61b553adf1b6d05fe6a344dd6ac74",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/2adff41f8f2873be3a19b62640810cc0776598532dce2304a69bed46810b82fc",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "37acfec3abd3aa641769dfa4bf2986db6dc661d2f4523b1e1a7d25df9007de08",
+      "test.raw": "48a8bd40ef7c4396074251eac47f3c97bca918f41c25189efa48c11955aaeeea",
+      "test.log": "f24d46287fa81e218e57dd8733587c5430264f3b3848bc45367ce153c4ba6ba5",
+      "execution.json": "a4c3d894a42d7f64f15b3d58b6f0ebe708d065f9c82602b94fadd553d186f0ee"
+    }
+  },
+  {
+    "value": 87.50331362272767,
+    "test": "static_ib_5_full_1_Tm40_CM2p5",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "69ebba23c00fbfbc6c14ca09f21ec68409a71a0f285d2befa57f898a342810fd",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/0c8bde8d261a8c1080321c62acc05d7e5186fea6f14f3920455ce4c813d12e31",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "07ebf7466db0c38cd4e238210c95a3d93d7782b6206c5226f3714ae70b404003",
+      "test.raw": "e5cf8e74562ffc5fb3688b287df2b7a5890b9f1b83495738469d9556226ad310",
+      "test.log": "8fcd9efae006cae601b279e2f0487fb240e7a45d4559ad894eab5194b0076ae9",
+      "execution.json": "5598b1db30a9f10b9305754d570a601cb1677bf3c29b8125aac1f44075143b3b"
+    }
+  },
+  {
+    "value": 0.46509642692704745,
+    "test": "static_vos_2p5_full_MSOP_Tm40_CM1p25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "afbbec0734b1365eefc4f7e91764424fe0ef82269c51f39343beebce9e3784a9",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/d1ee1fba7a501765acaf7805d17452ddfcf6673b7c8cd023c8fe871dc5ef9238",
+    "unit": "μV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "725891e73754b547aa941daf24c2cf6e427d7e5a62330643435d5501f93231b8",
+      "test.raw": "d5ac3e137b7fd07714f3dc9a38f6ac70df17b5d8bccf6bd07dbe248dd4acfba0",
+      "test.log": "b339e2c6dc5a0686510cccf0132cb063127764aa36befd228d673927e007d590",
+      "execution.json": "ef2024029e2e5a4ded7f0b87b3481db3d97b559500f462514d13491d069d5213"
+    }
+  },
+  {
+    "value": 1.929211379078185,
+    "test": "family_vol_2p5_10_full_V2p5_T125",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "99cafb490153070b5f17233745d54666fe91f44f6847dcbd2f35dcccd291e2c7",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/bc43b9c18baf7ded39e4ddae33304e72bbfce53b79add1ac1c03fd6edcc45cb4",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "1600266ca2021ebba30649e91e21d8bc6139a3f936c11b00aa00e568338829c3",
+      "test.raw": "bc9b28dcb39d4c02662ad6b9c09ef9786440a399c91224ebb7ad83b29e1f69de",
+      "test.log": "20ed670b36c766c3ca37b87e945414034958a267c778e97156b07d69207b773f",
+      "execution.json": "7107d0eb02c671f8d3068373d44a47f2c6ad7b26a15e326ad0f7c5fabae62cbb"
+    }
+  },
+  {
+    "value": 1.500622137407811,
+    "test": "family_icc_full_5_V5p0_Tm40",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "653891a31e5d523351a9f1b09abd6bf3245094787ebfae920f93da6d51256139",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/a47de261dfa5a87feba64c19369b4245b6097f8170a76014a357161c11294286",
+    "unit": "mA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "5b35d66fc7a5f191e1a3af1938718cee4eeded512c8a88ffb94add5e49e67419",
+      "test.raw": "a3ba0b1708c80df42b89507b114c6686412ac115ef7b14b0571f41991d8a4e26",
+      "test.log": "5cb59715d9e4e9a07f34af2583b81a440a224035de5172237df0b4258a8e7d9b",
+      "execution.json": "9e05de9309b5e84848da6a0a38f3ce4e69d7ac24647b52ebd242e2ce3c655ccc"
+    }
+  },
+  {
+    "value": 437.23109065802583,
+    "test": "static_ios_2p5_full_T25_CM1p25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "e2f3c26474642418e614212b5ee9bdc23f85c6aaaaab5e13ce33f0e3246b4aad",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/78c43f67eb4219faba198ed2d7aaa1c534c9ecf2616d124d90bd4ea3ccea08ab",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "37acfec3abd3aa641769dfa4bf2986db6dc661d2f4523b1e1a7d25df9007de08",
+      "test.raw": "78c704fabea23dc616e4d470a0d3ebc7b18b60aa9c11a4ee2447a78d0fde2353",
+      "test.log": "076907089f5004fe6fb146e94ede14f6e4674bf675e8b0aa3eb1d1d3d3fd9004",
+      "execution.json": "87e06e39d0f2621138427f5c9a70c05213346596eb37eee496d72dd51daa3c90"
+    }
+  },
+  {
+    "value": 4.978250037186565,
+    "test": "family_voh_5_2_full_V5p0_Tm40",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "ec1956e8750ee4d13844a05244bd11429eaeff5f5d4f77e81f0a42ed91d3eca4",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/fd7a3a6c135c622501ea55437411db30cf3a443922c03f98035d6637786d67a5",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "2fbfbb07bd44e7076543f2d85a90db78c2684efa85d3e48fb4e320033467bd50",
+      "test.raw": "50d166d47a3738ba3205f6cd133508c542704798324de56c68582cda4a41d250",
+      "test.log": "f8bb964c4a1d25293938ae37bb17ce786c86f0c964a7cf3af4ec889b75f75bbc",
+      "execution.json": "823d7df4e9a4787b8fc1c0b4aec76347cf01688461dfbedcc691f1f9ce231950"
+    }
+  },
+  {
+    "value": 3.864027603988419,
+    "test": "family_vol_5_10_full_V5p0_Tm40",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "21cd1954606939f4439bb687b2d3ad0054b61b725079fe22e3a78005d7827fd3",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/f2c833f7d3b3d377d1cd5723082cc1768ade7540ead1199e43314c603fa5ecc4",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "5030230c2c1617ae59c991a6530be9e13b44edc58287f22fc554040ede17c025",
+      "test.raw": "be6e89f02713523f69ae25b503ff1a4017afb7193b9226d75be218bd1c1009f4",
+      "test.log": "b86b81bf44b6d9721e479e57446ffbb575af38cbef77e68aa62fc6cae3abdb2c",
+      "execution.json": "44f6abbe8193d4ccff9501e9377834ce5e8ebda6b33c9db4148d87a037791b0e"
+    }
+  },
+  {
+    "value": 1.500622137407811,
+    "test": "family_icc_full_5_V5p0_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "46f234d540c4fe6e78917ea0fcab103190e564e1960e536d781a17edf6c35048",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/8f4325b93515c60ac07c4a9454a6c67bbcfeb0db125da526c07c6f94a1420890",
+    "unit": "mA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "a1b9b4997acedea486577565812dfc5c771a1c15d1a39ac151d56b2e8c2020dc",
+      "test.raw": "e5b26059de8ae6c472d17d9eb4809390c601e14efa6f8fe8d9c265f26f46af02",
+      "test.log": "c59cb404c234a1e7d1a4a3faf0a88f9aff5f9d5e58d7ea9f1ae415b94a2600e0",
+      "execution.json": "15025b7097e5e34a436daefe4c15ef6a0a610cf00f7e2ec138ae8ef3cbb81223"
+    }
+  },
+  {
+    "value": 19.42396702079564,
+    "test": "family_vol_5_2_full_V5p0_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "d370c1c862ea115af62b6f917ac1b572885114ec25b967c5ddc609d8f2634fb4",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/b39a9b21b916c39a8125e93d072ddd9a032e4c97cd4f8af20e5b37bfd591ad91",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "f7ad51d353d55e332ec6c7d02610c54a542774de8fc5a7f9c56e8bddd166ca8a",
+      "test.raw": "a50b2dd0fbb2790672ea765d7eb37a3f9f7a47960393c8f7dbb73db968a09502",
+      "test.log": "b39ba6ae813aa1242f8b637f02b10c34deb2464111580983b9bec90f3bc28701",
+      "execution.json": "44dbe12dd4d6b9c256c6f3d37e020c1788cde6e122692abe7b11755660eb2821"
+    }
+  },
+  {
+    "value": 437.23109065802583,
+    "test": "static_ios_2p5_T25_CM1p25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "e2f3c26474642418e614212b5ee9bdc23f85c6aaaaab5e13ce33f0e3246b4aad",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/78c43f67eb4219faba198ed2d7aaa1c534c9ecf2616d124d90bd4ea3ccea08ab",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "37acfec3abd3aa641769dfa4bf2986db6dc661d2f4523b1e1a7d25df9007de08",
+      "test.raw": "78c704fabea23dc616e4d470a0d3ebc7b18b60aa9c11a4ee2447a78d0fde2353",
+      "test.log": "076907089f5004fe6fb146e94ede14f6e4674bf675e8b0aa3eb1d1d3d3fd9004",
+      "execution.json": "87e06e39d0f2621138427f5c9a70c05213346596eb37eee496d72dd51daa3c90"
+    }
+  },
+  {
+    "value": 437.23109065802583,
+    "test": "static_ios_2p5_full_T125_CM1p25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "47c39b05bb5fd496072b6ffea6f4a80afc6aad41580bcc34871793ec8a0cf682",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/7b90fa1d3db065a4f3b9f941c0d3b0e78bf21b28a84e464a2dc028938ee7fe07",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "60b1f11c1afb714429aeb0f51e385793517385589b1f7e5c095ddf43b268cab7",
+      "test.raw": "bd320c58ef514ed09b7d359cf3a034bbc5d5d47816f9f3719670f1ece616b44d",
+      "test.log": "3ff08d26f9aa2fb3adacb6f87bef4da58f0e28f7225d1f17bb9da98aae30d654",
+      "execution.json": "78e9d395d21ebe25bdf18b252e11ba822d919f36ab1c74a0a1390145daa3ce48"
+    }
+  },
+  {
+    "value": 218.6155458050454,
+    "test": "static_ib_2p5_full_T125_CM1p25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "d51e631a08e81f76e697434f1a16e3265255239308afac832fc625b94dab6d40",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/7e79b394d59dfb23227dc20e9200abec131fd955bbfe1bf1b31e46b4f164001c",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "60b1f11c1afb714429aeb0f51e385793517385589b1f7e5c095ddf43b268cab7",
+      "test.raw": "12114f66ec2bf97bc6933db9cd035a2d073e7f396056864be3542a99531b82fe",
+      "test.log": "9e2f524f81670221c9228f8823dd2709c7bd619b786a6ddba00ddecb2440772f",
+      "execution.json": "d6022e908969ffd3f8d3535153cf9aa779dc23fb85d23024df64c5572d85e416"
+    }
+  },
+  {
+    "value": 9.640757383942708,
+    "test": "family_vol_2p5_2_full_V2p5_Tm40",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "da12c3b07abda257db1d324af600df4fa9e25f42d2d1b0f411eaa30db310b15d",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/6efa951e673d9aff86dc0d0a8086aae1ca7247161a9a01295663aa9523419d3f",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "05cb690ffe4506c3e0a106889664e6d37295e8eaddab425c3b1515d92f53300c",
+      "test.raw": "9b8a8c08bb8959ac6a43814e5b5a573f07766a76eb7f073f8556d287153b820e",
+      "test.log": "8e9d696fd12e245e9ba6351215d0705d49f8f1cc80c12f0d298536d0d8875356",
+      "execution.json": "fbace428d4ac919e7ec6813a1ff47bd37c5b28676b75ea3277b2317fae994670"
+    }
+  },
+  {
+    "value": 4.978250037186565,
+    "test": "family_voh_5_2_full_V5p0_T125",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "1d76de021487961843382a1eb6bbd158e2640f649d335e5b81c565010c39ae0f",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/e13803d533129ca59eedae8a59295dd9f14ffc791e96b87ab136acc92b55c520",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "7a4bbdfb88e407c58bd2a7fe8364a5325573784a03f6c12e33d2ad0399d5073b",
+      "test.raw": "db7b232b1098020aef52ad4b196c647e1a53daa63da601761706d4600737aade",
+      "test.log": "faf35f85aa208a79422c02f91bd1f98e6e67ddc1b31db325bca3f314cd352195",
+      "execution.json": "c139f5013bf40bb65985b422f57a4142fcc5227082cbf28028e3da639a89cb4e"
+    }
+  },
+  {
+    "value": 175.00662534132528,
+    "test": "static_ios_5_1_T25_CM2p5",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "5030a1dec1b39ab654f1eb64a03221e949a3fc583fa43429150bc6f30c3074cd",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/6ad4f2cd365a66256ef02027ec33f3b386ba6fcfca4b1978311e8e6ae2e008d3",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "7416fe47914a1b068729a19b7a8e56e784ef5dd48b6ed8b6b3c2e63d6ebadf87",
+      "test.raw": "2d88edf65c0729e9a3dbd708d81cf0e6ee238e20d4633a3da99ccdb35e0bdef0",
+      "test.log": "b134b9421af0989b79da87bbca5503efff5f52f1ebb03bd5f9724019353209ee",
+      "execution.json": "d8b9315e22f3fbd0404342e17e9bc9d020e07b63d3cf800aeebdea060488e93c"
+    }
+  },
+  {
+    "value": 2.489184279428462,
+    "test": "family_voh_2p5_2_full_V2p5_T125",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "d79d4a393848c3817d2ae0da52f3adab0bc79ab6672e1686b1c7500ccfe946d4",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/47646827016b08e75955c63583325ed038ba9acf185f651317faee3b576f6927",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "508ba67e710ef32822319a8d05474dc55350c231112e8b144097f843a7052b0b",
+      "test.raw": "4fe72d44442a1e76d153135244db17dccb3deff1bce2a70b8d40d02a5b619416",
+      "test.log": "7f1ac7dd16764a98dfb13a5b0720f3952c2412a76416d832ae67b8368eeb5b54",
+      "execution.json": "8f04835467c2fa373328879131e37247c85c47cf54c50ebffe0efdb1deb042f2"
+    }
+  },
+  {
+    "value": 0.46509631390634354,
+    "test": "static_vos_5_T25_CM2p5",
+    "execution": "completed",
+    "acceptance": "fail",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "1e687cb7f91a1569d3256df0774b8817c32a28d1fe2696874e51d95d822deac0",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/5c2e765ccbe4b82b107dd541c4caa614e64c33c3f847c3e29a26f186063e5b2c",
+    "unit": "μV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "026720a0f7f796b476f5f960451064f4eddaaa8014882de14702e86109029362",
+      "test.raw": "d78a13905180f21b03cd5801576f4e85bd7fda1a05fc918ee5ad673918ecc46a",
+      "test.log": "24de99073510cd7dbced146d2fc90a453bbe37771fa3ee99d4ee8bf53b350bf6",
+      "execution.json": "655ab39228b7e263a50700f5a35ec279e00f2697439f009ba8ae1478c15c87c8"
+    }
+  },
+  {
+    "value": 87.50331362272767,
+    "test": "static_ib_5_full_1_T125_CM2p5",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "69784f46ce1bb7ef79986c2e3fc1a115a5dde34bc30e2bd1e5a9ac47dcca8e0b",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/77a4c9caaf5c4c0c90331fbf942e00d4d711168bee2db82d13214bc2569821a6",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "3e10f9e90cb44844d973ac85a413c0e721c2f6b80538ea13ade1e9dbbf47c992",
+      "test.raw": "ef50351415b076269eeb7bb4db72c8a8ef6eda42d444fa70fc212b633dbdb7f1",
+      "test.log": "f1880e96d75b28ae08859aff11f3febd2d4f2dec815e80ef5087a1284a67db34",
+      "execution.json": "d1fc9e1bf4aea278df4adc86f7a26b7cd72f9fc0d09d369c7400e59d540d24dc"
+    }
+  },
+  {
+    "value": 4.995656967528453,
+    "test": "family_voh_5_10_full_V5p0_T125",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "a3487ebc17fd92803e002e17d37c6546f31474c6fc5c595d44c38c5b129e7c62",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/d9697f8a7573c812a53889646d718c1384c2c1e16d4d97154944db27007a9db9",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "91312e7b29837c8e0a54373881007cf3d098b2ace73efd0e40b73af615f82850",
+      "test.raw": "c88688b7f66eda35bbc0c66064593c8f41143e3dca5538d522065e3319475973",
+      "test.log": "2824c24994e382fc2e417221db94d72e906ad6a9ed41ae5de16aa0a31336e763",
+      "execution.json": "c96b776c24db1ee8730d4afb13a8302a110cb0edf787f010a5065a0056bc89cb"
+    }
+  },
+  {
+    "value": 2.497830841313407,
+    "test": "family_voh_2p5_10_full_V2p5_Tm40",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "146fa7e81d6019e10eee8ca51f74b7e53ce0d96e3577f37d27df4ed0e38d6e56",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/590a8e81d667bcc7b770c7ebd8dd2be7e52474f8a679f5fc2f1f622345e26d46",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "6ac48c97c40a9c4268a361a0f558226c4a9e5397113d0045d98524760ee45ee1",
+      "test.raw": "faaa81f153749284e39c426f1669ccf43a3f936eff8b5e420f6ec8c5b6fc02e7",
+      "test.log": "2fee8e7a6dd7b6f713e3ae4b1a507b2d13f8c510872ab4315d225ffa1139d755",
+      "execution.json": "a317f4fb8c25323b982eba9eb16946d1058cbcceca712134676f22040294bcd5"
+    }
+  },
+  {
+    "value": 1.500622137407811,
+    "test": "family_icc_full_5_V5p0_T125",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "8a8ccb8054666538f0fc7c7efdd65017937c88b66b500128830626fce9990b33",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/086e87a69af57de4b5762f9d5b21b23b3270d1b2bd00cbdef3886a6e4e78ffe2",
+    "unit": "mA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "4de87da172a915d54118c5147298d30ebffb11829520be3a112c94be9fce6509",
+      "test.raw": "1c4412005bd2cdbaec117798a80eac1e4670264e302f574f6975baddecf2cb22",
+      "test.log": "2a9a04c1a9495fa74ae78956acbb88cf19fa391e37e2c06bc5ef46f8be9c36b2",
+      "execution.json": "33de17de82a0a3d961b5c4e04bbbd71dda6cc134a6d4d38fe7911ce449dfe9d5"
+    }
+  },
+  {
+    "value": 2.489184279428462,
+    "test": "family_voh_2p5_2_full_V2p5_Tm40",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "e8e67f0ad43226fc44427a1e60c5cf93f4e65e41b5d127a93a6665fa254ea2ff",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/94878e4126a95ad963098a3053ae7922d63d3eb40a755a8a1e4932e7d8cd82cb",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "ac2520f1bda4a929087fa2fcb9d66f740905b2fb9a5f36f1eac09cb2322f35ca",
+      "test.raw": "b75e0ed69c9d6fb94ffb0219024cb6d9cac050f85a29474ac6f0b0f0911c2696",
+      "test.log": "d0970dfd71c4cf86edfa34140e81dd25ca39f26da5bd1dfa8c0b2349a097e62e",
+      "execution.json": "4f1f5c4ef7cb6f51e70f55e286ef84a7a287c639f7d549a518bb904f9b1e670b"
+    }
+  },
+  {
+    "value": 437.23109065802583,
+    "test": "static_ios_2p5_full_Tm40_CM1p25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "a49c9185c9e6eeeecde69c1c22f03e1af273f935ef4d1f0eacdf2310834782e0",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/6021f61aec46bb9a7dd3c11c74c4d62189bde3498be7537cb3d5e0a4f06dd5b5",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "9465d4b515560b493cacfcc9c72ac1b70879faba2912d034c4c3a594eda13dc8",
+      "test.raw": "cae92cb9724f3ca5b65f573b7c811e6b7c10135538c6dde4ddda8f04ad558dd7",
+      "test.log": "b559507a896263a65b9e6c5d3163e8c1d6e6878043b3c7ac28fc85f2b4544b04",
+      "execution.json": "ddc364d76ff12833afffa1602042f7061cf877d72f7e05a7529f0c057d657eb0"
+    }
+  },
+  {
+    "value": 4.978250037186565,
+    "test": "family_voh_5_2_full_V5p0_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "518fb064ec30bef178569f63dd13ff6274bc5666224a7af575d0b45b3efcf80a",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/645ad8947b04ec47b4f1fcc7bc0ced54015be59845ad3369a4cce4b16351215e",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "6455c62056c6df6720274c2d054bb7304ddd90defeced85b9591894888cfa071",
+      "test.raw": "9c4203ff6b3155714b8871f495b7477e4d3915aeb75827e7c4698f0031388c65",
+      "test.log": "93924f50537db5bd9ab34029879a6279c85a4eeacc3bd731d4954dcbf4dd3347",
+      "execution.json": "dba54892507ed0c77dc2c16636082ff57cbb6d5d4e791d822125a42095edf0ed"
+    }
+  },
+  {
+    "value": 0.46509642692704745,
+    "test": "static_vos_2p5_full_MSOP_T125_CM1p25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "014dda1e2910557651ea496b9046c027ef22288465b917aa28d3e1b31b927d92",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/c8f0debb7ed07b278f186504e42e2076acc5136572d772289b2984513fdb1607",
+    "unit": "μV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "e0274dcf8782f77fcbc70b1e0e618688468823aa26e17df967b843d5a08932df",
+      "test.raw": "4074fed4d52930ede834c9c382a4e2b4c39268d6c64c7fb4295667daf3593497",
+      "test.log": "cd6c148227a4a0f0cc579be0caefaacd512f764599ffcf0a51989defa67213d2",
+      "execution.json": "1c696ba1459a9ef7c0b0050dca25645b04284dbe5d1401c33810d3fcfc344471"
+    }
+  },
+  {
+    "value": 9.640757383942708,
+    "test": "family_vol_2p5_2_full_V2p5_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "926a777d547378f78b06b5b1dc15c611294e7e9a248e1deeef65cef0beccb96c",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/45782bc9b4ea76b01732c51fe9c7a7c3b8e491dfed99e1d0746a021a9bb070bf",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "93c193e65da76eca5a5ac7e4440154d04be60f3fb53c87fb1e4ec9c2ad411ec1",
+      "test.raw": "67af7fdf71035ef0eb9f34f299712da051e0da77ef2986f03008a3d99e2cde62",
+      "test.log": "f965e2700549e9cdfaccc770ccbfaffabd52c4024bfcc303f8dc7498dfb932ef",
+      "execution.json": "09fd71a55fe79f7562b59873779d0156657632866fa23426052151cfeea81a60"
+    }
+  },
+  {
+    "value": 0.46509631390634354,
+    "test": "static_vos_5_full_T25_CM2p5",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "1e687cb7f91a1569d3256df0774b8817c32a28d1fe2696874e51d95d822deac0",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/5c2e765ccbe4b82b107dd541c4caa614e64c33c3f847c3e29a26f186063e5b2c",
+    "unit": "μV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "026720a0f7f796b476f5f960451064f4eddaaa8014882de14702e86109029362",
+      "test.raw": "d78a13905180f21b03cd5801576f4e85bd7fda1a05fc918ee5ad673918ecc46a",
+      "test.log": "24de99073510cd7dbced146d2fc90a453bbe37771fa3ee99d4ee8bf53b350bf6",
+      "execution.json": "655ab39228b7e263a50700f5a35ec279e00f2697439f009ba8ae1478c15c87c8"
+    }
+  },
+  {
+    "value": 175.00662534132528,
+    "test": "static_ios_5_full_1_T25_CM2p5",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "5030a1dec1b39ab654f1eb64a03221e949a3fc583fa43429150bc6f30c3074cd",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/6ad4f2cd365a66256ef02027ec33f3b386ba6fcfca4b1978311e8e6ae2e008d3",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "7416fe47914a1b068729a19b7a8e56e784ef5dd48b6ed8b6b3c2e63d6ebadf87",
+      "test.raw": "2d88edf65c0729e9a3dbd708d81cf0e6ee238e20d4633a3da99ccdb35e0bdef0",
+      "test.log": "b134b9421af0989b79da87bbca5503efff5f52f1ebb03bd5f9724019353209ee",
+      "execution.json": "d8b9315e22f3fbd0404342e17e9bc9d020e07b63d3cf800aeebdea060488e93c"
+    }
+  },
+  {
+    "value": 0.46509631390634354,
+    "test": "static_vos_5_full_Tm40_CM2p5",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "84a8efbfab03484d7d0ae7efe22cb7a73cd5a45df7d96954968aa97ab7a5a11c",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/8ee0c6740e067ead541c6729f719c65ce1fd1920c6a7097bba95b4089d32d683",
+    "unit": "μV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "53bc8495623fc02d5a5a623a000d52b5b22a957a4e8f59a201ff76021971ebdf",
+      "test.raw": "34576fdabc17c3537c5248d1f4c2e2ee17a3d3552d8d729fe47571d10648c918",
+      "test.log": "c13d619d4b6bc0bf0547d172f1412e0f6be7f04838f96a2e85767fbe02174d60",
+      "execution.json": "92f9dbe892b2a82fbb069a8cf140f1e2b867108a20b4482a017dc19b3a76d2a6"
+    }
+  },
+  {
+    "value": 218.6155458050454,
+    "test": "static_ib_2p5_full_T25_CM1p25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "c963ddb68f5dff93de9fc91fbf31a9365fb61b553adf1b6d05fe6a344dd6ac74",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/2adff41f8f2873be3a19b62640810cc0776598532dce2304a69bed46810b82fc",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "37acfec3abd3aa641769dfa4bf2986db6dc661d2f4523b1e1a7d25df9007de08",
+      "test.raw": "48a8bd40ef7c4396074251eac47f3c97bca918f41c25189efa48c11955aaeeea",
+      "test.log": "f24d46287fa81e218e57dd8733587c5430264f3b3848bc45367ce153c4ba6ba5",
+      "execution.json": "a4c3d894a42d7f64f15b3d58b6f0ebe708d065f9c82602b94fadd553d186f0ee"
+    }
+  },
+  {
+    "value": 0.46509642692704745,
+    "test": "static_vos_2p5_T25_CM1p25",
+    "execution": "completed",
+    "acceptance": "fail",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "d6a27fbb4e6ab2f14abe03efa04563bdc83c52b984a3a7c216f318db1f9ce927",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/7cced2209301f226dc97138d4507f48808848e36104be9739cdfbdbbd23b5883",
+    "unit": "μV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "87494a42bd6b233d2f6d91974fe9fe9d186ec7cc6ed0ee36abc0c50b597fac50",
+      "test.raw": "6e9b43b662aa289d4d6f2bba0a19f77f2e2852c5da6f8eb67885a7f32d34ee91",
+      "test.log": "50cad67f675e75a8208cbcd88f799403607b34a22e32b91c365117856721e06c",
+      "execution.json": "7d57c56ef033dddced77a49801b5082c8904876a902c2b66c24eaabb793499bd"
+    }
+  },
+  {
+    "value": 87.50331362272767,
+    "test": "static_ib_5_full_1_T25_CM2p5",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "7c4bf17268dcd9eee42e74c2357ada4af962c371129ff8affd7797014661c623",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/47a6db05018f02ab7e2327e705318732b30b286719d8ba778067b919d79f8660",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "7416fe47914a1b068729a19b7a8e56e784ef5dd48b6ed8b6b3c2e63d6ebadf87",
+      "test.raw": "11e0ea6130f65652b1005608ed1f5a7f93da68ec55ed0fca0b4eb7e129b6c7d7",
+      "test.log": "f3f950d426d2b9591685c996252126693c61e3d62c844a9eb8c2e30b3cf85795",
+      "execution.json": "356a9180381b929b63878a25a5082ee551d2e0eee0320976ed39fb6c1a8014fa"
+    }
+  },
+  {
+    "value": 4.995656967528453,
+    "test": "family_voh_5_10_full_V5p0_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "7d376f15b3afd4480b460fe24c7165d49541979ee651e8c3f1c7fd1c18f067de",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/1bfb1217b2278db5e2af2332516ff4812179518dad26c24cb44e6135eb44545e",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "bac23164cabad6dad66e6e4bfa649dfaacaf2df6982cc37e47f28676a3be4ec9",
+      "test.raw": "15145b2c1387cf4b8d95e2d3900893c8cb040036b076d4a1e96781147f6f6bca",
+      "test.log": "cac242cbb4f837df45dafe59f0d892b7e8db47bb1e6bfffddcb421b9125cb18a",
+      "execution.json": "d26ea1cfd7f44994f485db80e180541473e09d33a9991fbafef1bd24e360028c"
+    }
+  },
+  {
+    "value": 175.00662534132528,
+    "test": "static_ios_5_full_1_T125_CM2p5",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "f50ffb7854a887c29874ef194bf54cf071c2180cadd6a8ab81b25a1e7e189b36",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/d98233a6cf0f103e0a139b7895d794464e79be269ea9ffebb843bbf0e72c5cad",
+    "unit": "pA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "3e10f9e90cb44844d973ac85a413c0e721c2f6b80538ea13ade1e9dbbf47c992",
+      "test.raw": "e1896785a72e9d3857b1d714190e83598b81ca2d6c5fd2ecd441936afa3dddbf",
+      "test.log": "7820c11ea09fcc27ab3f4457e436d649c978dac6690e963f32aa26ad3124c1da",
+      "execution.json": "0fa8f3e8e4fb38e13cbeb39b27880c275b17b190677ff332110e9eab5430413e"
+    }
+  },
+  {
+    "value": 19.42396702079564,
+    "test": "family_vol_5_2_full_V5p0_Tm40",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "a1d8bb84bce5f1f6906f526165d22b68b86ce008b419c26a4d9f11e5484881e5",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/06dbd78b560b61b641647a53b1d27f7d270064832b9dfa009ff60ce1fa72fed3",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "942d4d8505b91934cf15a24f39e481ae88ef55b9edd556a02e5a3d41e8df748f",
+      "test.raw": "deb63aed64ae50694a82f8253763b79eac7033d13962eda8a585e7bb9042cd5a",
+      "test.log": "07e0feff81e8c37390aad626c63f33ec35deb90f413e5d022668c5d77be459d3",
+      "execution.json": "c02a9872bf79dfc0551c3707466cd14fbeb5b4565f562932fe6cc5e596d9bd5d"
+    }
+  },
+  {
+    "value": 1.929211379078185,
+    "test": "family_vol_2p5_10_full_V2p5_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "ec3077abd3d6637e6bd77a03b55114c8144deed3b97f2037304bae6cf1488735",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/c911ab6202fb231cab1fff056505b67e904d9246b7ae2c028f0e1bf186f7083b",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "38c4ec41f06ebeff304c67d61b7fed71b51b6126d325d7c0da8b5ad9613f4832",
+      "test.raw": "310dcf163b0929d80cec576baed3e877d783ef448a6e6ea741b7be7471fc745f",
+      "test.log": "3c57a9bb936aed442861585b472bd3933fb103203fc07985ae07249da8af6f39",
+      "execution.json": "b88dae90342282ded20b9198db8d8fe9d55805234f82c0c47cc454ba2a940d73"
+    }
+  },
+  {
+    "value": 0.46509642692704745,
+    "test": "static_vos_2p5_full_MSOP_T25_CM1p25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "d6a27fbb4e6ab2f14abe03efa04563bdc83c52b984a3a7c216f318db1f9ce927",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/7cced2209301f226dc97138d4507f48808848e36104be9739cdfbdbbd23b5883",
+    "unit": "μV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "87494a42bd6b233d2f6d91974fe9fe9d186ec7cc6ed0ee36abc0c50b597fac50",
+      "test.raw": "6e9b43b662aa289d4d6f2bba0a19f77f2e2852c5da6f8eb67885a7f32d34ee91",
+      "test.log": "50cad67f675e75a8208cbcd88f799403607b34a22e32b91c365117856721e06c",
+      "execution.json": "7d57c56ef033dddced77a49801b5082c8904876a902c2b66c24eaabb793499bd"
+    }
+  }
+]

@@ -1,0 +1,16 @@
+Title: /Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/static_family_qualification/simulations/d8ff253e803ab6219637032563a2bb1fb9e9f21b0a1917f7f9aca86f0a31acc2/test.cir
+Date: Thu Oct  8 20:16:36 2026
+Plotname: DC transfer characteristic
+Flags: real forward linear nocompression
+No. Variables: 2
+No. Points:            2
+Offset:    0.0000000000000000e+00
+Command: Linear Technology Corporation LTspice
+Variables:
+	0	VDUMMY	voltage
+	1	V(out)	voltage
+Values:
+0		0.000000000000000e+00
+	2.497830841313407e+00
+1		1.000000000000000e+00
+	2.497830841313407e+00

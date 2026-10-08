@@ -1,0 +1,297 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "family_20AB_zero_V5_T25",
+    "reference_ids": [
+      "parameter:20AB_zero"
+    ],
+    "protocol": {
+      "temperature_C": 25,
+      "device_nodes": {
+        "P1": "IP",
+        "P2": "0",
+        "P3": "0",
+        "P4": "VCC",
+        "P5": "OUT",
+        "P6": "0"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VSUP",
+          "nodes": [
+            "VCC",
+            "0"
+          ],
+          "value": {
+            "dc": 5
+          }
+        },
+        {
+          "kind": "V",
+          "name": "VDUMMY",
+          "nodes": [
+            "UNUSED",
+            "0"
+          ],
+          "value": {
+            "dc": 0
+          }
+        },
+        {
+          "kind": "I",
+          "name": "IFORCE",
+          "nodes": [
+            "0",
+            "IP"
+          ],
+          "value": {
+            "dc": 0
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "dc",
+        "source": "VDUMMY",
+        "start": 0,
+        "stop": 1,
+        "step": 1
+      },
+      "measurement": {
+        "mode": "sample",
+        "signal": "v(OUT)",
+        "at": 1,
+        "scale": 1,
+        "sign": 1
+      },
+      "checks": []
+    },
+    "model": {
+      "entry": "REFERENCE_INTERFACE",
+      "ports": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "declared_ports": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "provenance": {
+        "role": "reference_interface_benchmark_only",
+        "source_sha256": "8e9c9190a601795576cd3cf0de46687496995b292da7cdd73934b447c870b0aa",
+        "original_entry": "ACS723",
+        "original_ports": [
+          "IP+",
+          "IP-",
+          "DUT_GND",
+          "VCC",
+          "Viout",
+          "BW_SEL"
+        ],
+        "physical_binding_verified": false,
+        "dependency_receipts": [
+          {
+            "name": "opamp.sub",
+            "sha256": "7bbdf4d33fab0620879996c2c61cd09a4f589a0ee9bc4a26ccf8ecec9c24dc87"
+          },
+          {
+            "name": "UniversalOPAmps2.sub",
+            "sha256": "4c7cd040212fc64700ec5fc6402c7fc11cdb7d9f84544dbae9914e4a5221f2d1"
+          }
+        ],
+        "parameter_evidence": [
+          {
+            "reference_id": "parameter:20AB_sensitivity",
+            "unit": "mV/A",
+            "value": 100,
+            "symbol_sha256": "9eb9f2559a2a4bbcd364402ba5fe3a69f68088e30c651e992e3e598c75ef676a",
+            "role": "reference_benchmark_configuration"
+          }
+        ],
+        "parameter_scope_correction": "Pass symbol-derived parameters on XREFERENCE instance; vendor subcircuit unchanged"
+      },
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/gpt_test_library/models/ACS723/reference_interface_parameter_scope.lib",
+      "sha256": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771"
+    },
+    "expectation": {
+      "unit": "V",
+      "limits": {},
+      "typical": 2.5,
+      "typical_relative_tolerance_percent": 10
+    },
+    "device": "ACS723KMATR-20AB-T",
+    "input_folder": "ACS723",
+    "reference_evidence": [
+      {
+        "id": "parameter:20AB_zero",
+        "kind": "test",
+        "applicable": true,
+        "reference_evidence": {
+          "id": "20AB_zero",
+          "key": "zero_current_output",
+          "values": {
+            "typ": "0.5 × VCC"
+          },
+          "unit": "V",
+          "conditions": "IP=0 A; VCC=5 V",
+          "applies_to": [
+            "ACS723KMATR-20AB-T"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b79",
+            "p7"
+          ]
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          8
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding",
+        "source_record": {
+          "id": "parameter:20AB_zero",
+          "kind": "test_or_constraint_pending_classification",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "20AB_zero",
+            "key": "zero_current_output",
+            "values": {
+              "typ": "0.5 × VCC"
+            },
+            "unit": "V",
+            "conditions": "IP=0 A; VCC=5 V",
+            "applies_to": [
+              "ACS723KMATR-20AB-T"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b79",
+              "p7"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            8
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding"
+        },
+        "source_kind": "test_or_constraint_pending_classification",
+        "label": "zero_current_output",
+        "evidence": [
+          "b79",
+          "p7"
+        ],
+        "classification_review_pending": true,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "scope": "Exact supply/temperature/load point only; continuous range not certified",
+    "port_binding_evidence": {
+      "declaration": [
+        "IP+",
+        "IP-",
+        "DUT_GND",
+        "VCC",
+        "Viout",
+        "BW_SEL"
+      ],
+      "manual_ports_sha256": "d3d34ba632b9096d97e554d5b6dcf9168c6ff9dd2ec9ef6546405fe9d29599ef"
+    },
+    "family": "sensor_transfer",
+    "family_conditions": {
+      "supply_V": 5,
+      "temperature_C": 25,
+      "handbook_conditions": "IP=0 A; VCC=5 V"
+    }
+  },
+  "receipt": {
+    "device": "ACS723KMATR-20AB-T",
+    "id": "family_20AB_zero_V5_T25",
+    "reference_ids": [
+      "parameter:20AB_zero"
+    ],
+    "scope": "Exact supply/temperature/load point only; continuous range not certified",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "model_role": "reference_interface_benchmark_only",
+    "model_sha256": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+    "calibrations": [
+      {
+        "expected": 0.4,
+        "result": {
+          "value": 0.4
+        },
+        "error": 0.0,
+        "tolerance": 4e-05,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/c0a6187d7a196cf0ebb66da78f5b21cc1a6de39eb16655fa90964673846488cd",
+        "artifacts": {
+          "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+          "test.cir": "6c670d085ef20642c22f4eb4ab34109e582c651603ff0322c2a277f3a6026baa",
+          "test.raw": "7e38c866cf217a5f94cc0416251e07fcb90237a226c7382b1f9cca2a7acdd571",
+          "test.log": "1ae6fd42369af0817bc3ef26d0314e98aab87b47a0c7c8f7ea612116d5b7efed",
+          "execution.json": "6a1de9dc1af1f55285a70f951521d00be3f507ecc1bfa7a8ace3591bb496b3b5"
+        }
+      },
+      {
+        "expected": 0.8,
+        "result": {
+          "value": 0.8
+        },
+        "error": 0.0,
+        "tolerance": 8e-05,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/e4d7bc17381e33d585d07e6c9bdf4a69c52c7209fd948cd247c8aab9f5fbc418",
+        "artifacts": {
+          "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+          "test.cir": "b7e6f2346a17925628b622771d0923d0a20225b38a351d2b8594464f77fa40d9",
+          "test.raw": "5b05db837a253f9e24ab96f9709734949456c0363bd75b7f52a3bcda2f50372b",
+          "test.log": "8432b9eedd2bcc94459f16c03b1f3ca4a7c77aa9ed769b9108a41f65ef7e6515",
+          "execution.json": "3b8dbc7a0fd2d468c5e735c4cc5d9112bee3dc023742b264fc1cd85afeb1eced"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 2.499975000425274
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/2093e23d149c6563487ce484c9e9b29b19f4b64ae58835a200c510db2111ae58",
+      "artifacts": {
+        "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+        "test.cir": "5c5c4c8a2b1ef404bd88268b173d9cf11c787025d17d77bba8568d07842602bf",
+        "test.raw": "f057705633ee968a705c080815a26de5bf53965812ebd40b76eae4a6ac7768df",
+        "test.log": "83f53362e5f7a5ef10d09cb283155945d0c9ada7d29494dd5c47bdd2e067ff06",
+        "execution.json": "1cc072005357527af9259c558120d391eda0271a6a680405da25f77bdc750e08"
+      }
+    },
+    "protocol_sha256": "d988c370bc3f566caf27de733bdea8fcf6e0a0369dd5d05472d1e0face542395"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

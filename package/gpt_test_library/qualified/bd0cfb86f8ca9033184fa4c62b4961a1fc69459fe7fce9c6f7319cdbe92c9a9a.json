@@ -1,0 +1,290 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "family_icc_full_5_V5p0_T125",
+    "reference_ids": [
+      "parameter:icc_full_5"
+    ],
+    "protocol": {
+      "temperature_C": 125,
+      "device_nodes": {
+        "P1": "IN",
+        "P2": "OUT",
+        "P3": "VCC",
+        "P4": "0",
+        "P5": "OUT"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VSUP",
+          "nodes": [
+            "VCC",
+            "0"
+          ],
+          "value": {
+            "dc": 5.0
+          }
+        },
+        {
+          "kind": "V",
+          "name": "VDUMMY",
+          "nodes": [
+            "UNUSED",
+            "0"
+          ],
+          "value": {
+            "dc": 0
+          }
+        },
+        {
+          "kind": "V",
+          "name": "VCM",
+          "nodes": [
+            "IN",
+            "0"
+          ],
+          "value": {
+            "dc": 2.5
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "dc",
+        "source": "VDUMMY",
+        "start": 0,
+        "stop": 1,
+        "step": 1
+      },
+      "measurement": {
+        "mode": "sample",
+        "signal": "i(VSUP)",
+        "at": 1,
+        "scale": 1000,
+        "sign": -1
+      },
+      "checks": []
+    },
+    "model": {
+      "entry": "REFERENCE_INTERFACE",
+      "ports": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ],
+      "declared_ports": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ],
+      "provenance": {
+        "role": "reference_interface_benchmark_only",
+        "source_sha256": "c65fb7db58918ebdcea8dd8e005c45d9f3635ae82ed6879c739fad2a90e07d60",
+        "original_entry": "ADA4528",
+        "original_ports": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "physical_binding_verified": false,
+        "dependency_receipts": [],
+        "parameter_evidence": []
+      },
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/gpt_test_library/models/ADA4528/reference_interface.lib",
+      "sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81"
+    },
+    "expectation": {
+      "unit": "mA",
+      "limits": {
+        "max": 2.2
+      }
+    },
+    "device": "ADA4528-1_MSOP",
+    "input_folder": "ADA4528",
+    "reference_evidence": [
+      {
+        "id": "parameter:icc_full_5",
+        "kind": "test",
+        "applicable": true,
+        "reference_evidence": {
+          "id": "icc_full_5",
+          "key": "supply_current_per_amplifier",
+          "values": {
+            "max": 2.2
+          },
+          "unit": "mA",
+          "conditions": "VSY=5 V; TA=-40..125°C; IO=0 mA",
+          "applies_to": [
+            "ADA4528"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b52",
+            "p4"
+          ]
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          5
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding",
+        "source_record": {
+          "id": "parameter:icc_full_5",
+          "kind": "test_or_constraint_pending_classification",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "icc_full_5",
+            "key": "supply_current_per_amplifier",
+            "values": {
+              "max": 2.2
+            },
+            "unit": "mA",
+            "conditions": "VSY=5 V; TA=-40..125°C; IO=0 mA",
+            "applies_to": [
+              "ADA4528"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b52",
+              "p4"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            5
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding"
+        },
+        "source_kind": "test_or_constraint_pending_classification",
+        "label": "supply_current_per_amplifier",
+        "evidence": [
+          "b52",
+          "p4"
+        ],
+        "classification_review_pending": true,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "scope": "Exact supply/temperature/load point only; continuous range not certified",
+    "port_binding_evidence": {
+      "symbol": "template_assets/library/ADA4528-1.asy",
+      "sha256": "40e8fb7fc9e59e9bfff1d88e01a6333fc32fde169478355d3fcdd25a7ead0b56",
+      "map": {
+        "P1": {
+          "signal": "IN+",
+          "package_pin": 3
+        },
+        "P2": {
+          "signal": "IN-",
+          "package_pin": 2
+        },
+        "P3": {
+          "signal": "V+",
+          "package_pin": 7
+        },
+        "P4": {
+          "signal": "V-",
+          "package_pin": 4
+        },
+        "P5": {
+          "signal": "OUT",
+          "package_pin": 6
+        }
+      }
+    },
+    "family": "supply",
+    "family_conditions": {
+      "supply_V": 5.0,
+      "temperature_C": 125,
+      "handbook_conditions": "VSY=5 V; TA=-40..125°C; IO=0 mA"
+    }
+  },
+  "receipt": {
+    "device": "ADA4528-1_MSOP",
+    "id": "family_icc_full_5_V5p0_T125",
+    "reference_ids": [
+      "parameter:icc_full_5"
+    ],
+    "scope": "Exact supply/temperature/load point only; continuous range not certified",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "model_role": "reference_interface_benchmark_only",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "calibrations": [
+      {
+        "expected": -0.4,
+        "result": {
+          "value": -0.4
+        },
+        "error": 0.0,
+        "tolerance": 4e-05,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/static_family_qualification/simulations/83e8bdc0f86f1abfa1bb67dbc9436b64635d81dcf1100bb75917e37f2c811b1b",
+        "artifacts": {
+          "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+          "test.cir": "54d74322401b9488a2fa8b0a0ead13247364e1f396046d2a58dbf866841e505a",
+          "test.raw": "75138b4c620d7fbd5feb47bbbbc04ff25542e1fdeb9f09750d3ee2b0729d5103",
+          "test.log": "9f48e976f5473460ab08fc9938f75baf00b10d1181cd5392135164600a1eb41f",
+          "execution.json": "aafec6d20b583bfbbc709e3cb1a93fcf79cc53fa770fd71fda1e4941ebfbb51d"
+        }
+      },
+      {
+        "expected": -0.8,
+        "result": {
+          "value": -0.8
+        },
+        "error": 0.0,
+        "tolerance": 8e-05,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/static_family_qualification/simulations/f88e919d390c3da9b5f8545ddf41285bab6ef0b8ef2ee12cb380cc9ffdbd0279",
+        "artifacts": {
+          "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+          "test.cir": "19028ce01161b01a9dff93f889b93287c1f23261d9c1cd788e4c095d186d1447",
+          "test.raw": "ef258a4799c2bf9e3f079e58a4cfe6052d06859d0a77137220e3a0a995f47ae4",
+          "test.log": "cef382cccc0fa38a982d499945d6f2a902c8c75795fca0ff60a78757d509b768",
+          "execution.json": "a85743b166c97be386e5d504b1841c6812a4ab1e034cc6af3dcc4d173c1cea0f"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 1.500622137407811
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/static_family_qualification/simulations/be95c91d42b31b2f0e1f22018df4a6030056a9abeca402ec7b44c6139dbaf052",
+      "artifacts": {
+        "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+        "test.cir": "4de87da172a915d54118c5147298d30ebffb11829520be3a112c94be9fce6509",
+        "test.raw": "2af798c9988b6f44f30a0abb235053fea9d12713166d0248c78ac1357bdf7d01",
+        "test.log": "ac3954125e769a198db0a93ae2823107dda73db2ba4fadc558a2ba107021d652",
+        "execution.json": "54725bb495d60dfad2b8e65b0312f601087c220f1ddcc312164eca8fab36422c"
+      }
+    },
+    "protocol_sha256": "8a8ccb8054666538f0fc7c7efdd65017937c88b66b500128830626fce9990b33"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

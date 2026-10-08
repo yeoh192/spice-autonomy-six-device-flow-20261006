@@ -1,0 +1,10 @@
+{
+  "pid": 66611,
+  "argv": [
+    "/Applications/LTspice.app/Contents/SharedSupport/ltspice/LTspice/run_ltspice",
+    "-b",
+    "-ascii",
+    "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/e13803d533129ca59eedae8a59295dd9f14ffc791e96b87ab136acc92b55c520/test.cir"
+  ],
+  "started": 1791462502.361438
+}

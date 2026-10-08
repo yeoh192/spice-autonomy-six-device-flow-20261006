@@ -1,0 +1,172 @@
+[
+  {
+    "value": 1.500622137407811,
+    "test": "supply_current_5V_25C",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "dce789b9be26bf226bfe4d20043635c43a7ee5fd617ed0342fdf4c73132102ff",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/cf34ac9346709cecb990ab1b2df1c6120357b963f0340e2726954407175c2350",
+    "unit": "mA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "adea2470d5029d56a555da6a9132af9f14940518e586f058748e873de7713bdf",
+      "test.raw": "63d6fdcb2c4f5a597149c36976b287a99219abb1123f6e2b9bdce8fdefa1a24e",
+      "test.log": "b7f9f64b37640beb7a8bc2dcd35d0b19a27a01e12ff03e7e13e26ca5c139f953",
+      "execution.json": "77c4358153559e8904585cb60b6106d94286e79a0ec6bd8f562ac240b608104a"
+    }
+  },
+  {
+    "value": 9.640757383942708,
+    "test": "family_vol_2p5_2_V2p5_T25",
+    "execution": "completed",
+    "acceptance": "fail",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "926a777d547378f78b06b5b1dc15c611294e7e9a248e1deeef65cef0beccb96c",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/5f7dcc6d885adb2db2d278b81832f5a3204d787bee16bfc72558a6bde1ff6e7d",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "93c193e65da76eca5a5ac7e4440154d04be60f3fb53c87fb1e4ec9c2ad411ec1",
+      "test.raw": "5c9a5e2b901660d8924c72b467edefcfd3909980487a7a98111da182216a8d3b",
+      "test.log": "bbfeb009c2ea216ecc05c459994e09cd66790d075395818cc3f4c4a0fd40d28e",
+      "execution.json": "cee88112cc31396855a22947181ae125b75b7c4d809b7b82e3799fd7891825a0"
+    }
+  },
+  {
+    "value": 1.929211379078185,
+    "test": "family_vol_2p5_10_V2p5_T25",
+    "execution": "completed",
+    "acceptance": "fail",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "ec3077abd3d6637e6bd77a03b55114c8144deed3b97f2037304bae6cf1488735",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/60dc102e2fdefccad3d708777a41bb8ebb27d1bbb0c226853761b2f5dbbae312",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "38c4ec41f06ebeff304c67d61b7fed71b51b6126d325d7c0da8b5ad9613f4832",
+      "test.raw": "9abad00984cdcec39fa99b17d75ba744c875eef1d7ca17bfeb8c567795748c1e",
+      "test.log": "3a004a3aa88fba5a1affbbc173133dae2dffd64838a6ea812fc88511aa3f8d72",
+      "execution.json": "92496b3549c785fd1746222ee51f8722229e600ff5a5f6576af9ac09029826da"
+    }
+  },
+  {
+    "value": 2.489184279428462,
+    "test": "family_voh_2p5_2_V2p5_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "fe2e6d1bc30fdaf3bc3c1e46c664ef50623fca7600698140c89a2c057ee3a12b",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/decb3d5e8adf566a9f77ac94c9adc6cead2fdce41078e104329c211aa2198fa1",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "d702cd839581aa45b755988ddb8a5764f4807d1176d9b3b1c48ee92d94fe6314",
+      "test.raw": "7a2455ceb0f3b71c2665532b336ca1fd606b46161b6f05f2b530a32438fc2c7b",
+      "test.log": "bae8138f02b4cf642f577107b4451b29f5d939007284c66610e0468f18fdb12d",
+      "execution.json": "4503ea91c47cb06133a80eb009654704a6fb9ea8323125a6819bd8e27f5596fd"
+    }
+  },
+  {
+    "value": 19.42396702079564,
+    "test": "family_vol_5_2_V5p0_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "d370c1c862ea115af62b6f917ac1b572885114ec25b967c5ddc609d8f2634fb4",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/9ec20ec9f1825b93a70247c9b1d87935fc41b38e8355ecefc0c8abfacce4ffd0",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "f7ad51d353d55e332ec6c7d02610c54a542774de8fc5a7f9c56e8bddd166ca8a",
+      "test.raw": "9829bb5d32fe0aaff6a98cf4cf40acb7232616fb4c23e399a9e6bdf1d39ddb13",
+      "test.log": "1353f657d992e3d578b573a6fed77d2e823f1dca29af9cc44957f502ac5033b9",
+      "execution.json": "ec93dbb272538a0fe3dc609b783b41500936995333d06ba6e009a81e9c08ba38"
+    }
+  },
+  {
+    "value": 2.497830841313407,
+    "test": "family_voh_2p5_10_V2p5_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "7b6d95a3f6136f5d650a1539ca762f6e3a4925e7a03f288eb4ebce30a4363e03",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/6c8100545a2abe99c9ef44aac12faed3efa2036354552ddefeee953ea026fb2d",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "66ae5dc0796edc06fee798b99008adff4e52dc6e672af2ed4b86904bbc2f0e0c",
+      "test.raw": "cff477d8505c89ae3cae8ed9f2b2f19ea0447c82aa50a840644c156e01da6780",
+      "test.log": "e164bdc4ec92a12d50e4a715af2a6df3ccc14bad7fdb17907d4e2fe626f494c3",
+      "execution.json": "83b1829cd4b34ea45a518fdeedeb508e10add10df1f36d8896cba4fb29f74272"
+    }
+  },
+  {
+    "value": 4.978250037186565,
+    "test": "family_voh_5_2_V5p0_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "518fb064ec30bef178569f63dd13ff6274bc5666224a7af575d0b45b3efcf80a",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/30797117577f17de742c183a186bfa6cd32fcb9c94808129f80521d3a2684b18",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "6455c62056c6df6720274c2d054bb7304ddd90defeced85b9591894888cfa071",
+      "test.raw": "7b077d75c4d19eeb6aea69d34c0b38b9677885a4c3a78a02d0be6195830ed0d2",
+      "test.log": "09d707697590a386cdb13dd363d37b33257e1519e3c77aca09f3ac18ae7f6497",
+      "execution.json": "a70bfa2d7ebe606224eb60657852fbce24f7b3e30c4543c418637a164cfb5a39"
+    }
+  },
+  {
+    "value": 3.864027603988419,
+    "test": "family_vol_5_10_V5p0_T25",
+    "execution": "completed",
+    "acceptance": "fail",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "f5feaf8fcc9a76114f13c8b40ca00826cacc1ec02e369293ac89c2773d1cbcc5",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/93f33aa4e2dce4d1840531c86378256ee23675b751d16331510e89b071e0825d",
+    "unit": "mV",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "8e4980f22193ab39f062916aa5444ad14a99ae5bad3272a95b744761e239a56e",
+      "test.raw": "1a6a304ea1b1e7f45b9a895eb6998ff78c7fcf7624ca5273dcbaf32ebf9d96e5",
+      "test.log": "7f3509641a2f8d1cdebdf205c559403bd9d5ea58ea4b8bcea35c1d60108c6e44",
+      "execution.json": "a497678842d4ee4e48e8a9e303a88415de12acf69dc14ac0b9d93498b7f3a011"
+    }
+  },
+  {
+    "value": 4.995656967528453,
+    "test": "family_voh_5_10_V5p0_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "7d376f15b3afd4480b460fe24c7165d49541979ee651e8c3f1c7fd1c18f067de",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/936286b17884b734ae91d9175b0cf0c7f4b5ceb167443cba049ee9dd4bc920f3",
+    "unit": "V",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "bac23164cabad6dad66e6e4bfa649dfaacaf2df6982cc37e47f28676a3be4ec9",
+      "test.raw": "cc6f9399edf699f499ee640a4115b24fab4dd43aab1d50c57e00d351d4c1905c",
+      "test.log": "550e9c207852e70ce744266afbf603ab99fff61b583e6f5c779d20d56095a4b7",
+      "execution.json": "431f9c07fc0a97ccb8d4fc811ce051c1b82f0854ab43ceb284ea1f7e5697f486"
+    }
+  },
+  {
+    "value": 1.40059693112056,
+    "test": "family_icc_2p5_V2p5_T25",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+    "protocol_sha256": "0cfd54feec40b18304c1cd2da870dc33037d754b2e5c89a3bf56e4f42a67b5b1",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_unified_regression/ADA4528-1_MSOP/dc359f7a24ce/simulations/1907df16802debf23c9e1757c7a591a736d3dd5fb8d3f09134973243e6041b4f",
+    "unit": "mA",
+    "artifact_hashes": {
+      "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "test.cir": "3748704fd57031abc1dbd86b1a6072f6696c63dd44e2270d9c884e58290adad6",
+      "test.raw": "e4b5c3cb3600c5fe521bc6f472cc80d242708503aa0f6063f115a26497df1b25",
+      "test.log": "6c8034dd21f14510667b594b62e9b2a87a2ac5d10b918c48df9f41e9ea644490",
+      "execution.json": "567c832f5b32bd6821dd3dfa079f807359444e7560e18917d3ac6c46bcc7346f"
+    }
+  }
+]

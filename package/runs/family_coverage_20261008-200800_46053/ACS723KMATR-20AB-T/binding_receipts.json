@@ -1,0 +1,126 @@
+{
+  "parameter:rip": {
+    "status": "reference_method_qualified",
+    "source_identity": "217cec5d46c80fa723766ddda58a2cc652ec54ff569eea3fc2c407a5ed31a584",
+    "test_ids": [
+      "conductor_resistance_25C"
+    ],
+    "electrical_acceptance": "pending",
+    "proof_files": {
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/gpt_test_library/qualified/3171052642cc11478259d829dce064bf85d745dbf1d6eceba00a2cf47a359a3f.json": "e09b8bec0bb89bec799c2d56872bce3684eeb38ed632cbcf20bfd48dcd7033bb",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/gpt_test_library/models/ACS723/reference_interface_parameter_scope.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/8f301002779508d32759d7320bf91c10c33db93ab944231b08cae09c0cb2897b/model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/8f301002779508d32759d7320bf91c10c33db93ab944231b08cae09c0cb2897b/test.cir": "c10032a1d5adfdeccaa46cf89641a703ea6dd7212c27b0da7e4ee2bc291de217",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/8f301002779508d32759d7320bf91c10c33db93ab944231b08cae09c0cb2897b/test.raw": "bb4a085f7b89e78c1274f414ba8d790389cb57b9ea5eded1ec59cd17219c7a0f",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/8f301002779508d32759d7320bf91c10c33db93ab944231b08cae09c0cb2897b/test.log": "fe03ac3d3dafd55eb2624ecd4f6dafe05c34f05750a13e47b38883ad6c31433a",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/8f301002779508d32759d7320bf91c10c33db93ab944231b08cae09c0cb2897b/execution.json": "52006848c4f1328cb0bedebf18cf453c97bd6ac81ae1c7f87ee30233eeb2a47d",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/cf12ffa31ac3033adea00a74a6ad7287ac89aba02e29715b47e35e53c530568e/model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/cf12ffa31ac3033adea00a74a6ad7287ac89aba02e29715b47e35e53c530568e/test.cir": "2604bfc191f5cc666cb11c47f788a2917df69e5645a7ba3481a3179f46e207c5",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/cf12ffa31ac3033adea00a74a6ad7287ac89aba02e29715b47e35e53c530568e/test.raw": "ec1f876b91679c3f4bc239eae7c599a7bbdbc34fb071c66c6a0dc682c9fda288",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/cf12ffa31ac3033adea00a74a6ad7287ac89aba02e29715b47e35e53c530568e/test.log": "a01dca22b512c89d3383b3058f7247a2df08ebc87b9661c249737e490047d228",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/cf12ffa31ac3033adea00a74a6ad7287ac89aba02e29715b47e35e53c530568e/execution.json": "e40273bcd203a236cac1a4db5952c736fa2bcb2b093dda7e97629e66c6cfb1c6",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/6546f85e807c9f9d5a64b214acc5f7ff94c6caaa9e10a16f1acc4d1ea26bbf88/model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/6546f85e807c9f9d5a64b214acc5f7ff94c6caaa9e10a16f1acc4d1ea26bbf88/test.cir": "1deca82beeb845e110589d5909968851bde76f608c3c77e557658beca0d4f1c6",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/6546f85e807c9f9d5a64b214acc5f7ff94c6caaa9e10a16f1acc4d1ea26bbf88/test.raw": "238cae399d0e8dbc59760bc74af509d111007bf8f70d9654124816e8ed15db81",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/6546f85e807c9f9d5a64b214acc5f7ff94c6caaa9e10a16f1acc4d1ea26bbf88/test.log": "103d3f1b1ecfc76aa76b7e0aa120a6ebe49b0ee07b8163d614e92dfafda9be0f",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/6546f85e807c9f9d5a64b214acc5f7ff94c6caaa9e10a16f1acc4d1ea26bbf88/execution.json": "d1eb94674dc301bba7051be1bfa663862e16290ae5751182ce2fd0118660c94c",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/8506dd880b0060b753f64a061b89a70106d6bb6fff2f9175e9cbdf7ef227a4ea.json": "8506dd880b0060b753f64a061b89a70106d6bb6fff2f9175e9cbdf7ef227a4ea",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/1abcf3f034ac6f664b57934caddf1060f180f46efc5098be5f7a5579630e6e39.pdf": "1abcf3f034ac6f664b57934caddf1060f180f46efc5098be5f7a5579630e6e39",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/44c4e42aecea3c10c1a8031c8b3bfc23687d5519b9376c6f4afb8cdba3210d63.json": "44c4e42aecea3c10c1a8031c8b3bfc23687d5519b9376c6f4afb8cdba3210d63",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/8c2b8a7421cf128f30433491a8c98d99458a03c78ce4a6620bc536eaa0988aaf.json": "8c2b8a7421cf128f30433491a8c98d99458a03c78ce4a6620bc536eaa0988aaf",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/d3d34ba632b9096d97e554d5b6dcf9168c6ff9dd2ec9ef6546405fe9d29599ef.json": "d3d34ba632b9096d97e554d5b6dcf9168c6ff9dd2ec9ef6546405fe9d29599ef",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/49c6873ba5221575da4abbf34c721dde1bbad84c698e41bb61feca397e9c0673.json": "49c6873ba5221575da4abbf34c721dde1bbad84c698e41bb61feca397e9c0673",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/188ef9ac6d7871b8db9d77035bc20f3a439efc2f0f9cc4ad6317fb6163ec651e.json": "188ef9ac6d7871b8db9d77035bc20f3a439efc2f0f9cc4ad6317fb6163ec651e",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e.json": "315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/8e9c9190a601795576cd3cf0de46687496995b292da7cdd73934b447c870b0aa.lib": "8e9c9190a601795576cd3cf0de46687496995b292da7cdd73934b447c870b0aa",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/coverage_plan.json": "e3bce72aba427d5f678d0068be99dcab65937e93b3270981b7b947e1c92e0e8c",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/bbec1a388159d941bf50895f0d2267d28b776d9b01f2a13c32006e95ae2477b8.json": "bbec1a388159d941bf50895f0d2267d28b776d9b01f2a13c32006e95ae2477b8",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/fixture_drafts.json": "f3e1ade200009ffec3b28f6e8667ad6738aff754987c578c8b31304c8be2af48",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/inventory.json": "f82ee1050cd1d6d3b08c9b4888a39ae1204b635430b22cb0089c8ac490617274",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/coverage_queue.json": "462fc5d6d0a52c9fa9458e29e6e2566e0e87a9b4166dbcd81660371015f735bc"
+    },
+    "test_backend": false,
+    "all_declared_methods_qualified": false,
+    "review_backend": "GPT/Codex local source review; not GLM approval",
+    "exact_conditions_only": true,
+    "benchmark_results": {
+      "conductor_resistance_25C": {
+        "result": {
+          "value": 0.6500000000000001
+        },
+        "acceptance": "fail",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/6546f85e807c9f9d5a64b214acc5f7ff94c6caaa9e10a16f1acc4d1ea26bbf88",
+        "artifacts": {
+          "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+          "test.cir": "1deca82beeb845e110589d5909968851bde76f608c3c77e557658beca0d4f1c6",
+          "test.raw": "238cae399d0e8dbc59760bc74af509d111007bf8f70d9654124816e8ed15db81",
+          "test.log": "103d3f1b1ecfc76aa76b7e0aa120a6ebe49b0ee07b8163d614e92dfafda9be0f",
+          "execution.json": "d1eb94674dc301bba7051be1bfa663862e16290ae5751182ce2fd0118660c94c"
+        }
+      }
+    },
+    "scope_note": "Method available at declared points; full handbook range/series coverage still pending"
+  },
+  "parameter:20AB_zero": {
+    "status": "reference_method_qualified",
+    "source_identity": "217cec5d46c80fa723766ddda58a2cc652ec54ff569eea3fc2c407a5ed31a584",
+    "test_ids": [
+      "family_20AB_zero_V5_T25"
+    ],
+    "electrical_acceptance": "pending",
+    "proof_files": {
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/gpt_test_library/qualified/8e6f5b62be945182982774284c5e4630a901ce0cfd1e50c5c470db14377b85c8.json": "497f7e512ebc58fdef1c5178b48b5e9554285e9b71abaf39ca12ccad54f96fe2",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/gpt_test_library/models/ACS723/reference_interface_parameter_scope.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/c0a6187d7a196cf0ebb66da78f5b21cc1a6de39eb16655fa90964673846488cd/model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/c0a6187d7a196cf0ebb66da78f5b21cc1a6de39eb16655fa90964673846488cd/test.cir": "6c670d085ef20642c22f4eb4ab34109e582c651603ff0322c2a277f3a6026baa",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/c0a6187d7a196cf0ebb66da78f5b21cc1a6de39eb16655fa90964673846488cd/test.raw": "7e38c866cf217a5f94cc0416251e07fcb90237a226c7382b1f9cca2a7acdd571",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/c0a6187d7a196cf0ebb66da78f5b21cc1a6de39eb16655fa90964673846488cd/test.log": "1ae6fd42369af0817bc3ef26d0314e98aab87b47a0c7c8f7ea612116d5b7efed",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/c0a6187d7a196cf0ebb66da78f5b21cc1a6de39eb16655fa90964673846488cd/execution.json": "6a1de9dc1af1f55285a70f951521d00be3f507ecc1bfa7a8ace3591bb496b3b5",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/e4d7bc17381e33d585d07e6c9bdf4a69c52c7209fd948cd247c8aab9f5fbc418/model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/e4d7bc17381e33d585d07e6c9bdf4a69c52c7209fd948cd247c8aab9f5fbc418/test.cir": "b7e6f2346a17925628b622771d0923d0a20225b38a351d2b8594464f77fa40d9",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/e4d7bc17381e33d585d07e6c9bdf4a69c52c7209fd948cd247c8aab9f5fbc418/test.raw": "5b05db837a253f9e24ab96f9709734949456c0363bd75b7f52a3bcda2f50372b",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/e4d7bc17381e33d585d07e6c9bdf4a69c52c7209fd948cd247c8aab9f5fbc418/test.log": "8432b9eedd2bcc94459f16c03b1f3ca4a7c77aa9ed769b9108a41f65ef7e6515",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/e4d7bc17381e33d585d07e6c9bdf4a69c52c7209fd948cd247c8aab9f5fbc418/execution.json": "3b8dbc7a0fd2d468c5e735c4cc5d9112bee3dc023742b264fc1cd85afeb1eced",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/2093e23d149c6563487ce484c9e9b29b19f4b64ae58835a200c510db2111ae58/model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/2093e23d149c6563487ce484c9e9b29b19f4b64ae58835a200c510db2111ae58/test.cir": "5c5c4c8a2b1ef404bd88268b173d9cf11c787025d17d77bba8568d07842602bf",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/2093e23d149c6563487ce484c9e9b29b19f4b64ae58835a200c510db2111ae58/test.raw": "f057705633ee968a705c080815a26de5bf53965812ebd40b76eae4a6ac7768df",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/2093e23d149c6563487ce484c9e9b29b19f4b64ae58835a200c510db2111ae58/test.log": "83f53362e5f7a5ef10d09cb283155945d0c9ada7d29494dd5c47bdd2e067ff06",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/2093e23d149c6563487ce484c9e9b29b19f4b64ae58835a200c510db2111ae58/execution.json": "1cc072005357527af9259c558120d391eda0271a6a680405da25f77bdc750e08",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/8506dd880b0060b753f64a061b89a70106d6bb6fff2f9175e9cbdf7ef227a4ea.json": "8506dd880b0060b753f64a061b89a70106d6bb6fff2f9175e9cbdf7ef227a4ea",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/1abcf3f034ac6f664b57934caddf1060f180f46efc5098be5f7a5579630e6e39.pdf": "1abcf3f034ac6f664b57934caddf1060f180f46efc5098be5f7a5579630e6e39",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/44c4e42aecea3c10c1a8031c8b3bfc23687d5519b9376c6f4afb8cdba3210d63.json": "44c4e42aecea3c10c1a8031c8b3bfc23687d5519b9376c6f4afb8cdba3210d63",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/8c2b8a7421cf128f30433491a8c98d99458a03c78ce4a6620bc536eaa0988aaf.json": "8c2b8a7421cf128f30433491a8c98d99458a03c78ce4a6620bc536eaa0988aaf",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/d3d34ba632b9096d97e554d5b6dcf9168c6ff9dd2ec9ef6546405fe9d29599ef.json": "d3d34ba632b9096d97e554d5b6dcf9168c6ff9dd2ec9ef6546405fe9d29599ef",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/49c6873ba5221575da4abbf34c721dde1bbad84c698e41bb61feca397e9c0673.json": "49c6873ba5221575da4abbf34c721dde1bbad84c698e41bb61feca397e9c0673",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/188ef9ac6d7871b8db9d77035bc20f3a439efc2f0f9cc4ad6317fb6163ec651e.json": "188ef9ac6d7871b8db9d77035bc20f3a439efc2f0f9cc4ad6317fb6163ec651e",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e.json": "315eea67279126ca1b1774b29457b56d7fa33c25cf3171e690f3aa82e24ac80e",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/8e9c9190a601795576cd3cf0de46687496995b292da7cdd73934b447c870b0aa.lib": "8e9c9190a601795576cd3cf0de46687496995b292da7cdd73934b447c870b0aa",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/coverage_plan.json": "e3bce72aba427d5f678d0068be99dcab65937e93b3270981b7b947e1c92e0e8c",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/assets/bbec1a388159d941bf50895f0d2267d28b776d9b01f2a13c32006e95ae2477b8.json": "bbec1a388159d941bf50895f0d2267d28b776d9b01f2a13c32006e95ae2477b8",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/fixture_drafts.json": "f3e1ade200009ffec3b28f6e8667ad6738aff754987c578c8b31304c8be2af48",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/inventory.json": "f82ee1050cd1d6d3b08c9b4888a39ae1204b635430b22cb0089c8ac490617274",
+      "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/ACS723/coverage_queue.json": "462fc5d6d0a52c9fa9458e29e6e2566e0e87a9b4166dbcd81660371015f735bc"
+    },
+    "test_backend": false,
+    "all_declared_methods_qualified": false,
+    "review_backend": "GPT/Codex local source review; not GLM approval",
+    "exact_conditions_only": true,
+    "benchmark_results": {
+      "family_20AB_zero_V5_T25": {
+        "result": {
+          "value": 2.499975000425274
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification_corrected/simulations/2093e23d149c6563487ce484c9e9b29b19f4b64ae58835a200c510db2111ae58",
+        "artifacts": {
+          "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+          "test.cir": "5c5c4c8a2b1ef404bd88268b173d9cf11c787025d17d77bba8568d07842602bf",
+          "test.raw": "f057705633ee968a705c080815a26de5bf53965812ebd40b76eae4a6ac7768df",
+          "test.log": "83f53362e5f7a5ef10d09cb283155945d0c9ada7d29494dd5c47bdd2e067ff06",
+          "execution.json": "1cc072005357527af9259c558120d391eda0271a6a680405da25f77bdc750e08"
+        }
+      }
+    },
+    "scope_note": "Method available at declared points; full handbook range/series coverage still pending"
+  }
+}

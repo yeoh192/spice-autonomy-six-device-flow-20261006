@@ -1,0 +1,17 @@
+LTspice 26.0.2 for MacOS
+Circuit: /Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/static_family_qualification/simulations/d8ff253e803ab6219637032563a2bb1fb9e9f21b0a1917f7f9aca86f0a31acc2/test.cir
+Start Time: Thu Oct  8 20:16:36 2026
+Options:plotwinsize=0 method=trap
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 25
+method = trap
+AsciiRawFile = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.313 seconds.
+
+Files loaded:
+/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/static_family_qualification/simulations/d8ff253e803ab6219637032563a2bb1fb9e9f21b0a1917f7f9aca86f0a31acc2/test.cir
+/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/static_family_qualification/simulations/d8ff253e803ab6219637032563a2bb1fb9e9f21b0a1917f7f9aca86f0a31acc2/model.lib
+

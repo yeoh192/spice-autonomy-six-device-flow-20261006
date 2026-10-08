@@ -1,0 +1,48 @@
+{
+  "tests": 6,
+  "missing": [
+    "parameter:inductance",
+    "parameter:turns",
+    "parameter:isat",
+    "parameter:rdc_N1",
+    "parameter:rdc_N2",
+    "parameter:rdc_N3",
+    "parameter:leakage_l"
+  ],
+  "constraints": [
+    "parameter:isolation_1500",
+    "parameter:isolation_500",
+    "parameter:operating_temp",
+    "parameter:storage_packaged",
+    "parameter:storage_parts",
+    "parameter:msl"
+  ],
+  "inventory_review": "page_anchored_inventory_expanded_series_and_footnote_review_pending",
+  "interfaces": {
+    "circuit": "R/C/L, independent V/I (DC/AC/PWL), numeric diode and voltage-controlled release switch fixtures, one DUT with task-defined pins",
+    "analysis": "DC sweep, single-frequency or bounded linear AC sweep, transient",
+    "measurement": "sample, dc_current_max (max absolute input current), dc_current_difference (actual probe difference), dc_slope, dc_sensitivity_error_percent, dc_linearity_percent, curve, ratio_curve (actual V/I), capacitance, complex V/I impedance/ESR/C/L/loss and voltage-ratio gain/dB/phase, integral_to_crossing with explicit integration start and target",
+    "forbidden": "arbitrary Python/shell, external model files, changes to immutable reference/acceptance/ports"
+  },
+  "model_provenance": {
+    "kind": "vendor_reference_only",
+    "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+    "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+    "note": "Reference interface benchmark only; prohibited as selected modeling template"
+  },
+  "budgets": {
+    "api_calls": 0,
+    "simulations": 12,
+    "repairs": 0,
+    "seconds": 1800
+  },
+  "needs_structured_contract": [
+    "parameter:inductance",
+    "parameter:turns",
+    "parameter:isat",
+    "parameter:rdc_N1",
+    "parameter:rdc_N2",
+    "parameter:rdc_N3",
+    "parameter:leakage_l"
+  ]
+}

@@ -1,0 +1,392 @@
+{
+  "schema": "coverage-binding-1",
+  "status": "coverage_updated_with_gaps",
+  "devices": [
+    {
+      "device": "BUK7K52-60E",
+      "source_identity": "ae6cb4461f688474311da8d03722027118a9c6c5bea6110a3f037d8b11e8cc57",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_coverage_registered/BUK7K52-60E",
+      "counts": {
+        "records": 82,
+        "test_records": 58,
+        "configured_binding_records": 23,
+        "configured_binding_pending": 23,
+        "tests_without_method": 35,
+        "partial_method_records": 0,
+        "device_bindings_confirmed": 0,
+        "reference_methods_qualified": 0,
+        "electrical_pass": 0,
+        "electrical_fail": 0,
+        "electrical_pending": 0,
+        "constraints": 20,
+        "constraints_setup_audited": 0,
+        "constraints_pending": 20,
+        "informational": 4,
+        "informational_review_pending": 2
+      },
+      "diagnostics": [],
+      "hashes": {
+        "manual_inventory.json": "c1bf4b425ad5e5757fd56b6fb5cc014e651476d9aa9b61acc21fe4dea6e8bc02",
+        "binding_receipts.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+      },
+      "usage": {
+        "api_calls": 0,
+        "simulations": 0,
+        "repairs": 0,
+        "seconds": 0.000522792000000008
+      },
+      "budgets": {
+        "api_calls": 1,
+        "simulations": 0,
+        "repairs": 1,
+        "seconds": 1200
+      }
+    },
+    {
+      "device": "1N4148",
+      "source_identity": "99372b2122ed2ddae73d40c9de9ead3a332c0ae886766bad4798fbbab12a0a41",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_coverage_registered/1N4148",
+      "counts": {
+        "records": 31,
+        "test_records": 13,
+        "configured_binding_records": 0,
+        "configured_binding_pending": 0,
+        "tests_without_method": 7,
+        "partial_method_records": 6,
+        "device_bindings_confirmed": 0,
+        "reference_methods_qualified": 6,
+        "electrical_pass": 0,
+        "electrical_fail": 0,
+        "electrical_pending": 0,
+        "constraints": 13,
+        "constraints_setup_audited": 0,
+        "constraints_pending": 13,
+        "informational": 5,
+        "informational_review_pending": 5
+      },
+      "diagnostics": [
+        {
+          "reference_id": "figure:fig3:typ_25C",
+          "status": "reference_method_qualified",
+          "test": "forward_25C",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:ir25",
+          "status": "reference_method_qualified",
+          "test": "reverse_20V_25C",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:ir150",
+          "status": "reference_method_qualified",
+          "test": "reverse_20V_150C",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:vf10",
+          "status": "reference_method_qualified",
+          "test": "forward_10mA",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "figure:fig3:typ_175C",
+          "status": "reference_method_qualified",
+          "test": "forward_175C",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:cd",
+          "status": "reference_method_qualified",
+          "test": "capacitance_zero_bias",
+          "scope": "exact_conditions_only"
+        }
+      ],
+      "hashes": {
+        "manual_inventory.json": "882dd6facd21f73be0a4cf72b163f81aea3a5cb3233b2249be480540da75d374",
+        "binding_receipts.json": "d03ced29a1824a472e1f739437ad38de05550bb2923a1d2fe3a4e8cc0ef52421"
+      },
+      "usage": {
+        "api_calls": 0,
+        "simulations": 0,
+        "repairs": 0,
+        "seconds": 0.0003234579999999987
+      },
+      "budgets": {
+        "api_calls": 1,
+        "simulations": 0,
+        "repairs": 1,
+        "seconds": 1200
+      }
+    },
+    {
+      "device": "EMHK350ARA470MF80G",
+      "source_identity": "25f99540074058bf78fd85c17df71a760101f0e8a608eb228614f40337579d7b",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_coverage_registered/EMHK350ARA470MF80G",
+      "counts": {
+        "records": 31,
+        "test_records": 8,
+        "configured_binding_records": 0,
+        "configured_binding_pending": 0,
+        "tests_without_method": 3,
+        "partial_method_records": 5,
+        "device_bindings_confirmed": 0,
+        "reference_methods_qualified": 5,
+        "electrical_pass": 0,
+        "electrical_fail": 0,
+        "electrical_pending": 0,
+        "constraints": 23,
+        "constraints_setup_audited": 0,
+        "constraints_pending": 23,
+        "informational": 0,
+        "informational_review_pending": 0
+      },
+      "diagnostics": [
+        {
+          "reference_id": "parameter:esr-40",
+          "status": "reference_method_qualified",
+          "test": "esr_-40_100000Hz",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:esr20",
+          "status": "reference_method_qualified",
+          "test": "esr_20_200000Hz",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:esr-40",
+          "status": "reference_method_qualified",
+          "test": "esr_-40_200000Hz",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:df",
+          "status": "reference_method_qualified",
+          "test": "df_120Hz",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:esr-40",
+          "status": "reference_method_qualified",
+          "test": "esr_-40_400000Hz",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:cap",
+          "status": "reference_method_qualified",
+          "test": "cap_120Hz",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:cap_tolerance",
+          "status": "reference_method_qualified",
+          "test": "cap_120Hz",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:esr20",
+          "status": "reference_method_qualified",
+          "test": "esr_20_400000Hz",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:esr20",
+          "status": "reference_method_qualified",
+          "test": "esr_20_100000Hz",
+          "scope": "exact_conditions_only"
+        }
+      ],
+      "hashes": {
+        "manual_inventory.json": "a796c794c5d93c8cba1244e7b2a0444c30256c34e8b4009f4b1684602530dc20",
+        "binding_receipts.json": "7525342cc956087bb2a25e3bf99b7b7d556689a5c105ed3ca7ed3d4d8d110c6e"
+      },
+      "usage": {
+        "api_calls": 0,
+        "simulations": 0,
+        "repairs": 0,
+        "seconds": 0.0003693750000000051
+      },
+      "budgets": {
+        "api_calls": 1,
+        "simulations": 0,
+        "repairs": 1,
+        "seconds": 1200
+      }
+    },
+    {
+      "device": "750311423",
+      "source_identity": "5ad235180c4764a21705fc84dd7044e74e83d4d18a7dc9286d869f2bb8bdbfc2",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_coverage_registered/750311423",
+      "counts": {
+        "records": 18,
+        "test_records": 7,
+        "configured_binding_records": 0,
+        "configured_binding_pending": 0,
+        "tests_without_method": 2,
+        "partial_method_records": 5,
+        "device_bindings_confirmed": 0,
+        "reference_methods_qualified": 5,
+        "electrical_pass": 0,
+        "electrical_fail": 0,
+        "electrical_pending": 0,
+        "constraints": 6,
+        "constraints_setup_audited": 0,
+        "constraints_pending": 6,
+        "informational": 5,
+        "informational_review_pending": 5
+      },
+      "diagnostics": [
+        {
+          "reference_id": "parameter:rdc_N2",
+          "status": "reference_method_qualified",
+          "test": "dcr_N2",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:turns",
+          "status": "reference_method_qualified",
+          "test": "turns_N3",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:rdc_N3",
+          "status": "reference_method_qualified",
+          "test": "dcr_N3",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:turns",
+          "status": "reference_method_qualified",
+          "test": "turns_N2",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:rdc_N1",
+          "status": "reference_method_qualified",
+          "test": "dcr_N1",
+          "scope": "exact_conditions_only"
+        },
+        {
+          "reference_id": "parameter:inductance",
+          "status": "reference_method_qualified",
+          "test": "primary_inductance",
+          "scope": "exact_conditions_only"
+        }
+      ],
+      "hashes": {
+        "manual_inventory.json": "5d0b937e2fc87742a96217467692b2d7e1d322dd838c43250db0eb279e729150",
+        "binding_receipts.json": "0f224c3d5564641fcc8a9c1339b5c8ef362ea1e7f6d1f43779c8cf705c6cfb55"
+      },
+      "usage": {
+        "api_calls": 0,
+        "simulations": 0,
+        "repairs": 0,
+        "seconds": 0.0003853750000000211
+      },
+      "budgets": {
+        "api_calls": 1,
+        "simulations": 0,
+        "repairs": 1,
+        "seconds": 1200
+      }
+    },
+    {
+      "device": "ACS723KMATR-20AB-T",
+      "source_identity": "217cec5d46c80fa723766ddda58a2cc652ec54ff569eea3fc2c407a5ed31a584",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_coverage_registered/ACS723KMATR-20AB-T",
+      "counts": {
+        "records": 97,
+        "test_records": 37,
+        "configured_binding_records": 0,
+        "configured_binding_pending": 0,
+        "tests_without_method": 36,
+        "partial_method_records": 1,
+        "device_bindings_confirmed": 0,
+        "reference_methods_qualified": 1,
+        "electrical_pass": 0,
+        "electrical_fail": 0,
+        "electrical_pending": 0,
+        "constraints": 32,
+        "constraints_setup_audited": 0,
+        "constraints_pending": 32,
+        "informational": 28,
+        "informational_review_pending": 28
+      },
+      "diagnostics": [
+        {
+          "reference_id": "parameter:rip",
+          "status": "reference_method_qualified",
+          "test": "conductor_resistance_25C",
+          "scope": "exact_conditions_only"
+        }
+      ],
+      "hashes": {
+        "manual_inventory.json": "f0a4c14a36564668b6d5a62c83f88c6924c5399f49b1ca8ee4ea58a5802ae2a2",
+        "binding_receipts.json": "fec3ed30bae45e2fafeb90d4e954480c14042c3ce6242ce3388721f8b50e0978"
+      },
+      "usage": {
+        "api_calls": 0,
+        "simulations": 0,
+        "repairs": 0,
+        "seconds": 0.00046704100000000137
+      },
+      "budgets": {
+        "api_calls": 1,
+        "simulations": 0,
+        "repairs": 1,
+        "seconds": 1200
+      }
+    },
+    {
+      "device": "ADA4528-1_MSOP",
+      "source_identity": "7f6fd00d6818e400818ef2474f50a0278433ffb19af18161638b2f0ce5302846",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_coverage_registered/ADA4528-1_MSOP",
+      "counts": {
+        "records": 186,
+        "test_records": 144,
+        "configured_binding_records": 0,
+        "configured_binding_pending": 0,
+        "tests_without_method": 143,
+        "partial_method_records": 1,
+        "device_bindings_confirmed": 0,
+        "reference_methods_qualified": 1,
+        "electrical_pass": 0,
+        "electrical_fail": 0,
+        "electrical_pending": 0,
+        "constraints": 19,
+        "constraints_setup_audited": 0,
+        "constraints_pending": 19,
+        "informational": 23,
+        "informational_review_pending": 23
+      },
+      "diagnostics": [
+        {
+          "reference_id": "parameter:icc_5",
+          "status": "reference_method_qualified",
+          "test": "supply_current_5V_25C",
+          "scope": "exact_conditions_only"
+        }
+      ],
+      "hashes": {
+        "manual_inventory.json": "f4435d3e15ad25c8fd2012573092fab79070c246d1a6db3e4ae99e87e35c955e",
+        "binding_receipts.json": "2c8ac5056cd41f7b272179fad340017ff8640516428009a669abfc56b342839a"
+      },
+      "usage": {
+        "api_calls": 0,
+        "simulations": 0,
+        "repairs": 0,
+        "seconds": 0.00047325000000009165
+      },
+      "budgets": {
+        "api_calls": 1,
+        "simulations": 0,
+        "repairs": 1,
+        "seconds": 1200
+      }
+    }
+  ],
+  "full_manual_coverage": false,
+  "test_backend": false,
+  "simulations": 0
+}

@@ -40,7 +40,8 @@ def counts(inventory):
     return {'records': len(items), 'test_records': len(tests),
             'configured_binding_records': sum(bool(i.get('bindings')) for i in tests),
             'configured_binding_pending': sum(bool(i.get('bindings')) and not i.get('binding_complete') for i in tests),
-            'tests_without_method': sum(not i.get('bindings') and not i.get('method_binding_complete') for i in tests),
+            'tests_without_method': sum(not i.get('bindings') and not i.get('method_bindings') and not i.get('method_binding_complete') for i in tests),
+            'partial_method_records': sum(bool(i.get('method_bindings')) and not i.get('method_binding_complete') for i in tests),
             'device_bindings_confirmed': len(confirmed),
             'reference_methods_qualified': sum(i.get('coverage_status') == 'reference_method_qualified' for i in tests),
             'electrical_pass': sum(i.get('electrical_acceptance') == 'pass' for i in confirmed),
@@ -235,6 +236,8 @@ def write_device(output, root, packet, inventory, receipts, diagnostics):
     row={'device':packet['device'],'source_identity':source_identity(root,packet),'folder':str(folder.resolve()),
          'counts':counts(inventory),'diagnostics':diagnostics,
          'hashes':{n:digest(folder/n) for n in ('manual_inventory.json','binding_receipts.json')}}
+    benchmarks={test:r for receipt in receipts.values() for test,r in receipt.get('benchmark_results',{}).items()}
+    row['counts'].update(registered_method_tests=len({test for i in inventory['items'] for test in i.get('method_bindings',[])}), benchmark_test_pass=sum(r['acceptance']=='pass' for r in benchmarks.values()), benchmark_test_fail=sum(r['acceptance']=='fail' for r in benchmarks.values()))
     lines=['# '+packet['device']+' 覆盖确认','', '仅更新证据支持的绑定；模型验收、参考方法及约束设置审计分别统计。',
            '原手册、原清单、测试条件与验收标准保持不变。','', '| 项目 | 数量 |','|---|---:|']
     lines += ['| '+k+' | '+str(v)+' |' for k,v in row['counts'].items()]
@@ -249,7 +252,7 @@ def write_device(output, root, packet, inventory, receipts, diagnostics):
 
 
 def run(batch, runtime, output, check_only=False, resume=False, previous=None, rounds=2,
-        transport=None, development=None, qualification=None, import_only=False):
+        transport=None, development=None, qualification=None, import_only=False, gpt_library=None):
     batch, runtime, output = Path(batch).resolve(), Path(runtime).resolve(), Path(output).resolve()
     validate_batch(batch)
     if rounds not in (1,2):raise Fault('input','覆盖审查最多两轮')
@@ -282,7 +285,7 @@ def run(batch, runtime, output, check_only=False, resume=False, previous=None, r
             store=None;agents=None
             if not check_only:
                 identity=fingerprint({'source':source_identity(root,packet),'runtime':str(runtime),'code':code,
-                                      'previous':str(previous),'import_only':import_only,'rounds':rounds,'test_backend':bool(transport)})
+                                      'gpt_library':str(gpt_library),'previous':str(previous),'import_only':import_only,'rounds':rounds,'test_backend':bool(transport)})
                 store=Store(folder,identity,limits,resume and (folder/'state.json').exists())
                 agents=Agents(store,packet['routes'],transport)
             for item in jobs:
@@ -348,11 +351,14 @@ def run(batch, runtime, output, check_only=False, resume=False, previous=None, r
             if store:store.finish('coverage_review_with_gaps')
             if not check_only:
                 import_methods(root,packet,inventory,receipts,diagnostics,development,qualification)
+                if gpt_library:
+                    from .registered_library import import_registered
+                    import_registered(root,packet,inventory,receipts,diagnostics,gpt_library)
             row=write_device(output,root,packet,inventory,receipts,diagnostics)
             if store:row['usage']=store.data['usage'].copy();row['budgets']=limits
             report['devices'].append(row);save(output/'summary.json',report)
             c=row['counts']
-            print(packet['device']+'：已有绑定待确认 '+str(c['configured_binding_pending'])+'；缺测试方法 '+str(c['tests_without_method'])+'；约束待审计 '+str(c['constraints_pending'])+'；模型验收通过 '+str(c['electrical_pass']),flush=True)
+            print(packet['device']+'：已有绑定待确认 '+str(c['configured_binding_pending'])+'；缺测试方法 '+str(c['tests_without_method'])+'；约束待审计 '+str(c['constraints_pending'])+'；模型验收通过 '+str(c['electrical_pass'])+'；已登记方法 '+str(c['registered_method_tests'])+'（整条条件覆盖仍单独确认）',flush=True)
             if report['status']=='stopped_with_evidence':break
         save(output/'summary.json',report)
     return report

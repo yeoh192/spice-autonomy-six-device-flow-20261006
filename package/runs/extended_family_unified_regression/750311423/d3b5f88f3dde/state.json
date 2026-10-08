@@ -1,0 +1,3062 @@
+{
+  "schema": 1,
+  "identity": "51b65026252cdfc0e44dea9763ca102621f5be9e1da736240aba919ece2479ad",
+  "limits": {
+    "api_calls": 0,
+    "simulations": 12,
+    "repairs": 0,
+    "seconds": 1800
+  },
+  "usage": {
+    "api_calls": 0,
+    "simulations": 6,
+    "repairs": 0,
+    "seconds": 24.778735042
+  },
+  "status": "finished_with_gaps",
+  "events": [
+    {
+      "time": 1791462206.348188,
+      "stage": "preflight",
+      "status": "completed",
+      "detail": {
+        "tests": 6,
+        "missing": 7
+      }
+    },
+    {
+      "time": 1791462206.349995,
+      "stage": "configured_regression",
+      "status": "running",
+      "detail": {
+        "tests": 6,
+        "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2"
+      }
+    },
+    {
+      "time": 1791462210.23526,
+      "stage": "turns_N3",
+      "status": "completed",
+      "detail": {
+        "acceptance": "pass"
+      }
+    },
+    {
+      "time": 1791462214.523679,
+      "stage": "dcr_N1",
+      "status": "completed",
+      "detail": {
+        "acceptance": "pass"
+      }
+    },
+    {
+      "time": 1791462218.814625,
+      "stage": "dcr_N2",
+      "status": "completed",
+      "detail": {
+        "acceptance": "pass"
+      }
+    },
+    {
+      "time": 1791462222.911011,
+      "stage": "primary_inductance",
+      "status": "completed",
+      "detail": {
+        "acceptance": "pass"
+      }
+    },
+    {
+      "time": 1791462227.004033,
+      "stage": "turns_N2",
+      "status": "completed",
+      "detail": {
+        "acceptance": "pass"
+      }
+    },
+    {
+      "time": 1791462231.1010401,
+      "stage": "dcr_N3",
+      "status": "completed",
+      "detail": {
+        "acceptance": "pass"
+      }
+    },
+    {
+      "time": 1791462231.1048262,
+      "stage": "configured_regression",
+      "status": "completed",
+      "detail": {}
+    },
+    {
+      "time": 1791462231.108186,
+      "stage": "input_scope_gate",
+      "status": "fitting_not_enabled",
+      "detail": {
+        "schema": "unified-device-input-1",
+        "execution_scope": "configured_regression_only",
+        "model_fitting_ready": false
+      }
+    }
+  ],
+  "requests": {},
+  "simulations": {
+    "ed446fac0611cd4d4e73ba73382985042059d3becaaecab82507779a77bd9e5b": {
+      "status": "completed",
+      "hashes": {
+        "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "test.cir": "8f5bdc0f63e8bc5439a7f88340b4324f9ef7a0abc3c3b274f00546d5d7175a50",
+        "test.raw": "80bec1304d57125255106abc91a467703d9095ec3c4f15617b6a47098f0da425",
+        "test.log": "1a4fff991c55f50f6cc9b120c21ef5b1272225fc965c368bd3fb06b0ce70ca66",
+        "execution.json": "26412b5d8ac9da13dd8381785de3dd041826cf3a7f9e97a1932d85e77a750322"
+      }
+    },
+    "4c8288001153cff83206ed5856cf3e2755d5ef1cc2bacbd3b3fd8b377e3872fd": {
+      "status": "completed",
+      "hashes": {
+        "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "test.cir": "e205cc5bb97d0f14413a41417c988c91defb00e5d244e48fd742ac07a345d2ab",
+        "test.raw": "3576668e48356882159ce31642962c8765c2f303389080da694da412137d1d92",
+        "test.log": "7116d776c8afc8ad3d9633527fdb2285d094b82f8c6e469a6dc826585d41e370",
+        "execution.json": "755096cac32a1732de4388fbce35ec4a8149f158b9139eeb96ac9a5419660d95"
+      }
+    },
+    "5e6c433d2727a5d1c61ae1eb4dae4213e056467d31bd75be8c40efc886fc7b10": {
+      "status": "completed",
+      "hashes": {
+        "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "test.cir": "78257c7cf694577610dcf04b547d858e24ac5bfaf5dc6044260eebc6c9592f8c",
+        "test.raw": "f97b8b69c46dbaa5951d0a0d52082e8fad4031d5f0272b2d141a5cea1626b9fc",
+        "test.log": "03e972f3a8eeef4a0e6daf3786c0a1bcdde0d1157ec6ee0c7a74162cf33e4ebc",
+        "execution.json": "cea9d696f4c10dcd33cd11ec419426ccdae38ccfe81a6e058253f3d0fb79a940"
+      }
+    },
+    "4784b08743980734090d1707ad2d11a8798f1a8eeb3157d9be6a0cf04ae0da52": {
+      "status": "completed",
+      "hashes": {
+        "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "test.cir": "87226f9b5dab989f7e718e1b3689fee21f7f39092450d01f8a60dda76be7ab88",
+        "test.raw": "c30beacba0da477b651c91d8a35b9cd1ca24d1080ae4066bdba8e02007e407a7",
+        "test.log": "46001b85ccbc9570ed02d41b4ec2b88db989a8a1aaf1a88f34733873b1ad4b5a",
+        "execution.json": "60b2f6e3ee4c801da34f4abd10e024fa087b87af11ff6feedc4621bf0657fe70"
+      }
+    },
+    "ddc38a42825451d246348f15282a525cc34830a60b65c816a096487aab533a9a": {
+      "status": "completed",
+      "hashes": {
+        "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "test.cir": "ca72b1e5d006d53d206222e21c71e5a99a539a653f442981b64a1a1f2c4e9209",
+        "test.raw": "90fa97bac122989635a616ee9876bbde5d20737279bfdfe9a015042bccf0f99b",
+        "test.log": "42cb78e08bf4abd68de797e2c6d5f31212b40883869176511fdc00776fa0feb4",
+        "execution.json": "dac4b951d00f732d5d6cdb56608f073cd7b9f5fb93407c8dceddcb6d1a9e6cff"
+      }
+    },
+    "954f12691d5c55af29d977e97b01e423f4dd527079cc2dfe1e329fdbcf741630": {
+      "status": "completed",
+      "hashes": {
+        "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "test.cir": "03b7687217c0444cfecab5d723f3fac60d03c4d190e99e279452443eb7066d29",
+        "test.raw": "befc959bc4b25660273ec2ef7300382278134d5ff60b0ec5665a2f208d0a4808",
+        "test.log": "4381df632d47e093a6573613453f53c150214fd929c58266b6a1ced82d0f5abb",
+        "execution.json": "8e05fc56b761a34e55cfbd7dc226682ccbd57b734dd5c061bcf91f438ca18e6e"
+      }
+    }
+  },
+  "plans": {},
+  "patches": {},
+  "checkpoints": {
+    "workflow": {
+      "cases": [
+        {
+          "id": "turns_N3",
+          "reference_ids": [
+            "parameter:turns"
+          ],
+          "model": {
+            "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+            "entry": "REFERENCE_XFMR",
+            "declared_ports": [
+              "P1",
+              "N1",
+              "P3",
+              "N3",
+              "P2",
+              "N2"
+            ],
+            "ports": [
+              "P1",
+              "N1",
+              "P3",
+              "N3",
+              "P2",
+              "N2"
+            ],
+            "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "provenance": {
+              "kind": "vendor_reference_only",
+              "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+              "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+              "note": "Reference interface benchmark only; prohibited as selected modeling template"
+            }
+          },
+          "protocol": {
+            "temperature_C": 20,
+            "device_nodes": {
+              "P1": "P",
+              "N1": "N",
+              "P3": "AUXP",
+              "N3": "AUXN",
+              "P2": "SECP",
+              "N2": "SECN"
+            },
+            "components": [
+              {
+                "kind": "V",
+                "name": "VDRIVE",
+                "nodes": [
+                  "P",
+                  "N"
+                ],
+                "value": {
+                  "dc": 0,
+                  "ac": 0.1
+                }
+              },
+              {
+                "kind": "R",
+                "name": "RGROUND",
+                "nodes": [
+                  "N",
+                  "0"
+                ],
+                "value": 1e-06
+              },
+              {
+                "kind": "R",
+                "name": "RAUX",
+                "nodes": [
+                  "AUXN",
+                  "0"
+                ],
+                "value": 1e-06
+              },
+              {
+                "kind": "R",
+                "name": "RSEC",
+                "nodes": [
+                  "SECN",
+                  "0"
+                ],
+                "value": 1e-06
+              }
+            ],
+            "analysis": {
+              "kind": "ac",
+              "frequency_Hz": 10000
+            },
+            "measurement": {
+              "mode": "ac_gain_magnitude",
+              "signal": "v(auxp,auxn)",
+              "denominator": "v(p,n)",
+              "sign": 1
+            },
+            "checks": []
+          },
+          "expectation": {
+            "unit": "1",
+            "limits": {},
+            "typical": 0.5,
+            "typical_relative_tolerance_percent": 10,
+            "thresholds": {}
+          },
+          "review_status": "independent_agent_review_required",
+          "delivery_eligible": false,
+          "scope_note": "4:1:2 winding voltage ratios; chosen10kHz100mV is documented test convention pending review; handbook ratio has no printed tolerance so acceptance is pending",
+          "contract": {
+            "fixed": {
+              "temperature_C": 20,
+              "device_nodes": {
+                "P1": "P",
+                "N1": "N",
+                "P3": "AUXP",
+                "N3": "AUXN",
+                "P2": "SECP",
+                "N2": "SECN"
+              },
+              "components": [
+                {
+                  "kind": "V",
+                  "name": "VDRIVE",
+                  "nodes": [
+                    "P",
+                    "N"
+                  ],
+                  "value": {
+                    "dc": 0,
+                    "ac": 0.1
+                  }
+                },
+                {
+                  "kind": "R",
+                  "name": "RGROUND",
+                  "nodes": [
+                    "N",
+                    "0"
+                  ],
+                  "value": 1e-06
+                },
+                {
+                  "kind": "R",
+                  "name": "RAUX",
+                  "nodes": [
+                    "AUXN",
+                    "0"
+                  ],
+                  "value": 1e-06
+                },
+                {
+                  "kind": "R",
+                  "name": "RSEC",
+                  "nodes": [
+                    "SECN",
+                    "0"
+                  ],
+                  "value": 1e-06
+                }
+              ],
+              "analysis": {
+                "kind": "ac",
+                "frequency_Hz": 10000
+              },
+              "measurement": {
+                "mode": "ac_gain_magnitude",
+                "signal": "v(auxp,auxn)",
+                "denominator": "v(p,n)",
+                "sign": 1
+              },
+              "checks": []
+            }
+          },
+          "protocol_sha256": "f46d7d2e84c0abceb797a3f1946e8f1272a8cd7173f9405ffacfd493d78b2aa9",
+          "nominal_reference": 0.5,
+          "qualification_status": "awaiting_real_calibration_and_trial",
+          "model_role": "reference_interface_benchmark_only",
+          "actual_circuit": {
+            "path": "fixture_circuits/turns_N3.cir",
+            "sha256": "8f5bdc0f63e8bc5439a7f88340b4324f9ef7a0abc3c3b274f00546d5d7175a50"
+          },
+          "device": "750311423",
+          "input_folder": "750311423",
+          "reference_evidence": [
+            {
+              "id": "parameter:turns",
+              "kind": "test",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "turns",
+                "key": "turns_ratio",
+                "values": {
+                  "value": "4:1:2"
+                },
+                "unit": "1",
+                "conditions": "N1:N2:N3",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b9",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "ac_gain_magnitude",
+              "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+              "source_record": {
+                "id": "parameter:turns",
+                "kind": "test_or_constraint_pending_classification",
+                "applicable": true,
+                "reference_evidence": {
+                  "id": "turns",
+                  "key": "turns_ratio",
+                  "values": {
+                    "value": "4:1:2"
+                  },
+                  "unit": "1",
+                  "conditions": "N1:N2:N3",
+                  "applies_to": [
+                    "750311423"
+                  ],
+                  "rating_kind": "electrical_characteristic",
+                  "state": "initial",
+                  "evidence_refs": [
+                    "b9",
+                    "p0"
+                  ]
+                },
+                "bindings": [],
+                "binding_complete": false,
+                "pdf_pages": [
+                  1
+                ],
+                "plan_status": "test_development_required",
+                "method_family": "ac_gain_magnitude",
+                "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+              },
+              "source_kind": "test_or_constraint_pending_classification",
+              "label": "turns_ratio",
+              "evidence": [
+                "b9",
+                "p0"
+              ],
+              "classification_review_pending": true,
+              "reference_asset_bindings": [],
+              "configured_reference_bindings": []
+            }
+          ],
+          "authorship": {
+            "designer": "GPT/Codex",
+            "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+          },
+          "scope": "exact declared conditions; remaining handbook coverage is open",
+          "ratio_definition": {
+            "manual": "N1:N2:N3=4:1:2",
+            "measured": "Vsecondary/Vprimary",
+            "expected": 0.5,
+            "acceptance_source": "fixed project typical-value tolerance 10%"
+          }
+        },
+        {
+          "id": "dcr_N1",
+          "reference_ids": [
+            "parameter:rdc_N1"
+          ],
+          "model": {
+            "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+            "entry": "REFERENCE_XFMR",
+            "declared_ports": [
+              "P1",
+              "N1",
+              "P3",
+              "N3",
+              "P2",
+              "N2"
+            ],
+            "ports": [
+              "P1",
+              "N1",
+              "P3",
+              "N3",
+              "P2",
+              "N2"
+            ],
+            "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "provenance": {
+              "kind": "vendor_reference_only",
+              "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+              "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+              "note": "Reference interface benchmark only; prohibited as selected modeling template"
+            }
+          },
+          "protocol": {
+            "temperature_C": 20,
+            "device_nodes": {
+              "P1": "P",
+              "N1": "N",
+              "P3": "AUXP",
+              "N3": "AUXN",
+              "P2": "SECP",
+              "N2": "SECN"
+            },
+            "components": [
+              {
+                "kind": "I",
+                "name": "IDRIVE",
+                "nodes": [
+                  "N",
+                  "P"
+                ],
+                "value": {
+                  "dc": 0
+                }
+              },
+              {
+                "kind": "R",
+                "name": "RGROUND",
+                "nodes": [
+                  "N",
+                  "0"
+                ],
+                "value": 1e-06
+              }
+            ],
+            "analysis": {
+              "kind": "dc",
+              "source": "IDRIVE",
+              "start": 0,
+              "stop": 0.01,
+              "step": 0.002
+            },
+            "measurement": {
+              "mode": "sample",
+              "signal": "v(P,N)",
+              "at": 0.01,
+              "scale": 100
+            },
+            "checks": []
+          },
+          "expectation": {
+            "unit": "Ω",
+            "limits": {
+              "min": 0.072,
+              "max": 0.108
+            }
+          },
+          "review_status": "independent_agent_review_required",
+          "delivery_eligible": false,
+          "scope_note": "20°C33%RH; other windings open;10mA is fixture choice, not a printed handbook excitation",
+          "contract": {
+            "fixed": {
+              "temperature_C": 20,
+              "device_nodes": {
+                "P1": "P",
+                "N1": "N",
+                "P3": "AUXP",
+                "N3": "AUXN",
+                "P2": "SECP",
+                "N2": "SECN"
+              },
+              "components": [
+                {
+                  "kind": "I",
+                  "name": "IDRIVE",
+                  "nodes": [
+                    "N",
+                    "P"
+                  ],
+                  "value": {
+                    "dc": 0
+                  }
+                },
+                {
+                  "kind": "R",
+                  "name": "RGROUND",
+                  "nodes": [
+                    "N",
+                    "0"
+                  ],
+                  "value": 1e-06
+                }
+              ],
+              "analysis": {
+                "kind": "dc",
+                "source": "IDRIVE",
+                "start": 0,
+                "stop": 0.01,
+                "step": 0.002
+              },
+              "measurement": {
+                "mode": "sample",
+                "signal": "v(P,N)",
+                "at": 0.01,
+                "scale": 100
+              },
+              "checks": []
+            }
+          },
+          "protocol_sha256": "5b0d5db9b43692c790f615e7680ebfb90dd753d73eea9ed566f3ce87dd470fb0",
+          "qualification_status": "awaiting_real_calibration_and_trial",
+          "model_role": "reference_interface_benchmark_only",
+          "actual_circuit": {
+            "path": "fixture_circuits/dcr_N1.cir",
+            "sha256": "e205cc5bb97d0f14413a41417c988c91defb00e5d244e48fd742ac07a345d2ab"
+          },
+          "device": "750311423",
+          "input_folder": "750311423",
+          "reference_evidence": [
+            {
+              "id": "parameter:rdc_N1",
+              "kind": "test",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "rdc_N1",
+                "key": "dc_resistance",
+                "values": {
+                  "nominal": 0.09,
+                  "tolerance": "±20%"
+                },
+                "unit": "Ω",
+                "conditions": "N1; 20°C; 33% RH",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b9",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "dc_resistance",
+              "capability_status": "existing_primitive_requires_fixture_binding",
+              "source_record": {
+                "id": "parameter:rdc_N1",
+                "kind": "test_or_constraint_pending_classification",
+                "applicable": true,
+                "reference_evidence": {
+                  "id": "rdc_N1",
+                  "key": "dc_resistance",
+                  "values": {
+                    "nominal": 0.09,
+                    "tolerance": "±20%"
+                  },
+                  "unit": "Ω",
+                  "conditions": "N1; 20°C; 33% RH",
+                  "applies_to": [
+                    "750311423"
+                  ],
+                  "rating_kind": "electrical_characteristic",
+                  "state": "initial",
+                  "evidence_refs": [
+                    "b9",
+                    "p0"
+                  ]
+                },
+                "bindings": [],
+                "binding_complete": false,
+                "pdf_pages": [
+                  1
+                ],
+                "plan_status": "test_development_required",
+                "method_family": "dc_resistance",
+                "capability_status": "existing_primitive_requires_fixture_binding"
+              },
+              "source_kind": "test_or_constraint_pending_classification",
+              "label": "dc_resistance",
+              "evidence": [
+                "b9",
+                "p0"
+              ],
+              "classification_review_pending": true,
+              "reference_asset_bindings": [],
+              "configured_reference_bindings": []
+            }
+          ],
+          "authorship": {
+            "designer": "GPT/Codex",
+            "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+          },
+          "scope": "exact declared conditions; remaining handbook coverage is open"
+        },
+        {
+          "id": "dcr_N2",
+          "reference_ids": [
+            "parameter:rdc_N2"
+          ],
+          "model": {
+            "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+            "entry": "REFERENCE_XFMR",
+            "declared_ports": [
+              "P1",
+              "N1",
+              "P3",
+              "N3",
+              "P2",
+              "N2"
+            ],
+            "ports": [
+              "P1",
+              "N1",
+              "P3",
+              "N3",
+              "P2",
+              "N2"
+            ],
+            "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "provenance": {
+              "kind": "vendor_reference_only",
+              "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+              "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+              "note": "Reference interface benchmark only; prohibited as selected modeling template"
+            }
+          },
+          "protocol": {
+            "temperature_C": 20,
+            "device_nodes": {
+              "P1": "P",
+              "N1": "N",
+              "P3": "AUXP",
+              "N3": "AUXN",
+              "P2": "SECP",
+              "N2": "SECN"
+            },
+            "components": [
+              {
+                "kind": "I",
+                "name": "IDRIVE",
+                "nodes": [
+                  "SECN",
+                  "SECP"
+                ],
+                "value": {
+                  "dc": 0
+                }
+              },
+              {
+                "kind": "R",
+                "name": "RGROUND",
+                "nodes": [
+                  "SECN",
+                  "0"
+                ],
+                "value": 1e-06
+              }
+            ],
+            "analysis": {
+              "kind": "dc",
+              "source": "IDRIVE",
+              "start": 0,
+              "stop": 0.01,
+              "step": 0.002
+            },
+            "measurement": {
+              "mode": "sample",
+              "signal": "v(SECP,SECN)",
+              "at": 0.01,
+              "scale": 100
+            },
+            "checks": []
+          },
+          "expectation": {
+            "unit": "Ω",
+            "limits": {
+              "min": 0.009600000000000001,
+              "max": 0.0144
+            }
+          },
+          "review_status": "independent_agent_review_required",
+          "delivery_eligible": false,
+          "scope_note": "20°C33%RH; other windings open;10mA is fixture choice, not a printed handbook excitation",
+          "contract": {
+            "fixed": {
+              "temperature_C": 20,
+              "device_nodes": {
+                "P1": "P",
+                "N1": "N",
+                "P3": "AUXP",
+                "N3": "AUXN",
+                "P2": "SECP",
+                "N2": "SECN"
+              },
+              "components": [
+                {
+                  "kind": "I",
+                  "name": "IDRIVE",
+                  "nodes": [
+                    "SECN",
+                    "SECP"
+                  ],
+                  "value": {
+                    "dc": 0
+                  }
+                },
+                {
+                  "kind": "R",
+                  "name": "RGROUND",
+                  "nodes": [
+                    "SECN",
+                    "0"
+                  ],
+                  "value": 1e-06
+                }
+              ],
+              "analysis": {
+                "kind": "dc",
+                "source": "IDRIVE",
+                "start": 0,
+                "stop": 0.01,
+                "step": 0.002
+              },
+              "measurement": {
+                "mode": "sample",
+                "signal": "v(SECP,SECN)",
+                "at": 0.01,
+                "scale": 100
+              },
+              "checks": []
+            }
+          },
+          "protocol_sha256": "aad4a1ab3b7222832ac00a1ef31187f3bc77040c23196e434573862d937fdd11",
+          "qualification_status": "awaiting_real_calibration_and_trial",
+          "model_role": "reference_interface_benchmark_only",
+          "actual_circuit": {
+            "path": "fixture_circuits/dcr_N2.cir",
+            "sha256": "78257c7cf694577610dcf04b547d858e24ac5bfaf5dc6044260eebc6c9592f8c"
+          },
+          "device": "750311423",
+          "input_folder": "750311423",
+          "reference_evidence": [
+            {
+              "id": "parameter:rdc_N2",
+              "kind": "test",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "rdc_N2",
+                "key": "dc_resistance",
+                "values": {
+                  "nominal": 0.012,
+                  "tolerance": "±20%"
+                },
+                "unit": "Ω",
+                "conditions": "N2; 20°C; 33% RH",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b9",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "dc_resistance",
+              "capability_status": "existing_primitive_requires_fixture_binding",
+              "source_record": {
+                "id": "parameter:rdc_N2",
+                "kind": "test_or_constraint_pending_classification",
+                "applicable": true,
+                "reference_evidence": {
+                  "id": "rdc_N2",
+                  "key": "dc_resistance",
+                  "values": {
+                    "nominal": 0.012,
+                    "tolerance": "±20%"
+                  },
+                  "unit": "Ω",
+                  "conditions": "N2; 20°C; 33% RH",
+                  "applies_to": [
+                    "750311423"
+                  ],
+                  "rating_kind": "electrical_characteristic",
+                  "state": "initial",
+                  "evidence_refs": [
+                    "b9",
+                    "p0"
+                  ]
+                },
+                "bindings": [],
+                "binding_complete": false,
+                "pdf_pages": [
+                  1
+                ],
+                "plan_status": "test_development_required",
+                "method_family": "dc_resistance",
+                "capability_status": "existing_primitive_requires_fixture_binding"
+              },
+              "source_kind": "test_or_constraint_pending_classification",
+              "label": "dc_resistance",
+              "evidence": [
+                "b9",
+                "p0"
+              ],
+              "classification_review_pending": true,
+              "reference_asset_bindings": [],
+              "configured_reference_bindings": []
+            }
+          ],
+          "authorship": {
+            "designer": "GPT/Codex",
+            "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+          },
+          "scope": "exact declared conditions; remaining handbook coverage is open"
+        },
+        {
+          "id": "primary_inductance",
+          "reference_ids": [
+            "parameter:inductance"
+          ],
+          "model": {
+            "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+            "entry": "REFERENCE_XFMR",
+            "declared_ports": [
+              "P1",
+              "N1",
+              "P3",
+              "N3",
+              "P2",
+              "N2"
+            ],
+            "ports": [
+              "P1",
+              "N1",
+              "P3",
+              "N3",
+              "P2",
+              "N2"
+            ],
+            "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "provenance": {
+              "kind": "vendor_reference_only",
+              "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+              "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+              "note": "Reference interface benchmark only; prohibited as selected modeling template"
+            }
+          },
+          "protocol": {
+            "temperature_C": 20,
+            "device_nodes": {
+              "P1": "P",
+              "N1": "N",
+              "P3": "AUXP",
+              "N3": "AUXN",
+              "P2": "SECP",
+              "N2": "SECN"
+            },
+            "components": [
+              {
+                "kind": "V",
+                "name": "VDRIVE",
+                "nodes": [
+                  "P",
+                  "N"
+                ],
+                "value": {
+                  "dc": 0,
+                  "ac": 0.1
+                }
+              },
+              {
+                "kind": "R",
+                "name": "RGROUND",
+                "nodes": [
+                  "N",
+                  "0"
+                ],
+                "value": 1e-06
+              },
+              {
+                "kind": "R",
+                "name": "RAUX",
+                "nodes": [
+                  "AUXN",
+                  "0"
+                ],
+                "value": 1e-06
+              },
+              {
+                "kind": "R",
+                "name": "RSEC",
+                "nodes": [
+                  "SECN",
+                  "0"
+                ],
+                "value": 1e-06
+              }
+            ],
+            "analysis": {
+              "kind": "ac",
+              "frequency_Hz": 10000
+            },
+            "measurement": {
+              "mode": "ac_inductance",
+              "signal": "v(p,n)",
+              "denominator": "i(vdrive)",
+              "sign": -1,
+              "scale": 1000000.0
+            },
+            "checks": []
+          },
+          "expectation": {
+            "unit": "μH",
+            "limits": {
+              "min": 45,
+              "max": 55
+            }
+          },
+          "review_status": "independent_agent_review_required",
+          "delivery_eligible": false,
+          "scope_note": "N1 10kHz100mV; secondary/aux open-circuit convention pending review;33%RH is environment metadata",
+          "contract": {
+            "fixed": {
+              "temperature_C": 20,
+              "device_nodes": {
+                "P1": "P",
+                "N1": "N",
+                "P3": "AUXP",
+                "N3": "AUXN",
+                "P2": "SECP",
+                "N2": "SECN"
+              },
+              "components": [
+                {
+                  "kind": "V",
+                  "name": "VDRIVE",
+                  "nodes": [
+                    "P",
+                    "N"
+                  ],
+                  "value": {
+                    "dc": 0,
+                    "ac": 0.1
+                  }
+                },
+                {
+                  "kind": "R",
+                  "name": "RGROUND",
+                  "nodes": [
+                    "N",
+                    "0"
+                  ],
+                  "value": 1e-06
+                },
+                {
+                  "kind": "R",
+                  "name": "RAUX",
+                  "nodes": [
+                    "AUXN",
+                    "0"
+                  ],
+                  "value": 1e-06
+                },
+                {
+                  "kind": "R",
+                  "name": "RSEC",
+                  "nodes": [
+                    "SECN",
+                    "0"
+                  ],
+                  "value": 1e-06
+                }
+              ],
+              "analysis": {
+                "kind": "ac",
+                "frequency_Hz": 10000
+              },
+              "measurement": {
+                "mode": "ac_inductance",
+                "signal": "v(p,n)",
+                "denominator": "i(vdrive)",
+                "sign": -1,
+                "scale": 1000000.0
+              },
+              "checks": []
+            }
+          },
+          "protocol_sha256": "0a4aa4a635f8937537ea1381f679c15636aeea8c82f0e4afb97f1f8c3e3b2b4d",
+          "qualification_status": "awaiting_real_calibration_and_trial",
+          "model_role": "reference_interface_benchmark_only",
+          "actual_circuit": {
+            "path": "fixture_circuits/primary_inductance.cir",
+            "sha256": "87226f9b5dab989f7e718e1b3689fee21f7f39092450d01f8a60dda76be7ab88"
+          },
+          "device": "750311423",
+          "input_folder": "750311423",
+          "reference_evidence": [
+            {
+              "id": "parameter:inductance",
+              "kind": "test",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "inductance",
+                "key": "primary_inductance",
+                "values": {
+                  "nominal": 50,
+                  "tolerance": "±10%"
+                },
+                "unit": "μH",
+                "conditions": "N1; 10 kHz; 100 mV; 20°C; 33% RH",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b9",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "ac_inductance",
+              "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+              "source_record": {
+                "id": "parameter:inductance",
+                "kind": "test_or_constraint_pending_classification",
+                "applicable": true,
+                "reference_evidence": {
+                  "id": "inductance",
+                  "key": "primary_inductance",
+                  "values": {
+                    "nominal": 50,
+                    "tolerance": "±10%"
+                  },
+                  "unit": "μH",
+                  "conditions": "N1; 10 kHz; 100 mV; 20°C; 33% RH",
+                  "applies_to": [
+                    "750311423"
+                  ],
+                  "rating_kind": "electrical_characteristic",
+                  "state": "initial",
+                  "evidence_refs": [
+                    "b9",
+                    "p0"
+                  ]
+                },
+                "bindings": [],
+                "binding_complete": false,
+                "pdf_pages": [
+                  1
+                ],
+                "plan_status": "test_development_required",
+                "method_family": "ac_inductance",
+                "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+              },
+              "source_kind": "test_or_constraint_pending_classification",
+              "label": "primary_inductance",
+              "evidence": [
+                "b9",
+                "p0"
+              ],
+              "classification_review_pending": true,
+              "reference_asset_bindings": [],
+              "configured_reference_bindings": []
+            }
+          ],
+          "authorship": {
+            "designer": "GPT/Codex",
+            "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+          },
+          "scope": "exact declared conditions; remaining handbook coverage is open"
+        },
+        {
+          "id": "turns_N2",
+          "reference_ids": [
+            "parameter:turns"
+          ],
+          "model": {
+            "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+            "entry": "REFERENCE_XFMR",
+            "declared_ports": [
+              "P1",
+              "N1",
+              "P3",
+              "N3",
+              "P2",
+              "N2"
+            ],
+            "ports": [
+              "P1",
+              "N1",
+              "P3",
+              "N3",
+              "P2",
+              "N2"
+            ],
+            "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "provenance": {
+              "kind": "vendor_reference_only",
+              "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+              "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+              "note": "Reference interface benchmark only; prohibited as selected modeling template"
+            }
+          },
+          "protocol": {
+            "temperature_C": 20,
+            "device_nodes": {
+              "P1": "P",
+              "N1": "N",
+              "P3": "AUXP",
+              "N3": "AUXN",
+              "P2": "SECP",
+              "N2": "SECN"
+            },
+            "components": [
+              {
+                "kind": "V",
+                "name": "VDRIVE",
+                "nodes": [
+                  "P",
+                  "N"
+                ],
+                "value": {
+                  "dc": 0,
+                  "ac": 0.1
+                }
+              },
+              {
+                "kind": "R",
+                "name": "RGROUND",
+                "nodes": [
+                  "N",
+                  "0"
+                ],
+                "value": 1e-06
+              },
+              {
+                "kind": "R",
+                "name": "RAUX",
+                "nodes": [
+                  "AUXN",
+                  "0"
+                ],
+                "value": 1e-06
+              },
+              {
+                "kind": "R",
+                "name": "RSEC",
+                "nodes": [
+                  "SECN",
+                  "0"
+                ],
+                "value": 1e-06
+              }
+            ],
+            "analysis": {
+              "kind": "ac",
+              "frequency_Hz": 10000
+            },
+            "measurement": {
+              "mode": "ac_gain_magnitude",
+              "signal": "v(secp,secn)",
+              "denominator": "v(p,n)",
+              "sign": 1
+            },
+            "checks": []
+          },
+          "expectation": {
+            "unit": "1",
+            "limits": {},
+            "typical": 0.25,
+            "typical_relative_tolerance_percent": 10,
+            "thresholds": {}
+          },
+          "review_status": "independent_agent_review_required",
+          "delivery_eligible": false,
+          "scope_note": "4:1:2 winding voltage ratios; chosen10kHz100mV is documented test convention pending review; handbook ratio has no printed tolerance so acceptance is pending",
+          "contract": {
+            "fixed": {
+              "temperature_C": 20,
+              "device_nodes": {
+                "P1": "P",
+                "N1": "N",
+                "P3": "AUXP",
+                "N3": "AUXN",
+                "P2": "SECP",
+                "N2": "SECN"
+              },
+              "components": [
+                {
+                  "kind": "V",
+                  "name": "VDRIVE",
+                  "nodes": [
+                    "P",
+                    "N"
+                  ],
+                  "value": {
+                    "dc": 0,
+                    "ac": 0.1
+                  }
+                },
+                {
+                  "kind": "R",
+                  "name": "RGROUND",
+                  "nodes": [
+                    "N",
+                    "0"
+                  ],
+                  "value": 1e-06
+                },
+                {
+                  "kind": "R",
+                  "name": "RAUX",
+                  "nodes": [
+                    "AUXN",
+                    "0"
+                  ],
+                  "value": 1e-06
+                },
+                {
+                  "kind": "R",
+                  "name": "RSEC",
+                  "nodes": [
+                    "SECN",
+                    "0"
+                  ],
+                  "value": 1e-06
+                }
+              ],
+              "analysis": {
+                "kind": "ac",
+                "frequency_Hz": 10000
+              },
+              "measurement": {
+                "mode": "ac_gain_magnitude",
+                "signal": "v(secp,secn)",
+                "denominator": "v(p,n)",
+                "sign": 1
+              },
+              "checks": []
+            }
+          },
+          "protocol_sha256": "a1334050e66b12d554d179615ac9c0a21156184a300e0cd7a97e8dd71e156fd2",
+          "nominal_reference": 0.25,
+          "qualification_status": "awaiting_real_calibration_and_trial",
+          "model_role": "reference_interface_benchmark_only",
+          "actual_circuit": {
+            "path": "fixture_circuits/turns_N2.cir",
+            "sha256": "ca72b1e5d006d53d206222e21c71e5a99a539a653f442981b64a1a1f2c4e9209"
+          },
+          "device": "750311423",
+          "input_folder": "750311423",
+          "reference_evidence": [
+            {
+              "id": "parameter:turns",
+              "kind": "test",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "turns",
+                "key": "turns_ratio",
+                "values": {
+                  "value": "4:1:2"
+                },
+                "unit": "1",
+                "conditions": "N1:N2:N3",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b9",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "ac_gain_magnitude",
+              "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+              "source_record": {
+                "id": "parameter:turns",
+                "kind": "test_or_constraint_pending_classification",
+                "applicable": true,
+                "reference_evidence": {
+                  "id": "turns",
+                  "key": "turns_ratio",
+                  "values": {
+                    "value": "4:1:2"
+                  },
+                  "unit": "1",
+                  "conditions": "N1:N2:N3",
+                  "applies_to": [
+                    "750311423"
+                  ],
+                  "rating_kind": "electrical_characteristic",
+                  "state": "initial",
+                  "evidence_refs": [
+                    "b9",
+                    "p0"
+                  ]
+                },
+                "bindings": [],
+                "binding_complete": false,
+                "pdf_pages": [
+                  1
+                ],
+                "plan_status": "test_development_required",
+                "method_family": "ac_gain_magnitude",
+                "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+              },
+              "source_kind": "test_or_constraint_pending_classification",
+              "label": "turns_ratio",
+              "evidence": [
+                "b9",
+                "p0"
+              ],
+              "classification_review_pending": true,
+              "reference_asset_bindings": [],
+              "configured_reference_bindings": []
+            }
+          ],
+          "authorship": {
+            "designer": "GPT/Codex",
+            "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+          },
+          "scope": "exact declared conditions; remaining handbook coverage is open",
+          "ratio_definition": {
+            "manual": "N1:N2:N3=4:1:2",
+            "measured": "Vsecondary/Vprimary",
+            "expected": 0.25,
+            "acceptance_source": "fixed project typical-value tolerance 10%"
+          }
+        },
+        {
+          "id": "dcr_N3",
+          "reference_ids": [
+            "parameter:rdc_N3"
+          ],
+          "model": {
+            "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+            "entry": "REFERENCE_XFMR",
+            "declared_ports": [
+              "P1",
+              "N1",
+              "P3",
+              "N3",
+              "P2",
+              "N2"
+            ],
+            "ports": [
+              "P1",
+              "N1",
+              "P3",
+              "N3",
+              "P2",
+              "N2"
+            ],
+            "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "provenance": {
+              "kind": "vendor_reference_only",
+              "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+              "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+              "note": "Reference interface benchmark only; prohibited as selected modeling template"
+            }
+          },
+          "protocol": {
+            "temperature_C": 20,
+            "device_nodes": {
+              "P1": "P",
+              "N1": "N",
+              "P3": "AUXP",
+              "N3": "AUXN",
+              "P2": "SECP",
+              "N2": "SECN"
+            },
+            "components": [
+              {
+                "kind": "I",
+                "name": "IDRIVE",
+                "nodes": [
+                  "AUXN",
+                  "AUXP"
+                ],
+                "value": {
+                  "dc": 0
+                }
+              },
+              {
+                "kind": "R",
+                "name": "RGROUND",
+                "nodes": [
+                  "AUXN",
+                  "0"
+                ],
+                "value": 1e-06
+              }
+            ],
+            "analysis": {
+              "kind": "dc",
+              "source": "IDRIVE",
+              "start": 0,
+              "stop": 0.01,
+              "step": 0.002
+            },
+            "measurement": {
+              "mode": "sample",
+              "signal": "v(AUXP,AUXN)",
+              "at": 0.01,
+              "scale": 100
+            },
+            "checks": []
+          },
+          "expectation": {
+            "unit": "Ω",
+            "limits": {
+              "min": 0.1845,
+              "max": 0.2255
+            }
+          },
+          "review_status": "independent_agent_review_required",
+          "delivery_eligible": false,
+          "scope_note": "20°C33%RH; other windings open;10mA is fixture choice, not a printed handbook excitation",
+          "contract": {
+            "fixed": {
+              "temperature_C": 20,
+              "device_nodes": {
+                "P1": "P",
+                "N1": "N",
+                "P3": "AUXP",
+                "N3": "AUXN",
+                "P2": "SECP",
+                "N2": "SECN"
+              },
+              "components": [
+                {
+                  "kind": "I",
+                  "name": "IDRIVE",
+                  "nodes": [
+                    "AUXN",
+                    "AUXP"
+                  ],
+                  "value": {
+                    "dc": 0
+                  }
+                },
+                {
+                  "kind": "R",
+                  "name": "RGROUND",
+                  "nodes": [
+                    "AUXN",
+                    "0"
+                  ],
+                  "value": 1e-06
+                }
+              ],
+              "analysis": {
+                "kind": "dc",
+                "source": "IDRIVE",
+                "start": 0,
+                "stop": 0.01,
+                "step": 0.002
+              },
+              "measurement": {
+                "mode": "sample",
+                "signal": "v(AUXP,AUXN)",
+                "at": 0.01,
+                "scale": 100
+              },
+              "checks": []
+            }
+          },
+          "protocol_sha256": "042f2efd815b239df8849640a78ead9a38cdc709fae759322f3409ccfa4e13e4",
+          "qualification_status": "awaiting_real_calibration_and_trial",
+          "model_role": "reference_interface_benchmark_only",
+          "actual_circuit": {
+            "path": "fixture_circuits/dcr_N3.cir",
+            "sha256": "03b7687217c0444cfecab5d723f3fac60d03c4d190e99e279452443eb7066d29"
+          },
+          "device": "750311423",
+          "input_folder": "750311423",
+          "reference_evidence": [
+            {
+              "id": "parameter:rdc_N3",
+              "kind": "test",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "rdc_N3",
+                "key": "dc_resistance",
+                "values": {
+                  "nominal": 0.205,
+                  "tolerance": "±10%"
+                },
+                "unit": "Ω",
+                "conditions": "N3; 20°C; 33% RH",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b9",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "dc_resistance",
+              "capability_status": "existing_primitive_requires_fixture_binding",
+              "source_record": {
+                "id": "parameter:rdc_N3",
+                "kind": "test_or_constraint_pending_classification",
+                "applicable": true,
+                "reference_evidence": {
+                  "id": "rdc_N3",
+                  "key": "dc_resistance",
+                  "values": {
+                    "nominal": 0.205,
+                    "tolerance": "±10%"
+                  },
+                  "unit": "Ω",
+                  "conditions": "N3; 20°C; 33% RH",
+                  "applies_to": [
+                    "750311423"
+                  ],
+                  "rating_kind": "electrical_characteristic",
+                  "state": "initial",
+                  "evidence_refs": [
+                    "b9",
+                    "p0"
+                  ]
+                },
+                "bindings": [],
+                "binding_complete": false,
+                "pdf_pages": [
+                  1
+                ],
+                "plan_status": "test_development_required",
+                "method_family": "dc_resistance",
+                "capability_status": "existing_primitive_requires_fixture_binding"
+              },
+              "source_kind": "test_or_constraint_pending_classification",
+              "label": "dc_resistance",
+              "evidence": [
+                "b9",
+                "p0"
+              ],
+              "classification_review_pending": true,
+              "reference_asset_bindings": [],
+              "configured_reference_bindings": []
+            }
+          ],
+          "authorship": {
+            "designer": "GPT/Codex",
+            "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+          },
+          "scope": "exact declared conditions; remaining handbook coverage is open"
+        }
+      ],
+      "inventory": {
+        "review_status": "page_anchored_inventory_expanded_series_and_footnote_review_pending",
+        "items": [
+          {
+            "id": "parameter:inductance",
+            "kind": "test",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "inductance",
+              "key": "primary_inductance",
+              "values": {
+                "nominal": 50,
+                "tolerance": "±10%"
+              },
+              "unit": "μH",
+              "conditions": "N1; 10 kHz; 100 mV; 20°C; 33% RH",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b9",
+                "p0"
+              ]
+            },
+            "bindings": [
+              "primary_inductance"
+            ],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_inductance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+            "source_record": {
+              "id": "parameter:inductance",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "inductance",
+                "key": "primary_inductance",
+                "values": {
+                  "nominal": 50,
+                  "tolerance": "±10%"
+                },
+                "unit": "μH",
+                "conditions": "N1; 10 kHz; 100 mV; 20°C; 33% RH",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b9",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "ac_inductance",
+              "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "primary_inductance",
+            "evidence": [
+              "b9",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": [],
+            "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending"
+          },
+          {
+            "id": "parameter:turns",
+            "kind": "test",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "turns",
+              "key": "turns_ratio",
+              "values": {
+                "value": "4:1:2"
+              },
+              "unit": "1",
+              "conditions": "N1:N2:N3",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b9",
+                "p0"
+              ]
+            },
+            "bindings": [
+              "turns_N3",
+              "turns_N2"
+            ],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_gain_magnitude",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+            "source_record": {
+              "id": "parameter:turns",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "turns",
+                "key": "turns_ratio",
+                "values": {
+                  "value": "4:1:2"
+                },
+                "unit": "1",
+                "conditions": "N1:N2:N3",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b9",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "ac_gain_magnitude",
+              "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "turns_ratio",
+            "evidence": [
+              "b9",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": [],
+            "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending"
+          },
+          {
+            "id": "parameter:isat",
+            "kind": "test",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "isat",
+              "key": "saturation_current",
+              "values": {
+                "typ": 3.85
+              },
+              "unit": "A",
+              "conditions": "N1; |ΔL/L| <20%; 20°C; 33% RH",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b9",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding",
+            "source_record": {
+              "id": "parameter:isat",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "isat",
+                "key": "saturation_current",
+                "values": {
+                  "typ": 3.85
+                },
+                "unit": "A",
+                "conditions": "N1; |ΔL/L| <20%; 20°C; 33% RH",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b9",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "dc_sample",
+              "capability_status": "existing_primitive_requires_fixture_binding"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "saturation_current",
+            "evidence": [
+              "b9",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:rdc_N1",
+            "kind": "test",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "rdc_N1",
+              "key": "dc_resistance",
+              "values": {
+                "nominal": 0.09,
+                "tolerance": "±20%"
+              },
+              "unit": "Ω",
+              "conditions": "N1; 20°C; 33% RH",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b9",
+                "p0"
+              ]
+            },
+            "bindings": [
+              "dcr_N1"
+            ],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_resistance",
+            "capability_status": "existing_primitive_requires_fixture_binding",
+            "source_record": {
+              "id": "parameter:rdc_N1",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "rdc_N1",
+                "key": "dc_resistance",
+                "values": {
+                  "nominal": 0.09,
+                  "tolerance": "±20%"
+                },
+                "unit": "Ω",
+                "conditions": "N1; 20°C; 33% RH",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b9",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "dc_resistance",
+              "capability_status": "existing_primitive_requires_fixture_binding"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "dc_resistance",
+            "evidence": [
+              "b9",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": [],
+            "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending"
+          },
+          {
+            "id": "parameter:rdc_N2",
+            "kind": "test",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "rdc_N2",
+              "key": "dc_resistance",
+              "values": {
+                "nominal": 0.012,
+                "tolerance": "±20%"
+              },
+              "unit": "Ω",
+              "conditions": "N2; 20°C; 33% RH",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b9",
+                "p0"
+              ]
+            },
+            "bindings": [
+              "dcr_N2"
+            ],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_resistance",
+            "capability_status": "existing_primitive_requires_fixture_binding",
+            "source_record": {
+              "id": "parameter:rdc_N2",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "rdc_N2",
+                "key": "dc_resistance",
+                "values": {
+                  "nominal": 0.012,
+                  "tolerance": "±20%"
+                },
+                "unit": "Ω",
+                "conditions": "N2; 20°C; 33% RH",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b9",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "dc_resistance",
+              "capability_status": "existing_primitive_requires_fixture_binding"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "dc_resistance",
+            "evidence": [
+              "b9",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": [],
+            "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending"
+          },
+          {
+            "id": "parameter:rdc_N3",
+            "kind": "test",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "rdc_N3",
+              "key": "dc_resistance",
+              "values": {
+                "nominal": 0.205,
+                "tolerance": "±10%"
+              },
+              "unit": "Ω",
+              "conditions": "N3; 20°C; 33% RH",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b9",
+                "p0"
+              ]
+            },
+            "bindings": [
+              "dcr_N3"
+            ],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_resistance",
+            "capability_status": "existing_primitive_requires_fixture_binding",
+            "source_record": {
+              "id": "parameter:rdc_N3",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "rdc_N3",
+                "key": "dc_resistance",
+                "values": {
+                  "nominal": 0.205,
+                  "tolerance": "±10%"
+                },
+                "unit": "Ω",
+                "conditions": "N3; 20°C; 33% RH",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b9",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "dc_resistance",
+              "capability_status": "existing_primitive_requires_fixture_binding"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "dc_resistance",
+            "evidence": [
+              "b9",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": [],
+            "method_registration": "GPT-corrected, real calibrated, exact-condition trial; device coverage still pending"
+          },
+          {
+            "id": "parameter:leakage_l",
+            "kind": "test",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "leakage_l",
+              "key": "leakage_inductance",
+              "values": {
+                "max": 1.2
+              },
+              "unit": "μH",
+              "conditions": "N1; 100 kHz; 100 mV; secondary shorting condition not specified",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b9",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_inductance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+            "source_record": {
+              "id": "parameter:leakage_l",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "leakage_l",
+                "key": "leakage_inductance",
+                "values": {
+                  "max": 1.2
+                },
+                "unit": "μH",
+                "conditions": "N1; 100 kHz; 100 mV; secondary shorting condition not specified",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "electrical_characteristic",
+                "state": "initial",
+                "evidence_refs": [
+                  "b9",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "test_development_required",
+              "method_family": "ac_inductance",
+              "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "leakage_inductance",
+            "evidence": [
+              "b9",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:isolation_1500",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "isolation_1500",
+              "key": "isolation_test_voltage",
+              "values": {
+                "value": 1500
+              },
+              "unit": "V AC",
+              "conditions": "N1,N3 to N2; duration not stated",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "isolation_test",
+              "state": "initial",
+              "evidence_refs": [
+                "b9",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding",
+            "source_record": {
+              "id": "parameter:isolation_1500",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "isolation_1500",
+                "key": "isolation_test_voltage",
+                "values": {
+                  "value": 1500
+                },
+                "unit": "V AC",
+                "conditions": "N1,N3 to N2; duration not stated",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "isolation_test",
+                "state": "initial",
+                "evidence_refs": [
+                  "b9",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "dc_sample",
+              "capability_status": "existing_primitive_requires_fixture_binding"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "isolation_test_voltage",
+            "evidence": [
+              "b9",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:isolation_500",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "isolation_500",
+              "key": "isolation_test_voltage",
+              "values": {
+                "value": 500
+              },
+              "unit": "V AC",
+              "conditions": "N1 to N3; duration not stated",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "isolation_test",
+              "state": "initial",
+              "evidence_refs": [
+                "b9",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding",
+            "source_record": {
+              "id": "parameter:isolation_500",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "isolation_500",
+                "key": "isolation_test_voltage",
+                "values": {
+                  "value": 500
+                },
+                "unit": "V AC",
+                "conditions": "N1 to N3; duration not stated",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "isolation_test",
+                "state": "initial",
+                "evidence_refs": [
+                  "b9",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "dc_sample",
+              "capability_status": "existing_primitive_requires_fixture_binding"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "isolation_test_voltage",
+            "evidence": [
+              "b9",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:operating_temp",
+            "kind": "constraint",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "operating_temp",
+              "key": "operating_temperature",
+              "values": {
+                "min": -40,
+                "max": 125
+              },
+              "unit": "°C",
+              "conditions": "",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "operating_range",
+              "state": "initial",
+              "evidence_refs": [
+                "b13",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "constraint_audit_required",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:operating_temp",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "operating_temp",
+                "key": "operating_temperature",
+                "values": {
+                  "min": -40,
+                  "max": 125
+                },
+                "unit": "°C",
+                "conditions": "",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "operating_range",
+                "state": "initial",
+                "evidence_refs": [
+                  "b13",
+                  "p0"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                1
+              ],
+              "plan_status": "constraint_audit_required",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "operating_temperature",
+            "evidence": [
+              "b13",
+              "p0"
+            ],
+            "classification_review_pending": true,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:app_vin",
+            "kind": "informational",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "app_vin",
+              "key": "input_voltage",
+              "values": {
+                "value": 36
+              },
+              "unit": "V",
+              "conditions": "Typical application only; not a guaranteed rating",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "application_example",
+              "state": "initial",
+              "evidence_refs": [
+                "b15",
+                "p1"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              2
+            ],
+            "plan_status": "informational",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding",
+            "source_record": {
+              "id": "parameter:app_vin",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "app_vin",
+                "key": "input_voltage",
+                "values": {
+                  "value": 36
+                },
+                "unit": "V",
+                "conditions": "Typical application only; not a guaranteed rating",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "application_example",
+                "state": "initial",
+                "evidence_refs": [
+                  "b15",
+                  "p1"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                2
+              ],
+              "plan_status": "informational",
+              "method_family": "dc_sample",
+              "capability_status": "existing_primitive_requires_fixture_binding"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "input_voltage",
+            "evidence": [
+              "b15",
+              "p1"
+            ],
+            "classification_review_pending": true,
+            "reason": "原计划状态为informational；保留原记录及依据，不代表该组的子曲线已验证",
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:app_f",
+            "kind": "informational",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "app_f",
+              "key": "switching_frequency",
+              "values": {
+                "value": 100
+              },
+              "unit": "kHz",
+              "conditions": "Typical application only; not a guaranteed rating",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "application_example",
+              "state": "initial",
+              "evidence_refs": [
+                "b15",
+                "p1"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              2
+            ],
+            "plan_status": "informational",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:app_f",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "app_f",
+                "key": "switching_frequency",
+                "values": {
+                  "value": 100
+                },
+                "unit": "kHz",
+                "conditions": "Typical application only; not a guaranteed rating",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "application_example",
+                "state": "initial",
+                "evidence_refs": [
+                  "b15",
+                  "p1"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                2
+              ],
+              "plan_status": "informational",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "switching_frequency",
+            "evidence": [
+              "b15",
+              "p1"
+            ],
+            "classification_review_pending": true,
+            "reason": "原计划状态为informational；保留原记录及依据，不代表该组的子曲线已验证",
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:app_vout",
+            "kind": "informational",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "app_vout",
+              "key": "output_voltage",
+              "values": {
+                "value": 5
+              },
+              "unit": "V",
+              "conditions": "Typical application only; not a guaranteed rating",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "application_example",
+              "state": "initial",
+              "evidence_refs": [
+                "b15",
+                "p1"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              2
+            ],
+            "plan_status": "informational",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding",
+            "source_record": {
+              "id": "parameter:app_vout",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "app_vout",
+                "key": "output_voltage",
+                "values": {
+                  "value": 5
+                },
+                "unit": "V",
+                "conditions": "Typical application only; not a guaranteed rating",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "application_example",
+                "state": "initial",
+                "evidence_refs": [
+                  "b15",
+                  "p1"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                2
+              ],
+              "plan_status": "informational",
+              "method_family": "dc_sample",
+              "capability_status": "existing_primitive_requires_fixture_binding"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "output_voltage",
+            "evidence": [
+              "b15",
+              "p1"
+            ],
+            "classification_review_pending": true,
+            "reason": "原计划状态为informational；保留原记录及依据，不代表该组的子曲线已验证",
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:app_iout",
+            "kind": "informational",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "app_iout",
+              "key": "output_current",
+              "values": {
+                "value": 4
+              },
+              "unit": "A",
+              "conditions": "Typical application only; not a guaranteed rating",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "application_example",
+              "state": "initial",
+              "evidence_refs": [
+                "b15",
+                "p1"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              2
+            ],
+            "plan_status": "informational",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding",
+            "source_record": {
+              "id": "parameter:app_iout",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "app_iout",
+                "key": "output_current",
+                "values": {
+                  "value": 4
+                },
+                "unit": "A",
+                "conditions": "Typical application only; not a guaranteed rating",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "application_example",
+                "state": "initial",
+                "evidence_refs": [
+                  "b15",
+                  "p1"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                2
+              ],
+              "plan_status": "informational",
+              "method_family": "dc_sample",
+              "capability_status": "existing_primitive_requires_fixture_binding"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "output_current",
+            "evidence": [
+              "b15",
+              "p1"
+            ],
+            "classification_review_pending": true,
+            "reason": "原计划状态为informational；保留原记录及依据，不代表该组的子曲线已验证",
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:app_aux",
+            "kind": "informational",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "app_aux",
+              "key": "auxiliary_voltage",
+              "values": {
+                "value": 10
+              },
+              "unit": "V",
+              "conditions": "Typical application only; not a guaranteed rating",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "application_example",
+              "state": "initial",
+              "evidence_refs": [
+                "b15",
+                "p1"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              2
+            ],
+            "plan_status": "informational",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding",
+            "source_record": {
+              "id": "parameter:app_aux",
+              "kind": "test_or_constraint_pending_classification",
+              "applicable": true,
+              "reference_evidence": {
+                "id": "app_aux",
+                "key": "auxiliary_voltage",
+                "values": {
+                  "value": 10
+                },
+                "unit": "V",
+                "conditions": "Typical application only; not a guaranteed rating",
+                "applies_to": [
+                  "750311423"
+                ],
+                "rating_kind": "application_example",
+                "state": "initial",
+                "evidence_refs": [
+                  "b15",
+                  "p1"
+                ]
+              },
+              "bindings": [],
+              "binding_complete": false,
+              "pdf_pages": [
+                2
+              ],
+              "plan_status": "informational",
+              "method_family": "dc_sample",
+              "capability_status": "existing_primitive_requires_fixture_binding"
+            },
+            "source_kind": "test_or_constraint_pending_classification",
+            "label": "auxiliary_voltage",
+            "evidence": [
+              "b15",
+              "p1"
+            ],
+            "classification_review_pending": true,
+            "reason": "原计划状态为informational；保留原记录及依据，不代表该组的子曲线已验证",
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:storage_packaged",
+            "kind": "constraint",
+            "applicable": true,
+            "binding_complete": false,
+            "bindings": [],
+            "reference_evidence": {
+              "key": "storage_packaged",
+              "values": {
+                "max_C_exclusive": 40,
+                "max_RH_percent_exclusive": 75
+              },
+              "unit": "constraint",
+              "conditions": "Original packaging"
+            },
+            "pdf_pages": [
+              1
+            ],
+            "added_from_manual_review": true,
+            "plan_status": "constraint_audit_required",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:storage_packaged",
+              "kind": "constraint",
+              "applicable": true,
+              "binding_complete": false,
+              "bindings": [],
+              "reference_evidence": {
+                "key": "storage_packaged",
+                "values": {
+                  "max_C_exclusive": 40,
+                  "max_RH_percent_exclusive": 75
+                },
+                "unit": "constraint",
+                "conditions": "Original packaging"
+              },
+              "pdf_pages": [
+                1
+              ],
+              "added_from_manual_review": true,
+              "plan_status": "constraint_audit_required",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "constraint",
+            "label": "storage_packaged",
+            "evidence": [
+              "pdf_page:1"
+            ],
+            "classification_review_pending": false,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:storage_parts",
+            "kind": "constraint",
+            "applicable": true,
+            "binding_complete": false,
+            "bindings": [],
+            "reference_evidence": {
+              "key": "storage_parts",
+              "values": {
+                "min": -20,
+                "max": 60
+              },
+              "unit": "°C",
+              "conditions": "Single parts"
+            },
+            "pdf_pages": [
+              1
+            ],
+            "added_from_manual_review": true,
+            "plan_status": "constraint_audit_required",
+            "method_family": "contract_review",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:storage_parts",
+              "kind": "constraint",
+              "applicable": true,
+              "binding_complete": false,
+              "bindings": [],
+              "reference_evidence": {
+                "key": "storage_parts",
+                "values": {
+                  "min": -20,
+                  "max": 60
+                },
+                "unit": "°C",
+                "conditions": "Single parts"
+              },
+              "pdf_pages": [
+                1
+              ],
+              "added_from_manual_review": true,
+              "plan_status": "constraint_audit_required",
+              "method_family": "contract_review",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "constraint",
+            "label": "storage_parts",
+            "evidence": [
+              "pdf_page:1"
+            ],
+            "classification_review_pending": false,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          },
+          {
+            "id": "parameter:msl",
+            "kind": "constraint",
+            "applicable": true,
+            "binding_complete": false,
+            "bindings": [],
+            "reference_evidence": {
+              "key": "moisture_sensitivity",
+              "values": {
+                "level": 1
+              },
+              "unit": "level",
+              "conditions": "MSL"
+            },
+            "pdf_pages": [
+              1
+            ],
+            "added_from_manual_review": true,
+            "plan_status": "constraint_audit_required",
+            "method_family": "dc_derived",
+            "capability_status": "adapter_or_contract_pending",
+            "source_record": {
+              "id": "parameter:msl",
+              "kind": "constraint",
+              "applicable": true,
+              "binding_complete": false,
+              "bindings": [],
+              "reference_evidence": {
+                "key": "moisture_sensitivity",
+                "values": {
+                  "level": 1
+                },
+                "unit": "level",
+                "conditions": "MSL"
+              },
+              "pdf_pages": [
+                1
+              ],
+              "added_from_manual_review": true,
+              "plan_status": "constraint_audit_required",
+              "method_family": "dc_derived",
+              "capability_status": "adapter_or_contract_pending"
+            },
+            "source_kind": "constraint",
+            "label": "moisture_sensitivity",
+            "evidence": [
+              "pdf_page:1"
+            ],
+            "classification_review_pending": false,
+            "reference_asset_bindings": [],
+            "configured_reference_bindings": []
+          }
+        ],
+        "full_manual_coverage": false,
+        "open_contract_issues": [
+          {
+            "reference_ids": [
+              "parameter:leakage_l"
+            ],
+            "problem": "Handbook100kHz100mV stated, winding shorting condition unstated; cannot silently choose shorts"
+          }
+        ],
+        "sources": [
+          {
+            "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/278e3ccc993c787ef700076458c141e4858bc16787737c741e8e0f2fe20b7a4e.pdf",
+            "sha256": "278e3ccc993c787ef700076458c141e4858bc16787737c741e8e0f2fe20b7a4e"
+          }
+        ]
+      },
+      "model_path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/750311423/d3b5f88f3dde/models/input_model.lib",
+      "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "results": [
+        {
+          "value": 0.49678707233913927,
+          "test": "turns_N3",
+          "execution": "completed",
+          "acceptance": "pass",
+          "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "protocol_sha256": "f46d7d2e84c0abceb797a3f1946e8f1272a8cd7173f9405ffacfd493d78b2aa9",
+          "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/750311423/d3b5f88f3dde/simulations/ed446fac0611cd4d4e73ba73382985042059d3becaaecab82507779a77bd9e5b",
+          "unit": "1",
+          "artifact_hashes": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "8f5bdc0f63e8bc5439a7f88340b4324f9ef7a0abc3c3b274f00546d5d7175a50",
+            "test.raw": "80bec1304d57125255106abc91a467703d9095ec3c4f15617b6a47098f0da425",
+            "test.log": "1a4fff991c55f50f6cc9b120c21ef5b1272225fc965c368bd3fb06b0ce70ca66",
+            "execution.json": "26412b5d8ac9da13dd8381785de3dd041826cf3a7f9e97a1932d85e77a750322"
+          }
+        },
+        {
+          "value": 0.09000989886412375,
+          "test": "dcr_N1",
+          "execution": "completed",
+          "acceptance": "pass",
+          "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "protocol_sha256": "5b0d5db9b43692c790f615e7680ebfb90dd753d73eea9ed566f3ce87dd470fb0",
+          "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/750311423/d3b5f88f3dde/simulations/4c8288001153cff83206ed5856cf3e2755d5ef1cc2bacbd3b3fd8b377e3872fd",
+          "unit": "Ω",
+          "artifact_hashes": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "e205cc5bb97d0f14413a41417c988c91defb00e5d244e48fd742ac07a345d2ab",
+            "test.raw": "3576668e48356882159ce31642962c8765c2f303389080da694da412137d1d92",
+            "test.log": "7116d776c8afc8ad3d9633527fdb2285d094b82f8c6e469a6dc826585d41e370",
+            "execution.json": "755096cac32a1732de4388fbce35ec4a8149f158b9139eeb96ac9a5419660d95"
+          }
+        },
+        {
+          "value": 0.01199999994672,
+          "test": "dcr_N2",
+          "execution": "completed",
+          "acceptance": "pass",
+          "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "protocol_sha256": "aad4a1ab3b7222832ac00a1ef31187f3bc77040c23196e434573862d937fdd11",
+          "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/750311423/d3b5f88f3dde/simulations/5e6c433d2727a5d1c61ae1eb4dae4213e056467d31bd75be8c40efc886fc7b10",
+          "unit": "Ω",
+          "artifact_hashes": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "78257c7cf694577610dcf04b547d858e24ac5bfaf5dc6044260eebc6c9592f8c",
+            "test.raw": "f97b8b69c46dbaa5951d0a0d52082e8fad4031d5f0272b2d141a5cea1626b9fc",
+            "test.log": "03e972f3a8eeef4a0e6daf3786c0a1bcdde0d1157ec6ee0c7a74162cf33e4ebc",
+            "execution.json": "cea9d696f4c10dcd33cd11ec419426ccdae38ccfe81a6e058253f3d0fb79a940"
+          }
+        },
+        {
+          "value": 50.0000776617138,
+          "test": "primary_inductance",
+          "execution": "completed",
+          "acceptance": "pass",
+          "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "protocol_sha256": "0a4aa4a635f8937537ea1381f679c15636aeea8c82f0e4afb97f1f8c3e3b2b4d",
+          "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/750311423/d3b5f88f3dde/simulations/4784b08743980734090d1707ad2d11a8798f1a8eeb3157d9be6a0cf04ae0da52",
+          "unit": "μH",
+          "artifact_hashes": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "87226f9b5dab989f7e718e1b3689fee21f7f39092450d01f8a60dda76be7ab88",
+            "test.raw": "c30beacba0da477b651c91d8a35b9cd1ca24d1080ae4066bdba8e02007e407a7",
+            "test.log": "46001b85ccbc9570ed02d41b4ec2b88db989a8a1aaf1a88f34733873b1ad4b5a",
+            "execution.json": "60b2f6e3ee4c801da34f4abd10e024fa087b87af11ff6feedc4621bf0657fe70"
+          }
+        },
+        {
+          "value": 0.24839353856656726,
+          "test": "turns_N2",
+          "execution": "completed",
+          "acceptance": "pass",
+          "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "protocol_sha256": "a1334050e66b12d554d179615ac9c0a21156184a300e0cd7a97e8dd71e156fd2",
+          "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/750311423/d3b5f88f3dde/simulations/ddc38a42825451d246348f15282a525cc34830a60b65c816a096487aab533a9a",
+          "unit": "1",
+          "artifact_hashes": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "ca72b1e5d006d53d206222e21c71e5a99a539a653f442981b64a1a1f2c4e9209",
+            "test.raw": "90fa97bac122989635a616ee9876bbde5d20737279bfdfe9a015042bccf0f99b",
+            "test.log": "42cb78e08bf4abd68de797e2c6d5f31212b40883869176511fdc00776fa0feb4",
+            "execution.json": "dac4b951d00f732d5d6cdb56608f073cd7b9f5fb93407c8dceddcb6d1a9e6cff"
+          }
+        },
+        {
+          "value": 0.20499999453675025,
+          "test": "dcr_N3",
+          "execution": "completed",
+          "acceptance": "pass",
+          "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "protocol_sha256": "042f2efd815b239df8849640a78ead9a38cdc709fae759322f3409ccfa4e13e4",
+          "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/750311423/d3b5f88f3dde/simulations/954f12691d5c55af29d977e97b01e423f4dd527079cc2dfe1e329fdbcf741630",
+          "unit": "Ω",
+          "artifact_hashes": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "03b7687217c0444cfecab5d723f3fac60d03c4d190e99e279452443eb7066d29",
+            "test.raw": "befc959bc4b25660273ec2ef7300382278134d5ff60b0ec5665a2f208d0a4808",
+            "test.log": "4381df632d47e093a6573613453f53c150214fd929c58266b6a1ced82d0f5abb",
+            "execution.json": "8e05fc56b761a34e55cfbd7dc226682ccbd57b734dd5c061bcf91f438ca18e6e"
+          }
+        }
+      ],
+      "gaps": [],
+      "developed": [],
+      "optimization_index": 0,
+      "active_model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+        "entry": "REFERENCE_XFMR",
+        "declared_ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+          "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "selected": true
+    }
+  },
+  "reservations": {}
+}

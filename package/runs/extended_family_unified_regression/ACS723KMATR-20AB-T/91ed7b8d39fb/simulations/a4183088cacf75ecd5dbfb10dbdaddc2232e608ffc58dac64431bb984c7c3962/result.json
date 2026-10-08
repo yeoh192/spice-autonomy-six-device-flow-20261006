@@ -1,0 +1,17 @@
+{
+  "value": -9.000000000000002,
+  "test": "family_icc_V4p5_T125",
+  "execution": "completed",
+  "acceptance": "fail",
+  "model_sha256": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+  "protocol_sha256": "c064d25b19763e966b834895567cb5a48c47fe942e6b61d2e9871849c20f106b",
+  "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/ACS723KMATR-20AB-T/91ed7b8d39fb/simulations/a4183088cacf75ecd5dbfb10dbdaddc2232e608ffc58dac64431bb984c7c3962",
+  "unit": "mA",
+  "artifact_hashes": {
+    "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+    "test.cir": "00180a09bf26a8dfc522d968c8d6ee79ac18b30efba0709e7644bc86b406cd3e",
+    "test.raw": "856955ff819e2326ee7e437055c12c3c60f834b9e2e1b00693ea7af059575a40",
+    "test.log": "3545859a6573839a2f08bdfd66b210a08e9979332851ac19e16cf0bda92c10a6",
+    "execution.json": "94c22a7799de8f2be5ff37c0454034166121271a30f0dec31f76e0eb0b079281"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "value": 0.6500000000000001,
+  "test": "conductor_resistance_25C",
+  "execution": "completed",
+  "acceptance": "fail",
+  "model_sha256": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+  "protocol_sha256": "0abb833b469bc99f5d6ef566865830ee9d78a0cea88c51aa319fedba345e0bf7",
+  "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_unified_regression/ACS723KMATR-20AB-T/91ed7b8d39fb/simulations/9784207626d80fab37d12540ef77d9eb399e69b83c6ad41971b8d086964c4351",
+  "unit": "mΩ",
+  "artifact_hashes": {
+    "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+    "test.cir": "1deca82beeb845e110589d5909968851bde76f608c3c77e557658beca0d4f1c6",
+    "test.raw": "67875150ea54c3b1ba57803ba210ef422d6f58dd1f8dc824cd64356bbc3c1f3e",
+    "test.log": "1c1cb3b4d05e8ce1208cfe2c70a9ace24c7def9568971054cb0e57831e983022",
+    "execution.json": "c2c12f329933d02952f92092e9a18729b07ce3e020fe342c2994227c28bb3ba2"
+  }
+}

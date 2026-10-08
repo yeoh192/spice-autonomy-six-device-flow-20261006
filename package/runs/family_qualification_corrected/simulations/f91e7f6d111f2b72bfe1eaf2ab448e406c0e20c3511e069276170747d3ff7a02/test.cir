@@ -1,0 +1,10 @@
+Declarative SPICE workflow circuit
+.options plotwinsize=0
+.temp 25
+.options method=trap
+VSUP ORACLE_P 0 0
+IORACLE 0 ORACLE_P 0.00040000000000000002
+VORACLE_SCAN ORACLE_SCAN 0 0
+.dc VORACLE_SCAN 0 2 0.10000000000000001
+.save i(vsup)
+.end

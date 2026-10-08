@@ -334,7 +334,7 @@
   "qualification_backend": "real_LTspice",
   "scope_complete": false,
   "acceptance_revision": {
-    "reason": "Explicit handbooks N1:N2:N3=4:1:2 ratio conversion; apply previously fixed project 10% tolerance",
+    "reason": "Apply frozen project 10% tolerance and explicit measured quantity; original simulation unchanged",
     "old": {
       "unit": "1"
     },

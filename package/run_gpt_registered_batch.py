@@ -6,9 +6,9 @@ from flow_runtime.state import save
 ROOT=Path(__file__).resolve().parent
 ORDER=['1N4148','EMHK350ARA470MF80G','750311423','ACS723KMATR-20AB-T','ADA4528-1_MSOP']
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--output',type=Path,required=True);ap.add_argument('--resume',action='store_true');a=ap.parse_args()
- paths=ROOT/'runs/registered_tasks'
- subprocess.run([sys.executable,str(ROOT/'use_gpt_test_library.py'),'--output',str(paths)],check=True)
+ ap=argparse.ArgumentParser();ap.add_argument('--output',type=Path,required=True);ap.add_argument('--resume',action='store_true');ap.add_argument('--families',action='store_true');a=ap.parse_args()
+ paths=ROOT/('runs/family_registered_tasks' if a.families else 'runs/registered_tasks')
+ subprocess.run([sys.executable,str(ROOT/'use_gpt_test_library.py'),'--output',str(paths)]+(['--families'] if a.families else []),check=True)
  tasks=json.loads((paths/'batch.json').read_text())['tasks'];tasks.sort(key=lambda r:ORDER.index(r['device']))
  results=[]
  for row in tasks:

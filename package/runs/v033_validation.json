@@ -1,0 +1,10 @@
+{
+  "offline_tests": 265,
+  "qualified_real_tests": 111,
+  "handbook_registerable_tests": 110,
+  "diagnostic_only_tests": 1,
+  "unified_regression_completed_tests": 111,
+  "api_calls": 0,
+  "full_manual_coverage": false,
+  "coverage_report": "runs/registered_final_coverage/summary.json"
+}

@@ -16,7 +16,22 @@ def reference(case):
 
 def oracles(case):
  p=case['protocol'];m=p['measurement']
- if m['mode']=='sample':return [(q,e,None) for q,e in sample_oracles(p)]
+ if m['mode'] in ('dc_slope','dc_sensitivity_error_percent','dc_linearity_percent'):
+  from flow_runtime.dc_transfer import oracles as transfer_oracles
+  return transfer_oracles(case)
+ if m['mode'] in ('dc_current_max','dc_current_difference'):
+  from flow_runtime.static_metrology import current_oracles
+  return current_oracles(case)
+ if m['mode']=='sample':
+  result=[(q,e,None) for q,e in sample_oracles(p)]
+  if case.get('family')=='offset_bias' and case['expectation']['unit']=='μV':
+   for index,(q,e,ref) in enumerate(result):
+    target=(.3e-6,.8e-6)[index]
+    next(c for c in q['components'] if c['name']=='VORACLE')['value']['dc']=target
+    for component in q['components']:
+     if component['name']=='VCM':component['value']['dc']=case['family_conditions']['common_mode_V']
+    result[index]=(q,target*m.get('scale',1),None)
+  return result
  if m['mode']=='curve':
   a=p['analysis'];name=a['source'];signal=m['signal'].lower()
   if a['kind']!='dc' or signal!='i('+name.lower()+')' or not name.startswith('V'):raise Fault('capability','Curve calibration unavailable')
@@ -35,8 +50,8 @@ def oracles(case):
  return result
 
 def main():
- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--output',type=Path,required=True);ap.add_argument('--resume',action='store_true');ap.add_argument('--check-only',action='store_true');ap.add_argument('--device')
- a=ap.parse_args();catalog=ROOT/'gpt_test_library/cases.json';cases=json.loads(catalog.read_text())['cases'];cases=[c for c in cases if not a.device or c['device']==a.device]
+ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--output',type=Path,required=True);ap.add_argument('--resume',action='store_true');ap.add_argument('--check-only',action='store_true');ap.add_argument('--device');ap.add_argument('--catalog',type=Path,default=ROOT/'gpt_test_library/cases.json')
+ a=ap.parse_args();catalog=a.catalog;cases=json.loads(catalog.read_text())['cases'];cases=[c for c in cases if not a.device or c['device']==a.device]
  if not cases:raise ValueError('No matching device')
  runner=Path('/Applications/LTspice.app/Contents/SharedSupport/ltspice/LTspice/run_ltspice')
  for c in cases:

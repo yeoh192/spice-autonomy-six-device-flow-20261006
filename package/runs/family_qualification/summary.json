@@ -1,0 +1,655 @@
+{
+  "status": "gpt_correction_completed_with_gaps",
+  "results": [
+    {
+      "device": "ACS723KMATR-20AB-T",
+      "id": "family_20AB_zero_V5_T25",
+      "reference_ids": [
+        "parameter:20AB_zero"
+      ],
+      "scope": "Exact supply/temperature/load point only; continuous range not certified",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "reference_interface_benchmark_only",
+      "model_sha256": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+      "calibrations": [
+        {
+          "expected": 0.4,
+          "result": {
+            "value": 0.4
+          },
+          "error": 0.0,
+          "tolerance": 4e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/20ebedecbbc24a0d09c0e5f10fdc3f79fcebabdc3049adefae4cb2eb917c1498",
+          "artifacts": {
+            "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+            "test.cir": "6c670d085ef20642c22f4eb4ab34109e582c651603ff0322c2a277f3a6026baa",
+            "test.raw": "6736fd3e3ea0d842dd6a8ce97e48c4855bd1167987f4c6d77bfdf01eeec09997",
+            "test.log": "8c98c394eb2d566cd76f69bec3f47fc3b2597ef66fd0fe423c91e2ec42d7c060",
+            "execution.json": "d0b5485fbd02be4aaa2ca0849fd8f03a78174c95492edceafe7452081167d6e8"
+          }
+        },
+        {
+          "expected": 0.8,
+          "result": {
+            "value": 0.8
+          },
+          "error": 0.0,
+          "tolerance": 8e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/9f1e7a5cbb99ab55cc0f1ed14174379b48bf0c02e88c37aec8ed40268825de5b",
+          "artifacts": {
+            "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+            "test.cir": "b7e6f2346a17925628b622771d0923d0a20225b38a351d2b8594464f77fa40d9",
+            "test.raw": "df8bd0a814b21cd90fbfca4fe5f1339eaec38163d408b49174950e0ffee11928",
+            "test.log": "cf9eb0378e149310de2335af2ba0ec2bec2bde93cedfb4c36600698c280b0b82",
+            "execution.json": "352a0f8975798f87619dce84267efc67f2d82abdc86c1acdbf0fbce6797cc27f"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 2.499975000425274
+        },
+        "acceptance": "pending",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/b08d5379af531dc6dca112989f98bb64e74a795fb1f9ecb4c44db65e6c749899",
+        "artifacts": {
+          "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+          "test.cir": "5c5c4c8a2b1ef404bd88268b173d9cf11c787025d17d77bba8568d07842602bf",
+          "test.raw": "3198013f0c500a95a597f6a8e40856e2b088e92dc8229732a75e3f1b90f501cb",
+          "test.log": "53756217433c2ad00b09c5c85fe6b5b00ffce43d501ab85040ca6e93494074da",
+          "execution.json": "47dc7de48123e4ddb1e917047041bcea4724c9ee6197e2ce360c1fe66dbcf6db"
+        }
+      },
+      "protocol_sha256": "d988c370bc3f566caf27de733bdea8fcf6e0a0369dd5d05472d1e0face542395"
+    },
+    {
+      "device": "ADA4528-1_MSOP",
+      "id": "family_icc_2p5_V2p5_T25",
+      "reference_ids": [
+        "parameter:icc_2.5"
+      ],
+      "scope": "Exact supply/temperature/load point only; continuous range not certified",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "reference_interface_benchmark_only",
+      "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "calibrations": [
+        {
+          "expected": -0.4,
+          "result": {
+            "value": -0.4
+          },
+          "error": 0.0,
+          "tolerance": 4e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/719306534d5918a5eceb9dc1cd84a1944ab76b714fde492a85e1212b14782261",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "54d74322401b9488a2fa8b0a0ead13247364e1f396046d2a58dbf866841e505a",
+            "test.raw": "cbaa741277d7f2bb04091262082b013ebde82c9389d5bbae65056aea104bfcee",
+            "test.log": "fa882f4df261dfea4e8c67370410c6debc2863d725971e033ea6d859d1db23e0",
+            "execution.json": "223f622e44e38a7fd84e1d844b3f8d6fcaa5d0d634c1a90ca8b4a8bf8f1feb64"
+          }
+        },
+        {
+          "expected": -0.8,
+          "result": {
+            "value": -0.8
+          },
+          "error": 0.0,
+          "tolerance": 8e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/8442bf8ad0d55f2df012ec861dc6c7c5bc3b16d4fb1933dd9d66ad77f91e686c",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "19028ce01161b01a9dff93f889b93287c1f23261d9c1cd788e4c095d186d1447",
+            "test.raw": "852ad54adc260b10cc39b37737ce14a5f749106b6a184a69f3fc469055dc768e",
+            "test.log": "f22b29289fafbb3c00d61f3ed1f8f0c26248f3aafbc1202052af182fb0ffaa53",
+            "execution.json": "efb9b26465314d29f77b37cfb9dcf31c3daca6614a9ea6acde53232dedbb704d"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 1.40059693112056
+        },
+        "acceptance": "pending",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/871aa87d0268fcfd540183f7116fb4258353e959ace3b0885fa8d0e282c260a8",
+        "artifacts": {
+          "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+          "test.cir": "3748704fd57031abc1dbd86b1a6072f6696c63dd44e2270d9c884e58290adad6",
+          "test.raw": "04968806623a9053084fc9d33c3938b8feeaf4c8d367646d58a436232f78fce1",
+          "test.log": "1aa7089f3934c6d719a5825ec033d8bdf70480fcaeb4f591a7b0baf1abdd405b",
+          "execution.json": "c4b796223272d33e03ca3ec9d13b9b52bafb7d7603ad8c093eb14cdbd96b529f"
+        }
+      },
+      "protocol_sha256": "0cfd54feec40b18304c1cd2da870dc33037d754b2e5c89a3bf56e4f42a67b5b1"
+    },
+    {
+      "device": "ADA4528-1_MSOP",
+      "id": "family_voh_2p5_10_V2p5_T25",
+      "reference_ids": [
+        "parameter:voh_2.5_10"
+      ],
+      "scope": "Exact supply/temperature/load point only; continuous range not certified",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "reference_interface_benchmark_only",
+      "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "calibrations": [
+        {
+          "expected": 0.4,
+          "result": {
+            "value": 0.4
+          },
+          "error": 0.0,
+          "tolerance": 4e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/f15542063399ddd543f80e002a5fb5bbf7c15fa774af58c783375dffc2881644",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "6c670d085ef20642c22f4eb4ab34109e582c651603ff0322c2a277f3a6026baa",
+            "test.raw": "a48fcbdfe6cb2a371314b65d740d38ff2891edf50ef6d1500c7868a00e992213",
+            "test.log": "b8964f7e3521db9da46de0939dca73aa1ad3fb2b7de9abf5d06a99cc6a789d2b",
+            "execution.json": "ecadd546eb07537d4b9e104e35177ef3d13c0995065d683f5d18a886f7270e4e"
+          }
+        },
+        {
+          "expected": 0.8,
+          "result": {
+            "value": 0.8
+          },
+          "error": 0.0,
+          "tolerance": 8e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/d0b748899856e51c31837c9a1fa9820221a689612565214c1f5db9553baa4322",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "b7e6f2346a17925628b622771d0923d0a20225b38a351d2b8594464f77fa40d9",
+            "test.raw": "eb78fd7d3501f65898920c1c9d0a2c310a83b6627087915660969d052be53804",
+            "test.log": "aca62d7b7472609d1387928ea3ef056bde6ed21e253d6c9e1b7087abde4377c7",
+            "execution.json": "a9aa5859058c1425131bc178c9251a0900879e05b35fc67f7b33f3fbfe7a0fa8"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 2.497830841327079
+        },
+        "acceptance": "pending",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/c5b855966604a7b7f322299f9eb1aaef1813ada112e5d858a0fa817239f24eef",
+        "artifacts": {
+          "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+          "test.cir": "fc44d6efbf1947ff9e5ffe6d52b977555af1d62a1b1983b4166dff6d11a4dc80",
+          "test.raw": "ccc2f8dfd6b7ff58423795af0c51294a68ac0ee5c1dfafc7340050f227dbab74",
+          "test.log": "2145a949409ee10a491e92de2d66419a982e38392f94f3e1ff1f5c13fe8d41d2",
+          "execution.json": "eae2e7151090ddd5487b67f4e6f27ceecb853cd0285d438589c15271f78f17e0"
+        }
+      },
+      "protocol_sha256": "79459e96cfe3c88ee3d5ad9634fe6df759ea3a7c9adb04a0bfb2ed907455ebe7"
+    },
+    {
+      "device": "ADA4528-1_MSOP",
+      "id": "family_vol_2p5_10_V2p5_T25",
+      "reference_ids": [
+        "parameter:vol_2.5_10"
+      ],
+      "scope": "Exact supply/temperature/load point only; continuous range not certified",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "reference_interface_benchmark_only",
+      "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "calibrations": [
+        {
+          "expected": 400.0,
+          "result": {
+            "value": 400.0
+          },
+          "error": 0.0,
+          "tolerance": 0.04,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/f98d96582960f940ec2e98bad38f3d5b15e0aa4c5646c8a35510ace2da9c6bb4",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "6c670d085ef20642c22f4eb4ab34109e582c651603ff0322c2a277f3a6026baa",
+            "test.raw": "0adfae8bca4f32ee704d807eaddf94295d838b61b913aa37f88cc8249a53b8ee",
+            "test.log": "fb7f14ce80921602281f056759314ecaa83012f123908ae2fbc7da38a72dbd93",
+            "execution.json": "54e7137c65af762745a22f5fe478ef7344b5e63f7ba311c986b4cdd2d6e6cb03"
+          }
+        },
+        {
+          "expected": 800.0,
+          "result": {
+            "value": 800.0
+          },
+          "error": 0.0,
+          "tolerance": 0.08,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/c78004a0b1062c4ce673087254ed80ec9b3616d9f7b2dfc2f864de0ef907fc5f",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "b7e6f2346a17925628b622771d0923d0a20225b38a351d2b8594464f77fa40d9",
+            "test.raw": "85deff5178eb5e41e47fbbc488bb9f3d50b0d0598dfc4f7f5d77ea11408019a2",
+            "test.log": "48f7b348ef97690995099fab23ec2f4f755919ab1ef4ff9b9b57e3cab577e0ca",
+            "execution.json": "87caae068c4a86f10e9230904b760b4f968fd379960d4bbbb5348b9dcb80c346"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 1.929211366907058
+        },
+        "acceptance": "pending",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/45dee1d9a6638e536b19f11fd646079ceaeb84249cd4404ff9110029c6e33c68",
+        "artifacts": {
+          "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+          "test.cir": "e9d7d1f908d5dc538b6da85b009ff0cad2e0d79bcad42068010405216bda57da",
+          "test.raw": "5aa276002ab2a3d79768507574e736a2e539d564a93908e45a788b4d8e6c1e7a",
+          "test.log": "2a52ad98cac5440a66b41c7c1f8f6d470f69272e359d88f62bcec409c769635d",
+          "execution.json": "d8d6979058218bacc091854bb7423b9e1f08594b2801350a9c6b78d3e450c9bc"
+        }
+      },
+      "protocol_sha256": "982b9eb859ed75c64f49c80e41a2f60e2de8058ba91f02bec0c787a8a2edbe77"
+    },
+    {
+      "device": "ADA4528-1_MSOP",
+      "id": "family_voh_2p5_2_V2p5_T25",
+      "reference_ids": [
+        "parameter:voh_2.5_2"
+      ],
+      "scope": "Exact supply/temperature/load point only; continuous range not certified",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "reference_interface_benchmark_only",
+      "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "calibrations": [
+        {
+          "expected": 0.4,
+          "result": {
+            "value": 0.4
+          },
+          "error": 0.0,
+          "tolerance": 4e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/f15542063399ddd543f80e002a5fb5bbf7c15fa774af58c783375dffc2881644",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "6c670d085ef20642c22f4eb4ab34109e582c651603ff0322c2a277f3a6026baa",
+            "test.raw": "a48fcbdfe6cb2a371314b65d740d38ff2891edf50ef6d1500c7868a00e992213",
+            "test.log": "b8964f7e3521db9da46de0939dca73aa1ad3fb2b7de9abf5d06a99cc6a789d2b",
+            "execution.json": "ecadd546eb07537d4b9e104e35177ef3d13c0995065d683f5d18a886f7270e4e"
+          }
+        },
+        {
+          "expected": 0.8,
+          "result": {
+            "value": 0.8
+          },
+          "error": 0.0,
+          "tolerance": 8e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/d0b748899856e51c31837c9a1fa9820221a689612565214c1f5db9553baa4322",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "b7e6f2346a17925628b622771d0923d0a20225b38a351d2b8594464f77fa40d9",
+            "test.raw": "eb78fd7d3501f65898920c1c9d0a2c310a83b6627087915660969d052be53804",
+            "test.log": "aca62d7b7472609d1387928ea3ef056bde6ed21e253d6c9e1b7087abde4377c7",
+            "execution.json": "a9aa5859058c1425131bc178c9251a0900879e05b35fc67f7b33f3fbfe7a0fa8"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 2.489184279496746
+        },
+        "acceptance": "pending",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/565df2fd4776527ae550f3775b3b1dd2ae34adc28eef4b2b11c6f52db6612fe1",
+        "artifacts": {
+          "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+          "test.cir": "218053ee0c7959fe82c53a0d572f58982671b64ee20d346528b2bde194b70a62",
+          "test.raw": "7f956d490259f1e90eb2f08cb44ed6cd4208f3c243e354e8dcea1d467cff6a49",
+          "test.log": "a195ecb8e6a596a88669d8c2f7ae6bcd3591440f24b7e712ecd9b7c4fea435a6",
+          "execution.json": "00b5532368e4bad1ac1fd2c2324884560fb8fd94dce56e2d5b888e11c85f0516"
+        }
+      },
+      "protocol_sha256": "12fec806d4fce22107e49fcae42927699cfc0fdd9e70c252014fa148bbe688e4"
+    },
+    {
+      "device": "ADA4528-1_MSOP",
+      "id": "family_vol_2p5_2_V2p5_T25",
+      "reference_ids": [
+        "parameter:vol_2.5_2"
+      ],
+      "scope": "Exact supply/temperature/load point only; continuous range not certified",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "reference_interface_benchmark_only",
+      "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "calibrations": [
+        {
+          "expected": 400.0,
+          "result": {
+            "value": 400.0
+          },
+          "error": 0.0,
+          "tolerance": 0.04,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/f98d96582960f940ec2e98bad38f3d5b15e0aa4c5646c8a35510ace2da9c6bb4",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "6c670d085ef20642c22f4eb4ab34109e582c651603ff0322c2a277f3a6026baa",
+            "test.raw": "0adfae8bca4f32ee704d807eaddf94295d838b61b913aa37f88cc8249a53b8ee",
+            "test.log": "fb7f14ce80921602281f056759314ecaa83012f123908ae2fbc7da38a72dbd93",
+            "execution.json": "54e7137c65af762745a22f5fe478ef7344b5e63f7ba311c986b4cdd2d6e6cb03"
+          }
+        },
+        {
+          "expected": 800.0,
+          "result": {
+            "value": 800.0
+          },
+          "error": 0.0,
+          "tolerance": 0.08,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/c78004a0b1062c4ce673087254ed80ec9b3616d9f7b2dfc2f864de0ef907fc5f",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "b7e6f2346a17925628b622771d0923d0a20225b38a351d2b8594464f77fa40d9",
+            "test.raw": "85deff5178eb5e41e47fbbc488bb9f3d50b0d0598dfc4f7f5d77ea11408019a2",
+            "test.log": "48f7b348ef97690995099fab23ec2f4f755919ab1ef4ff9b9b57e3cab577e0ca",
+            "execution.json": "87caae068c4a86f10e9230904b760b4f968fd379960d4bbbb5348b9dcb80c346"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 9.640757322790153
+        },
+        "acceptance": "pending",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/7ef849182e93b83835be57b467c20c07b38a8e33f5d8751db3664ad4e499b97f",
+        "artifacts": {
+          "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+          "test.cir": "7956ccd9b9e8bb85f8fd425d93dd1de2185fc3f07d6b9d6b57a89d2d8b6b7db3",
+          "test.raw": "abe3492e6d8732bba4962dede48a8576e28c10f4277403b990d1098f820a9c96",
+          "test.log": "49e292b3c9450fefea212a59b5c7438a1689ce66bc87a0da9f5f589eeed08092",
+          "execution.json": "e5b58f2645f2979ef5b3fe92c9ce435d9569cb583d5de30e793cd3cf6d0bbe45"
+        }
+      },
+      "protocol_sha256": "c2ed47a5e0c46a6d9f9dd51fa03c2310fe3db70c12916e8d5cb9bd72672bc5fa"
+    },
+    {
+      "device": "ADA4528-1_MSOP",
+      "id": "family_voh_5_10_V5p0_T25",
+      "reference_ids": [
+        "parameter:voh_5_10"
+      ],
+      "scope": "Exact supply/temperature/load point only; continuous range not certified",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "reference_interface_benchmark_only",
+      "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "calibrations": [
+        {
+          "expected": 0.4,
+          "result": {
+            "value": 0.4
+          },
+          "error": 0.0,
+          "tolerance": 4e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/f15542063399ddd543f80e002a5fb5bbf7c15fa774af58c783375dffc2881644",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "6c670d085ef20642c22f4eb4ab34109e582c651603ff0322c2a277f3a6026baa",
+            "test.raw": "a48fcbdfe6cb2a371314b65d740d38ff2891edf50ef6d1500c7868a00e992213",
+            "test.log": "b8964f7e3521db9da46de0939dca73aa1ad3fb2b7de9abf5d06a99cc6a789d2b",
+            "execution.json": "ecadd546eb07537d4b9e104e35177ef3d13c0995065d683f5d18a886f7270e4e"
+          }
+        },
+        {
+          "expected": 0.8,
+          "result": {
+            "value": 0.8
+          },
+          "error": 0.0,
+          "tolerance": 8e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/d0b748899856e51c31837c9a1fa9820221a689612565214c1f5db9553baa4322",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "b7e6f2346a17925628b622771d0923d0a20225b38a351d2b8594464f77fa40d9",
+            "test.raw": "eb78fd7d3501f65898920c1c9d0a2c310a83b6627087915660969d052be53804",
+            "test.log": "aca62d7b7472609d1387928ea3ef056bde6ed21e253d6c9e1b7087abde4377c7",
+            "execution.json": "a9aa5859058c1425131bc178c9251a0900879e05b35fc67f7b33f3fbfe7a0fa8"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 4.995656967555886
+        },
+        "acceptance": "pending",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/013d5672fb29f354519681982ee9948392d300fd58738abf3ef08bb6e82dbe5b",
+        "artifacts": {
+          "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+          "test.cir": "8a103820a7ff08ab6cb9d918110bee4a1bf66f4506d94d2c235bd766fc341bfd",
+          "test.raw": "9fae402f26f0ef8932b0035b23c74428e141356a2dd74e531498db617fb4b9ac",
+          "test.log": "0a3b4c9ff429f0a18a1a84720d193b35899738a04765ef1f27313d04b8896fe7",
+          "execution.json": "8e5dcade5a9c6550b64f236e28b8984dd786d07a2e507f7dc48a45763b275f36"
+        }
+      },
+      "protocol_sha256": "6d62826bf3cf3f421f7edc379c1de60537eb61b6309027b33adb82bb7f938492"
+    },
+    {
+      "device": "ADA4528-1_MSOP",
+      "id": "family_vol_5_10_V5p0_T25",
+      "reference_ids": [
+        "parameter:vol_5_10"
+      ],
+      "scope": "Exact supply/temperature/load point only; continuous range not certified",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "reference_interface_benchmark_only",
+      "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "calibrations": [
+        {
+          "expected": 400.0,
+          "result": {
+            "value": 400.0
+          },
+          "error": 0.0,
+          "tolerance": 0.04,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/f98d96582960f940ec2e98bad38f3d5b15e0aa4c5646c8a35510ace2da9c6bb4",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "6c670d085ef20642c22f4eb4ab34109e582c651603ff0322c2a277f3a6026baa",
+            "test.raw": "0adfae8bca4f32ee704d807eaddf94295d838b61b913aa37f88cc8249a53b8ee",
+            "test.log": "fb7f14ce80921602281f056759314ecaa83012f123908ae2fbc7da38a72dbd93",
+            "execution.json": "54e7137c65af762745a22f5fe478ef7344b5e63f7ba311c986b4cdd2d6e6cb03"
+          }
+        },
+        {
+          "expected": 800.0,
+          "result": {
+            "value": 800.0
+          },
+          "error": 0.0,
+          "tolerance": 0.08,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/c78004a0b1062c4ce673087254ed80ec9b3616d9f7b2dfc2f864de0ef907fc5f",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "b7e6f2346a17925628b622771d0923d0a20225b38a351d2b8594464f77fa40d9",
+            "test.raw": "85deff5178eb5e41e47fbbc488bb9f3d50b0d0598dfc4f7f5d77ea11408019a2",
+            "test.log": "48f7b348ef97690995099fab23ec2f4f755919ab1ef4ff9b9b57e3cab577e0ca",
+            "execution.json": "87caae068c4a86f10e9230904b760b4f968fd379960d4bbbb5348b9dcb80c346"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 3.86402757953975
+        },
+        "acceptance": "pending",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/edd31b6a5bf0302b6729fa8651827a8027336c310600858015ff408b77c974da",
+        "artifacts": {
+          "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+          "test.cir": "898aeea07dc1b772d36ee478cb07ccf555a84499b35f05883e728f93f7c7116f",
+          "test.raw": "dccbcebafa5fe6741042ba58ac980c34cbb305f2cb4e7685a134a86d5fe69317",
+          "test.log": "777961095979d928215e8fb4341715b5f16039fa6d4d5d0881c7b607780c9a9b",
+          "execution.json": "7bbda9fd2683b7f0d1323934eba3a1daf23ee4bb6b3ca3ac2339f3fe861b3d41"
+        }
+      },
+      "protocol_sha256": "6f5455f02a17adc108ab570fefe6612ead0ebf363e3489a47eaffd008ed42e2a"
+    },
+    {
+      "device": "ADA4528-1_MSOP",
+      "id": "family_voh_5_2_V5p0_T25",
+      "reference_ids": [
+        "parameter:voh_5_2"
+      ],
+      "scope": "Exact supply/temperature/load point only; continuous range not certified",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "reference_interface_benchmark_only",
+      "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "calibrations": [
+        {
+          "expected": 0.4,
+          "result": {
+            "value": 0.4
+          },
+          "error": 0.0,
+          "tolerance": 4e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/f15542063399ddd543f80e002a5fb5bbf7c15fa774af58c783375dffc2881644",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "6c670d085ef20642c22f4eb4ab34109e582c651603ff0322c2a277f3a6026baa",
+            "test.raw": "a48fcbdfe6cb2a371314b65d740d38ff2891edf50ef6d1500c7868a00e992213",
+            "test.log": "b8964f7e3521db9da46de0939dca73aa1ad3fb2b7de9abf5d06a99cc6a789d2b",
+            "execution.json": "ecadd546eb07537d4b9e104e35177ef3d13c0995065d683f5d18a886f7270e4e"
+          }
+        },
+        {
+          "expected": 0.8,
+          "result": {
+            "value": 0.8
+          },
+          "error": 0.0,
+          "tolerance": 8e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/d0b748899856e51c31837c9a1fa9820221a689612565214c1f5db9553baa4322",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "b7e6f2346a17925628b622771d0923d0a20225b38a351d2b8594464f77fa40d9",
+            "test.raw": "eb78fd7d3501f65898920c1c9d0a2c310a83b6627087915660969d052be53804",
+            "test.log": "aca62d7b7472609d1387928ea3ef056bde6ed21e253d6c9e1b7087abde4377c7",
+            "execution.json": "a9aa5859058c1425131bc178c9251a0900879e05b35fc67f7b33f3fbfe7a0fa8"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 4.978250037325404
+        },
+        "acceptance": "pending",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/2424dc38fe099cb9c40a71de40a91098f69cb7a595ed0d35fe2a4aacba171c35",
+        "artifacts": {
+          "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+          "test.cir": "5fbed748759d2a6d7f8908bd85fa36ad504738b4492aef9d22a5d3e016c3cbc0",
+          "test.raw": "a8b0dc7f5973411cd20b8b9059eed67213cd5a3f5367e3049418a704d5382301",
+          "test.log": "b3c7b33b9f526d875647cefe1d78822f1d11d4c481195266a44cf038cef2a126",
+          "execution.json": "2cb3115efcd0294c04e2387ca50b2d2a14e34d6ca72095b751eabec6cc33c834"
+        }
+      },
+      "protocol_sha256": "4a7caebba80f07b0213fde0cb2c07cbea534d89b5f81c5ed8da9b6815714a983"
+    },
+    {
+      "device": "ADA4528-1_MSOP",
+      "id": "family_vol_5_2_V5p0_T25",
+      "reference_ids": [
+        "parameter:vol_5_2"
+      ],
+      "scope": "Exact supply/temperature/load point only; continuous range not certified",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "reference_interface_benchmark_only",
+      "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "calibrations": [
+        {
+          "expected": 400.0,
+          "result": {
+            "value": 400.0
+          },
+          "error": 0.0,
+          "tolerance": 0.04,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/f98d96582960f940ec2e98bad38f3d5b15e0aa4c5646c8a35510ace2da9c6bb4",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "6c670d085ef20642c22f4eb4ab34109e582c651603ff0322c2a277f3a6026baa",
+            "test.raw": "0adfae8bca4f32ee704d807eaddf94295d838b61b913aa37f88cc8249a53b8ee",
+            "test.log": "fb7f14ce80921602281f056759314ecaa83012f123908ae2fbc7da38a72dbd93",
+            "execution.json": "54e7137c65af762745a22f5fe478ef7344b5e63f7ba311c986b4cdd2d6e6cb03"
+          }
+        },
+        {
+          "expected": 800.0,
+          "result": {
+            "value": 800.0
+          },
+          "error": 0.0,
+          "tolerance": 0.08,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/c78004a0b1062c4ce673087254ed80ec9b3616d9f7b2dfc2f864de0ef907fc5f",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "b7e6f2346a17925628b622771d0923d0a20225b38a351d2b8594464f77fa40d9",
+            "test.raw": "85deff5178eb5e41e47fbbc488bb9f3d50b0d0598dfc4f7f5d77ea11408019a2",
+            "test.log": "48f7b348ef97690995099fab23ec2f4f755919ab1ef4ff9b9b57e3cab577e0ca",
+            "execution.json": "87caae068c4a86f10e9230904b760b4f968fd379960d4bbbb5348b9dcb80c346"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 19.423966895739298
+        },
+        "acceptance": "pending",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/family_qualification/simulations/75f78a0c3dd148731da7d65c95ecd50e59c08d673e9ce4e709d1a6d0ea31a47f",
+        "artifacts": {
+          "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+          "test.cir": "f1699eed060aca9161249e10d5d58e866e620923c183a85aeb5a1bed6a4862a9",
+          "test.raw": "920d45da6d570a6f461eb9a93349cad285106da6f8af5fb285178a87b2b9149c",
+          "test.log": "ec78850b2b18a097428356b903af09d3d0f22b510a5dc4ba51211a0ae9592363",
+          "execution.json": "b0e8bc5eeac8fc67f464d03c0927a3f99cd172fccd9b287636cf29df2f7a43f8"
+        }
+      },
+      "protocol_sha256": "65a74b1eed339c76d84f443ac0b7eedacd9d482cea88bb5fa2dc2891f8a2bd3b"
+    }
+  ],
+  "qualified_methods": 10,
+  "api_calls": 0,
+  "usage": {
+    "api_calls": 0,
+    "simulations": 18,
+    "repairs": 0,
+    "seconds": 77.538691292
+  },
+  "full_manual_coverage": false,
+  "candidate_models_modified": false
+}

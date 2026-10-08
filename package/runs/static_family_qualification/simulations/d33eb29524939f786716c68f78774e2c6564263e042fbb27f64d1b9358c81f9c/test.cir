@@ -1,0 +1,10 @@
+Declarative SPICE workflow circuit
+.options plotwinsize=0
+.temp 25
+.options method=trap
+VORACLE OUT CM 2.9999999999999999e-07
+VCM CM 0 1.25
+VDUMMY ORACLE_DUMMY 0 0
+.dc VDUMMY 0 2 0.10000000000000001
+.save v(cm) v(out)
+.end

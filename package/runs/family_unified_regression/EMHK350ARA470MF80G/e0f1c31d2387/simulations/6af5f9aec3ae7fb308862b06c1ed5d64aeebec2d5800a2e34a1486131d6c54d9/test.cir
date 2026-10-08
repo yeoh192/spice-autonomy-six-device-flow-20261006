@@ -1,0 +1,11 @@
+Declarative SPICE workflow circuit
+.options plotwinsize=0
+.temp -40
+.options method=trap
+.include "model.lib"
+XDUT P N REFERENCE_CAP
+VDRIVE P N 0 AC 0.10000000000000001
+RGROUND N 0 9.9999999999999995e-07
+.ac lin 1 100000 100000
+.save i(vdrive) v(n) v(p)
+.end

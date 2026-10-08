@@ -225,18 +225,24 @@ def validate_protocol(protocol, model, contract=None):
             raise Fault("proposal", "积分方法非法")
         m = protocol["measurement"]
         _signal(m["signal"])
-        if set(m) - {"mode", "signal", "sign", "scale", "at", "start_s", "target", "absolute", "denominator"}:
+        if set(m) - {"mode", "signal", "sign", "scale", "at", "start_s", "target", "absolute", "denominator", "nominal"}:
             raise Fault("proposal", "测量存在未知字段")
         if "absolute" in m and not isinstance(m["absolute"], bool):
             raise Fault("proposal", "absolute需要布尔值")
         mode = m["mode"]
-        if mode not in ("sample", "curve", "ratio_curve", "capacitance", "integral_to_crossing") and mode not in ac_measurements.MODES:
+        if mode not in ("sample", "curve", "ratio_curve", "capacitance", "integral_to_crossing", "dc_current_max", "dc_current_difference", "dc_slope", "dc_sensitivity_error_percent", "dc_linearity_percent") and mode not in ac_measurements.MODES:
             raise Fault("proposal", "测量解析接口未实现")
         if mode in ac_measurements.MODES:
             ac_measurements.validate(a, m, _signal)
         elif mode == "ratio_curve":
             if a["kind"] != "dc" or not m["signal"].lower().startswith("v(") or not _signal(m["denominator"]).startswith("i("):
                 raise Fault("proposal", "电阻曲线必须为DC端口电压除以实际支路电流")
+        elif mode in ('dc_slope','dc_sensitivity_error_percent','dc_linearity_percent'):
+            from .dc_transfer import validate
+            validate(a,m)
+        elif mode in ("dc_current_max", "dc_current_difference"):
+            if a["kind"]!='dc' or not m['signal'].lower().startswith('i(') or not _signal(m['denominator']).startswith('i('):raise Fault('proposal','DC input-current metrology requires two actual current probes')
+            finite(m['at'])
         elif "denominator" in m:
             raise Fault("proposal", "denominator只允许用于电阻曲线")
         finite(m.get("sign", 1)); finite(m.get("scale", 1))
@@ -414,6 +420,14 @@ def measure(protocol, data, reference=None):
             value = sign * ys[0].imag / (2 * math.pi * a["frequency_Hz"]) * scale
             return {"value": value}
         ys = [y.real * sign * scale for y in ys]
+        if m['mode'] in ('dc_slope','dc_sensitivity_error_percent','dc_linearity_percent'):
+            from .dc_transfer import value
+            return {'value':value(a,m,xs,[v.real for v in signals[m['signal'].lower()]])}
+        if m['mode'] in ('dc_current_max','dc_current_difference'):
+            first=interpolate(xs,[v.real for v in signals[m['signal'].lower()]],m['at'])
+            second=interpolate(xs,[v.real for v in signals[m['denominator'].lower()]],m['at'])
+            value=(max(abs(first),abs(second)) if m['mode']=='dc_current_max' else first-second)*sign*scale
+            return {'value':abs(value) if m.get('absolute') else value}
         if m["mode"] == "sample":
             value = interpolate(xs, ys, m["at"])
             return {"value": abs(value) if m.get("absolute") else value}
@@ -492,7 +506,7 @@ def validate_measurement_unit(case):
     units = {"V": ("V", 1), "mV": ("V", 1e-3), "A": ("A", 1), "mA": ("A", 1e-3),
              "uA": ("A", 1e-6), "μA": ("A", 1e-6), "µA": ("A", 1e-6), "nA": ("A", 1e-9), "F": ("F", 1), "pF": ("F", 1e-12), "nF": ("F", 1e-9),
              "C": ("C", 1), "nC": ("C", 1e-9), "uC": ("C", 1e-6), "ohm": ("ohm", 1), "Ω": ("ohm", 1), "mΩ": ("ohm", 1e-3)}
-    units.update({"uV":("V",1e-6),"μV":("V",1e-6),"pA":("A",1e-12),"uF":("F",1e-6),"μF":("F",1e-6),"H":("H",1),"uH":("H",1e-6),"μH":("H",1e-6),"1":("1",1),"dB":("dB",1),"degree":("degree",1)})
+    units.update({"uV":("V",1e-6),"μV":("V",1e-6),"pA":("A",1e-12),"uF":("F",1e-6),"μF":("F",1e-6),"H":("H",1),"uH":("H",1e-6),"μH":("H",1e-6),"1":("1",1),"dB":("dB",1),"degree":("degree",1),"mV/A":("V/A",1e-3),"%":("%",1)})
     if mode in ac_measurements.MODES and "at" not in m and "frequency_Hz" not in p["analysis"] and not case.get("reference"):
         raise Fault("missing_data", "交流频扫验收需要参考曲线或明确采样频率，不能以无阈值样本作为标量")
     if unit == "oracle_native":
@@ -507,6 +521,8 @@ def validate_measurement_unit(case):
     expected_scale = 1 / factor
     if mode in ac_measurements.MODES:
         native = ac_measurements.MODES[mode]
+    if mode=='dc_slope':native='V/A'
+    if mode in ('dc_sensitivity_error_percent','dc_linearity_percent'):native='%'
     if mode == "ratio_curve":
         native = "ohm"
     if dimension == "ohm" and mode == "sample" and signal_dimension == "V":

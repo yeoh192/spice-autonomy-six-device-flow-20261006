@@ -15,7 +15,7 @@ from .development_interfaces import interface_evidence
 INTERFACES = {
     "circuit": "R/C/L, independent V/I (DC/AC/PWL), numeric diode and voltage-controlled release switch fixtures, one DUT with task-defined pins",
     "analysis": "DC sweep, single-frequency or bounded linear AC sweep, transient",
-    "measurement": "sample, curve, ratio_curve (actual V/I), capacitance, complex V/I impedance/ESR/C/L/loss and voltage-ratio gain/dB/phase, integral_to_crossing with explicit integration start and target",
+    "measurement": "sample, dc_current_max (max absolute input current), dc_current_difference (actual probe difference), dc_slope, dc_sensitivity_error_percent, dc_linearity_percent, curve, ratio_curve (actual V/I), capacitance, complex V/I impedance/ESR/C/L/loss and voltage-ratio gain/dB/phase, integral_to_crossing with explicit integration start and target",
     "forbidden": "arbitrary Python/shell, external model files, changes to immutable reference/acceptance/ports",
 }
 
@@ -23,6 +23,12 @@ INTERFACES = {
 def calibration_protocols(case):
     """Trusted analytic oracles; expected values are NOT supplied by an agent."""
     mode = case["protocol"]["measurement"]["mode"]
+    if mode in ('dc_current_max','dc_current_difference'):
+        from .static_metrology import current_oracles
+        return [(p,e) for p,e,_ in current_oracles(case)]
+    if mode in ('dc_slope','dc_sensitivity_error_percent','dc_linearity_percent'):
+        from .dc_transfer import oracles
+        return [(p,e) for p,e,_ in oracles(case)]
     from .ac_measurements import MODES
     if mode in MODES:
         from .ac_calibration import protocols as ac_protocols
@@ -418,6 +424,8 @@ class Workflow:
         return {"reference_id": item["id"], "kind": "development_budget", "last_fault": feedback}
 
     def normalize_contract(self, item):
+        from .test_families import mapping
+        family_context = mapping({"items": [item]}, self.task["device"])
         from .evidence import bundle
         key = "contract:" + fingerprint(item)
         saved = self.store.get("plans", key)
@@ -429,7 +437,7 @@ class Workflow:
             if n:
                 self.store.reserve("repairs", key + ":" + str(n))
             try:
-                proposal = self.agents.ask("contract_normalizer", {
+                proposal = self.agents.ask("contract_normalizer", {"test_family_context": family_context,
                     "task": "Translate supplied evidence into an executable measurement contract. Return {decision:propose, protocol:{...}, condition_bindings:[{quote,protocol_path}], unresolved_conditions:[], measurement_rationale}. The quote must be an exact substring of reference_evidence.conditions. Paths use components@NAME/value/dc, components@NAME/value/pwl/INDEX/1, measurement/at, measurement/target/value or temperature_C. Every numeric manual condition must bind to a real circuit value in SI units. Never invent ports, data, measurement tolerance or unresolved dual-channel/package conditions. Use defer when evidence is insufficient. Output measurement must use the original reference unit (scale integral for nC if necessary).",
                     "reference": item, "interfaces": INTERFACES,
                     "model_interface": {k: self.task["model"][k] for k in ("entry", "ports", "declared_ports")},

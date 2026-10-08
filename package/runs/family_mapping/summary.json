@@ -1,0 +1,44 @@
+{
+  "status": "families_mapped_with_capability_gaps",
+  "devices": [
+    {
+      "device": "ACS723KMATR-20AB-T",
+      "mapped_records": 37,
+      "generated_tests": 1,
+      "families": {
+        "conductor_resistance": 1,
+        "frequency": 2,
+        "magnetic": 2,
+        "noise": 3,
+        "offset_bias": 3,
+        "output_swing": 2,
+        "sensor_transfer": 13,
+        "setup": 3,
+        "supply": 1,
+        "timing": 7
+      }
+    },
+    {
+      "device": "ADA4528-1_MSOP",
+      "mapped_records": 144,
+      "generated_tests": 9,
+      "families": {
+        "frequency": 20,
+        "input_impedance": 8,
+        "noise": 23,
+        "offset_bias": 20,
+        "output_impedance": 4,
+        "output_swing": 27,
+        "rejection": 12,
+        "setup": 2,
+        "supply": 6,
+        "thermal": 2,
+        "timing": 20
+      }
+    }
+  ],
+  "generated_cases": 10,
+  "api_calls": 0,
+  "simulations": 0,
+  "full_manual_coverage": false
+}

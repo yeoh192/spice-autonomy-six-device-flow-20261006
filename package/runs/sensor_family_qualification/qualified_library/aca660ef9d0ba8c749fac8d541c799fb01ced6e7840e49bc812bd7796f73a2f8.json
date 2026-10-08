@@ -1,0 +1,296 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "sensor_20AB_sens_error_cold_T0",
+    "reference_ids": [
+      "parameter:20AB_sens_error_cold"
+    ],
+    "protocol": {
+      "temperature_C": 0,
+      "device_nodes": {
+        "P1": "IP",
+        "P2": "0",
+        "P3": "0",
+        "P4": "VCC",
+        "P5": "OUT",
+        "P6": "0"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VSUP",
+          "nodes": [
+            "VCC",
+            "0"
+          ],
+          "value": {
+            "dc": 5
+          }
+        },
+        {
+          "kind": "I",
+          "name": "IFORCE",
+          "nodes": [
+            "0",
+            "IP"
+          ],
+          "value": {
+            "dc": 0
+          }
+        },
+        {
+          "kind": "V",
+          "name": "VDUMMY",
+          "nodes": [
+            "UNUSED",
+            "0"
+          ],
+          "value": {
+            "dc": 0
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "dc",
+        "source": "IFORCE",
+        "start": -20,
+        "stop": 20,
+        "step": 1
+      },
+      "measurement": {
+        "mode": "dc_sensitivity_error_percent",
+        "signal": "v(OUT)",
+        "scale": 1,
+        "nominal": 0.1
+      },
+      "checks": []
+    },
+    "model": {
+      "entry": "REFERENCE_INTERFACE",
+      "ports": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "declared_ports": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "provenance": {
+        "role": "reference_interface_benchmark_only",
+        "source_sha256": "8e9c9190a601795576cd3cf0de46687496995b292da7cdd73934b447c870b0aa",
+        "original_entry": "ACS723",
+        "original_ports": [
+          "IP+",
+          "IP-",
+          "DUT_GND",
+          "VCC",
+          "Viout",
+          "BW_SEL"
+        ],
+        "physical_binding_verified": false,
+        "dependency_receipts": [
+          {
+            "name": "opamp.sub",
+            "sha256": "7bbdf4d33fab0620879996c2c61cd09a4f589a0ee9bc4a26ccf8ecec9c24dc87"
+          },
+          {
+            "name": "UniversalOPAmps2.sub",
+            "sha256": "4c7cd040212fc64700ec5fc6402c7fc11cdb7d9f84544dbae9914e4a5221f2d1"
+          }
+        ],
+        "parameter_evidence": [
+          {
+            "reference_id": "parameter:20AB_sensitivity",
+            "unit": "mV/A",
+            "value": 100,
+            "symbol_sha256": "9eb9f2559a2a4bbcd364402ba5fe3a69f68088e30c651e992e3e598c75ef676a",
+            "role": "reference_benchmark_configuration"
+          }
+        ],
+        "parameter_scope_correction": "Pass symbol-derived parameters on XREFERENCE instance; vendor subcircuit unchanged"
+      },
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/gpt_test_library/models/ACS723/reference_interface_parameter_scope.lib",
+      "sha256": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771"
+    },
+    "expectation": {
+      "unit": "%",
+      "limits": {}
+    },
+    "device": "ACS723KMATR-20AB-T",
+    "input_folder": "ACS723",
+    "reference_evidence": [
+      {
+        "id": "parameter:20AB_sens_error_cold",
+        "kind": "test",
+        "applicable": true,
+        "reference_evidence": {
+          "id": "20AB_sens_error_cold",
+          "key": "sensitivity_error",
+          "values": {
+            "typ": "±1.8"
+          },
+          "unit": "%",
+          "conditions": "VCC=5 V; TA=-40..25°C; IP=IPR(max); typical ± values are 3 sigma",
+          "applies_to": [
+            "ACS723KMATR-20AB-T"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b79",
+            "p7"
+          ]
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          8
+        ],
+        "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+        "plan_status": "test_development_required",
+        "method_family": "dc_derived",
+        "capability_status": "adapter_or_contract_pending",
+        "source_record": {
+          "id": "parameter:20AB_sens_error_cold",
+          "kind": "test_or_constraint_pending_classification",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "20AB_sens_error_cold",
+            "key": "sensitivity_error",
+            "values": {
+              "typ": "±1.8"
+            },
+            "unit": "%",
+            "conditions": "VCC=5 V; TA=-40..25°C; IP=IPR(max); typical ± values are 3 sigma",
+            "applies_to": [
+              "ACS723KMATR-20AB-T"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b79",
+              "p7"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            8
+          ],
+          "typical_interpretation": "statistical_band_not_nominal_target; audit independently from min/max limits",
+          "plan_status": "test_development_required",
+          "method_family": "dc_derived",
+          "capability_status": "adapter_or_contract_pending"
+        },
+        "source_kind": "test_or_constraint_pending_classification",
+        "label": "sensitivity_error",
+        "evidence": [
+          "b79",
+          "p7"
+        ],
+        "classification_review_pending": true,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "scope": "Discrete temperature test; statistical distribution and continuous-range validation pending",
+    "port_binding_evidence": {
+      "declaration": [
+        "IP+",
+        "IP-",
+        "DUT_GND",
+        "VCC",
+        "Viout",
+        "BW_SEL"
+      ],
+      "manual_ports_sha256": "d3d34ba632b9096d97e554d5b6dcf9168c6ff9dd2ec9ef6546405fe9d29599ef"
+    },
+    "family": "sensor_transfer",
+    "family_conditions": {
+      "supply_V": 5,
+      "temperature_C": 0,
+      "handbook_conditions": "VCC=5 V; TA=-40..25°C; IP=IPR(max); typical ± values are 3 sigma"
+    }
+  },
+  "receipt": {
+    "device": "ACS723KMATR-20AB-T",
+    "id": "sensor_20AB_sens_error_cold_T0",
+    "reference_ids": [
+      "parameter:20AB_sens_error_cold"
+    ],
+    "scope": "Discrete temperature test; statistical distribution and continuous-range validation pending",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "model_role": "reference_interface_benchmark_only",
+    "model_sha256": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+    "calibrations": [
+      {
+        "expected": 0.0,
+        "result": {
+          "value": 0.0
+        },
+        "error": 0.0,
+        "tolerance": 1e-10,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/sensor_family_qualification/simulations/d680d9c16ee42b6d23fa3d308d1fffc72cd6dc88a7711ece62c39c9ab7772b1d",
+        "artifacts": {
+          "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+          "test.cir": "2d0ec882a70f7b30bcd15aba88106bcfb15089f3490e6be54d87ecfee8045b8a",
+          "test.raw": "e7625fe20f38a9abd63888b1a7163b930acde884a30d324032b5176288567691",
+          "test.log": "4c5e76ab1a5677c95d68ac5b83390d60fa98b5637d3ecb7b063e774b0c9b4928",
+          "execution.json": "b98aa6b919097c2745e153184918c06e654c6bf6a12e6476fa2fb47582e5d9d0"
+        }
+      },
+      {
+        "expected": 100.0,
+        "result": {
+          "value": 100.0
+        },
+        "error": 0.0,
+        "tolerance": 0.01,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/sensor_family_qualification/simulations/fb12fba95a8ddd54c3fcf7140d1a106b20d50e692211b11b3acfc55c98d18a90",
+        "artifacts": {
+          "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+          "test.cir": "29ab8cfe51a2cae27a17f9c09182834c6d30a7c5ef1744aa93c1f49db5314e84",
+          "test.raw": "e5fd8e858e33a20d49adc73da36870d09e337c6364f5d09f8822ca324e566252",
+          "test.log": "e66d476a928c92c075ec460efdcf9e0685904a87c2a8f87fd9d8d06fa6854c92",
+          "execution.json": "22bd7ca85f8cb1806e981e87e26438823ef9b5f7d25a2ec1d6698296c9cc941a"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": -0.1639958793380858
+      },
+      "acceptance": "pending",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/sensor_family_qualification/simulations/e409ae0cf6cb245cc54f3fa275a25fe1f920d88b5332923a902b8191b22835ef",
+      "artifacts": {
+        "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+        "test.cir": "5d2a25a2cb7c17bfadca400a93084f7caadc4a2ae3f5811a7732df8c7f2ff6a6",
+        "test.raw": "cceacd763d6be7e8d483fb8f89377503840f2c395f7b6d948635b3d4b976dfb2",
+        "test.log": "5616060cd2c922afa16b40361d54ef38df3bd96773f90bddbd99b9f1a0e17e6f",
+        "execution.json": "738bb7698acab984be8860c5a25d0f588c486b52bebe66cf1b712fbb72d8dcfb"
+      }
+    },
+    "protocol_sha256": "b599bb9e2bf46e75881e5bb1821e6797cd85e27cfe0c96852fb84ceaf2d02d6e"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

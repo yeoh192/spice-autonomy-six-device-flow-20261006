@@ -24,3 +24,8 @@ full coverage and electrical acceptance are still reported independently.
 ## GPT校正测试库第一批
 
 22项方法已通过真实校准/试运行并登记；256项离线检查通过，统一入口完成22项回归。20项模型结果通过、2项失败；五器件全手册覆盖未完成。运行与证据见[GPT_TEST_CORRECTION.md](GPT_TEST_CORRECTION.md)。
+
+
+## v0.3.3 覆盖回写与测试族
+
+新库通过 `coverage_audit.py --gpt-library gpt_test_library --import-only` 回写；所有实际校准、模型和波形重新核验。新增ACS/ADA测试族映射及10项真实验证方法，合计32项。运行 `bash RUN_REGISTERED_COVERAGE_FAMILIES.sh --check-only` 可离线生成覆盖报告；`--run` 执行统一回归。完整说明见 [REGISTERED_COVERAGE_FAMILIES.md](REGISTERED_COVERAGE_FAMILIES.md)。其余生成器与全手册交付仍有缺口。

@@ -67,3 +67,10 @@ env -u DASHSCOPE_API_KEY -u GLM_API_KEY bash package/RUN_FIVE_TEST_COMPLETION.sh
 22项精确条件方法经GPT核对、独立解析校准和真实LTspice试验后登记；已通过统一spice_flow.py入口运行。1N4148 6项、电容8项、变压器6项、ACS723 1项、ADA4528 1项；20项模型结果通过、2项失败。方法可用与候选模型交付分开，五器件全覆盖仍未完成。256项离线检查通过。
 
 运行 `bash package/RUN_GPT_CORRECTED_TESTS.sh --run`，无需API Key。本版本仍是原用户macOS绝对路径快照。真实证据、注册记录、剩余队列及范围见[GPT测试校正说明](package/GPT_TEST_CORRECTION.md)。Release附件提供完整校验包。
+
+
+## v0.3.3：覆盖回写与继续补齐测试族
+
+已接通登记库→覆盖回写，并完成ACS723/ADA4528的181条手册测试记录映射。共111个具体条件测试经过真实LTspice校准、器件试运行和统一入口回归；其中非线性端点算法只作诊断，不降低手册覆盖缺口。265项离线测试通过。ACS723缺方法37→29，ADA4528 144→112；整条条件覆盖、统计分布及最终模型验收仍独立保留。
+
+入口：`bash package/RUN_REGISTERED_COVERAGE_FAMILIES.sh --check-only` 离线回写证据，`--run` 执行统一回归。当前Mac路径快照仍需对应绝对路径存在。说明：[覆盖回写与测试族](package/REGISTERED_COVERAGE_FAMILIES.md)。

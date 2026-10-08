@@ -1,0 +1,17 @@
+{
+  "value": 0.49678707233913927,
+  "test": "turns_N3",
+  "execution": "completed",
+  "acceptance": "pass",
+  "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+  "protocol_sha256": "f46d7d2e84c0abceb797a3f1946e8f1272a8cd7173f9405ffacfd493d78b2aa9",
+  "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/extended_family_unified_regression/750311423/d3b5f88f3dde/simulations/ed446fac0611cd4d4e73ba73382985042059d3becaaecab82507779a77bd9e5b",
+  "unit": "1",
+  "artifact_hashes": {
+    "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+    "test.cir": "8f5bdc0f63e8bc5439a7f88340b4324f9ef7a0abc3c3b274f00546d5d7175a50",
+    "test.raw": "80bec1304d57125255106abc91a467703d9095ec3c4f15617b6a47098f0da425",
+    "test.log": "1a4fff991c55f50f6cc9b120c21ef5b1272225fc965c368bd3fb06b0ce70ca66",
+    "execution.json": "26412b5d8ac9da13dd8381785de3dd041826cf3a7f9e97a1932d85e77a750322"
+  }
+}

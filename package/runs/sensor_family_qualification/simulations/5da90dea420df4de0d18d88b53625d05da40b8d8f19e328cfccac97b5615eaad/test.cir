@@ -1,0 +1,9 @@
+Declarative SPICE workflow circuit
+.options plotwinsize=0
+.temp 75
+.options method=trap
+IFORCE 0 OUT 0
+RCAL OUT 0 0.20000000000000001
+.dc IFORCE -20 20 1
+.save v(out)
+.end

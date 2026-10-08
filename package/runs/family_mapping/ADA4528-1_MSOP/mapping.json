@@ -1,0 +1,4373 @@
+{
+  "device": "ADA4528-1_MSOP",
+  "inventory_sha256": "a13c29b0e7634979c0d79f866d220c33d388fdf71c0eea667ddc7fe468f41792",
+  "records": [
+    {
+      "reference_id": "parameter:thermal_ja_MSOP",
+      "family": "thermal",
+      "generator": null,
+      "conditions_verbatim": "4-layer JEDEC board; exposed pad soldered where applicable",
+      "reference_evidence": {
+        "id": "thermal_ja_MSOP",
+        "key": "thermal_resistance_junction_ambient",
+        "values": {
+          "value": 142
+        },
+        "unit": "°C/W",
+        "conditions": "4-layer JEDEC board; exposed pad soldered where applicable",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-2_MSOP"
+        ],
+        "rating_kind": "thermal",
+        "state": "initial",
+        "evidence_refs": [
+          "b61",
+          "p5"
+        ]
+      },
+      "pdf_pages": [
+        6
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:thermal_jc_MSOP",
+      "family": "thermal",
+      "generator": null,
+      "conditions_verbatim": "Case measured at package top; footnote 1 is not part of numeric value",
+      "reference_evidence": {
+        "id": "thermal_jc_MSOP",
+        "key": "thermal_resistance_junction_case",
+        "values": {
+          "value": 45
+        },
+        "unit": "°C/W",
+        "conditions": "Case measured at package top; footnote 1 is not part of numeric value",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-2_MSOP"
+        ],
+        "rating_kind": "thermal",
+        "state": "initial",
+        "evidence_refs": [
+          "b61",
+          "p5"
+        ]
+      },
+      "pdf_pages": [
+        6
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:vos_2.5",
+      "family": "offset_bias",
+      "generator": "offset_bias",
+      "conditions_verbatim": "VSY=2.5 V; VCM=0..2.5 V; TA=25°C",
+      "reference_evidence": {
+        "id": "vos_2.5",
+        "key": "input_offset_voltage",
+        "values": {
+          "typ": 0.3,
+          "max": 2.5
+        },
+        "unit": "μV",
+        "conditions": "VSY=2.5 V; VCM=0..2.5 V; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "static_vos_2p5_T25_CM1p25"
+      ]
+    },
+    {
+      "reference_id": "parameter:cmrr_2.5",
+      "family": "rejection",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=0..2.5 V; TA=25°C",
+      "reference_evidence": {
+        "id": "cmrr_2.5",
+        "key": "common_mode_rejection_ratio",
+        "values": {
+          "min": 135,
+          "typ": 158
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.5 V; VCM=0..2.5 V; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:cmrr_full_2.5",
+      "family": "rejection",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=0..2.5 V; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "cmrr_full_2.5",
+        "key": "common_mode_rejection_ratio",
+        "values": {
+          "min": 116
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.5 V; VCM=0..2.5 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:rin_diff_2.5",
+      "family": "input_impedance",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated",
+      "reference_evidence": {
+        "id": "rin_diff_2.5",
+        "key": "differential_input_resistance",
+        "values": {
+          "typ": 225
+        },
+        "unit": "kΩ",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:rin_cm_2.5",
+      "family": "input_impedance",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated",
+      "reference_evidence": {
+        "id": "rin_cm_2.5",
+        "key": "common_mode_input_resistance",
+        "values": {
+          "typ": 1
+        },
+        "unit": "GΩ",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:cin_diff_2.5",
+      "family": "input_impedance",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated",
+      "reference_evidence": {
+        "id": "cin_diff_2.5",
+        "key": "differential_input_capacitance",
+        "values": {
+          "typ": 15
+        },
+        "unit": "pF",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:cin_cm_2.5",
+      "family": "input_impedance",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated",
+      "reference_evidence": {
+        "id": "cin_cm_2.5",
+        "key": "common_mode_input_capacitance",
+        "values": {
+          "typ": 30
+        },
+        "unit": "pF",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:icc_2.5",
+      "family": "supply",
+      "generator": "supply",
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; IO=0 mA",
+      "reference_evidence": {
+        "id": "icc_2.5",
+        "key": "supply_current_per_amplifier",
+        "values": {
+          "typ": 1.4,
+          "max": 1.7
+        },
+        "unit": "mA",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; IO=0 mA",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_icc_2p5_V2p5_T25"
+      ]
+    },
+    {
+      "reference_id": "parameter:icc_full_2.5",
+      "family": "supply",
+      "generator": "supply",
+      "conditions_verbatim": "VSY=2.5 V; TA=-40..125°C; IO=0 mA",
+      "reference_evidence": {
+        "id": "icc_full_2.5",
+        "key": "supply_current_per_amplifier",
+        "values": {
+          "max": 2.1
+        },
+        "unit": "mA",
+        "conditions": "VSY=2.5 V; TA=-40..125°C; IO=0 mA",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_icc_full_2p5_V2p5_T125",
+        "family_icc_full_2p5_V2p5_T25",
+        "family_icc_full_2p5_V2p5_Tm40"
+      ]
+    },
+    {
+      "reference_id": "parameter:psrr_2.5",
+      "family": "rejection",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.2..5.5 V; TA=25°C; specified in 2.5 V table",
+      "reference_evidence": {
+        "id": "psrr_2.5",
+        "key": "power_supply_rejection_ratio",
+        "values": {
+          "min": 130,
+          "typ": 150
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.2..5.5 V; TA=25°C; specified in 2.5 V table",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:sr_2.5",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; RL=10 kΩ; CL=100 pF; AV=1",
+      "reference_evidence": {
+        "id": "sr_2.5",
+        "key": "slew_rate",
+        "values": {
+          "typ": 0.45
+        },
+        "unit": "V/μs",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:gbp_2.5",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=100",
+      "reference_evidence": {
+        "id": "gbp_2.5",
+        "key": "gain_bandwidth_product",
+        "values": {
+          "typ": 3
+        },
+        "unit": "MHz",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:bw_2.5",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+      "reference_evidence": {
+        "id": "bw_2.5",
+        "key": "closed_loop_bandwidth_minus3dB",
+        "values": {
+          "typ": 6.2
+        },
+        "unit": "MHz",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:noise_2.5",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; 0.1..10 Hz; AV=100",
+      "reference_evidence": {
+        "id": "noise_2.5",
+        "key": "input_voltage_noise_peak_to_peak",
+        "values": {
+          "typ": 97
+        },
+        "unit": "nV p-p",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; 0.1..10 Hz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:density_2.5",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; f=1 kHz; AV=100",
+      "reference_evidence": {
+        "id": "density_2.5",
+        "key": "input_voltage_noise_density",
+        "values": {
+          "typ": 5.6
+        },
+        "unit": "nV/√Hz",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; f=1 kHz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:current_density_2.5",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; f=1 kHz; AV=100",
+      "reference_evidence": {
+        "id": "current_density_2.5",
+        "key": "input_current_noise_density",
+        "values": {
+          "typ": 0.7
+        },
+        "unit": "pA/√Hz",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; f=1 kHz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:recovery_2.5",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; RL=10 kΩ; CL=100 pF; AV=-10",
+      "reference_evidence": {
+        "id": "recovery_2.5",
+        "key": "overload_recovery_time",
+        "values": {
+          "typ": 50
+        },
+        "unit": "μs",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C unless stated; RL=10 kΩ; CL=100 pF; AV=-10",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:vos_5",
+      "family": "offset_bias",
+      "generator": "offset_bias",
+      "conditions_verbatim": "VSY=5 V; VCM=0..5 V; TA=25°C",
+      "reference_evidence": {
+        "id": "vos_5",
+        "key": "input_offset_voltage",
+        "values": {
+          "typ": 0.3,
+          "max": 2.5
+        },
+        "unit": "μV",
+        "conditions": "VSY=5 V; VCM=0..5 V; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "static_vos_5_T25_CM2p5"
+      ]
+    },
+    {
+      "reference_id": "parameter:cmrr_5",
+      "family": "rejection",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=0..5 V; TA=25°C",
+      "reference_evidence": {
+        "id": "cmrr_5",
+        "key": "common_mode_rejection_ratio",
+        "values": {
+          "min": 137,
+          "typ": 160
+        },
+        "unit": "dB",
+        "conditions": "VSY=5 V; VCM=0..5 V; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:cmrr_full_5",
+      "family": "rejection",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=0..5 V; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "cmrr_full_5",
+        "key": "common_mode_rejection_ratio",
+        "values": {
+          "min": 122
+        },
+        "unit": "dB",
+        "conditions": "VSY=5 V; VCM=0..5 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:rin_diff_5",
+      "family": "input_impedance",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated",
+      "reference_evidence": {
+        "id": "rin_diff_5",
+        "key": "differential_input_resistance",
+        "values": {
+          "typ": 190
+        },
+        "unit": "kΩ",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:rin_cm_5",
+      "family": "input_impedance",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated",
+      "reference_evidence": {
+        "id": "rin_cm_5",
+        "key": "common_mode_input_resistance",
+        "values": {
+          "typ": 1
+        },
+        "unit": "GΩ",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:cin_diff_5",
+      "family": "input_impedance",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated",
+      "reference_evidence": {
+        "id": "cin_diff_5",
+        "key": "differential_input_capacitance",
+        "values": {
+          "typ": 16.5
+        },
+        "unit": "pF",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:cin_cm_5",
+      "family": "input_impedance",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated",
+      "reference_evidence": {
+        "id": "cin_cm_5",
+        "key": "common_mode_input_capacitance",
+        "values": {
+          "typ": 33
+        },
+        "unit": "pF",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:icc_5",
+      "family": "supply",
+      "generator": "supply",
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; IO=0 mA",
+      "reference_evidence": {
+        "id": "icc_5",
+        "key": "supply_current_per_amplifier",
+        "values": {
+          "typ": 1.5,
+          "max": 1.8
+        },
+        "unit": "mA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; IO=0 mA",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "supply_current_5V_25C"
+      ]
+    },
+    {
+      "reference_id": "parameter:icc_full_5",
+      "family": "supply",
+      "generator": "supply",
+      "conditions_verbatim": "VSY=5 V; TA=-40..125°C; IO=0 mA",
+      "reference_evidence": {
+        "id": "icc_full_5",
+        "key": "supply_current_per_amplifier",
+        "values": {
+          "max": 2.2
+        },
+        "unit": "mA",
+        "conditions": "VSY=5 V; TA=-40..125°C; IO=0 mA",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_icc_full_5_V5p0_T125",
+        "family_icc_full_5_V5p0_T25",
+        "family_icc_full_5_V5p0_Tm40"
+      ]
+    },
+    {
+      "reference_id": "parameter:psrr_5",
+      "family": "rejection",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.2..5.5 V; TA=25°C; specified in 5 V table",
+      "reference_evidence": {
+        "id": "psrr_5",
+        "key": "power_supply_rejection_ratio",
+        "values": {
+          "min": 130,
+          "typ": 150
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.2..5.5 V; TA=25°C; specified in 5 V table",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:sr_5",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; RL=10 kΩ; CL=100 pF; AV=1",
+      "reference_evidence": {
+        "id": "sr_5",
+        "key": "slew_rate",
+        "values": {
+          "typ": 0.5
+        },
+        "unit": "V/μs",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:gbp_5",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=100",
+      "reference_evidence": {
+        "id": "gbp_5",
+        "key": "gain_bandwidth_product",
+        "values": {
+          "typ": 3.4
+        },
+        "unit": "MHz",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:bw_5",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+      "reference_evidence": {
+        "id": "bw_5",
+        "key": "closed_loop_bandwidth_minus3dB",
+        "values": {
+          "typ": 6.5
+        },
+        "unit": "MHz",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:noise_5",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; 0.1..10 Hz; AV=100",
+      "reference_evidence": {
+        "id": "noise_5",
+        "key": "input_voltage_noise_peak_to_peak",
+        "values": {
+          "typ": 99
+        },
+        "unit": "nV p-p",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; 0.1..10 Hz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:density_5",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; f=1 kHz; AV=100",
+      "reference_evidence": {
+        "id": "density_5",
+        "key": "input_voltage_noise_density",
+        "values": {
+          "typ": 5.9
+        },
+        "unit": "nV/√Hz",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; f=1 kHz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:current_density_5",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; f=1 kHz; AV=100",
+      "reference_evidence": {
+        "id": "current_density_5",
+        "key": "input_current_noise_density",
+        "values": {
+          "typ": 0.5
+        },
+        "unit": "pA/√Hz",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; f=1 kHz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:recovery_5",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; RL=10 kΩ; CL=100 pF; AV=-10",
+      "reference_evidence": {
+        "id": "recovery_5",
+        "key": "overload_recovery_time",
+        "values": {
+          "typ": 50
+        },
+        "unit": "μs",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; RL=10 kΩ; CL=100 pF; AV=-10",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:vos_2.5_full_MSOP",
+      "family": "offset_bias",
+      "generator": "offset_bias",
+      "conditions_verbatim": "VSY=2.5 V; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "vos_2.5_full_MSOP",
+        "key": "input_offset_voltage",
+        "values": {
+          "max": 4
+        },
+        "unit": "μV",
+        "conditions": "VSY=2.5 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-2_MSOP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "static_vos_2p5_full_MSOP_T125_CM1p25",
+        "static_vos_2p5_full_MSOP_T25_CM1p25",
+        "static_vos_2p5_full_MSOP_Tm40_CM1p25"
+      ]
+    },
+    {
+      "reference_id": "parameter:drift_2.5_MSOP",
+      "family": "offset_bias",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "drift_2.5_MSOP",
+        "key": "offset_voltage_drift",
+        "values": {
+          "typ": 0.002,
+          "max": 0.015
+        },
+        "unit": "μV/°C",
+        "conditions": "VSY=2.5 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-2_MSOP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:vos_5_full",
+      "family": "offset_bias",
+      "generator": "offset_bias",
+      "conditions_verbatim": "VSY=5 V; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "vos_5_full",
+        "key": "input_offset_voltage",
+        "values": {
+          "max": 4
+        },
+        "unit": "μV",
+        "conditions": "VSY=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "static_vos_5_full_T125_CM2p5",
+        "static_vos_5_full_T25_CM2p5",
+        "static_vos_5_full_Tm40_CM2p5"
+      ]
+    },
+    {
+      "reference_id": "parameter:drift_5",
+      "family": "offset_bias",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "drift_5",
+        "key": "offset_voltage_drift",
+        "values": {
+          "typ": 0.002,
+          "max": 0.015
+        },
+        "unit": "μV/°C",
+        "conditions": "VSY=5 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:ib_2.5",
+      "family": "offset_bias",
+      "generator": "offset_bias",
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C",
+      "reference_evidence": {
+        "id": "ib_2.5",
+        "key": "input_bias_current",
+        "values": {
+          "typ": 220,
+          "max": 400
+        },
+        "unit": "pA",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "static_ib_2p5_T25_CM1p25"
+      ]
+    },
+    {
+      "reference_id": "parameter:ib_2.5_full",
+      "family": "offset_bias",
+      "generator": "offset_bias",
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "ib_2.5_full",
+        "key": "input_bias_current",
+        "values": {
+          "max": 600
+        },
+        "unit": "pA",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "static_ib_2p5_full_T125_CM1p25",
+        "static_ib_2p5_full_T25_CM1p25",
+        "static_ib_2p5_full_Tm40_CM1p25"
+      ]
+    },
+    {
+      "reference_id": "parameter:ios_2.5",
+      "family": "offset_bias",
+      "generator": "offset_bias",
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C",
+      "reference_evidence": {
+        "id": "ios_2.5",
+        "key": "input_offset_current",
+        "values": {
+          "typ": 440,
+          "max": 800
+        },
+        "unit": "pA",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "static_ios_2p5_T25_CM1p25"
+      ]
+    },
+    {
+      "reference_id": "parameter:ios_2.5_full",
+      "family": "offset_bias",
+      "generator": "offset_bias",
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "ios_2.5_full",
+        "key": "input_offset_current",
+        "values": {
+          "max": 1000
+        },
+        "unit": "pA",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "static_ios_2p5_full_T125_CM1p25",
+        "static_ios_2p5_full_T25_CM1p25",
+        "static_ios_2p5_full_Tm40_CM1p25"
+      ]
+    },
+    {
+      "reference_id": "parameter:ib_5_1",
+      "family": "offset_bias",
+      "generator": "offset_bias",
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C",
+      "reference_evidence": {
+        "id": "ib_5_1",
+        "key": "input_bias_current",
+        "values": {
+          "typ": 90,
+          "max": 200
+        },
+        "unit": "pA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "static_ib_5_1_T25_CM2p5"
+      ]
+    },
+    {
+      "reference_id": "parameter:ib_5_full_1",
+      "family": "offset_bias",
+      "generator": "offset_bias",
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "ib_5_full_1",
+        "key": "input_bias_current",
+        "values": {
+          "max": 300
+        },
+        "unit": "pA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "static_ib_5_full_1_T125_CM2p5",
+        "static_ib_5_full_1_T25_CM2p5",
+        "static_ib_5_full_1_Tm40_CM2p5"
+      ]
+    },
+    {
+      "reference_id": "parameter:ios_5_1",
+      "family": "offset_bias",
+      "generator": "offset_bias",
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C",
+      "reference_evidence": {
+        "id": "ios_5_1",
+        "key": "input_offset_current",
+        "values": {
+          "typ": 180,
+          "max": 400
+        },
+        "unit": "pA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "static_ios_5_1_T25_CM2p5"
+      ]
+    },
+    {
+      "reference_id": "parameter:ios_5_full_1",
+      "family": "offset_bias",
+      "generator": "offset_bias",
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "ios_5_full_1",
+        "key": "input_offset_current",
+        "values": {
+          "max": 500
+        },
+        "unit": "pA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "static_ios_5_full_1_T125_CM2p5",
+        "static_ios_5_full_1_T25_CM2p5",
+        "static_ios_5_full_1_Tm40_CM2p5"
+      ]
+    },
+    {
+      "reference_id": "parameter:vin_range_2.5",
+      "family": "setup",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C",
+      "reference_evidence": {
+        "id": "vin_range_2.5",
+        "key": "input_voltage_range",
+        "values": {
+          "min": 0,
+          "max": 2.5
+        },
+        "unit": "V",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:aol_2.5_0",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..2.4 V; TA=25°C",
+      "reference_evidence": {
+        "id": "aol_2.5_0",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 130,
+          "typ": 140
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..2.4 V; TA=25°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:aol_2.5_0_full",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..2.4 V; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "aol_2.5_0_full",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 126
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..2.4 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:aol_2.5_1",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..2.4 V; TA=25°C",
+      "reference_evidence": {
+        "id": "aol_2.5_1",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 125,
+          "typ": 132
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..2.4 V; TA=25°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:aol_2.5_1_full",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..2.4 V; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "aol_2.5_1_full",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 121
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..2.4 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:voh_2.5_10",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+      "reference_evidence": {
+        "id": "voh_2.5_10",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 2.49,
+          "typ": 2.495
+        },
+        "unit": "V",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_voh_2p5_10_V2p5_T25"
+      ]
+    },
+    {
+      "reference_id": "parameter:voh_2.5_10_full",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "voh_2.5_10_full",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 2.485
+        },
+        "unit": "V",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_voh_2p5_10_full_V2p5_T125",
+        "family_voh_2p5_10_full_V2p5_T25",
+        "family_voh_2p5_10_full_V2p5_Tm40"
+      ]
+    },
+    {
+      "reference_id": "parameter:vol_2.5_10",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+      "reference_evidence": {
+        "id": "vol_2.5_10",
+        "key": "output_voltage_low",
+        "values": {
+          "typ": 5,
+          "max": 10
+        },
+        "unit": "mV",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_vol_2p5_10_V2p5_T25"
+      ]
+    },
+    {
+      "reference_id": "parameter:vol_2.5_10_full",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "vol_2.5_10_full",
+        "key": "output_voltage_low",
+        "values": {
+          "max": 15
+        },
+        "unit": "mV",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_vol_2p5_10_full_V2p5_T125",
+        "family_vol_2p5_10_full_V2p5_T25",
+        "family_vol_2p5_10_full_V2p5_Tm40"
+      ]
+    },
+    {
+      "reference_id": "parameter:voh_2.5_2",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+      "reference_evidence": {
+        "id": "voh_2.5_2",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 2.46,
+          "typ": 2.48
+        },
+        "unit": "V",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_voh_2p5_2_V2p5_T25"
+      ]
+    },
+    {
+      "reference_id": "parameter:voh_2.5_2_full",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "voh_2.5_2_full",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 2.44
+        },
+        "unit": "V",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_voh_2p5_2_full_V2p5_T125",
+        "family_voh_2p5_2_full_V2p5_T25",
+        "family_voh_2p5_2_full_V2p5_Tm40"
+      ]
+    },
+    {
+      "reference_id": "parameter:vol_2.5_2",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+      "reference_evidence": {
+        "id": "vol_2.5_2",
+        "key": "output_voltage_low",
+        "values": {
+          "typ": 20,
+          "max": 40
+        },
+        "unit": "mV",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_vol_2p5_2_V2p5_T25"
+      ]
+    },
+    {
+      "reference_id": "parameter:vol_2.5_2_full",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "vol_2.5_2_full",
+        "key": "output_voltage_low",
+        "values": {
+          "max": 60
+        },
+        "unit": "mV",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_vol_2p5_2_full_V2p5_T125",
+        "family_vol_2p5_2_full_V2p5_T25",
+        "family_vol_2p5_2_full_V2p5_Tm40"
+      ]
+    },
+    {
+      "reference_id": "parameter:isc_2.5",
+      "family": "output_swing",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C",
+      "reference_evidence": {
+        "id": "isc_2.5",
+        "key": "short_circuit_current",
+        "values": {
+          "typ": "±30"
+        },
+        "unit": "mA",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "statistical_band_not_nominal_target"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:zout_2.5",
+      "family": "output_impedance",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C; f=1 kHz; AV=10",
+      "reference_evidence": {
+        "id": "zout_2.5",
+        "key": "closed_loop_output_impedance",
+        "values": {
+          "typ": 0.1
+        },
+        "unit": "Ω",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C; f=1 kHz; AV=10",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:psrr_full_2.5",
+      "family": "rejection",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.2..5.5 V; TA=-40..125°C; specified in 2.5 V table",
+      "reference_evidence": {
+        "id": "psrr_full_2.5",
+        "key": "power_supply_rejection_ratio",
+        "values": {
+          "min": 127
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.2..5.5 V; TA=-40..125°C; specified in 2.5 V table",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:settling_2.5",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C; VIN=1.5 V step; RL=10 kΩ; CL=100 pF; AV=-1",
+      "reference_evidence": {
+        "id": "settling_2.5",
+        "key": "settling_time_to_0.1_percent",
+        "values": {
+          "typ": 7
+        },
+        "unit": "μs",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C; VIN=1.5 V step; RL=10 kΩ; CL=100 pF; AV=-1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:ugc_2.5",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+      "reference_evidence": {
+        "id": "ugc_2.5",
+        "key": "unity_gain_crossover",
+        "values": {
+          "typ": 4
+        },
+        "unit": "MHz",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:phase_2.5",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+      "reference_evidence": {
+        "id": "phase_2.5",
+        "key": "phase_margin",
+        "values": {
+          "typ": 57
+        },
+        "unit": "degree",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p2"
+        ]
+      },
+      "pdf_pages": [
+        3
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:noise_density_cm_2.5",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=2 V; TA=25°C; f=1 kHz; AV=100",
+      "reference_evidence": {
+        "id": "noise_density_cm_2.5",
+        "key": "input_voltage_noise_density",
+        "values": {
+          "typ": 5.5
+        },
+        "unit": "nV/√Hz",
+        "conditions": "VSY=2.5 V; VCM=2 V; TA=25°C; f=1 kHz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:current_noise_2.5",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.5 V; VCM=VSY/2; TA=25°C; 0.1..10 Hz; AV=100",
+      "reference_evidence": {
+        "id": "current_noise_2.5",
+        "key": "input_current_noise_peak_to_peak",
+        "values": {
+          "typ": 10
+        },
+        "unit": "pA p-p",
+        "conditions": "VSY=2.5 V; VCM=VSY/2; TA=25°C; 0.1..10 Hz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b40",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:vin_range_5",
+      "family": "setup",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C",
+      "reference_evidence": {
+        "id": "vin_range_5",
+        "key": "input_voltage_range",
+        "values": {
+          "min": 0,
+          "max": 5
+        },
+        "unit": "V",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:aol_5_0",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..4.9 V; TA=25°C",
+      "reference_evidence": {
+        "id": "aol_5_0",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 127,
+          "typ": 139
+        },
+        "unit": "dB",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..4.9 V; TA=25°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:aol_5_0_full",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..4.9 V; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "aol_5_0_full",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 125
+        },
+        "unit": "dB",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ; VO=0.1..4.9 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:aol_5_1",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..4.9 V; TA=25°C",
+      "reference_evidence": {
+        "id": "aol_5_1",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 121,
+          "typ": 131
+        },
+        "unit": "dB",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..4.9 V; TA=25°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:aol_5_1_full",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..4.9 V; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "aol_5_1_full",
+        "key": "open_loop_gain",
+        "values": {
+          "min": 120
+        },
+        "unit": "dB",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ; VO=0.1..4.9 V; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528-1_MSOP",
+          "ADA4528-1_LFCSP",
+          "ADA4528-2_MSOP",
+          "ADA4528-2_LFCSP"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:voh_5_10",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+      "reference_evidence": {
+        "id": "voh_5_10",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 4.99,
+          "typ": 4.995
+        },
+        "unit": "V",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_voh_5_10_V5p0_T25"
+      ]
+    },
+    {
+      "reference_id": "parameter:voh_5_10_full",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "voh_5_10_full",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 4.98
+        },
+        "unit": "V",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_voh_5_10_full_V5p0_T125",
+        "family_voh_5_10_full_V5p0_T25",
+        "family_voh_5_10_full_V5p0_Tm40"
+      ]
+    },
+    {
+      "reference_id": "parameter:vol_5_10",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+      "reference_evidence": {
+        "id": "vol_5_10",
+        "key": "output_voltage_low",
+        "values": {
+          "typ": 5,
+          "max": 10
+        },
+        "unit": "mV",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_vol_5_10_V5p0_T25"
+      ]
+    },
+    {
+      "reference_id": "parameter:vol_5_10_full",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "vol_5_10_full",
+        "key": "output_voltage_low",
+        "values": {
+          "max": 20
+        },
+        "unit": "mV",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=10 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_vol_5_10_full_V5p0_T125",
+        "family_vol_5_10_full_V5p0_T25",
+        "family_vol_5_10_full_V5p0_Tm40"
+      ]
+    },
+    {
+      "reference_id": "parameter:voh_5_2",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+      "reference_evidence": {
+        "id": "voh_5_2",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 4.96,
+          "typ": 4.98
+        },
+        "unit": "V",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_voh_5_2_V5p0_T25"
+      ]
+    },
+    {
+      "reference_id": "parameter:voh_5_2_full",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "voh_5_2_full",
+        "key": "output_voltage_high",
+        "values": {
+          "min": 4.94
+        },
+        "unit": "V",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_voh_5_2_full_V5p0_T125",
+        "family_voh_5_2_full_V5p0_T25",
+        "family_voh_5_2_full_V5p0_Tm40"
+      ]
+    },
+    {
+      "reference_id": "parameter:vol_5_2",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+      "reference_evidence": {
+        "id": "vol_5_2",
+        "key": "output_voltage_low",
+        "values": {
+          "typ": 20,
+          "max": 40
+        },
+        "unit": "mV",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_vol_5_2_V5p0_T25"
+      ]
+    },
+    {
+      "reference_id": "parameter:vol_5_2_full",
+      "family": "output_swing",
+      "generator": "output_swing",
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+      "reference_evidence": {
+        "id": "vol_5_2_full",
+        "key": "output_voltage_low",
+        "values": {
+          "max": 60
+        },
+        "unit": "mV",
+        "conditions": "VSY=5 V; VCM=VSY/2; RL=2 kΩ to VCM; TA=-40..125°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": [
+        "family_vol_5_2_full_V5p0_T125",
+        "family_vol_5_2_full_V5p0_T25",
+        "family_vol_5_2_full_V5p0_Tm40"
+      ]
+    },
+    {
+      "reference_id": "parameter:isc_5",
+      "family": "output_swing",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C",
+      "reference_evidence": {
+        "id": "isc_5",
+        "key": "short_circuit_current",
+        "values": {
+          "typ": "±40"
+        },
+        "unit": "mA",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "statistical_band_not_nominal_target"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:zout_5",
+      "family": "output_impedance",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C; f=1 kHz; AV=10",
+      "reference_evidence": {
+        "id": "zout_5",
+        "key": "closed_loop_output_impedance",
+        "values": {
+          "typ": 0.1
+        },
+        "unit": "Ω",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C; f=1 kHz; AV=10",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b48",
+          "p3"
+        ]
+      },
+      "pdf_pages": [
+        4
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:psrr_full_5",
+      "family": "rejection",
+      "generator": null,
+      "conditions_verbatim": "VSY=2.2..5.5 V; TA=-40..125°C; specified in 5 V table",
+      "reference_evidence": {
+        "id": "psrr_full_5",
+        "key": "power_supply_rejection_ratio",
+        "values": {
+          "min": 127
+        },
+        "unit": "dB",
+        "conditions": "VSY=2.2..5.5 V; TA=-40..125°C; specified in 5 V table",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:settling_5",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C; VIN=4 V step; RL=10 kΩ; CL=100 pF; AV=-1",
+      "reference_evidence": {
+        "id": "settling_5",
+        "key": "settling_time_to_0.1_percent",
+        "values": {
+          "typ": 10
+        },
+        "unit": "μs",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C; VIN=4 V step; RL=10 kΩ; CL=100 pF; AV=-1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:ugc_5",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+      "reference_evidence": {
+        "id": "ugc_5",
+        "key": "unity_gain_crossover",
+        "values": {
+          "typ": 4
+        },
+        "unit": "MHz",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:phase_5",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+      "reference_evidence": {
+        "id": "phase_5",
+        "key": "phase_margin",
+        "values": {
+          "typ": 57
+        },
+        "unit": "degree",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C; VIN=10 mV p-p; RL=10 kΩ; CL=100 pF; AV=1",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:noise_density_cm_5",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=4.5 V; TA=25°C; f=1 kHz; AV=100",
+      "reference_evidence": {
+        "id": "noise_density_cm_5",
+        "key": "input_voltage_noise_density",
+        "values": {
+          "typ": 5.3
+        },
+        "unit": "nV/√Hz",
+        "conditions": "VSY=5 V; VCM=4.5 V; TA=25°C; f=1 kHz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "parameter:current_noise_5",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "VSY=5 V; VCM=VSY/2; TA=25°C; 0.1..10 Hz; AV=100",
+      "reference_evidence": {
+        "id": "current_noise_5",
+        "key": "input_current_noise_peak_to_peak",
+        "values": {
+          "typ": 10
+        },
+        "unit": "pA p-p",
+        "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C; 0.1..10 Hz; AV=100",
+        "applies_to": [
+          "ADA4528"
+        ],
+        "rating_kind": "electrical_characteristic",
+        "state": "initial",
+        "evidence_refs": [
+          "b52",
+          "p4"
+        ]
+      },
+      "pdf_pages": [
+        5
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "continuous_range_not_proved_by_endpoint_samples"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:3",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Voltage Noise Density vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        1
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:10",
+      "family": "offset_bias",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Input Offset Voltage vs. Common-Mode Voltage",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        9
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:13",
+      "family": "offset_bias",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Input Offset Voltage vs. Common-Mode Voltage",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        9
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:14",
+      "family": "offset_bias",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Input Bias Current vs. Temperature",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        10
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:15",
+      "family": "offset_bias",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Input Bias Current vs. Common-Mode Voltage",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        10
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:16",
+      "family": "output_swing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Output Voltage (VOL) to Supply Rail vs. Load Current",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        10
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:17",
+      "family": "offset_bias",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Input Bias Current vs. Temperature",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        10
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:18",
+      "family": "offset_bias",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Input Bias Current vs. Common-Mode Voltage",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        10
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:19",
+      "family": "output_swing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Output Voltage (VOL) to Supply Rail vs. Load Current",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        10
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:20",
+      "family": "output_swing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Output Voltage (VOH) to Supply Rail vs. Load Current",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        11
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:21",
+      "family": "output_swing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Output Voltage (VOL) to Supply Rail vs. Temperature",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        11
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:22",
+      "family": "output_swing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Output Voltage (VOH) to Supply Rail vs. Temperature",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        11
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:23",
+      "family": "output_swing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Output Voltage (VOH) to Supply Rail vs. Load Current",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        11
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:24",
+      "family": "output_swing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Output Voltage (VOL) to Supply Rail vs. Temperature",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        11
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:25",
+      "family": "output_swing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Output Voltage (VOH) to Supply Rail vs. Temperature",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        11
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:26",
+      "family": "supply",
+      "generator": "supply",
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Supply Current vs. Supply Voltage",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        12
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:27",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Open-Loop Gain and Phase vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        12
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:28",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Closed-Loop Gain vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        12
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:29",
+      "family": "supply",
+      "generator": "supply",
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Supply Current vs. Temperature",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        12
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "generator_available_exact_points",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:30",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Open-Loop Gain and Phase vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        12
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:31",
+      "family": "frequency",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Closed-Loop Gain vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        12
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:32",
+      "family": "rejection",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "CMRR vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        13
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:33",
+      "family": "rejection",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "PSRR vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        13
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:34",
+      "family": "output_impedance",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Closed-Loop Output Impedance vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        13
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:35",
+      "family": "rejection",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "CMRR vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        13
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:36",
+      "family": "rejection",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "PSRR vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        13
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:37",
+      "family": "output_impedance",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Closed-Loop Output Impedance vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        13
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:38",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Large Signal Transient Response",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        14
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:39",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Small Signal Transient Response",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        14
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:40",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Small Signal Overshoot vs. Load Capacitance",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        14
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:41",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Large Signal Transient Response",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        14
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:42",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Small Signal Transient Response",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        14
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:43",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Small Signal Overshoot vs. Load Capacitance",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        14
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:44",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Positive Overload Recovery",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        15
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:45",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Negative Overload Recovery",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        15
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:46",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Positive Settling Time to 0.1%",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        15
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:47",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Positive Overload Recovery",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        15
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:48",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Negative Overload Recovery",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        15
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:49",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Positive Settling Time to 0.1%",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        15
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:50",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Negative Settling Time to 0.1%",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        16
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:51",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Voltage Noise Density vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        16
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:52",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Current Noise Density vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        16
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:53",
+      "family": "timing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Negative Settling Time to 0.1%",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        16
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:54",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Voltage Noise Density vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        16
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:55",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Current Noise Density vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        16
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:56",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "0.1 Hz to 10 Hz Noise",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        17
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:57",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "THD + N vs. Amplitude",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        17
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:58",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "THD + N vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        17
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:59",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "0.1 Hz to 10 Hz Noise",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        17
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:60",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "THD + N vs. Amplitude",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        17
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:61",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "THD + N vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        17
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:64",
+      "family": "output_swing",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Rail-to-Rail Input and Output",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        19
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:66",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Voltage Noise Density vs. Frequency with Different Gain",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        20
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    },
+    {
+      "reference_id": "figure:67",
+      "family": "noise",
+      "generator": null,
+      "conditions_verbatim": "",
+      "reference_evidence": {
+        "key": "Voltage Noise Density vs. Frequency",
+        "values": {},
+        "unit": "",
+        "conditions": ""
+      },
+      "pdf_pages": [
+        21
+      ],
+      "reference_asset_bindings": [],
+      "gaps": [
+        "manual_conditions_missing",
+        "numeric_reference_curve_missing"
+      ],
+      "status": "capability_or_evidence_pending",
+      "full_record_coverage": false,
+      "registered_exact_point_methods": []
+    }
+  ],
+  "generated_tests": 9,
+  "full_manual_coverage": false
+}

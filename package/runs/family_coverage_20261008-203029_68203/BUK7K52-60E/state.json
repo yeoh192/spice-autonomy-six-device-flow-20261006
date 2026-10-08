@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "identity": "ed236ae6cb932f77173f7ca96f0fd3149d6de71a63b74c7d24cdd8b6a6327a4b",
+  "limits": {
+    "api_calls": 1,
+    "simulations": 0,
+    "repairs": 1,
+    "seconds": 1200
+  },
+  "usage": {
+    "api_calls": 0,
+    "simulations": 0,
+    "repairs": 0,
+    "seconds": 0.0004264999999999963
+  },
+  "status": "coverage_review_with_gaps",
+  "events": [],
+  "requests": {},
+  "simulations": {},
+  "plans": {},
+  "patches": {},
+  "checkpoints": {},
+  "reservations": {}
+}
