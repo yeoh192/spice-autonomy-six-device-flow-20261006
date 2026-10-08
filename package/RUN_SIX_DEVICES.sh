@@ -21,19 +21,18 @@ INNER
 cd "$work_dir"
 python3 -m unittest discover -s tests -p 'test_flow_*.py'
 calibration='/Users/192y/电气/D2S-FLOW-six-inputs_20261006-145226_67415/runs/ac_calibration_20261006-145715/summary.json'
-previous='/Users/192y/电气/D2S-FLOW-draft-qualification_20261006-151450_70664/runs/qualification'
 runner='/Applications/LTspice.app/Contents/SharedSupport/ltspice/LTspice/run_ltspice'
 if [[ "$mode" == --run ]]; then
   calibration="$work_dir/runs/ac_calibration/summary.json"
   python3 spice_flow.py calibrate-ac --runner "$runner" --output "$work_dir/runs/ac_calibration"
 fi
 python3 use_gpt_test_library.py --families --output runs/api_registered_tasks
-args=(--registered-tasks runs/api_registered_tasks/batch.json --gpt-library gpt_test_library --batch inputs/batch.json --calibration "$calibration" --previous "$previous" --runner "$runner")
-python3 - "$work_dir" "$calibration" "$previous" "$runner" <<'RESUME'
+args=(--registered-tasks runs/api_registered_tasks/batch.json --gpt-library gpt_test_library --batch inputs/batch.json --calibration "$calibration" --runner "$runner")
+python3 - "$work_dir" "$calibration" "$runner" <<'RESUME'
 import shlex,sys
 from pathlib import Path
-w,cal,prev,runner=sys.argv[1:]
-command=['python3','six_batch.py','--registered-tasks','runs/api_registered_tasks/batch.json','--gpt-library','gpt_test_library','--batch','inputs/batch.json','--calibration',cal,'--previous',prev,'--runner',runner,'--output','runs/six_batch','--resume']
+w,cal,runner=sys.argv[1:]
+command=['python3','six_batch.py','--registered-tasks','runs/api_registered_tasks/batch.json','--gpt-library','gpt_test_library','--batch','inputs/batch.json','--calibration',cal,'--runner',runner,'--output','runs/six_batch','--resume']
 (Path(w)/'RESUME_SIX_DEVICES.sh').write_text('#!/bin/bash\nset -euo pipefail\ncd '+shlex.quote(w)+'\n'+shlex.join(command)+'\n')
 RESUME
 python3 six_batch.py "${args[@]}" --output runs/precheck --check-only

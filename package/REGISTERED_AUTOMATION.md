@@ -8,6 +8,8 @@
 4. Candidate model iteration using every compatible registered test. BUK has 65 active tests; 1N4148 has 17. Qwen proposes patches, GLM reviews, full active regression precedes retain/rollback.
 5. Reports with remaining gaps. Missing candidates in the other four devices remain explicit; reference interfaces are not silently promoted into fitted delivery models.
 
+Fresh draft qualification does not import historical receipts tied to an obsolete calibration identity.
+
 The launcher uses qwen3.8-max-0902 and existing GLM routing. A fresh run uses a new timestamped work directory. The generated RESUME_SIX_DEVICES.sh preserves registration arguments and stage state. A changed registration/task/evidence identity is rejected on resume.
 
 Registration is verified against actual calibration and device RAW evidence. Conditions, acceptance thresholds and model interfaces are checked. Diagnostic-only methods run as diagnostics and do not enter candidate fitting or become handbook acceptance.

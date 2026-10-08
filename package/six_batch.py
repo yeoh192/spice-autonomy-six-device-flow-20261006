@@ -16,7 +16,7 @@ def run(batch,output,calibration,runner,previous,check_only=False,resume=False,e
     execute=execute or subprocess.run
     if output.exists() and not resume:raise ValueError("输出目录已存在，请使用--resume或新目录")
     output.mkdir(parents=True,exist_ok=True)
-    identity={"batch":digest(batch),"calibration":digest(calibration),"runner":str(Path(runner).resolve()),"previous":str(Path(previous).resolve())}
+    identity={"batch":digest(batch),"calibration":digest(calibration),"runner":str(Path(runner).resolve()),"previous":str(Path(previous).resolve()) if previous else None}
     if bool(registered_tasks) != bool(gpt_library):raise ValueError("测试库与登记任务必须同时提供")
     registered=[]
     if registered_tasks:
@@ -83,7 +83,8 @@ def run(batch,output,calibration,runner,previous,check_only=False,resume=False,e
         if resume and development.exists():command+=['--resume']
         development_code=execute(command).returncode
         folder=output/'draft_repair'
-        args=['repair-drafts','--batch',str(batch),'--calibration',str(Path(calibration).resolve()),'--runner',str(Path(runner).resolve()),'--previous',str(Path(previous).resolve()),'--output',str(folder),'--rounds','3']
+        args=['repair-drafts','--batch',str(batch),'--calibration',str(Path(calibration).resolve()),'--runner',str(Path(runner).resolve()),'--output',str(folder),'--rounds','3']
+        if previous:args+=['--previous',str(Path(previous).resolve())]
         if check_only:args+=['--check-only']
         calibration_pending=None
         if check_only and registered_tasks:
@@ -128,7 +129,8 @@ def run(batch,output,calibration,runner,previous,check_only=False,resume=False,e
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
-    for name in ('batch','output','calibration','runner','previous'):ap.add_argument('--'+name,type=Path,required=True)
+    for name in ('batch','output','calibration','runner'):ap.add_argument('--'+name,type=Path,required=True)
+    ap.add_argument('--previous',type=Path)
     ap.add_argument('--registered-tasks',type=Path)
     ap.add_argument('--gpt-library',type=Path)
     ap.add_argument('--coverage',type=Path,help='复用上次已验证的覆盖清单，待确认记录仍会审查')
