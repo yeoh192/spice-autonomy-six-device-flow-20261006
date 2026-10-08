@@ -1,0 +1,79 @@
+{
+  "status": "gpt_correction_completed_with_gaps",
+  "results": [
+    {
+      "device": "ACS723KMATR-20AB-T",
+      "id": "conductor_resistance_25C",
+      "reference_ids": [
+        "parameter:rip"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "reference_interface_benchmark_only",
+      "model_sha256": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+      "calibrations": [
+        {
+          "expected": 400.0,
+          "result": {
+            "value": 400.0
+          },
+          "error": 0.0,
+          "tolerance": 0.04,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/8f301002779508d32759d7320bf91c10c33db93ab944231b08cae09c0cb2897b",
+          "artifacts": {
+            "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+            "test.cir": "c10032a1d5adfdeccaa46cf89641a703ea6dd7212c27b0da7e4ee2bc291de217",
+            "test.raw": "bb4a085f7b89e78c1274f414ba8d790389cb57b9ea5eded1ec59cd17219c7a0f",
+            "test.log": "fe03ac3d3dafd55eb2624ecd4f6dafe05c34f05750a13e47b38883ad6c31433a",
+            "execution.json": "52006848c4f1328cb0bedebf18cf453c97bd6ac81ae1c7f87ee30233eeb2a47d"
+          }
+        },
+        {
+          "expected": 800.0,
+          "result": {
+            "value": 800.0
+          },
+          "error": 0.0,
+          "tolerance": 0.08,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/cf12ffa31ac3033adea00a74a6ad7287ac89aba02e29715b47e35e53c530568e",
+          "artifacts": {
+            "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+            "test.cir": "2604bfc191f5cc666cb11c47f788a2917df69e5645a7ba3481a3179f46e207c5",
+            "test.raw": "ec1f876b91679c3f4bc239eae7c599a7bbdbc34fb071c66c6a0dc682c9fda288",
+            "test.log": "a01dca22b512c89d3383b3058f7247a2df08ebc87b9661c249737e490047d228",
+            "execution.json": "e40273bcd203a236cac1a4db5952c736fa2bcb2b093dda7e97629e66c6cfb1c6"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 0.6500000000000001
+        },
+        "acceptance": "fail",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/6546f85e807c9f9d5a64b214acc5f7ff94c6caaa9e10a16f1acc4d1ea26bbf88",
+        "artifacts": {
+          "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+          "test.cir": "1deca82beeb845e110589d5909968851bde76f608c3c77e557658beca0d4f1c6",
+          "test.raw": "238cae399d0e8dbc59760bc74af509d111007bf8f70d9654124816e8ed15db81",
+          "test.log": "103d3f1b1ecfc76aa76b7e0aa120a6ebe49b0ee07b8163d614e92dfafda9be0f",
+          "execution.json": "d1eb94674dc301bba7051be1bfa663862e16290ae5751182ce2fd0118660c94c"
+        }
+      },
+      "protocol_sha256": "0abb833b469bc99f5d6ef566865830ee9d78a0cea88c51aa319fedba345e0bf7"
+    }
+  ],
+  "qualified_methods": 1,
+  "api_calls": 0,
+  "usage": {
+    "api_calls": 0,
+    "simulations": 3,
+    "repairs": 0,
+    "seconds": 12.849417707999999
+  },
+  "full_manual_coverage": false,
+  "candidate_models_modified": false
+}

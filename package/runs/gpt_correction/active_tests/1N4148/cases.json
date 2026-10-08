@@ -1,0 +1,1031 @@
+{
+  "device": "1N4148",
+  "cases": [
+    {
+      "id": "forward_25C",
+      "protocol": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "A": "P",
+          "K": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "0"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "VDRIVE",
+          "start": 0.6079471911,
+          "stop": 1.305393986,
+          "step": 0.00034872339745
+        },
+        "measurement": {
+          "mode": "curve",
+          "signal": "i(vdrive)",
+          "sign": -1,
+          "scale": 1000
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "mA",
+        "limits": {},
+        "thresholds": {
+          "MAE_over_reference_span_percent": 5.0,
+          "max_error_over_reference_span_percent": 10.0
+        }
+      },
+      "reference": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3.csv",
+        "sha256": "5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3",
+        "condition": "(2) Tj=25 C, typical"
+      },
+      "reference_ids": [
+        "figure:fig3:typ_25C"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+        "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "entry": "LEAKAGE_FITTED_1N4148",
+        "declared_ports": [
+          "A",
+          "K"
+        ],
+        "ports": [
+          "A",
+          "K"
+        ],
+        "provenance": {
+          "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+          "not_new_index_selection": true
+        }
+      },
+      "device": "1N4148",
+      "input_folder": "1N4148",
+      "reference_evidence": [
+        {
+          "id": "figure:fig3:typ_25C",
+          "kind": "test",
+          "applicable": true,
+          "binding_complete": false,
+          "bindings": [],
+          "reference_evidence": {
+            "key": "Forward current versus forward voltage",
+            "values": {},
+            "unit": "mA",
+            "conditions": "(2) Tj=25 C, typical",
+            "source_sampling": {
+              "series_id": "typ_25C",
+              "condition": "(2) Tj=25 C, typical",
+              "status": "auto_passed",
+              "sample_count": 203,
+              "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_25C.csv",
+              "visible_x_range": [
+                0.6079471910560839,
+                1.3053939858170047
+              ],
+              "y_range": [
+                1.4088718020554505,
+                459.55895112759737
+              ],
+              "extrapolated": false,
+              "source_pdf_drawing_ids": [
+                30
+              ],
+              "resampling_rmse_plot_px_at_300dpi": 0.004996619385637297,
+              "resampling_max_error_plot_px_at_300dpi": 0.03244184899221144,
+              "reconstruction_r2_in_axis_domain": 0.9999999990820946,
+              "y_resampling_rmse_in_axis_unit": 0.004481272207989643,
+              "y_unit": "mA",
+              "physical_model_fit_r2": null,
+              "independent_measurement_accuracy": null,
+              "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+              "dashed_source": false,
+              "rendered_ink_support_fraction": 1.0,
+              "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+            }
+          },
+          "pdf_pages": [
+            4
+          ],
+          "added_from_manual_review": true,
+          "reference_csv": {
+            "path": "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig3/typ_25C.csv",
+            "sha256": "5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3"
+          },
+          "reference_status": "csv_present",
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "figure:fig3:typ_25C",
+            "kind": "test",
+            "applicable": true,
+            "binding_complete": false,
+            "bindings": [],
+            "reference_evidence": {
+              "key": "Forward current versus forward voltage",
+              "values": {},
+              "unit": "mA",
+              "conditions": "(2) Tj=25 C, typical",
+              "source_sampling": {
+                "series_id": "typ_25C",
+                "condition": "(2) Tj=25 C, typical",
+                "status": "auto_passed",
+                "sample_count": 203,
+                "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_25C.csv",
+                "visible_x_range": [
+                  0.6079471910560839,
+                  1.3053939858170047
+                ],
+                "y_range": [
+                  1.4088718020554505,
+                  459.55895112759737
+                ],
+                "extrapolated": false,
+                "source_pdf_drawing_ids": [
+                  30
+                ],
+                "resampling_rmse_plot_px_at_300dpi": 0.004996619385637297,
+                "resampling_max_error_plot_px_at_300dpi": 0.03244184899221144,
+                "reconstruction_r2_in_axis_domain": 0.9999999990820946,
+                "y_resampling_rmse_in_axis_unit": 0.004481272207989643,
+                "y_unit": "mA",
+                "physical_model_fit_r2": null,
+                "independent_measurement_accuracy": null,
+                "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+                "dashed_source": false,
+                "rendered_ink_support_fraction": 1.0,
+                "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+              }
+            },
+            "pdf_pages": [
+              4
+            ],
+            "added_from_manual_review": true,
+            "reference_csv": {
+              "path": "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig3/typ_25C.csv",
+              "sha256": "5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3"
+            },
+            "reference_status": "csv_present",
+            "plan_status": "test_development_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test",
+          "label": "Forward current versus forward voltage",
+          "evidence": [
+            "pdf_page:4"
+          ],
+          "classification_review_pending": false,
+          "reference_asset_bindings": [
+            {
+              "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_25C.csv",
+              "status": "snapshot_bound",
+              "source_relative": "references/curves/fig3/typ_25C.csv",
+              "path": "assets/5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3.csv",
+              "sha256": "5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3",
+              "role": "reference_data"
+            }
+          ],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "forward_175C",
+      "protocol": {
+        "temperature_C": 175,
+        "device_nodes": {
+          "A": "P",
+          "K": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "0"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "VDRIVE",
+          "start": 0.3153464114,
+          "stop": 1.279073525,
+          "step": 0.00048186355680000006
+        },
+        "measurement": {
+          "mode": "curve",
+          "signal": "i(vdrive)",
+          "sign": -1,
+          "scale": 1000
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "mA",
+        "limits": {},
+        "thresholds": {
+          "MAE_over_reference_span_percent": 5.0,
+          "max_error_over_reference_span_percent": 10.0
+        }
+      },
+      "reference": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211.csv",
+        "sha256": "4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211",
+        "condition": "(1) Tj=175 C, typical"
+      },
+      "reference_ids": [
+        "figure:fig3:typ_175C"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+        "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "entry": "LEAKAGE_FITTED_1N4148",
+        "declared_ports": [
+          "A",
+          "K"
+        ],
+        "ports": [
+          "A",
+          "K"
+        ],
+        "provenance": {
+          "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+          "not_new_index_selection": true
+        }
+      },
+      "device": "1N4148",
+      "input_folder": "1N4148",
+      "reference_evidence": [
+        {
+          "id": "figure:fig3:typ_175C",
+          "kind": "test",
+          "applicable": true,
+          "binding_complete": false,
+          "bindings": [],
+          "reference_evidence": {
+            "key": "Forward current versus forward voltage",
+            "values": {},
+            "unit": "mA",
+            "conditions": "(1) Tj=175 C, typical",
+            "source_sampling": {
+              "series_id": "typ_175C",
+              "condition": "(1) Tj=175 C, typical",
+              "status": "auto_passed",
+              "sample_count": 203,
+              "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_175C.csv",
+              "visible_x_range": [
+                0.31534641139049235,
+                1.2790735246320728
+              ],
+              "y_range": [
+                1.4088718020554505,
+                450.56425007759594
+              ],
+              "extrapolated": false,
+              "source_pdf_drawing_ids": [
+                31
+              ],
+              "resampling_rmse_plot_px_at_300dpi": 0.0022704605882106254,
+              "resampling_max_error_plot_px_at_300dpi": 0.009030317763839928,
+              "reconstruction_r2_in_axis_domain": 0.9999999998032013,
+              "y_resampling_rmse_in_axis_unit": 0.002036287166985435,
+              "y_unit": "mA",
+              "physical_model_fit_r2": null,
+              "independent_measurement_accuracy": null,
+              "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+              "dashed_source": true,
+              "rendered_ink_support_fraction": null,
+              "rendered_ink_support_note": "not evaluated over dash gaps; continuous centreline comes from dashed PDF path"
+            }
+          },
+          "pdf_pages": [
+            4
+          ],
+          "added_from_manual_review": true,
+          "reference_csv": {
+            "path": "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig3/typ_175C.csv",
+            "sha256": "4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211"
+          },
+          "reference_status": "csv_present",
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "figure:fig3:typ_175C",
+            "kind": "test",
+            "applicable": true,
+            "binding_complete": false,
+            "bindings": [],
+            "reference_evidence": {
+              "key": "Forward current versus forward voltage",
+              "values": {},
+              "unit": "mA",
+              "conditions": "(1) Tj=175 C, typical",
+              "source_sampling": {
+                "series_id": "typ_175C",
+                "condition": "(1) Tj=175 C, typical",
+                "status": "auto_passed",
+                "sample_count": 203,
+                "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_175C.csv",
+                "visible_x_range": [
+                  0.31534641139049235,
+                  1.2790735246320728
+                ],
+                "y_range": [
+                  1.4088718020554505,
+                  450.56425007759594
+                ],
+                "extrapolated": false,
+                "source_pdf_drawing_ids": [
+                  31
+                ],
+                "resampling_rmse_plot_px_at_300dpi": 0.0022704605882106254,
+                "resampling_max_error_plot_px_at_300dpi": 0.009030317763839928,
+                "reconstruction_r2_in_axis_domain": 0.9999999998032013,
+                "y_resampling_rmse_in_axis_unit": 0.002036287166985435,
+                "y_unit": "mA",
+                "physical_model_fit_r2": null,
+                "independent_measurement_accuracy": null,
+                "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+                "dashed_source": true,
+                "rendered_ink_support_fraction": null,
+                "rendered_ink_support_note": "not evaluated over dash gaps; continuous centreline comes from dashed PDF path"
+              }
+            },
+            "pdf_pages": [
+              4
+            ],
+            "added_from_manual_review": true,
+            "reference_csv": {
+              "path": "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig3/typ_175C.csv",
+              "sha256": "4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211"
+            },
+            "reference_status": "csv_present",
+            "plan_status": "test_development_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test",
+          "label": "Forward current versus forward voltage",
+          "evidence": [
+            "pdf_page:4"
+          ],
+          "classification_review_pending": false,
+          "reference_asset_bindings": [
+            {
+              "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_175C.csv",
+              "status": "snapshot_bound",
+              "source_relative": "references/curves/fig3/typ_175C.csv",
+              "path": "assets/4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211.csv",
+              "sha256": "4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211",
+              "role": "reference_data"
+            }
+          ],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "forward_10mA",
+      "protocol": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "A": "P",
+          "K": "0"
+        },
+        "components": [
+          {
+            "kind": "I",
+            "name": "IFORCE",
+            "nodes": [
+              "0",
+              "P"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "IFORCE",
+          "start": 0,
+          "stop": 0.02,
+          "step": 0.001
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "v(p)",
+          "at": 0.01
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "V",
+        "limits": {
+          "max": 1
+        },
+        "thresholds": {}
+      },
+      "reference_ids": [
+        "parameter:vf10"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+        "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "entry": "LEAKAGE_FITTED_1N4148",
+        "declared_ports": [
+          "A",
+          "K"
+        ],
+        "ports": [
+          "A",
+          "K"
+        ],
+        "provenance": {
+          "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+          "not_new_index_selection": true
+        }
+      },
+      "device": "1N4148",
+      "input_folder": "1N4148",
+      "reference_evidence": [
+        {
+          "id": "parameter:vf10",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "vf10",
+            "key": "forward_voltage",
+            "values": {
+              "max": 1
+            },
+            "unit": "V",
+            "conditions": "IF=10 mA; Tj=25°C",
+            "applies_to": [
+              "1N4148"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b35",
+              "b36",
+              "p2"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            3
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "parameter:vf10",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "vf10",
+              "key": "forward_voltage",
+              "values": {
+                "max": 1
+              },
+              "unit": "V",
+              "conditions": "IF=10 mA; Tj=25°C",
+              "applies_to": [
+                "1N4148"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b35",
+                "b36",
+                "p2"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              3
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "forward_voltage",
+          "evidence": [
+            "b35",
+            "b36",
+            "p2"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "reverse_20V_25C",
+      "protocol": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "A": "P",
+          "K": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VREVERSE",
+            "nodes": [
+              "P",
+              "0"
+            ],
+            "value": {
+              "dc": -20
+            }
+          },
+          {
+            "kind": "V",
+            "name": "VDUMMY",
+            "nodes": [
+              "UNUSED",
+              "0"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "VDUMMY",
+          "start": 0,
+          "stop": 1,
+          "step": 1
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "i(vreverse)",
+          "at": 1,
+          "absolute": true,
+          "scale": 1000000000.0
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "nA",
+        "limits": {
+          "max": 25
+        },
+        "thresholds": {}
+      },
+      "reference_ids": [
+        "parameter:ir25"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+        "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "entry": "LEAKAGE_FITTED_1N4148",
+        "declared_ports": [
+          "A",
+          "K"
+        ],
+        "ports": [
+          "A",
+          "K"
+        ],
+        "provenance": {
+          "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+          "not_new_index_selection": true
+        }
+      },
+      "device": "1N4148",
+      "input_folder": "1N4148",
+      "reference_evidence": [
+        {
+          "id": "parameter:ir25",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "ir25",
+            "key": "reverse_current",
+            "values": {
+              "max": 25
+            },
+            "unit": "nA",
+            "conditions": "VR=20 V; Tj=25°C",
+            "applies_to": [
+              "1N4148"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b35",
+              "b36",
+              "p2"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            3
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "parameter:ir25",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "ir25",
+              "key": "reverse_current",
+              "values": {
+                "max": 25
+              },
+              "unit": "nA",
+              "conditions": "VR=20 V; Tj=25°C",
+              "applies_to": [
+                "1N4148"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b35",
+                "b36",
+                "p2"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              3
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "reverse_current",
+          "evidence": [
+            "b35",
+            "b36",
+            "p2"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "reverse_20V_150C",
+      "protocol": {
+        "temperature_C": 150,
+        "device_nodes": {
+          "A": "P",
+          "K": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VREVERSE",
+            "nodes": [
+              "P",
+              "0"
+            ],
+            "value": {
+              "dc": -20
+            }
+          },
+          {
+            "kind": "V",
+            "name": "VDUMMY",
+            "nodes": [
+              "UNUSED",
+              "0"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "VDUMMY",
+          "start": 0,
+          "stop": 1,
+          "step": 1
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "i(vreverse)",
+          "at": 1,
+          "absolute": true,
+          "scale": 1000000.0
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "μA",
+        "limits": {
+          "max": 50
+        },
+        "thresholds": {}
+      },
+      "reference_ids": [
+        "parameter:ir150"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+        "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "entry": "LEAKAGE_FITTED_1N4148",
+        "declared_ports": [
+          "A",
+          "K"
+        ],
+        "ports": [
+          "A",
+          "K"
+        ],
+        "provenance": {
+          "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+          "not_new_index_selection": true
+        }
+      },
+      "device": "1N4148",
+      "input_folder": "1N4148",
+      "reference_evidence": [
+        {
+          "id": "parameter:ir150",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "ir150",
+            "key": "reverse_current",
+            "values": {
+              "max": 50
+            },
+            "unit": "μA",
+            "conditions": "VR=20 V; Tj=150°C",
+            "applies_to": [
+              "1N4148"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b36",
+              "p2"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            3
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "parameter:ir150",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "ir150",
+              "key": "reverse_current",
+              "values": {
+                "max": 50
+              },
+              "unit": "μA",
+              "conditions": "VR=20 V; Tj=150°C",
+              "applies_to": [
+                "1N4148"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b36",
+                "p2"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              3
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "reverse_current",
+          "evidence": [
+            "b36",
+            "p2"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "capacitance_zero_bias",
+      "protocol": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "A": "P",
+          "K": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VAC",
+            "nodes": [
+              "P",
+              "0"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 1
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 1000000.0
+        },
+        "measurement": {
+          "mode": "capacitance",
+          "signal": "i(vac)",
+          "sign": -1,
+          "scale": 1000000000000.0
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "pF",
+        "limits": {
+          "max": 4
+        },
+        "thresholds": {}
+      },
+      "reference_ids": [
+        "parameter:cd"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+        "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "entry": "LEAKAGE_FITTED_1N4148",
+        "declared_ports": [
+          "A",
+          "K"
+        ],
+        "ports": [
+          "A",
+          "K"
+        ],
+        "provenance": {
+          "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+          "not_new_index_selection": true
+        }
+      },
+      "device": "1N4148",
+      "input_folder": "1N4148",
+      "reference_evidence": [
+        {
+          "id": "parameter:cd",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "cd",
+            "key": "diode_capacitance",
+            "values": {
+              "max": 4
+            },
+            "unit": "pF",
+            "conditions": "f=1 MHz; VR=0 V; Tj=25°C",
+            "applies_to": [
+              "1N4148"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b35",
+              "b36",
+              "p2"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            3
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_parallel_capacitance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+          "source_record": {
+            "id": "parameter:cd",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "cd",
+              "key": "diode_capacitance",
+              "values": {
+                "max": 4
+              },
+              "unit": "pF",
+              "conditions": "f=1 MHz; VR=0 V; Tj=25°C",
+              "applies_to": [
+                "1N4148"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b35",
+                "b36",
+                "p2"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              3
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_parallel_capacitance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "diode_capacitance",
+          "evidence": [
+            "b35",
+            "b36",
+            "p2"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    }
+  ],
+  "full_manual_coverage": false,
+  "origin": "GPT authored and real calibrated; registered for exact-condition regression"
+}

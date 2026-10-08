@@ -40,7 +40,7 @@ class TestCompletionTests(unittest.TestCase):
     r=root/name;packet=read(r/'device_input.json');m=cd.reference_model(r,packet,Path(t)/name);validate_model(Path(m['path']).read_text(),m)
     if name not in ('1N4148',):self.assertEqual(m['provenance']['role'],'reference_interface_benchmark_only')
     if name=='ACS723':
-     text=Path(m['path']).read_text();self.assertIn('.param Sensitivity=0.10000000000000001',text);self.assertNotIn('.lib ',text);self.assertEqual(len(m['provenance']['dependency_receipts']),2)
+     text=Path(m['path']).read_text();self.assertIn('params: Sensitivity=0.10000000000000001 Polarity=2',text);self.assertNotIn('.lib ',text);self.assertEqual(len(m['provenance']['dependency_receipts']),2)
  def test_preflight_all_eligible_and_filters_buk_without_api(self):
   from unittest.mock import patch
   root=Path(__file__).resolve().parents[1];batch=root/'six_inputs/batch.json'

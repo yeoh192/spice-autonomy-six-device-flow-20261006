@@ -1,0 +1,14 @@
+Title: /Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/4068793c9c9b2555cf6a62971019ab719db96894c3259bd7e267a46e05e1e919/test.cir
+Date: Thu Oct  8 19:20:05 2026
+Plotname: Operating Point
+Flags: real nocompression
+No. Variables: 2
+No. Points:            1
+Offset:    0.0000000000000000e+00
+Command: Linear Technology Corporation LTspice
+Variables:
+	0	V(p)	voltage
+	1	I(VCAL)	device_current
+Values:
+0		0.000000000000000e+00
+	0.000000000000000e+00

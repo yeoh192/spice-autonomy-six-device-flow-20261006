@@ -1,0 +1,4668 @@
+{
+  "schema": "gpt-corrected-case-library-1",
+  "cases": [
+    {
+      "id": "forward_25C",
+      "protocol": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "A": "P",
+          "K": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "0"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "VDRIVE",
+          "start": 0.6079471911,
+          "stop": 1.305393986,
+          "step": 0.00034872339745
+        },
+        "measurement": {
+          "mode": "curve",
+          "signal": "i(vdrive)",
+          "sign": -1,
+          "scale": 1000
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "mA",
+        "limits": {},
+        "thresholds": {
+          "MAE_over_reference_span_percent": 5.0,
+          "max_error_over_reference_span_percent": 10.0
+        }
+      },
+      "reference": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3.csv",
+        "sha256": "5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3",
+        "condition": "(2) Tj=25 C, typical"
+      },
+      "reference_ids": [
+        "figure:fig3:typ_25C"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+        "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "entry": "LEAKAGE_FITTED_1N4148",
+        "declared_ports": [
+          "A",
+          "K"
+        ],
+        "ports": [
+          "A",
+          "K"
+        ],
+        "provenance": {
+          "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+          "not_new_index_selection": true
+        }
+      },
+      "device": "1N4148",
+      "input_folder": "1N4148",
+      "reference_evidence": [
+        {
+          "id": "figure:fig3:typ_25C",
+          "kind": "test",
+          "applicable": true,
+          "binding_complete": false,
+          "bindings": [],
+          "reference_evidence": {
+            "key": "Forward current versus forward voltage",
+            "values": {},
+            "unit": "mA",
+            "conditions": "(2) Tj=25 C, typical",
+            "source_sampling": {
+              "series_id": "typ_25C",
+              "condition": "(2) Tj=25 C, typical",
+              "status": "auto_passed",
+              "sample_count": 203,
+              "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_25C.csv",
+              "visible_x_range": [
+                0.6079471910560839,
+                1.3053939858170047
+              ],
+              "y_range": [
+                1.4088718020554505,
+                459.55895112759737
+              ],
+              "extrapolated": false,
+              "source_pdf_drawing_ids": [
+                30
+              ],
+              "resampling_rmse_plot_px_at_300dpi": 0.004996619385637297,
+              "resampling_max_error_plot_px_at_300dpi": 0.03244184899221144,
+              "reconstruction_r2_in_axis_domain": 0.9999999990820946,
+              "y_resampling_rmse_in_axis_unit": 0.004481272207989643,
+              "y_unit": "mA",
+              "physical_model_fit_r2": null,
+              "independent_measurement_accuracy": null,
+              "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+              "dashed_source": false,
+              "rendered_ink_support_fraction": 1.0,
+              "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+            }
+          },
+          "pdf_pages": [
+            4
+          ],
+          "added_from_manual_review": true,
+          "reference_csv": {
+            "path": "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig3/typ_25C.csv",
+            "sha256": "5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3"
+          },
+          "reference_status": "csv_present",
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "figure:fig3:typ_25C",
+            "kind": "test",
+            "applicable": true,
+            "binding_complete": false,
+            "bindings": [],
+            "reference_evidence": {
+              "key": "Forward current versus forward voltage",
+              "values": {},
+              "unit": "mA",
+              "conditions": "(2) Tj=25 C, typical",
+              "source_sampling": {
+                "series_id": "typ_25C",
+                "condition": "(2) Tj=25 C, typical",
+                "status": "auto_passed",
+                "sample_count": 203,
+                "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_25C.csv",
+                "visible_x_range": [
+                  0.6079471910560839,
+                  1.3053939858170047
+                ],
+                "y_range": [
+                  1.4088718020554505,
+                  459.55895112759737
+                ],
+                "extrapolated": false,
+                "source_pdf_drawing_ids": [
+                  30
+                ],
+                "resampling_rmse_plot_px_at_300dpi": 0.004996619385637297,
+                "resampling_max_error_plot_px_at_300dpi": 0.03244184899221144,
+                "reconstruction_r2_in_axis_domain": 0.9999999990820946,
+                "y_resampling_rmse_in_axis_unit": 0.004481272207989643,
+                "y_unit": "mA",
+                "physical_model_fit_r2": null,
+                "independent_measurement_accuracy": null,
+                "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+                "dashed_source": false,
+                "rendered_ink_support_fraction": 1.0,
+                "rendered_ink_support_note": "distance <=3 rendered pixels to dark ink; supporting geometry check, not independent accuracy"
+              }
+            },
+            "pdf_pages": [
+              4
+            ],
+            "added_from_manual_review": true,
+            "reference_csv": {
+              "path": "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig3/typ_25C.csv",
+              "sha256": "5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3"
+            },
+            "reference_status": "csv_present",
+            "plan_status": "test_development_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test",
+          "label": "Forward current versus forward voltage",
+          "evidence": [
+            "pdf_page:4"
+          ],
+          "classification_review_pending": false,
+          "reference_asset_bindings": [
+            {
+              "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_25C.csv",
+              "status": "snapshot_bound",
+              "source_relative": "references/curves/fig3/typ_25C.csv",
+              "path": "assets/5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3.csv",
+              "sha256": "5075bdc13b8d7cb796c1d145b103542f828351b224b98f73837669e3b61c80c3",
+              "role": "reference_data"
+            }
+          ],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "forward_175C",
+      "protocol": {
+        "temperature_C": 175,
+        "device_nodes": {
+          "A": "P",
+          "K": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "0"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "VDRIVE",
+          "start": 0.3153464114,
+          "stop": 1.279073525,
+          "step": 0.00048186355680000006
+        },
+        "measurement": {
+          "mode": "curve",
+          "signal": "i(vdrive)",
+          "sign": -1,
+          "scale": 1000
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "mA",
+        "limits": {},
+        "thresholds": {
+          "MAE_over_reference_span_percent": 5.0,
+          "max_error_over_reference_span_percent": 10.0
+        }
+      },
+      "reference": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211.csv",
+        "sha256": "4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211",
+        "condition": "(1) Tj=175 C, typical"
+      },
+      "reference_ids": [
+        "figure:fig3:typ_175C"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+        "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "entry": "LEAKAGE_FITTED_1N4148",
+        "declared_ports": [
+          "A",
+          "K"
+        ],
+        "ports": [
+          "A",
+          "K"
+        ],
+        "provenance": {
+          "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+          "not_new_index_selection": true
+        }
+      },
+      "device": "1N4148",
+      "input_folder": "1N4148",
+      "reference_evidence": [
+        {
+          "id": "figure:fig3:typ_175C",
+          "kind": "test",
+          "applicable": true,
+          "binding_complete": false,
+          "bindings": [],
+          "reference_evidence": {
+            "key": "Forward current versus forward voltage",
+            "values": {},
+            "unit": "mA",
+            "conditions": "(1) Tj=175 C, typical",
+            "source_sampling": {
+              "series_id": "typ_175C",
+              "condition": "(1) Tj=175 C, typical",
+              "status": "auto_passed",
+              "sample_count": 203,
+              "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_175C.csv",
+              "visible_x_range": [
+                0.31534641139049235,
+                1.2790735246320728
+              ],
+              "y_range": [
+                1.4088718020554505,
+                450.56425007759594
+              ],
+              "extrapolated": false,
+              "source_pdf_drawing_ids": [
+                31
+              ],
+              "resampling_rmse_plot_px_at_300dpi": 0.0022704605882106254,
+              "resampling_max_error_plot_px_at_300dpi": 0.009030317763839928,
+              "reconstruction_r2_in_axis_domain": 0.9999999998032013,
+              "y_resampling_rmse_in_axis_unit": 0.002036287166985435,
+              "y_unit": "mA",
+              "physical_model_fit_r2": null,
+              "independent_measurement_accuracy": null,
+              "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+              "dashed_source": true,
+              "rendered_ink_support_fraction": null,
+              "rendered_ink_support_note": "not evaluated over dash gaps; continuous centreline comes from dashed PDF path"
+            }
+          },
+          "pdf_pages": [
+            4
+          ],
+          "added_from_manual_review": true,
+          "reference_csv": {
+            "path": "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig3/typ_175C.csv",
+            "sha256": "4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211"
+          },
+          "reference_status": "csv_present",
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "figure:fig3:typ_175C",
+            "kind": "test",
+            "applicable": true,
+            "binding_complete": false,
+            "bindings": [],
+            "reference_evidence": {
+              "key": "Forward current versus forward voltage",
+              "values": {},
+              "unit": "mA",
+              "conditions": "(1) Tj=175 C, typical",
+              "source_sampling": {
+                "series_id": "typ_175C",
+                "condition": "(1) Tj=175 C, typical",
+                "status": "auto_passed",
+                "sample_count": 203,
+                "csv": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_175C.csv",
+                "visible_x_range": [
+                  0.31534641139049235,
+                  1.2790735246320728
+                ],
+                "y_range": [
+                  1.4088718020554505,
+                  450.56425007759594
+                ],
+                "extrapolated": false,
+                "source_pdf_drawing_ids": [
+                  31
+                ],
+                "resampling_rmse_plot_px_at_300dpi": 0.0022704605882106254,
+                "resampling_max_error_plot_px_at_300dpi": 0.009030317763839928,
+                "reconstruction_r2_in_axis_domain": 0.9999999998032013,
+                "y_resampling_rmse_in_axis_unit": 0.002036287166985435,
+                "y_unit": "mA",
+                "physical_model_fit_r2": null,
+                "independent_measurement_accuracy": null,
+                "resolution_note": "half source stroke width converted through axis calibration; not a statistical confidence interval",
+                "dashed_source": true,
+                "rendered_ink_support_fraction": null,
+                "rendered_ink_support_note": "not evaluated over dash gaps; continuous centreline comes from dashed PDF path"
+              }
+            },
+            "pdf_pages": [
+              4
+            ],
+            "added_from_manual_review": true,
+            "reference_csv": {
+              "path": "/Users/192y/电气/六器件标准输入包_20261006/1N4148/references/curves/fig3/typ_175C.csv",
+              "sha256": "4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211"
+            },
+            "reference_status": "csv_present",
+            "plan_status": "test_development_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test",
+          "label": "Forward current versus forward voltage",
+          "evidence": [
+            "pdf_page:4"
+          ],
+          "classification_review_pending": false,
+          "reference_asset_bindings": [
+            {
+              "source_locator": "/Users/192y/电气/电气参数提取_6样例/run_20260929_multimodal/curve_digitization_v1/1N4148/fig3/typ_175C.csv",
+              "status": "snapshot_bound",
+              "source_relative": "references/curves/fig3/typ_175C.csv",
+              "path": "assets/4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211.csv",
+              "sha256": "4b15c61d7db5763fb6232b72e50696edbf79a15722c5ac639cc4fff3ca4f7211",
+              "role": "reference_data"
+            }
+          ],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "forward_10mA",
+      "protocol": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "A": "P",
+          "K": "0"
+        },
+        "components": [
+          {
+            "kind": "I",
+            "name": "IFORCE",
+            "nodes": [
+              "0",
+              "P"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "IFORCE",
+          "start": 0,
+          "stop": 0.02,
+          "step": 0.001
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "v(p)",
+          "at": 0.01
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "V",
+        "limits": {
+          "max": 1
+        },
+        "thresholds": {}
+      },
+      "reference_ids": [
+        "parameter:vf10"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+        "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "entry": "LEAKAGE_FITTED_1N4148",
+        "declared_ports": [
+          "A",
+          "K"
+        ],
+        "ports": [
+          "A",
+          "K"
+        ],
+        "provenance": {
+          "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+          "not_new_index_selection": true
+        }
+      },
+      "device": "1N4148",
+      "input_folder": "1N4148",
+      "reference_evidence": [
+        {
+          "id": "parameter:vf10",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "vf10",
+            "key": "forward_voltage",
+            "values": {
+              "max": 1
+            },
+            "unit": "V",
+            "conditions": "IF=10 mA; Tj=25°C",
+            "applies_to": [
+              "1N4148"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b35",
+              "b36",
+              "p2"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            3
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "parameter:vf10",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "vf10",
+              "key": "forward_voltage",
+              "values": {
+                "max": 1
+              },
+              "unit": "V",
+              "conditions": "IF=10 mA; Tj=25°C",
+              "applies_to": [
+                "1N4148"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b35",
+                "b36",
+                "p2"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              3
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "forward_voltage",
+          "evidence": [
+            "b35",
+            "b36",
+            "p2"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "reverse_20V_25C",
+      "protocol": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "A": "P",
+          "K": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VREVERSE",
+            "nodes": [
+              "P",
+              "0"
+            ],
+            "value": {
+              "dc": -20
+            }
+          },
+          {
+            "kind": "V",
+            "name": "VDUMMY",
+            "nodes": [
+              "UNUSED",
+              "0"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "VDUMMY",
+          "start": 0,
+          "stop": 1,
+          "step": 1
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "i(vreverse)",
+          "at": 1,
+          "absolute": true,
+          "scale": 1000000000.0
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "nA",
+        "limits": {
+          "max": 25
+        },
+        "thresholds": {}
+      },
+      "reference_ids": [
+        "parameter:ir25"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+        "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "entry": "LEAKAGE_FITTED_1N4148",
+        "declared_ports": [
+          "A",
+          "K"
+        ],
+        "ports": [
+          "A",
+          "K"
+        ],
+        "provenance": {
+          "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+          "not_new_index_selection": true
+        }
+      },
+      "device": "1N4148",
+      "input_folder": "1N4148",
+      "reference_evidence": [
+        {
+          "id": "parameter:ir25",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "ir25",
+            "key": "reverse_current",
+            "values": {
+              "max": 25
+            },
+            "unit": "nA",
+            "conditions": "VR=20 V; Tj=25°C",
+            "applies_to": [
+              "1N4148"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b35",
+              "b36",
+              "p2"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            3
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "parameter:ir25",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "ir25",
+              "key": "reverse_current",
+              "values": {
+                "max": 25
+              },
+              "unit": "nA",
+              "conditions": "VR=20 V; Tj=25°C",
+              "applies_to": [
+                "1N4148"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b35",
+                "b36",
+                "p2"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              3
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "reverse_current",
+          "evidence": [
+            "b35",
+            "b36",
+            "p2"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "reverse_20V_150C",
+      "protocol": {
+        "temperature_C": 150,
+        "device_nodes": {
+          "A": "P",
+          "K": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VREVERSE",
+            "nodes": [
+              "P",
+              "0"
+            ],
+            "value": {
+              "dc": -20
+            }
+          },
+          {
+            "kind": "V",
+            "name": "VDUMMY",
+            "nodes": [
+              "UNUSED",
+              "0"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "VDUMMY",
+          "start": 0,
+          "stop": 1,
+          "step": 1
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "i(vreverse)",
+          "at": 1,
+          "absolute": true,
+          "scale": 1000000.0
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "μA",
+        "limits": {
+          "max": 50
+        },
+        "thresholds": {}
+      },
+      "reference_ids": [
+        "parameter:ir150"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+        "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "entry": "LEAKAGE_FITTED_1N4148",
+        "declared_ports": [
+          "A",
+          "K"
+        ],
+        "ports": [
+          "A",
+          "K"
+        ],
+        "provenance": {
+          "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+          "not_new_index_selection": true
+        }
+      },
+      "device": "1N4148",
+      "input_folder": "1N4148",
+      "reference_evidence": [
+        {
+          "id": "parameter:ir150",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "ir150",
+            "key": "reverse_current",
+            "values": {
+              "max": 50
+            },
+            "unit": "μA",
+            "conditions": "VR=20 V; Tj=150°C",
+            "applies_to": [
+              "1N4148"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b36",
+              "p2"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            3
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "parameter:ir150",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "ir150",
+              "key": "reverse_current",
+              "values": {
+                "max": 50
+              },
+              "unit": "μA",
+              "conditions": "VR=20 V; Tj=150°C",
+              "applies_to": [
+                "1N4148"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b36",
+                "p2"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              3
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "reverse_current",
+          "evidence": [
+            "b36",
+            "p2"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "capacitance_zero_bias",
+      "protocol": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "A": "P",
+          "K": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VAC",
+            "nodes": [
+              "P",
+              "0"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 1
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 1000000.0
+        },
+        "measurement": {
+          "mode": "capacitance",
+          "signal": "i(vac)",
+          "sign": -1,
+          "scale": 1000000000000.0
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "pF",
+        "limits": {
+          "max": 4
+        },
+        "thresholds": {}
+      },
+      "reference_ids": [
+        "parameter:cd"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+        "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "entry": "LEAKAGE_FITTED_1N4148",
+        "declared_ports": [
+          "A",
+          "K"
+        ],
+        "ports": [
+          "A",
+          "K"
+        ],
+        "provenance": {
+          "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+          "not_new_index_selection": true
+        }
+      },
+      "device": "1N4148",
+      "input_folder": "1N4148",
+      "reference_evidence": [
+        {
+          "id": "parameter:cd",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "cd",
+            "key": "diode_capacitance",
+            "values": {
+              "max": 4
+            },
+            "unit": "pF",
+            "conditions": "f=1 MHz; VR=0 V; Tj=25°C",
+            "applies_to": [
+              "1N4148"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b35",
+              "b36",
+              "p2"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            3
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_parallel_capacitance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+          "source_record": {
+            "id": "parameter:cd",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "cd",
+              "key": "diode_capacitance",
+              "values": {
+                "max": 4
+              },
+              "unit": "pF",
+              "conditions": "f=1 MHz; VR=0 V; Tj=25°C",
+              "applies_to": [
+                "1N4148"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b35",
+                "b36",
+                "p2"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              3
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_parallel_capacitance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "diode_capacitance",
+          "evidence": [
+            "b35",
+            "b36",
+            "p2"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "cap_120Hz",
+      "reference_ids": [
+        "parameter:cap",
+        "parameter:cap_tolerance"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/EMHK350ARA470MF80G/assets/b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 120
+        },
+        "measurement": {
+          "mode": "ac_series_capacitance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1000000.0
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "μF",
+        "limits": {
+          "min": 37.6,
+          "max": 56.4
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "47uF +/-20% handbook tolerance; series definition recorded explicitly",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 120
+          },
+          "measurement": {
+            "mode": "ac_series_capacitance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1000000.0
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "f2375d7abdc8e0fffa0cdf41b39d4399a2444e8d34f7a0ea1cc4f4a045709c54",
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "model_role": "reference_interface_benchmark_only",
+      "actual_circuit": {
+        "path": "fixture_circuits/cap_120Hz.cir",
+        "sha256": "58f8fcb4b234f86026fb347ce56c2940f331d687315d68ef34a0bb57310a30e1"
+      },
+      "device": "EMHK350ARA470MF80G",
+      "input_folder": "EMHK350ARA470MF80G",
+      "reference_evidence": [
+        {
+          "id": "parameter:cap",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "cap",
+            "key": "capacitance",
+            "values": {
+              "nominal": 47
+            },
+            "unit": "μF",
+            "conditions": "20°C; 120 Hz",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b21",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_parallel_capacitance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+          "source_record": {
+            "id": "parameter:cap",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "cap",
+              "key": "capacitance",
+              "values": {
+                "nominal": 47
+              },
+              "unit": "μF",
+              "conditions": "20°C; 120 Hz",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b21",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_parallel_capacitance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "capacitance",
+          "evidence": [
+            "b21",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        },
+        {
+          "id": "parameter:cap_tolerance",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "cap_tolerance",
+            "key": "capacitance_tolerance",
+            "values": {
+              "min": -20,
+              "max": 20
+            },
+            "unit": "%",
+            "conditions": "20°C; 120 Hz",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b4",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_parallel_capacitance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+          "source_record": {
+            "id": "parameter:cap_tolerance",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "cap_tolerance",
+              "key": "capacitance_tolerance",
+              "values": {
+                "min": -20,
+                "max": 20
+              },
+              "unit": "%",
+              "conditions": "20°C; 120 Hz",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b4",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_parallel_capacitance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "capacitance_tolerance",
+          "evidence": [
+            "b4",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "df_120Hz",
+      "reference_ids": [
+        "parameter:df"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/EMHK350ARA470MF80G/assets/b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 120
+        },
+        "measurement": {
+          "mode": "ac_dissipation_factor",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "1",
+        "limits": {
+          "max": 0.14
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 120
+          },
+          "measurement": {
+            "mode": "ac_dissipation_factor",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "6e5a1882c49cb92fe589cbe95e7b65c9aafb3c053e9594bed2710b0916ce6924",
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "model_role": "reference_interface_benchmark_only",
+      "actual_circuit": {
+        "path": "fixture_circuits/df_120Hz.cir",
+        "sha256": "58f8fcb4b234f86026fb347ce56c2940f331d687315d68ef34a0bb57310a30e1"
+      },
+      "device": "EMHK350ARA470MF80G",
+      "input_folder": "EMHK350ARA470MF80G",
+      "reference_evidence": [
+        {
+          "id": "parameter:df",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "df",
+            "key": "dissipation_factor",
+            "values": {
+              "max": 0.14
+            },
+            "unit": "1",
+            "conditions": "20°C; 120 Hz",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b4",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_dissipation_factor",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+          "source_record": {
+            "id": "parameter:df",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "df",
+              "key": "dissipation_factor",
+              "values": {
+                "max": 0.14
+              },
+              "unit": "1",
+              "conditions": "20°C; 120 Hz",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b4",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_dissipation_factor",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "dissipation_factor",
+          "evidence": [
+            "b4",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "esr_20_100000Hz",
+      "reference_ids": [
+        "parameter:esr20"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/EMHK350ARA470MF80G/assets/b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 100000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0,
+          "max": 0.3
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 100000
+          },
+          "measurement": {
+            "mode": "ac_resistance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "35aee012d630e5a71c469ac31cfd6e57e81cbf2597d7f3224425a9f06974c9b4",
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "model_role": "reference_interface_benchmark_only",
+      "actual_circuit": {
+        "path": "fixture_circuits/esr_20_100000Hz.cir",
+        "sha256": "4b60809675d995bd8e71fa5622d4e0a8c34972bebf1cdd4a848678720fb66eab"
+      },
+      "device": "EMHK350ARA470MF80G",
+      "input_folder": "EMHK350ARA470MF80G",
+      "reference_evidence": [
+        {
+          "id": "parameter:esr20",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "esr20",
+            "key": "equivalent_series_resistance",
+            "values": {
+              "max": 0.3
+            },
+            "unit": "Ω",
+            "conditions": "20°C; 100..400 kHz; F80 initial",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b21",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_resistance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+          "source_record": {
+            "id": "parameter:esr20",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "esr20",
+              "key": "equivalent_series_resistance",
+              "values": {
+                "max": 0.3
+              },
+              "unit": "Ω",
+              "conditions": "20°C; 100..400 kHz; F80 initial",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b21",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_resistance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "equivalent_series_resistance",
+          "evidence": [
+            "b21",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "esr_20_200000Hz",
+      "reference_ids": [
+        "parameter:esr20"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/EMHK350ARA470MF80G/assets/b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 200000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0,
+          "max": 0.3
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 200000
+          },
+          "measurement": {
+            "mode": "ac_resistance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "59c9664c6ace16c5bacb6d3df60a6ed9a88411128f711dd4913a203bcf6b37fd",
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "model_role": "reference_interface_benchmark_only",
+      "actual_circuit": {
+        "path": "fixture_circuits/esr_20_200000Hz.cir",
+        "sha256": "f7f66241d5d4284d441e3773ff327d9853c22d43f22c5894234a08c52008edf6"
+      },
+      "device": "EMHK350ARA470MF80G",
+      "input_folder": "EMHK350ARA470MF80G",
+      "reference_evidence": [
+        {
+          "id": "parameter:esr20",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "esr20",
+            "key": "equivalent_series_resistance",
+            "values": {
+              "max": 0.3
+            },
+            "unit": "Ω",
+            "conditions": "20°C; 100..400 kHz; F80 initial",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b21",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_resistance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+          "source_record": {
+            "id": "parameter:esr20",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "esr20",
+              "key": "equivalent_series_resistance",
+              "values": {
+                "max": 0.3
+              },
+              "unit": "Ω",
+              "conditions": "20°C; 100..400 kHz; F80 initial",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b21",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_resistance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "equivalent_series_resistance",
+          "evidence": [
+            "b21",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "esr_20_400000Hz",
+      "reference_ids": [
+        "parameter:esr20"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/EMHK350ARA470MF80G/assets/b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 400000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0,
+          "max": 0.3
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 400000
+          },
+          "measurement": {
+            "mode": "ac_resistance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "7942f96247b94750f332236b07b84ad5322c87816c4cc27874c3dccd6b3486bf",
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "model_role": "reference_interface_benchmark_only",
+      "actual_circuit": {
+        "path": "fixture_circuits/esr_20_400000Hz.cir",
+        "sha256": "c822788a836be2fffef49e967b324cc330ff163c260810f8f791798ebfa0f0f8"
+      },
+      "device": "EMHK350ARA470MF80G",
+      "input_folder": "EMHK350ARA470MF80G",
+      "reference_evidence": [
+        {
+          "id": "parameter:esr20",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "esr20",
+            "key": "equivalent_series_resistance",
+            "values": {
+              "max": 0.3
+            },
+            "unit": "Ω",
+            "conditions": "20°C; 100..400 kHz; F80 initial",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b21",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_resistance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+          "source_record": {
+            "id": "parameter:esr20",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "esr20",
+              "key": "equivalent_series_resistance",
+              "values": {
+                "max": 0.3
+              },
+              "unit": "Ω",
+              "conditions": "20°C; 100..400 kHz; F80 initial",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b21",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_resistance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "equivalent_series_resistance",
+          "evidence": [
+            "b21",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "esr_-40_100000Hz",
+      "reference_ids": [
+        "parameter:esr-40"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/EMHK350ARA470MF80G/assets/e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": -40,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 100000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+      "contract": {
+        "fixed": {
+          "temperature_C": -40,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 100000
+          },
+          "measurement": {
+            "mode": "ac_resistance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "09ca222272098174910a81a83634b4d35de26e954779b79266f4aed7f30d3c1e",
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "model_role": "reference_interface_benchmark_only",
+      "actual_circuit": {
+        "path": "fixture_circuits/esr_-40_100000Hz.cir",
+        "sha256": "e4211a0f5eb1d916217416539a6f8dbff8ef91d08ce291ffe26ac05a31fdc4b0"
+      },
+      "device": "EMHK350ARA470MF80G",
+      "input_folder": "EMHK350ARA470MF80G",
+      "reference_evidence": [
+        {
+          "id": "parameter:esr-40",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "esr-40",
+            "key": "equivalent_series_resistance",
+            "values": {
+              "max": 3.0
+            },
+            "unit": "Ω",
+            "conditions": "-40°C; 100..400 kHz; F80 initial",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b21",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_resistance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+          "source_record": {
+            "id": "parameter:esr-40",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "esr-40",
+              "key": "equivalent_series_resistance",
+              "values": {
+                "max": 3.0
+              },
+              "unit": "Ω",
+              "conditions": "-40°C; 100..400 kHz; F80 initial",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b21",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_resistance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "equivalent_series_resistance",
+          "evidence": [
+            "b21",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "esr_-40_200000Hz",
+      "reference_ids": [
+        "parameter:esr-40"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/EMHK350ARA470MF80G/assets/e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": -40,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 200000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+      "contract": {
+        "fixed": {
+          "temperature_C": -40,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 200000
+          },
+          "measurement": {
+            "mode": "ac_resistance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "d9477a0dfbdb365307915d09da8c315b775b9714eff2bb75f91920305b97f238",
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "model_role": "reference_interface_benchmark_only",
+      "actual_circuit": {
+        "path": "fixture_circuits/esr_-40_200000Hz.cir",
+        "sha256": "66f7c624323ffb59c10b522ba14af9a8df086720d3356b0ad72e231b27acb276"
+      },
+      "device": "EMHK350ARA470MF80G",
+      "input_folder": "EMHK350ARA470MF80G",
+      "reference_evidence": [
+        {
+          "id": "parameter:esr-40",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "esr-40",
+            "key": "equivalent_series_resistance",
+            "values": {
+              "max": 3.0
+            },
+            "unit": "Ω",
+            "conditions": "-40°C; 100..400 kHz; F80 initial",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b21",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_resistance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+          "source_record": {
+            "id": "parameter:esr-40",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "esr-40",
+              "key": "equivalent_series_resistance",
+              "values": {
+                "max": 3.0
+              },
+              "unit": "Ω",
+              "conditions": "-40°C; 100..400 kHz; F80 initial",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b21",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_resistance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "equivalent_series_resistance",
+          "evidence": [
+            "b21",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "esr_-40_400000Hz",
+      "reference_ids": [
+        "parameter:esr-40"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/EMHK350ARA470MF80G/assets/e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306.lib",
+        "entry": "REFERENCE_CAP",
+        "declared_ports": [
+          "P",
+          "N"
+        ],
+        "ports": [
+          "P",
+          "N"
+        ],
+        "sha256": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+          "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": -40,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 400000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+      "contract": {
+        "fixed": {
+          "temperature_C": -40,
+          "device_nodes": {
+            "P": "P",
+            "N": "N"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 400000
+          },
+          "measurement": {
+            "mode": "ac_resistance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "586a52a3441ea571f96fbfe2c384e4dd7189b687fc10f3c771c11f97fb1e84c9",
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "model_role": "reference_interface_benchmark_only",
+      "actual_circuit": {
+        "path": "fixture_circuits/esr_-40_400000Hz.cir",
+        "sha256": "7e18a9e6b3aa99b6f746111f4a0aac42d8a81ea703ec02eb09e2364cb2178749"
+      },
+      "device": "EMHK350ARA470MF80G",
+      "input_folder": "EMHK350ARA470MF80G",
+      "reference_evidence": [
+        {
+          "id": "parameter:esr-40",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "esr-40",
+            "key": "equivalent_series_resistance",
+            "values": {
+              "max": 3.0
+            },
+            "unit": "Ω",
+            "conditions": "-40°C; 100..400 kHz; F80 initial",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b21",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_resistance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+          "source_record": {
+            "id": "parameter:esr-40",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "esr-40",
+              "key": "equivalent_series_resistance",
+              "values": {
+                "max": 3.0
+              },
+              "unit": "Ω",
+              "conditions": "-40°C; 100..400 kHz; F80 initial",
+              "applies_to": [
+                "EMHK350ARA470MF80G"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b21",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_resistance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "equivalent_series_resistance",
+          "evidence": [
+            "b21",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "primary_inductance",
+      "reference_ids": [
+        "parameter:inductance"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+        "entry": "REFERENCE_XFMR",
+        "declared_ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+          "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P1": "P",
+          "N1": "N",
+          "P3": "AUXP",
+          "N3": "AUXN",
+          "P2": "SECP",
+          "N2": "SECN"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          },
+          {
+            "kind": "R",
+            "name": "RAUX",
+            "nodes": [
+              "AUXN",
+              "0"
+            ],
+            "value": 1e-06
+          },
+          {
+            "kind": "R",
+            "name": "RSEC",
+            "nodes": [
+              "SECN",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 10000
+        },
+        "measurement": {
+          "mode": "ac_inductance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1000000.0
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "μH",
+        "limits": {
+          "min": 45,
+          "max": 55
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "N1 10kHz100mV; secondary/aux open-circuit convention pending review;33%RH is environment metadata",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P1": "P",
+            "N1": "N",
+            "P3": "AUXP",
+            "N3": "AUXN",
+            "P2": "SECP",
+            "N2": "SECN"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            },
+            {
+              "kind": "R",
+              "name": "RAUX",
+              "nodes": [
+                "AUXN",
+                "0"
+              ],
+              "value": 1e-06
+            },
+            {
+              "kind": "R",
+              "name": "RSEC",
+              "nodes": [
+                "SECN",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 10000
+          },
+          "measurement": {
+            "mode": "ac_inductance",
+            "signal": "v(p,n)",
+            "denominator": "i(vdrive)",
+            "sign": -1,
+            "scale": 1000000.0
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "0a4aa4a635f8937537ea1381f679c15636aeea8c82f0e4afb97f1f8c3e3b2b4d",
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "model_role": "reference_interface_benchmark_only",
+      "actual_circuit": {
+        "path": "fixture_circuits/primary_inductance.cir",
+        "sha256": "87226f9b5dab989f7e718e1b3689fee21f7f39092450d01f8a60dda76be7ab88"
+      },
+      "device": "750311423",
+      "input_folder": "750311423",
+      "reference_evidence": [
+        {
+          "id": "parameter:inductance",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "inductance",
+            "key": "primary_inductance",
+            "values": {
+              "nominal": 50,
+              "tolerance": "±10%"
+            },
+            "unit": "μH",
+            "conditions": "N1; 10 kHz; 100 mV; 20°C; 33% RH",
+            "applies_to": [
+              "750311423"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b9",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_inductance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+          "source_record": {
+            "id": "parameter:inductance",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "inductance",
+              "key": "primary_inductance",
+              "values": {
+                "nominal": 50,
+                "tolerance": "±10%"
+              },
+              "unit": "μH",
+              "conditions": "N1; 10 kHz; 100 mV; 20°C; 33% RH",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b9",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_inductance",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "primary_inductance",
+          "evidence": [
+            "b9",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "dcr_N1",
+      "reference_ids": [
+        "parameter:rdc_N1"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+        "entry": "REFERENCE_XFMR",
+        "declared_ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+          "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P1": "P",
+          "N1": "N",
+          "P3": "AUXP",
+          "N3": "AUXN",
+          "P2": "SECP",
+          "N2": "SECN"
+        },
+        "components": [
+          {
+            "kind": "I",
+            "name": "IDRIVE",
+            "nodes": [
+              "N",
+              "P"
+            ],
+            "value": {
+              "dc": 0
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "IDRIVE",
+          "start": 0,
+          "stop": 0.01,
+          "step": 0.002
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "v(P,N)",
+          "at": 0.01,
+          "scale": 100
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0.072,
+          "max": 0.108
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "20°C33%RH; other windings open;10mA is fixture choice, not a printed handbook excitation",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P1": "P",
+            "N1": "N",
+            "P3": "AUXP",
+            "N3": "AUXN",
+            "P2": "SECP",
+            "N2": "SECN"
+          },
+          "components": [
+            {
+              "kind": "I",
+              "name": "IDRIVE",
+              "nodes": [
+                "N",
+                "P"
+              ],
+              "value": {
+                "dc": 0
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "dc",
+            "source": "IDRIVE",
+            "start": 0,
+            "stop": 0.01,
+            "step": 0.002
+          },
+          "measurement": {
+            "mode": "sample",
+            "signal": "v(P,N)",
+            "at": 0.01,
+            "scale": 100
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "5b0d5db9b43692c790f615e7680ebfb90dd753d73eea9ed566f3ce87dd470fb0",
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "model_role": "reference_interface_benchmark_only",
+      "actual_circuit": {
+        "path": "fixture_circuits/dcr_N1.cir",
+        "sha256": "e205cc5bb97d0f14413a41417c988c91defb00e5d244e48fd742ac07a345d2ab"
+      },
+      "device": "750311423",
+      "input_folder": "750311423",
+      "reference_evidence": [
+        {
+          "id": "parameter:rdc_N1",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "rdc_N1",
+            "key": "dc_resistance",
+            "values": {
+              "nominal": 0.09,
+              "tolerance": "±20%"
+            },
+            "unit": "Ω",
+            "conditions": "N1; 20°C; 33% RH",
+            "applies_to": [
+              "750311423"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b9",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_resistance",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "parameter:rdc_N1",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "rdc_N1",
+              "key": "dc_resistance",
+              "values": {
+                "nominal": 0.09,
+                "tolerance": "±20%"
+              },
+              "unit": "Ω",
+              "conditions": "N1; 20°C; 33% RH",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b9",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_resistance",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "dc_resistance",
+          "evidence": [
+            "b9",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "dcr_N2",
+      "reference_ids": [
+        "parameter:rdc_N2"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+        "entry": "REFERENCE_XFMR",
+        "declared_ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+          "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P1": "P",
+          "N1": "N",
+          "P3": "AUXP",
+          "N3": "AUXN",
+          "P2": "SECP",
+          "N2": "SECN"
+        },
+        "components": [
+          {
+            "kind": "I",
+            "name": "IDRIVE",
+            "nodes": [
+              "SECN",
+              "SECP"
+            ],
+            "value": {
+              "dc": 0
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "SECN",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "IDRIVE",
+          "start": 0,
+          "stop": 0.01,
+          "step": 0.002
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "v(SECP,SECN)",
+          "at": 0.01,
+          "scale": 100
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0.009600000000000001,
+          "max": 0.0144
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "20°C33%RH; other windings open;10mA is fixture choice, not a printed handbook excitation",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P1": "P",
+            "N1": "N",
+            "P3": "AUXP",
+            "N3": "AUXN",
+            "P2": "SECP",
+            "N2": "SECN"
+          },
+          "components": [
+            {
+              "kind": "I",
+              "name": "IDRIVE",
+              "nodes": [
+                "SECN",
+                "SECP"
+              ],
+              "value": {
+                "dc": 0
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "SECN",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "dc",
+            "source": "IDRIVE",
+            "start": 0,
+            "stop": 0.01,
+            "step": 0.002
+          },
+          "measurement": {
+            "mode": "sample",
+            "signal": "v(SECP,SECN)",
+            "at": 0.01,
+            "scale": 100
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "aad4a1ab3b7222832ac00a1ef31187f3bc77040c23196e434573862d937fdd11",
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "model_role": "reference_interface_benchmark_only",
+      "actual_circuit": {
+        "path": "fixture_circuits/dcr_N2.cir",
+        "sha256": "78257c7cf694577610dcf04b547d858e24ac5bfaf5dc6044260eebc6c9592f8c"
+      },
+      "device": "750311423",
+      "input_folder": "750311423",
+      "reference_evidence": [
+        {
+          "id": "parameter:rdc_N2",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "rdc_N2",
+            "key": "dc_resistance",
+            "values": {
+              "nominal": 0.012,
+              "tolerance": "±20%"
+            },
+            "unit": "Ω",
+            "conditions": "N2; 20°C; 33% RH",
+            "applies_to": [
+              "750311423"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b9",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_resistance",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "parameter:rdc_N2",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "rdc_N2",
+              "key": "dc_resistance",
+              "values": {
+                "nominal": 0.012,
+                "tolerance": "±20%"
+              },
+              "unit": "Ω",
+              "conditions": "N2; 20°C; 33% RH",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b9",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_resistance",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "dc_resistance",
+          "evidence": [
+            "b9",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "dcr_N3",
+      "reference_ids": [
+        "parameter:rdc_N3"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+        "entry": "REFERENCE_XFMR",
+        "declared_ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+          "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P1": "P",
+          "N1": "N",
+          "P3": "AUXP",
+          "N3": "AUXN",
+          "P2": "SECP",
+          "N2": "SECN"
+        },
+        "components": [
+          {
+            "kind": "I",
+            "name": "IDRIVE",
+            "nodes": [
+              "AUXN",
+              "AUXP"
+            ],
+            "value": {
+              "dc": 0
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "AUXN",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "IDRIVE",
+          "start": 0,
+          "stop": 0.01,
+          "step": 0.002
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "v(AUXP,AUXN)",
+          "at": 0.01,
+          "scale": 100
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "Ω",
+        "limits": {
+          "min": 0.1845,
+          "max": 0.2255
+        }
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "20°C33%RH; other windings open;10mA is fixture choice, not a printed handbook excitation",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P1": "P",
+            "N1": "N",
+            "P3": "AUXP",
+            "N3": "AUXN",
+            "P2": "SECP",
+            "N2": "SECN"
+          },
+          "components": [
+            {
+              "kind": "I",
+              "name": "IDRIVE",
+              "nodes": [
+                "AUXN",
+                "AUXP"
+              ],
+              "value": {
+                "dc": 0
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "AUXN",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "dc",
+            "source": "IDRIVE",
+            "start": 0,
+            "stop": 0.01,
+            "step": 0.002
+          },
+          "measurement": {
+            "mode": "sample",
+            "signal": "v(AUXP,AUXN)",
+            "at": 0.01,
+            "scale": 100
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "042f2efd815b239df8849640a78ead9a38cdc709fae759322f3409ccfa4e13e4",
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "model_role": "reference_interface_benchmark_only",
+      "actual_circuit": {
+        "path": "fixture_circuits/dcr_N3.cir",
+        "sha256": "03b7687217c0444cfecab5d723f3fac60d03c4d190e99e279452443eb7066d29"
+      },
+      "device": "750311423",
+      "input_folder": "750311423",
+      "reference_evidence": [
+        {
+          "id": "parameter:rdc_N3",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "rdc_N3",
+            "key": "dc_resistance",
+            "values": {
+              "nominal": 0.205,
+              "tolerance": "±10%"
+            },
+            "unit": "Ω",
+            "conditions": "N3; 20°C; 33% RH",
+            "applies_to": [
+              "750311423"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b9",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_resistance",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "parameter:rdc_N3",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "rdc_N3",
+              "key": "dc_resistance",
+              "values": {
+                "nominal": 0.205,
+                "tolerance": "±10%"
+              },
+              "unit": "Ω",
+              "conditions": "N3; 20°C; 33% RH",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b9",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_resistance",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "dc_resistance",
+          "evidence": [
+            "b9",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "turns_N2",
+      "reference_ids": [
+        "parameter:turns"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+        "entry": "REFERENCE_XFMR",
+        "declared_ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+          "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P1": "P",
+          "N1": "N",
+          "P3": "AUXP",
+          "N3": "AUXN",
+          "P2": "SECP",
+          "N2": "SECN"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          },
+          {
+            "kind": "R",
+            "name": "RAUX",
+            "nodes": [
+              "AUXN",
+              "0"
+            ],
+            "value": 1e-06
+          },
+          {
+            "kind": "R",
+            "name": "RSEC",
+            "nodes": [
+              "SECN",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 10000
+        },
+        "measurement": {
+          "mode": "ac_gain_magnitude",
+          "signal": "v(secp,secn)",
+          "denominator": "v(p,n)",
+          "sign": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "1"
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "4:1:2 winding voltage ratios; chosen10kHz100mV is documented test convention pending review; handbook ratio has no printed tolerance so acceptance is pending",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P1": "P",
+            "N1": "N",
+            "P3": "AUXP",
+            "N3": "AUXN",
+            "P2": "SECP",
+            "N2": "SECN"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            },
+            {
+              "kind": "R",
+              "name": "RAUX",
+              "nodes": [
+                "AUXN",
+                "0"
+              ],
+              "value": 1e-06
+            },
+            {
+              "kind": "R",
+              "name": "RSEC",
+              "nodes": [
+                "SECN",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 10000
+          },
+          "measurement": {
+            "mode": "ac_gain_magnitude",
+            "signal": "v(secp,secn)",
+            "denominator": "v(p,n)",
+            "sign": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "a1334050e66b12d554d179615ac9c0a21156184a300e0cd7a97e8dd71e156fd2",
+      "nominal_reference": 0.25,
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "model_role": "reference_interface_benchmark_only",
+      "actual_circuit": {
+        "path": "fixture_circuits/turns_N2.cir",
+        "sha256": "ca72b1e5d006d53d206222e21c71e5a99a539a653f442981b64a1a1f2c4e9209"
+      },
+      "device": "750311423",
+      "input_folder": "750311423",
+      "reference_evidence": [
+        {
+          "id": "parameter:turns",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "turns",
+            "key": "turns_ratio",
+            "values": {
+              "value": "4:1:2"
+            },
+            "unit": "1",
+            "conditions": "N1:N2:N3",
+            "applies_to": [
+              "750311423"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b9",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_gain_magnitude",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+          "source_record": {
+            "id": "parameter:turns",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "turns",
+              "key": "turns_ratio",
+              "values": {
+                "value": "4:1:2"
+              },
+              "unit": "1",
+              "conditions": "N1:N2:N3",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b9",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_gain_magnitude",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "turns_ratio",
+          "evidence": [
+            "b9",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "turns_N3",
+      "reference_ids": [
+        "parameter:turns"
+      ],
+      "model": {
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+        "entry": "REFERENCE_XFMR",
+        "declared_ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "ports": [
+          "P1",
+          "N1",
+          "P3",
+          "N3",
+          "P2",
+          "N2"
+        ],
+        "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "provenance": {
+          "kind": "vendor_reference_only",
+          "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+          "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+          "note": "Reference interface benchmark only; prohibited as selected modeling template"
+        }
+      },
+      "protocol": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P1": "P",
+          "N1": "N",
+          "P3": "AUXP",
+          "N3": "AUXN",
+          "P2": "SECP",
+          "N2": "SECN"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          },
+          {
+            "kind": "R",
+            "name": "RAUX",
+            "nodes": [
+              "AUXN",
+              "0"
+            ],
+            "value": 1e-06
+          },
+          {
+            "kind": "R",
+            "name": "RSEC",
+            "nodes": [
+              "SECN",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 10000
+        },
+        "measurement": {
+          "mode": "ac_gain_magnitude",
+          "signal": "v(auxp,auxn)",
+          "denominator": "v(p,n)",
+          "sign": 1
+        },
+        "checks": []
+      },
+      "expectation": {
+        "unit": "1"
+      },
+      "review_status": "independent_agent_review_required",
+      "delivery_eligible": false,
+      "scope_note": "4:1:2 winding voltage ratios; chosen10kHz100mV is documented test convention pending review; handbook ratio has no printed tolerance so acceptance is pending",
+      "contract": {
+        "fixed": {
+          "temperature_C": 20,
+          "device_nodes": {
+            "P1": "P",
+            "N1": "N",
+            "P3": "AUXP",
+            "N3": "AUXN",
+            "P2": "SECP",
+            "N2": "SECN"
+          },
+          "components": [
+            {
+              "kind": "V",
+              "name": "VDRIVE",
+              "nodes": [
+                "P",
+                "N"
+              ],
+              "value": {
+                "dc": 0,
+                "ac": 0.1
+              }
+            },
+            {
+              "kind": "R",
+              "name": "RGROUND",
+              "nodes": [
+                "N",
+                "0"
+              ],
+              "value": 1e-06
+            },
+            {
+              "kind": "R",
+              "name": "RAUX",
+              "nodes": [
+                "AUXN",
+                "0"
+              ],
+              "value": 1e-06
+            },
+            {
+              "kind": "R",
+              "name": "RSEC",
+              "nodes": [
+                "SECN",
+                "0"
+              ],
+              "value": 1e-06
+            }
+          ],
+          "analysis": {
+            "kind": "ac",
+            "frequency_Hz": 10000
+          },
+          "measurement": {
+            "mode": "ac_gain_magnitude",
+            "signal": "v(auxp,auxn)",
+            "denominator": "v(p,n)",
+            "sign": 1
+          },
+          "checks": []
+        }
+      },
+      "protocol_sha256": "f46d7d2e84c0abceb797a3f1946e8f1272a8cd7173f9405ffacfd493d78b2aa9",
+      "nominal_reference": 0.5,
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "model_role": "reference_interface_benchmark_only",
+      "actual_circuit": {
+        "path": "fixture_circuits/turns_N3.cir",
+        "sha256": "8f5bdc0f63e8bc5439a7f88340b4324f9ef7a0abc3c3b274f00546d5d7175a50"
+      },
+      "device": "750311423",
+      "input_folder": "750311423",
+      "reference_evidence": [
+        {
+          "id": "parameter:turns",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "turns",
+            "key": "turns_ratio",
+            "values": {
+              "value": "4:1:2"
+            },
+            "unit": "1",
+            "conditions": "N1:N2:N3",
+            "applies_to": [
+              "750311423"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b9",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_gain_magnitude",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+          "source_record": {
+            "id": "parameter:turns",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "turns",
+              "key": "turns_ratio",
+              "values": {
+                "value": "4:1:2"
+              },
+              "unit": "1",
+              "conditions": "N1:N2:N3",
+              "applies_to": [
+                "750311423"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b9",
+                "p0"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              1
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "ac_gain_magnitude",
+            "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "turns_ratio",
+          "evidence": [
+            "b9",
+            "p0"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "scope": "exact declared conditions; remaining handbook coverage is open"
+    },
+    {
+      "id": "conductor_resistance_25C",
+      "reference_ids": [
+        "parameter:rip"
+      ],
+      "protocol": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "P1": "IP",
+          "P2": "0",
+          "P3": "0",
+          "P4": "VCC",
+          "P5": "OUT",
+          "P6": "0"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VSUP",
+            "nodes": [
+              "VCC",
+              "0"
+            ],
+            "value": {
+              "dc": 5
+            }
+          },
+          {
+            "kind": "I",
+            "name": "IFORCE",
+            "nodes": [
+              "0",
+              "IP"
+            ],
+            "value": {
+              "dc": 0
+            }
+          },
+          {
+            "kind": "V",
+            "name": "VDUMMY",
+            "nodes": [
+              "UNUSED",
+              "0"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "IFORCE",
+          "start": 0,
+          "stop": 1,
+          "step": 0.1
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "v(IP)",
+          "at": 1,
+          "scale": 1000
+        },
+        "checks": []
+      },
+      "model": {
+        "entry": "REFERENCE_INTERFACE",
+        "ports": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ],
+        "declared_ports": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ],
+        "provenance": {
+          "role": "reference_interface_benchmark_only",
+          "source_sha256": "8e9c9190a601795576cd3cf0de46687496995b292da7cdd73934b447c870b0aa",
+          "original_entry": "ACS723",
+          "original_ports": [
+            "IP+",
+            "IP-",
+            "DUT_GND",
+            "VCC",
+            "Viout",
+            "BW_SEL"
+          ],
+          "physical_binding_verified": false,
+          "dependency_receipts": [
+            {
+              "name": "opamp.sub",
+              "sha256": "7bbdf4d33fab0620879996c2c61cd09a4f589a0ee9bc4a26ccf8ecec9c24dc87"
+            },
+            {
+              "name": "UniversalOPAmps2.sub",
+              "sha256": "4c7cd040212fc64700ec5fc6402c7fc11cdb7d9f84544dbae9914e4a5221f2d1"
+            }
+          ],
+          "parameter_evidence": [
+            {
+              "reference_id": "parameter:20AB_sensitivity",
+              "unit": "mV/A",
+              "value": 100,
+              "symbol_sha256": "9eb9f2559a2a4bbcd364402ba5fe3a69f68088e30c651e992e3e598c75ef676a",
+              "role": "reference_benchmark_configuration"
+            }
+          ]
+        },
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/gpt_test_library/models/ACS723/reference_interface.lib",
+        "sha256": "0a6e49a66e848e78ccfcb01d459c35f1c564b16ac3453006a5024173365e2d42"
+      },
+      "expectation": {
+        "unit": "mΩ",
+        "limits": {},
+        "thresholds": {},
+        "typical": 0.85,
+        "typical_relative_tolerance_percent": 10
+      },
+      "device": "ACS723KMATR-20AB-T",
+      "input_folder": "ACS723",
+      "reference_evidence": [
+        {
+          "id": "parameter:rip",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "rip",
+            "key": "primary_conductor_resistance",
+            "values": {
+              "typ": 0.85
+            },
+            "unit": "mΩ",
+            "conditions": "TA=25°C",
+            "applies_to": [
+              "ACS723"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b67",
+              "p5"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            6
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_resistance",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "parameter:rip",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "rip",
+              "key": "primary_conductor_resistance",
+              "values": {
+                "typ": 0.85
+              },
+              "unit": "mΩ",
+              "conditions": "TA=25°C",
+              "applies_to": [
+                "ACS723"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b67",
+                "p5"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              6
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_resistance",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "primary_conductor_resistance",
+          "evidence": [
+            "b67",
+            "p5"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "port_binding_evidence": {
+        "declaration": [
+          "IP+",
+          "IP-",
+          "DUT_GND",
+          "VCC",
+          "Viout",
+          "BW_SEL"
+        ],
+        "manual_ports_sha256": "d3d34ba632b9096d97e554d5b6dcf9168c6ff9dd2ec9ef6546405fe9d29599ef"
+      }
+    },
+    {
+      "id": "supply_current_5V_25C",
+      "reference_ids": [
+        "parameter:icc_5"
+      ],
+      "protocol": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "P1": "IN",
+          "P2": "OUT",
+          "P3": "VCC",
+          "P4": "0",
+          "P5": "OUT"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VSUP",
+            "nodes": [
+              "VCC",
+              "0"
+            ],
+            "value": {
+              "dc": 5
+            }
+          },
+          {
+            "kind": "V",
+            "name": "VCM",
+            "nodes": [
+              "IN",
+              "0"
+            ],
+            "value": {
+              "dc": 2.5
+            }
+          },
+          {
+            "kind": "V",
+            "name": "VDUMMY",
+            "nodes": [
+              "UNUSED",
+              "0"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "VDUMMY",
+          "start": 0,
+          "stop": 1,
+          "step": 1
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "i(VSUP)",
+          "at": 1,
+          "sign": -1,
+          "scale": 1000
+        },
+        "checks": [
+          {
+            "signal": "v(out)",
+            "from": 0,
+            "to": 1,
+            "min": 2.4,
+            "max": 2.6
+          }
+        ]
+      },
+      "model": {
+        "entry": "REFERENCE_INTERFACE",
+        "ports": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5"
+        ],
+        "declared_ports": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5"
+        ],
+        "provenance": {
+          "role": "reference_interface_benchmark_only",
+          "source_sha256": "c65fb7db58918ebdcea8dd8e005c45d9f3635ae82ed6879c739fad2a90e07d60",
+          "original_entry": "ADA4528",
+          "original_ports": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "physical_binding_verified": false,
+          "dependency_receipts": [],
+          "parameter_evidence": []
+        },
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/gpt_test_library/models/ADA4528/reference_interface.lib",
+        "sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81"
+      },
+      "expectation": {
+        "unit": "mA",
+        "limits": {
+          "max": 1.8
+        },
+        "thresholds": {},
+        "typical": 1.5,
+        "typical_relative_tolerance_percent": 10
+      },
+      "device": "ADA4528-1_MSOP",
+      "input_folder": "ADA4528",
+      "reference_evidence": [
+        {
+          "id": "parameter:icc_5",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "icc_5",
+            "key": "supply_current_per_amplifier",
+            "values": {
+              "typ": 1.5,
+              "max": 1.8
+            },
+            "unit": "mA",
+            "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; IO=0 mA",
+            "applies_to": [
+              "ADA4528"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b52",
+              "p4"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            5
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "parameter:icc_5",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "icc_5",
+              "key": "supply_current_per_amplifier",
+              "values": {
+                "typ": 1.5,
+                "max": 1.8
+              },
+              "unit": "mA",
+              "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; IO=0 mA",
+              "applies_to": [
+                "ADA4528"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b52",
+                "p4"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              5
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "supply_current_per_amplifier",
+          "evidence": [
+            "b52",
+            "p4"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "port_binding_evidence": {
+        "symbol": "template_assets/library/ADA4528-1.asy",
+        "sha256": "40e8fb7fc9e59e9bfff1d88e01a6333fc32fde169478355d3fcdd25a7ead0b56",
+        "map": {
+          "P1": {
+            "signal": "IN+",
+            "package_pin": 3
+          },
+          "P2": {
+            "signal": "IN-",
+            "package_pin": 2
+          },
+          "P3": {
+            "signal": "V+",
+            "package_pin": 7
+          },
+          "P4": {
+            "signal": "V-",
+            "package_pin": 4
+          },
+          "P5": {
+            "signal": "OUT",
+            "package_pin": 6
+          }
+        }
+      }
+    }
+  ],
+  "full_manual_coverage": false
+}

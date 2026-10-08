@@ -1,0 +1,231 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "reverse_20V_25C",
+    "protocol": {
+      "temperature_C": 25,
+      "device_nodes": {
+        "A": "P",
+        "K": "0"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VREVERSE",
+          "nodes": [
+            "P",
+            "0"
+          ],
+          "value": {
+            "dc": -20
+          }
+        },
+        {
+          "kind": "V",
+          "name": "VDUMMY",
+          "nodes": [
+            "UNUSED",
+            "0"
+          ],
+          "value": {
+            "dc": 0
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "dc",
+        "source": "VDUMMY",
+        "start": 0,
+        "stop": 1,
+        "step": 1
+      },
+      "measurement": {
+        "mode": "sample",
+        "signal": "i(vreverse)",
+        "at": 1,
+        "absolute": true,
+        "scale": 1000000000.0
+      },
+      "checks": []
+    },
+    "expectation": {
+      "unit": "nA",
+      "limits": {
+        "max": 25
+      },
+      "thresholds": {}
+    },
+    "reference_ids": [
+      "parameter:ir25"
+    ],
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+      "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+      "entry": "LEAKAGE_FITTED_1N4148",
+      "declared_ports": [
+        "A",
+        "K"
+      ],
+      "ports": [
+        "A",
+        "K"
+      ],
+      "provenance": {
+        "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+        "not_new_index_selection": true
+      }
+    },
+    "device": "1N4148",
+    "input_folder": "1N4148",
+    "reference_evidence": [
+      {
+        "id": "parameter:ir25",
+        "kind": "test",
+        "applicable": true,
+        "reference_evidence": {
+          "id": "ir25",
+          "key": "reverse_current",
+          "values": {
+            "max": 25
+          },
+          "unit": "nA",
+          "conditions": "VR=20 V; Tj=25°C",
+          "applies_to": [
+            "1N4148"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b35",
+            "b36",
+            "p2"
+          ]
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          3
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "dc_sample",
+        "capability_status": "existing_primitive_requires_fixture_binding",
+        "source_record": {
+          "id": "parameter:ir25",
+          "kind": "test_or_constraint_pending_classification",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "ir25",
+            "key": "reverse_current",
+            "values": {
+              "max": 25
+            },
+            "unit": "nA",
+            "conditions": "VR=20 V; Tj=25°C",
+            "applies_to": [
+              "1N4148"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b35",
+              "b36",
+              "p2"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            3
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding"
+        },
+        "source_kind": "test_or_constraint_pending_classification",
+        "label": "reverse_current",
+        "evidence": [
+          "b35",
+          "b36",
+          "p2"
+        ],
+        "classification_review_pending": true,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "scope": "exact declared conditions; remaining handbook coverage is open"
+  },
+  "receipt": {
+    "device": "1N4148",
+    "id": "reverse_20V_25C",
+    "reference_ids": [
+      "parameter:ir25"
+    ],
+    "scope": "exact declared conditions; remaining handbook coverage is open",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+    "calibrations": [
+      {
+        "expected": 400000.0,
+        "result": {
+          "value": 400000.0
+        },
+        "error": 0.0,
+        "tolerance": 40.0,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/5fe5251ebae0a9a4d85100050cc321840c2b1359796fd7ba521c56af09b86e26",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "260e0709d7c8df77a265776d4d97e5942276fc646540176d4292886db74b6947",
+          "test.raw": "444de303d14c7f2356c992c2d1f0e048197e3ab1dd7d14251ef52af0120562cc",
+          "test.log": "9b4703ad8cbe5ec9cab59556588ab15e33ffc6c9d37bc671d7f458a0312d8dc8",
+          "execution.json": "ddde155b0aef1a2e35f6269576feef594503e5d0ed2f3fd4010f9031a936ae5f"
+        }
+      },
+      {
+        "expected": 800000.0,
+        "result": {
+          "value": 800000.0
+        },
+        "error": 0.0,
+        "tolerance": 80.0,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/71f97bc63799439c1a7183624165456976aa44d4b60183a4d45a2085f347ba0d",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "3ddb730edff31660840975ce10ea54f48d3f7d2fd30cdf218878e9a393079d8b",
+          "test.raw": "d575dd80587cbddd5f3a89c160b61ae8a674c0b17b621cb519bf812b1ceca46a",
+          "test.log": "ffe6126283009b26412242bdb98f0d5bc9b2cc63b07a11bb661f8980aa425497",
+          "execution.json": "489d79be0d403395d8083c679a26561ced645601a2f7454ad294153444c113a4"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 6.827278298260353
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/a0f3731505cc7fe060a59b394619e2d605a486c7f77abf88abd6483fe939fe42",
+      "artifacts": {
+        "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "test.cir": "aaed4a632844f7272bce0421b7dcc6acbcb964fe05b1c87397f1c2708221acd0",
+        "test.raw": "e8a2bee5d884f56c8abaf018b9075b7ac9700698e3042f0d0712f39f7db55b2b",
+        "test.log": "3f6475c587534ccd5b56e176766747677ffefb177cdcecec3b41cd37de486bf4",
+        "execution.json": "d450a0d24be053f4124da9482dbb49c8f9070871d41233ba4f6b42d353672d43"
+      }
+    },
+    "protocol_sha256": "6b5fa63457c9c64adab9f06f80efd72f23b40108de4ef0c7b59178269d92d8ea"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

@@ -1,0 +1,233 @@
+{
+  "device": "ADA4528-1_MSOP",
+  "cases": [
+    {
+      "id": "supply_current_5V_25C",
+      "reference_ids": [
+        "parameter:icc_5"
+      ],
+      "protocol": {
+        "temperature_C": 25,
+        "device_nodes": {
+          "P1": "IN",
+          "P2": "OUT",
+          "P3": "VCC",
+          "P4": "0",
+          "P5": "OUT"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VSUP",
+            "nodes": [
+              "VCC",
+              "0"
+            ],
+            "value": {
+              "dc": 5
+            }
+          },
+          {
+            "kind": "V",
+            "name": "VCM",
+            "nodes": [
+              "IN",
+              "0"
+            ],
+            "value": {
+              "dc": 2.5
+            }
+          },
+          {
+            "kind": "V",
+            "name": "VDUMMY",
+            "nodes": [
+              "UNUSED",
+              "0"
+            ],
+            "value": {
+              "dc": 0
+            }
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "VDUMMY",
+          "start": 0,
+          "stop": 1,
+          "step": 1
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "i(VSUP)",
+          "at": 1,
+          "sign": -1,
+          "scale": 1000
+        },
+        "checks": [
+          {
+            "signal": "v(out)",
+            "from": 0,
+            "to": 1,
+            "min": 2.4,
+            "max": 2.6
+          }
+        ]
+      },
+      "model": {
+        "entry": "REFERENCE_INTERFACE",
+        "ports": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5"
+        ],
+        "declared_ports": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5"
+        ],
+        "provenance": {
+          "role": "reference_interface_benchmark_only",
+          "source_sha256": "c65fb7db58918ebdcea8dd8e005c45d9f3635ae82ed6879c739fad2a90e07d60",
+          "original_entry": "ADA4528",
+          "original_ports": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "physical_binding_verified": false,
+          "dependency_receipts": [],
+          "parameter_evidence": []
+        },
+        "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/gpt_test_library/models/ADA4528/reference_interface.lib",
+        "sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81"
+      },
+      "expectation": {
+        "unit": "mA",
+        "limits": {
+          "max": 1.8
+        },
+        "thresholds": {},
+        "typical": 1.5,
+        "typical_relative_tolerance_percent": 10
+      },
+      "device": "ADA4528-1_MSOP",
+      "input_folder": "ADA4528",
+      "reference_evidence": [
+        {
+          "id": "parameter:icc_5",
+          "kind": "test",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "icc_5",
+            "key": "supply_current_per_amplifier",
+            "values": {
+              "typ": 1.5,
+              "max": 1.8
+            },
+            "unit": "mA",
+            "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; IO=0 mA",
+            "applies_to": [
+              "ADA4528"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b52",
+              "p4"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            5
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_sample",
+          "capability_status": "existing_primitive_requires_fixture_binding",
+          "source_record": {
+            "id": "parameter:icc_5",
+            "kind": "test_or_constraint_pending_classification",
+            "applicable": true,
+            "reference_evidence": {
+              "id": "icc_5",
+              "key": "supply_current_per_amplifier",
+              "values": {
+                "typ": 1.5,
+                "max": 1.8
+              },
+              "unit": "mA",
+              "conditions": "VSY=5 V; VCM=VSY/2; TA=25°C unless stated; IO=0 mA",
+              "applies_to": [
+                "ADA4528"
+              ],
+              "rating_kind": "electrical_characteristic",
+              "state": "initial",
+              "evidence_refs": [
+                "b52",
+                "p4"
+              ]
+            },
+            "bindings": [],
+            "binding_complete": false,
+            "pdf_pages": [
+              5
+            ],
+            "plan_status": "test_development_required",
+            "method_family": "dc_sample",
+            "capability_status": "existing_primitive_requires_fixture_binding"
+          },
+          "source_kind": "test_or_constraint_pending_classification",
+          "label": "supply_current_per_amplifier",
+          "evidence": [
+            "b52",
+            "p4"
+          ],
+          "classification_review_pending": true,
+          "reference_asset_bindings": [],
+          "configured_reference_bindings": []
+        }
+      ],
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "qualification_status": "awaiting_real_calibration_and_trial",
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "port_binding_evidence": {
+        "symbol": "template_assets/library/ADA4528-1.asy",
+        "sha256": "40e8fb7fc9e59e9bfff1d88e01a6333fc32fde169478355d3fcdd25a7ead0b56",
+        "map": {
+          "P1": {
+            "signal": "IN+",
+            "package_pin": 3
+          },
+          "P2": {
+            "signal": "IN-",
+            "package_pin": 2
+          },
+          "P3": {
+            "signal": "V+",
+            "package_pin": 7
+          },
+          "P4": {
+            "signal": "V-",
+            "package_pin": 4
+          },
+          "P5": {
+            "signal": "OUT",
+            "package_pin": 6
+          }
+        }
+      }
+    }
+  ],
+  "full_manual_coverage": false,
+  "origin": "GPT authored and real calibrated; registered for exact-condition regression"
+}

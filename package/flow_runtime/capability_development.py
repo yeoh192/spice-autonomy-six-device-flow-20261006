@@ -54,7 +54,8 @@ def reference_model(root,packet,folder,item=None):
     parameters,parameter_evidence=model_parameters(root,packet,entry)
     # A wrapper avoids changing numeric/punctuation port labels in vendor internals.
     wrapper='REFERENCE_INTERFACE';declared=['P'+str(i+1) for i in range(len(ports))]
-    wrapped='.subckt '+wrapper+' '+' '.join(declared)+'\n'+''.join('.param '+k+'='+format(v,'.17g')+'\n' for k,v in parameters.items())+'XREFERENCE '+' '.join(declared)+' '+entry+'\n.ends '+wrapper+'\n'+block+'\n'
+    instance_parameters=(' params: '+ ' '.join(k+'='+format(v,'.17g') for k,v in parameters.items())) if parameters else ''
+    wrapped='.subckt '+wrapper+' '+' '.join(declared)+'\n'+'XREFERENCE '+' '.join(declared)+' '+entry+instance_parameters+'\n.ends '+wrapper+'\n'+block+'\n'
     model={'entry':wrapper,'ports':declared,'declared_ports':declared,'provenance':{'role':'reference_interface_benchmark_only','source_sha256':digest(original),'original_entry':entry,'original_ports':ports,'physical_binding_verified':False,'dependency_receipts':dependencies,'parameter_evidence':parameter_evidence}}
     validate_model(wrapped,model)
     path=folder/'reference_interface.lib';path.parent.mkdir(parents=True,exist_ok=True);path.write_text(wrapped)

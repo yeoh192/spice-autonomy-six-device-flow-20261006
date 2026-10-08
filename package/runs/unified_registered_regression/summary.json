@@ -1,0 +1,55 @@
+{
+  "status": "registered_regression_finished_with_gaps",
+  "results": [
+    {
+      "device": "1N4148",
+      "tests": 6,
+      "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_tasks/1N4148/18f8d0f50d7f/task.json",
+      "returncode": 2,
+      "summary": "runs/unified_registered_regression/1N4148/18f8d0f50d7f/summary.json",
+      "expected_incomplete_scope": true
+    },
+    {
+      "device": "EMHK350ARA470MF80G",
+      "tests": 5,
+      "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_tasks/EMHK350ARA470MF80G/b089c114ab95/task.json",
+      "returncode": 2,
+      "summary": "runs/unified_registered_regression/EMHK350ARA470MF80G/b089c114ab95/summary.json",
+      "expected_incomplete_scope": true
+    },
+    {
+      "device": "EMHK350ARA470MF80G",
+      "tests": 3,
+      "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_tasks/EMHK350ARA470MF80G/e0f1c31d2387/task.json",
+      "returncode": 2,
+      "summary": "runs/unified_registered_regression/EMHK350ARA470MF80G/e0f1c31d2387/summary.json",
+      "expected_incomplete_scope": true
+    },
+    {
+      "device": "750311423",
+      "tests": 6,
+      "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_tasks/750311423/d3b5f88f3dde/task.json",
+      "returncode": 2,
+      "summary": "runs/unified_registered_regression/750311423/d3b5f88f3dde/summary.json",
+      "expected_incomplete_scope": true
+    },
+    {
+      "device": "ACS723KMATR-20AB-T",
+      "tests": 1,
+      "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_tasks/ACS723KMATR-20AB-T/91ed7b8d39fb/task.json",
+      "returncode": 2,
+      "summary": "runs/unified_registered_regression/ACS723KMATR-20AB-T/91ed7b8d39fb/summary.json",
+      "expected_incomplete_scope": true
+    },
+    {
+      "device": "ADA4528-1_MSOP",
+      "tests": 1,
+      "task": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/registered_tasks/ADA4528-1_MSOP/dc359f7a24ce/task.json",
+      "returncode": 2,
+      "summary": "runs/unified_registered_regression/ADA4528-1_MSOP/dc359f7a24ce/summary.json",
+      "expected_incomplete_scope": true
+    }
+  ],
+  "api_calls": 0,
+  "full_manual_coverage": false
+}

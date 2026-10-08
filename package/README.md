@@ -20,3 +20,7 @@ full coverage and electrical acceptance are still reported independently.
 
 ## 五器件测试能力补齐（0.3.0开发版）
 新增完整可整理队列的测试开发与资格回写入口，详见TEST_COMPLETION.md。默认离线预检，真实执行使用RUN_FIVE_TEST_COMPLETION.sh --run。正式模型交付状态与测试方法资格分别报告。
+
+## GPT校正测试库第一批
+
+22项方法已通过真实校准/试运行并登记；256项离线检查通过，统一入口完成22项回归。20项模型结果通过、2项失败；五器件全手册覆盖未完成。运行与证据见[GPT_TEST_CORRECTION.md](GPT_TEST_CORRECTION.md)。

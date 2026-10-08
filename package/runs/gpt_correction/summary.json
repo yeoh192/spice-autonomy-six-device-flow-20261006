@@ -1,0 +1,3582 @@
+{
+  "status": "gpt_correction_completed_with_gaps",
+  "results": [
+    {
+      "device": "1N4148",
+      "id": "forward_25C",
+      "reference_ids": [
+        "figure:fig3:typ_25C"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+      "calibrations": [
+        {
+          "expected": 0,
+          "result": {
+            "metrics": {
+              "MAE": 3.700743415417188e-17,
+              "RMSE": 6.409875621278546e-17,
+              "max_absolute_error": 1.1102230246251565e-16,
+              "MAE_over_reference_span_percent": 5.306130076843785e-15,
+              "max_error_over_reference_span_percent": 1.5918390230531356e-14
+            },
+            "comparison": [
+              {
+                "x": 0.6079471911,
+                "reference_y": 0.6079471911,
+                "simulated_y": 0.6079471911
+              },
+              {
+                "x": 0.95667058855,
+                "reference_y": 0.95667058855,
+                "simulated_y": 0.9566705885500001
+              },
+              {
+                "x": 1.305393986,
+                "reference_y": 1.305393986,
+                "simulated_y": 1.305393986
+              }
+            ]
+          },
+          "error": 1.1102230246251565e-16,
+          "tolerance": 1e-09,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/dd0588687d6e2eb853444cff2f1cf1787f51e8d6c5d19dd316b4ef2e8eab1709",
+          "artifacts": {
+            "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+            "test.cir": "5ea46528e78a83547ff78806d86fa8616ed684b91f20b5f8a0c135479fe52e56",
+            "test.raw": "9ee6796acbb753505b3e7321991bcc49380f24d07000f7a87059c1dc5b07724e",
+            "test.log": "9ca6dec175fca426341a254c5a94c13bce3044ccc936cbc1fe7849b05b98f03c",
+            "execution.json": "25d9d21f44c101a440597b7dd75ec14d54b1054dc717b2235eab7eea0f7fbf93"
+          }
+        },
+        {
+          "expected": 0,
+          "result": {
+            "metrics": {
+              "MAE": 3.700743415417188e-17,
+              "RMSE": 4.5324665183683945e-17,
+              "max_absolute_error": 5.551115123125783e-17,
+              "MAE_over_reference_span_percent": 1.061226015368757e-14,
+              "max_error_over_reference_span_percent": 1.5918390230531356e-14
+            },
+            "comparison": [
+              {
+                "x": 0.6079471911,
+                "reference_y": 0.30397359555,
+                "simulated_y": 0.30397359555000003
+              },
+              {
+                "x": 0.95667058855,
+                "reference_y": 0.478335294275,
+                "simulated_y": 0.47833529427500004
+              },
+              {
+                "x": 1.305393986,
+                "reference_y": 0.652696993,
+                "simulated_y": 0.652696993
+              }
+            ]
+          },
+          "error": 5.551115123125783e-17,
+          "tolerance": 1e-09,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/e1aefb7e1979c7ceb677a48b72bdbdf7d7914e69f8b476055075ea7a8179c1c6",
+          "artifacts": {
+            "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+            "test.cir": "b1f7533445ed8d1603d2ee0874a9171bf82748251f8fbe4ae0807316f69214d2",
+            "test.raw": "814a98b7e01338b12a1d65b4fd7108ceaf67e3d58a04b01423ac27563dae8a26",
+            "test.log": "2079c663a4b71953fe5c828c7cde5ce0dac4bde08cb9bce2b00dcdd9f24433f1",
+            "execution.json": "d99423d8a30a69299be1780290abd4ebdab034a28f3d4d8dbc3fe71bbd9623ab"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "metrics": {
+            "MAE": 5.869557773135199,
+            "RMSE": 7.495938143789971,
+            "max_absolute_error": 19.143294406593498,
+            "MAE_over_reference_span_percent": 1.2811430224193834,
+            "max_error_over_reference_span_percent": 4.17838941246628
+          },
+          "comparison": [
+            {
+              "x": 0.6079471911,
+              "reference_y": 1.408871802,
+              "simulated_y": 0.8730832288241785
+            },
+            {
+              "x": 0.611434425,
+              "reference_y": 1.495407631,
+              "simulated_y": 0.9329665445540577
+            },
+            {
+              "x": 0.614921659,
+              "reference_y": 1.582555474,
+              "simulated_y": 0.9968968399190958
+            },
+            {
+              "x": 0.618408893,
+              "reference_y": 1.670569181,
+              "simulated_y": 1.0651392093823646
+            },
+            {
+              "x": 0.621896127,
+              "reference_y": 1.75970916,
+              "simulated_y": 1.1379749551815204
+            },
+            {
+              "x": 0.6253833609,
+              "reference_y": 1.850237562,
+              "simulated_y": 1.215702415567
+            },
+            {
+              "x": 0.6288705949,
+              "reference_y": 1.942423979,
+              "simulated_y": 1.2986378268683454
+            },
+            {
+              "x": 0.6323578289,
+              "reference_y": 2.036544192,
+              "simulated_y": 1.3871161812604789
+            },
+            {
+              "x": 0.6358450628,
+              "reference_y": 2.132882154,
+              "simulated_y": 1.4814921184730903
+            },
+            {
+              "x": 0.6393322968,
+              "reference_y": 2.231725652,
+              "simulated_y": 1.5821408309696496
+            },
+            {
+              "x": 0.6428195308,
+              "reference_y": 2.333370529,
+              "simulated_y": 1.689458950010139
+            },
+            {
+              "x": 0.6463067648,
+              "reference_y": 2.438120902,
+              "simulated_y": 1.8038654587982732
+            },
+            {
+              "x": 0.6497939987,
+              "reference_y": 2.546289101,
+              "simulated_y": 1.9258025827316667
+            },
+            {
+              "x": 0.6532812327,
+              "reference_y": 2.658196143,
+              "simulated_y": 2.055736686634146
+            },
+            {
+              "x": 0.6567684667,
+              "reference_y": 2.774176722,
+              "simulated_y": 2.194159115313038
+            },
+            {
+              "x": 0.6602557007,
+              "reference_y": 2.894569066,
+              "simulated_y": 2.341587037835607
+            },
+            {
+              "x": 0.6637429346,
+              "reference_y": 3.019723339,
+              "simulated_y": 2.4985642289089998
+            },
+            {
+              "x": 0.6672301686,
+              "reference_y": 3.150000974,
+              "simulated_y": 2.665661823950957
+            },
+            {
+              "x": 0.6707174026,
+              "reference_y": 3.28578949,
+              "simulated_y": 2.8434789640741958
+            },
+            {
+              "x": 0.6742046366,
+              "reference_y": 3.427463994,
+              "simulated_y": 3.0326434071930026
+            },
+            {
+              "x": 0.6776918705,
+              "reference_y": 3.575438105,
+              "simulated_y": 3.2338120182560566
+            },
+            {
+              "x": 0.6811791045,
+              "reference_y": 3.730119573,
+              "simulated_y": 3.4476711847239567
+            },
+            {
+              "x": 0.6846663385,
+              "reference_y": 3.891958544,
+              "simulated_y": 3.6749370495675495
+            },
+            {
+              "x": 0.6881535725,
+              "reference_y": 4.061393717,
+              "simulated_y": 3.916355659723727
+            },
+            {
+              "x": 0.6916408064,
+              "reference_y": 4.238898208,
+              "simulated_y": 4.17270291961511
+            },
+            {
+              "x": 0.6951280404,
+              "reference_y": 4.424964947,
+              "simulated_y": 4.444784410539459
+            },
+            {
+              "x": 0.6986152744,
+              "reference_y": 4.620107904,
+              "simulated_y": 4.733434941531394
+            },
+            {
+              "x": 0.7021025083,
+              "reference_y": 4.824863399,
+              "simulated_y": 5.039517951602538
+            },
+            {
+              "x": 0.7055897423,
+              "reference_y": 5.039791502,
+              "simulated_y": 5.363924691187115
+            },
+            {
+              "x": 0.7090769763,
+              "reference_y": 5.265477537,
+              "simulated_y": 5.707573077545079
+            },
+            {
+              "x": 0.7125642103,
+              "reference_y": 5.502533695,
+              "simulated_y": 6.071406377599169
+            },
+            {
+              "x": 0.7160514442,
+              "reference_y": 5.751619428,
+              "simulated_y": 6.4563915646171965
+            },
+            {
+              "x": 0.7195386782,
+              "reference_y": 6.013408457,
+              "simulated_y": 6.8635174576613975
+            },
+            {
+              "x": 0.7230259122,
+              "reference_y": 6.288628701,
+              "simulated_y": 7.29379246189637
+            },
+            {
+              "x": 0.7265131462,
+              "reference_y": 6.578028817,
+              "simulated_y": 7.74824212654959
+            },
+            {
+              "x": 0.7300003801,
+              "reference_y": 6.882418716,
+              "simulated_y": 8.227906343685742
+            },
+            {
+              "x": 0.7334876141,
+              "reference_y": 7.202653996,
+              "simulated_y": 8.733836341615921
+            },
+            {
+              "x": 0.7369748481,
+              "reference_y": 7.539639321,
+              "simulated_y": 9.267091264822318
+            },
+            {
+              "x": 0.7404620821,
+              "reference_y": 7.894332091,
+              "simulated_y": 9.828734629906524
+            },
+            {
+              "x": 0.743949316,
+              "reference_y": 8.267746454,
+              "simulated_y": 10.419830457008386
+            },
+            {
+              "x": 0.74743655,
+              "reference_y": 8.661000908,
+              "simulated_y": 11.041439286711864
+            },
+            {
+              "x": 0.750923784,
+              "reference_y": 9.075238204,
+              "simulated_y": 11.694613844789014
+            },
+            {
+              "x": 0.754411018,
+              "reference_y": 9.511726307,
+              "simulated_y": 12.38039472925856
+            },
+            {
+              "x": 0.7578982519,
+              "reference_y": 9.971821152,
+              "simulated_y": 13.099805888444491
+            },
+            {
+              "x": 0.7613854859,
+              "reference_y": 10.45697437,
+              "simulated_y": 13.85385016039552
+            },
+            {
+              "x": 0.7648727199,
+              "reference_y": 10.96874183,
+              "simulated_y": 14.643504594677577
+            },
+            {
+              "x": 0.7683599539,
+              "reference_y": 11.50882812,
+              "simulated_y": 15.469716019071083
+            },
+            {
+              "x": 0.7718471878,
+              "reference_y": 12.07907513,
+              "simulated_y": 16.333396572195305
+            },
+            {
+              "x": 0.7753344218,
+              "reference_y": 12.68150956,
+              "simulated_y": 17.23541952683053
+            },
+            {
+              "x": 0.7788216558,
+              "reference_y": 13.31832787,
+              "simulated_y": 18.176615062479225
+            },
+            {
+              "x": 0.7823088897,
+              "reference_y": 13.99191416,
+              "simulated_y": 19.157766502618642
+            },
+            {
+              "x": 0.7857961237,
+              "reference_y": 14.70497174,
+              "simulated_y": 20.179606866283777
+            },
+            {
+              "x": 0.7892833577,
+              "reference_y": 15.4603996,
+              "simulated_y": 21.24281549856986
+            },
+            {
+              "x": 0.7927705917,
+              "reference_y": 16.26148184,
+              "simulated_y": 22.348015354599266
+            },
+            {
+              "x": 0.7962578256,
+              "reference_y": 17.11183519,
+              "simulated_y": 23.49577051640497
+            },
+            {
+              "x": 0.7997450596,
+              "reference_y": 18.01557006,
+              "simulated_y": 24.68658433283153
+            },
+            {
+              "x": 0.8032322936,
+              "reference_y": 18.9773,
+              "simulated_y": 25.92089767632772
+            },
+            {
+              "x": 0.8067195276,
+              "reference_y": 20.00221467,
+              "simulated_y": 27.199087983320815
+            },
+            {
+              "x": 0.8102067615,
+              "reference_y": 21.0963079,
+              "simulated_y": 28.521468552263663
+            },
+            {
+              "x": 0.8136939955,
+              "reference_y": 22.26647207,
+              "simulated_y": 29.88828851862325
+            },
+            {
+              "x": 0.8171812295,
+              "reference_y": 23.52067252,
+              "simulated_y": 31.299732891588995
+            },
+            {
+              "x": 0.8206684635,
+              "reference_y": 24.86833087,
+              "simulated_y": 32.75592339129172
+            },
+            {
+              "x": 0.8241556974,
+              "reference_y": 26.32056625,
+              "simulated_y": 34.25691945425244
+            },
+            {
+              "x": 0.8276429314,
+              "reference_y": 27.89067556,
+              "simulated_y": 35.802719863282256
+            },
+            {
+              "x": 0.8311301654,
+              "reference_y": 29.59501818,
+              "simulated_y": 37.393264283918484
+            },
+            {
+              "x": 0.8346173994,
+              "reference_y": 31.45372208,
+              "simulated_y": 39.02843553113993
+            },
+            {
+              "x": 0.8381046333,
+              "reference_y": 33.49227795,
+              "simulated_y": 40.708061838244
+            },
+            {
+              "x": 0.8415918673,
+              "reference_y": 35.7438279,
+              "simulated_y": 42.431919635227885
+            },
+            {
+              "x": 0.8428998542,
+              "reference_y": 36.65176458,
+              "simulated_y": 43.08989512005595
+            },
+            {
+              "x": 0.8450791013,
+              "reference_y": 38.19493558,
+              "simulated_y": 44.19973603017046
+            },
+            {
+              "x": 0.8485663352,
+              "reference_y": 40.66431982,
+              "simulated_y": 46.01119186417942
+            },
+            {
+              "x": 0.8520535692,
+              "reference_y": 43.13370406,
+              "simulated_y": 47.865924897485456
+            },
+            {
+              "x": 0.8555408032,
+              "reference_y": 45.60308831,
+              "simulated_y": 49.76353259525903
+            },
+            {
+              "x": 0.8590280372,
+              "reference_y": 48.07247255,
+              "simulated_y": 51.70357546948971
+            },
+            {
+              "x": 0.8625152711,
+              "reference_y": 50.54185679,
+              "simulated_y": 53.68558011311398
+            },
+            {
+              "x": 0.8660025051,
+              "reference_y": 53.01124103,
+              "simulated_y": 55.70904254984632
+            },
+            {
+              "x": 0.8694897391,
+              "reference_y": 55.48062528,
+              "simulated_y": 57.77343096839205
+            },
+            {
+              "x": 0.8729769731,
+              "reference_y": 57.95000952,
+              "simulated_y": 59.8781889543981
+            },
+            {
+              "x": 0.876464207,
+              "reference_y": 60.41939376,
+              "simulated_y": 62.02273829033445
+            },
+            {
+              "x": 0.879951441,
+              "reference_y": 62.888778,
+              "simulated_y": 64.20648201644683
+            },
+            {
+              "x": 0.883438675,
+              "reference_y": 65.35816225,
+              "simulated_y": 66.42880675903957
+            },
+            {
+              "x": 0.886925909,
+              "reference_y": 67.82754649,
+              "simulated_y": 68.68908554466364
+            },
+            {
+              "x": 0.8904131429,
+              "reference_y": 70.29693073,
+              "simulated_y": 70.98668010732001
+            },
+            {
+              "x": 0.8939003769,
+              "reference_y": 72.76631497,
+              "simulated_y": 73.32094344685515
+            },
+            {
+              "x": 0.8973876109,
+              "reference_y": 75.23569922,
+              "simulated_y": 75.69122158427653
+            },
+            {
+              "x": 0.9008748449,
+              "reference_y": 77.70508346,
+              "simulated_y": 78.09685582941778
+            },
+            {
+              "x": 0.9043620788,
+              "reference_y": 80.1744677,
+              "simulated_y": 80.53718450601579
+            },
+            {
+              "x": 0.9074615632,
+              "reference_y": 82.36927822,
+              "simulated_y": 82.73477354767348
+            },
+            {
+              "x": 0.9078493128,
+              "reference_y": 82.73681589,
+              "simulated_y": 83.0115449504057
+            },
+            {
+              "x": 0.9113365468,
+              "reference_y": 86.04227322,
+              "simulated_y": 85.51927467008503
+            },
+            {
+              "x": 0.9148237808,
+              "reference_y": 89.34773054,
+              "simulated_y": 88.05971306479934
+            },
+            {
+              "x": 0.9183110147,
+              "reference_y": 92.65318787,
+              "simulated_y": 90.63220259423349
+            },
+            {
+              "x": 0.9217982487,
+              "reference_y": 95.9586452,
+              "simulated_y": 93.23609025952808
+            },
+            {
+              "x": 0.9252854827,
+              "reference_y": 99.26410252,
+              "simulated_y": 95.87072822689991
+            },
+            {
+              "x": 0.9287727166,
+              "reference_y": 102.5695599,
+              "simulated_y": 98.53547499733654
+            },
+            {
+              "x": 0.9322599506,
+              "reference_y": 105.8750172,
+              "simulated_y": 101.22969648514362
+            },
+            {
+              "x": 0.9357471846,
+              "reference_y": 109.1804745,
+              "simulated_y": 103.95276630463182
+            },
+            {
+              "x": 0.9392344186,
+              "reference_y": 112.4859318,
+              "simulated_y": 106.70406672575976
+            },
+            {
+              "x": 0.9427216525,
+              "reference_y": 115.7913892,
+              "simulated_y": 109.48298908168168
+            },
+            {
+              "x": 0.9462088865,
+              "reference_y": 119.0968465,
+              "simulated_y": 112.28893457058362
+            },
+            {
+              "x": 0.9496961205,
+              "reference_y": 122.4023038,
+              "simulated_y": 115.12131418529239
+            },
+            {
+              "x": 0.9531833545,
+              "reference_y": 125.7077611,
+              "simulated_y": 117.97954936971004
+            },
+            {
+              "x": 0.9566705884,
+              "reference_y": 129.0132185,
+              "simulated_y": 120.86307213195813
+            },
+            {
+              "x": 0.9601578224,
+              "reference_y": 132.3186758,
+              "simulated_y": 123.77132559339226
+            },
+            {
+              "x": 0.9636450564,
+              "reference_y": 135.6241331,
+              "simulated_y": 126.70376365779693
+            },
+            {
+              "x": 0.9671322904,
+              "reference_y": 138.9295904,
+              "simulated_y": 129.65985145875257
+            },
+            {
+              "x": 0.9706195243,
+              "reference_y": 142.2350478,
+              "simulated_y": 132.63906526603498
+            },
+            {
+              "x": 0.9741067583,
+              "reference_y": 145.5405051,
+              "simulated_y": 135.6408928635207
+            },
+            {
+              "x": 0.9775939923,
+              "reference_y": 148.8459624,
+              "simulated_y": 138.66483303768229
+            },
+            {
+              "x": 0.9810812263,
+              "reference_y": 152.1514198,
+              "simulated_y": 141.71039588842302
+            },
+            {
+              "x": 0.9845684602,
+              "reference_y": 155.4568771,
+              "simulated_y": 144.7771025981267
+            },
+            {
+              "x": 0.9880556942,
+              "reference_y": 158.7623344,
+              "simulated_y": 147.8644857018592
+            },
+            {
+              "x": 0.9915429282,
+              "reference_y": 162.0677917,
+              "simulated_y": 150.9720884564003
+            },
+            {
+              "x": 0.9950301621,
+              "reference_y": 165.3732491,
+              "simulated_y": 154.09946497913668
+            },
+            {
+              "x": 0.9985173961,
+              "reference_y": 168.6787064,
+              "simulated_y": 157.24618038113255
+            },
+            {
+              "x": 1.00200463,
+              "reference_y": 171.9841637,
+              "simulated_y": 160.41180998566057
+            },
+            {
+              "x": 1.005491864,
+              "reference_y": 175.289621,
+              "simulated_y": 163.59593988532234
+            },
+            {
+              "x": 1.008979098,
+              "reference_y": 178.5950784,
+              "simulated_y": 166.79816613357056
+            },
+            {
+              "x": 1.012466332,
+              "reference_y": 181.9005357,
+              "simulated_y": 170.01809492418602
+            },
+            {
+              "x": 1.015953566,
+              "reference_y": 185.205993,
+              "simulated_y": 173.25534231091893
+            },
+            {
+              "x": 1.0194408,
+              "reference_y": 188.5114503,
+              "simulated_y": 176.50953401209924
+            },
+            {
+              "x": 1.022928034,
+              "reference_y": 191.8169077,
+              "simulated_y": 179.78030521098123
+            },
+            {
+              "x": 1.026415268,
+              "reference_y": 195.122365,
+              "simulated_y": 183.0673003529228
+            },
+            {
+              "x": 1.029902502,
+              "reference_y": 198.4278223,
+              "simulated_y": 186.37017294039802
+            },
+            {
+              "x": 1.033389736,
+              "reference_y": 201.7332796,
+              "simulated_y": 189.6885853267255
+            },
+            {
+              "x": 1.03687697,
+              "reference_y": 205.038737,
+              "simulated_y": 193.02220850928308
+            },
+            {
+              "x": 1.040364204,
+              "reference_y": 208.3441943,
+              "simulated_y": 196.37072192291288
+            },
+            {
+              "x": 1.043851438,
+              "reference_y": 211.6496516,
+              "simulated_y": 199.7338132341489
+            },
+            {
+              "x": 1.047338672,
+              "reference_y": 214.955109,
+              "simulated_y": 203.11117813676302
+            },
+            {
+              "x": 1.050825906,
+              "reference_y": 218.2605663,
+              "simulated_y": 206.5025201491169
+            },
+            {
+              "x": 1.05431314,
+              "reference_y": 221.5660236,
+              "simulated_y": 209.90755041373217
+            },
+            {
+              "x": 1.057800374,
+              "reference_y": 224.8714809,
+              "simulated_y": 213.3259874994182
+            },
+            {
+              "x": 1.061287608,
+              "reference_y": 228.1769383,
+              "simulated_y": 216.75755720626205
+            },
+            {
+              "x": 1.064774842,
+              "reference_y": 231.4823956,
+              "simulated_y": 220.20199237373157
+            },
+            {
+              "x": 1.068262076,
+              "reference_y": 234.7878529,
+              "simulated_y": 223.6590326921141
+            },
+            {
+              "x": 1.07174931,
+              "reference_y": 238.0933102,
+              "simulated_y": 227.12842451745044
+            },
+            {
+              "x": 1.075236544,
+              "reference_y": 241.3987676,
+              "simulated_y": 230.6099206901267
+            },
+            {
+              "x": 1.078723778,
+              "reference_y": 244.7042249,
+              "simulated_y": 234.10328035722216
+            },
+            {
+              "x": 1.082211011,
+              "reference_y": 248.0096822,
+              "simulated_y": 237.60826779201955
+            },
+            {
+              "x": 1.085698245,
+              "reference_y": 251.3151395,
+              "simulated_y": 241.1246562476473
+            },
+            {
+              "x": 1.089185479,
+              "reference_y": 254.6205969,
+              "simulated_y": 244.65222176079644
+            },
+            {
+              "x": 1.092672713,
+              "reference_y": 257.9260542,
+              "simulated_y": 248.19074700668622
+            },
+            {
+              "x": 1.096159947,
+              "reference_y": 261.2315115,
+              "simulated_y": 251.74002013773455
+            },
+            {
+              "x": 1.099647181,
+              "reference_y": 264.5369689,
+              "simulated_y": 255.29983462959916
+            },
+            {
+              "x": 1.103134415,
+              "reference_y": 267.8424262,
+              "simulated_y": 258.8699891311891
+            },
+            {
+              "x": 1.106621649,
+              "reference_y": 271.1478835,
+              "simulated_y": 262.4502873186173
+            },
+            {
+              "x": 1.110108883,
+              "reference_y": 274.4533408,
+              "simulated_y": 266.04053775305937
+            },
+            {
+              "x": 1.113596117,
+              "reference_y": 277.7587982,
+              "simulated_y": 269.6405537424697
+            },
+            {
+              "x": 1.117083351,
+              "reference_y": 281.0642555,
+              "simulated_y": 273.25015320710634
+            },
+            {
+              "x": 1.120570585,
+              "reference_y": 284.3697128,
+              "simulated_y": 276.8691585487966
+            },
+            {
+              "x": 1.124057819,
+              "reference_y": 287.6751701,
+              "simulated_y": 280.4973965238936
+            },
+            {
+              "x": 1.127545053,
+              "reference_y": 290.9806275,
+              "simulated_y": 284.1346981198412
+            },
+            {
+              "x": 1.131032287,
+              "reference_y": 294.2860848,
+              "simulated_y": 287.78089843528755
+            },
+            {
+              "x": 1.134519521,
+              "reference_y": 297.5915421,
+              "simulated_y": 291.4358365636686
+            },
+            {
+              "x": 1.138006755,
+              "reference_y": 300.8969994,
+              "simulated_y": 295.0993554801802
+            },
+            {
+              "x": 1.141493989,
+              "reference_y": 304.2024568,
+              "simulated_y": 298.77130193207876
+            },
+            {
+              "x": 1.144981223,
+              "reference_y": 307.5079141,
+              "simulated_y": 302.45152633220226
+            },
+            {
+              "x": 1.148468457,
+              "reference_y": 310.8133714,
+              "simulated_y": 306.13988265566735
+            },
+            {
+              "x": 1.151955691,
+              "reference_y": 314.1188288,
+              "simulated_y": 309.83622833962914
+            },
+            {
+              "x": 1.155442925,
+              "reference_y": 317.4242861,
+              "simulated_y": 313.54042418605235
+            },
+            {
+              "x": 1.158930159,
+              "reference_y": 320.7297434,
+              "simulated_y": 317.25233426739254
+            },
+            {
+              "x": 1.162417393,
+              "reference_y": 324.0352007,
+              "simulated_y": 320.97182583511915
+            },
+            {
+              "x": 1.165904627,
+              "reference_y": 327.3406581,
+              "simulated_y": 324.698769231003
+            },
+            {
+              "x": 1.169391861,
+              "reference_y": 330.6461154,
+              "simulated_y": 328.4330378010825
+            },
+            {
+              "x": 1.172879095,
+              "reference_y": 333.9515727,
+              "simulated_y": 332.17450781224187
+            },
+            {
+              "x": 1.176366329,
+              "reference_y": 337.25703,
+              "simulated_y": 335.92305837131084
+            },
+            {
+              "x": 1.179853563,
+              "reference_y": 340.5624874,
+              "simulated_y": 339.67857134663706
+            },
+            {
+              "x": 1.183340797,
+              "reference_y": 343.8679447,
+              "simulated_y": 343.4409312920332
+            },
+            {
+              "x": 1.186828031,
+              "reference_y": 347.173402,
+              "simulated_y": 347.2100253730408
+            },
+            {
+              "x": 1.190315265,
+              "reference_y": 350.4788593,
+              "simulated_y": 350.98574329543646
+            },
+            {
+              "x": 1.193802499,
+              "reference_y": 353.7843167,
+              "simulated_y": 354.76797723591363
+            },
+            {
+              "x": 1.197289733,
+              "reference_y": 357.089774,
+              "simulated_y": 358.5566217748736
+            },
+            {
+              "x": 1.200776967,
+              "reference_y": 360.3952313,
+              "simulated_y": 362.35157383126193
+            },
+            {
+              "x": 1.204264201,
+              "reference_y": 363.7006887,
+              "simulated_y": 366.1527325993837
+            },
+            {
+              "x": 1.207751435,
+              "reference_y": 367.006146,
+              "simulated_y": 369.9599994876366
+            },
+            {
+              "x": 1.211238669,
+              "reference_y": 370.3116033,
+              "simulated_y": 373.77327805910454
+            },
+            {
+              "x": 1.214725902,
+              "reference_y": 373.6170606,
+              "simulated_y": 377.5924728779435
+            },
+            {
+              "x": 1.218213136,
+              "reference_y": 376.922518,
+              "simulated_y": 381.4174938358807
+            },
+            {
+              "x": 1.22170037,
+              "reference_y": 380.2279753,
+              "simulated_y": 385.2482495270146
+            },
+            {
+              "x": 1.225187604,
+              "reference_y": 383.5334326,
+              "simulated_y": 389.0846515742568
+            },
+            {
+              "x": 1.228674838,
+              "reference_y": 386.8388899,
+              "simulated_y": 392.92661348405875
+            },
+            {
+              "x": 1.232162072,
+              "reference_y": 390.1443473,
+              "simulated_y": 396.7740505969791
+            },
+            {
+              "x": 1.235649306,
+              "reference_y": 393.4498046,
+              "simulated_y": 400.626880039745
+            },
+            {
+              "x": 1.23913654,
+              "reference_y": 396.7552619,
+              "simulated_y": 404.4850206787365
+            },
+            {
+              "x": 1.242623774,
+              "reference_y": 400.0607192,
+              "simulated_y": 408.34839307487
+            },
+            {
+              "x": 1.246111008,
+              "reference_y": 403.3661766,
+              "simulated_y": 412.2169194398211
+            },
+            {
+              "x": 1.249598242,
+              "reference_y": 406.6716339,
+              "simulated_y": 416.09052359355115
+            },
+            {
+              "x": 1.253085476,
+              "reference_y": 409.9770912,
+              "simulated_y": 419.96913092309137
+            },
+            {
+              "x": 1.25657271,
+              "reference_y": 413.2825486,
+              "simulated_y": 423.85266834254685
+            },
+            {
+              "x": 1.260059944,
+              "reference_y": 416.5880059,
+              "simulated_y": 427.74106425428477
+            },
+            {
+              "x": 1.263547178,
+              "reference_y": 419.8934632,
+              "simulated_y": 431.6342485112561
+            },
+            {
+              "x": 1.267034412,
+              "reference_y": 423.1989205,
+              "simulated_y": 435.5321523804309
+            },
+            {
+              "x": 1.270521646,
+              "reference_y": 426.5043779,
+              "simulated_y": 439.4347085072973
+            },
+            {
+              "x": 1.27400888,
+              "reference_y": 429.8098352,
+              "simulated_y": 443.34185088140106
+            },
+            {
+              "x": 1.277496114,
+              "reference_y": 433.1152925,
+              "simulated_y": 447.2535148028844
+            },
+            {
+              "x": 1.280983348,
+              "reference_y": 436.4207498,
+              "simulated_y": 451.16963684999547
+            },
+            {
+              "x": 1.284470582,
+              "reference_y": 439.7262072,
+              "simulated_y": 455.09015484753803
+            },
+            {
+              "x": 1.287957816,
+              "reference_y": 443.0316645,
+              "simulated_y": 459.01500783622834
+            },
+            {
+              "x": 1.29144505,
+              "reference_y": 446.3371218,
+              "simulated_y": 462.9441360429356
+            },
+            {
+              "x": 1.294932284,
+              "reference_y": 449.6425791,
+              "simulated_y": 466.8774808517702
+            },
+            {
+              "x": 1.298419518,
+              "reference_y": 452.9480365,
+              "simulated_y": 470.81498477600377
+            },
+            {
+              "x": 1.301906752,
+              "reference_y": 456.2534938,
+              "simulated_y": 474.75659143077684
+            },
+            {
+              "x": 1.305393986,
+              "reference_y": 459.5589511,
+              "simulated_y": 478.7022455065935
+            }
+          ]
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/64fef962396101fc0e0126a12d100f23acb7c4f8322502e4cffde37f901068dc",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "1a30d9bb4a9c224e0ea3049f286bc66f724ba3c6b1f58ad3e5bc2e061977ecf0",
+          "test.raw": "1f7896eb2e0f6c4509b3e3c08d205d29e938bb3b033e47429d05e68679a69624",
+          "test.log": "73f2bb594d15737c8b37c3a42356ff3d7fde0bb9be587cc99d75afe38b7e4d35",
+          "execution.json": "72a6b89dc85411428715cd1371f5b796fa3801148d38d69dfc9ea48b3df0487d"
+        }
+      },
+      "protocol_sha256": "cffd1bc13af576abc1f93133e41dd5c0084a8ee754f6cc30c63881e5b0f6d5b4"
+    },
+    {
+      "device": "1N4148",
+      "id": "forward_175C",
+      "reference_ids": [
+        "figure:fig3:typ_175C"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+      "calibrations": [
+        {
+          "expected": 0,
+          "result": {
+            "metrics": {
+              "MAE": 1.850371707708594e-17,
+              "RMSE": 3.204937810639273e-17,
+              "max_absolute_error": 5.551115123125783e-17,
+              "MAE_over_reference_span_percent": 1.920016238618145e-15,
+              "max_error_over_reference_span_percent": 5.760048715854435e-15
+            },
+            "comparison": [
+              {
+                "x": 0.3153464114,
+                "reference_y": 0.3153464114,
+                "simulated_y": 0.31534641139999997
+              },
+              {
+                "x": 0.7972099682,
+                "reference_y": 0.7972099682,
+                "simulated_y": 0.7972099682
+              },
+              {
+                "x": 1.279073525,
+                "reference_y": 1.279073525,
+                "simulated_y": 1.279073525
+              }
+            ]
+          },
+          "error": 5.551115123125783e-17,
+          "tolerance": 1e-09,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/9d48a30bf299d078f6af382b36e1db14900f42ac2e7e92b687d7b59fa1a16f8f",
+          "artifacts": {
+            "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+            "test.cir": "98c6b60b62cb3d4db0e44540ecfabf6ef67697ad3090dbc1a8aabf10a0018a6d",
+            "test.raw": "72ccb70763b545f5c006f8f201445b649bef4efc0fa419adb5d332e37c5cf60e",
+            "test.log": "42a0c460f50fdbb65ea2d7d5a08daac50b260b9d7b28b5378deada7951e78916",
+            "execution.json": "b0594fb55e342f45be1d83d196ab03c14e5fdaf3343efb104d7e39d3b690bb4b"
+          }
+        },
+        {
+          "expected": 0,
+          "result": {
+            "metrics": {
+              "MAE": 9.25185853854297e-18,
+              "RMSE": 1.6024689053196365e-17,
+              "max_absolute_error": 2.7755575615628914e-17,
+              "MAE_over_reference_span_percent": 1.920016238618145e-15,
+              "max_error_over_reference_span_percent": 5.760048715854435e-15
+            },
+            "comparison": [
+              {
+                "x": 0.3153464114,
+                "reference_y": 0.1576732057,
+                "simulated_y": 0.15767320569999999
+              },
+              {
+                "x": 0.7972099682,
+                "reference_y": 0.3986049841,
+                "simulated_y": 0.3986049841
+              },
+              {
+                "x": 1.279073525,
+                "reference_y": 0.6395367625,
+                "simulated_y": 0.6395367625
+              }
+            ]
+          },
+          "error": 2.7755575615628914e-17,
+          "tolerance": 1e-09,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/227f98ad4fa2bad02d8c160b3401cc715767f66365090d1d1ee43bc43c9f29f9",
+          "artifacts": {
+            "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+            "test.cir": "2fbdafaf4347bce6b223991d7078ee090b2f80e24efeef01e0ccd2a6a7dec7f5",
+            "test.raw": "5770fe11ec558e6801edd58bf84a102d772167cb640cd0ebb28fc3d30fd9d465",
+            "test.log": "80e9c953abe12032f15591add21a219ebfa549702057a3e02ca477b002afcd2e",
+            "execution.json": "9a1b66119b596e463ab9463889daa986122128383af9d6461b01e360e2b21a90"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "metrics": {
+            "MAE": 17.16283199478743,
+            "RMSE": 23.702583511872096,
+            "max_absolute_error": 65.25414256556996,
+            "MAE_over_reference_span_percent": 3.821134695040978,
+            "max_error_over_reference_span_percent": 14.52818906740909
+          },
+          "comparison": [
+            {
+              "x": 0.3153464114,
+              "reference_y": 1.408871802,
+              "simulated_y": 1.666689521833964
+            },
+            {
+              "x": 0.320165047,
+              "reference_y": 1.531549912,
+              "simulated_y": 1.772423121041915
+            },
+            {
+              "x": 0.3249836825,
+              "reference_y": 1.661296104,
+              "simulated_y": 1.8845852599810429
+            },
+            {
+              "x": 0.3298023181,
+              "reference_y": 1.798528037,
+              "simulated_y": 2.003546934218039
+            },
+            {
+              "x": 0.3346209537,
+              "reference_y": 1.943673261,
+              "simulated_y": 2.129698104933155
+            },
+            {
+              "x": 0.3394395892,
+              "reference_y": 2.097169468,
+              "simulated_y": 2.2634483799368397
+            },
+            {
+              "x": 0.3442582248,
+              "reference_y": 2.25947636,
+              "simulated_y": 2.405227684632071
+            },
+            {
+              "x": 0.3490768604,
+              "reference_y": 2.431046589,
+              "simulated_y": 2.5554868888945297
+            },
+            {
+              "x": 0.3538954959,
+              "reference_y": 2.61236109,
+              "simulated_y": 2.7146984333983992
+            },
+            {
+              "x": 0.3587141315,
+              "reference_y": 2.803899844,
+              "simulated_y": 2.8833569275570023
+            },
+            {
+              "x": 0.3635327671,
+              "reference_y": 3.006174692,
+              "simulated_y": 3.061979677857027
+            },
+            {
+              "x": 0.3683514026,
+              "reference_y": 3.219688707,
+              "simulated_y": 3.251107197695657
+            },
+            {
+              "x": 0.3731700382,
+              "reference_y": 3.444971421,
+              "simulated_y": 3.451303664962783
+            },
+            {
+              "x": 0.3779886738,
+              "reference_y": 3.68256651,
+              "simulated_y": 3.6631572780431
+            },
+            {
+              "x": 0.3828073093,
+              "reference_y": 3.933032191,
+              "simulated_y": 3.8872805706968636
+            },
+            {
+              "x": 0.3876259449,
+              "reference_y": 4.196941646,
+              "simulated_y": 4.124310645624468
+            },
+            {
+              "x": 0.3924445804,
+              "reference_y": 4.474883454,
+              "simulated_y": 4.374909263267885
+            },
+            {
+              "x": 0.397263216,
+              "reference_y": 4.767462039,
+              "simulated_y": 4.639762895399163
+            },
+            {
+              "x": 0.4020818516,
+              "reference_y": 5.075298133,
+              "simulated_y": 4.919582584652671
+            },
+            {
+              "x": 0.4069004871,
+              "reference_y": 5.399049744,
+              "simulated_y": 5.215103723233377
+            },
+            {
+              "x": 0.4117191227,
+              "reference_y": 5.73935952,
+              "simulated_y": 5.527085695214112
+            },
+            {
+              "x": 0.4165377583,
+              "reference_y": 6.096925999,
+              "simulated_y": 5.856311309298602
+            },
+            {
+              "x": 0.4213563938,
+              "reference_y": 6.472436894,
+              "simulated_y": 6.203586121237167
+            },
+            {
+              "x": 0.4261750294,
+              "reference_y": 6.866625232,
+              "simulated_y": 6.56973758897126
+            },
+            {
+              "x": 0.430993665,
+              "reference_y": 7.280243026,
+              "simulated_y": 6.955613978830588
+            },
+            {
+              "x": 0.4358123005,
+              "reference_y": 7.714053944,
+              "simulated_y": 7.3620831441293895
+            },
+            {
+              "x": 0.4406309361,
+              "reference_y": 8.16885454,
+              "simulated_y": 7.790031114443328
+            },
+            {
+              "x": 0.4454495717,
+              "reference_y": 8.645467307,
+              "simulated_y": 8.240360406217702
+            },
+            {
+              "x": 0.4502682072,
+              "reference_y": 9.144753252,
+              "simulated_y": 8.713988203452324
+            },
+            {
+              "x": 0.4550868428,
+              "reference_y": 9.667574764,
+              "simulated_y": 9.21184434313459
+            },
+            {
+              "x": 0.4599054784,
+              "reference_y": 10.21484256,
+              "simulated_y": 9.73486900930226
+            },
+            {
+              "x": 0.4647241139,
+              "reference_y": 10.78750365,
+              "simulated_y": 10.28401031722224
+            },
+            {
+              "x": 0.4695427495,
+              "reference_y": 11.38652642,
+              "simulated_y": 10.860221719515751
+            },
+            {
+              "x": 0.4743613851,
+              "reference_y": 12.01291219,
+              "simulated_y": 11.464459131640814
+            },
+            {
+              "x": 0.4791800206,
+              "reference_y": 12.66770838,
+              "simulated_y": 12.097677995653973
+            },
+            {
+              "x": 0.4839986562,
+              "reference_y": 13.35199766,
+              "simulated_y": 12.760830210834495
+            },
+            {
+              "x": 0.4888172918,
+              "reference_y": 14.06689922,
+              "simulated_y": 13.454860821066596
+            },
+            {
+              "x": 0.4936359273,
+              "reference_y": 14.81357016,
+              "simulated_y": 14.18070471853076
+            },
+            {
+              "x": 0.4984545629,
+              "reference_y": 15.59322316,
+              "simulated_y": 14.93928328674961
+            },
+            {
+              "x": 0.5032731985,
+              "reference_y": 16.40711476,
+              "simulated_y": 15.73150086237122
+            },
+            {
+              "x": 0.508091834,
+              "reference_y": 17.25654447,
+              "simulated_y": 16.558241316935444
+            },
+            {
+              "x": 0.5129104696,
+              "reference_y": 18.14286172,
+              "simulated_y": 17.42036467160866
+            },
+            {
+              "x": 0.5177291052,
+              "reference_y": 19.06748299,
+              "simulated_y": 18.318703608680035
+            },
+            {
+              "x": 0.5225477407,
+              "reference_y": 20.03187766,
+              "simulated_y": 19.2540602216221
+            },
+            {
+              "x": 0.5273663763,
+              "reference_y": 21.03757022,
+              "simulated_y": 20.22720290023615
+            },
+            {
+              "x": 0.5321850119,
+              "reference_y": 22.08614262,
+              "simulated_y": 21.238863192484164
+            },
+            {
+              "x": 0.5370036474,
+              "reference_y": 23.17929576,
+              "simulated_y": 22.289733022746706
+            },
+            {
+              "x": 0.541822283,
+              "reference_y": 24.31872554,
+              "simulated_y": 23.380462139306594
+            },
+            {
+              "x": 0.5466409186,
+              "reference_y": 25.50626002,
+              "simulated_y": 24.511655603661826
+            },
+            {
+              "x": 0.5514595541,
+              "reference_y": 26.74380236,
+              "simulated_y": 25.683871736481763
+            },
+            {
+              "x": 0.5562781897,
+              "reference_y": 28.03333441,
+              "simulated_y": 26.897620362759568
+            },
+            {
+              "x": 0.5610968253,
+              "reference_y": 29.37692036,
+              "simulated_y": 28.15336113429671
+            },
+            {
+              "x": 0.5659154608,
+              "reference_y": 30.77675547,
+              "simulated_y": 29.451502377748863
+            },
+            {
+              "x": 0.5707340964,
+              "reference_y": 32.23510348,
+              "simulated_y": 30.79240027618188
+            },
+            {
+              "x": 0.575552732,
+              "reference_y": 33.75437941,
+              "simulated_y": 32.17635812497034
+            },
+            {
+              "x": 0.5803713675,
+              "reference_y": 35.33710758,
+              "simulated_y": 33.603626144164245
+            },
+            {
+              "x": 0.5811910903,
+              "reference_y": 35.61284422,
+              "simulated_y": 33.85079717091462
+            },
+            {
+              "x": 0.5851900031,
+              "reference_y": 38.05936464,
+              "simulated_y": 35.074401619315715
+            },
+            {
+              "x": 0.5900086387,
+              "reference_y": 41.00738849,
+              "simulated_y": 36.588829074554134
+            },
+            {
+              "x": 0.5948272742,
+              "reference_y": 43.95541234,
+              "simulated_y": 38.14700099667983
+            },
+            {
+              "x": 0.5996459098,
+              "reference_y": 46.9034362,
+              "simulated_y": 39.74895884782118
+            },
+            {
+              "x": 0.6044645454,
+              "reference_y": 49.85146005,
+              "simulated_y": 41.39469403632897
+            },
+            {
+              "x": 0.6092831809,
+              "reference_y": 52.7994839,
+              "simulated_y": 43.084149405583354
+            },
+            {
+              "x": 0.6141018165,
+              "reference_y": 55.74750775,
+              "simulated_y": 44.817220947307405
+            },
+            {
+              "x": 0.6189204521,
+              "reference_y": 58.6955316,
+              "simulated_y": 46.59375937939171
+            },
+            {
+              "x": 0.6237390876,
+              "reference_y": 61.64355546,
+              "simulated_y": 48.41357219343898
+            },
+            {
+              "x": 0.6285577232,
+              "reference_y": 64.59157931,
+              "simulated_y": 50.276425851853894
+            },
+            {
+              "x": 0.6333763588,
+              "reference_y": 67.53960316,
+              "simulated_y": 52.182047749552
+            },
+            {
+              "x": 0.6381949943,
+              "reference_y": 70.48762701,
+              "simulated_y": 54.13012859482324
+            },
+            {
+              "x": 0.6430136299,
+              "reference_y": 73.43565086,
+              "simulated_y": 56.12032486620978
+            },
+            {
+              "x": 0.6478322655,
+              "reference_y": 76.38367472,
+              "simulated_y": 58.15226093956061
+            },
+            {
+              "x": 0.652650901,
+              "reference_y": 79.33169857,
+              "simulated_y": 60.225531591340626
+            },
+            {
+              "x": 0.6574695366,
+              "reference_y": 82.27972242,
+              "simulated_y": 62.33970451487489
+            },
+            {
+              "x": 0.6622881722,
+              "reference_y": 85.22774627,
+              "simulated_y": 64.4943224255708
+            },
+            {
+              "x": 0.6671068077,
+              "reference_y": 88.17577012,
+              "simulated_y": 66.6889055131861
+            },
+            {
+              "x": 0.6719254433,
+              "reference_y": 91.12379398,
+              "simulated_y": 68.92295385923583
+            },
+            {
+              "x": 0.6767440789,
+              "reference_y": 94.07181783,
+              "simulated_y": 71.1959493790338
+            },
+            {
+              "x": 0.6815627144,
+              "reference_y": 97.01984168,
+              "simulated_y": 73.5073580973007
+            },
+            {
+              "x": 0.68638135,
+              "reference_y": 99.96786553,
+              "simulated_y": 75.85663235747572
+            },
+            {
+              "x": 0.6911999856,
+              "reference_y": 102.9158894,
+              "simulated_y": 78.24321250829115
+            },
+            {
+              "x": 0.6960186211,
+              "reference_y": 105.8639132,
+              "simulated_y": 80.66652892518495
+            },
+            {
+              "x": 0.7008372567,
+              "reference_y": 108.8119371,
+              "simulated_y": 83.12600394873625
+            },
+            {
+              "x": 0.7056558923,
+              "reference_y": 111.7599609,
+              "simulated_y": 85.62105326781897
+            },
+            {
+              "x": 0.7104745278,
+              "reference_y": 114.7079848,
+              "simulated_y": 88.15108765083424
+            },
+            {
+              "x": 0.7152931634,
+              "reference_y": 117.6560086,
+              "simulated_y": 90.71551458901354
+            },
+            {
+              "x": 0.720111799,
+              "reference_y": 120.6040325,
+              "simulated_y": 93.31373936350865
+            },
+            {
+              "x": 0.7249304345,
+              "reference_y": 123.5520563,
+              "simulated_y": 95.94516648230491
+            },
+            {
+              "x": 0.727865157,
+              "reference_y": 125.347509,
+              "simulated_y": 97.5638284998802
+            },
+            {
+              "x": 0.7297490701,
+              "reference_y": 126.4590307,
+              "simulated_y": 98.6092010325695
+            },
+            {
+              "x": 0.7345677057,
+              "reference_y": 129.3020589,
+              "simulated_y": 101.30524944408218
+            },
+            {
+              "x": 0.7393863412,
+              "reference_y": 132.1450872,
+              "simulated_y": 104.03272064940151
+            },
+            {
+              "x": 0.7442049768,
+              "reference_y": 134.9881154,
+              "simulated_y": 106.79102716800374
+            },
+            {
+              "x": 0.7490236123,
+              "reference_y": 137.8311437,
+              "simulated_y": 109.57958553588935
+            },
+            {
+              "x": 0.7538422479,
+              "reference_y": 140.6741719,
+              "simulated_y": 112.39781751012542
+            },
+            {
+              "x": 0.7586608835,
+              "reference_y": 143.5172001,
+              "simulated_y": 115.24515033628406
+            },
+            {
+              "x": 0.763479519,
+              "reference_y": 146.3602284,
+              "simulated_y": 118.1210175179801
+            },
+            {
+              "x": 0.7682981546,
+              "reference_y": 149.2032566,
+              "simulated_y": 121.02485952950619
+            },
+            {
+              "x": 0.7731167902,
+              "reference_y": 152.0462849,
+              "simulated_y": 123.95612392525929
+            },
+            {
+              "x": 0.7779354257,
+              "reference_y": 154.8893131,
+              "simulated_y": 126.91426592404382
+            },
+            {
+              "x": 0.7827540613,
+              "reference_y": 157.7323413,
+              "simulated_y": 129.89874894822793
+            },
+            {
+              "x": 0.7875726969,
+              "reference_y": 160.5753696,
+              "simulated_y": 132.909044556607
+            },
+            {
+              "x": 0.7923913324,
+              "reference_y": 163.4183978,
+              "simulated_y": 135.94463287947877
+            },
+            {
+              "x": 0.797209968,
+              "reference_y": 166.2614261,
+              "simulated_y": 139.00500301939633
+            },
+            {
+              "x": 0.8020286036,
+              "reference_y": 169.1044543,
+              "simulated_y": 142.08965284228236
+            },
+            {
+              "x": 0.8068472391,
+              "reference_y": 171.9474825,
+              "simulated_y": 145.1980892958954
+            },
+            {
+              "x": 0.8116658747,
+              "reference_y": 174.7905108,
+              "simulated_y": 148.32982870341883
+            },
+            {
+              "x": 0.8164845103,
+              "reference_y": 177.633539,
+              "simulated_y": 151.48439644344668
+            },
+            {
+              "x": 0.8213031458,
+              "reference_y": 180.4765673,
+              "simulated_y": 154.66132718006594
+            },
+            {
+              "x": 0.8261217814,
+              "reference_y": 183.3195955,
+              "simulated_y": 157.8601650759911
+            },
+            {
+              "x": 0.830940417,
+              "reference_y": 186.1626237,
+              "simulated_y": 161.08046338737842
+            },
+            {
+              "x": 0.8357590525,
+              "reference_y": 189.005652,
+              "simulated_y": 164.32178462912302
+            },
+            {
+              "x": 0.8405776881,
+              "reference_y": 191.8486802,
+              "simulated_y": 167.58370072964644
+            },
+            {
+              "x": 0.8453963237,
+              "reference_y": 194.6917085,
+              "simulated_y": 170.86579256193073
+            },
+            {
+              "x": 0.8502149592,
+              "reference_y": 197.5347367,
+              "simulated_y": 174.16765006320742
+            },
+            {
+              "x": 0.8550335948,
+              "reference_y": 200.3777649,
+              "simulated_y": 177.4888723492262
+            },
+            {
+              "x": 0.8598522304,
+              "reference_y": 203.2207932,
+              "simulated_y": 180.82906719872344
+            },
+            {
+              "x": 0.8646708659,
+              "reference_y": 206.0638214,
+              "simulated_y": 184.18785114272023
+            },
+            {
+              "x": 0.8694895015,
+              "reference_y": 208.9068497,
+              "simulated_y": 187.564849552323
+            },
+            {
+              "x": 0.8743081371,
+              "reference_y": 211.7498779,
+              "simulated_y": 190.95969609019923
+            },
+            {
+              "x": 0.8791267726,
+              "reference_y": 214.5929061,
+              "simulated_y": 194.37203278130715
+            },
+            {
+              "x": 0.8839454082,
+              "reference_y": 217.4359344,
+              "simulated_y": 197.80151008506166
+            },
+            {
+              "x": 0.8887640438,
+              "reference_y": 220.2789626,
+              "simulated_y": 201.24778632433393
+            },
+            {
+              "x": 0.8935826793,
+              "reference_y": 223.1219909,
+              "simulated_y": 204.7105277465973
+            },
+            {
+              "x": 0.8984013149,
+              "reference_y": 225.9650191,
+              "simulated_y": 208.18940858864957
+            },
+            {
+              "x": 0.9032199505,
+              "reference_y": 228.8080473,
+              "simulated_y": 211.6841104911326
+            },
+            {
+              "x": 0.908038586,
+              "reference_y": 231.6510756,
+              "simulated_y": 215.1943225567846
+            },
+            {
+              "x": 0.9128572216,
+              "reference_y": 234.4941038,
+              "simulated_y": 218.7197414137692
+            },
+            {
+              "x": 0.9176758572,
+              "reference_y": 237.3371321,
+              "simulated_y": 222.26007062169361
+            },
+            {
+              "x": 0.9224944927,
+              "reference_y": 240.1801603,
+              "simulated_y": 225.81502073182614
+            },
+            {
+              "x": 0.9273131283,
+              "reference_y": 243.0231885,
+              "simulated_y": 229.38430935338755
+            },
+            {
+              "x": 0.9321317639,
+              "reference_y": 245.8662168,
+              "simulated_y": 232.96766055545467
+            },
+            {
+              "x": 0.9369503994,
+              "reference_y": 248.709245,
+              "simulated_y": 236.56480493256475
+            },
+            {
+              "x": 0.941769035,
+              "reference_y": 251.5522733,
+              "simulated_y": 240.17547967701248
+            },
+            {
+              "x": 0.9465876706,
+              "reference_y": 254.3953015,
+              "simulated_y": 243.79942797977938
+            },
+            {
+              "x": 0.9514063061,
+              "reference_y": 257.2383297,
+              "simulated_y": 247.4363991038419
+            },
+            {
+              "x": 0.9562249417,
+              "reference_y": 260.081358,
+              "simulated_y": 251.0861484645127
+            },
+            {
+              "x": 0.9610435773,
+              "reference_y": 262.9243862,
+              "simulated_y": 254.74843703157632
+            },
+            {
+              "x": 0.9658622128,
+              "reference_y": 265.7674145,
+              "simulated_y": 258.42303141178763
+            },
+            {
+              "x": 0.9706808484,
+              "reference_y": 268.6104427,
+              "simulated_y": 262.1097039385211
+            },
+            {
+              "x": 0.975499484,
+              "reference_y": 271.4534709,
+              "simulated_y": 265.8082320765801
+            },
+            {
+              "x": 0.9803181195,
+              "reference_y": 274.2964992,
+              "simulated_y": 269.5183985147426
+            },
+            {
+              "x": 0.9851367551,
+              "reference_y": 277.1395274,
+              "simulated_y": 273.2399912654146
+            },
+            {
+              "x": 0.9899553907,
+              "reference_y": 279.9825557,
+              "simulated_y": 276.9728030730423
+            },
+            {
+              "x": 0.9947740262,
+              "reference_y": 282.8255839,
+              "simulated_y": 280.71663151709186
+            },
+            {
+              "x": 0.9995926618,
+              "reference_y": 285.6686121,
+              "simulated_y": 284.4712791220024
+            },
+            {
+              "x": 1.004411297,
+              "reference_y": 288.5116404,
+              "simulated_y": 288.2365524567652
+            },
+            {
+              "x": 1.009229933,
+              "reference_y": 291.3546686,
+              "simulated_y": 292.01226389161855
+            },
+            {
+              "x": 1.014048568,
+              "reference_y": 294.1976969,
+              "simulated_y": 295.79822780318216
+            },
+            {
+              "x": 1.018867204,
+              "reference_y": 297.0407251,
+              "simulated_y": 299.5942657931193
+            },
+            {
+              "x": 1.02368584,
+              "reference_y": 299.8837533,
+              "simulated_y": 303.40020124014507
+            },
+            {
+              "x": 1.028504475,
+              "reference_y": 302.7267816,
+              "simulated_y": 307.2158615398663
+            },
+            {
+              "x": 1.033323111,
+              "reference_y": 305.5698098,
+              "simulated_y": 311.0410803846343
+            },
+            {
+              "x": 1.038141746,
+              "reference_y": 308.4128381,
+              "simulated_y": 314.8756921138841
+            },
+            {
+              "x": 1.042960382,
+              "reference_y": 311.2558663,
+              "simulated_y": 318.7195379644008
+            },
+            {
+              "x": 1.047779017,
+              "reference_y": 314.0988945,
+              "simulated_y": 322.5724596079043
+            },
+            {
+              "x": 1.052597653,
+              "reference_y": 316.9419228,
+              "simulated_y": 326.4343054372881
+            },
+            {
+              "x": 1.057416289,
+              "reference_y": 319.784951,
+              "simulated_y": 330.30492488291014
+            },
+            {
+              "x": 1.062234924,
+              "reference_y": 322.6279793,
+              "simulated_y": 334.1841707132101
+            },
+            {
+              "x": 1.06705356,
+              "reference_y": 325.4710075,
+              "simulated_y": 338.07190137086707
+            },
+            {
+              "x": 1.071872195,
+              "reference_y": 328.3140357,
+              "simulated_y": 341.96797524863155
+            },
+            {
+              "x": 1.076690831,
+              "reference_y": 331.157064,
+              "simulated_y": 345.87225706057893
+            },
+            {
+              "x": 1.081509466,
+              "reference_y": 334.0000922,
+              "simulated_y": 349.784611294292
+            },
+            {
+              "x": 1.086328102,
+              "reference_y": 336.8431205,
+              "simulated_y": 353.70490861394757
+            },
+            {
+              "x": 1.091146738,
+              "reference_y": 339.6861487,
+              "simulated_y": 357.6330201057375
+            },
+            {
+              "x": 1.095965373,
+              "reference_y": 342.5291769,
+              "simulated_y": 361.56881963211555
+            },
+            {
+              "x": 1.100784009,
+              "reference_y": 345.3722052,
+              "simulated_y": 365.51218621766424
+            },
+            {
+              "x": 1.105602644,
+              "reference_y": 348.2152334,
+              "simulated_y": 369.46299825814964
+            },
+            {
+              "x": 1.11042128,
+              "reference_y": 351.0582617,
+              "simulated_y": 373.42113999890876
+            },
+            {
+              "x": 1.115239915,
+              "reference_y": 353.9012899,
+              "simulated_y": 377.38649491031777
+            },
+            {
+              "x": 1.120058551,
+              "reference_y": 356.7443182,
+              "simulated_y": 381.35895219433263
+            },
+            {
+              "x": 1.124877187,
+              "reference_y": 359.5873464,
+              "simulated_y": 385.3384009659809
+            },
+            {
+              "x": 1.129695822,
+              "reference_y": 362.4303746,
+              "simulated_y": 389.32473265462494
+            },
+            {
+              "x": 1.134514458,
+              "reference_y": 365.2734029,
+              "simulated_y": 393.31784343344725
+            },
+            {
+              "x": 1.139333093,
+              "reference_y": 368.1164311,
+              "simulated_y": 397.3176283679636
+            },
+            {
+              "x": 1.144151729,
+              "reference_y": 370.9594594,
+              "simulated_y": 401.32398798932405
+            },
+            {
+              "x": 1.148970364,
+              "reference_y": 373.8024876,
+              "simulated_y": 405.33682160024836
+            },
+            {
+              "x": 1.153789,
+              "reference_y": 376.6455158,
+              "simulated_y": 409.3560338732642
+            },
+            {
+              "x": 1.158607635,
+              "reference_y": 379.4885441,
+              "simulated_y": 413.3815281380191
+            },
+            {
+              "x": 1.163426271,
+              "reference_y": 382.3315723,
+              "simulated_y": 417.413213003754
+            },
+            {
+              "x": 1.168244907,
+              "reference_y": 385.1746006,
+              "simulated_y": 421.4509964669278
+            },
+            {
+              "x": 1.173063542,
+              "reference_y": 388.0176288,
+              "simulated_y": 425.4947883645392
+            },
+            {
+              "x": 1.177882178,
+              "reference_y": 390.860657,
+              "simulated_y": 429.54450285167843
+            },
+            {
+              "x": 1.182700813,
+              "reference_y": 393.7036853,
+              "simulated_y": 433.6000524800608
+            },
+            {
+              "x": 1.187519449,
+              "reference_y": 396.5467135,
+              "simulated_y": 437.6613548777883
+            },
+            {
+              "x": 1.192338084,
+              "reference_y": 399.3897418,
+              "simulated_y": 441.72832597486786
+            },
+            {
+              "x": 1.19715672,
+              "reference_y": 402.23277,
+              "simulated_y": 445.8008867045585
+            },
+            {
+              "x": 1.201975356,
+              "reference_y": 405.0757982,
+              "simulated_y": 449.8789570590443
+            },
+            {
+              "x": 1.206793991,
+              "reference_y": 407.9188265,
+              "simulated_y": 453.9624585775602
+            },
+            {
+              "x": 1.211612627,
+              "reference_y": 410.7618547,
+              "simulated_y": 458.05131685632125
+            },
+            {
+              "x": 1.216431262,
+              "reference_y": 413.604883,
+              "simulated_y": 462.14545557753655
+            },
+            {
+              "x": 1.221249898,
+              "reference_y": 416.4479112,
+              "simulated_y": 466.2448032619228
+            },
+            {
+              "x": 1.226068533,
+              "reference_y": 419.2909394,
+              "simulated_y": 470.3492864375729
+            },
+            {
+              "x": 1.230887169,
+              "reference_y": 422.1339677,
+              "simulated_y": 474.458836411773
+            },
+            {
+              "x": 1.235705805,
+              "reference_y": 424.9769959,
+              "simulated_y": 478.57338327891125
+            },
+            {
+              "x": 1.24052444,
+              "reference_y": 427.8200242,
+              "simulated_y": 482.69285843927213
+            },
+            {
+              "x": 1.245343076,
+              "reference_y": 430.6630524,
+              "simulated_y": 486.8171971375519
+            },
+            {
+              "x": 1.250161711,
+              "reference_y": 433.5060806,
+              "simulated_y": 490.9463324462441
+            },
+            {
+              "x": 1.254980347,
+              "reference_y": 436.3491089,
+              "simulated_y": 495.08020208336535
+            },
+            {
+              "x": 1.259798982,
+              "reference_y": 439.1921371,
+              "simulated_y": 499.2187415292303
+            },
+            {
+              "x": 1.264617618,
+              "reference_y": 442.0351654,
+              "simulated_y": 503.3618908615096
+            },
+            {
+              "x": 1.269436253,
+              "reference_y": 444.8781936,
+              "simulated_y": 507.50958785790243
+            },
+            {
+              "x": 1.274254889,
+              "reference_y": 447.7212218,
+              "simulated_y": 511.6617748480759
+            },
+            {
+              "x": 1.279073525,
+              "reference_y": 450.5642501,
+              "simulated_y": 515.81839266557
+            }
+          ]
+        },
+        "acceptance": "fail",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/f6a60864a681d1dafb4b142dd263147a9abedd55eaedc89491fef9812f6aa8ab",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "d88dac3254cbb58d963d3cc86c7b39aee3979c1167b708e45127c3d2ffae5a8d",
+          "test.raw": "604900d3d6970b6eb3eee56dfd0a32a032039e7b439c9f993ba5316068d23de7",
+          "test.log": "054d8131dea5df5b938415554016f1db2d00d2562627c26c821cacf148e755e1",
+          "execution.json": "6d0242a39dc8fc6c1cf25320b18b7a31ad7f69c119e6f4700d515bce93f52426"
+        }
+      },
+      "protocol_sha256": "0418cea58c5174a3057f7d7c469ac2a4c639599886b4d5441e41ba81cf9532ed"
+    },
+    {
+      "device": "1N4148",
+      "id": "forward_10mA",
+      "reference_ids": [
+        "parameter:vf10"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+      "calibrations": [
+        {
+          "expected": 0.4,
+          "result": {
+            "value": 0.4
+          },
+          "error": 0.0,
+          "tolerance": 4e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/e2edbc658283fe6fd8a7570b8185dfed42b83daaefc2180805c5c830c41608ab",
+          "artifacts": {
+            "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+            "test.cir": "7234471a5c7b498dedeeecf41de44578e4bf5f889d01629d3a5ed6206f703782",
+            "test.raw": "60b09054041df2d47496fee12e7caffe4729d37c23364cccdc7d9671fb97c7cb",
+            "test.log": "d71eaeb0c13f41b940b20361a48335b49bfa1a97e2fab36fb11965bea0c18fe1",
+            "execution.json": "d963b6d3e9fe22316f540aac95148034f6924ba86626e815cb5b2e122a4e4f81"
+          }
+        },
+        {
+          "expected": 0.8,
+          "result": {
+            "value": 0.8
+          },
+          "error": 0.0,
+          "tolerance": 8e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/a8c8ebb4b16f62591e96dc53175dea0c9e3c81e78fa6c624f9bc22ebf5c51bed",
+          "artifacts": {
+            "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+            "test.cir": "1b69377306dcbf39dfea5d8e4225305a71c9d621b08bbaf867515b00ff09e376",
+            "test.raw": "433adab1bbebde66ee3ddc5a5b27291c111ea064fdeabbb6369b55b4b7b36400",
+            "test.log": "025b6df78d55d382437527c914fce90fef332ff1af7628f557d2c8fd6ebe01a4",
+            "execution.json": "7c3db63aabc2f806d5277427471d5ea8f6ecfb112eb4d530434dcfbfac4ad041"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 0.7414948416042041
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/9bc9ff17c8c50c31d0a01ca06c38a200cb733d59cf17ecd68c77681b925af6e7",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "4c4ac5eb27796656a50fa3dcf36a0be4d7eeb5492be38e64e9cb96afcf52435d",
+          "test.raw": "cb48d8111e5b74c875000fa47965fc061faae17ea83cd6f8ca981498e84f930a",
+          "test.log": "db70c15cbe9d1b65126b44eb1833806c04ec2a7d99cf0c4bcb2fbcdfd1f597e7",
+          "execution.json": "b971bc15049c34a969912a97a7bb678d65e1d7fdbfc99100b861f6471855d019"
+        }
+      },
+      "protocol_sha256": "683fd1e25f01a03a4e5f97443b81e2726d133713061c728a49e2f28467ed3e77"
+    },
+    {
+      "device": "1N4148",
+      "id": "reverse_20V_25C",
+      "reference_ids": [
+        "parameter:ir25"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+      "calibrations": [
+        {
+          "expected": 400000.0,
+          "result": {
+            "value": 400000.0
+          },
+          "error": 0.0,
+          "tolerance": 40.0,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/5fe5251ebae0a9a4d85100050cc321840c2b1359796fd7ba521c56af09b86e26",
+          "artifacts": {
+            "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+            "test.cir": "260e0709d7c8df77a265776d4d97e5942276fc646540176d4292886db74b6947",
+            "test.raw": "444de303d14c7f2356c992c2d1f0e048197e3ab1dd7d14251ef52af0120562cc",
+            "test.log": "9b4703ad8cbe5ec9cab59556588ab15e33ffc6c9d37bc671d7f458a0312d8dc8",
+            "execution.json": "ddde155b0aef1a2e35f6269576feef594503e5d0ed2f3fd4010f9031a936ae5f"
+          }
+        },
+        {
+          "expected": 800000.0,
+          "result": {
+            "value": 800000.0
+          },
+          "error": 0.0,
+          "tolerance": 80.0,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/71f97bc63799439c1a7183624165456976aa44d4b60183a4d45a2085f347ba0d",
+          "artifacts": {
+            "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+            "test.cir": "3ddb730edff31660840975ce10ea54f48d3f7d2fd30cdf218878e9a393079d8b",
+            "test.raw": "d575dd80587cbddd5f3a89c160b61ae8a674c0b17b621cb519bf812b1ceca46a",
+            "test.log": "ffe6126283009b26412242bdb98f0d5bc9b2cc63b07a11bb661f8980aa425497",
+            "execution.json": "489d79be0d403395d8083c679a26561ced645601a2f7454ad294153444c113a4"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 6.827278298260353
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/a0f3731505cc7fe060a59b394619e2d605a486c7f77abf88abd6483fe939fe42",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "aaed4a632844f7272bce0421b7dcc6acbcb964fe05b1c87397f1c2708221acd0",
+          "test.raw": "e8a2bee5d884f56c8abaf018b9075b7ac9700698e3042f0d0712f39f7db55b2b",
+          "test.log": "3f6475c587534ccd5b56e176766747677ffefb177cdcecec3b41cd37de486bf4",
+          "execution.json": "d450a0d24be053f4124da9482dbb49c8f9070871d41233ba4f6b42d353672d43"
+        }
+      },
+      "protocol_sha256": "6b5fa63457c9c64adab9f06f80efd72f23b40108de4ef0c7b59178269d92d8ea"
+    },
+    {
+      "device": "1N4148",
+      "id": "reverse_20V_150C",
+      "reference_ids": [
+        "parameter:ir150"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+      "calibrations": [
+        {
+          "expected": 400.0,
+          "result": {
+            "value": 400.0
+          },
+          "error": 0.0,
+          "tolerance": 0.04,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/4279fd76b4edc372e3152cd006a601d936f0c93f8446cc004a643d9e860834e2",
+          "artifacts": {
+            "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+            "test.cir": "260e0709d7c8df77a265776d4d97e5942276fc646540176d4292886db74b6947",
+            "test.raw": "a9143ed3e9f7e398e66f450860cf985462d9cf908c3bb61a6dfd42e2d62ba916",
+            "test.log": "ec1d311eb09059a13d5ed146d551f9391d502e9da128b5710710fe7ea154bb74",
+            "execution.json": "bf01433c08a967804ffa07737b40c2c926a31165efa1c5baafee79dec3463e2d"
+          }
+        },
+        {
+          "expected": 800.0,
+          "result": {
+            "value": 800.0
+          },
+          "error": 0.0,
+          "tolerance": 0.08,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/c52aec2e9dedbdb377258969b8c436663f513d377f0ceca20aea50fe2ed6a278",
+          "artifacts": {
+            "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+            "test.cir": "3ddb730edff31660840975ce10ea54f48d3f7d2fd30cdf218878e9a393079d8b",
+            "test.raw": "25f7678357d85f15478cc134d3a7d1b222baf596b7782d093157332ea9db79a7",
+            "test.log": "f5a0a6281f5f74d46956f8ae8ee45ba9957080c6768875621e317d977c08bb10",
+            "execution.json": "e3e9a29aa1cd97f17162347e942d6c5e25de1c4280c153dc7bede10416393ac8"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 13.90097992270967
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/f9f437f38553a7643ae4b0760bc69920f17e2d4c06a3bd700a5aada7d3576788",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "664e63a95913b7a1a890645860844b0d8dc9e98f09b3e5cce14c49036f579e41",
+          "test.raw": "7b15dcdeba9f477f08fbd819d2cd960423c92855e4797e7b9049e35ea3b05c05",
+          "test.log": "dad5d67f6034d4005079fef7e5ac4b4826f35ca0bb0f0a7d6793c587e70d1d7b",
+          "execution.json": "fa19c827f21e29bf7a0200ddaf9a422b1b03045a5a43f6de8c8087390b81d9be"
+        }
+      },
+      "protocol_sha256": "1750f23ba191f531478837c03c72db58272bf53ed73145d1c45fd53c83f98012"
+    },
+    {
+      "device": "1N4148",
+      "id": "capacitance_zero_bias",
+      "reference_ids": [
+        "parameter:cd"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+      "calibrations": [
+        {
+          "expected": 1000.0000000000001,
+          "result": {
+            "value": 999.9999999999999
+          },
+          "error": 2.2737367544323206e-13,
+          "tolerance": 0.10000000000000002,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/7d617ee133f204c34797c0f87d0fbabc61df6264117c912fd406c31f261d8d83",
+          "artifacts": {
+            "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+            "test.cir": "2c01e6c13f97eaf2c767047ddf99e25a826bf46732a3566a7b23b185376247f5",
+            "test.raw": "8fe2e165c981c0fb8a07519874e73b97d9e0945c4c1acf31862108c9421236be",
+            "test.log": "2b1458463b9f5a5a4030e3db1d29204db7e0891de21311067d21b65c6e9119bd",
+            "execution.json": "9a9d021db718a539e1613f5a95fc9ae6d3813e7398c7887de4456ffd4443cc05"
+          }
+        },
+        {
+          "expected": 2000.0000000000002,
+          "result": {
+            "value": 1999.9999999999998
+          },
+          "error": 4.547473508864641e-13,
+          "tolerance": 0.20000000000000004,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/8e4ff967b874fa721b2076fbe5e81d2f0ae4aeab3c476ed4629ce0c7b67a854b",
+          "artifacts": {
+            "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+            "test.cir": "4fc4733e3282efdb1b99c2382b7fba0f362f8e909754dd812c8badaf4782142c",
+            "test.raw": "c9f01176f9bdb8d6cf18db85f79585e115de03c7cf510b033b8b0b1b2faca29d",
+            "test.log": "8fca8cc2286ae2a64f6942fa17317c8523435a61bbbb2685c3fff4143580d5bb",
+            "execution.json": "415de4b64acade4fdca15c0cc798f9ef9d6388ab5b98eb83ae5194fa512ae3da"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 1.0453075020086597
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/977cb48870f48f1090aa9a497bf00caa469511cf30149a1b8c140054094fddcf",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "4319715277e314bc1388cd9420781b736c777c4b6dbc5424c357714b0b068d28",
+          "test.raw": "d2d47025a92d92901625c2ec4b320304d39aa3dda2175e8dddaa54ab0c6ffd60",
+          "test.log": "c880e844e6ce7febc64a6ebb33cf9ee52e3ace907ffe594a15dd0ad0e1c13182",
+          "execution.json": "f13a6d4d277cf2c23cfa38b6f9d7e98385a046812fde9b2a6ae985b23c6efd4e"
+        }
+      },
+      "protocol_sha256": "45acdcbc7be0962dfb9030b86921976656349440c83cc7ef1fbaca20b5f956c1"
+    },
+    {
+      "device": "EMHK350ARA470MF80G",
+      "id": "cap_120Hz",
+      "reference_ids": [
+        "parameter:cap",
+        "parameter:cap_tolerance"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+      "calibrations": [
+        {
+          "expected": 1.0,
+          "result": {
+            "value": 0.9999999999999998
+          },
+          "error": 2.220446049250313e-16,
+          "tolerance": 0.0001,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/a16401186d75dded21fb9d6d3bcd77b302c95c6e2f96a9f3d04a56a00987808b",
+          "artifacts": {
+            "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+            "test.cir": "168e9970d10c5404e4418484b341fb5abb2a5358e43c96b1caa56a65549db5f6",
+            "test.raw": "09bb703b113dd5f3d0d7bb5e2ccc55db71ebe2a05bf13e778670853fcc88a25e",
+            "test.log": "bfe171124623705dbd4e78ed914d5ced8eb62a9b6ba97f4d3c2011248067482a",
+            "execution.json": "0cec73a0cd4211e0a613824f6088fab65b9c29dce5894921e7d5ff431af348bb"
+          }
+        },
+        {
+          "expected": 2.0,
+          "result": {
+            "value": 2.0
+          },
+          "error": 0.0,
+          "tolerance": 0.0002,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/4068793c9c9b2555cf6a62971019ab719db96894c3259bd7e267a46e05e1e919",
+          "artifacts": {
+            "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+            "test.cir": "db3b4aa6d2818baed59b9435fec0787a2b7774dfe9f12e4aa11ddf67a4432dcb",
+            "test.raw": "649e8f5ee8997132e738c40c930141afa1305ca59ab4cecf6644f683fcaaf523",
+            "test.log": "acaf3c302c167ceca1bd78ee198cad36b0719dcecf2edad966e89aac22d43c10",
+            "execution.json": "12547f9bc4915506b3a88bd28aa07c27c526e6aaaf41f5f4a51ad27185b0dc74"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 41.84939454302903
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/039531219384aaeb45e2f599eabf4aa1941e9ea581cb358376d9f211615684fd",
+        "artifacts": {
+          "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+          "test.cir": "58f8fcb4b234f86026fb347ce56c2940f331d687315d68ef34a0bb57310a30e1",
+          "test.raw": "f84926ce4f5a61cd28adbdc622fb0a9de9a0bce734ff15dfe49aeac9c3911f6a",
+          "test.log": "583d3fc89959d5fd58f78c547f440e7840177b665ce89043cccdd9320f4ae537",
+          "execution.json": "1fc8e82c40543c7a938b215236eda3baafd043b9c8303b99cc98c4325b9174cf"
+        }
+      },
+      "protocol_sha256": "f2375d7abdc8e0fffa0cdf41b39d4399a2444e8d34f7a0ea1cc4f4a045709c54"
+    },
+    {
+      "device": "EMHK350ARA470MF80G",
+      "id": "df_120Hz",
+      "reference_ids": [
+        "parameter:df"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+      "calibrations": [
+        {
+          "expected": 6.283185307179585,
+          "result": {
+            "value": 6.283185307179584
+          },
+          "error": 1.7763568394002505e-15,
+          "tolerance": 0.0006283185307179586,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/dc0e4f97d71545c3fbc12f77d97e1a21b0dd00e1ed7ef39d4cebe9aafa572732",
+          "artifacts": {
+            "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+            "test.cir": "168e9970d10c5404e4418484b341fb5abb2a5358e43c96b1caa56a65549db5f6",
+            "test.raw": "bd1f2347994c3b8a49ae822a7eb83368503f6113b1fc9e76a23e005f526a60c9",
+            "test.log": "e36208c324fd6e5c426de7216aabceb3a9814313f2f1646b8819c619d01905b2",
+            "execution.json": "9a405661b559f5ad44b578aa1bfab168f655aa11b7749397ace9552592d6395a"
+          }
+        },
+        {
+          "expected": 12.56637061435917,
+          "result": {
+            "value": 12.566370614359172
+          },
+          "error": 1.7763568394002505e-15,
+          "tolerance": 0.0012566370614359172,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/3f56c9c1da84fcd95d4268b934f4ab3f234d24da1e7ac1a35399af6f11b7c52b",
+          "artifacts": {
+            "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+            "test.cir": "db3b4aa6d2818baed59b9435fec0787a2b7774dfe9f12e4aa11ddf67a4432dcb",
+            "test.raw": "0ee8df356462f4190143035740327650c296686c3b94b91fd9d988691dd9fe59",
+            "test.log": "02e7805c5a6a95a382afbdb3a4a125db21718fc7c13fb77de3fa199e776ea752",
+            "execution.json": "4e267f0808837e01884ac032e8b685783c627ccc84c6f2e0fe4ba370cdea52be"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 0.008713085139496202
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/642a6060fef7e0b747d3bfe071dfbd6dce2d9236af13b8b54cfb3cbc14966237",
+        "artifacts": {
+          "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+          "test.cir": "58f8fcb4b234f86026fb347ce56c2940f331d687315d68ef34a0bb57310a30e1",
+          "test.raw": "dba18a5d988b1b129b8cd1ff071f9df5a299dc1f9498c17a24ec015db8c22aeb",
+          "test.log": "fea33093d3cd739102e5ee5affc35cc2ac25779441439874ce07019358d54377",
+          "execution.json": "cfec04425cbcb88decedbc965b0306f8504a4dd6993b898d42e1b86de3152df8"
+        }
+      },
+      "protocol_sha256": "6e5a1882c49cb92fe589cbe95e7b65c9aafb3c053e9594bed2710b0916ce6924"
+    },
+    {
+      "device": "EMHK350ARA470MF80G",
+      "id": "esr_20_100000Hz",
+      "reference_ids": [
+        "parameter:esr20"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+      "calibrations": [
+        {
+          "expected": 1000,
+          "result": {
+            "value": 1000.0
+          },
+          "error": 0.0,
+          "tolerance": 0.1,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/b8b5b1c0689e981630b9c19d00d2b2a2327a57c597f47246b0be47aaf61c660a",
+          "artifacts": {
+            "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+            "test.cir": "168e9970d10c5404e4418484b341fb5abb2a5358e43c96b1caa56a65549db5f6",
+            "test.raw": "262982fa28a946384314951dc4d5d45bff304264b0fb1897acaa0f1aeeb80830",
+            "test.log": "cf8ab6803f5ae2b1aef8587622074b2a99470d794e034618bb552ec3898be701",
+            "execution.json": "e20b678b187f8c2e5e9b1ea20c5c3041e0ff1af4da4b45606b75a32077281b36"
+          }
+        },
+        {
+          "expected": 1000,
+          "result": {
+            "value": 1000.0
+          },
+          "error": 0.0,
+          "tolerance": 0.1,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/465efad10ce23f7b093c379753225c0236b9ef65b1f9de67bd211fa14b238c1f",
+          "artifacts": {
+            "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+            "test.cir": "db3b4aa6d2818baed59b9435fec0787a2b7774dfe9f12e4aa11ddf67a4432dcb",
+            "test.raw": "395675a6404b2d6093186cf389f8a6e3a98aeebafee68de2a67e11760708ff40",
+            "test.log": "dc2a29cc6edf70028f928c9a8505c3b3d6d3afb60e8013c46f6dbd749af86c62",
+            "execution.json": "1d2cfbe0bbe5d85ea833d6035901d5d12a905f32262cb9877a36a32239554f2c"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 0.23273724454559694
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/cdf13a57b8b1146f47196a88ad9e3a0c506f796e61bfa0d151da273b75c11f7b",
+        "artifacts": {
+          "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+          "test.cir": "4b60809675d995bd8e71fa5622d4e0a8c34972bebf1cdd4a848678720fb66eab",
+          "test.raw": "0fc7c16a4008d7466a8f2b1660269fe7fcc0917471dcdaf244b2d3f2a29c7419",
+          "test.log": "542d14bb28ba619d91da818dbf84e17dae9d95aa8a94de96f27277ce0491a2bc",
+          "execution.json": "611327ba75bf3a54339cf64608c207b8027c9bd6b6a464b24f04a903bc2770a5"
+        }
+      },
+      "protocol_sha256": "35aee012d630e5a71c469ac31cfd6e57e81cbf2597d7f3224425a9f06974c9b4"
+    },
+    {
+      "device": "EMHK350ARA470MF80G",
+      "id": "esr_20_200000Hz",
+      "reference_ids": [
+        "parameter:esr20"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+      "calibrations": [
+        {
+          "expected": 1000,
+          "result": {
+            "value": 1000.0
+          },
+          "error": 0.0,
+          "tolerance": 0.1,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/b8b5b1c0689e981630b9c19d00d2b2a2327a57c597f47246b0be47aaf61c660a",
+          "artifacts": {
+            "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+            "test.cir": "168e9970d10c5404e4418484b341fb5abb2a5358e43c96b1caa56a65549db5f6",
+            "test.raw": "262982fa28a946384314951dc4d5d45bff304264b0fb1897acaa0f1aeeb80830",
+            "test.log": "cf8ab6803f5ae2b1aef8587622074b2a99470d794e034618bb552ec3898be701",
+            "execution.json": "e20b678b187f8c2e5e9b1ea20c5c3041e0ff1af4da4b45606b75a32077281b36"
+          }
+        },
+        {
+          "expected": 1000,
+          "result": {
+            "value": 1000.0
+          },
+          "error": 0.0,
+          "tolerance": 0.1,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/465efad10ce23f7b093c379753225c0236b9ef65b1f9de67bd211fa14b238c1f",
+          "artifacts": {
+            "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+            "test.cir": "db3b4aa6d2818baed59b9435fec0787a2b7774dfe9f12e4aa11ddf67a4432dcb",
+            "test.raw": "395675a6404b2d6093186cf389f8a6e3a98aeebafee68de2a67e11760708ff40",
+            "test.log": "dc2a29cc6edf70028f928c9a8505c3b3d6d3afb60e8013c46f6dbd749af86c62",
+            "execution.json": "1d2cfbe0bbe5d85ea833d6035901d5d12a905f32262cb9877a36a32239554f2c"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 0.22359674449534359
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/eb777ae36d0ca871b97bfd1f909bf78c9d598a35cd7fac5458df935108218c07",
+        "artifacts": {
+          "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+          "test.cir": "f7f66241d5d4284d441e3773ff327d9853c22d43f22c5894234a08c52008edf6",
+          "test.raw": "a907f3668c2b0997c5764f6f4a60167934dfac7d52353e3138bb92c173ad9d02",
+          "test.log": "ff12a551cf2af218aade14d21b084c9420c15ab4b4480bc2034a78d8c8b537cd",
+          "execution.json": "1de785b665ba26e4a46ce495b14a33a50b40a55b14df62addfd6659b5e93ac3a"
+        }
+      },
+      "protocol_sha256": "59c9664c6ace16c5bacb6d3df60a6ed9a88411128f711dd4913a203bcf6b37fd"
+    },
+    {
+      "device": "EMHK350ARA470MF80G",
+      "id": "esr_20_400000Hz",
+      "reference_ids": [
+        "parameter:esr20"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+      "calibrations": [
+        {
+          "expected": 1000,
+          "result": {
+            "value": 1000.0
+          },
+          "error": 0.0,
+          "tolerance": 0.1,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/b8b5b1c0689e981630b9c19d00d2b2a2327a57c597f47246b0be47aaf61c660a",
+          "artifacts": {
+            "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+            "test.cir": "168e9970d10c5404e4418484b341fb5abb2a5358e43c96b1caa56a65549db5f6",
+            "test.raw": "262982fa28a946384314951dc4d5d45bff304264b0fb1897acaa0f1aeeb80830",
+            "test.log": "cf8ab6803f5ae2b1aef8587622074b2a99470d794e034618bb552ec3898be701",
+            "execution.json": "e20b678b187f8c2e5e9b1ea20c5c3041e0ff1af4da4b45606b75a32077281b36"
+          }
+        },
+        {
+          "expected": 1000,
+          "result": {
+            "value": 1000.0
+          },
+          "error": 0.0,
+          "tolerance": 0.1,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/465efad10ce23f7b093c379753225c0236b9ef65b1f9de67bd211fa14b238c1f",
+          "artifacts": {
+            "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+            "test.cir": "db3b4aa6d2818baed59b9435fec0787a2b7774dfe9f12e4aa11ddf67a4432dcb",
+            "test.raw": "395675a6404b2d6093186cf389f8a6e3a98aeebafee68de2a67e11760708ff40",
+            "test.log": "dc2a29cc6edf70028f928c9a8505c3b3d6d3afb60e8013c46f6dbd749af86c62",
+            "execution.json": "1d2cfbe0bbe5d85ea833d6035901d5d12a905f32262cb9877a36a32239554f2c"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 0.2109222271251744
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/76d28ec8573eaaa8190ec8073d5b7c0c07c82acaa67362dd0637a39ff335a8e3",
+        "artifacts": {
+          "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+          "test.cir": "c822788a836be2fffef49e967b324cc330ff163c260810f8f791798ebfa0f0f8",
+          "test.raw": "5bb7377a5d071dc288f21c6d8d4593e85e81fdf5a1e66d67895948b4a4fa7fa9",
+          "test.log": "8b454245c18192435f0aaef1239e749ad5f5310b22f7bd5ca13197db98cd3a82",
+          "execution.json": "cbed8e8ada249708910d7ecb3594283b80d99fbd5b7304c1ed9fd09dce074175"
+        }
+      },
+      "protocol_sha256": "7942f96247b94750f332236b07b84ad5322c87816c4cc27874c3dccd6b3486bf"
+    },
+    {
+      "device": "EMHK350ARA470MF80G",
+      "id": "esr_-40_100000Hz",
+      "reference_ids": [
+        "parameter:esr-40"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+      "calibrations": [
+        {
+          "expected": 1000,
+          "result": {
+            "value": 1000.0
+          },
+          "error": 0.0,
+          "tolerance": 0.1,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/810d846d6a8333eb12b872b19213225a2458a32aa70d9a05de3b2a955a800a4a",
+          "artifacts": {
+            "model.lib": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+            "test.cir": "168e9970d10c5404e4418484b341fb5abb2a5358e43c96b1caa56a65549db5f6",
+            "test.raw": "2e74d1f48c54fa241c99a6c42c52b05b5150934d68317f0a68ec4aa1e90f6524",
+            "test.log": "86f63357854433589c8d9a4daf54ed6878afea082c7fb265169bff9b80b0a3ad",
+            "execution.json": "075ad15aa0f77968d87e5a44ccddf40b96f15997c6f2acba6d71449ed7db7704"
+          }
+        },
+        {
+          "expected": 1000,
+          "result": {
+            "value": 1000.0
+          },
+          "error": 0.0,
+          "tolerance": 0.1,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/7d37b7bf2d337568d3a752283bee21ec8e8f7ba64e02683e4d651dc15b97bc49",
+          "artifacts": {
+            "model.lib": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+            "test.cir": "db3b4aa6d2818baed59b9435fec0787a2b7774dfe9f12e4aa11ddf67a4432dcb",
+            "test.raw": "177991c39353fc4c3c4012367e0596e46885a3b15b370c23f075ed8d5682bfc1",
+            "test.log": "668c5ae0bbc96082d496c86eb9531a490477b097cdc6a2f31e3832848d67d944",
+            "execution.json": "b88410ae3c81b789c0822b4494ca992c47c2efc2b391b38ae18828750376c4ed"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 1.3425488825103553
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/5a944ff96935662815a8efb289cdf35f700c470fbf7c5387dfb01f55d69ae197",
+        "artifacts": {
+          "model.lib": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+          "test.cir": "e4211a0f5eb1d916217416539a6f8dbff8ef91d08ce291ffe26ac05a31fdc4b0",
+          "test.raw": "69bb3a9d250729243725602f43b4ba66c09ce71b43d4673448736774c0994452",
+          "test.log": "a81ea26a55b44b9b349af1aeff6c443b878192959a8b352ec8c97b2562a6f659",
+          "execution.json": "76b367732d1632ef63479b904286bb86d889c7c35101c5690b0587920e327797"
+        }
+      },
+      "protocol_sha256": "09ca222272098174910a81a83634b4d35de26e954779b79266f4aed7f30d3c1e"
+    },
+    {
+      "device": "EMHK350ARA470MF80G",
+      "id": "esr_-40_200000Hz",
+      "reference_ids": [
+        "parameter:esr-40"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+      "calibrations": [
+        {
+          "expected": 1000,
+          "result": {
+            "value": 1000.0
+          },
+          "error": 0.0,
+          "tolerance": 0.1,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/810d846d6a8333eb12b872b19213225a2458a32aa70d9a05de3b2a955a800a4a",
+          "artifacts": {
+            "model.lib": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+            "test.cir": "168e9970d10c5404e4418484b341fb5abb2a5358e43c96b1caa56a65549db5f6",
+            "test.raw": "2e74d1f48c54fa241c99a6c42c52b05b5150934d68317f0a68ec4aa1e90f6524",
+            "test.log": "86f63357854433589c8d9a4daf54ed6878afea082c7fb265169bff9b80b0a3ad",
+            "execution.json": "075ad15aa0f77968d87e5a44ccddf40b96f15997c6f2acba6d71449ed7db7704"
+          }
+        },
+        {
+          "expected": 1000,
+          "result": {
+            "value": 1000.0
+          },
+          "error": 0.0,
+          "tolerance": 0.1,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/7d37b7bf2d337568d3a752283bee21ec8e8f7ba64e02683e4d651dc15b97bc49",
+          "artifacts": {
+            "model.lib": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+            "test.cir": "db3b4aa6d2818baed59b9435fec0787a2b7774dfe9f12e4aa11ddf67a4432dcb",
+            "test.raw": "177991c39353fc4c3c4012367e0596e46885a3b15b370c23f075ed8d5682bfc1",
+            "test.log": "668c5ae0bbc96082d496c86eb9531a490477b097cdc6a2f31e3832848d67d944",
+            "execution.json": "b88410ae3c81b789c0822b4494ca992c47c2efc2b391b38ae18828750376c4ed"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 1.305293111914007
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/f3386d8d325ff6484a600e6343474ff08f19c5118c63b25b9cce1b0468037515",
+        "artifacts": {
+          "model.lib": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+          "test.cir": "66f7c624323ffb59c10b522ba14af9a8df086720d3356b0ad72e231b27acb276",
+          "test.raw": "a83adb0d2997f5b5d36be3a66494b3f2b187bf0120a9f4a61f829af2182e01ea",
+          "test.log": "8a6983e58fc02f2c6ed110af7591838b4fb9648598823a23263dd02195587cc5",
+          "execution.json": "182dc9751ccf11eb917c3860a22f50595e34f4fca62e70b6e06fc9615649c327"
+        }
+      },
+      "protocol_sha256": "d9477a0dfbdb365307915d09da8c315b775b9714eff2bb75f91920305b97f238"
+    },
+    {
+      "device": "EMHK350ARA470MF80G",
+      "id": "esr_-40_400000Hz",
+      "reference_ids": [
+        "parameter:esr-40"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+      "calibrations": [
+        {
+          "expected": 1000,
+          "result": {
+            "value": 1000.0
+          },
+          "error": 0.0,
+          "tolerance": 0.1,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/810d846d6a8333eb12b872b19213225a2458a32aa70d9a05de3b2a955a800a4a",
+          "artifacts": {
+            "model.lib": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+            "test.cir": "168e9970d10c5404e4418484b341fb5abb2a5358e43c96b1caa56a65549db5f6",
+            "test.raw": "2e74d1f48c54fa241c99a6c42c52b05b5150934d68317f0a68ec4aa1e90f6524",
+            "test.log": "86f63357854433589c8d9a4daf54ed6878afea082c7fb265169bff9b80b0a3ad",
+            "execution.json": "075ad15aa0f77968d87e5a44ccddf40b96f15997c6f2acba6d71449ed7db7704"
+          }
+        },
+        {
+          "expected": 1000,
+          "result": {
+            "value": 1000.0
+          },
+          "error": 0.0,
+          "tolerance": 0.1,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/7d37b7bf2d337568d3a752283bee21ec8e8f7ba64e02683e4d651dc15b97bc49",
+          "artifacts": {
+            "model.lib": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+            "test.cir": "db3b4aa6d2818baed59b9435fec0787a2b7774dfe9f12e4aa11ddf67a4432dcb",
+            "test.raw": "177991c39353fc4c3c4012367e0596e46885a3b15b370c23f075ed8d5682bfc1",
+            "test.log": "668c5ae0bbc96082d496c86eb9531a490477b097cdc6a2f31e3832848d67d944",
+            "execution.json": "b88410ae3c81b789c0822b4494ca992c47c2efc2b391b38ae18828750376c4ed"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 1.2756984044190962
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/28ba49d18aeecea7e1395fee9cc8cabb853885ab7a7749258b078134488c2146",
+        "artifacts": {
+          "model.lib": "e0f1c31d2387425cad6b0e4fa7a1693c0a34262d3999f1256707a7e224817306",
+          "test.cir": "7e18a9e6b3aa99b6f746111f4a0aac42d8a81ea703ec02eb09e2364cb2178749",
+          "test.raw": "947eb31bda77460ebb5f9c2ae941105fb5ebee8a84d5c9f7e1bf9433573e26c7",
+          "test.log": "58f27a9f6d34db13c99eef2b2b087953e4e5eda562dce54679241e89b2e34dff",
+          "execution.json": "0163c6cf12319fabb142359d421b780e728703f04706782709bfcf74d35b77fa"
+        }
+      },
+      "protocol_sha256": "586a52a3441ea571f96fbfe2c384e4dd7189b687fc10f3c771c11f97fb1e84c9"
+    },
+    {
+      "device": "750311423",
+      "id": "primary_inductance",
+      "reference_ids": [
+        "parameter:inductance"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "calibrations": [
+        {
+          "expected": 1000.0,
+          "result": {
+            "value": 1000.0
+          },
+          "error": 0.0,
+          "tolerance": 0.1,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/88e13e390c2e809c20d69a9208ba8d59b2f58db94681688306f012a980d22aca",
+          "artifacts": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "11a67e7375354170f866fac96700596696add599c9f6b9752cdec984def92ef8",
+            "test.raw": "bbe447cdcf2a7895ed445993c2c08613e55cd905780146015dfc9179de31cbd3",
+            "test.log": "8406634d3d0183f6d7ada17f4e984bd7eb15ad53bbe9e5137e0031805b6c3450",
+            "execution.json": "c5a38613008090e5dfe729735f7e5e1e04dfeda7b260e5b343fa974516a4fe00"
+          }
+        },
+        {
+          "expected": 2000.0,
+          "result": {
+            "value": 2000.0
+          },
+          "error": 0.0,
+          "tolerance": 0.2,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/72a5d1a09f87bbd5b28969ef23a194a5503a165df564398ffad821b4fb5fb05f",
+          "artifacts": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "8630a0e81534a7b8d07d5402b9517eabc3de6950709ca9f7ed314898f62b1e89",
+            "test.raw": "1fb0289d87c99fb8737b5e487246995bc24af102f8e19e757b040dafca55460b",
+            "test.log": "567ecb7276a759f150a9a815df5468255d681fff00fb3881f6d4472d5790dd12",
+            "execution.json": "6c13d530d71cf51dd332ecc767b51b868a66f6060f4d1a3b0906fe274a26031d"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 50.0000776617138
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/cefd5af5a5bf295fea8cd07d2171893ebb6c5b1ee040a45d4dc9af3b2f0953ff",
+        "artifacts": {
+          "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "test.cir": "87226f9b5dab989f7e718e1b3689fee21f7f39092450d01f8a60dda76be7ab88",
+          "test.raw": "e9d6a67c9608e71f6311a2da91f3489ed4811b16e87f8be555cd0361647b295d",
+          "test.log": "ea2b81fd02919bed72bd7c4496f6cf7a0f0598c98309a061be7de238bf2f2f4f",
+          "execution.json": "dd56fff956e3478ba45d6fffc876143183b0bbfb4e5223e993de8af41c4c7579"
+        }
+      },
+      "protocol_sha256": "0a4aa4a635f8937537ea1381f679c15636aeea8c82f0e4afb97f1f8c3e3b2b4d"
+    },
+    {
+      "device": "750311423",
+      "id": "dcr_N1",
+      "reference_ids": [
+        "parameter:rdc_N1"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "calibrations": [
+        {
+          "expected": 40.0,
+          "result": {
+            "value": 40.0
+          },
+          "error": 0.0,
+          "tolerance": 0.004,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/ac8efacede03eb5ff79fbc3a225e9384b94959c14593d234bc9093e6163edc1d",
+          "artifacts": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "3cde18a725da9dc0d66120ea896cf34b4ae0c02f4e92c5894c1c68551a735bb1",
+            "test.raw": "bfb82df441027d33803b7a471bcd6905453541eee4cda63862faa65a9757b571",
+            "test.log": "2fb5324eb798080f03739fdeff5c1926d66d696e9ed25d9a458c488ad3ba15df",
+            "execution.json": "dcb9ab64e208129b59f1aa019f8b2007e7938f47b3236692ed6172aaa60c07b1"
+          }
+        },
+        {
+          "expected": 80.0,
+          "result": {
+            "value": 80.0
+          },
+          "error": 0.0,
+          "tolerance": 0.008,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/be48d778f3d41c14bbc67771c97fe31750218c5173e5b84802bd844e0844c9e4",
+          "artifacts": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "a39fc8ffeb0e9dd679ffcde4304b953add35154f0993562ebff1b7a4706029a9",
+            "test.raw": "08c9a178be083ebb390abfd453d2d2d5de21e3b0f4e7e2f79dbf881af19dfcfe",
+            "test.log": "311fc143ac722e208d756f985d4764be2c6d4bc6eb06ad8c3c90979a41ad3b86",
+            "execution.json": "b5ef94b535144133d106be4810c14d8b3f14f7eb3239a8ecd2fdc824ff50b7ef"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 0.09000989886412375
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/a195031bb9559d6c0b63d35773a6b8e1f50518028bce3f51fa08e1dd64a92672",
+        "artifacts": {
+          "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "test.cir": "e205cc5bb97d0f14413a41417c988c91defb00e5d244e48fd742ac07a345d2ab",
+          "test.raw": "0155c253e76d378fc9b1ba660475382d5c0f587b40f99e09463045328453740c",
+          "test.log": "45deda206e3880fa7e1fcccffd872016656c29dff17fab08b00cf073e64e6a91",
+          "execution.json": "ba08738c31b47df5bf65f1a4e320f7ea6ba78492d460eeec1f473a0417c811a0"
+        }
+      },
+      "protocol_sha256": "5b0d5db9b43692c790f615e7680ebfb90dd753d73eea9ed566f3ce87dd470fb0"
+    },
+    {
+      "device": "750311423",
+      "id": "dcr_N2",
+      "reference_ids": [
+        "parameter:rdc_N2"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "calibrations": [
+        {
+          "expected": 40.0,
+          "result": {
+            "value": 40.0
+          },
+          "error": 0.0,
+          "tolerance": 0.004,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/0328ad4ca47c8d8d30d66c5bd8c02b1cba64388293cd05c3c4bea8f99b353eb8",
+          "artifacts": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "c5fb48bd95544f3389e0c7858c783e6e3f85a8b6448301b2ee8d68337378dab6",
+            "test.raw": "f6e2ed3e5bd1d59fa5b5bafc64d42c4930412ddb93a2569876f973d5d01524a1",
+            "test.log": "33651b0a35dbe8ec4751940d0ed8d56de4111e7f657b24ba44e217f942d84cdc",
+            "execution.json": "a744454fe6c494dddd9304a2c0098c2af11245d71d1d391be3a7bd465a114160"
+          }
+        },
+        {
+          "expected": 80.0,
+          "result": {
+            "value": 80.0
+          },
+          "error": 0.0,
+          "tolerance": 0.008,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/fcf4cda56ad246621aa5110e6cda2f73057c559772905af4553d672257c1745c",
+          "artifacts": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "5288ef2e1d50d1d1eb595559f5a8a4253f1528877f714509aebad29c5559552a",
+            "test.raw": "294a51c4adf7a18bd959f83a6c499fc1b7134efb5ef01fce2342c994e0c951da",
+            "test.log": "7b6a8c064ad4fb3f6e574a43b9a0a9039b89d285fa4c5581bb5317e02eb1a4e8",
+            "execution.json": "d7e57235c4a843d385fa4e5c206886d8ddd1ac5af0dce1428a8d15cd665a41c1"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 0.01199999994672
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/729b4270d736039a2e46e6ce30dbcde313e595c9ab7067874e2a29f4d45f153b",
+        "artifacts": {
+          "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "test.cir": "78257c7cf694577610dcf04b547d858e24ac5bfaf5dc6044260eebc6c9592f8c",
+          "test.raw": "dbb7ec319ec3d83d1c64f897a6977e6bc482cb651c65e0fbb17a9df072ef2ea9",
+          "test.log": "710d75b97917399934c1d948738e087aeb186bcd6fc0dc7af9516f387aa504de",
+          "execution.json": "66550a2bfeceff473fe4b69d8d5f0c79157993122bc6b5431f7e083709659878"
+        }
+      },
+      "protocol_sha256": "aad4a1ab3b7222832ac00a1ef31187f3bc77040c23196e434573862d937fdd11"
+    },
+    {
+      "device": "750311423",
+      "id": "dcr_N3",
+      "reference_ids": [
+        "parameter:rdc_N3"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "calibrations": [
+        {
+          "expected": 40.0,
+          "result": {
+            "value": 40.0
+          },
+          "error": 0.0,
+          "tolerance": 0.004,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/399ddcdd9d8a6d5c39aef6a49ea4ce283648eed09a2ecd39af2060eeb5a3223b",
+          "artifacts": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "70496bf3d9bc4b2bbbead8fe2e6ff5b4b05970a2e1c8fcf01b213d5d594abc1a",
+            "test.raw": "1b21585020d644721ca097ba97399b1be1fcc9da3b82ba24527a3889be318658",
+            "test.log": "66943334c70d1723de736663ba73afc842d6d5cf0dbf25873df6d568b67fa6bc",
+            "execution.json": "91de82287d4b02f82967ecdd809db168e43084252040df76d902d677b9e396a1"
+          }
+        },
+        {
+          "expected": 80.0,
+          "result": {
+            "value": 80.0
+          },
+          "error": 0.0,
+          "tolerance": 0.008,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/4bc55c257f49a3a442c03f1f159146d08a89f19905e10fa1fe4cefe6d4837df8",
+          "artifacts": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "b4a319a1423fb1769789fe6b10402822a2836415d2a660d766aebcfca9edd846",
+            "test.raw": "69e6c0aa94c0c2881bf4f81e68174db8b219e3a023624057af84f906fb481522",
+            "test.log": "7ce1697543ac16b62691c9b027bc45f5a0644768f257c9b7d50c07948aac5b29",
+            "execution.json": "0deb6a8ff6aa970af579fb9fad7c22baef064e10c8a56b336c20ccd9ddc5ed08"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 0.20499999453675025
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/12fa982986512338827278d66f4f27acfc67acaa8324a2fa8c458dc49188b2df",
+        "artifacts": {
+          "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "test.cir": "03b7687217c0444cfecab5d723f3fac60d03c4d190e99e279452443eb7066d29",
+          "test.raw": "ad77f94b0debbb9b07dccdfbcf69a5acb492cbf0f97915b2453e4a2acc818848",
+          "test.log": "06af46e3462c960b4d43e62a247a8bdd70f46cababe976a95ee1e3a43c70d133",
+          "execution.json": "a5468825a54e5c526a39f3d0e5f0e8e4ea0bd3d3538dfe144605001f4c122b98"
+        }
+      },
+      "protocol_sha256": "042f2efd815b239df8849640a78ead9a38cdc709fae759322f3409ccfa4e13e4"
+    },
+    {
+      "device": "750311423",
+      "id": "turns_N2",
+      "reference_ids": [
+        "parameter:turns"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "calibrations": [
+        {
+          "expected": 0.5,
+          "result": {
+            "value": 0.5
+          },
+          "error": 0.0,
+          "tolerance": 5e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/c8b3d240435a396ac90a1590b1084b1eb95cebd6846fc212b2c950e6a594c69c",
+          "artifacts": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "a80a0f7fcda08b119d5c5a7dd9db0b03c3e42cf8919e0b5e9866b029c6a6bde3",
+            "test.raw": "724f232dbb3c013f3a3cccebc93d9b31ae174ceea287c775b1418a62fbf4aec5",
+            "test.log": "fbb714e8e287cf3cb7b40bf52d7299ecc3ba57e55b445dc3d023d142e4bdb272",
+            "execution.json": "9ff438cdc0ad93daf0c172ca37ac3a3d7b5cd85eba883c17efe2be07e56fc6c3"
+          }
+        },
+        {
+          "expected": 0.6666666666666666,
+          "result": {
+            "value": 0.6666666666666667
+          },
+          "error": 1.1102230246251565e-16,
+          "tolerance": 6.666666666666667e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/e9672abbb0aa430579bad16fab25ca3db9bcede4e84009cfab58ddeee51e5e89",
+          "artifacts": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "d69452c45f7a1f20758bcffaee4134914c463bb742a33205548b998e802bb4ca",
+            "test.raw": "679bfbb9dbf22ab9e69f275a806300e71a92e98d9c62964a1c106144ebc2a53c",
+            "test.log": "d978566fa1f8d0996017304430b969afad3d2a2ae36e7f646ab83f1fd1c1b72a",
+            "execution.json": "84908331d79f6fe5316822b00dcf5ee21360a03d4da585a44641f6391cdd0919"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 0.24839353856656726
+        },
+        "acceptance": "pending",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/4b28a8f38ace3c82af162ea4e8b2c2f88778321b181405dcc8aa1b529f73fbda",
+        "artifacts": {
+          "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "test.cir": "ca72b1e5d006d53d206222e21c71e5a99a539a653f442981b64a1a1f2c4e9209",
+          "test.raw": "d9ad9210efc7637ffb82c753d52906530df5fc5451865cdb3d11c390c8dfaf4b",
+          "test.log": "72bbbd97ca5c4dfed79e7ca4a0043dcf38bae0b6faa64c4cde70d131acab6d12",
+          "execution.json": "5e30738632ffaf93aff18e7ed579b799ce5f1dc9737d970f27a1816c951f5237"
+        }
+      },
+      "protocol_sha256": "a1334050e66b12d554d179615ac9c0a21156184a300e0cd7a97e8dd71e156fd2"
+    },
+    {
+      "device": "750311423",
+      "id": "turns_N3",
+      "reference_ids": [
+        "parameter:turns"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "existing_engineering_candidate",
+      "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "calibrations": [
+        {
+          "expected": 0.5,
+          "result": {
+            "value": 0.5
+          },
+          "error": 0.0,
+          "tolerance": 5e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/c8b3d240435a396ac90a1590b1084b1eb95cebd6846fc212b2c950e6a594c69c",
+          "artifacts": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "a80a0f7fcda08b119d5c5a7dd9db0b03c3e42cf8919e0b5e9866b029c6a6bde3",
+            "test.raw": "724f232dbb3c013f3a3cccebc93d9b31ae174ceea287c775b1418a62fbf4aec5",
+            "test.log": "fbb714e8e287cf3cb7b40bf52d7299ecc3ba57e55b445dc3d023d142e4bdb272",
+            "execution.json": "9ff438cdc0ad93daf0c172ca37ac3a3d7b5cd85eba883c17efe2be07e56fc6c3"
+          }
+        },
+        {
+          "expected": 0.6666666666666666,
+          "result": {
+            "value": 0.6666666666666667
+          },
+          "error": 1.1102230246251565e-16,
+          "tolerance": 6.666666666666667e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/e9672abbb0aa430579bad16fab25ca3db9bcede4e84009cfab58ddeee51e5e89",
+          "artifacts": {
+            "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+            "test.cir": "d69452c45f7a1f20758bcffaee4134914c463bb742a33205548b998e802bb4ca",
+            "test.raw": "679bfbb9dbf22ab9e69f275a806300e71a92e98d9c62964a1c106144ebc2a53c",
+            "test.log": "d978566fa1f8d0996017304430b969afad3d2a2ae36e7f646ab83f1fd1c1b72a",
+            "execution.json": "84908331d79f6fe5316822b00dcf5ee21360a03d4da585a44641f6391cdd0919"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 0.49678707233913927
+        },
+        "acceptance": "pending",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/dda4dfc33a8026930d6d7a19fc92b38e48c6b7628f54893663e103e2f7431d6d",
+        "artifacts": {
+          "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "test.cir": "8f5bdc0f63e8bc5439a7f88340b4324f9ef7a0abc3c3b274f00546d5d7175a50",
+          "test.raw": "347ca26e5d09d42d5cd3dfa7577b3c662743e9d3143fcb4e6c8b3636b656c246",
+          "test.log": "5635eb04df872e80cb89f954bca023cc382d6934f2340a91228f10234bf26b48",
+          "execution.json": "ac448164538a55c179e8ff5161b0938b63a7a68c9281d86a379728e531f53169"
+        }
+      },
+      "protocol_sha256": "f46d7d2e84c0abceb797a3f1946e8f1272a8cd7173f9405ffacfd493d78b2aa9"
+    },
+    {
+      "device": "ACS723KMATR-20AB-T",
+      "id": "conductor_resistance_25C",
+      "reference_ids": [
+        "parameter:rip"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "reference_interface_benchmark_only",
+      "model_sha256": "0a6e49a66e848e78ccfcb01d459c35f1c564b16ac3453006a5024173365e2d42",
+      "calibrations": [
+        {
+          "expected": 400.0,
+          "result": {
+            "value": 400.0
+          },
+          "error": 0.0,
+          "tolerance": 0.04,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/f1d0f604ff324f4b71fbd75da3d025ef35ca309c136eebd61023854d16ab771d",
+          "artifacts": {
+            "model.lib": "0a6e49a66e848e78ccfcb01d459c35f1c564b16ac3453006a5024173365e2d42",
+            "test.cir": "c10032a1d5adfdeccaa46cf89641a703ea6dd7212c27b0da7e4ee2bc291de217",
+            "test.raw": "cf15105096250ae1da630a23169b8af583ec0ce95e1118a685b41485630b3776",
+            "test.log": "2d2d7011944508d89feb055ac3bfee58a1fc087898e55eb8bd7a79f3f529856d",
+            "execution.json": "cdfc8ce7896c970a044072eeffbdb0efb7115d13f466b722891ec6369ed24488"
+          }
+        },
+        {
+          "expected": 800.0,
+          "result": {
+            "value": 800.0
+          },
+          "error": 0.0,
+          "tolerance": 0.08,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/9ce0b4bdaa973986467d7db54aba0eeeaf014c98d2bd8eb5d4a47a38c55820cb",
+          "artifacts": {
+            "model.lib": "0a6e49a66e848e78ccfcb01d459c35f1c564b16ac3453006a5024173365e2d42",
+            "test.cir": "2604bfc191f5cc666cb11c47f788a2917df69e5645a7ba3481a3179f46e207c5",
+            "test.raw": "9742c536ce49f7f0adf1352c38dcc7038ca99f9379654cf45062334c77b9dd2d",
+            "test.log": "8e6fb68158c7802865cf22d402a84a8420cb148312f23af40723f96d4507147f",
+            "execution.json": "e58d8336b812cd1e2d3c5d64d7f1bcf3d12db8c3e44e08574669fc77f8222e11"
+          }
+        }
+      ],
+      "status": "blocked",
+      "fault": {
+        "kind": "execution",
+        "message": "仿真未生成完整输出",
+        "evidence": {
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/1d89bda6db1556b1ff3d6475ce48d015b31246267bc57943a8bf5f9f9d362fa8",
+          "execution": {
+            "returncode": 1,
+            "elapsed_seconds": 4.068435249999993,
+            "argv": [
+              "/Applications/LTspice.app/Contents/SharedSupport/ltspice/LTspice/run_ltspice",
+              "-b",
+              "-ascii",
+              "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/1d89bda6db1556b1ff3d6475ce48d015b31246267bc57943a8bf5f9f9d362fa8/test.cir"
+            ]
+          },
+          "log_head": [
+            "LTspice 26.0.2 for MacOS",
+            "Circuit: /Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/1d89bda6db1556b1ff3d6475ce48d015b31246267bc57943a8bf5f9f9d362fa8/test.cir",
+            "Start Time: Thu Oct  8 19:22:14 2026",
+            "Options:plotwinsize=0 method=trap",
+            "Y:\\Documents\\Codex\\2026-09-10\\lian\\deliverables\\spice-autonomy-v2-gpt-test-correction\\runs\\gpt_correction\\simulations\\1d89bda6db1556b1ff3d6475ce48d015b31246267bc57943a8bf5f9f9d362fa8\\model.lib(9): No such parameter defined.",
+            "B§OutputStage N004 DUT_GND V=if({polarity}== 2, (V(IP+)-V(IP-))/0.65m*{Sensitivity}*(V(Vcc)/5)+(V(Vcc)/2), (V(IP+)-V(IP-))/0.65m*{Sensitivity}*(V(Vcc)/5)+(V(Vcc)/10))",
+            "                                 ^^^^^^^^"
+          ],
+          "log_tail": [
+            "LTspice 26.0.2 for MacOS",
+            "Circuit: /Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/1d89bda6db1556b1ff3d6475ce48d015b31246267bc57943a8bf5f9f9d362fa8/test.cir",
+            "Start Time: Thu Oct  8 19:22:14 2026",
+            "Options:plotwinsize=0 method=trap",
+            "Y:\\Documents\\Codex\\2026-09-10\\lian\\deliverables\\spice-autonomy-v2-gpt-test-correction\\runs\\gpt_correction\\simulations\\1d89bda6db1556b1ff3d6475ce48d015b31246267bc57943a8bf5f9f9d362fa8\\model.lib(9): No such parameter defined.",
+            "B§OutputStage N004 DUT_GND V=if({polarity}== 2, (V(IP+)-V(IP-))/0.65m*{Sensitivity}*(V(Vcc)/5)+(V(Vcc)/2), (V(IP+)-V(IP-))/0.65m*{Sensitivity}*(V(Vcc)/5)+(V(Vcc)/10))",
+            "                                 ^^^^^^^^"
+          ]
+        }
+      }
+    },
+    {
+      "device": "ADA4528-1_MSOP",
+      "id": "supply_current_5V_25C",
+      "reference_ids": [
+        "parameter:icc_5"
+      ],
+      "scope": "exact declared conditions; remaining handbook coverage is open",
+      "authorship": {
+        "designer": "GPT/Codex",
+        "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+      },
+      "model_role": "reference_interface_benchmark_only",
+      "model_sha256": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+      "calibrations": [
+        {
+          "expected": -0.4,
+          "result": {
+            "value": -0.4
+          },
+          "error": 0.0,
+          "tolerance": 4e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/eb9358975c27da07d5209f33379ced54e9618a126e140533fd344f562642a79a",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "54d74322401b9488a2fa8b0a0ead13247364e1f396046d2a58dbf866841e505a",
+            "test.raw": "808212980d37593223948c32a1c4303acb76d8c5d08aa97289bc6fb4c8dc9ec6",
+            "test.log": "54795c3793b93471c1525e53ef40153d41fbea5613bfc379681d56e504c3df50",
+            "execution.json": "7789df210b742f4a5b7b3d6b100a0fc4ca88b44f09a7be9db5ac3a4a1d342ff1"
+          }
+        },
+        {
+          "expected": -0.8,
+          "result": {
+            "value": -0.8
+          },
+          "error": 0.0,
+          "tolerance": 8e-05,
+          "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/c3e449803cfab1c7225f9443d145db764fad6d4c2284fed7c57b97511d55b232",
+          "artifacts": {
+            "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+            "test.cir": "19028ce01161b01a9dff93f889b93287c1f23261d9c1cd788e4c095d186d1447",
+            "test.raw": "359214b9edbbf449edaf6015caf133dad03834d3fdb7054a496774a08e5c58af",
+            "test.log": "aad500cfe632df1afbca302f8eb0599c1a8c6c3993b6a78ab6769fa53b97ec8a",
+            "execution.json": "b3670181e63333956b40231e25f2e2d6f2574e37e224a6fdacb9061523a625dc"
+          }
+        }
+      ],
+      "status": "method_qualified_exact_conditions",
+      "trial": {
+        "result": {
+          "value": 1.500622137407811
+        },
+        "acceptance": "pass",
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/935ec8e4d0e3e887b2306dfe50c43c9f3ea37c22500709fef45cea65f2b86eee",
+        "artifacts": {
+          "model.lib": "dc359f7a24ce6cfbe70d255d9a17e92df4ff1a6b666200d17d94d39efbe3dc81",
+          "test.cir": "adea2470d5029d56a555da6a9132af9f14940518e586f058748e873de7713bdf",
+          "test.raw": "7c2e5f3300793a9406e313033f943094dca3106992b40df2e85059ae56e05a82",
+          "test.log": "ad9a3e091399211d574334e274481c6647937f7536c2233da55a85c8b6582cc7",
+          "execution.json": "58c74f27291b483aaf5b56fcff690903a263c1d1e01f3a2295d868bb98c771dc"
+        }
+      },
+      "protocol_sha256": "dce789b9be26bf226bfe4d20043635c43a7ee5fd617ed0342fdf4c73132102ff"
+    }
+  ],
+  "qualified_methods": 21,
+  "api_calls": 0,
+  "usage": {
+    "api_calls": 0,
+    "simulations": 56,
+    "repairs": 0,
+    "seconds": 221.904205959
+  },
+  "full_manual_coverage": false,
+  "candidate_models_modified": false
+}

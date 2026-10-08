@@ -1,0 +1,217 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "capacitance_zero_bias",
+    "protocol": {
+      "temperature_C": 25,
+      "device_nodes": {
+        "A": "P",
+        "K": "0"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VAC",
+          "nodes": [
+            "P",
+            "0"
+          ],
+          "value": {
+            "dc": 0,
+            "ac": 1
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "ac",
+        "frequency_Hz": 1000000.0
+      },
+      "measurement": {
+        "mode": "capacitance",
+        "signal": "i(vac)",
+        "sign": -1,
+        "scale": 1000000000000.0
+      },
+      "checks": []
+    },
+    "expectation": {
+      "unit": "pF",
+      "limits": {
+        "max": 4
+      },
+      "thresholds": {}
+    },
+    "reference_ids": [
+      "parameter:cd"
+    ],
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/1N4148/assets/18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387.lib",
+      "sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+      "entry": "LEAKAGE_FITTED_1N4148",
+      "declared_ports": [
+        "A",
+        "K"
+      ],
+      "ports": [
+        "A",
+        "K"
+      ],
+      "provenance": {
+        "origin": "historical_LTspice_OnSemi_candidate_fitted_to_NXP_reference",
+        "not_new_index_selection": true
+      }
+    },
+    "device": "1N4148",
+    "input_folder": "1N4148",
+    "reference_evidence": [
+      {
+        "id": "parameter:cd",
+        "kind": "test",
+        "applicable": true,
+        "reference_evidence": {
+          "id": "cd",
+          "key": "diode_capacitance",
+          "values": {
+            "max": 4
+          },
+          "unit": "pF",
+          "conditions": "f=1 MHz; VR=0 V; Tj=25°C",
+          "applies_to": [
+            "1N4148"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b35",
+            "b36",
+            "p2"
+          ]
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          3
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "ac_parallel_capacitance",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+        "source_record": {
+          "id": "parameter:cd",
+          "kind": "test_or_constraint_pending_classification",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "cd",
+            "key": "diode_capacitance",
+            "values": {
+              "max": 4
+            },
+            "unit": "pF",
+            "conditions": "f=1 MHz; VR=0 V; Tj=25°C",
+            "applies_to": [
+              "1N4148"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b35",
+              "b36",
+              "p2"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            3
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_parallel_capacitance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+        },
+        "source_kind": "test_or_constraint_pending_classification",
+        "label": "diode_capacitance",
+        "evidence": [
+          "b35",
+          "b36",
+          "p2"
+        ],
+        "classification_review_pending": true,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "scope": "exact declared conditions; remaining handbook coverage is open"
+  },
+  "receipt": {
+    "device": "1N4148",
+    "id": "capacitance_zero_bias",
+    "reference_ids": [
+      "parameter:cd"
+    ],
+    "scope": "exact declared conditions; remaining handbook coverage is open",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+    "calibrations": [
+      {
+        "expected": 1000.0000000000001,
+        "result": {
+          "value": 999.9999999999999
+        },
+        "error": 2.2737367544323206e-13,
+        "tolerance": 0.10000000000000002,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/7d617ee133f204c34797c0f87d0fbabc61df6264117c912fd406c31f261d8d83",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "2c01e6c13f97eaf2c767047ddf99e25a826bf46732a3566a7b23b185376247f5",
+          "test.raw": "8fe2e165c981c0fb8a07519874e73b97d9e0945c4c1acf31862108c9421236be",
+          "test.log": "2b1458463b9f5a5a4030e3db1d29204db7e0891de21311067d21b65c6e9119bd",
+          "execution.json": "9a9d021db718a539e1613f5a95fc9ae6d3813e7398c7887de4456ffd4443cc05"
+        }
+      },
+      {
+        "expected": 2000.0000000000002,
+        "result": {
+          "value": 1999.9999999999998
+        },
+        "error": 4.547473508864641e-13,
+        "tolerance": 0.20000000000000004,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/8e4ff967b874fa721b2076fbe5e81d2f0ae4aeab3c476ed4629ce0c7b67a854b",
+        "artifacts": {
+          "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+          "test.cir": "4fc4733e3282efdb1b99c2382b7fba0f362f8e909754dd812c8badaf4782142c",
+          "test.raw": "c9f01176f9bdb8d6cf18db85f79585e115de03c7cf510b033b8b0b1b2faca29d",
+          "test.log": "8fca8cc2286ae2a64f6942fa17317c8523435a61bbbb2685c3fff4143580d5bb",
+          "execution.json": "415de4b64acade4fdca15c0cc798f9ef9d6388ab5b98eb83ae5194fa512ae3da"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 1.0453075020086597
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/977cb48870f48f1090aa9a497bf00caa469511cf30149a1b8c140054094fddcf",
+      "artifacts": {
+        "model.lib": "18f8d0f50d7f9db751f4e79db4a4e7d0e331163a145151118ffc84957c482387",
+        "test.cir": "4319715277e314bc1388cd9420781b736c777c4b6dbc5424c357714b0b068d28",
+        "test.raw": "d2d47025a92d92901625c2ec4b320304d39aa3dda2175e8dddaa54ab0c6ffd60",
+        "test.log": "c880e844e6ce7febc64a6ebb33cf9ee52e3ace907ffe594a15dd0ad0e1c13182",
+        "execution.json": "f13a6d4d277cf2c23cfa38b6f9d7e98385a046812fde9b2a6ae985b23c6efd4e"
+      }
+    },
+    "protocol_sha256": "45acdcbc7be0962dfb9030b86921976656349440c83cc7ef1fbaca20b5f956c1"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

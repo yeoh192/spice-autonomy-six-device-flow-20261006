@@ -1,0 +1,278 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "df_120Hz",
+    "reference_ids": [
+      "parameter:df"
+    ],
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/EMHK350ARA470MF80G/assets/b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32.lib",
+      "entry": "REFERENCE_CAP",
+      "declared_ports": [
+        "P",
+        "N"
+      ],
+      "ports": [
+        "P",
+        "N"
+      ],
+      "sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+      "provenance": {
+        "kind": "vendor_reference_only",
+        "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+        "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+        "note": "Reference interface benchmark only; prohibited as selected modeling template"
+      }
+    },
+    "protocol": {
+      "temperature_C": 20,
+      "device_nodes": {
+        "P": "P",
+        "N": "N"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VDRIVE",
+          "nodes": [
+            "P",
+            "N"
+          ],
+          "value": {
+            "dc": 0,
+            "ac": 0.1
+          }
+        },
+        {
+          "kind": "R",
+          "name": "RGROUND",
+          "nodes": [
+            "N",
+            "0"
+          ],
+          "value": 1e-06
+        }
+      ],
+      "analysis": {
+        "kind": "ac",
+        "frequency_Hz": 120
+      },
+      "measurement": {
+        "mode": "ac_dissipation_factor",
+        "signal": "v(p,n)",
+        "denominator": "i(vdrive)",
+        "sign": -1,
+        "scale": 1
+      },
+      "checks": []
+    },
+    "expectation": {
+      "unit": "1",
+      "limits": {
+        "max": 0.14
+      }
+    },
+    "review_status": "independent_agent_review_required",
+    "delivery_eligible": false,
+    "scope_note": "",
+    "contract": {
+      "fixed": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 120
+        },
+        "measurement": {
+          "mode": "ac_dissipation_factor",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      }
+    },
+    "protocol_sha256": "6e5a1882c49cb92fe589cbe95e7b65c9aafb3c053e9594bed2710b0916ce6924",
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "model_role": "reference_interface_benchmark_only",
+    "actual_circuit": {
+      "path": "fixture_circuits/df_120Hz.cir",
+      "sha256": "58f8fcb4b234f86026fb347ce56c2940f331d687315d68ef34a0bb57310a30e1"
+    },
+    "device": "EMHK350ARA470MF80G",
+    "input_folder": "EMHK350ARA470MF80G",
+    "reference_evidence": [
+      {
+        "id": "parameter:df",
+        "kind": "test",
+        "applicable": true,
+        "reference_evidence": {
+          "id": "df",
+          "key": "dissipation_factor",
+          "values": {
+            "max": 0.14
+          },
+          "unit": "1",
+          "conditions": "20°C; 120 Hz",
+          "applies_to": [
+            "EMHK350ARA470MF80G"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b4",
+            "p0"
+          ]
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          1
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "ac_dissipation_factor",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+        "source_record": {
+          "id": "parameter:df",
+          "kind": "test_or_constraint_pending_classification",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "df",
+            "key": "dissipation_factor",
+            "values": {
+              "max": 0.14
+            },
+            "unit": "1",
+            "conditions": "20°C; 120 Hz",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b4",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_dissipation_factor",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+        },
+        "source_kind": "test_or_constraint_pending_classification",
+        "label": "dissipation_factor",
+        "evidence": [
+          "b4",
+          "p0"
+        ],
+        "classification_review_pending": true,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "scope": "exact declared conditions; remaining handbook coverage is open"
+  },
+  "receipt": {
+    "device": "EMHK350ARA470MF80G",
+    "id": "df_120Hz",
+    "reference_ids": [
+      "parameter:df"
+    ],
+    "scope": "exact declared conditions; remaining handbook coverage is open",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+    "calibrations": [
+      {
+        "expected": 6.283185307179585,
+        "result": {
+          "value": 6.283185307179584
+        },
+        "error": 1.7763568394002505e-15,
+        "tolerance": 0.0006283185307179586,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/dc0e4f97d71545c3fbc12f77d97e1a21b0dd00e1ed7ef39d4cebe9aafa572732",
+        "artifacts": {
+          "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+          "test.cir": "168e9970d10c5404e4418484b341fb5abb2a5358e43c96b1caa56a65549db5f6",
+          "test.raw": "bd1f2347994c3b8a49ae822a7eb83368503f6113b1fc9e76a23e005f526a60c9",
+          "test.log": "e36208c324fd6e5c426de7216aabceb3a9814313f2f1646b8819c619d01905b2",
+          "execution.json": "9a405661b559f5ad44b578aa1bfab168f655aa11b7749397ace9552592d6395a"
+        }
+      },
+      {
+        "expected": 12.56637061435917,
+        "result": {
+          "value": 12.566370614359172
+        },
+        "error": 1.7763568394002505e-15,
+        "tolerance": 0.0012566370614359172,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/3f56c9c1da84fcd95d4268b934f4ab3f234d24da1e7ac1a35399af6f11b7c52b",
+        "artifacts": {
+          "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+          "test.cir": "db3b4aa6d2818baed59b9435fec0787a2b7774dfe9f12e4aa11ddf67a4432dcb",
+          "test.raw": "0ee8df356462f4190143035740327650c296686c3b94b91fd9d988691dd9fe59",
+          "test.log": "02e7805c5a6a95a382afbdb3a4a125db21718fc7c13fb77de3fa199e776ea752",
+          "execution.json": "4e267f0808837e01884ac032e8b685783c627ccc84c6f2e0fe4ba370cdea52be"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 0.008713085139496202
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/642a6060fef7e0b747d3bfe071dfbd6dce2d9236af13b8b54cfb3cbc14966237",
+      "artifacts": {
+        "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+        "test.cir": "58f8fcb4b234f86026fb347ce56c2940f331d687315d68ef34a0bb57310a30e1",
+        "test.raw": "dba18a5d988b1b129b8cd1ff071f9df5a299dc1f9498c17a24ec015db8c22aeb",
+        "test.log": "fea33093d3cd739102e5ee5affc35cc2ac25779441439874ce07019358d54377",
+        "execution.json": "cfec04425cbcb88decedbc965b0306f8504a4dd6993b898d42e1b86de3152df8"
+      }
+    },
+    "protocol_sha256": "6e5a1882c49cb92fe589cbe95e7b65c9aafb3c053e9594bed2710b0916ce6924"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

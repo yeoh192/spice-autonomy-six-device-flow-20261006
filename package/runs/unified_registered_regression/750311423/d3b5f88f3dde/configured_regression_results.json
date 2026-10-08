@@ -1,0 +1,104 @@
+[
+  {
+    "value": 0.49678707233913927,
+    "test": "turns_N3",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+    "protocol_sha256": "f46d7d2e84c0abceb797a3f1946e8f1272a8cd7173f9405ffacfd493d78b2aa9",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/unified_registered_regression/750311423/d3b5f88f3dde/simulations/dda4dfc33a8026930d6d7a19fc92b38e48c6b7628f54893663e103e2f7431d6d",
+    "unit": "1",
+    "artifact_hashes": {
+      "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "test.cir": "8f5bdc0f63e8bc5439a7f88340b4324f9ef7a0abc3c3b274f00546d5d7175a50",
+      "test.raw": "e046ef71412c5be3b19718ea7ed85f2bf522ae270f5ea24ee39970daed13bcd7",
+      "test.log": "659870c7449cd65ed8b58ffc566dbe266b0b29a47b29cb31a5dc6472311a7cdc",
+      "execution.json": "fe33d10b8febe6e63b432c9f8ff68979ddca9ea58487f140284f1e0f46f12924"
+    }
+  },
+  {
+    "value": 0.09000989886412375,
+    "test": "dcr_N1",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+    "protocol_sha256": "5b0d5db9b43692c790f615e7680ebfb90dd753d73eea9ed566f3ce87dd470fb0",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/unified_registered_regression/750311423/d3b5f88f3dde/simulations/a195031bb9559d6c0b63d35773a6b8e1f50518028bce3f51fa08e1dd64a92672",
+    "unit": "Ω",
+    "artifact_hashes": {
+      "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "test.cir": "e205cc5bb97d0f14413a41417c988c91defb00e5d244e48fd742ac07a345d2ab",
+      "test.raw": "d7f23a958ddecbdeb29663735b8c42ff40041f0799cdd24d21aa03449ca361cd",
+      "test.log": "5a7de60f1928632d692f9789858c05644bce9043ff52dfb6720ff255af2d6aa6",
+      "execution.json": "946687b82058947da73b677f02aa6a0aa48f4a43a5155bd9c9d3a9ceabb8a1df"
+    }
+  },
+  {
+    "value": 0.01199999994672,
+    "test": "dcr_N2",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+    "protocol_sha256": "aad4a1ab3b7222832ac00a1ef31187f3bc77040c23196e434573862d937fdd11",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/unified_registered_regression/750311423/d3b5f88f3dde/simulations/589626b0e6f480242d6f7a7b8cf3d259a13f07751ca6d755b6f0813056286a8a",
+    "unit": "Ω",
+    "artifact_hashes": {
+      "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "test.cir": "78257c7cf694577610dcf04b547d858e24ac5bfaf5dc6044260eebc6c9592f8c",
+      "test.raw": "7251a87bdefbe2108cc36689b3db78de8426c59ca13ceb31525bc2c7e1ac11de",
+      "test.log": "e096ed27b7383af0f85de0251a127101329b6b3b715726ea61820c4dc89b7edc",
+      "execution.json": "bb5832076df9eee7b173988ab324f6e2f1236b1f51440217f7157018588bb703"
+    }
+  },
+  {
+    "value": 50.0000776617138,
+    "test": "primary_inductance",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+    "protocol_sha256": "0a4aa4a635f8937537ea1381f679c15636aeea8c82f0e4afb97f1f8c3e3b2b4d",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/unified_registered_regression/750311423/d3b5f88f3dde/simulations/72a3478226ab2b1bb45bee69a534bbf301b3525ff05164d2e607a873a60a6dc7",
+    "unit": "μH",
+    "artifact_hashes": {
+      "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "test.cir": "87226f9b5dab989f7e718e1b3689fee21f7f39092450d01f8a60dda76be7ab88",
+      "test.raw": "f45b9506ae08edad073bcb00f60e1873f4dc94852d864dce393503055c11aea1",
+      "test.log": "1548acb8c668b2c204b585ec84b734b5f81555cf92cf12458abb688e8699dcda",
+      "execution.json": "61e3644f246f4b43dee939c3c0aaccf5261a253173b945c9c2f4d595877552df"
+    }
+  },
+  {
+    "value": 0.24839353856656726,
+    "test": "turns_N2",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+    "protocol_sha256": "a1334050e66b12d554d179615ac9c0a21156184a300e0cd7a97e8dd71e156fd2",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/unified_registered_regression/750311423/d3b5f88f3dde/simulations/988b580fbf654f00666e888866b1e7c51669694c2fa305841f1f70e55813c1e9",
+    "unit": "1",
+    "artifact_hashes": {
+      "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "test.cir": "ca72b1e5d006d53d206222e21c71e5a99a539a653f442981b64a1a1f2c4e9209",
+      "test.raw": "8245b4b236e0f8fbc93a953e547e4c2b4bd1c1bd697215e06b54ceb8d3713903",
+      "test.log": "699ecda60500c4e12d58f4fb473ecdc18645e53aa610fc25b49e1c2965f815bc",
+      "execution.json": "5f93a2e507fb42251ad5ea050c14aa48d7124164721d1e1e4bc36f9b578b8339"
+    }
+  },
+  {
+    "value": 0.20499999453675025,
+    "test": "dcr_N3",
+    "execution": "completed",
+    "acceptance": "pass",
+    "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+    "protocol_sha256": "042f2efd815b239df8849640a78ead9a38cdc709fae759322f3409ccfa4e13e4",
+    "artifacts": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/unified_registered_regression/750311423/d3b5f88f3dde/simulations/34de94459206ed92779b678c33dff2b0da2571c691191a0ad6cc0c22a0cf4d3c",
+    "unit": "Ω",
+    "artifact_hashes": {
+      "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "test.cir": "03b7687217c0444cfecab5d723f3fac60d03c4d190e99e279452443eb7066d29",
+      "test.raw": "cac3e9425476157f1db07359a63b76ca1019d333d719883b694e9ff6a21c95e3",
+      "test.log": "4142761f2e9c0cc68bf6a967dd2a9fd726c6fa61abb41b0dd4a9878826bd7b36",
+      "execution.json": "525a9c4a47c7551a390a1687d8fe7a9b1774b57c7387b15270d0d907bb412413"
+    }
+  }
+]

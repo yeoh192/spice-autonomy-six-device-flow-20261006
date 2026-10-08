@@ -1,0 +1,291 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "conductor_resistance_25C",
+    "reference_ids": [
+      "parameter:rip"
+    ],
+    "protocol": {
+      "temperature_C": 25,
+      "device_nodes": {
+        "P1": "IP",
+        "P2": "0",
+        "P3": "0",
+        "P4": "VCC",
+        "P5": "OUT",
+        "P6": "0"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VSUP",
+          "nodes": [
+            "VCC",
+            "0"
+          ],
+          "value": {
+            "dc": 5
+          }
+        },
+        {
+          "kind": "I",
+          "name": "IFORCE",
+          "nodes": [
+            "0",
+            "IP"
+          ],
+          "value": {
+            "dc": 0
+          }
+        },
+        {
+          "kind": "V",
+          "name": "VDUMMY",
+          "nodes": [
+            "UNUSED",
+            "0"
+          ],
+          "value": {
+            "dc": 0
+          }
+        }
+      ],
+      "analysis": {
+        "kind": "dc",
+        "source": "IFORCE",
+        "start": 0,
+        "stop": 1,
+        "step": 0.1
+      },
+      "measurement": {
+        "mode": "sample",
+        "signal": "v(IP)",
+        "at": 1,
+        "scale": 1000
+      },
+      "checks": []
+    },
+    "model": {
+      "entry": "REFERENCE_INTERFACE",
+      "ports": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "declared_ports": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "provenance": {
+        "role": "reference_interface_benchmark_only",
+        "source_sha256": "8e9c9190a601795576cd3cf0de46687496995b292da7cdd73934b447c870b0aa",
+        "original_entry": "ACS723",
+        "original_ports": [
+          "IP+",
+          "IP-",
+          "DUT_GND",
+          "VCC",
+          "Viout",
+          "BW_SEL"
+        ],
+        "physical_binding_verified": false,
+        "dependency_receipts": [
+          {
+            "name": "opamp.sub",
+            "sha256": "7bbdf4d33fab0620879996c2c61cd09a4f589a0ee9bc4a26ccf8ecec9c24dc87"
+          },
+          {
+            "name": "UniversalOPAmps2.sub",
+            "sha256": "4c7cd040212fc64700ec5fc6402c7fc11cdb7d9f84544dbae9914e4a5221f2d1"
+          }
+        ],
+        "parameter_evidence": [
+          {
+            "reference_id": "parameter:20AB_sensitivity",
+            "unit": "mV/A",
+            "value": 100,
+            "symbol_sha256": "9eb9f2559a2a4bbcd364402ba5fe3a69f68088e30c651e992e3e598c75ef676a",
+            "role": "reference_benchmark_configuration"
+          }
+        ],
+        "parameter_scope_correction": "Pass symbol-derived parameters on XREFERENCE instance; vendor subcircuit unchanged"
+      },
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/gpt_test_library/models/ACS723/reference_interface_parameter_scope.lib",
+      "sha256": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771"
+    },
+    "expectation": {
+      "unit": "mΩ",
+      "limits": {},
+      "thresholds": {},
+      "typical": 0.85,
+      "typical_relative_tolerance_percent": 10
+    },
+    "device": "ACS723KMATR-20AB-T",
+    "input_folder": "ACS723",
+    "reference_evidence": [
+      {
+        "id": "parameter:rip",
+        "kind": "test",
+        "applicable": true,
+        "reference_evidence": {
+          "id": "rip",
+          "key": "primary_conductor_resistance",
+          "values": {
+            "typ": 0.85
+          },
+          "unit": "mΩ",
+          "conditions": "TA=25°C",
+          "applies_to": [
+            "ACS723"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b67",
+            "p5"
+          ]
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          6
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "dc_resistance",
+        "capability_status": "existing_primitive_requires_fixture_binding",
+        "source_record": {
+          "id": "parameter:rip",
+          "kind": "test_or_constraint_pending_classification",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "rip",
+            "key": "primary_conductor_resistance",
+            "values": {
+              "typ": 0.85
+            },
+            "unit": "mΩ",
+            "conditions": "TA=25°C",
+            "applies_to": [
+              "ACS723"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b67",
+              "p5"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            6
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_resistance",
+          "capability_status": "existing_primitive_requires_fixture_binding"
+        },
+        "source_kind": "test_or_constraint_pending_classification",
+        "label": "primary_conductor_resistance",
+        "evidence": [
+          "b67",
+          "p5"
+        ],
+        "classification_review_pending": true,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "scope": "exact declared conditions; remaining handbook coverage is open",
+    "port_binding_evidence": {
+      "declaration": [
+        "IP+",
+        "IP-",
+        "DUT_GND",
+        "VCC",
+        "Viout",
+        "BW_SEL"
+      ],
+      "manual_ports_sha256": "d3d34ba632b9096d97e554d5b6dcf9168c6ff9dd2ec9ef6546405fe9d29599ef"
+    }
+  },
+  "receipt": {
+    "device": "ACS723KMATR-20AB-T",
+    "id": "conductor_resistance_25C",
+    "reference_ids": [
+      "parameter:rip"
+    ],
+    "scope": "exact declared conditions; remaining handbook coverage is open",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "model_role": "reference_interface_benchmark_only",
+    "model_sha256": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+    "calibrations": [
+      {
+        "expected": 400.0,
+        "result": {
+          "value": 400.0
+        },
+        "error": 0.0,
+        "tolerance": 0.04,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/8f301002779508d32759d7320bf91c10c33db93ab944231b08cae09c0cb2897b",
+        "artifacts": {
+          "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+          "test.cir": "c10032a1d5adfdeccaa46cf89641a703ea6dd7212c27b0da7e4ee2bc291de217",
+          "test.raw": "bb4a085f7b89e78c1274f414ba8d790389cb57b9ea5eded1ec59cd17219c7a0f",
+          "test.log": "fe03ac3d3dafd55eb2624ecd4f6dafe05c34f05750a13e47b38883ad6c31433a",
+          "execution.json": "52006848c4f1328cb0bedebf18cf453c97bd6ac81ae1c7f87ee30233eeb2a47d"
+        }
+      },
+      {
+        "expected": 800.0,
+        "result": {
+          "value": 800.0
+        },
+        "error": 0.0,
+        "tolerance": 0.08,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/cf12ffa31ac3033adea00a74a6ad7287ac89aba02e29715b47e35e53c530568e",
+        "artifacts": {
+          "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+          "test.cir": "2604bfc191f5cc666cb11c47f788a2917df69e5645a7ba3481a3179f46e207c5",
+          "test.raw": "ec1f876b91679c3f4bc239eae7c599a7bbdbc34fb071c66c6a0dc682c9fda288",
+          "test.log": "a01dca22b512c89d3383b3058f7247a2df08ebc87b9661c249737e490047d228",
+          "execution.json": "e40273bcd203a236cac1a4db5952c736fa2bcb2b093dda7e97629e66c6cfb1c6"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 0.6500000000000001
+      },
+      "acceptance": "fail",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/acs_parameter_scope/simulations/6546f85e807c9f9d5a64b214acc5f7ff94c6caaa9e10a16f1acc4d1ea26bbf88",
+      "artifacts": {
+        "model.lib": "91ed7b8d39fbc97b03cffb1b627285ae658c57b0faddd71591342385a76a9771",
+        "test.cir": "1deca82beeb845e110589d5909968851bde76f608c3c77e557658beca0d4f1c6",
+        "test.raw": "238cae399d0e8dbc59760bc74af509d111007bf8f70d9654124816e8ed15db81",
+        "test.log": "103d3f1b1ecfc76aa76b7e0aa120a6ebe49b0ee07b8163d614e92dfafda9be0f",
+        "execution.json": "d1eb94674dc301bba7051be1bfa663862e16290ae5751182ce2fd0118660c94c"
+      }
+    },
+    "protocol_sha256": "0abb833b469bc99f5d6ef566865830ee9d78a0cea88c51aa319fedba345e0bf7"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

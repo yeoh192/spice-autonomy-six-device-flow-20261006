@@ -1,0 +1,10 @@
+Declarative SPICE workflow circuit
+.options plotwinsize=0
+.temp 25
+.options method=trap
+VORACLE AUXP AUXN 0.80000000000000004
+VCM AUXN 0 0.29999999999999999
+VDUMMY ORACLE_DUMMY 0 0
+.dc VDUMMY -0.98999999999999999 1.01 0.10000000000000001
+.save v(auxn) v(auxp)
+.end

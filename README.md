@@ -61,3 +61,9 @@ env -u DASHSCOPE_API_KEY -u GLM_API_KEY bash package/RUN_FIVE_TEST_COMPLETION.sh
 已修复模型返回models列表、analysis列表等错误类型导致的进程崩溃：先检查接口类型，再将字段路径反馈给Agent自动修订。252项离线测试及隔离安装预检通过，包含连续两次错误提案后自动反馈并继续验证的故障测试。真实五器件全覆盖与交付验收尚未通过。
 
 更新后的代码哈希改变了缓存身份，新任务重新执行当前版本交流校准；旧目录、请求计数和结果保留。v0.3.1 Release提供与package源码一致的ZIP及SHA256。详见[测试开发说明](package/TEST_COMPLETION.md)和[格式恢复验证](package/VALIDATION_PROTOCOL_SHAPES.md)。
+
+## v0.3.2：GPT校正测试库第一批
+
+22项精确条件方法经GPT核对、独立解析校准和真实LTspice试验后登记；已通过统一spice_flow.py入口运行。1N4148 6项、电容8项、变压器6项、ACS723 1项、ADA4528 1项；20项模型结果通过、2项失败。方法可用与候选模型交付分开，五器件全覆盖仍未完成。256项离线检查通过。
+
+运行 `bash package/RUN_GPT_CORRECTED_TESTS.sh --run`，无需API Key。本版本仍是原用户macOS绝对路径快照。真实证据、注册记录、剩余队列及范围见[GPT测试校正说明](package/GPT_TEST_CORRECTION.md)。Release附件提供完整校验包。

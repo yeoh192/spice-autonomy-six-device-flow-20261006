@@ -1,0 +1,7 @@
+LTspice 26.0.2 for MacOS
+Circuit: /Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/1d89bda6db1556b1ff3d6475ce48d015b31246267bc57943a8bf5f9f9d362fa8/test.cir
+Start Time: Thu Oct  8 19:22:14 2026
+Options:plotwinsize=0 method=trap
+Y:\Documents\Codex\2026-09-10\lian\deliverables\spice-autonomy-v2-gpt-test-correction\runs\gpt_correction\simulations\1d89bda6db1556b1ff3d6475ce48d015b31246267bc57943a8bf5f9f9d362fa8\model.lib(9): No such parameter defined.
+B§OutputStage N004 DUT_GND V=if({polarity}== 2, (V(IP+)-V(IP-))/0.65m*{Sensitivity}*(V(Vcc)/5)+(V(Vcc)/2), (V(IP+)-V(IP-))/0.65m*{Sensitivity}*(V(Vcc)/5)+(V(Vcc)/10))
+                                 ^^^^^^^^

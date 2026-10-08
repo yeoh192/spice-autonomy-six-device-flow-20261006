@@ -1,0 +1,279 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "esr_20_200000Hz",
+    "reference_ids": [
+      "parameter:esr20"
+    ],
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/EMHK350ARA470MF80G/assets/b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32.lib",
+      "entry": "REFERENCE_CAP",
+      "declared_ports": [
+        "P",
+        "N"
+      ],
+      "ports": [
+        "P",
+        "N"
+      ],
+      "sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+      "provenance": {
+        "kind": "vendor_reference_only",
+        "source": "/Users/192y/电气/六器件标准输入包_20261006/EMHK350ARA470MF80G/reference_models/EMHK350ARA470MF80G.lib",
+        "source_sha256": "0d8dbbf690d0549045b74c0c205c2cacda14462e6ce29aeb1843ff0021679a1b",
+        "note": "Reference interface benchmark only; prohibited as selected modeling template"
+      }
+    },
+    "protocol": {
+      "temperature_C": 20,
+      "device_nodes": {
+        "P": "P",
+        "N": "N"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VDRIVE",
+          "nodes": [
+            "P",
+            "N"
+          ],
+          "value": {
+            "dc": 0,
+            "ac": 0.1
+          }
+        },
+        {
+          "kind": "R",
+          "name": "RGROUND",
+          "nodes": [
+            "N",
+            "0"
+          ],
+          "value": 1e-06
+        }
+      ],
+      "analysis": {
+        "kind": "ac",
+        "frequency_Hz": 200000
+      },
+      "measurement": {
+        "mode": "ac_resistance",
+        "signal": "v(p,n)",
+        "denominator": "i(vdrive)",
+        "sign": -1,
+        "scale": 1
+      },
+      "checks": []
+    },
+    "expectation": {
+      "unit": "Ω",
+      "limits": {
+        "min": 0,
+        "max": 0.3
+      }
+    },
+    "review_status": "independent_agent_review_required",
+    "delivery_eligible": false,
+    "scope_note": "Finite frequency grid in handbook100..400kHz range; not proof over entire continuous interval",
+    "contract": {
+      "fixed": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P": "P",
+          "N": "N"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 200000
+        },
+        "measurement": {
+          "mode": "ac_resistance",
+          "signal": "v(p,n)",
+          "denominator": "i(vdrive)",
+          "sign": -1,
+          "scale": 1
+        },
+        "checks": []
+      }
+    },
+    "protocol_sha256": "59c9664c6ace16c5bacb6d3df60a6ed9a88411128f711dd4913a203bcf6b37fd",
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "model_role": "reference_interface_benchmark_only",
+    "actual_circuit": {
+      "path": "fixture_circuits/esr_20_200000Hz.cir",
+      "sha256": "f7f66241d5d4284d441e3773ff327d9853c22d43f22c5894234a08c52008edf6"
+    },
+    "device": "EMHK350ARA470MF80G",
+    "input_folder": "EMHK350ARA470MF80G",
+    "reference_evidence": [
+      {
+        "id": "parameter:esr20",
+        "kind": "test",
+        "applicable": true,
+        "reference_evidence": {
+          "id": "esr20",
+          "key": "equivalent_series_resistance",
+          "values": {
+            "max": 0.3
+          },
+          "unit": "Ω",
+          "conditions": "20°C; 100..400 kHz; F80 initial",
+          "applies_to": [
+            "EMHK350ARA470MF80G"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b21",
+            "p0"
+          ]
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          1
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "ac_resistance",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+        "source_record": {
+          "id": "parameter:esr20",
+          "kind": "test_or_constraint_pending_classification",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "esr20",
+            "key": "equivalent_series_resistance",
+            "values": {
+              "max": 0.3
+            },
+            "unit": "Ω",
+            "conditions": "20°C; 100..400 kHz; F80 initial",
+            "applies_to": [
+              "EMHK350ARA470MF80G"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b21",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_resistance",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+        },
+        "source_kind": "test_or_constraint_pending_classification",
+        "label": "equivalent_series_resistance",
+        "evidence": [
+          "b21",
+          "p0"
+        ],
+        "classification_review_pending": true,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "scope": "exact declared conditions; remaining handbook coverage is open"
+  },
+  "receipt": {
+    "device": "EMHK350ARA470MF80G",
+    "id": "esr_20_200000Hz",
+    "reference_ids": [
+      "parameter:esr20"
+    ],
+    "scope": "exact declared conditions; remaining handbook coverage is open",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+    "calibrations": [
+      {
+        "expected": 1000,
+        "result": {
+          "value": 1000.0
+        },
+        "error": 0.0,
+        "tolerance": 0.1,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/b8b5b1c0689e981630b9c19d00d2b2a2327a57c597f47246b0be47aaf61c660a",
+        "artifacts": {
+          "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+          "test.cir": "168e9970d10c5404e4418484b341fb5abb2a5358e43c96b1caa56a65549db5f6",
+          "test.raw": "262982fa28a946384314951dc4d5d45bff304264b0fb1897acaa0f1aeeb80830",
+          "test.log": "cf8ab6803f5ae2b1aef8587622074b2a99470d794e034618bb552ec3898be701",
+          "execution.json": "e20b678b187f8c2e5e9b1ea20c5c3041e0ff1af4da4b45606b75a32077281b36"
+        }
+      },
+      {
+        "expected": 1000,
+        "result": {
+          "value": 1000.0
+        },
+        "error": 0.0,
+        "tolerance": 0.1,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/465efad10ce23f7b093c379753225c0236b9ef65b1f9de67bd211fa14b238c1f",
+        "artifacts": {
+          "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+          "test.cir": "db3b4aa6d2818baed59b9435fec0787a2b7774dfe9f12e4aa11ddf67a4432dcb",
+          "test.raw": "395675a6404b2d6093186cf389f8a6e3a98aeebafee68de2a67e11760708ff40",
+          "test.log": "dc2a29cc6edf70028f928c9a8505c3b3d6d3afb60e8013c46f6dbd749af86c62",
+          "execution.json": "1d2cfbe0bbe5d85ea833d6035901d5d12a905f32262cb9877a36a32239554f2c"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 0.22359674449534359
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/eb777ae36d0ca871b97bfd1f909bf78c9d598a35cd7fac5458df935108218c07",
+      "artifacts": {
+        "model.lib": "b089c114ab95cbd8ce997d6ed2d2ffe3b173a69b4f6e1f48644a03f1ff982f32",
+        "test.cir": "f7f66241d5d4284d441e3773ff327d9853c22d43f22c5894234a08c52008edf6",
+        "test.raw": "a907f3668c2b0997c5764f6f4a60167934dfac7d52353e3138bb92c173ad9d02",
+        "test.log": "ff12a551cf2af218aade14d21b084c9420c15ab4b4480bc2034a78d8c8b537cd",
+        "execution.json": "1de785b665ba26e4a46ce495b14a33a50b40a55b14df62addfd6659b5e93ac3a"
+      }
+    },
+    "protocol_sha256": "59c9664c6ace16c5bacb6d3df60a6ed9a88411128f711dd4913a203bcf6b37fd"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

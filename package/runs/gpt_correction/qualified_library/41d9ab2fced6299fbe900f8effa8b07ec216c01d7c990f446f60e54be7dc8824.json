@@ -1,0 +1,326 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "turns_N3",
+    "reference_ids": [
+      "parameter:turns"
+    ],
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+      "entry": "REFERENCE_XFMR",
+      "declared_ports": [
+        "P1",
+        "N1",
+        "P3",
+        "N3",
+        "P2",
+        "N2"
+      ],
+      "ports": [
+        "P1",
+        "N1",
+        "P3",
+        "N3",
+        "P2",
+        "N2"
+      ],
+      "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "provenance": {
+        "kind": "vendor_reference_only",
+        "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+        "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+        "note": "Reference interface benchmark only; prohibited as selected modeling template"
+      }
+    },
+    "protocol": {
+      "temperature_C": 20,
+      "device_nodes": {
+        "P1": "P",
+        "N1": "N",
+        "P3": "AUXP",
+        "N3": "AUXN",
+        "P2": "SECP",
+        "N2": "SECN"
+      },
+      "components": [
+        {
+          "kind": "V",
+          "name": "VDRIVE",
+          "nodes": [
+            "P",
+            "N"
+          ],
+          "value": {
+            "dc": 0,
+            "ac": 0.1
+          }
+        },
+        {
+          "kind": "R",
+          "name": "RGROUND",
+          "nodes": [
+            "N",
+            "0"
+          ],
+          "value": 1e-06
+        },
+        {
+          "kind": "R",
+          "name": "RAUX",
+          "nodes": [
+            "AUXN",
+            "0"
+          ],
+          "value": 1e-06
+        },
+        {
+          "kind": "R",
+          "name": "RSEC",
+          "nodes": [
+            "SECN",
+            "0"
+          ],
+          "value": 1e-06
+        }
+      ],
+      "analysis": {
+        "kind": "ac",
+        "frequency_Hz": 10000
+      },
+      "measurement": {
+        "mode": "ac_gain_magnitude",
+        "signal": "v(auxp,auxn)",
+        "denominator": "v(p,n)",
+        "sign": 1
+      },
+      "checks": []
+    },
+    "expectation": {
+      "unit": "1"
+    },
+    "review_status": "independent_agent_review_required",
+    "delivery_eligible": false,
+    "scope_note": "4:1:2 winding voltage ratios; chosen10kHz100mV is documented test convention pending review; handbook ratio has no printed tolerance so acceptance is pending",
+    "contract": {
+      "fixed": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P1": "P",
+          "N1": "N",
+          "P3": "AUXP",
+          "N3": "AUXN",
+          "P2": "SECP",
+          "N2": "SECN"
+        },
+        "components": [
+          {
+            "kind": "V",
+            "name": "VDRIVE",
+            "nodes": [
+              "P",
+              "N"
+            ],
+            "value": {
+              "dc": 0,
+              "ac": 0.1
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "N",
+              "0"
+            ],
+            "value": 1e-06
+          },
+          {
+            "kind": "R",
+            "name": "RAUX",
+            "nodes": [
+              "AUXN",
+              "0"
+            ],
+            "value": 1e-06
+          },
+          {
+            "kind": "R",
+            "name": "RSEC",
+            "nodes": [
+              "SECN",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "ac",
+          "frequency_Hz": 10000
+        },
+        "measurement": {
+          "mode": "ac_gain_magnitude",
+          "signal": "v(auxp,auxn)",
+          "denominator": "v(p,n)",
+          "sign": 1
+        },
+        "checks": []
+      }
+    },
+    "protocol_sha256": "f46d7d2e84c0abceb797a3f1946e8f1272a8cd7173f9405ffacfd493d78b2aa9",
+    "nominal_reference": 0.5,
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "model_role": "reference_interface_benchmark_only",
+    "actual_circuit": {
+      "path": "fixture_circuits/turns_N3.cir",
+      "sha256": "8f5bdc0f63e8bc5439a7f88340b4324f9ef7a0abc3c3b274f00546d5d7175a50"
+    },
+    "device": "750311423",
+    "input_folder": "750311423",
+    "reference_evidence": [
+      {
+        "id": "parameter:turns",
+        "kind": "test",
+        "applicable": true,
+        "reference_evidence": {
+          "id": "turns",
+          "key": "turns_ratio",
+          "values": {
+            "value": "4:1:2"
+          },
+          "unit": "1",
+          "conditions": "N1:N2:N3",
+          "applies_to": [
+            "750311423"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b9",
+            "p0"
+          ]
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          1
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "ac_gain_magnitude",
+        "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review",
+        "source_record": {
+          "id": "parameter:turns",
+          "kind": "test_or_constraint_pending_classification",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "turns",
+            "key": "turns_ratio",
+            "values": {
+              "value": "4:1:2"
+            },
+            "unit": "1",
+            "conditions": "N1:N2:N3",
+            "applies_to": [
+              "750311423"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b9",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "ac_gain_magnitude",
+          "capability_status": "implemented_requires_current_calibration_receipt_and_exact_fixture_review"
+        },
+        "source_kind": "test_or_constraint_pending_classification",
+        "label": "turns_ratio",
+        "evidence": [
+          "b9",
+          "p0"
+        ],
+        "classification_review_pending": true,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "scope": "exact declared conditions; remaining handbook coverage is open"
+  },
+  "receipt": {
+    "device": "750311423",
+    "id": "turns_N3",
+    "reference_ids": [
+      "parameter:turns"
+    ],
+    "scope": "exact declared conditions; remaining handbook coverage is open",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+    "calibrations": [
+      {
+        "expected": 0.5,
+        "result": {
+          "value": 0.5
+        },
+        "error": 0.0,
+        "tolerance": 5e-05,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/c8b3d240435a396ac90a1590b1084b1eb95cebd6846fc212b2c950e6a594c69c",
+        "artifacts": {
+          "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "test.cir": "a80a0f7fcda08b119d5c5a7dd9db0b03c3e42cf8919e0b5e9866b029c6a6bde3",
+          "test.raw": "724f232dbb3c013f3a3cccebc93d9b31ae174ceea287c775b1418a62fbf4aec5",
+          "test.log": "fbb714e8e287cf3cb7b40bf52d7299ecc3ba57e55b445dc3d023d142e4bdb272",
+          "execution.json": "9ff438cdc0ad93daf0c172ca37ac3a3d7b5cd85eba883c17efe2be07e56fc6c3"
+        }
+      },
+      {
+        "expected": 0.6666666666666666,
+        "result": {
+          "value": 0.6666666666666667
+        },
+        "error": 1.1102230246251565e-16,
+        "tolerance": 6.666666666666667e-05,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/e9672abbb0aa430579bad16fab25ca3db9bcede4e84009cfab58ddeee51e5e89",
+        "artifacts": {
+          "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "test.cir": "d69452c45f7a1f20758bcffaee4134914c463bb742a33205548b998e802bb4ca",
+          "test.raw": "679bfbb9dbf22ab9e69f275a806300e71a92e98d9c62964a1c106144ebc2a53c",
+          "test.log": "d978566fa1f8d0996017304430b969afad3d2a2ae36e7f646ab83f1fd1c1b72a",
+          "execution.json": "84908331d79f6fe5316822b00dcf5ee21360a03d4da585a44641f6391cdd0919"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 0.49678707233913927
+      },
+      "acceptance": "pending",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/dda4dfc33a8026930d6d7a19fc92b38e48c6b7628f54893663e103e2f7431d6d",
+      "artifacts": {
+        "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "test.cir": "8f5bdc0f63e8bc5439a7f88340b4324f9ef7a0abc3c3b274f00546d5d7175a50",
+        "test.raw": "347ca26e5d09d42d5cd3dfa7577b3c662743e9d3143fcb4e6c8b3636b656c246",
+        "test.log": "5635eb04df872e80cb89f954bca023cc382d6934f2340a91228f10234bf26b48",
+        "execution.json": "ac448164538a55c179e8ff5161b0938b63a7a68c9281d86a379728e531f53169"
+      }
+    },
+    "protocol_sha256": "f46d7d2e84c0abceb797a3f1946e8f1272a8cd7173f9405ffacfd493d78b2aa9"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}

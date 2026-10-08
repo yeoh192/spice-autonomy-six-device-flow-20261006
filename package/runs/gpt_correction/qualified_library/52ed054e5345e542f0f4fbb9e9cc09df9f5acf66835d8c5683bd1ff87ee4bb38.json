@@ -1,0 +1,299 @@
+{
+  "schema": "gpt-corrected-qualified-method-1",
+  "case": {
+    "id": "dcr_N3",
+    "reference_ids": [
+      "parameter:rdc_N3"
+    ],
+    "model": {
+      "path": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/six_inputs/750311423/assets/d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2.lib",
+      "entry": "REFERENCE_XFMR",
+      "declared_ports": [
+        "P1",
+        "N1",
+        "P3",
+        "N3",
+        "P2",
+        "N2"
+      ],
+      "ports": [
+        "P1",
+        "N1",
+        "P3",
+        "N3",
+        "P2",
+        "N2"
+      ],
+      "sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+      "provenance": {
+        "kind": "vendor_reference_only",
+        "source": "/Users/192y/电气/六器件标准输入包_20261006/750311423/reference_models/WE-FB.lib",
+        "source_sha256": "ba918b3b910b94c82648a0acd5fc9fe0dbec25ea23eaf96626ed857e7be84934",
+        "note": "Reference interface benchmark only; prohibited as selected modeling template"
+      }
+    },
+    "protocol": {
+      "temperature_C": 20,
+      "device_nodes": {
+        "P1": "P",
+        "N1": "N",
+        "P3": "AUXP",
+        "N3": "AUXN",
+        "P2": "SECP",
+        "N2": "SECN"
+      },
+      "components": [
+        {
+          "kind": "I",
+          "name": "IDRIVE",
+          "nodes": [
+            "AUXN",
+            "AUXP"
+          ],
+          "value": {
+            "dc": 0
+          }
+        },
+        {
+          "kind": "R",
+          "name": "RGROUND",
+          "nodes": [
+            "AUXN",
+            "0"
+          ],
+          "value": 1e-06
+        }
+      ],
+      "analysis": {
+        "kind": "dc",
+        "source": "IDRIVE",
+        "start": 0,
+        "stop": 0.01,
+        "step": 0.002
+      },
+      "measurement": {
+        "mode": "sample",
+        "signal": "v(AUXP,AUXN)",
+        "at": 0.01,
+        "scale": 100
+      },
+      "checks": []
+    },
+    "expectation": {
+      "unit": "Ω",
+      "limits": {
+        "min": 0.1845,
+        "max": 0.2255
+      }
+    },
+    "review_status": "independent_agent_review_required",
+    "delivery_eligible": false,
+    "scope_note": "20°C33%RH; other windings open;10mA is fixture choice, not a printed handbook excitation",
+    "contract": {
+      "fixed": {
+        "temperature_C": 20,
+        "device_nodes": {
+          "P1": "P",
+          "N1": "N",
+          "P3": "AUXP",
+          "N3": "AUXN",
+          "P2": "SECP",
+          "N2": "SECN"
+        },
+        "components": [
+          {
+            "kind": "I",
+            "name": "IDRIVE",
+            "nodes": [
+              "AUXN",
+              "AUXP"
+            ],
+            "value": {
+              "dc": 0
+            }
+          },
+          {
+            "kind": "R",
+            "name": "RGROUND",
+            "nodes": [
+              "AUXN",
+              "0"
+            ],
+            "value": 1e-06
+          }
+        ],
+        "analysis": {
+          "kind": "dc",
+          "source": "IDRIVE",
+          "start": 0,
+          "stop": 0.01,
+          "step": 0.002
+        },
+        "measurement": {
+          "mode": "sample",
+          "signal": "v(AUXP,AUXN)",
+          "at": 0.01,
+          "scale": 100
+        },
+        "checks": []
+      }
+    },
+    "protocol_sha256": "042f2efd815b239df8849640a78ead9a38cdc709fae759322f3409ccfa4e13e4",
+    "qualification_status": "awaiting_real_calibration_and_trial",
+    "model_role": "reference_interface_benchmark_only",
+    "actual_circuit": {
+      "path": "fixture_circuits/dcr_N3.cir",
+      "sha256": "03b7687217c0444cfecab5d723f3fac60d03c4d190e99e279452443eb7066d29"
+    },
+    "device": "750311423",
+    "input_folder": "750311423",
+    "reference_evidence": [
+      {
+        "id": "parameter:rdc_N3",
+        "kind": "test",
+        "applicable": true,
+        "reference_evidence": {
+          "id": "rdc_N3",
+          "key": "dc_resistance",
+          "values": {
+            "nominal": 0.205,
+            "tolerance": "±10%"
+          },
+          "unit": "Ω",
+          "conditions": "N3; 20°C; 33% RH",
+          "applies_to": [
+            "750311423"
+          ],
+          "rating_kind": "electrical_characteristic",
+          "state": "initial",
+          "evidence_refs": [
+            "b9",
+            "p0"
+          ]
+        },
+        "bindings": [],
+        "binding_complete": false,
+        "pdf_pages": [
+          1
+        ],
+        "plan_status": "test_development_required",
+        "method_family": "dc_resistance",
+        "capability_status": "existing_primitive_requires_fixture_binding",
+        "source_record": {
+          "id": "parameter:rdc_N3",
+          "kind": "test_or_constraint_pending_classification",
+          "applicable": true,
+          "reference_evidence": {
+            "id": "rdc_N3",
+            "key": "dc_resistance",
+            "values": {
+              "nominal": 0.205,
+              "tolerance": "±10%"
+            },
+            "unit": "Ω",
+            "conditions": "N3; 20°C; 33% RH",
+            "applies_to": [
+              "750311423"
+            ],
+            "rating_kind": "electrical_characteristic",
+            "state": "initial",
+            "evidence_refs": [
+              "b9",
+              "p0"
+            ]
+          },
+          "bindings": [],
+          "binding_complete": false,
+          "pdf_pages": [
+            1
+          ],
+          "plan_status": "test_development_required",
+          "method_family": "dc_resistance",
+          "capability_status": "existing_primitive_requires_fixture_binding"
+        },
+        "source_kind": "test_or_constraint_pending_classification",
+        "label": "dc_resistance",
+        "evidence": [
+          "b9",
+          "p0"
+        ],
+        "classification_review_pending": true,
+        "reference_asset_bindings": [],
+        "configured_reference_bindings": []
+      }
+    ],
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "scope": "exact declared conditions; remaining handbook coverage is open"
+  },
+  "receipt": {
+    "device": "750311423",
+    "id": "dcr_N3",
+    "reference_ids": [
+      "parameter:rdc_N3"
+    ],
+    "scope": "exact declared conditions; remaining handbook coverage is open",
+    "authorship": {
+      "designer": "GPT/Codex",
+      "review": "source conditions, numerical units and actual port order reviewed locally; no simulated GLM approval"
+    },
+    "model_role": "existing_engineering_candidate",
+    "model_sha256": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+    "calibrations": [
+      {
+        "expected": 40.0,
+        "result": {
+          "value": 40.0
+        },
+        "error": 0.0,
+        "tolerance": 0.004,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/399ddcdd9d8a6d5c39aef6a49ea4ce283648eed09a2ecd39af2060eeb5a3223b",
+        "artifacts": {
+          "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "test.cir": "70496bf3d9bc4b2bbbead8fe2e6ff5b4b05970a2e1c8fcf01b213d5d594abc1a",
+          "test.raw": "1b21585020d644721ca097ba97399b1be1fcc9da3b82ba24527a3889be318658",
+          "test.log": "66943334c70d1723de736663ba73afc842d6d5cf0dbf25873df6d568b67fa6bc",
+          "execution.json": "91de82287d4b02f82967ecdd809db168e43084252040df76d902d677b9e396a1"
+        }
+      },
+      {
+        "expected": 80.0,
+        "result": {
+          "value": 80.0
+        },
+        "error": 0.0,
+        "tolerance": 0.008,
+        "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/4bc55c257f49a3a442c03f1f159146d08a89f19905e10fa1fe4cefe6d4837df8",
+        "artifacts": {
+          "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+          "test.cir": "b4a319a1423fb1769789fe6b10402822a2836415d2a660d766aebcfca9edd846",
+          "test.raw": "69e6c0aa94c0c2881bf4f81e68174db8b219e3a023624057af84f906fb481522",
+          "test.log": "7ce1697543ac16b62691c9b027bc45f5a0644768f257c9b7d50c07948aac5b29",
+          "execution.json": "0deb6a8ff6aa970af579fb9fad7c22baef064e10c8a56b336c20ccd9ddc5ed08"
+        }
+      }
+    ],
+    "status": "method_qualified_exact_conditions",
+    "trial": {
+      "result": {
+        "value": 0.20499999453675025
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/spice-autonomy-v2-gpt-test-correction/runs/gpt_correction/simulations/12fa982986512338827278d66f4f27acfc67acaa8324a2fa8c458dc49188b2df",
+      "artifacts": {
+        "model.lib": "d3b5f88f3ddecd65651ff541cdad0bf0dc9f56f1e0ae4d33e8fbe600d2132ee2",
+        "test.cir": "03b7687217c0444cfecab5d723f3fac60d03c4d190e99e279452443eb7066d29",
+        "test.raw": "ad77f94b0debbb9b07dccdfbcf69a5acb492cbf0f97915b2453e4a2acc818848",
+        "test.log": "06af46e3462c960b4d43e62a247a8bdd70f46cababe976a95ee1e3a43c70d133",
+        "execution.json": "a5468825a54e5c526a39f3d0e5f0e8e4ea0bd3d3538dfe144605001f4c122b98"
+      }
+    },
+    "protocol_sha256": "042f2efd815b239df8849640a78ead9a38cdc709fae759322f3409ccfa4e13e4"
+  },
+  "delivery_claim": false,
+  "required_before_other_models": "repeat calibration and full active regression",
+  "qualification_backend": "real_LTspice",
+  "scope_complete": false
+}
