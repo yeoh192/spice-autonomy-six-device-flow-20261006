@@ -34,3 +34,7 @@ full coverage and electrical acceptance are still reported independently.
 ## v0.3.4 前四器件绑定
 
 新增方法、恢复测量与低温阻抗比较已完成真实资格和统一回归，见[FIRST_FOUR_BINDINGS.md](FIRST_FOUR_BINDINGS.md)。当前库190项真实记录，3项诊断不计覆盖；前四器件已登记方法65、17、9、6，缺方法记录21、2、2、2。使用RUN_FIRST_FOUR_BINDINGS.sh --check-only核对与回写，--run执行当前99项前四器件回归。模型正式验收仍未通过。
+
+## v0.3.5: API batch with registered methods
+
+RUN_SIX_DEVICES.sh now imports the 190-method qualified library, executes it in the batch, writes method coverage, and expands candidate iteration to 65 BUK / 17 diode tests. Qwen/GLM development and patch review remain enabled. The other four devices still need eligible candidates; method benchmarks are not fitted deliveries. See REGISTERED_AUTOMATION.md.

@@ -19,7 +19,9 @@ class GPTRegisteredLibraryTests(unittest.TestCase):
   self.assertEqual(row['case']['protocol']['device_nodes'],{'P1':'IN','P2':'OUT','P3':'VCC','P4':'0','P5':'OUT'})
   self.assertEqual(row['case']['port_binding_evidence']['map']['P1']['package_pin'],3)
  def test_registered_tasks_are_valid_standard_entrypoint_inputs(self):
-  import json
-  batch=json.loads((lib.ROOT/'runs/registered_tasks/batch.json').read_text())
-  self.assertEqual(sum(r['tests'] for r in batch['tasks']),22)
-  for row in batch['tasks']:load_task(Path(row['task']))
+  import json,tempfile,sys,contextlib,io
+  with tempfile.TemporaryDirectory() as tmp:
+   with patch.object(sys,'argv',['use_gpt_test_library.py','--output',tmp]),contextlib.redirect_stdout(io.StringIO()):lib.main()
+   batch=json.loads((Path(tmp)/'batch.json').read_text())
+   self.assertEqual(sum(r['tests'] for r in batch['tasks']),22)
+   for row in batch['tasks']:load_task(Path(row['task']))

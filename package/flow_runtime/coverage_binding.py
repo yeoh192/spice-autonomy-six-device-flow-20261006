@@ -352,9 +352,9 @@ def run(batch, runtime, output, check_only=False, resume=False, previous=None, r
             if store:store.finish('coverage_review_with_gaps')
             if not check_only:
                 import_methods(root,packet,inventory,receipts,diagnostics,development,qualification)
-                if gpt_library:
-                    from .registered_library import import_registered
-                    import_registered(root,packet,inventory,receipts,diagnostics,gpt_library)
+            if gpt_library:
+                from .registered_library import import_registered
+                import_registered(root,packet,inventory,receipts,diagnostics,gpt_library)
             row=write_device(output,root,packet,inventory,receipts,diagnostics)
             if store:row['usage']=store.data['usage'].copy();row['budgets']=limits
             report['devices'].append(row);save(output/'summary.json',report)

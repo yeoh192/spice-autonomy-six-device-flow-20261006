@@ -85,3 +85,7 @@ bash package/RUN_FIRST_FOUR_BINDINGS.sh --check-only
 ```
 
 核对真实证据并回写，不调用API或仿真。改为`--run`可通过统一入口重跑前四器件99项活动测试。详情：[前四器件方法绑定](package/FIRST_FOUR_BINDINGS.md)。原用户Mac路径仍须存在。
+
+## v0.3.5: API batch with registered methods
+
+RUN_SIX_DEVICES.sh now imports the 190-method qualified library, executes it in the batch, writes method coverage, and expands candidate iteration to 65 BUK / 17 diode tests. Qwen/GLM development and patch review remain enabled. The other four devices still need eligible candidates; method benchmarks are not fitted deliveries. See package/REGISTERED_AUTOMATION.md.

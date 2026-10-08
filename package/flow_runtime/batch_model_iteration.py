@@ -78,10 +78,14 @@ def iterate(workflow):
         workflow.gaps.append({'stage':'model_iteration','fault':e.record()});workflow.checkpoint()
     return workflow.audit(terminal)
 
-def run(batch,source_runtime,output,check_only=False,resume=False):
+def run(batch,source_runtime,output,check_only=False,resume=False,registered_tasks=None,gpt_library=None):
     batch=Path(batch).resolve();source_runtime=Path(source_runtime).resolve();output=Path(output).resolve();validate_batch(batch)
     if output.exists() and not resume:raise Fault('input','请使用新模型迭代目录或--resume')
     rows=[];report={'status':'prepared' if check_only else 'model_iteration_completed_with_gaps','devices':rows,'full_batch_delivery':False,'original_models_modified':False}
+    registered=[]
+    if registered_tasks:
+        from .registered_integration import load_registered
+        registered=load_registered(registered_tasks,gpt_library)
     shared_keys={};code={str(f.relative_to(Path(__file__).parent)):digest(f) for f in Path(__file__).parent.rglob('*.py')}
     with file_lock(output/'.iteration.lock'):
         for row in read(batch)['devices']:
@@ -91,7 +95,12 @@ def run(batch,source_runtime,output,check_only=False,resume=False):
                 if prepared is None:
                     entry.update(status='blocked_no_candidate_and_qualified_tests',reason='已有草案或参考接口不等于正式候选及有资格的测试；不能修改参考模型充当交付。')
                     save(output/'summary.json',report);continue
-                task,assets=prepared;entry.update(active_regression_tests=len(task['cases']),budgets=task['budgets'],scope='full configured active regression; not full manual coverage')
+                task,assets=prepared
+                if registered_tasks:
+                    from .registered_integration import augment_candidate
+                    task,extra_assets,registration=augment_candidate(task,registered)
+                    assets.update(extra_assets);entry['registered_library']=registration
+                entry.update(active_regression_tests=len(task['cases']),budgets=task['budgets'],scope='full configured active regression; not full manual coverage')
                 if check_only:
                     entry['status']='model_iteration_ready';save(output/'summary.json',report);continue
                 folder=output/row['folder'];identity=fingerprint({'task':task,'assets':assets,'code':code})
@@ -100,6 +109,11 @@ def run(batch,source_runtime,output,check_only=False,resume=False):
                 # Lock source workflow while examining reusable evidence; never write its state.
                 with file_lock(source_runtime/row['folder']/'configured/.workflow.lock'):
                     entry['baseline_records_imported']=seed_configured(store,source_runtime/row['folder']/'configured',task)
+                for registered_row in registered:
+                    if registered_row['device']==task['device']:
+                        old=source_runtime/'registered_regression'/task['device']/Path(registered_row['task']).parent.name
+                        with file_lock(old/'.workflow.lock'):
+                            entry['baseline_records_imported']+=seed_configured(store,old,task)
                 agents=Agents(store,task['routes']);agents.keys=shared_keys
                 workflow=Workflow(task,store,agents,Simulator(store,task['runner'],task['model']))
                 print(packet['device']+'：模型迭代，完整活动回归 '+str(len(workflow.cases))+' 项',flush=True)
