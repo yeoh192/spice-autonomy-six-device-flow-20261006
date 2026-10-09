@@ -280,32 +280,37 @@ def repair(workflow):
         related = set(triggers) | set(saved.get("proposal", {}).get("evidence_tests", []))
         probe_cases = [c for c in w.cases if c["id"] in related]
         baseline_evidence = evidence(probe_cases, w.results, w.task["model"])
-        from .evidence import bundle, compact_history
+        from .evidence import bundle, compact_history, planner_evidence, planner_history
         shared = bundle(w)
+        planner_role = saved.get("role") or ("model_repair_designer" if history else "model_diagnoser")
         context = saved.get("context") or {
-            "task": "For diagnose/stop edits MUST be []; to change a parameter choose experiment or patch. Diagnose recorded model deviations; choose diagnose|experiment|patch|stop. experiment runs only evidence tests and never changes the active model. patch requires full regression before retention. Cite actual test IDs. No source replacement or changed acceptance.",
-            "schema": {"action": "diagnose|experiment|patch|stop", "reason": "hypothesis, facts and proposed check",
+            "phase": "repair_design" if planner_role == 'model_repair_designer' else "diagnostic_planning",
+            "task": "Design an executable bounded repair using the actual model and reviewed rollback evidence. This role IS authorized to submit actual edits. experiment runs selected evidence tests without changing the active model; patch runs FULL regression before retention. stop needs real completed experiments. Cite actual test IDs. No source replacement or changed acceptance." if planner_role == 'model_repair_designer' else "Analyze the measured deviations, or submit an executable experiment/patch. A diagnose action contains no edits and hands control to a SEPARATE repair designer next. experiment/patch require 1-4 actual edits. stop needs completed experiments. No source replacement or changed acceptance.",
+            "schema": {"action": "experiment|patch|stop" if planner_role == 'model_repair_designer' else "diagnose|experiment|patch|stop", "reason": "hypothesis, facts and proposed check",
                        "evidence_tests": "real tests; must include at least one trigger", "adapter": "parameter|behavioral_voltage|existing_node_rewire",
                        "edits": [{"old": "unique text from capabilities", "new": "small validated replacement"}]},
-            "shared_evidence": shared, "capabilities": caps, "triggers": triggers,
+            "shared_evidence": planner_evidence(shared, triggers), "capabilities": {**caps, "allowed_actions": ["experiment", "patch", "stop"] if planner_role == 'model_repair_designer' else caps["allowed_actions"]}, "triggers": triggers,
             "parameter_step_limit_percent": w.policy.get("max_diagnostic_parameter_step_percent", 25),
             "adapter_rules": "Choose only an available adapter: parameter changes listed numeric values; behavioral_voltage changes existing B expressions; existing_node_rewire changes only existing component terminals within the same subcircuit. No new arbitrary elements or code.",
             "allowed_test_ids": [c["id"] for c in w.cases],
-            "history": compact_history(history[-6:], w.cases),
-            "optimizer_history": compact_history(optimizer_history[-6:], w.cases),
-            "optimizer_feedback": w.store.get("checkpoints", "optimization_feedback"),
+            "history": planner_history(history[-6:], w.cases),
+            "optimizer_history": planner_history(optimizer_history[-6:], w.cases),
+            "optimizer_feedback": planner_history([w.store.get("checkpoints", "optimization_feedback") or {}], w.cases)[0] if not optimizer_history else {"location": "optimizer_history", "note": "Executed patch results are recorded once above"},
+            "allowed_actions": ["experiment", "patch", "stop"] if planner_role == 'model_repair_designer' else ["diagnose", "experiment", "patch", "stop"],
             "loop_budget": {"executed_trials": physical_trials, "trial_limit": trial_limit,
                             "analyses_used": analyses, "analysis_limit": analysis_limit,
                             "consecutive_revisions": revisions, "revision_limit": revision_limit},
             "recovery_instruction": "Read rollback residuals and prior faults. experiment/patch MUST have 1-4 actual edits. After rollback choose a different numeric slot or joint direction; two failed single-slot trials prohibit repeating that slot at the same baseline. diagnose is bounded analysis, not a physical trial. Invalid proposals do not consume physical trial slots. Successful experiments must be promoted to patch with FULL regression.",
             "remaining_budget": {k: w.store.data["limits"][k]-w.store.data["usage"][k] for k in ("api_calls", "simulations", "repairs")}}
-        w.store.put("plans", key, {**saved, "context": context})
+        w.store.put("plans", key, {**saved, "context": context, "role": planner_role})
         w.store.reserve("repairs", key + ":" + baseline_sha)
-        record = {"round": n+1, "baseline_sha256": baseline_sha}
+        record = {"round": n+1, "baseline_sha256": baseline_sha, "planner_role": planner_role}
         try:
-            proposal = saved.get("proposal") or w.agents.ask("model_diagnoser", context)
-            w.store.put("plans", key, {**saved, "context": context, "proposal": proposal})
+            proposal = saved.get("proposal") or w.agents.ask(planner_role, context)
+            w.store.put("plans", key, {**saved, "context": context, "proposal": proposal, "role": planner_role})
             record["proposal"] = proposal
+            if planner_role == 'model_repair_designer' and proposal.get('action') not in ('experiment', 'patch', 'stop'):
+                raise Fault('proposal', '当前阶段为修复设计，必须提交experiment/patch及1至4处实际修改，或有实测依据的stop；不得返回diagnose/defer', {'allowed_actions': ['experiment','patch','stop'], 'stage': 'repair_design'})
             candidate = validate_action(w, source, proposal, triggers)
             action = proposal["action"]
             if action == "diagnose":
@@ -313,6 +318,7 @@ def repair(workflow):
                     raise Fault("proposal", "分析预算已用完；提交带实际修改的experiment/patch，或有实测依据的stop")
                 analyses += 1
                 record.update(status="diagnostic_completed", diagnostic_evidence=baseline_evidence)
+                w.store.event('model_repair_handoff', 'design_required', {'next_role': 'model_repair_designer', 'analysis_round': n+1})
             elif action == "stop":
                 reason = audit_stop(history, baseline_sha)
                 if reason:

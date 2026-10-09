@@ -100,15 +100,18 @@ def bundle(workflow, cases=None, results=None, model_path=None):
 def compact_history(history, cases):
     """Retain feedback direction without resending every curve sample each round."""
     expected = {c["id"]: c["expectation"] for c in cases}
-    keep = {'round','status','proposal','fault','reason','reasons','gain','improved','baseline_sha256','model_sha256','results','review','result_review','instruction','candidate_diagnostics','parameter_targets','physical_executed','patch_id'}
+    keep = {'round','status','proposal','fault','reason','reasons','gain','improved','baseline_sha256','model_sha256','results','review','result_review','instruction','candidate_diagnostics','parameter_targets','physical_executed','patch_id','planner_role'}
     answer = [{k:copy.deepcopy(v) for k,v in r.items() if k in keep} for r in history]
     for record in answer:
         if 'candidate_diagnostics' in record:
             record['candidate_diagnostics'] = [{k:v for k,v in d.items() if k in ('test','log_tail','execution_diagnostics','measured_port_current')} for d in record['candidate_diagnostics']]
         for result in record.get("results", []):
-            if result.get("test") in expected:
+            if result.get("test") in expected and ('comparison' in result or 'signed_residual' not in result):
                 result["signed_residual"] = residual(result, expected[result["test"]])
-            result.pop("comparison", None)
+            fields = {'test','execution','acceptance','value','unit','metrics','model_sha256','signed_residual','fault'}
+            trimmed = {k:v for k,v in result.items() if k in fields}
+            result.clear()
+            result.update(trimmed)
     return answer
 
 
@@ -144,3 +147,26 @@ def phase_evidence(protocol, trial):
     return {"status": "completed", "raw_sha256": digest(Path(trial["artifacts"])/"test.raw"),
         "measurement_window": window, "phases": phases,
         "note": "After-endpoint values are not the measurement endpoint. Preparation includes ramp and hold; use declared bias-check windows to assess stable bias. Means are time-weighted, not sample averages."}
+
+
+def planner_evidence(shared, triggers):
+    """Detailed failed-test evidence plus every regression guard; full proof stays local."""
+    selected = set(triggers)
+    value = copy.deepcopy(shared)
+    value['tests'] = [t for t in value['tests'] if t['test'] in selected]
+    value['regression_guards'] = [{'test': t['test'], 'expectation': t['expectation'],
+        'baseline': t['result'], 'reference_sha256': t.get('reference', {}).get('sha256')}
+        for t in shared['tests'] if t['test'] not in selected]
+    value['active_test_ids'] = [t['test'] for t in shared['tests']]
+    value['scope'] = 'Detailed trigger evidence is selected for planning only. A patch still requires ALL active tests before retention.'
+    return value
+
+
+def planner_history(history, cases):
+    """Remove duplicate candidate measurements while retaining residual signs and failures."""
+    value = compact_history(history, cases)
+    for row in value:
+        for result in row.get('results', []):
+            signed = result.get('signed_residual', {})
+            result['signed_residual'] = {k:v for k,v in signed.items() if k != 'comparison_samples'}
+    return value

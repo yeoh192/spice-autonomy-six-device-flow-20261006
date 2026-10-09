@@ -270,7 +270,7 @@ class DiagnosticLoopTests(unittest.TestCase):
         def transport(role, route, context, tokens):
             if role == "model_optimizer":
                 return {"decision": "defer", "reason": "requires diagnostic B-source experiment"}, {}
-            if role == "model_diagnoser":
+            if role in ("model_diagnoser", "model_repair_designer"):
                 n = len(actions)
                 actions.append(n)
                 if n == 0:
@@ -294,7 +294,7 @@ class DiagnosticLoopTests(unittest.TestCase):
         def transport(role, route, context, tokens):
             if role == "model_optimizer":
                 return {"decision": "defer"}, {}
-            if role == "model_diagnoser":
+            if role in ("model_diagnoser", "model_repair_designer"):
                 if context["history"]:
                     prior = context["history"][0]
                     self.assertEqual(prior["status"], "experiment_failed")
@@ -322,7 +322,7 @@ class DiagnosticLoopTests(unittest.TestCase):
         def transport(role, route, context, tokens):
             if role == "model_optimizer":
                 return {"decision": "defer"}, {}
-            if role == "model_diagnoser":
+            if role in ("model_diagnoser", "model_repair_designer"):
                 action = "experiment" if not context["history"] else "patch"
                 return {"action": action, "reason": "probe success must pass protected regression",
                         "evidence_tests": ["forward"], "edits": [{"old": "BSHIFT A K V=0", "new": "BSHIFT A K V=0.25"}]}, {}
@@ -341,7 +341,7 @@ class DiagnosticLoopTests(unittest.TestCase):
         def transport(role, route, context, tokens):
             if role == "model_optimizer":
                 return {"decision": "defer"}, {}
-            if role == "model_diagnoser":
+            if role in ("model_diagnoser", "model_repair_designer"):
                 calls.append(role)
                 return {"action": "patch", "reason": "full regression", "evidence_tests": ["forward"],
                         "edits": [{"old": "BSHIFT A K V=0", "new": "BSHIFT A K V=0.25"}]}, {}

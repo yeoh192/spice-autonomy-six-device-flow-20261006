@@ -14,7 +14,7 @@ class RobustLoopTests(unittest.TestCase):
    h=Harness(Path(t),resistance=1400);h.task['policy']['diagnostic_attempts']=1
    designs=[];reviews=[]
    def transport(role,route,ctx,tokens):
-    if role=='model_diagnoser':
+    if role in ('model_diagnoser','model_repair_designer'):
      designs.append(ctx)
      self.assertEqual(ctx['loop_budget']['executed_trials'],0)
      if len(designs)>1:self.assertEqual(ctx['history'][-1]['status'],'proposal_or_evaluation_error')
@@ -40,7 +40,7 @@ class RobustLoopTests(unittest.TestCase):
     encode_raw(folder,xs,{'v(d)':[x*r for x in xs]})
    calls=[]
    def transport(role,route,ctx,tokens):
-    if role=='model_diagnoser':
+    if role in ('model_diagnoser','model_repair_designer'):
      calls.append(ctx)
      if len(calls)==1:old,new='RCORE A K 1000','RCORE A K 1250'
      else:
@@ -68,11 +68,11 @@ class RobustLoopTests(unittest.TestCase):
   with tempfile.TemporaryDirectory() as t:
    h=Harness(Path(t),resistance=1400);h.task['policy']['diagnostic_attempts']=1
    def transport(role,route,ctx,tokens):
-    if role=='model_diagnoser':return {'action':'diagnose','reason':'no actual change','evidence_tests':['forward'],'edits':[]},{}
+    if role in ('model_diagnoser','model_repair_designer'):return {'action':'diagnose','reason':'no actual change','evidence_tests':['forward'],'edits':[]},{}
     return h.normal_transport(role,route,ctx,tokens)
    h.transport=transport;w=h.build();w.results=w.evaluate_all(w.model_path,'baseline');repair(w)
    state=h.store.get('checkpoints','model_diagnostics')
-   self.assertEqual(state['physical_trials'],0);self.assertEqual(state['analyses'],2)
+   self.assertEqual(state['physical_trials'],0);self.assertEqual(state['analyses'],1)
    self.assertEqual(state['consecutive_revisions'],3);self.assertEqual(h.backend.count,1)
    self.assertEqual(w.gaps[-1]['kind'],'proposal_revision_budget')
 
@@ -83,7 +83,7 @@ class RobustLoopTests(unittest.TestCase):
     if role=='model_optimizer':
      if ctx['feedback']:return {'decision':'defer'},{}
      return {'decision':'patch','kind':'parameter','edits':[{'old':'RCORE A K 1400','new':'RCORE A K 1500'}]},{}
-    if role=='model_diagnoser':
+    if role in ('model_diagnoser','model_repair_designer'):
      self.assertEqual(ctx['optimizer_history'][-1]['status'],'rolled_back')
      self.assertTrue(ctx['optimizer_history'][-1]['parameter_targets'])
      return {'action':'patch','reason':'correct the observed direction','evidence_tests':['forward'],'edits':[{'old':'RCORE A K 1400','new':'RCORE A K 1050'}]},{}

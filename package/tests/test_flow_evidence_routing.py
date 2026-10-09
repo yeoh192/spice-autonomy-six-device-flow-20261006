@@ -151,11 +151,11 @@ class EvidenceRoutingTests(unittest.TestCase):
         calls = []
         def transport(role, route, ctx, tokens):
             calls.append((role, copy.deepcopy(ctx)))
-            if role == "model_diagnoser":
+            if role in ("model_diagnoser", "model_repair_designer"):
                 caps = ctx["capabilities"]
                 self.assertEqual(caps["editable_sources"], [])
                 self.assertIn("parameter", caps["available_adapters"])
-                number_of_probes = sum(c[0] == role for c in calls)
+                number_of_probes = sum(c[0] in ("model_diagnoser", "model_repair_designer") for c in calls)
                 return {"action": "experiment" if number_of_probes == 1 else "patch", "adapter": "parameter",
                     "reason": "declared resistor is too high", "evidence_tests": ["forward"],
                     "edits": [{"old": "RCORE A K 1400", "new": "RCORE A K 1050"}]}, {}
@@ -180,7 +180,7 @@ class EvidenceRoutingTests(unittest.TestCase):
         h.task["cases"].append(protected)
         h.task["policy"]["diagnostic_attempts"] = 1
         def transport(role, route, ctx, tokens):
-            if role == "model_diagnoser":
+            if role in ("model_diagnoser", "model_repair_designer"):
                 return {"action": "patch", "adapter": "parameter", "reason": "improve trigger", "evidence_tests": ["forward"],
                     "edits": [{"old": "RCORE A K 1400", "new": "RCORE A K 1050"}]}, {}
             return h.normal_transport(role, route, ctx, tokens)
