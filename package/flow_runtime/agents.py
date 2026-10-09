@@ -1,8 +1,10 @@
 """Role routing with short contexts, durable call ledger and bounded recovery."""
 import concurrent.futures
+import http.client
 import getpass
 import json
 import os
+from pathlib import Path
 import re
 import sys
 import threading
@@ -86,11 +88,36 @@ class Agents:
             message = message.replace(key, "[redacted]")
         return re.sub(r"sk-[A-Za-z0-9_-]+", "[redacted]", message)[:1000]
 
-    def _http(self, role, route, context, tokens):
+    def _capture_response(self, folder, body):
+        if folder is None:
+            return
+        folder = Path(folder)
+        folder.mkdir(parents=True, exist_ok=True)
+        text = body.decode('utf-8', errors='replace')
+        for key in self.keys.values():
+            text = text.replace(key, '[redacted]')
+        text = re.sub(r'sk-[A-Za-z0-9_-]+', '[redacted]', text)
+        (folder / 'provider_response.txt').write_text(text, encoding='utf-8')
+        try:
+            raw = json.loads(text)
+        except ValueError:
+            return
+        save(folder / 'raw_response.json', raw)
+        choices = raw.get('choices', []) if isinstance(raw, dict) else []
+        for i, choice in enumerate(choices if isinstance(choices, list) else []):
+            message = choice.get('message', {}) if isinstance(choice, dict) else {}
+            if not isinstance(message, dict):
+                continue
+            for field in ('content', 'reasoning_content', 'reasoning'):
+                if isinstance(message.get(field), str):
+                    name = field + ('' if i == 0 else '_' + str(i)) + '.txt'
+                    (folder / name).write_text(message[field], encoding='utf-8')
+
+    def _http(self, role, route, context, tokens, capture=None):
         provider = route["provider"]
         payload = {"model": route["model"], "messages": [
             {"role": "system", "content": SYSTEM + "\nRole: " + role},
-            {"role": "user", "content": json.dumps(context, ensure_ascii=False, allow_nan=False)}],
+            {"role": "user", "content": json.dumps(context, ensure_ascii=False, allow_nan=False, separators=(",", ":"))}],
             "stream": False, "max_tokens": tokens}
         if route.get("base_url"):
             pass  # OpenAI-compatible gateways may reject vendor-only options.
@@ -108,7 +135,12 @@ class Agents:
             raise BudgetEnd("seconds")
         try:
             with urllib.request.urlopen(req, timeout=timeout) as response:
-                raw = json.loads(response.read().decode("utf-8"))
+                body = response.read()
+                self._capture_response(capture, body)
+                raw = json.loads(body.decode("utf-8"))
+        except http.client.IncompleteRead as e:
+            self._capture_response(capture, e.partial)
+            raise Fault('transport', 'HTTP响应正文不完整', {'received_bytes':len(e.partial)}) from None
         except urllib.error.HTTPError as e:
             # Credentials never enter saved messages or HTTP error bodies.
             code = e.code
@@ -146,9 +178,14 @@ class Agents:
         from .interface_contracts import prepare_request
         if self.store.continuous:
             context = {**context, "master_cycle": self.store.get("checkpoints", "master_cycle") or 0}
+        from .request_context import compact, check_size
+        original_context = context
+        context = compact(role, context)
         context = prepare_request(role, context)
+        check_size(context)
         route = self.route(role)
         key = fingerprint({"role": role, "route": route, "system": SYSTEM, "context": context})
+        save(self.store.folder / "request_contexts" / (key + ".json"), {"full_context": original_context, "wire_context": context})
         with self.lock:
             mutex = self.request_locks.setdefault(key, threading.Lock())
         with mutex:
@@ -182,6 +219,9 @@ class Agents:
         physical_dispatch = old.get("physical_dispatch", old.get("dispatch", 0)) if old else 0
         recoveries = 0
         while dispatch < 2:
+            from .request_context import check_size
+            from .interface_contracts import retry_context
+            check_size(retry_context(context, last_fault))
             self.credentials([role])
             self.store.reserve("api_calls")
             dispatch += 1
@@ -195,14 +235,14 @@ class Agents:
             attempt_folder = folder / ("attempt_%02d" % physical_dispatch)
             save(folder / "request.json", request)
             save(attempt_folder / "request.json", request)
-            self.store.event(role, "requesting", {"provider": route["provider"], "model": route["model"], "dispatch": dispatch, "physical_dispatch": physical_dispatch})
+            self.store.event(role, "requesting", {"provider": route["provider"], "model": route["model"], "dispatch": dispatch, "physical_dispatch": physical_dispatch, "context_bytes": len(json.dumps(attempt_context, ensure_ascii=False).encode("utf-8"))})
             try:
                 # Blocking HTTP runs in a worker; progress remains visible every ten seconds.
                 with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
                     if self.transport:
                         future = pool.submit(self.transport, role, route, attempt_context, tokens)
                     else:
-                        future = pool.submit(self._http, role, route, attempt_context, tokens)
+                        future = pool.submit(self._http, role, route, attempt_context, tokens, attempt_folder)
                     elapsed = 0
                     while True:
                         try:

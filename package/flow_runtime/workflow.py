@@ -609,13 +609,14 @@ class Workflow:
             source = model_text(self.model_path)
             from .evidence import bundle, compact_history
             from .model_diagnostics import capabilities, parameter_targets, direction_guard
-            shared = bundle(self)
+            from .evidence import optimizer_inputs
+            shared, compact_results, compact_cases = optimizer_inputs(self)
             context = {"shared_evidence": shared, "repair_capabilities": capabilities(source, self.task["model"]),
                 "task": "Improve the current candidate. Return {decision:patch|defer,kind:parameter|structure,edits:[{old,new}],reason,evidence_ids}. Each old text must appear exactly once. Small reversible edits only; no vendor template replacement or port/reference/threshold changes.",
                 "phase": "parameter" if n == 0 else "parameter_or_structure", "interfaces": INTERFACES,
                 "model_text": source[:60000], "model_complete_in_context": len(source) <= 60000,
-                "results": [{k: v for k, v in r.items() if k != "comparison"} for r in self.results],
-                "cases": [{"id": c["id"], "expectation": c["expectation"], "contract": c.get("contract")} for c in self.cases],
+                "results": compact_results,
+                "cases": compact_cases,
                 "feedback": feedback}
             try:
                 proposal = self.agents.ask("model_optimizer", context)

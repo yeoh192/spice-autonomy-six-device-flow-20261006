@@ -91,7 +91,7 @@ def bundle(workflow, cases=None, results=None, model_path=None):
         test['manual_records'] = [{k:r[k] for k in ('id','label','kind','evidence','reference_evidence') if k in r} for r in test['manual_records']]
         # Circuit is the executed protocol. Keep one representation, not both.
         test.pop('protocol',None)
-        test['result'] = {k:v for k,v in test['result'].items() if k in ('test','execution','acceptance','value','unit','metrics','model_sha256','protocol_sha256')}
+        test['result'] = {k:v for k,v in test['result'].items() if k in ('test','execution','acceptance','value','unit','metrics','model_sha256','protocol_sha256','fault')}
         if test.get('contract'):
             test['contract'] = {k:v for k,v in test['contract'].items() if k in ('conditions','expectation','reference_id')}
     return {**compact, "evidence_sha256": key, "full_evidence_file": str(workflow.store.folder/'evidence'/(key+'.json'))}
@@ -171,3 +171,15 @@ def planner_history(history, cases):
             signed = result.get('signed_residual', {})
             result['signed_residual'] = {k:v for k,v in signed.items() if k != 'comparison_samples'}
     return value
+
+
+def optimizer_inputs(workflow):
+    """One factual representation; complete proof stays in the hashed evidence file."""
+    shared = bundle(workflow)
+    for row in shared['tests']:
+        # Netlist represents actual conditions; references and targets stay intact.
+        row.pop('contract', None)
+    results = [{k:v for k,v in r.items() if k in ('test','execution','acceptance','value','unit','metrics','fault')}
+               for r in workflow.results]
+    cases = [{'id':c['id'], 'expectation':c['expectation']} for c in workflow.cases]
+    return shared, results, cases

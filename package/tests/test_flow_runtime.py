@@ -190,7 +190,7 @@ class FlowTests(unittest.TestCase):
     def test_model_patch_runs_full_regression_before_retention(self):
         h = Harness(self.root, resistance=2000)
         def transport(role, route, context, tokens):
-            if role == "model_optimizer" and "2000" in context["model_text"]:
+            if role == "model_optimizer" and "2000" in context["shared_evidence"]["model"]["text"]:
                 return {"decision": "patch", "kind": "parameter", "reason": "offline parameter repair", "evidence_ids": ["forward"], "edits": [{"old": "RCORE A K 2000", "new": "RCORE A K 1000"}]}, {}
             return h.normal_transport(role, route, context, tokens)
         h.transport = transport
