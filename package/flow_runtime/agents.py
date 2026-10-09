@@ -178,10 +178,11 @@ class Agents:
         from .interface_contracts import prepare_request
         if self.store.continuous:
             context = {**context, "master_cycle": self.store.get("checkpoints", "master_cycle") or 0}
-        from .request_context import compact, check_size
+        from .request_context import compact, check_size, fit
         original_context = context
         context = compact(role, context)
         context = prepare_request(role, context)
+        context = fit(role, context)
         check_size(context)
         route = self.route(role)
         key = fingerprint({"role": role, "route": route, "system": SYSTEM, "context": context})

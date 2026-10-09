@@ -1,5 +1,5 @@
 {
-  "version": "0.4.2-stage-modules",
+  "version": "0.3.15-buk-context-fit",
   "files": {
     "CAPABILITY_DEVELOPMENT.md": "3ce2dae7347ab79ffbbda88e04b681fc0760aa6a705b99fd5e6d3f3fe7150c90",
     "COVERAGE_BINDING.md": "657a29b1552bc0a761c67633e37af7a79af6d10f05fd12ed1de3895d6587e1e3",
@@ -45,7 +45,7 @@
     "flow_runtime/ac_calibration.py": "1be21d0e3104339b537955ff796c55ad7f238c323b3d0d1add9dd51fbbd317a3",
     "flow_runtime/ac_calibration_runner.py": "e39f9561ab96b9b5ab068fb2e81b6cb05b5c9a2e42788a0a79835d940cd79c31",
     "flow_runtime/ac_measurements.py": "5097c6b36a8e2f77d2b431aa94f51ab82580dbe4b49a06651e39e45668105dc6",
-    "flow_runtime/agents.py": "abb9bf939ed175ed40bf83dd79a2aec0cd34d5815cf5295f48d003e388ad6c58",
+    "flow_runtime/agents.py": "6836482545f4df9c6778f94ac2f3793136dd29f699a55184796e18d0d8fdcfd8",
     "flow_runtime/autonomous_qualification.py": "63badcbd5968c892c171d7909b02877af8498651f6c2e4bc290f076ea6be78ef",
     "flow_runtime/batch_model_iteration.py": "d43d3398cca895236e377b680ea74fb50f275afa71371a9a0e1cbc6720e04272",
     "flow_runtime/capability_development.py": "60e757bc1d5d4784eb0e36b2a2d6ec010ad35857ae3ae941a3952cb3f54c2e3d",
@@ -81,7 +81,7 @@
     "flow_runtime/test_methods.py": "1069f96b62b317ea89079b3bf0fe2712e4e7382e7e401a26d433e69fd316106e",
     "flow_runtime/test_scope.py": "e0b5b5f61adebb82b8d6651f28724f7825d4c93377ad03d4ef0caa7ad01e17a9",
     "flow_runtime/transient_metrology.py": "e2c094e487f8fa401797b48f263821feac09cd3f14933df0904f1273f01d4bdc",
-    "flow_runtime/workflow.py": "b2849842da73704b7483231653227a10400d8e825edf70cb3e42e3ab73fdc6ae",
+    "flow_runtime/workflow.py": "e97032b76e96e24924ab380debeccc8833b66d32235d03704a30a09dfebbef0e",
     "gpt_corrected_tests.py": "af5d3175d97ae269feb08145c76957dee38493a997c7050689740224d810e00d",
     "gpt_test_library/cases.before_parameter_scope.json": "99c2200109ded6a2a1c278205c4802a4e1031cfcbaf3ceb8eaec9e289049cae1",
     "gpt_test_library/cases.json": "650346502246d3a55191ec9ea1bfa425090921dbf0c44f113b86ea603250c26c",
@@ -10365,7 +10365,7 @@
     "tests/test_flow_unified.py": "a7a8a93fe812cfd060fb779039b700355b7165f02cc4a6b4de4bd8089eb598ec",
     "use_gpt_test_library.py": "ecaedefcf2a7e94f77be36e27eefd92ac7657e18ff023f789b3c6531540c89ad",
     "tests/test_flow_thirdparty.py": "b095a696228bce80b86559884380c3b8f3be556e84c56b235bb36efdf19f2d2e",
-    "CONTINUOUS_ACCEPTANCE.md": "6b5945e1bb309d0885283dc997579a15447b7749d719d72ff09a3a6cdc659979",
+    "CONTINUOUS_ACCEPTANCE.md": "7aa501aac23a2a71734f260ace8e8a3d7a6af9f9a21c7620d7e9362566e1a6b0",
     "flow_runtime/continuous.py": "63fe5dc8ff5af05b0340ed1339004a07b300fd399919333f899e92d8fcf8bf09",
     "flow_runtime/pulse_metrology.py": "950a031f0779c9c6d892f5d8918d75b3d0c43a560620156990265697f0fc3ed8",
     "tests/test_flow_continuous.py": "bc8e10814780ee5dfe8332e10bad5d655ac63d3812592a80cfcb8222d7e4f544",
@@ -10418,7 +10418,7 @@
     "inputs/UC2845/models/UC2845_initial_candidate.lib": "34feeae5708b7816a2b25b82567730ed6b688560006f24117dbb7ff0ebbbe9c3",
     "inputs/UC2845/manual/uc2845.pdf": "dea53cdbbe59377b666606326139ce2f2c61a46c5ea136c10bdf2e4854da7c2a",
     "inputs/UC2845/manual/extracted_text.txt": "07a2d3e4c443bdc2aebcf2423a51e7e74dd169859a1824b69ebeaa3d835e35fe",
-    "flow_runtime/request_context.py": "28229eb709ba20d12cc50e634188df20c2fa84f2fe9310c72bcfc72a00ffd179",
+    "flow_runtime/request_context.py": "629af15a48c26fc0ca34f7439affb28e602c9c13d7af4374c45796a2c2f0778e",
     "tests/test_flow_response_capture.py": "0212a91e80e4889dd162a1a80da2f255cb594f64938ebd0724a554c3fed5b536",
     "flow_runtime/response_recovery.py": "c41dc8fd34404024b3157f6b0cf253d1aab7115c236ad9eee640d90d4dee367c",
     "tests/test_flow_response_recovery.py": "9625b928b500d10bf4a6660819369e250d1bb726f59601fbec57599b10986c21",
@@ -10436,6 +10436,7 @@
     "tests/test_web_plots.py": "88d304c35b34ea3e62b368a377e9ea42b939e5347c0fe3566eda129d7a00d24d",
     "flow_runtime/stage_labels.py": "1e9982ec0af56602df65264509977ae4c99dda512e05b9435fda4c56eeeaf84f",
     "web_ui/progress.py": "f11120645ad9cbf77e2009920a75541bc0d7fead6b42ce8cded73a864cb8906b",
-    "tests/test_web_progress.py": "c0a31a334de154cf23d60f1cea32339dbdad6ae2621f2bc81a125bbfeae9ec02"
+    "tests/test_web_progress.py": "c0a31a334de154cf23d60f1cea32339dbdad6ae2621f2bc81a125bbfeae9ec02",
+    "tests/test_flow_context_fit.py": "bf4a46d6ae5379e4d833585e10878f8df5b24b2186c581c878bc17f16a965fea"
   }
 }

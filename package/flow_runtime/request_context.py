@@ -37,3 +37,25 @@ def check_size(context,maximum=90000):
     size=len(json.dumps(context,ensure_ascii=False,separators=(',',':')).encode('utf-8'))
     if size>maximum:raise Fault('request_context','请求超过字节上限；须缩小证据，未调用API',{'bytes':size,'maximum_bytes':maximum})
     return size
+
+
+def fit(role, context, maximum=90000):
+    """Reduce sampled detail only; preserve targets, circuits and error summaries."""
+    c=copy.deepcopy(context)
+    size=lambda:len(json.dumps(c,ensure_ascii=False,separators=(',',':')).encode('utf-8'))
+    if size()<=maximum:return c
+    if role in ('model_optimizer','patch_reviewer','model_diagnoser','model_repair_designer'):
+        for name in ('shared_evidence','candidate_evidence'):
+            for row in c.get(name,{}).get('tests',[]):
+                residual=row.get('signed_residual',{})
+                if 'comparison_samples' in residual:
+                    residual.pop('comparison_samples')
+                    residual['detail_reference']='Full comparison samples retained in local hashed evidence.'
+                # Result already has scalar/metrics; never duplicate residual detail.
+                row.get('result',{}).pop('signed_residual',None)
+    if size()>maximum:
+        for name in ('shared_evidence','candidate_evidence'):
+            for row in c.get(name,{}).get('tests',[]):
+                row.get('signed_residual',{}).pop('intervals',None)
+    check_size(c,maximum)
+    return c

@@ -424,7 +424,7 @@ class Workflow:
             except (KeyError, TypeError) as e:
                 feedback = Fault("proposal", "提案接口错误：" + str(e)).record()
             except Fault as e:
-                if e.kind in ("authentication", "credentials", "api_configuration", "cache_corrupt"):
+                if e.kind in ("authentication", "credentials", "api_configuration", "cache_corrupt", "request_context"):
                     raise
                 if e.kind in ("capability", "missing_data"):
                     return {"reference_id": item["id"], "kind": e.kind, "last_fault": e.record()}
@@ -477,7 +477,7 @@ class Workflow:
             except (KeyError, TypeError, ValueError) as e:
                 feedback = Fault("proposal", "条件接口错误：" + str(e)).record()
             except Fault as e:
-                if e.kind in ("authentication", "credentials", "api_configuration", "cache_corrupt"):
+                if e.kind in ("authentication", "credentials", "api_configuration", "cache_corrupt", "request_context"):
                     raise
                 if e.kind in ("capability", "missing_data"):
                     return {"reference_id": item["id"], "kind": e.kind, "last_fault": e.record()}
@@ -666,7 +666,7 @@ class Workflow:
             except (KeyError, TypeError, ValueError) as e:
                 feedback = Fault("proposal", str(e)).record()
             except Fault as e:
-                if e.kind in ("authentication", "credentials", "api_configuration", "cache_corrupt"):
+                if e.kind in ("authentication", "credentials", "api_configuration", "cache_corrupt", "request_context"):
                     raise
                 feedback = e.record()
                 self.store.event("model_patch", "revision_required", feedback)
