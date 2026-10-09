@@ -34,6 +34,13 @@ def encode_raw(folder, xs, columns, complex_values=False):
     (folder / "test.log").write_text("offline analytic fixture completed\n")
 
 
+def review_reply(context, decision='approve', reason='offline review'):
+    value={'phase':context['phase'],'decision':decision,'evidence_ids':['forward'],
+           'issues':[] if decision=='approve' else [{'code':'OTHER','message':reason,'evidence_ids':['forward']}], 'reason':reason}
+    if context['phase']=='post_execution':value['candidate_sha256']=context['candidate_sha256']
+    return value
+
+
 class AnalyticBackend:
     def __init__(self):
         self.count = 0
@@ -118,6 +125,9 @@ class Harness:
             value = {"decision": "retry", "reason": "injected runner fault", "evidence_ids": []}
         else:
             value = {"decision": "defer", "reason": "no further analytic improvement"}
+        if role == "patch_reviewer":
+            value = {'decision': value['decision'], 'evidence_ids': ['forward'], 'issues': [], 'phase': context['phase']}
+            if context.get('phase')=='post_execution':value['candidate_sha256']=context['candidate_sha256']
         return value, {"finish_reason": "stop"}
 
     def build(self, resume=False):
@@ -181,7 +191,7 @@ class FlowTests(unittest.TestCase):
         h = Harness(self.root, resistance=2000)
         def transport(role, route, context, tokens):
             if role == "model_optimizer" and "2000" in context["model_text"]:
-                return {"decision": "patch", "kind": "parameter", "edits": [{"old": "RCORE A K 2000", "new": "RCORE A K 1000"}]}, {}
+                return {"decision": "patch", "kind": "parameter", "reason": "offline parameter repair", "evidence_ids": ["forward"], "edits": [{"old": "RCORE A K 2000", "new": "RCORE A K 1000"}]}, {}
             return h.normal_transport(role, route, context, tokens)
         h.transport = transport
         result = h.build().run()
@@ -201,7 +211,7 @@ class FlowTests(unittest.TestCase):
         h.task["policy"]["optimization_attempts"] = 1
         def transport(role, route, context, tokens):
             if role == "model_optimizer":
-                return {"decision": "patch", "kind": "parameter", "edits": [{"old": "RCORE A K 2000", "new": "RCORE A K 1000"}]}, {}
+                return {"decision": "patch", "kind": "parameter", "reason": "offline parameter repair", "evidence_ids": ["forward"], "edits": [{"old": "RCORE A K 2000", "new": "RCORE A K 1000"}]}, {}
             return h.normal_transport(role, route, context, tokens)
         h.transport = transport
         result = h.build().run()
@@ -433,7 +443,7 @@ class FlowTests(unittest.TestCase):
         def transport(role, route, context, tokens):
             if role == "model_optimizer":
                 h.calls.append((role, context))
-                return {"decision": "patch", "kind": "parameter", "edits": [{"old": "RCORE A K 2000", "new": "RCORE A K 1000"}]}, {}
+                return {"decision": "patch", "kind": "parameter", "reason": "offline parameter repair", "evidence_ids": ["forward"], "edits": [{"old": "RCORE A K 2000", "new": "RCORE A K 1000"}]}, {}
             return h.normal_transport(role, route, context, tokens)
         h.transport = transport
         original = h.backend

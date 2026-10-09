@@ -101,3 +101,7 @@ Rollback evidence now reaches the diagnostic planner, including changed numeric 
 ## v0.3.8 Analysis-to-repair handoff
 
 The planner now dispatches analysis or revision feedback to an explicit model_repair_designer role authorized to submit bounded edits. Its phase excludes diagnose/defer as valid actions. Planning evidence removes duplicated optimizer records while retaining signed residuals and every regression guard. All edits still require independent pre-review and measured retention checks. Real API recovery and fitting quality remain pending validation.
+
+## v0.3.9 Formal model interface contracts
+
+Versioned JSON Schemas now gate diagnostic planning, repair design, model optimization and both patch review phases. Field errors trigger one bounded API correction with structured feedback; invalid outputs cannot enter successful response caches. Evidence IDs, exact old text, available adapters, generated diffs, phase and candidate hashes are checked. The existing physical validation and frozen acceptance gates remain decisive. Other development roles and Windows portability are unchanged. See package/INTERFACE_CONTRACTS.md (INTERFACE_CONTRACTS.md inside the package).

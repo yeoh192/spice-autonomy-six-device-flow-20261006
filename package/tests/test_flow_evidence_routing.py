@@ -69,7 +69,7 @@ class EvidenceRoutingTests(unittest.TestCase):
                 if (ctx.get("feedback") or {}).get("results"):
                     delta = ctx["feedback"]["results"][0]["signed_residual"]["signed_error"]
                     self.assertAlmostEqual(delta, .0125)
-                return {"decision": "patch", "kind": "parameter", "edits": [{"old": "RCORE A K 1400", "new": "RCORE A K 1050"}]}, {}
+                return {"decision": "patch", "kind": "parameter", "reason": "offline parameter repair", "evidence_ids": ["forward"], "edits": [{"old": "RCORE A K 1400", "new": "RCORE A K 1050"}]}, {}
             if role == "patch_reviewer":
                 contexts.setdefault(role, copy.deepcopy(ctx))
             return h.normal_transport(role, route, ctx, tokens)

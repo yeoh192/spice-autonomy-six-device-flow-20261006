@@ -99,7 +99,7 @@ class UnifiedTests(unittest.TestCase):
                 return {"decision": "approve", "approved_protocol_sha256": context.get("protocol_sha256"),
                         "conditions_complete": True, "measurement_correct": True}, {}
             if role == "model_optimizer" and "RCORE D S 1500" in context["model_text"]:
-                return {"decision": "patch", "kind": "parameter", "edits": [{"old": "RCORE D S 1500", "new": "RCORE D S 1000"}]}, {}
+                return {"decision": "patch", "kind": "parameter", "reason": "offline parameter repair", "evidence_ids": ["forward"], "edits": [{"old": "RCORE D S 1500", "new": "RCORE D S 1000"}]}, {}
             return h.normal_transport(role, route, context, tokens)
         h.transport = agents
         workflow = h.build()

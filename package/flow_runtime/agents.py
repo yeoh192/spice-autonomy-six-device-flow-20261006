@@ -24,7 +24,8 @@ Keep findings concise; cite evidence IDs. Do not invent missing data, tolerance 
 Never relax acceptance, change manual conditions, download a manufacturer model, or
 declare success from an LLM opinion. Calibration and full regression decide retention.
 An execution failure, invalid proposal, missing reference and model deviation are different.
-If your requested action is unavailable, return {"decision":"defer","reason":"..."}.
+When interface_contract is present, use ONLY its declared actions and fields.
+Otherwise, unavailable actions may return {"decision":"defer","reason":"..."}.
 """
 
 
@@ -121,6 +122,8 @@ class Agents:
             raise Fault("response_format", self._redact(str(e)), {"provider": provider}) from None
 
     def ask(self, role, context):
+        from .interface_contracts import prepare_request
+        context = prepare_request(role, context)
         route = self.route(role)
         key = fingerprint({"role": role, "route": route, "system": SYSTEM, "context": context})
         with self.lock:
@@ -134,7 +137,13 @@ class Agents:
         if old and old.get("status") == "completed":
             if artifacts_valid(folder, old.get("hashes")):
                 self.store.event(role, "reused", {"request": key})
-                return read(folder / "response.json")
+                from .interface_contracts import validate_response
+                value = read(folder / "response.json")
+                try:
+                    validate_response(role, context, value)
+                except Fault as e:
+                    raise Fault('cache_corrupt', '缓存响应不符合当前接口合同', e.record()) from None
+                return value
             # Cache damage is a local fault, never a reason for another paid request.
             raise Fault("cache_corrupt", "API响应缓存校验失败", {"request": key})
         if old and old.get("status") == "failed" and old.get("terminal"):
@@ -151,7 +160,9 @@ class Agents:
             dispatch += 1
             tokens = 8192 if dispatch > 1 else 4096
             self.store.put("requests", key, {"status": "started", "dispatch": dispatch})
-            request = {"role": role, "route": route, "context": context,
+            from .interface_contracts import retry_context, validate_response
+            attempt_context = retry_context(context, last_fault)
+            request = {"role": role, "route": route, "context": attempt_context,
                 "recovery": last_fault, "max_tokens": tokens}
             attempt_folder = folder / ("attempt_%02d" % dispatch)
             save(folder / "request.json", request)
@@ -161,9 +172,9 @@ class Agents:
                 # Blocking HTTP runs in a worker; progress remains visible every ten seconds.
                 with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
                     if self.transport:
-                        future = pool.submit(self.transport, role, route, context, tokens)
+                        future = pool.submit(self.transport, role, route, attempt_context, tokens)
                     else:
-                        future = pool.submit(self._http, role, route, context, tokens)
+                        future = pool.submit(self._http, role, route, attempt_context, tokens)
                     elapsed = 0
                     while True:
                         try:
@@ -175,6 +186,8 @@ class Agents:
                             self.store.flush()
                 if not isinstance(value, dict):
                     raise Fault("response_format", "响应不是对象")
+                save(attempt_folder / 'received_response.json', value)
+                validate_response(role, context, value)
                 save(folder / "response.json", value)
                 save(folder / "metadata.json", meta)
                 save(attempt_folder / "response.json", value)
@@ -185,7 +198,7 @@ class Agents:
             except Fault as e:
                 last_fault = e.record()
                 save(attempt_folder / "fault.json", last_fault)
-                terminal = e.kind not in ("transport", "response_incomplete", "response_format")
+                terminal = e.kind not in ("transport", "response_incomplete", "response_format", "interface_contract")
                 if e.kind in ("authentication", "api_configuration", "credentials"):
                     with self.lock:
                         self.provider_faults[fingerprint(route)] = last_fault
@@ -194,4 +207,6 @@ class Agents:
                 self.store.event(role, "request_recovery" if not terminal else "request_failed", last_fault)
                 if terminal:
                     raise
+        if last_fault and last_fault.get('kind')=='interface_contract':
+            raise Fault('interface_contract', '接口修订请求预算用尽；交回工作流修订', last_fault['evidence'])
         raise Fault("api_recovery_exhausted", "请求恢复预算用尽", last_fault)

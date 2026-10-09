@@ -54,7 +54,7 @@ def seed_configured(store,old,task):
                 if not snapshot:continue
                 old_code={Path(n).name:h for n,h in snapshot['code'].items() if (n.startswith('flow_runtime/') and len(Path(n).parts)==2) or len(Path(n).parts)==1}
                 _,new_signature=signature(case['protocol'],task['model']['path'],task['runner'],text)
-                orchestration_only={'evidence.py','model_diagnostics.py','workflow.py','batch_model_iteration.py'}
+                orchestration_only={'evidence.py','model_diagnostics.py','workflow.py','batch_model_iteration.py','agents.py','interface_contracts.py'}
                 if not old_code or any(new_signature['code'].get(n)!=h for n,h in old_code.items() if n not in orchestration_only):continue
                 prior={**new_signature,'code':old_code}
                 if fingerprint(prior)!=key:continue

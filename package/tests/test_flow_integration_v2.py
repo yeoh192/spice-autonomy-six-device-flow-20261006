@@ -293,7 +293,7 @@ class DiagnosticLoopTests(unittest.TestCase):
         h.task["policy"]["diagnostic_attempts"] = 2
         def transport(role, route, context, tokens):
             if role == "model_optimizer":
-                return {"decision": "defer"}, {}
+                return {"decision": "defer", "reason": "handoff to diagnostic stage"}, {}
             if role in ("model_diagnoser", "model_repair_designer"):
                 if context["history"]:
                     prior = context["history"][0]
@@ -321,7 +321,7 @@ class DiagnosticLoopTests(unittest.TestCase):
         h.task["policy"]["diagnostic_attempts"] = 2
         def transport(role, route, context, tokens):
             if role == "model_optimizer":
-                return {"decision": "defer"}, {}
+                return {"decision": "defer", "reason": "handoff to diagnostic stage"}, {}
             if role in ("model_diagnoser", "model_repair_designer"):
                 action = "experiment" if not context["history"] else "patch"
                 return {"action": action, "reason": "probe success must pass protected regression",
@@ -340,7 +340,7 @@ class DiagnosticLoopTests(unittest.TestCase):
         calls = []
         def transport(role, route, context, tokens):
             if role == "model_optimizer":
-                return {"decision": "defer"}, {}
+                return {"decision": "defer", "reason": "handoff to diagnostic stage"}, {}
             if role in ("model_diagnoser", "model_repair_designer"):
                 calls.append(role)
                 return {"action": "patch", "reason": "full regression", "evidence_tests": ["forward"],

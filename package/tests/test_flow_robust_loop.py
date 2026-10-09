@@ -3,7 +3,7 @@ import re
 import tempfile
 import unittest
 from pathlib import Path
-from test_flow_runtime import Harness, encode_raw
+from test_flow_runtime import Harness, encode_raw, review_reply
 import test_flow_integration_v2 as integration
 from flow_runtime.model_diagnostics import repair, parameter_targets, direction_guard
 from flow_runtime.state import Fault, digest, read
@@ -17,12 +17,13 @@ class RobustLoopTests(unittest.TestCase):
     if role in ('model_diagnoser','model_repair_designer'):
      designs.append(ctx)
      self.assertEqual(ctx['loop_budget']['executed_trials'],0)
-     if len(designs)>1:self.assertEqual(ctx['history'][-1]['status'],'proposal_or_evaluation_error')
+     if ctx['history']:self.assertEqual(ctx['history'][-1]['status'],'proposal_or_evaluation_error')
+     elif len(designs)>1:self.assertIn('interface_feedback',ctx)
      return {'action':'patch','reason':'test repair','evidence_tests':['forward'],
              'edits':[] if len(designs)==1 else [{'old':'RCORE A K 1400','new':'RCORE A K 1050'}]},{}
     if role=='patch_reviewer':
      reviews.append(ctx['phase'])
-     return {'decision':'revise' if len(reviews)==1 else 'approve'},{}
+     return review_reply(ctx,'revise' if len(reviews)==1 else 'approve'),{}
     return h.normal_transport(role,route,ctx,tokens)
    h.transport=transport;w=h.build();w.results=w.evaluate_all(w.model_path,'baseline');repair(w)
    state=h.store.get('checkpoints','model_diagnostics')
@@ -81,8 +82,8 @@ class RobustLoopTests(unittest.TestCase):
    h=Harness(Path(t),resistance=1400)
    def transport(role,route,ctx,tokens):
     if role=='model_optimizer':
-     if ctx['feedback']:return {'decision':'defer'},{}
-     return {'decision':'patch','kind':'parameter','edits':[{'old':'RCORE A K 1400','new':'RCORE A K 1500'}]},{}
+     if ctx['feedback']:return {'decision':'defer','reason':'handoff to diagnostic stage'},{}
+     return {'decision':'patch','kind':'parameter','reason':'offline parameter repair','evidence_ids':['forward'],'edits':[{'old':'RCORE A K 1400','new':'RCORE A K 1500'}]},{}
     if role in ('model_diagnoser','model_repair_designer'):
      self.assertEqual(ctx['optimizer_history'][-1]['status'],'rolled_back')
      self.assertTrue(ctx['optimizer_history'][-1]['parameter_targets'])

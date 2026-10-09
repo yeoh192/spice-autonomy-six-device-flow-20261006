@@ -610,13 +610,13 @@ class Workflow:
                 "results": [{k: v for k, v in r.items() if k != "comparison"} for r in self.results],
                 "cases": [{"id": c["id"], "expectation": c["expectation"], "contract": c.get("contract")} for c in self.cases],
                 "feedback": feedback}
-            proposal = self.agents.ask("model_optimizer", context)
-            if proposal.get("decision") == "defer":
-                self.optimization_index = self.policy["optimization_attempts"]
-                self.checkpoint()
-                self.store.event("model_optimization", "planner_deferred", proposal)
-                return
             try:
+                proposal = self.agents.ask("model_optimizer", context)
+                if proposal.get("decision") == "defer":
+                    self.optimization_index = self.policy["optimization_attempts"]
+                    self.checkpoint()
+                    self.store.event("model_optimization", "planner_deferred", proposal)
+                    return
                 candidate = self.apply_patch(source, proposal)
                 targets = parameter_targets(source, proposal)
                 direction_guard(targets, list(self.store.data.get('patches', {}).values()), digest(self.model_path))

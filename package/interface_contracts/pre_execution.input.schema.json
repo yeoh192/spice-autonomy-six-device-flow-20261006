@@ -1,0 +1,256 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "model-interface-1/pre_execution/input",
+  "type": "object",
+  "required": [
+    "shared_evidence",
+    "actual_diff",
+    "planned_test_ids",
+    "candidate_executed",
+    "proposal",
+    "phase"
+  ],
+  "properties": {
+    "shared_evidence": {
+      "type": "object",
+      "required": [
+        "model",
+        "tests"
+      ],
+      "properties": {
+        "model": {
+          "type": "object",
+          "required": [
+            "text",
+            "active_sha256",
+            "complete_in_context"
+          ],
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 60000
+            },
+            "active_sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "complete_in_context": {
+              "type": "boolean"
+            }
+          }
+        },
+        "tests": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "test",
+              "result"
+            ],
+            "properties": {
+              "test": {
+                "type": "string",
+                "minLength": 1
+              },
+              "result": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "active_test_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "minItems": 1,
+          "maxItems": 200,
+          "uniqueItems": true
+        },
+        "regression_guards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "test",
+              "expectation"
+            ],
+            "properties": {
+              "test": {
+                "type": "string",
+                "minLength": 1
+              },
+              "expectation": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "capabilities": {
+      "type": "object",
+      "required": [
+        "available_adapters",
+        "allowed_actions"
+      ],
+      "properties": {
+        "available_adapters": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "parameter",
+              "behavioral_voltage",
+              "existing_node_rewire"
+            ]
+          }
+        },
+        "allowed_actions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "triggers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 300
+      },
+      "minItems": 1,
+      "maxItems": 200,
+      "uniqueItems": true
+    },
+    "allowed_test_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 300
+      },
+      "minItems": 1,
+      "maxItems": 200,
+      "uniqueItems": true
+    },
+    "actual_diff": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 8000
+    },
+    "planned_test_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 300
+      },
+      "minItems": 1,
+      "maxItems": 200,
+      "uniqueItems": true
+    },
+    "candidate_executed": {
+      "const": false,
+      "type": "boolean"
+    },
+    "candidate_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "candidate_evidence": {
+      "type": "object",
+      "required": [
+        "model",
+        "tests"
+      ],
+      "properties": {
+        "model": {
+          "type": "object",
+          "required": [
+            "text",
+            "active_sha256",
+            "complete_in_context"
+          ],
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 60000
+            },
+            "active_sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "complete_in_context": {
+              "type": "boolean"
+            }
+          }
+        },
+        "tests": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "test",
+              "result"
+            ],
+            "properties": {
+              "test": {
+                "type": "string",
+                "minLength": 1
+              },
+              "result": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "active_test_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "minItems": 1,
+          "maxItems": 200,
+          "uniqueItems": true
+        },
+        "regression_guards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "test",
+              "expectation"
+            ],
+            "properties": {
+              "test": {
+                "type": "string",
+                "minLength": 1
+              },
+              "expectation": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "proposal": {
+      "type": "object"
+    },
+    "phase": {
+      "const": "pre_execution"
+    }
+  }
+}

@@ -88,7 +88,7 @@ def bundle(workflow, cases=None, results=None, model_path=None):
     save(workflow.store.folder/"evidence"/(key+".json"), value)
     compact = copy.deepcopy(value)
     for test in compact['tests']:
-        test['manual_records'] = [{k:r[k] for k in ('id','label','kind','reference_evidence') if k in r} for r in test['manual_records']]
+        test['manual_records'] = [{k:r[k] for k in ('id','label','kind','evidence','reference_evidence') if k in r} for r in test['manual_records']]
         # Circuit is the executed protocol. Keep one representation, not both.
         test.pop('protocol',None)
         test['result'] = {k:v for k,v in test['result'].items() if k in ('test','execution','acceptance','value','unit','metrics','model_sha256','protocol_sha256')}

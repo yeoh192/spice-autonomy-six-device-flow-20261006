@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "model-interface-1/post_execution/output",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "phase",
+        "decision",
+        "evidence_ids",
+        "issues",
+        "candidate_sha256"
+      ],
+      "properties": {
+        "phase": {
+          "const": "post_execution"
+        },
+        "decision": {
+          "const": "approve"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8000
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "minItems": 1,
+          "maxItems": 200,
+          "uniqueItems": true
+        },
+        "issues": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "candidate_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "required": [
+        "phase",
+        "decision",
+        "evidence_ids",
+        "issues",
+        "candidate_sha256"
+      ],
+      "properties": {
+        "phase": {
+          "const": "post_execution"
+        },
+        "decision": {
+          "const": "revise"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8000
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "minItems": 1,
+          "maxItems": 200,
+          "uniqueItems": true
+        },
+        "issues": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 20,
+          "items": {
+            "type": "object",
+            "required": [
+              "code",
+              "message",
+              "evidence_ids"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "code": {
+                "enum": [
+                  "INVALID_EDIT",
+                  "FROZEN_CONDITION",
+                  "INSUFFICIENT_EVIDENCE",
+                  "MEASUREMENT_MISMATCH",
+                  "REGRESSION",
+                  "OTHER"
+                ]
+              },
+              "message": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 8000
+              },
+              "field": {
+                "type": "string",
+                "maxLength": 300
+              },
+              "evidence_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 300
+                },
+                "minItems": 1,
+                "maxItems": 200,
+                "uniqueItems": true
+              }
+            }
+          }
+        },
+        "candidate_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "additionalProperties": false
+    }
+  ]
+}
