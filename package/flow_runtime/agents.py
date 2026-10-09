@@ -226,10 +226,15 @@ class Agents:
             self.store.reserve("api_calls")
             dispatch += 1
             physical_dispatch += 1
-            tokens = 8192 if dispatch > 1 else 4096
+            from .response_recovery import settings, focus
+            profile = settings(self.store, route)
+            tokens = max(profile['max_tokens'], 8192 if dispatch > 1 else 4096)
             self.store.put("requests", key, {"status": "started", "dispatch": dispatch, "physical_dispatch": physical_dispatch})
             from .interface_contracts import retry_context, validate_response
             attempt_context = retry_context(context, last_fault)
+            if role in ('model_optimizer','model_diagnoser','model_repair_designer'):
+                attempt_context = focus(attempt_context, profile)
+            check_size(attempt_context)
             request = {"role": role, "route": route, "context": attempt_context,
                 "recovery": last_fault, "max_tokens": tokens}
             attempt_folder = folder / ("attempt_%02d" % physical_dispatch)
@@ -265,6 +270,10 @@ class Agents:
                 return value
             except Fault as e:
                 last_fault = e.record()
+                if e.kind == 'response_incomplete' and e.evidence.get('finish_reason') == 'length':
+                    from .response_recovery import truncated
+                    recovery_profile = truncated(self.store, route)
+                    self.store.event(role, 'response_profile_updated', recovery_profile)
                 save(attempt_folder / "fault.json", last_fault)
                 terminal = e.kind not in ("transport", "response_incomplete", "response_format", "interface_contract")
                 if e.kind in ("authentication", "api_configuration", "credentials"):
