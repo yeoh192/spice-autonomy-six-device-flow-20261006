@@ -164,7 +164,8 @@ def planner_evidence(shared, triggers):
 
 def planner_history(history, cases):
     """Remove duplicate candidate measurements while retaining residual signs and failures."""
-    value = compact_history(history, cases)
+    normalized = [{'status': 'proposal_or_evaluation_error', 'fault': h} if h.get('kind') and h.get('message') else h for h in history]
+    value = compact_history(normalized, cases)
     for row in value:
         for result in row.get('results', []):
             signed = result.get('signed_residual', {})

@@ -282,6 +282,8 @@ def repair(workflow):
         baseline_evidence = evidence(probe_cases, w.results, w.task["model"])
         from .evidence import bundle, compact_history, planner_evidence, planner_history
         shared = bundle(w)
+        optimizer_feedback = w.store.get('checkpoints', 'optimization_feedback') or {}
+        feedback_recorded = optimizer_feedback.get('patch_id') and any(h.get('patch_id') == optimizer_feedback['patch_id'] for h in optimizer_history)
         planner_role = saved.get("role") or ("model_repair_designer" if history else "model_diagnoser")
         context = saved.get("context") or {
             "phase": "repair_design" if planner_role == 'model_repair_designer' else "diagnostic_planning",
@@ -295,7 +297,7 @@ def repair(workflow):
             "allowed_test_ids": [c["id"] for c in w.cases],
             "history": planner_history(history[-6:], w.cases),
             "optimizer_history": planner_history(optimizer_history[-6:], w.cases),
-            "optimizer_feedback": planner_history([w.store.get("checkpoints", "optimization_feedback") or {}], w.cases)[0] if not optimizer_history else {"location": "optimizer_history", "note": "Executed patch results are recorded once above"},
+            "optimizer_feedback": planner_history([w.store.get("checkpoints", "optimization_feedback") or {}], w.cases)[0] if not feedback_recorded else {"location": "optimizer_history", "note": "Executed patch results are recorded once above"},
             "allowed_actions": ["experiment", "patch", "stop"] if planner_role == 'model_repair_designer' else ["diagnose", "experiment", "patch", "stop"],
             "loop_budget": {"executed_trials": physical_trials, "trial_limit": trial_limit,
                             "analyses_used": analyses, "analysis_limit": analysis_limit,

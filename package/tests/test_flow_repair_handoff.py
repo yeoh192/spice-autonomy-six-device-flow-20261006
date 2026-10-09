@@ -53,3 +53,8 @@ class RepairHandoffTests(unittest.TestCase):
    self.assertEqual(result['regression_guards'][0]['expectation'],guard['expectation'])
    self.assertEqual(result['evidence_sha256'],shared['evidence_sha256'])
    self.assertLess(len(json.dumps(result)),len(json.dumps(shared))/10)
+
+ def test_last_optimizer_schema_fault_is_preserved_for_repair_designer(self):
+  fault={'kind':'proposal','message':'invalid edit slot','evidence':{'target':'available parameters'}}
+  history=planner_history([fault],[])
+  self.assertEqual(history[0]['fault'],fault)
