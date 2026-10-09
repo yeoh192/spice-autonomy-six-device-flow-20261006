@@ -10428,7 +10428,7 @@
     "WEB_UI.md": "b2937f1ece6fb27cd1ebdffe649a36208ee5dfa8740eaff2cffee7508b5c1c5b",
     "tests/test_web_ui.py": "505b51142274e998789eb7ed77423f0acc18084213afad38cbd6731d59217737",
     "web_ui/server.py": "626aacaacfa2ee459ce5cf895fb37b91839f66f9b4f9dab8b61f633ddd147a5d",
-    "web_ui/index.html": "f732b24e97fcd19ab7766a8ce3b13339620d86c2a117d7ba80ce02d91d2c7cfd",
+    "web_ui/index.html": "382e47d6413054762ead9ca582dca9557fb70b24263041cf71fc8606f5638159",
     "web_ui/__init__.py": "fd483d4db1062def8ad9dd4b2c40996259a4c987c35a01b81f48272a7e0ec1d9",
     "web_ui/export.py": "5f02569cedb7c2c1fd57b6731a5dc2eeffcb0d35f5c3d8082b84e279e29a4291",
     "web_ui/plots.py": "99db9aa23812f6a10e552d7e212cae4c7a1a6180cf1ada33250686b4db96fb86",
