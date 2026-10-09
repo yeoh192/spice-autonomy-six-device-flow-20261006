@@ -169,6 +169,9 @@ class Store:
             item = {"time": time.time(), "stage": stage, "status": status, "detail": detail or {}}
             self.data["events"].append(item)
             self.flush()
+        from .stage_labels import message
+        human = message(stage, status, detail)
+        if human: print(human, flush=True)
         print(stage + "：" + status, flush=True)
 
     def get(self, group, key):

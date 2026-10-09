@@ -67,6 +67,10 @@ class App:
             env=os.environ.copy();design=config.get('key','');review=config.get('review_key','') or design
             env.update(SPICE_API_KEY=design,WEB_REVIEW_KEY=review,DASHSCOPE_API_KEY=design,GLM_API_KEY=review,PYTHONUNBUFFERED='1')
             threading.Thread(target=self.work,args=(j,env,task,config.get('preflight_only',False),[design,review]),daemon=True).start()
+    def log(self,j,text):
+        j['log']=(j['log']+text)[-100000:]
+        with (j['folder']/'console.log').open('a',encoding='utf-8') as f:f.write(text)
+        print(text,end='',flush=True)
     def work(self,j,env,task,only,keys):
         try:
             code = -1
@@ -80,13 +84,12 @@ class App:
                     text=line.decode('utf-8',errors='replace')
                     for secret in keys:
                         if secret:text=text.replace(secret,'[redacted]')
-                    j['log']=(j['log']+text)[-100000:]
-                    with (j['folder']/'console.log').open('a',encoding='utf-8') as f:f.write(text)
+                    self.log(j,text)
                 code=p.wait();j['process']=None
                 if code or j['status']=='stopping':break
             runtime=j['folder']/'runtime'
             if (runtime/'summary.json').exists():
-                j['status']='exporting';j['exports']=export(runtime,task);j['status']=j['exports']['workflow_status'] or 'finished'
+                j['status']='exporting';self.log(j,'\n【曲线、CSV与模型导出】开始\n');j['exports']=export(runtime,task);self.log(j,'【曲线、CSV与模型导出】结束\n');j['status']=j['exports']['workflow_status'] or 'finished'
             else:j['status']='preflight_completed' if only and code==0 else 'stopped_without_report'
         except Exception as e:j['status']='error';j['log']+='\n'+str(e)
         finally:j['process']=None;env.clear();keys.clear()
@@ -112,7 +115,26 @@ class Handler(BaseHTTPRequestHandler):
         try:
             app=self.server.app
             if path=='/jobs':return self.send(200,[{k:v for k,v in j.items() if k in ('id','device','status','log','exports')} for j in app.jobs.values()])
+            if path.startswith('/progress/'):
+                from .progress import snapshot
+                return self.send(200,snapshot(app.jobs[path.split('/')[-1]]['folder']))
+            if path.startswith('/artifact/'):
+                from .progress import EXT
+                _,_,key,name=path.split('/',3)
+                from urllib.parse import unquote
+                root=app.jobs[key]['folder'];f=inside(root/unquote(name),root)
+                if f.suffix not in EXT or not f.is_file():raise ValueError('不支持的文件')
+                preview=parse_qs(urlsplit(self.path).query).get('preview')==['1']
+                if preview:
+                    if f.suffix in ('.raw','.png','.pdf'):raise ValueError('二进制文件请下载')
+                    with f.open('rb') as stream:body=stream.read(128000)
+                    text=body.decode('utf-16' if body.startswith((b'\xff\xfe',b'\xfe\xff')) else 'utf-8',errors='replace')
+                    import re
+                    text=re.sub(r'sk-[A-Za-z0-9_-]+','[redacted]',text)
+                    return self.send(200,{'text':text,'truncated':f.stat().st_size>128000})
+                return self.send(200,f.read_bytes(),'application/octet-stream')
             if path.startswith('/download/'):
+
                 _,_,key,name=path.split('/',3)
                 if not (name.startswith('plots/') and Path(name).suffix in ('.png','.svg','.csv')) and name not in ('results.zip','measurements.csv','candidate.lib','summary.json','export_manifest.json'):raise ValueError('未知输出')
                 f=inside(app.jobs[key]['folder']/'exports'/name,app.jobs[key]['folder']/'exports')

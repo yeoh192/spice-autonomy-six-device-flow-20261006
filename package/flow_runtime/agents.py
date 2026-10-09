@@ -271,6 +271,7 @@ class Agents:
                 save(attempt_folder / "metadata.json", meta)
                 self.store.put("requests", key, {"status": "completed", "dispatch": dispatch, "physical_dispatch": physical_dispatch,
                     "failure_counts": failures, "hashes": artifact_hashes(folder, ["request.json", "response.json", "metadata.json"])})
+                self.store.event(role, "completed")
                 return value
             except Fault as e:
                 last_fault = e.record()

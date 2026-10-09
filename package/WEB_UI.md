@@ -18,3 +18,5 @@ Mac：`bash RUN_WEB_UI.sh`；Windows：双击 `RUN_WEB_UI.cmd`（需Python 3.9�
 Key只传给本机子进程环境，不写入任务配置；控制台已知Key脱敏。历史报告保存在磁盘，重启服务可查看既有任务；此版Web UI不提供跨版本续跑。Windows停止机制尚未在Windows实机验证。真实API执行效果依赖原引擎与服务商，Web UI不改变验收逻辑。
 
 图表依赖：python -m pip install matplotlib。报告存在comparison数据时自动生成PNG/SVG/对比CSV；未安装时在export_manifest中记录缺口。
+
+阶段文件面板每2秒刷新，按资料载入、模板筛选、模型、测试电路、仿真、对比、修正、复核和导出分类。JSON、CSV、SPICE代码和日志支持文本预览（前128KB），其他允许的结果文件可下载。运行中文件可能未写完，文件出现不等于阶段验收通过。标准包已有资料仅载入，不代表本次重新解析PDF。新运行的控制台同步显示中文开始、结束、失败、回退等事件，并保留原机器状态行；历史日志不重写。

@@ -609,7 +609,7 @@ class Simulator:
         if not old and self.cache:
             from .simulation_cache import restore, FILES
             if restore(self.cache, key, signature_data, folder):
-                self.store.put("simulations", key, {"status": "completed", "hashes": artifact_hashes(folder, FILES), "shared_cache": True})
+                self.store.put("simulations", key, {"status": "completed", "label": label, "hashes": artifact_hashes(folder, FILES), "shared_cache": True})
                 self.store.event(label, "shared_simulation_reused", {"cache_key": key})
                 return raw_data(folder / "test.raw"), folder
         # Interrupted work has an unknown result. Existing complete artifacts are checked
@@ -619,17 +619,20 @@ class Simulator:
                 if (digest(folder / "model.lib") == digest(model_path)
                     and (folder / "test.cir").read_text() == circuit
                     and (folder / "test.log").stat().st_size and raw_data(folder / "test.raw")["complete"]):
-                    self.store.put("simulations", key, {"status": "completed", "hashes": artifact_hashes(folder, ["model.lib", "test.cir", "test.raw", "test.log"])})
+                    self.store.put("simulations", key, {"status": "completed", "label": label, "hashes": artifact_hashes(folder, ["model.lib", "test.cir", "test.raw", "test.log"])})
                     return raw_data(folder / "test.raw"), folder
             except (Fault, OSError):
                 pass
             raise Fault("execution_interrupted", "上次仿真中断，证据已保留", {"folder": str(folder)})
+        self.store.event("circuit_build", "running", {"test": label})
         folder.mkdir(parents=True, exist_ok=True)
         (folder / "test.cir").write_text(circuit, encoding="utf-8")
         shutil.copyfile(model_path, folder / "model.lib")
+        self.store.event("circuit_build", "completed", {"test": label, "folder": str(folder)})
         self.store.reserve("simulations")
         self.store.put("simulations", key, {"status": "started", "label": label})
         try:
+            self.store.event("simulation_execution", "running", {"test": label})
             if self.transport:
                 self.transport(protocol, model_path, folder)
                 record = {"returncode": 0, "test_backend": True}
@@ -639,12 +642,14 @@ class Simulator:
             if record["returncode"] != 0 or not (folder / "test.raw").is_file() or not (folder / "test.log").is_file() or (folder / "test.log").stat().st_size == 0:
                 raise Fault("execution", "仿真未生成完整输出", {"folder": str(folder), "execution": record})
             data = raw_data(folder / "test.raw")
-            self.store.put("simulations", key, {"status": "completed", "hashes": artifact_hashes(folder, ["model.lib", "test.cir", "test.raw", "test.log", "execution.json"])})
+            self.store.event("simulation_execution", "completed", {"test": label})
+            self.store.put("simulations", key, {"status": "completed", "label": label, "hashes": artifact_hashes(folder, ["model.lib", "test.cir", "test.raw", "test.log", "execution.json"])})
             if self.cache:
                 from .simulation_cache import publish
                 publish(self.cache, key, signature_data, folder)
             return data, folder
         except Fault as e:
+            self.store.event("simulation_execution", "failed", {"test": label, "fault": e.record()})
             detail = e.evidence.copy(); detail["folder"] = str(folder)
             log = folder / "test.log"
             if log.exists():
@@ -660,11 +665,11 @@ class Simulator:
                     detail["raw_diagnostic"] = parse_error.record()
             fault = Fault(e.kind, str(e), detail)
             save(folder / "fault.json", fault.record())
-            self.store.put("simulations", key, {"status": "failed", "fault": fault.record()})
+            self.store.put("simulations", key, {"status": "failed", "label": label, "fault": fault.record()})
             raise fault
         except OSError as e:
             fault = Fault("runner", str(e), {"folder": str(folder)})
-            self.store.put("simulations", key, {"status": "failed", "fault": fault.record()})
+            self.store.put("simulations", key, {"status": "failed", "label": label, "fault": fault.record()})
             raise fault
 
     def _launch(self, folder):

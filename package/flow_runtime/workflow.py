@@ -510,9 +510,11 @@ class Workflow:
         for attempt in range(attempts):
             try:
                 data, folder = self.simulator.run(protocol, model_path, case["id"], retry)
+                self.store.event("result_comparison", "running", {"test": case["id"]})
                 result = measure(protocol, data, reference)
                 result.update(test=case["id"], execution="completed", acceptance=acceptance(result, case["expectation"]),
                     model_sha256=digest(model_path), protocol_sha256=fingerprint(protocol), artifacts=str(folder), unit=case["expectation"]["unit"])
+                self.store.event("result_comparison", "completed", {"test": case["id"], "acceptance": result["acceptance"]})
                 result["artifact_hashes"] = self.store.get("simulations", folder.name)["hashes"]
                 if data.get("normalizations"):
                     result["raw_normalization"] = {k: data[k] for k in ("raw_points", "parsed_points", "normalizations")}
@@ -640,7 +642,9 @@ class Workflow:
                 folder = self.store.folder / "models" / sha
                 folder.mkdir(parents=True, exist_ok=True)
                 path = folder / "candidate.lib"
+                self.store.event("model_materialization", "running")
                 path.write_text(candidate, encoding="utf-8")
+                self.store.event("model_materialization", "completed", {"path": str(path)})
                 (folder / "changes.diff").write_text(diff, encoding="utf-8")
                 # Full configured scope always runs BEFORE retention, including new capabilities.
                 results = self.evaluate_all(path, "regression_" + sha[:12])
@@ -697,6 +701,7 @@ class Workflow:
         return candidate
 
     def audit(self, terminal):
+        self.store.event("report_export", "running")
         results = {r["test"]: r for r in self.results}
         rows = []
         for item in self.inventory["items"]:
@@ -763,4 +768,5 @@ class Workflow:
         (self.store.folder / "report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
         self.store.finish(status)
         print("流程：" + status + "；报告：" + str(self.store.folder / "summary.json"), flush=True)
+        self.store.event("report_export", "completed")
         return summary

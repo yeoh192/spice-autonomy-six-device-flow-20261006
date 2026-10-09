@@ -178,7 +178,9 @@ def main(argv=None):
     a.output = a.output.resolve()
     with file_lock(a.output / ".workflow.lock"):
         try:
+            print("【器件资料载入与校验】开始（载入标准包，不重新解析PDF）", flush=True)
             task, assets = load_task(a.task)
+            print("【器件资料载入与校验】结束", flush=True)
             if getattr(a,"continuous",False):
                 if task.get("input_integration"):
                     raise Fault("input","仅配置回归任务不能启用持续验收")
