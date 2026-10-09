@@ -188,6 +188,50 @@ def audit_stop(history, baseline_sha):
     return None
 
 
+def parameter_targets(source, proposal):
+    """Identify changed numeric slots from the actual model, without device names."""
+    from .repair_adapters import catalog, line_parameters, number
+    rows = {r['old']: r for r in catalog(source)['parameter']}
+    targets = []
+    model_names, current_model = {}, None
+    for line in source.splitlines():
+        fields = line.split()
+        if fields and fields[0].lower() == '.model':
+            current_model = fields[1]
+        elif fields and fields[0] != '+':
+            current_model = None
+        if current_model:
+            model_names[line] = current_model
+    for edit in proposal.get('edits', []):
+        row = rows.get(edit.get('old'))
+        if not row:
+            continue
+        old = {n: number(t) for n, a, b, t in line_parameters(edit['old'], row['mode'])}
+        new = {n: number(t) for n, a, b, t in line_parameters(edit.get('new', ''), row['mode'])}
+        element = ['.model', model_names[edit['old']]] if row['mode']=='model' else edit['old'].split()[0:1]
+        for name, before in old.items():
+            after = new.get(name, before)
+            if after != before:
+                targets.append({'target': row['scope']+':'+':'.join(element)+':'+name.lower(),
+                                'before': before, 'after': after,
+                                'direction': 'increase' if after > before else 'decrease'})
+    return targets
+
+
+def direction_guard(targets, history, baseline_sha):
+    """Allow probes and promotion, but bound repeated failed single-slot searches."""
+    if len(targets) != 1:
+        return
+    target = targets[0]['target']
+    failures = [h for h in history if h.get('baseline_sha256') == baseline_sha
+                and h.get('status') in ('rolled_back', 'repair_rolled_back', 'experiment_failed', 'regression_failed', 'experiment_completed')
+                and not h.get('improved') and len(h.get('parameter_targets', [])) == 1
+                and h['parameter_targets'][0]['target'] == target]
+    if len(failures) >= 2:
+        raise Fault('proposal', '同一基线的单参数方向已两次实测未获保留；请选择其他参数或联合方向。失败记录不是模型不可修复的证明',
+                    {'target': target, 'failed_attempts': len(failures)})
+
+
 def repair(workflow):
     w = workflow
     if not w.cases or any(r["execution"] != "completed" for r in w.results):
@@ -201,7 +245,24 @@ def repair(workflow):
     if state.get("terminal"):
         return
     history = state["history"]
-    for n in range(state["index"], w.policy["diagnostic_attempts"]):
+    trial_limit = w.policy["diagnostic_attempts"]
+    revision_limit = w.policy.get("diagnostic_revision_attempts", 3)
+    analysis_limit = w.policy.get("diagnostic_analysis_attempts", 2)
+    for value in (trial_limit, revision_limit, analysis_limit):
+        if type(value) is not int or not 1 <= value <= 8:
+            raise Fault("input", "诊断试验、修订和分析预算必须为1至8的整数")
+    physical_trials = state.get("physical_trials", sum(bool(h.get('physical_executed') or 'results' in h) for h in history))
+    physical_trials = max(physical_trials, sum(bool(v.get('trial_reserved')) for k, v in w.store.data.get('plans', {}).items() if k.startswith('diagnostic-round:')))
+    analyses = state.get("analyses", sum(h.get('status')=='diagnostic_completed' for h in history))
+    revisions = state.get("consecutive_revisions", 0)
+    optimizer_history = list(w.store.data.get('patches', {}).values())
+    def checkpoint(index, terminal=False):
+        return {"index": index, "history": history, "physical_trials": physical_trials,
+                "analyses": analyses, "consecutive_revisions": revisions, "terminal": terminal}
+    for n in range(state["index"], trial_limit * revision_limit + analysis_limit):
+        pending_trial = (w.store.get('plans', 'diagnostic-round:'+str(n)) or {}).get('trial_reserved')
+        if (physical_trials >= trial_limit and not pending_trial) or revisions >= revision_limit:
+            break
         source = model_text(w.model_path)
         baseline_sha = digest(w.model_path)
         triggers = triggers_for(w.cases, w.results)
@@ -212,7 +273,7 @@ def repair(workflow):
             w.gaps.append({"stage": "model_diagnosis", "kind": "unsupported_edit_adapter",
                            "reason": "实际模型没有已验证的参数、B电压源或已有节点重接接口；未支持任意新增代码"})
             w.store.event("model_diagnosis", "capability_gap")
-            w.store.put("checkpoints", "model_diagnostics", {"index": n, "history": history, "terminal": True})
+            w.store.put("checkpoints", "model_diagnostics", checkpoint(n, True))
             break
         key = "diagnostic-round:" + str(n)
         saved = w.store.get("plans", key) or {}
@@ -230,7 +291,14 @@ def repair(workflow):
             "parameter_step_limit_percent": w.policy.get("max_diagnostic_parameter_step_percent", 25),
             "adapter_rules": "Choose only an available adapter: parameter changes listed numeric values; behavioral_voltage changes existing B expressions; existing_node_rewire changes only existing component terminals within the same subcircuit. No new arbitrary elements or code.",
             "allowed_test_ids": [c["id"] for c in w.cases],
-            "history": compact_history(history[-6:], w.cases), "remaining_budget": {k: w.store.data["limits"][k]-w.store.data["usage"][k] for k in ("api_calls", "simulations", "repairs")}}
+            "history": compact_history(history[-6:], w.cases),
+            "optimizer_history": compact_history(optimizer_history[-6:], w.cases),
+            "optimizer_feedback": w.store.get("checkpoints", "optimization_feedback"),
+            "loop_budget": {"executed_trials": physical_trials, "trial_limit": trial_limit,
+                            "analyses_used": analyses, "analysis_limit": analysis_limit,
+                            "consecutive_revisions": revisions, "revision_limit": revision_limit},
+            "recovery_instruction": "Read rollback residuals and prior faults. experiment/patch MUST have 1-4 actual edits. After rollback choose a different numeric slot or joint direction; two failed single-slot trials prohibit repeating that slot at the same baseline. diagnose is bounded analysis, not a physical trial. Invalid proposals do not consume physical trial slots. Successful experiments must be promoted to patch with FULL regression.",
+            "remaining_budget": {k: w.store.data["limits"][k]-w.store.data["usage"][k] for k in ("api_calls", "simulations", "repairs")}}
         w.store.put("plans", key, {**saved, "context": context})
         w.store.reserve("repairs", key + ":" + baseline_sha)
         record = {"round": n+1, "baseline_sha256": baseline_sha}
@@ -241,6 +309,9 @@ def repair(workflow):
             candidate = validate_action(w, source, proposal, triggers)
             action = proposal["action"]
             if action == "diagnose":
+                if analyses >= analysis_limit:
+                    raise Fault("proposal", "分析预算已用完；提交带实际修改的experiment/patch，或有实测依据的stop")
+                analyses += 1
                 record.update(status="diagnostic_completed", diagnostic_evidence=baseline_evidence)
             elif action == "stop":
                 reason = audit_stop(history, baseline_sha)
@@ -253,17 +324,23 @@ def repair(workflow):
                     if record["status"] == "stop_audited":
                         history.append(record)
                         w.gaps.append({"stage": "model_diagnosis", "kind": "audited_no_improvement", "record": record})
-                        w.store.put("checkpoints", "model_diagnostics", {"index": n+1, "history": history, "terminal": True})
+                        w.store.put("checkpoints", "model_diagnostics", checkpoint(n+1, True))
                         save(w.store.folder / "model_diagnostics/history.json", history)
                         w.store.event("model_diagnosis", "stop_audited")
                         break
             else:
+                record["parameter_targets"] = parameter_targets(source, proposal)
+                # An improved probe may be promoted unchanged to full regression.
+                promotion = action == 'patch' and any(h.get('candidate_key') == fingerprint(candidate) and h.get('improved') for h in history)
+                if not promotion:
+                    direction_guard(record["parameter_targets"], optimizer_history + history, baseline_sha)
                 sha = fingerprint(candidate)
                 record["candidate_key"] = sha
-                if any(h.get("candidate_key") == sha and h.get("proposal", {}).get("action") == action for h in history):
+                if any(h.get("candidate_key") == sha and h.get("proposal", {}).get("action") == action and (h.get("physical_executed") or "results" in h) for h in history):
                     raise Fault("proposal", "同动作重复候选；experiment可以提升为patch，但不能重复同一试验")
                 diff = "".join(difflib.unified_diff(source.splitlines(True), candidate.splitlines(True), fromfile="active.lib", tofile="diagnostic.lib"))
                 review = w.agents.ask("patch_reviewer", {"task": "Authorize a bounded experiment BEFORE execution: check actual diff, adapter, frozen conditions and hypothesis. All supplied measurements are BASELINE, not candidate results. Do not demand post-change waveforms or guaranteed improvement at this phase. approve means permission to simulate only; revise for a concrete invalid edit or test plan.",
+                    "revision_feedback": compact_history(history[-3:], w.cases), "attempt": n+1,
                     "planned_test_ids": [c["id"] for c in w.cases if action=="patch" or c["id"] in set(proposal["evidence_tests"])|set(triggers)], "proposal": proposal, "actual_diff": diff, "phase": "pre_execution", "candidate_executed": False, "baseline_evidence": baseline_evidence, "capabilities": caps, "shared_evidence": shared})
                 if review.get("decision") != "approve":
                     raise Fault("review", "诊断补丁审查要求修订", review)
@@ -274,6 +351,12 @@ def repair(workflow):
                 record["model_sha256"] = digest(path)
                 (folder / "changes.diff").write_text(diff, encoding="utf-8")
                 selected = [c for c in w.cases if c["id"] in set(proposal["evidence_tests"]) | set(triggers)]
+                record['physical_executed'] = True
+                # Count interrupted trials once, using their durable plan key.
+                if not saved.get('trial_reserved'):
+                    physical_trials += 1
+                    w.store.put('plans', key, {**w.store.get('plans', key), 'trial_reserved': True})
+                    w.store.put('checkpoints', 'model_diagnostics', checkpoint(n))
                 if action == "experiment":
                     after = [w.evaluate_one(c, path, allow_recovery=False) for c in selected]
                     record["results"] = after
@@ -310,12 +393,24 @@ def repair(workflow):
             record.update(status="proposal_or_evaluation_error", fault=e.record(), allowed_scope=caps)
         except (KeyError, ValueError, TypeError) as e:
             record.update(status="proposal_or_evaluation_error", fault=Fault("proposal", str(e)).record(), allowed_scope=caps)
+        if record.get('physical_executed') or record['status']=='diagnostic_completed':
+            revisions = 0
+        else:
+            revisions += 1
         history.append(record)
-        w.store.put("checkpoints", "model_diagnostics", {"index": n+1, "history": history})
+        w.store.put("checkpoints", "model_diagnostics", checkpoint(n+1))
         save(w.store.folder / "model_diagnostics/history.json", history)
         w.store.event("model_diagnosis", record["status"], {"round": n+1})
         w.checkpoint()
-    save(w.store.folder / "model_diagnostics/summary.json", {"history": history, "active_model_sha256": digest(w.model_path),
+    remaining = triggers_for(w.cases, w.results)
+    if remaining and not (w.store.get('checkpoints', 'model_diagnostics') or {}).get('terminal'):
+        reason = 'trial_budget' if physical_trials >= trial_limit else 'proposal_revision_budget'
+        w.gaps.append({'stage': 'model_diagnosis', 'kind': reason,
+                       'executed_trials': physical_trials, 'reason': '有界诊断循环结束，仍有未解决残差；未宣布模型不可修复'})
+        w.store.event('model_diagnosis', reason, {'executed_trials': physical_trials})
+    save(w.store.folder / "model_diagnostics/summary.json", {"history": history,
+         "executed_trials": physical_trials, "trial_limit": trial_limit,
+         "analyses_used": analyses, "consecutive_revisions": revisions, "active_model_sha256": digest(w.model_path),
          "remaining_triggers": triggers_for(w.cases, w.results), "scope": "按实际模板能力选择受限参数、B表达式或已有节点重接；保留必须经过完整回归"})
     w.checkpoint()
 

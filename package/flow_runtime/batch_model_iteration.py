@@ -20,7 +20,9 @@ def candidate_task(root,packet):
     task.pop('input_integration',None)
     task['policy']['optimization_attempts']=3
     task['policy']['model_diagnosis_enabled']=True
-    task['policy']['diagnostic_attempts']=3
+    task['policy']['diagnostic_attempts']=6
+    task['policy']['diagnostic_revision_attempts']=3
+    task['policy']['diagnostic_analysis_attempts']=2
     task['budgets']={'api_calls':24,'simulations':max(64,len(task['cases'])*8),'repairs':12,'seconds':1800}
     task['limitations'].append('Model iteration covers all configured active tests; entire manual coverage remains separately pending.')
     return task,assets

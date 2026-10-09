@@ -100,7 +100,7 @@ def bundle(workflow, cases=None, results=None, model_path=None):
 def compact_history(history, cases):
     """Retain feedback direction without resending every curve sample each round."""
     expected = {c["id"]: c["expectation"] for c in cases}
-    keep = {'round','status','proposal','fault','reason','reasons','gain','improved','baseline_sha256','model_sha256','results','review','result_review','instruction','candidate_diagnostics'}
+    keep = {'round','status','proposal','fault','reason','reasons','gain','improved','baseline_sha256','model_sha256','results','review','result_review','instruction','candidate_diagnostics','parameter_targets','physical_executed','patch_id'}
     answer = [{k:copy.deepcopy(v) for k,v in r.items() if k in keep} for r in history]
     for record in answer:
         if 'candidate_diagnostics' in record:

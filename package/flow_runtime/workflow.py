@@ -601,7 +601,7 @@ class Workflow:
             self.store.reserve("repairs", "optimization:" + str(n) + ":" + digest(self.model_path))
             source = model_text(self.model_path)
             from .evidence import bundle, compact_history
-            from .model_diagnostics import capabilities
+            from .model_diagnostics import capabilities, parameter_targets, direction_guard
             shared = bundle(self)
             context = {"shared_evidence": shared, "repair_capabilities": capabilities(source, self.task["model"]),
                 "task": "Improve the current candidate. Return {decision:patch|defer,kind:parameter|structure,edits:[{old,new}],reason,evidence_ids}. Each old text must appear exactly once. Small reversible edits only; no vendor template replacement or port/reference/threshold changes.",
@@ -618,6 +618,8 @@ class Workflow:
                 return
             try:
                 candidate = self.apply_patch(source, proposal)
+                targets = parameter_targets(source, proposal)
+                direction_guard(targets, list(self.store.data.get('patches', {}).values()), digest(self.model_path))
                 sha = fingerprint(candidate)
                 if self.store.get("patches", sha):
                     raise Fault("proposal", "模型补丁重复；必须使用已有反馈")
@@ -640,7 +642,7 @@ class Workflow:
                 if post_review.get('decision') != 'approve':
                     keep = False
                     reasons = list(reasons) + ['post_execution_review_required']
-                feedback = compact_history([{"status": "retained" if keep else "rolled_back", "reasons": reasons, "gain": gain,
+                feedback = compact_history([{"status": "retained" if keep else "rolled_back", "proposal": proposal, "parameter_targets": targets, "baseline_sha256": digest(self.model_path), "physical_executed": True, "reasons": reasons, "gain": gain,
                     "results": results, "result_review": post_review, "patch_id": sha}], self.cases)[0]
                 self.store.put("patches", sha, feedback)
                 save(folder / "retention.json", feedback)

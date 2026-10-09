@@ -42,3 +42,7 @@ RUN_SIX_DEVICES.sh now imports the 190-method qualified library, executes it in 
 ## v0.3.6 Review phases
 
 Patch review now authorizes a trial before execution; a separate result review follows measured candidate-hash validation and cannot override regression retention. Full evidence stays on disk while API contexts exclude redundant snapshots. The BUK launcher accepts BUK_BASELINE_RUNTIME pointing to a prior iteration runtime, verifying RAW, circuit, runner, parser and model identity before reuse in a new run. Offline tests do not establish successful real model fitting.
+
+## v0.3.7 Robust diagnostic loop
+
+Rollback evidence now reaches the diagnostic planner, including changed numeric slots and signed residuals. Invalid proposals and review revisions do not spend physical-trial slots. Bounded analysis, consecutive-revision guards, repeated single-parameter failure detection and durable trial reservations improve recovery without changing acceptance or global budgets. Offline fault tests cover rollback to a different parameter, invalid edits, review feedback and last-trial interruption. Real API fitting quality is still pending validation.

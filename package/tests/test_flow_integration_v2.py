@@ -296,7 +296,7 @@ class DiagnosticLoopTests(unittest.TestCase):
                 return {"decision": "defer"}, {}
             if role == "model_diagnoser":
                 if context["history"]:
-                    prior = context["history"][-1]
+                    prior = context["history"][0]
                     self.assertEqual(prior["status"], "experiment_failed")
                     self.assertIn("injected over-constrained", str(prior["candidate_diagnostics"]))
                     return {"action": "stop", "reason": "failed probe", "evidence_tests": ["forward"], "edits": []}, {}
