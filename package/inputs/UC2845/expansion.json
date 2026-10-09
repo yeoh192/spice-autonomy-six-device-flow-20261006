@@ -1,0 +1,28 @@
+{
+  "version": "uc2845-expanded-1",
+  "active_tests_before": 12,
+  "active_tests_after": 31,
+  "added_tests": [
+    "line_regulation_25C",
+    "load_regulation_25C",
+    "fosc_25C",
+    "output_switch_frequency_25C",
+    "osc_amplitude_25C",
+    "duty_max_25C",
+    "duty_min_25C",
+    "uvlo_on_25C",
+    "uvlo_off_25C",
+    "output_rise_25C",
+    "output_fall_25C",
+    "current_sense_delay_25C",
+    "output_low_20_25C",
+    "output_low_200_25C",
+    "output_high_20_25C",
+    "output_high_200_25C",
+    "current_sense_threshold_25C",
+    "ea_gain_25C",
+    "vfb_25C"
+  ],
+  "input_model_behavior_change": "None;0.01 smoothing constant exposed asEDGE_SOFT parameter, initial value unchanged",
+  "full_device_acceptance": false
+}

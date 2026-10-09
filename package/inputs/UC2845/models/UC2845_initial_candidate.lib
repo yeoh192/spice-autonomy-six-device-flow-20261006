@@ -1,0 +1,30 @@
+* UC2845 independent preliminary behavioral candidate, NOT TI model.
+* 8-pin physical order. Fixed oscillator approximation applies ONLY to RT=10k CT=3.3n.
+* Initial parameters are engineering approximations; not evidence of fit or acceptance.
+* No verified noise, temperature drift, aging, current-sense latch/delay or thermal model.
+.subckt UC2845 COMP VFB ISENSE RTCT GROUND OUTPUT VCC VREF
+.param VREF0=5 VFBREF=2.5 RREF=0.3 ISCREF=0.1
+.param EA_GAIN=30000 EA_HIGH=6 EA_LOW=0.7 EA_R=100 EA_SRC=0.8m EA_SINK=6m
+.param IBIAS_FB=0.5u IBIAS_CS=2u ISTART=0.6m IRUN=12m
+.param EDGE_SOFT=0.01
+.param VON=8.4 VOFF=7.6 FOSC=52000 DMAX=0.48 RDROUT=5 VDROP=1.4
+VLOGIC LOGIC GROUND 1
+SENABLE LOGIC EN VCC GROUND UVSW
+REN EN GROUND 1k
+.model UVSW SW(Ron=0.01 Roff=1e12 Vt={(VON+VOFF)/2} Vh={(VON-VOFF)/2})
+BREF VREF GROUND I=if(V(EN,GROUND)>0.5,limit((V(VREF,GROUND)-VREF0)/RREF,-ISCREF,ISCREF),V(VREF,GROUND)/100)
+BCC VCC GROUND I=if(V(EN,GROUND)>0.5,IRUN,ISTART)
+BFB GROUND VFB I={IBIAS_FB}
+BCS GROUND ISENSE I={IBIAS_CS}
+BEA COMP GROUND I=if(V(EN,GROUND)>0.5,limit((V(COMP,GROUND)-limit(2.5+EA_GAIN*(VFBREF-V(VFB,GROUND)),EA_LOW,EA_HIGH))/EA_R,-EA_SRC,EA_SINK),V(COMP,GROUND)/100)
+* Timing pin display approximation; external RT/CT remain in the fixture.
+BOSC OSC GROUND V=1.95+0.85*(2/pi)*asin(sin(2*pi*time*FOSC))
+* Triangle timing approximation; not the actual RC sawtooth discharge shape.
+BRT RTCT GROUND I=if(V(EN,GROUND)>0.5,(V(RTCT,GROUND)-V(OSC,GROUND))/100,V(RTCT,GROUND)/100)
+* Approximate pulse generation, not an independently verified cycle-by-cycle latch.
+BDRIVE DRIVE GROUND V=V(EN,GROUND)*max(0,V(VCC,GROUND)-VDROP)*(1+tanh((V(COMP,GROUND)-1.4)/EDGE_SOFT))/2*(1+tanh((min(1,max(0,(V(COMP,GROUND)-1.4)/3))-V(ISENSE,GROUND))/EDGE_SOFT))/2*(1+tanh((cos(2*pi*time*FOSC/2)-cos(pi*DMAX))/EDGE_SOFT))/2
+RCOMPLEAK COMP GROUND 1G
+RRTLEAK RTCT GROUND 1G
+CINTCOMP COMP GROUND 1n
+ROUT DRIVE OUTPUT {RDROUT}
+.ends UC2845

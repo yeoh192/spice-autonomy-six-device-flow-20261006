@@ -1,0 +1,16 @@
+UC2845 preliminary PWM functional display (not acceptance)
+.include "model.lib"
+.temp 25
+VCCSUP VCC 0 PWL(0 0 20u 0 40u 15 500u 15)
+VFBSET VFB 0 0
+VSENSE ISENSE 0 PWL(0 0 200u 0 200.1u 1.2 300u 1.2 300.1u 0 500u 0)
+RRT VREF RTCT 10k
+CCT RTCT 0 3.3n
+CVCC VCC 0 100n
+CVREF VREF 0 100n
+COUT OUTPUT 0 1n
+XDUT COMP VFB ISENSE RTCT 0 OUTPUT VCC VREF UC2845
+.tran 0 500u 0 20n
+.options plotwinsize=0
+.save V(VCC) V(VREF) V(RTCT) V(COMP) V(ISENSE) V(OUTPUT)
+.end

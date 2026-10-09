@@ -11,7 +11,7 @@ import tempfile
 import threading
 import time
 from pathlib import Path
-from . import ac_measurements
+from . import ac_measurements, pulse_metrology
 from .state import (Fault, artifact_hashes, artifacts_valid, canonical, digest,
                     file_lock, finite, fingerprint, read, save)
 
@@ -69,6 +69,7 @@ def measurement_signals(data, protocol):
     wanted = {m["signal"].lower()}
     if "denominator" in m: wanted.add(m["denominator"].lower())
     if "target" in m: wanted.add(m["target"]["signal"].lower())
+    wanted.update(s.lower() for s in pulse_metrology.extra_signals(m))
     wanted.update(c["signal"].lower() for c in protocol.get("checks", []))
     for name in wanted:
         match = re.fullmatch(r"v\(([^,]+),([^,]+)\)", name)
@@ -225,14 +226,18 @@ def validate_protocol(protocol, model, contract=None):
             raise Fault("proposal", "积分方法非法")
         m = protocol["measurement"]
         _signal(m["signal"])
-        if set(m) - {"mode", "signal", "sign", "scale", "at", "start_s", "target", "absolute", "denominator", "nominal"}:
+        if set(m) - {"mode", "signal", "sign", "scale", "at", "start_s", "target", "absolute", "denominator", "nominal", "window", "timing"}:
             raise Fault("proposal", "测量存在未知字段")
         if "absolute" in m and not isinstance(m["absolute"], bool):
             raise Fault("proposal", "absolute需要布尔值")
         mode = m["mode"]
-        if mode not in ("sample", "curve", "ratio_curve", "capacitance", "integral_to_crossing", "dc_current_max", "dc_current_difference", "dc_slope", "dc_sensitivity_error_percent", "dc_linearity_percent", "transient_peak", "transient_recovery") and mode not in ac_measurements.MODES:
+        if mode not in pulse_metrology.MODES and any(k in m for k in ("window","timing")):
+            raise Fault("proposal", "window/timing只允许用于已实现的新测量接口")
+        if mode not in ("sample", "curve", "ratio_curve", "capacitance", "integral_to_crossing", "dc_current_max", "dc_current_difference", "dc_slope", "dc_sensitivity_error_percent", "dc_linearity_percent", "transient_peak", "transient_recovery") and mode not in ac_measurements.MODES and mode not in pulse_metrology.MODES:
             raise Fault("proposal", "测量解析接口未实现")
-        if mode in ac_measurements.MODES:
+        if mode in pulse_metrology.MODES:
+            pulse_metrology.validate(a,m,_signal)
+        elif mode in ac_measurements.MODES:
             ac_measurements.validate(a, m, _signal)
         elif mode in ("transient_peak", "transient_recovery"):
             if a["kind"] != "tran" or not 0 <= finite(m["start_s"]) < finite(m["at"]) <= a["stop_s"]:raise Fault("proposal","Invalid transient window")
@@ -312,6 +317,7 @@ def render(protocol, model):
         signals.add(m["denominator"].lower())
     if "target" in m:
         signals.add(m["target"]["signal"].lower())
+    signals.update(s.lower() for s in pulse_metrology.extra_signals(m))
     signals.update(c["signal"].lower() for c in protocol.get("checks", []))
     signals = set().union(*(signal_components(s) for s in signals))
     lines.append(".save " + " ".join(sorted(signals)))
@@ -416,6 +422,8 @@ def measure(protocol, data, reference=None):
             values += [interpolate(xs, ys, t).real for t in (c["from"], c["to"])]
             if min(values) < c["min"] or max(values) > c["max"]:
                 raise Fault("fixture", "实际偏置/阶段检查未通过", {"check": c, "min": min(values), "max": max(values)})
+        if m["mode"] in pulse_metrology.MODES:
+            return pulse_metrology.measure(m,xs,signals,interpolate)
         if m["mode"] in ac_measurements.MODES:
             return ac_measurements.measure(a, m, {**data, "signals": signals}, reference, interpolate)
         ys = signals[m["signal"].lower()]
@@ -514,7 +522,7 @@ def validate_measurement_unit(case):
     units = {"V": ("V", 1), "mV": ("V", 1e-3), "A": ("A", 1), "mA": ("A", 1e-3),
              "uA": ("A", 1e-6), "μA": ("A", 1e-6), "µA": ("A", 1e-6), "nA": ("A", 1e-9), "F": ("F", 1), "pF": ("F", 1e-12), "nF": ("F", 1e-9),
              "C": ("C", 1), "nC": ("C", 1e-9), "uC": ("C", 1e-6), "ohm": ("ohm", 1), "Ω": ("ohm", 1), "mΩ": ("ohm", 1e-3)}
-    units.update({"uV":("V",1e-6),"μV":("V",1e-6),"pA":("A",1e-12),"uF":("F",1e-6),"μF":("F",1e-6),"H":("H",1),"uH":("H",1e-6),"μH":("H",1e-6),"s":("s",1),"ns":("s",1e-9),"1":("1",1),"dB":("dB",1),"degree":("degree",1),"mV/A":("V/A",1e-3),"%":("%",1)})
+    units.update({"uV":("V",1e-6),"μV":("V",1e-6),"pA":("A",1e-12),"uF":("F",1e-6),"μF":("F",1e-6),"H":("H",1),"uH":("H",1e-6),"μH":("H",1e-6),"s":("s",1),"ns":("s",1e-9),"us":("s",1e-6),"Hz":("Hz",1),"kHz":("Hz",1e3),"1":("1",1),"dB":("dB",1),"degree":("degree",1),"mV/A":("V/A",1e-3),"%":("%",1)})
     if mode in ac_measurements.MODES and "at" not in m and "frequency_Hz" not in p["analysis"] and not case.get("reference"):
         raise Fault("missing_data", "交流频扫验收需要参考曲线或明确采样频率，不能以无阈值样本作为标量")
     if unit == "oracle_native":
@@ -527,7 +535,13 @@ def validate_measurement_unit(case):
         raise Fault("proposal", "电容/电荷必须测量电流，不能积分电压后冒充电荷")
     native = "F" if mode == "capacitance" else "C" if mode == "integral_to_crossing" and signal_dimension == "A" else signal_dimension
     expected_scale = 1 / factor
-    if mode == "transient_recovery":
+    if mode == "transient_frequency":
+        native = "Hz"
+    elif mode == "transient_duty":
+        native = "%"
+    elif mode in ("transient_edge_time", "transient_delay"):
+        native = "s"
+    elif mode == "transient_recovery":
         native = "s"
     elif mode in ac_measurements.MODES:
         native = ac_measurements.MODES[mode]

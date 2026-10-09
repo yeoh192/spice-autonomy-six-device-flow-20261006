@@ -145,8 +145,14 @@ def prepare_request(role, context):
     if stage=='post_execution':
         sha=context.get('candidate_sha256');model=shared.get('model',{})
         if model.get('active_sha256')!=sha:errors.append({'field':'$.candidate_evidence.model.active_sha256','code':'CANDIDATE_HASH_MISMATCH','expected':sha})
-        if any(t.get('result',{}).get('execution')!='completed' or t.get('result',{}).get('model_sha256')!=sha for t in shared.get('tests',[])):
-            errors.append({'field':'$.candidate_evidence.tests','code':'UNVERIFIED_CANDIDATE_RESULTS','expected':'completed results at the candidate hash'})
+        rows=shared.get('tests',[])
+        failed={t['test'] for t in rows if t.get('result',{}).get('execution')!='completed'}
+        partial=context.get('partial_retention_only') is True
+        allowed=set(context.get('persistent_execution_failures',[]))
+        baseline=context.get('baseline_execution',{})
+        valid_partial=partial and bool(failed) and failed==allowed and all(baseline.get(i)=='failed' for i in failed) and all(t.get('result',{}).get('acceptance')=='not_evaluated' for t in rows if t['test'] in failed)
+        if any(t.get('result',{}).get('model_sha256')!=sha for t in rows) or (failed and not valid_partial):
+            errors.append({'field':'$.candidate_evidence.tests','code':'UNVERIFIED_CANDIDATE_RESULTS','expected':'candidate-hash measurements; partial retention requires matching pre-existing failed tests, never delivery'})
     if errors:raise Fault('input','接口输入未通过阶段与事实校验',{'error_code':'INVALID_CONTRACT_INPUT','stage':stage,'issues':errors[:20]})
     schema=output_schema(stage)
     contract={'version':VERSION,'stage':stage,'input_schema':input_schema(stage),'output_schema':schema,

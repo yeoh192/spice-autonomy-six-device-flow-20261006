@@ -10,7 +10,7 @@ DEFAULT_BUDGETS = {"api_calls": 32, "simulations": 96, "repairs": 8, "seconds": 
 DEFAULT_POLICY = {"development_attempts": 3, "execution_attempts": 3,
                   "optimization_attempts": 3, "selection_attempts": 3, "workers": 2,
                   "require_non_vendor": False, "allow_structure_edit": True,
-                  "model_diagnosis_enabled": True, "diagnostic_attempts": 6,
+                  "continuous_until_acceptance": False, "model_diagnosis_enabled": True, "diagnostic_attempts": 6,
                   "max_patch_bytes": 16000, "max_metric_regression_percent": 5,
                   "max_diagnostic_parameter_step_percent": 25}
 
@@ -68,6 +68,10 @@ def load_task(path):
         raise Fault("input", "model_diagnosis_enabled必须为布尔值")
     if task.get("template_selection") and task["template_selection"]["source_policy"] == "all" and task["policy"]["require_non_vendor"]:
         raise Fault("input", "来源策略冲突：all检索不能同时要求独立非厂商来源")
+    if not isinstance(task["policy"]["continuous_until_acceptance"], bool):
+        raise Fault("input", "continuous_until_acceptance必须为布尔值")
+    if task["policy"]["continuous_until_acceptance"] and integration:
+        raise Fault("input", "仅配置回归的迁移任务不能启用持续验收；需完整flow-1任务")
     ids = [c["id"] for c in task["cases"]]
     if len(set(ids)) != len(ids) or any(not NAME.fullmatch(i) for i in ids):
         raise Fault("input", "测试ID非法或重复")

@@ -1,0 +1,5 @@
+{
+  "typical_tolerance_percent": 10,
+  "curve_mae_percent": 5,
+  "curve_max_error_percent": 10
+}

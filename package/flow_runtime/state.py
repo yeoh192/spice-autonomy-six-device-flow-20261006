@@ -111,6 +111,7 @@ class Store:
         self.folder = Path(folder).resolve()
         self.path = self.folder / "state.json"
         self.mutex = threading.RLock()
+        self.continuous = False
         self.started = time.monotonic()
         self.last_accounted = self.started
         self.folder.mkdir(parents=True, exist_ok=True)
@@ -143,6 +144,8 @@ class Store:
     def remaining_seconds(self):
         with self.mutex:
             self._account()
+            if self.continuous:
+                return 1e12
             return max(0, self.data["limits"]["seconds"] - self.data["usage"]["seconds"])
 
     def reserve(self, resource, operation=None):
@@ -151,9 +154,9 @@ class Store:
             reservation = resource + ":" + operation if operation else None
             if reservation and reservation in self.data["reservations"]:
                 return
-            if self.data["usage"]["seconds"] >= self.data["limits"]["seconds"]:
+            if not self.continuous and self.data["usage"]["seconds"] >= self.data["limits"]["seconds"]:
                 raise BudgetEnd("seconds")
-            if self.data["usage"][resource] >= self.data["limits"][resource]:
+            if not self.continuous and self.data["usage"][resource] >= self.data["limits"][resource]:
                 raise BudgetEnd(resource)
             # Reserve BEFORE dispatch; an uncertain remote operation still consumes budget.
             self.data["usage"][resource] += 1

@@ -1,0 +1,130 @@
+[
+  {
+    "id": "dc_event_sample_1",
+    "expected": 2.5,
+    "value": 2.5,
+    "relative_error": 0.0,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/6f9001ba751cae99d5b40afdf70fc95921bee2fe0d38821e439d9861a85d6d78"
+  },
+  {
+    "id": "dc_event_sample_2",
+    "expected": 5.0,
+    "value": 5.0,
+    "relative_error": 0.0,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/7e49b2fef528409c57bc4c01010e99827f7e8061200515aeb46b7e02f2a026dd"
+  },
+  {
+    "id": "dc_span_1",
+    "expected": 1,
+    "value": 1.0,
+    "relative_error": 0.0,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/c0e705a54b664c28ea4bbd04f21d1a728f586de4416b8596a1f1745d168c6052"
+  },
+  {
+    "id": "dc_span_2",
+    "expected": 2,
+    "value": 2.0,
+    "relative_error": 0.0,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/ea0279097dd4101b2b0fadbe36e029aafeb84d84531902c812d5e2ded6440bd1"
+  },
+  {
+    "id": "transient_delay_1",
+    "expected": 1e-06,
+    "value": 1.0000000000000023e-06,
+    "relative_error": 2.329340604949326e-15,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/ec01313f5538787bfa92fa42fed2a067e9a91ceefa290c28e7c6c20622ab0238"
+  },
+  {
+    "id": "transient_delay_2",
+    "expected": 2e-06,
+    "value": 2.000000000000001e-06,
+    "relative_error": 6.352747104407253e-16,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/c7b3af958ead6ab775505c09ebd0771a2393ca6e2fcbae1734ce50c0385bdbb3"
+  },
+  {
+    "id": "transient_duty_1",
+    "expected": 20.0,
+    "value": 19.999999999999996,
+    "relative_error": 1.7763568394002506e-16,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/b5f9f65d763f6164d4a51aa32b22668a026017986227dc26a1412a13e7c5d354"
+  },
+  {
+    "id": "transient_duty_2",
+    "expected": 40.0,
+    "value": 39.999999999999986,
+    "relative_error": 3.552713678800501e-16,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/3d392443465faa8d7848c368c6406c35ee880d550bc32333a7217cf85f863835"
+  },
+  {
+    "id": "transient_edge_time_1",
+    "expected": 1.6e-06,
+    "value": 1.5999999999999948e-06,
+    "relative_error": 3.1763735522036263e-15,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/b47363dfcdd9f5bf0885c9661e887fb25a6a008b2e81093440c8b8cd7be7f330"
+  },
+  {
+    "id": "transient_edge_time_2",
+    "expected": 3.2e-06,
+    "value": 3.2000000000000015e-06,
+    "relative_error": 5.293955920339377e-16,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/65458c0a739381035717e74be48d62a41e367be9c122baf55fcc2aed149132bb"
+  },
+  {
+    "id": "transient_event_sample_1",
+    "expected": 5,
+    "value": 5.0,
+    "relative_error": 0.0,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/4be8868a2067625647cc317f938fcc21abf7d4fbe0c9322a1f87af672c772d7e"
+  },
+  {
+    "id": "transient_event_sample_2",
+    "expected": 10,
+    "value": 10.0,
+    "relative_error": 0.0,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/3292aa650d003dcda029d39f80d1bf5effaf6aa9ee658162c3fc28cd2460d535"
+  },
+  {
+    "id": "transient_frequency_1",
+    "expected": 66666.66666666667,
+    "value": 66666.66666666666,
+    "relative_error": 2.1827872842550276e-16,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/21dd1fbbf919fd8c01e1cc90b16fb8cdf589a3117e68109d1e861b8f24977902"
+  },
+  {
+    "id": "transient_frequency_2",
+    "expected": 50000.00000000001,
+    "value": 49999.999999999985,
+    "relative_error": 4.3655745685100547e-16,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/5dee6c62dc6672efcc43d36c251ee1a29d064c219ad1ee97b3fdd804a2ea55fd"
+  },
+  {
+    "id": "transient_span_1",
+    "expected": 1,
+    "value": 1.0,
+    "relative_error": 0.0,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/a3fe6fc0bf0a84d8df8486bd91d0ee98a896c286b0ee0101ae284afdd4592026"
+  },
+  {
+    "id": "transient_span_2",
+    "expected": 2,
+    "value": 2.0,
+    "relative_error": 0.0,
+    "passed": true,
+    "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/f40edb62c2ac65133fcf4e0594ee9b84f117e5154ccd91c1833d35a58af9818b"
+  }
+]

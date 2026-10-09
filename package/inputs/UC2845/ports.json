@@ -1,0 +1,17 @@
+{
+  "selected_variant": "UC2845",
+  "package_scope": "8-pin functional interface (SOIC/PDIP); ordering suffix not supplied",
+  "assumption_explicit": true,
+  "physical_pin_order": {
+    "1": "COMP",
+    "2": "VFB",
+    "3": "ISENSE",
+    "4": "RTCT",
+    "5": "GROUND",
+    "6": "OUTPUT",
+    "7": "VCC",
+    "8": "VREF"
+  },
+  "source": "PDF figure 5-1 and table 5-1, pages 3-4",
+  "other_package_not_mapped": "14-pin variant has separate VC/PWRGND; must not reuse this binding unchanged"
+}

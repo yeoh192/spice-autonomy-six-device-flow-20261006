@@ -234,7 +234,7 @@ def direction_guard(targets, history, baseline_sha):
 
 def repair(workflow):
     w = workflow
-    if not w.cases or any(r["execution"] != "completed" for r in w.results):
+    if not w.cases or (not w.store.continuous and any(r["execution"] != "completed" for r in w.results)):
         w.store.event("model_diagnosis", "deferred_execution_failure")
         return
     triggers = triggers_for(w.cases, w.results)
@@ -251,8 +251,9 @@ def repair(workflow):
     for value in (trial_limit, revision_limit, analysis_limit):
         if type(value) is not int or not 1 <= value <= 8:
             raise Fault("input", "诊断试验、修订和分析预算必须为1至8的整数")
+    cycle_prefix = "diagnostic-round:" + (str(w.store.get("checkpoints", "master_cycle") or 0) + ":" if w.store.continuous else "")
     physical_trials = state.get("physical_trials", sum(bool(h.get('physical_executed') or 'results' in h) for h in history))
-    physical_trials = max(physical_trials, sum(bool(v.get('trial_reserved')) for k, v in w.store.data.get('plans', {}).items() if k.startswith('diagnostic-round:')))
+    physical_trials = max(physical_trials, sum(bool(v.get('trial_reserved')) for k, v in w.store.data.get('plans', {}).items() if k.startswith(cycle_prefix)))
     analyses = state.get("analyses", sum(h.get('status')=='diagnostic_completed' for h in history))
     revisions = state.get("consecutive_revisions", 0)
     optimizer_history = list(w.store.data.get('patches', {}).values())
@@ -260,7 +261,7 @@ def repair(workflow):
         return {"index": index, "history": history, "physical_trials": physical_trials,
                 "analyses": analyses, "consecutive_revisions": revisions, "terminal": terminal}
     for n in range(state["index"], trial_limit * revision_limit + analysis_limit):
-        pending_trial = (w.store.get('plans', 'diagnostic-round:'+str(n)) or {}).get('trial_reserved')
+        pending_trial = (w.store.get('plans', cycle_prefix+str(n)) or {}).get('trial_reserved')
         if (physical_trials >= trial_limit and not pending_trial) or revisions >= revision_limit:
             break
         source = model_text(w.model_path)
@@ -275,7 +276,7 @@ def repair(workflow):
             w.store.event("model_diagnosis", "capability_gap")
             w.store.put("checkpoints", "model_diagnostics", checkpoint(n, True))
             break
-        key = "diagnostic-round:" + str(n)
+        key = cycle_prefix + str(n)
         saved = w.store.get("plans", key) or {}
         related = set(triggers) | set(saved.get("proposal", {}).get("evidence_tests", []))
         probe_cases = [c for c in w.cases if c["id"] in related]
@@ -425,8 +426,10 @@ def repair(workflow):
 
 def review_results(w, path, cases, results, proposal):
     """Only candidate-hash measurements can support a post-execution review."""
-    if any(r.get('execution')!='completed' for r in results):
-        return {'decision':'revise','reason':'candidate_execution_incomplete'}
+    failed=[r for r in results if r.get('execution')!='completed']
+    baseline_rows={r['test']:r for r in w.results}
+    if failed and (not w.store.continuous or any(baseline_rows.get(r['test'],{}).get('execution')=='completed' for r in failed)):
+        return {'decision':'revise','reason':'candidate_execution_incomplete_or_new_failure'}
     if {r['test'] for r in results}!={c['id'] for c in cases}:
         raise Fault('cache_corrupt','Candidate result test set differs from executed plan')
     if any(r.get('model_sha256')!=digest(path) for r in results):
@@ -436,5 +439,8 @@ def review_results(w, path, cases, results, proposal):
     return w.agents.ask('patch_reviewer',{'phase':'post_execution','candidate_executed':True,
         'task':'Review actual candidate measurements against frozen targets and baseline. approve|revise. Program retention additionally requires full regression; experiment approval is not delivery.',
         'proposal':proposal,'candidate_sha256':digest(path),
+        'partial_retention_only':bool(failed),'persistent_execution_failures':[r['test'] for r in failed],
+        'baseline_execution':{r['test']:r.get('execution') for r in w.results},
+        'retention_rule':'All configured tests were attempted. In continuous mode, improving measured items may retain an engineering candidate with unchanged pre-existing execution failures. New execution failures or regression of any passing item forbid retention. Partial retention NEVER means final acceptance.',
         'baseline_summary':[{'test':c['id'],'residual':residual(baseline.get(c['id'],{}),c['expectation'])} for c in cases],
         'candidate_evidence':bundle(w,cases,results,path)})

@@ -8,6 +8,7 @@ import sys
 import threading
 import urllib.error
 import urllib.request
+import urllib.parse
 from .state import Fault, artifact_hashes, artifacts_valid, fingerprint, read, save
 
 ENDPOINTS = {
@@ -38,10 +39,25 @@ class Agents:
         self.provider_faults = {}
         self.lock = threading.Lock()
 
+    @staticmethod
+    def endpoint(route):
+        base = route.get("base_url")
+        if base is None:
+            return ENDPOINTS[route["provider"]]
+        parsed = urllib.parse.urlsplit(base)
+        if parsed.scheme != "https" or not parsed.netloc or parsed.username or parsed.password or parsed.query or parsed.fragment:
+            raise Fault("input", "第三方base_url必须为无凭据、无查询参数的HTTPS地址")
+        return base.rstrip("/") + ("" if base.rstrip("/").endswith("/chat/completions") else "/chat/completions")
+
+    @staticmethod
+    def credential_id(route):
+        return (Agents.endpoint(route), route.get("key_env", "SPICE_API_KEY")) if route.get("base_url") else route["provider"]
+
     def route(self, role):
         route = self.routes["review" if role in REVIEW_ROLES else "design"]
         if route.get("provider") not in ENDPOINTS or not isinstance(route.get("model"), str):
-            raise Fault("input", "角色路由必须指定官方provider及model")
+            raise Fault("input", "角色路由必须指定provider及model")
+        self.endpoint(route)
         return route
 
     def credentials(self, roles):
@@ -49,18 +65,21 @@ class Agents:
         if self.transport:
             return
         for role in roles:
-            provider = self.route(role)["provider"]
+            route = self.route(role)
+            provider = route["provider"]
+            credential = self.credential_id(route)
+            env_name = route.get("key_env", "SPICE_API_KEY") if route.get("base_url") else KEY_NAMES[provider]
             with self.key_lock:
-                if provider in self.keys:
+                if credential in self.keys:
                     continue
-                key = os.environ.get(KEY_NAMES[provider])
+                key = os.environ.get(env_name)
                 if not key:
                     if not sys.stdin.isatty():
-                        raise Fault("credentials", "请用终端运行脚本文件，或设置" + KEY_NAMES[provider])
-                    key = getpass.getpass("请输入%s官方API Key（隐藏输入，不保存）：" % provider.upper())
+                        raise Fault("credentials", "请用终端运行脚本文件，或设置" + env_name)
+                    key = getpass.getpass("请输入第三方共享API Key（隐藏输入，不保存）：" if route.get("base_url") else "请输入%s官方API Key（隐藏输入，不保存）：" % provider.upper())
                 if not key or any(c.isspace() for c in key):
                     raise Fault("credentials", "密钥为空或含空白")
-                self.keys[provider] = key
+                self.keys[credential] = key
 
     def _redact(self, message):
         for key in self.keys.values():
@@ -73,14 +92,16 @@ class Agents:
             {"role": "system", "content": SYSTEM + "\nRole: " + role},
             {"role": "user", "content": json.dumps(context, ensure_ascii=False, allow_nan=False)}],
             "stream": False, "max_tokens": tokens}
-        if provider == "glm":
+        if route.get("base_url"):
+            pass  # OpenAI-compatible gateways may reject vendor-only options.
+        elif provider == "glm":
             payload.update(thinking={"type": "enabled"}, reasoning_effort="low")
         else:
             payload["enable_thinking"] = False
-        req = urllib.request.Request(ENDPOINTS[provider],
+        req = urllib.request.Request(self.endpoint(route),
             data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
             headers={"Content-Type": "application/json",
-                     "Authorization": "Bearer " + self.keys[provider]})
+                     "Authorization": "Bearer " + self.keys[self.credential_id(route)]})
         timeout = min(route.get("timeout_seconds", 180), self.store.remaining_seconds())
         if timeout <= 0:
             from .state import BudgetEnd
@@ -123,6 +144,8 @@ class Agents:
 
     def ask(self, role, context):
         from .interface_contracts import prepare_request
+        if self.store.continuous:
+            context = {**context, "master_cycle": self.store.get("checkpoints", "master_cycle") or 0}
         context = prepare_request(role, context)
         route = self.route(role)
         key = fingerprint({"role": role, "route": route, "system": SYSTEM, "context": context})
@@ -146,28 +169,33 @@ class Agents:
                 return value
             # Cache damage is a local fault, never a reason for another paid request.
             raise Fault("cache_corrupt", "API响应缓存校验失败", {"request": key})
-        if old and old.get("status") == "failed" and old.get("terminal"):
+        if old and old.get("status") == "failed" and old.get("terminal") and not self.store.continuous:
             raise Fault(**old["fault"])
         blocked = self.provider_faults.get(fingerprint(route))
-        if blocked:
+        if blocked and not self.store.continuous:
             raise Fault(**blocked)
         dispatch = old.get("dispatch", 0) if old else 0
+        if self.store.continuous and old and old.get("status") == "failed":
+            dispatch = 0
         last_fault = old.get("fault") if old else None
         # At most two actual calls per logical request, persisted across restart.
+        physical_dispatch = old.get("physical_dispatch", old.get("dispatch", 0)) if old else 0
+        recoveries = 0
         while dispatch < 2:
             self.credentials([role])
             self.store.reserve("api_calls")
             dispatch += 1
+            physical_dispatch += 1
             tokens = 8192 if dispatch > 1 else 4096
-            self.store.put("requests", key, {"status": "started", "dispatch": dispatch})
+            self.store.put("requests", key, {"status": "started", "dispatch": dispatch, "physical_dispatch": physical_dispatch})
             from .interface_contracts import retry_context, validate_response
             attempt_context = retry_context(context, last_fault)
             request = {"role": role, "route": route, "context": attempt_context,
                 "recovery": last_fault, "max_tokens": tokens}
-            attempt_folder = folder / ("attempt_%02d" % dispatch)
+            attempt_folder = folder / ("attempt_%02d" % physical_dispatch)
             save(folder / "request.json", request)
             save(attempt_folder / "request.json", request)
-            self.store.event(role, "requesting", {"provider": route["provider"], "model": route["model"], "dispatch": dispatch})
+            self.store.event(role, "requesting", {"provider": route["provider"], "model": route["model"], "dispatch": dispatch, "physical_dispatch": physical_dispatch})
             try:
                 # Blocking HTTP runs in a worker; progress remains visible every ten seconds.
                 with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
@@ -192,7 +220,7 @@ class Agents:
                 save(folder / "metadata.json", meta)
                 save(attempt_folder / "response.json", value)
                 save(attempt_folder / "metadata.json", meta)
-                self.store.put("requests", key, {"status": "completed", "dispatch": dispatch,
+                self.store.put("requests", key, {"status": "completed", "dispatch": dispatch, "physical_dispatch": physical_dispatch,
                     "hashes": artifact_hashes(folder, ["request.json", "response.json", "metadata.json"])})
                 return value
             except Fault as e:
@@ -202,9 +230,16 @@ class Agents:
                 if e.kind in ("authentication", "api_configuration", "credentials"):
                     with self.lock:
                         self.provider_faults[fingerprint(route)] = last_fault
-                self.store.put("requests", key, {"status": "failed", "dispatch": dispatch,
+                self.store.put("requests", key, {"status": "failed", "dispatch": dispatch, "physical_dispatch": physical_dispatch,
                     "fault": last_fault, "terminal": terminal})
                 self.store.event(role, "request_recovery" if not terminal else "request_failed", last_fault)
+                if self.store.continuous and e.kind in ("transport", "authentication", "api_configuration", "credentials"):
+                    from .continuous import wait
+                    recoveries += 1
+                    wait(self.store, role, last_fault, recoveries)
+                    # Keep cumulative physical-call ledger/attempt names; extend local quota.
+                    dispatch -= 1
+                    continue
                 if terminal:
                     raise
         if last_fault and last_fault.get('kind')=='interface_contract':

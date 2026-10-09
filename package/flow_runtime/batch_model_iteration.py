@@ -1,5 +1,5 @@
 """Candidate-only model iteration with full active regression and verified RAW reuse."""
-import copy,shutil
+import copy,shutil,os
 from pathlib import Path
 from .state import Fault,Store,BudgetEnd,read,save,digest,fingerprint,file_lock,artifacts_valid
 from .task import load_task
@@ -101,6 +101,12 @@ def run(batch,source_runtime,output,check_only=False,resume=False,registered_tas
                     entry.update(status='blocked_no_candidate_and_qualified_tests',reason='已有草案或参考接口不等于正式候选及有资格的测试；不能修改参考模型充当交付。')
                     save(output/'summary.json',report);continue
                 task,assets=prepared
+                if os.environ.get('SPICE_ROUTES_FILE'):
+                    routes=read(Path(os.environ['SPICE_ROUTES_FILE']).resolve())
+                    probe=Agents(None,routes)
+                    probe.route('model_optimizer');probe.route('patch_reviewer')
+                    task['routes']=routes
+                    print('API路由：'+routes['design']['model']+' / '+routes['review']['model'],flush=True)
                 if registered_tasks:
                     from .registered_integration import augment_candidate
                     task,extra_assets,registration=augment_candidate(task,registered)

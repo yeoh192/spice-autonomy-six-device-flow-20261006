@@ -4,6 +4,9 @@ pkg="$(cd "$(dirname "$0")" && pwd)"
 mode="${1:---run}"
 [[ "$mode" == --run || "$mode" == --check-only ]] || exit 2
 cd "$pkg"
+if [[ -f "$pkg/local_api_routes.json" ]]; then
+  export SPICE_ROUTES_FILE="${SPICE_ROUTES_FILE:-$pkg/local_api_routes.json}"
+fi
 out="/Users/192y/电气/BUK_automation_$(date +%Y%m%d-%H%M%S)_$$"
 mkdir -p "$out"
 python3 use_gpt_test_library.py --families --output "$out/registered" > "$out/registration.log"

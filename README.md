@@ -105,3 +105,7 @@ The planner now dispatches analysis or revision feedback to an explicit model_re
 ## v0.3.9 Formal model interface contracts
 
 Versioned JSON Schemas now gate diagnostic planning, repair design, model optimization and both patch review phases. Field errors trigger one bounded API correction with structured feedback; invalid outputs cannot enter successful response caches. Evidence IDs, exact old text, available adapters, generated diffs, phase and candidate hashes are checked. The existing physical validation and frozen acceptance gates remain decisive. Other development roles and Windows portability are unchanged. See package/INTERFACE_CONTRACTS.md (INTERFACE_CONTRACTS.md inside the package).
+
+## 持续验收与UC2845
+
+新主调度器支持`spice_flow.py run --task INPUT/task.json --output NEW_RUNTIME --continuous`；局部失败、defer、回退不结束主循环。仅完整验收成功、缺资料暂停或主动中止离开执行；API错误等待重试。说明见[CONTINUOUS_ACCEPTANCE.md](package/CONTINUOUS_ACCEPTANCE.md)。UC2845的31项输入包在[package/inputs/UC2845](package/inputs/UC2845)，macOS启动`bash package/inputs/UC2845/RUN_UC2845.sh --run`。缺资料与模型不合格仍如实报告，本版尚未通过真实API全覆盖验收。

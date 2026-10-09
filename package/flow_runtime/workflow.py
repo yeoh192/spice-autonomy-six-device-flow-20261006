@@ -15,7 +15,7 @@ from .development_interfaces import interface_evidence
 INTERFACES = {
     "circuit": "R/C/L, independent V/I (DC/AC/PWL), numeric diode and voltage-controlled release switch fixtures, one DUT with task-defined pins",
     "analysis": "DC sweep, single-frequency or bounded linear AC sweep, transient",
-    "measurement": "sample, dc_current_max (max absolute input current), dc_current_difference (actual probe difference), dc_slope, dc_sensitivity_error_percent, dc_linearity_percent, curve, ratio_curve (actual V/I), capacitance, complex V/I impedance/ESR/C/L/loss and voltage-ratio gain/dB/phase, integral_to_crossing with explicit integration start and target",
+    "measurement": "transient_frequency/transient_duty (at least 3 full cycles), rising/falling10-90% edge time, triggered delay, event-time bias sample, bounded DC/transient span; sample, dc_current_max (max absolute input current), dc_current_difference (actual probe difference), dc_slope, dc_sensitivity_error_percent, dc_linearity_percent, curve, ratio_curve (actual V/I), capacitance, complex V/I impedance/ESR/C/L/loss and voltage-ratio gain/dB/phase, integral_to_crossing with explicit integration start and target",
     "forbidden": "arbitrary Python/shell, external model files, changes to immutable reference/acceptance/ports",
 }
 
@@ -23,6 +23,9 @@ INTERFACES = {
 def calibration_protocols(case):
     """Trusted analytic oracles; expected values are NOT supplied by an agent."""
     mode = case["protocol"]["measurement"]["mode"]
+    from . import pulse_metrology
+    if mode in pulse_metrology.MODES:
+        return pulse_metrology.oracles(case)
     if mode in ("transient_peak","transient_recovery"):
         from .transient_metrology import oracles
         return [(p,e) for p,e,_ in oracles(case)]
@@ -86,7 +89,7 @@ def retention(cases, before, after, policy):
         reasons.append("完整回归缺少测试")
     for c in cases:
         a, b = old.get(c["id"], {}), new.get(c["id"], {})
-        if b.get("execution") != "completed":
+        if b.get("execution") != "completed" and (not policy.get("continuous_until_acceptance") or a.get("execution") == "completed"):
             reasons.append(c["id"] + ":执行失败")
         if a.get("acceptance") == "pass" and b.get("acceptance") != "pass":
             reasons.append(c["id"] + ":已通过特性退化")
@@ -97,8 +100,8 @@ def retention(cases, before, after, policy):
                     reasons.append(c["id"] + ":曲线退化" + k)
         if c["expectation"].get("unit") == "F" and c["expectation"].get("typical", 0) and b.get("value", 1) <= 0:
             reasons.append(c["id"] + ":电容响应损坏")
-    old_failed = sum(r.get("acceptance") == "fail" for r in before)
-    new_failed = sum(r.get("acceptance") == "fail" for r in after)
+    old_failed = sum(r.get("execution") != "completed" or r.get("acceptance") == "fail" for r in before)
+    new_failed = sum(r.get("execution") != "completed" or r.get("acceptance") == "fail" for r in after)
     old_loss = sum(result_cost(c, old.get(c["id"], {})) for c in cases)
     new_loss = sum(result_cost(c, new.get(c["id"], {})) for c in cases)
     improved = new_failed < old_failed or (new_failed == old_failed and new_loss < old_loss - max(1e-9, old_loss * 1e-6))
@@ -111,6 +114,7 @@ class Workflow:
     def __init__(self, task, store, agents, simulator):
         self.task, self.store, self.agents, self.simulator = task, store, agents, simulator
         self.policy = task["policy"]
+        self.store.continuous = self.policy.get("continuous_until_acceptance", False)
         checkpoint = store.get("checkpoints", "workflow")
         if checkpoint:
             self.cases, self.inventory = checkpoint["cases"], checkpoint["inventory"]
@@ -170,6 +174,9 @@ class Workflow:
                 self.store.event("input_scope_gate", "fitting_not_enabled", self.task["input_integration"])
                 self.checkpoint()
                 return self.audit("finished_with_gaps")
+            if self.store.continuous:
+                from .continuous import run
+                return run(self)
             self.select_template()
             # Preserve evidence for the configured scope before spending development
             # budget. Fitting waits until the complete test plan has been attempted.
@@ -589,7 +596,7 @@ class Workflow:
         return results
 
     def optimize(self):
-        if not self.cases or any(r["execution"] != "completed" for r in self.results):
+        if not self.cases or (not self.store.continuous and any(r["execution"] != "completed" for r in self.results)):
             self.store.event("model_optimization", "deferred_execution_failure")
             return
         # With missing tolerance, residuals can still guide fitting, but never prove acceptance.

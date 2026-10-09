@@ -1,0 +1,461 @@
+{
+  "api_calls": 0,
+  "calibration_count": 16,
+  "calibration_pass": 16,
+  "configured_tests": 31,
+  "execution": {
+    "completed": 30,
+    "failed": 1
+  },
+  "acceptance": {
+    "pass": 21,
+    "fail": 7,
+    "pending": 2,
+    "error": 1
+  },
+  "results": [
+    {
+      "id": "vref_25C",
+      "execution": "completed",
+      "result": {
+        "value": 4.99960941753617
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/e24810446e0ff17e836d3a35c6e35bbea873e4894f10e8c29790f7fef68c8381"
+    },
+    {
+      "id": "comp_sink_25C",
+      "execution": "completed",
+      "result": {
+        "value": 0.004000001100000001
+      },
+      "acceptance": "fail",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/9ecc7a82aa558ff2d989f15cf56a29f8d646d1090052486ba7a86d133b3f6e79"
+    },
+    {
+      "id": "comp_source_25C",
+      "execution": "completed",
+      "result": {
+        "value": -0.0007999950000000001
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/3adcead96a328435c3b0314f24a0baed5a3c1df31e90f70ca4786db60ad73846"
+    },
+    {
+      "id": "comp_high_25C",
+      "execution": "completed",
+      "result": {
+        "value": 5.960264308583016
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/87b6615fb7e79729632e808bd54f14cc8ccbd84035133f4c67ac0577cc30df70"
+    },
+    {
+      "id": "comp_low_25C",
+      "execution": "completed",
+      "result": {
+        "value": 0.7284735965030553
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/8721c0676945784d1cc504dff5216549f94b5bda97c84ff81b107b90adaca615"
+    },
+    {
+      "id": "startup_current_25C",
+      "execution": "completed",
+      "result": {
+        "value": 0.0006000000000000006
+      },
+      "acceptance": "fail",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/e028c79298684805430625ce5e795e4d352bd0d12d313e1415fee9847ca85a5a"
+    },
+    {
+      "id": "operating_current_25C",
+      "execution": "completed",
+      "result": {
+        "value": 0.012
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/36572ade3b402eaf87c2cae1e175fd9e49b697d8e4d362d3cf815734404ec166"
+    },
+    {
+      "id": "reference_short_25C",
+      "execution": "completed",
+      "result": {
+        "value": -0.1001930692878149
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/b446487c06cafa5dae1e59cce06438fdea50f16247a67be534b0e514ba2f9823"
+    },
+    {
+      "id": "vfb_bias_25C",
+      "execution": "completed",
+      "result": {
+        "value": -5e-07
+      },
+      "acceptance": "pending",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/789a82c26fef089aa4950bca3ff4d25753cbc1fab6e53cc7542d4020e34b56fe"
+    },
+    {
+      "id": "isense_bias_25C",
+      "execution": "completed",
+      "result": {
+        "value": -2e-06
+      },
+      "acceptance": "pending",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/9dbadff244ced43b155c108de1e79bcfc2f420509e8d401e434e7d6f106f6dbb"
+    },
+    {
+      "id": "vref_corner_minus40",
+      "execution": "completed",
+      "result": {
+        "value": 4.99960941753617
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/f5d9263058a820f40484e7430ee969da5bb700ff4b67100b462d1268d792ee28"
+    },
+    {
+      "id": "vref_corner_85",
+      "execution": "completed",
+      "result": {
+        "value": 4.99960941753617
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/83dd7ee023476036f0ca229b603c221b47a84e44bc600798de58f1c5f0743822"
+    },
+    {
+      "id": "line_regulation_25C",
+      "execution": "completed",
+      "result": {
+        "value": 0.0,
+        "minimum": 4.99960941753617,
+        "maximum": 4.99960941753617,
+        "measurement_window": {
+          "start": 12,
+          "end": 25
+        },
+        "method": "dc_span"
+      },
+      "acceptance": "fail",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/66e9cd402e08f485f297dc5c83ebea7c3a4b2a21cab5461049569bb85384a449"
+    },
+    {
+      "id": "load_regulation_25C",
+      "execution": "completed",
+      "result": {
+        "value": 0.005699830698095987,
+        "minimum": 4.993909586838074,
+        "maximum": 4.99960941753617,
+        "measurement_window": {
+          "start": 0.001,
+          "end": 0.02
+        },
+        "method": "dc_span"
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/4843819c66553bb1aa2338c93e67a0b1ef80d8f0921f16df79ec26c5c5769af1"
+    },
+    {
+      "id": "fosc_25C",
+      "execution": "completed",
+      "result": {
+        "value": 51999.99999984162,
+        "measurement_window": {
+          "start": 5e-05,
+          "end": 0.00025
+        },
+        "method": "transient_frequency",
+        "periods": 9,
+        "jitter_percent": 2.919508439247615e-09,
+        "first_rising_s": 5.784655221098175e-05,
+        "last_rising_s": 0.000230923475288432
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/cd9a862bdc264556e86f0fffd80c753df44b7e381f9b5c008a736468c8382f9c"
+    },
+    {
+      "id": "output_switch_frequency_25C",
+      "execution": "completed",
+      "result": {
+        "value": 25999.933633359367,
+        "measurement_window": {
+          "start": 5e-05,
+          "end": 0.00025
+        },
+        "method": "transient_frequency",
+        "periods": 4,
+        "jitter_percent": 0.002544708905785445,
+        "first_rising_s": 6.769165403798921e-05,
+        "last_rising_s": 0.00022153820058716102
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/da9c275020e4e719236c578c6d6ea34be81dc90676f9868796e6daa570cce3c1"
+    },
+    {
+      "id": "osc_amplitude_25C",
+      "execution": "completed",
+      "result": {
+        "value": 1.6037429382971182,
+        "minimum": 1.17832248744145,
+        "maximum": 2.782065425738568,
+        "measurement_window": {
+          "start": 5e-05,
+          "end": 0.00025
+        },
+        "method": "transient_span"
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/9b6570f9bb2936cd32a2d85948c257547880dd6ba9f2227b00497fca5f9c818c"
+    },
+    {
+      "id": "duty_max_25C",
+      "execution": "completed",
+      "result": {
+        "value": 48.00273782290697,
+        "minimum_duty_percent": 48.00142886853788,
+        "maximum_duty_percent": 48.004059895538035,
+        "measurement_window": {
+          "start": 5e-05,
+          "end": 0.00025
+        },
+        "method": "transient_duty",
+        "periods": 4,
+        "jitter_percent": 0.002544708905785445,
+        "first_rising_s": 6.769165403798921e-05,
+        "last_rising_s": 0.00022153820058716102
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/85258a70893ee7d5949c405897128b488c3ddcb7a2479e03a47bfedc65ccdeb4"
+    },
+    {
+      "id": "duty_min_25C",
+      "execution": "completed",
+      "result": {
+        "value": 0,
+        "periods": 0,
+        "zero_output_observed": true,
+        "measurement_window": {
+          "start": 5e-05,
+          "end": 0.00025
+        },
+        "method": "transient_duty"
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/995b7e7b3461317df47b3c73d3f9e1a03ec447bf0284ca723039b0be0fef4933"
+    },
+    {
+      "id": "uvlo_on_25C",
+      "execution": "failed",
+      "error": "实际偏置/阶段检查未通过",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/1ed4c61151f0d47606fa6243eafdc9e4b058afc3c74f9f1a432adcafcd9c355b",
+      "fault": {
+        "kind": "fixture",
+        "message": "实际偏置/阶段检查未通过",
+        "evidence": {
+          "check": {
+            "signal": "v(vref)",
+            "from": 0,
+            "to": 1.5e-05,
+            "min": -0.01,
+            "max": 0.01
+          },
+          "min": -0.09901960784217614,
+          "max": -0.09901960784217598
+        }
+      }
+    },
+    {
+      "id": "uvlo_off_25C",
+      "execution": "completed",
+      "result": {
+        "value": 7.593546192156348,
+        "event_axis": 0.007426453807843653,
+        "event_time_s": 0.007426453807843653,
+        "measurement_window": {
+          "start": 2e-05,
+          "end": 0.0091
+        },
+        "method": "transient_event_sample"
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/57d0630aa8f8d737e58c42cdcab4ce00ee644b2d642b4582811a6025bffc6467"
+    },
+    {
+      "id": "output_rise_25C",
+      "execution": "completed",
+      "result": {
+        "value": 1.354409129830967e-07,
+        "first_crossing_s": 2.916809217192667e-05,
+        "last_crossing_s": 2.9303533084909766e-05,
+        "levels": {
+          "first": 1.3599864001359983,
+          "last": 12.239877601223982
+        },
+        "actual_swing": 13.59986400135998,
+        "measurement_window": {
+          "start": 2e-05,
+          "end": 4.5e-05
+        },
+        "method": "transient_edge_time"
+      },
+      "acceptance": "fail",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/789ce446606d1a78b7ac2fb2a29df59212feb439095f6f0cab4b3d61eac4c4ca"
+    },
+    {
+      "id": "output_fall_25C",
+      "execution": "completed",
+      "result": {
+        "value": 1.3544129539957e-07,
+        "first_crossing_s": 9.168045152600105e-06,
+        "last_crossing_s": 9.303486447999675e-06,
+        "levels": {
+          "first": 12.239877601223991,
+          "last": 1.3599864001359991
+        },
+        "actual_swing": 13.59986400135999,
+        "measurement_window": {
+          "start": 1e-06,
+          "end": 2e-05
+        },
+        "method": "transient_edge_time"
+      },
+      "acceptance": "fail",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/1879055f8510afca9e45caa32e55985eab1e04fd8a6f43b1ca9ba96bbf8bc5e8"
+    },
+    {
+      "id": "current_sense_delay_25C",
+      "execution": "completed",
+      "result": {
+        "value": 3.6024880922257726e-09,
+        "trigger_time_s": 4.001e-05,
+        "response_time_s": 4.0013602488092224e-05,
+        "measurement_window": {
+          "start": 3.9e-05,
+          "end": 4.3e-05
+        },
+        "method": "transient_delay"
+      },
+      "acceptance": "fail",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/1f9bd37818cc88a75fffca88f8f110d4bbc10c9ca4c5ded9a73d4511a27fea1e"
+    },
+    {
+      "id": "output_low_20_25C",
+      "execution": "completed",
+      "result": {
+        "value": 0.1
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/d68099f9fccdb17d6f83bf437fe2a15e74a40224b10dacc77db935fbed798d22"
+    },
+    {
+      "id": "output_low_200_25C",
+      "execution": "completed",
+      "result": {
+        "value": 1.0
+      },
+      "acceptance": "fail",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/2b3118607bdac63757d3e0fac19316497044d3a99b65d4e03f45cfd72e1b71f9"
+    },
+    {
+      "id": "output_high_20_25C",
+      "execution": "completed",
+      "result": {
+        "value": 13.49986400135999
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/353203116bd73676011b3fa3acec82a66b4ae4a53884ea4339abad6bcf662bf3"
+    },
+    {
+      "id": "output_high_200_25C",
+      "execution": "completed",
+      "result": {
+        "value": 12.59986400135999
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/cc76b52cbbae145f61465fa2694d8c89b1ed88f1ddc2aeb080eeb8071df91fa8"
+    },
+    {
+      "id": "current_sense_threshold_25C",
+      "execution": "completed",
+      "result": {
+        "value": 1.0000763637158556,
+        "event_axis": 4.250019090928964e-05,
+        "event_time_s": 4.250019090928964e-05,
+        "measurement_window": {
+          "start": 4e-05,
+          "end": 4.3e-05
+        },
+        "method": "transient_event_sample"
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/d1b2bea3c8dcf92c312f839271a3cade5bd159964673033660e425f6dcca79a0"
+    },
+    {
+      "id": "ea_gain_25C",
+      "execution": "completed",
+      "result": {
+        "value": 89.53374267691457
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/86015a0f9bea674a3f0c8ed09a565f0f4198673003c72fd169f4bfc71a20944f"
+    },
+    {
+      "id": "vfb_25C",
+      "execution": "completed",
+      "result": {
+        "value": 2.4999999996875033,
+        "event_axis": 2.4999999996875033,
+        "measurement_window": {
+          "start": 2.45,
+          "end": 2.55
+        },
+        "method": "dc_event_sample"
+      },
+      "acceptance": "pass",
+      "folder": "/Users/192y/Documents/Codex/2026-09-10/lian/deliverables/uc2845-expanded-flow/validation/simulations/83f382ff9ebfeda8dd293998164f313aa1da8d2ad4f39de75f0ac0ae7976838b"
+    }
+  ],
+  "task_sha256": "2a7bb47831ba9176589f5768c66a3626f7c528a9914e8bb4e567425bd6cd578d",
+  "model_sha256": "34feeae5708b7816a2b25b82567730ed6b688560006f24117dbb7ff0ebbbe9c3",
+  "runner_sha256": "097141979103068edf3ac303f3c07dea8cbbe818be4cf2d51cb44f785a996bd1",
+  "code_hashes": {
+    "flow_runtime/interface_contracts.py": "6d7d79dd4a87e5f01261dca29b97a2ac6bda7c7af77394e02cec4d8f3d5ca83a",
+    "flow_runtime/ac_calibration_runner.py": "e39f9561ab96b9b5ab068fb2e81b6cb05b5c9a2e42788a0a79835d940cd79c31",
+    "flow_runtime/test_library.py": "586f2c98452c5242a39a85485402d6ecfda40be5dea545907319cc098e99039b",
+    "flow_runtime/indexed_selection.py": "902e25abdec591433bd7983dac0e917b5aa680bf59365267480fd46124ddc227",
+    "flow_runtime/task.py": "d4bd735bf82895f19318ed17dc440cea6732eec19858df5d6e19c939195b85eb",
+    "flow_runtime/test_methods.py": "1069f96b62b317ea89079b3bf0fe2712e4e7382e7e401a26d433e69fd316106e",
+    "flow_runtime/ac_measurements.py": "5097c6b36a8e2f77d2b431aa94f51ab82580dbe4b49a06651e39e45668105dc6",
+    "flow_runtime/dc_transfer.py": "1f3132215cb7e1f0bc411e399f01c0a5acec8df151c68236aabf2202130f7a79",
+    "flow_runtime/test_families.py": "f636382d36f431fd28f75c80f347942adf6c2205965ff48bfbcf95376869ed19",
+    "flow_runtime/registered_library.py": "cc1c17618e4e52742be378ac29ab034f253ff45437681e63f574e1154e983e38",
+    "flow_runtime/spice.py": "afb66b39d2cd2b28c608aaa416b220aa162f16567c1853c1df3e085c0af87ab0",
+    "flow_runtime/project_standard.py": "d9681a14823fe0e560e6086e4cf3c8d434ea8ccf705b96124eb650465cfe3f39",
+    "flow_runtime/test_scope.py": "e0b5b5f61adebb82b8d6651f28724f7825d4c93377ad03d4ef0caa7ad01e17a9",
+    "flow_runtime/__init__.py": "70345dccf2ad6b47a5b59b008894a55a4f667849f068c4948efecceff014c140",
+    "flow_runtime/input_batch.py": "cdc0cf9b2aacb65bfa8240d5451e3f09fa53f5e42abad7e415369b84eb2f40e3",
+    "flow_runtime/agents.py": "b439ba118174a87f276ed5d89038d5b38cce88b29dcf2ce285f33609367cd74c",
+    "flow_runtime/fixture_repair_policy.py": "5031becf7c5b7e9a848d7e91c6df226e1b4dd74c7e6c9a1e7904bb7a0be4bf9f",
+    "flow_runtime/registered_integration.py": "8826f441b9ba92361d96f88a6b1f4011b4f4fa60e915f8a2c66c749048f112fd",
+    "flow_runtime/static_metrology.py": "0a9c184d5caab0c947672ae6cfb6464a619b0350057aa04710695cc8600f9b9e",
+    "flow_runtime/repair_adapters.py": "b1d7f1a354f809e1ff0d40caeeb6db02e50a0eac8198f4e85562b305608ee635",
+    "flow_runtime/templates.py": "18542370926fa846ad2a2e240e16235cc2e409f1ab2d2f7a15fb1e8a067e6782",
+    "flow_runtime/draft_qualification.py": "1a6dcd6dfe32b2ee4da607a4f29e6d3a7e336917a2175008bb4519ba941336ad",
+    "flow_runtime/simulation_cache.py": "d9d76af7d6a3d5c7b7ada8bddb3faf1c2182fb4b5e97d6ded32c9bdc56f2fffb",
+    "flow_runtime/autonomous_qualification.py": "63badcbd5968c892c171d7909b02877af8498651f6c2e4bc290f076ea6be78ef",
+    "flow_runtime/capability_development.py": "60e757bc1d5d4784eb0e36b2a2d6ec010ad35857ae3ae941a3952cb3f54c2e3d",
+    "flow_runtime/contracts.py": "932a0125c83dc4f3a8d86dce7bdc8b9af2c5320a0a199f9c15787657ea9db37d",
+    "flow_runtime/workflow.py": "8904c26a0e1ce10bdd13627df45171e08cf82196bc8bf6d860a7466720ab22d8",
+    "flow_runtime/transient_metrology.py": "e2c094e487f8fa401797b48f263821feac09cd3f14933df0904f1273f01d4bdc",
+    "flow_runtime/model_diagnostics.py": "75e79d60be111788612a593fefc93038ce8f9ba49f6fd1752e1a009e3f339deb",
+    "flow_runtime/pulse_metrology.py": "950a031f0779c9c6d892f5d8918d75b3d0c43a560620156990265697f0fc3ed8",
+    "flow_runtime/evidence.py": "af0217bbcef0cffa5ee9de4d4b565b26f3f61198c2ca80bf771ff6b862a98aca",
+    "flow_runtime/batch_model_iteration.py": "d43d3398cca895236e377b680ea74fb50f275afa71371a9a0e1cbc6720e04272",
+    "flow_runtime/development_interfaces.py": "bb465ac2a3b765218aae479eda869ccd43a90935fb68e8500ba2c36db6b453e9",
+    "flow_runtime/state.py": "1fe097ab05956fef64b02e5973d3f4a666f97054f6a7366ee8f96e8073ca9b3d",
+    "flow_runtime/ac_calibration.py": "1be21d0e3104339b537955ff796c55ad7f238c323b3d0d1add9dd51fbbd317a3",
+    "flow_runtime/coverage_binding.py": "65e798c0e438d6465b98bf522a7c1dd390076e8f70f31f3086c2d021dd5f5bd5",
+    "flow_runtime/offline_recheck.py": "7e93907b3ebe9c0ccaf9123b717f08c5b4ba7f07b1d95e2a20bfaf57280793c1"
+  },
+  "independent_method_qualification": "pending",
+  "full_manual_acceptance": false
+}

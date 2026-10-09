@@ -1,0 +1,1286 @@
+{
+  "review_status": "pulse_metrology_calibrated_fixture_execution_checked_independent_physical_review_pending",
+  "full_manual_coverage": false,
+  "sources": [
+    {
+      "path": "manual/uc2845.pdf",
+      "sha256": "dea53cdbbe59377b666606326139ce2f2c61a46c5ea136c10bdf2e4854da7c2a"
+    },
+    {
+      "path": "manual/extracted_text.txt",
+      "sha256": "07a2d3e4c443bdc2aebcf2423a51e7e74dd169859a1824b69ebeaa3d835e35fe"
+    }
+  ],
+  "items": [
+    {
+      "id": "parameter:vref",
+      "kind": "test",
+      "label": "基准电压",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [
+        "vref_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "min": 4.95,
+          "typ": 5,
+          "max": 5.05
+        },
+        "conditions": "IVREF=1mA; TJ=25°C",
+        "source_table": "6.5",
+        "pdf_page": 6
+      },
+      "notes": [],
+      "binding_scope": "selected25C static condition; all-temperature table scope requires separate audit"
+    },
+    {
+      "id": "parameter:line_regulation",
+      "kind": "test",
+      "label": "基准线路调整率",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [
+        "line_regulation_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "typ": 0.006,
+          "max": 0.02
+        },
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_conditions": "12V <= VCC <=25V",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "12V <= VCC <=25V"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap.",
+      "binding_scope": "Specified25C fixture only; full-temperature qualification separate"
+    },
+    {
+      "id": "parameter:load_regulation",
+      "kind": "test",
+      "label": "基准负载调整率",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [
+        "load_regulation_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "typ": 0.006,
+          "max": 0.025
+        },
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_conditions": "1mA <= IVREF <=20mA",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "1mA <= IVREF <=20mA"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap.",
+      "binding_scope": "Specified25C fixture only; full-temperature qualification separate"
+    },
+    {
+      "id": "parameter:reference_temp_stability",
+      "kind": "test",
+      "label": "基准温度稳定性",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "unit": "mV/°C",
+        "values": {
+          "typ": 0.2,
+          "max": 0.4
+        },
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_conditions": "Tmin=-40°C; Tmax=85°C; note(3) extrema need not occur at endpoints",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "Tmin=-40°C; Tmax=85°C; note(3) extrema need not occur at endpoints"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "parameter:reference_total_variation",
+      "kind": "test",
+      "label": "基准总输出变化",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [
+        "vref_corner_minus40",
+        "vref_corner_85"
+      ],
+      "binding_complete": false,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "min": 4.9,
+          "max": 5.1
+        },
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_conditions": "line + load + temperature combined; -40°C to85°C",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "line + load + temperature combined; -40°C to85°C"
+        }
+      },
+      "notes": [],
+      "binding_scope": "two temperature endpoints only; line/load/interior-temperature extrema not proven",
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "parameter:reference_noise",
+      "kind": "test",
+      "label": "基准输出噪声",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "typ": 5e-05
+        },
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_conditions": "10Hz to10kHz; TJ=25°C; note(1)",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "10Hz to10kHz; TJ=25°C; note(1)"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "parameter:reference_aging",
+      "kind": "test",
+      "label": "基准长期稳定性",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "typ": 0.005,
+          "max": 0.025
+        },
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_conditions": "TA=125°C;1000 hours; note(1)",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "TA=125°C;1000 hours; note(1)"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "parameter:reference_short",
+      "kind": "test",
+      "label": "基准输出短路电流",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [
+        "reference_short_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "A",
+        "values": {
+          "min": -0.18,
+          "typ": -0.1,
+          "max": -0.03
+        },
+        "conditions": "VREF shorted toGROUND; signed current into DUT; VCC=15V",
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_values": {
+          "min": -30,
+          "typ": -100,
+          "max": -180,
+          "unit": "mA"
+        }
+      },
+      "notes": [],
+      "binding_scope": "selected25C static condition; all-temperature table scope requires separate audit"
+    },
+    {
+      "id": "parameter:fosc",
+      "kind": "test",
+      "label": "振荡器初始频率",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [
+        "fosc_25C",
+        "output_switch_frequency_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "Hz",
+        "values": {
+          "min": 47000,
+          "typ": 52000,
+          "max": 57000
+        },
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_conditions": "TJ=25°C; RT=10kΩ; CT=3.3nF; OUTPUT frequency = fOSC/2",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "TJ=25°C; RT=10kΩ; CT=3.3nF; OUTPUT frequency = fOSC/2"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap.",
+      "binding_scope": "Specified25C fixture only; full-temperature qualification separate"
+    },
+    {
+      "id": "parameter:osc_line_stability",
+      "kind": "test",
+      "label": "振荡器电压稳定性",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "unit": "%",
+        "values": {
+          "typ": 0.2,
+          "max": 1
+        },
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_conditions": "12V <= VCC <=25V",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "12V <= VCC <=25V"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "parameter:osc_temp_stability",
+      "kind": "test",
+      "label": "振荡器温度稳定性",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "unit": "%",
+        "values": {
+          "typ": 5
+        },
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_conditions": "-40°C <= TA <=85°C; note(1)",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "-40°C <= TA <=85°C; note(1)"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "parameter:osc_amplitude",
+      "kind": "test",
+      "label": "RT/CT峰峰值",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [
+        "osc_amplitude_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "typ": 1.7
+        },
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_conditions": "peak-to-peak; note(1)",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "peak-to-peak; note(1)"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap.",
+      "binding_scope": "Specified25C fixture only; full-temperature qualification separate"
+    },
+    {
+      "id": "parameter:vfb",
+      "kind": "test",
+      "label": "误差放大器输入电压",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [
+        "vfb_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "min": 2.45,
+          "typ": 2.5,
+          "max": 2.55
+        },
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_conditions": "VCOMP=2.5V",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "VCOMP=2.5V"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap.",
+      "binding_scope": "Specified25C fixture only; full-temperature qualification separate"
+    },
+    {
+      "id": "parameter:vfb_bias",
+      "kind": "test",
+      "label": "误差放大器输入偏置电流",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [
+        "vfb_bias_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "A",
+        "values": {
+          "max": -1e-06
+        },
+        "conditions": "UC284x; original maximum signed value -1uA; magnitude <=1uA interpretation requires audit",
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_values": {
+          "max": -1,
+          "unit": "uA"
+        },
+        "sign_interpretation": "Original signed maximum retained. Active test intentionally has no limits until independent sign interpretation."
+      },
+      "notes": [
+        "Executed sign probe only; pending signed datasheet limit interpretation, no forced pass."
+      ],
+      "binding_scope": "selected25C static condition; all-temperature table scope requires separate audit"
+    },
+    {
+      "id": "parameter:ea_gain",
+      "kind": "test",
+      "label": "误差放大器开环增益",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [
+        "ea_gain_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "dB",
+        "values": {
+          "min": 65,
+          "typ": 90
+        },
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_conditions": "2V <= VCOMP <=4V",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "2V <= VCOMP <=4V"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "parameter:ea_ugb",
+      "kind": "test",
+      "label": "误差放大器单位增益带宽",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "unit": "Hz",
+        "values": {
+          "min": 700000.0,
+          "typ": 1000000.0
+        },
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_conditions": "TJ=25°C; note(1)",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "TJ=25°C; note(1)"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "parameter:ea_psrr",
+      "kind": "test",
+      "label": "误差放大器电源抑制",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "unit": "dB",
+        "values": {
+          "min": 60,
+          "typ": 70
+        },
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_conditions": "12V <= VCC <=25V",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "12V <= VCC <=25V"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "parameter:comp_sink",
+      "kind": "test",
+      "label": "COMP灌电流",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [
+        "comp_sink_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "A",
+        "values": {
+          "min": 0.002,
+          "typ": 0.006
+        },
+        "conditions": "VFB=2.7V; VCOMP=1.1V",
+        "source_table": "6.5",
+        "pdf_page": 6
+      },
+      "notes": [],
+      "binding_scope": "selected25C static condition; all-temperature table scope requires separate audit"
+    },
+    {
+      "id": "parameter:comp_source",
+      "kind": "test",
+      "label": "COMP源电流",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [
+        "comp_source_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "A",
+        "values": {
+          "max": -0.0005,
+          "typ": -0.0008
+        },
+        "conditions": "VFB=2.3V; VCOMP=5V; signed source current; abs >=0.5mA",
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_values": {
+          "min": -0.5,
+          "typ": -0.8,
+          "unit": "mA"
+        }
+      },
+      "notes": [],
+      "binding_scope": "selected25C static condition; all-temperature table scope requires separate audit"
+    },
+    {
+      "id": "parameter:comp_high",
+      "kind": "test",
+      "label": "COMP高电平电压",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [
+        "comp_high_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "min": 5,
+          "typ": 6
+        },
+        "conditions": "VFB=2.3V; RL=15kΩ fromCOMP toGROUND",
+        "source_table": "6.5",
+        "pdf_page": 6
+      },
+      "notes": [],
+      "binding_scope": "selected25C static condition; all-temperature table scope requires separate audit"
+    },
+    {
+      "id": "parameter:comp_low",
+      "kind": "test",
+      "label": "COMP低电平电压",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [
+        "comp_low_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "typ": 0.7,
+          "max": 1.1
+        },
+        "conditions": "VFB=2.7V; RL=15kΩ fromCOMP toVREF",
+        "source_table": "6.5",
+        "pdf_page": 6
+      },
+      "notes": [],
+      "binding_scope": "selected25C static condition; all-temperature table scope requires separate audit"
+    },
+    {
+      "id": "parameter:current_sense_gain",
+      "kind": "test",
+      "label": "电流检测增益",
+      "evidence": [
+        "pdf_page:6"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "unit": "V/V",
+        "values": {
+          "min": 2.85,
+          "typ": 3,
+          "max": 3.15
+        },
+        "source_table": "6.5",
+        "pdf_page": 6,
+        "raw_conditions": "VFB=0V; gain=dVCOMP/dVISENSE;0V <= VISENSE <=0.8V; latch transition",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "VFB=0V; gain=dVCOMP/dVISENSE;0V <= VISENSE <=0.8V; latch transition"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "parameter:current_sense_threshold",
+      "kind": "test",
+      "label": "电流检测最大输入",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [
+        "current_sense_threshold_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "min": 0.9,
+          "typ": 1,
+          "max": 1.1
+        },
+        "source_table": "6.5",
+        "pdf_page": 7,
+        "raw_conditions": "VFB=0V; VCOMP=5V; latch transition",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "VFB=0V; VCOMP=5V; latch transition"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap.",
+      "binding_scope": "Specified25C fixture only; full-temperature qualification separate"
+    },
+    {
+      "id": "parameter:current_sense_psrr",
+      "kind": "test",
+      "label": "电流检测PSRR",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "unit": "dB",
+        "values": {
+          "typ": 70
+        },
+        "source_table": "6.5",
+        "pdf_page": 7,
+        "raw_conditions": "12V <= VCC <=25V; VFB=0V; latch transition",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "12V <= VCC <=25V; VFB=0V; latch transition"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "parameter:isense_bias",
+      "kind": "test",
+      "label": "ISENSE偏置电流",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [
+        "isense_bias_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "A",
+        "values": {
+          "typ": -2e-06,
+          "max": -1e-05
+        },
+        "conditions": "original maximum signed value -10uA; magnitude interpretation requires audit",
+        "source_table": "6.5",
+        "pdf_page": 7,
+        "raw_values": {
+          "typ": -2,
+          "max": -10,
+          "unit": "uA"
+        },
+        "sign_interpretation": "Original signed maximum retained. Active test intentionally has no limits until independent sign interpretation."
+      },
+      "notes": [
+        "Executed sign probe only; pending signed datasheet limit interpretation, no forced pass."
+      ],
+      "binding_scope": "selected25C static condition; all-temperature table scope requires separate audit"
+    },
+    {
+      "id": "parameter:current_sense_delay",
+      "kind": "test",
+      "label": "电流检测到输出延迟",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [
+        "current_sense_delay_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "s",
+        "values": {
+          "typ": 1.5e-07,
+          "max": 3e-07
+        },
+        "source_table": "6.5",
+        "pdf_page": 7,
+        "raw_conditions": "VISENSE step0V to2V; note(1)",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "VISENSE step0V to2V; note(1)"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap.",
+      "binding_scope": "Specified25C fixture only; full-temperature qualification separate"
+    },
+    {
+      "id": "parameter:output_low_20",
+      "kind": "test",
+      "label": "OUTPUT低电平20mA",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [
+        "output_low_20_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "typ": 0.1,
+          "max": 0.4
+        },
+        "source_table": "6.5",
+        "pdf_page": 7,
+        "raw_conditions": "ISINK=20mA",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "ISINK=20mA"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "parameter:output_low_200",
+      "kind": "test",
+      "label": "OUTPUT低电平200mA",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [
+        "output_low_200_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "typ": 1.5,
+          "max": 2.2
+        },
+        "source_table": "6.5",
+        "pdf_page": 7,
+        "raw_conditions": "ISINK=200mA",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "ISINK=200mA"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "parameter:output_high_20",
+      "kind": "test",
+      "label": "OUTPUT高电平20mA",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [
+        "output_high_20_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "min": 13,
+          "typ": 13.5
+        },
+        "source_table": "6.5",
+        "pdf_page": 7,
+        "raw_conditions": "ISOURCE=20mA",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "ISOURCE=20mA"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "parameter:output_high_200",
+      "kind": "test",
+      "label": "OUTPUT高电平200mA",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [
+        "output_high_200_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "min": 12,
+          "typ": 13.5
+        },
+        "source_table": "6.5",
+        "pdf_page": 7,
+        "raw_conditions": "ISOURCE=200mA",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "ISOURCE=200mA"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "parameter:output_rise",
+      "kind": "test",
+      "label": "OUTPUT上升时间",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [
+        "output_rise_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "s",
+        "values": {
+          "typ": 2.5e-08,
+          "max": 1.5e-07
+        },
+        "source_table": "6.5",
+        "pdf_page": 7,
+        "raw_conditions": "COUTPUT=1nF; TJ=25°C; note(1)",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "COUTPUT=1nF; TJ=25°C; note(1)"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap.",
+      "binding_scope": "Specified25C fixture only; full-temperature qualification separate"
+    },
+    {
+      "id": "parameter:output_fall",
+      "kind": "test",
+      "label": "OUTPUT下降时间",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [
+        "output_fall_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "s",
+        "values": {
+          "typ": 2.5e-08,
+          "max": 1.5e-07
+        },
+        "source_table": "6.5",
+        "pdf_page": 7,
+        "raw_conditions": "COUTPUT=1nF; TJ=25°C; note(1)",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "COUTPUT=1nF; TJ=25°C; note(1)"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap.",
+      "binding_scope": "Specified25C fixture only; full-temperature qualification separate"
+    },
+    {
+      "id": "parameter:uvlo_on",
+      "kind": "test",
+      "label": "UVLO启动阈值",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [
+        "uvlo_on_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "min": 7.8,
+          "typ": 8.4,
+          "max": 9
+        },
+        "source_table": "6.5",
+        "pdf_page": 7,
+        "raw_conditions": "UCx843/5; ascendingVCC; keep UVLO history",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "UCx843/5; ascendingVCC; keep UVLO history"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap.",
+      "binding_scope": "Specified25C fixture only; full-temperature qualification separate"
+    },
+    {
+      "id": "parameter:uvlo_off",
+      "kind": "test",
+      "label": "UVLO关断阈值",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [
+        "uvlo_off_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "min": 7,
+          "typ": 7.6,
+          "max": 8.2
+        },
+        "source_table": "6.5",
+        "pdf_page": 7,
+        "raw_conditions": "UCx843/5; descendingVCC after startup",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "UCx843/5; descendingVCC after startup"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap.",
+      "binding_scope": "Specified25C fixture only; full-temperature qualification separate"
+    },
+    {
+      "id": "parameter:duty_max",
+      "kind": "test",
+      "label": "最大占空比",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [
+        "duty_max_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "%",
+        "values": {
+          "min": 46,
+          "typ": 48,
+          "max": 50
+        },
+        "source_table": "6.5",
+        "pdf_page": 7,
+        "raw_conditions": "UC2844/5; output frequency half oscillator",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "UC2844/5; output frequency half oscillator"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap.",
+      "binding_scope": "Specified25C fixture only; full-temperature qualification separate"
+    },
+    {
+      "id": "parameter:duty_min",
+      "kind": "test",
+      "label": "最小占空比",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [
+        "duty_min_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "%",
+        "values": {
+          "typ": 0
+        },
+        "source_table": "6.5",
+        "pdf_page": 7,
+        "raw_conditions": "zero duty; COMP forcedGROUND",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "zero duty; COMP forcedGROUND"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap.",
+      "binding_scope": "Specified25C fixture only; full-temperature qualification separate"
+    },
+    {
+      "id": "parameter:startup_current",
+      "kind": "test",
+      "label": "启动电源电流",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [
+        "startup_current_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "A",
+        "values": {
+          "typ": 0.0005,
+          "max": 0.001
+        },
+        "conditions": "VCC below startup threshold; measurement bias7V chosen by project",
+        "source_table": "6.5",
+        "pdf_page": 7
+      },
+      "notes": [],
+      "binding_scope": "selected25C static condition; all-temperature table scope requires separate audit"
+    },
+    {
+      "id": "parameter:operating_current",
+      "kind": "test",
+      "label": "工作电源电流",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [
+        "operating_current_25C"
+      ],
+      "binding_complete": true,
+      "reference_evidence": {
+        "unit": "A",
+        "values": {
+          "typ": 0.011,
+          "max": 0.017
+        },
+        "conditions": "VFB=0V; VISENSE=0V; VCC=15V; output unloaded",
+        "source_table": "6.5",
+        "pdf_page": 7
+      },
+      "notes": [],
+      "binding_scope": "selected25C static condition; all-temperature table scope requires separate audit"
+    },
+    {
+      "id": "parameter:vcc_zener",
+      "kind": "test",
+      "label": "VCC齐纳电压",
+      "evidence": [
+        "pdf_page:7"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "unit": "V",
+        "values": {
+          "min": 30,
+          "typ": 39
+        },
+        "source_table": "6.5",
+        "pdf_page": 7,
+        "raw_conditions": "IVCC=25mA current-limited; do not use low impedance39V source",
+        "conditions": {
+          "status": "requires_measurement_contract",
+          "text": "IVCC=25mA current-limited; do not use low impedance39V source"
+        }
+      },
+      "notes": [],
+      "missing_reason": "Requires independently validated metrology/fixture and full conditions; retained as coverage gap."
+    },
+    {
+      "id": "figure:6-1",
+      "kind": "test",
+      "label": "Typical characteristic figure6-1",
+      "evidence": [
+        "pdf_page:8"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "status": "image_present_numeric_series_not_digitized",
+        "figure": "6-1",
+        "page": 8
+      },
+      "missing_reason": "Original image retained; no invented or model-generated reference curve."
+    },
+    {
+      "id": "figure:6-2",
+      "kind": "test",
+      "label": "Typical characteristic figure6-2",
+      "evidence": [
+        "pdf_page:8"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "status": "image_present_numeric_series_not_digitized",
+        "figure": "6-2",
+        "page": 8
+      },
+      "missing_reason": "Original image retained; no invented or model-generated reference curve."
+    },
+    {
+      "id": "figure:6-3",
+      "kind": "test",
+      "label": "Typical characteristic figure6-3",
+      "evidence": [
+        "pdf_page:8"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "status": "image_present_numeric_series_not_digitized",
+        "figure": "6-3",
+        "page": 8
+      },
+      "missing_reason": "Original image retained; no invented or model-generated reference curve."
+    },
+    {
+      "id": "figure:6-4",
+      "kind": "test",
+      "label": "Typical characteristic figure6-4",
+      "evidence": [
+        "pdf_page:8"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "status": "image_present_numeric_series_not_digitized",
+        "figure": "6-4",
+        "page": 8
+      },
+      "missing_reason": "Original image retained; no invented or model-generated reference curve."
+    },
+    {
+      "id": "figure:6-5",
+      "kind": "test",
+      "label": "Typical characteristic figure6-5",
+      "evidence": [
+        "pdf_page:8"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "status": "image_present_numeric_series_not_digitized",
+        "figure": "6-5",
+        "page": 8
+      },
+      "missing_reason": "Original image retained; no invented or model-generated reference curve."
+    },
+    {
+      "id": "figure:6-6",
+      "kind": "test",
+      "label": "Typical characteristic figure6-6",
+      "evidence": [
+        "pdf_page:8"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "status": "image_present_numeric_series_not_digitized",
+        "figure": "6-6",
+        "page": 8
+      },
+      "missing_reason": "Original image retained; no invented or model-generated reference curve."
+    },
+    {
+      "id": "figure:6-7",
+      "kind": "test",
+      "label": "Typical characteristic figure6-7",
+      "evidence": [
+        "pdf_page:9"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "status": "image_present_numeric_series_not_digitized",
+        "figure": "6-7",
+        "page": 9
+      },
+      "missing_reason": "Original image retained; no invented or model-generated reference curve."
+    },
+    {
+      "id": "figure:6-8",
+      "kind": "test",
+      "label": "Typical characteristic figure6-8",
+      "evidence": [
+        "pdf_page:9"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "status": "image_present_numeric_series_not_digitized",
+        "figure": "6-8",
+        "page": 9
+      },
+      "missing_reason": "Original image retained; no invented or model-generated reference curve."
+    },
+    {
+      "id": "figure:6-9",
+      "kind": "test",
+      "label": "Typical characteristic figure6-9",
+      "evidence": [
+        "pdf_page:9"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "status": "image_present_numeric_series_not_digitized",
+        "figure": "6-9",
+        "page": 9
+      },
+      "missing_reason": "Original image retained; no invented or model-generated reference curve."
+    },
+    {
+      "id": "figure:6-10",
+      "kind": "test",
+      "label": "Typical characteristic figure6-10",
+      "evidence": [
+        "pdf_page:9"
+      ],
+      "bindings": [],
+      "binding_complete": false,
+      "reference_evidence": {
+        "status": "image_present_numeric_series_not_digitized",
+        "figure": "6-10",
+        "page": 9
+      },
+      "missing_reason": "Original image retained; no invented or model-generated reference curve."
+    },
+    {
+      "id": "scope:full_temperature_and_package",
+      "kind": "constraint",
+      "label": "UC2845 full operating-temperature and packaging scope",
+      "evidence": [
+        "pdf_page:3",
+        "pdf_page:6",
+        "pdf_page:7"
+      ],
+      "bindings": [],
+      "reason": "Static fixtures target25C unless explicitly stated. Entire -40..85C range and 14-pin package not qualified."
+    },
+    {
+      "id": "ratings:absolute_maximum_and_esd",
+      "kind": "constraint",
+      "label": "Absolute maximum / ESD ratings",
+      "evidence": [
+        "pdf_page:5"
+      ],
+      "bindings": [],
+      "reason": "Damage, ESD and lifetime ratings cannot be declared verified by nominal electrical SPICE tests."
+    },
+    {
+      "id": "thermal:package_dependent",
+      "kind": "constraint",
+      "label": "Thermal package-specific parameters",
+      "evidence": [
+        "pdf_page:5",
+        "pdf_page:6"
+      ],
+      "bindings": [],
+      "reason": "Ordering suffix and thermal model not supplied; not an electrical transient pass."
+    }
+  ]
+}

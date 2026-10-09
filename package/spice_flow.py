@@ -77,6 +77,8 @@ def main(argv=None):
         p.add_argument("--task", type=Path, required=True)
         p.add_argument("--output", type=Path, required=True)
         p.add_argument("--resume", action="store_true")
+        if name in ("run", "preflight"):
+            p.add_argument("--continuous", action="store_true", help="主循环持续验收；不以固定预算结束，API错误等待重试")
     a = ap.parse_args(argv)
     if a.command == "repair-drafts":
         from flow_runtime.autonomous_qualification import run
@@ -177,6 +179,10 @@ def main(argv=None):
     with file_lock(a.output / ".workflow.lock"):
         try:
             task, assets = load_task(a.task)
+            if getattr(a,"continuous",False):
+                if task.get("input_integration"):
+                    raise Fault("input","仅配置回归任务不能启用持续验收")
+                task["policy"]["continuous_until_acceptance"]=True
             code = {str(p.relative_to(Path(__file__).parent)): digest(p)
                     for p in (Path(__file__).parent / "flow_runtime").rglob("*.py")}
             code["spice_flow.py"] = digest(Path(__file__))
