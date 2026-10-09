@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 GROUPS=['器件资料载入','模型评估筛选','SPICE模型文件','测试电路构建','真实仿真执行','结果对比校验','模型参数与结构修正','修正结果复核','输出规定格式','Agent请求与回复']
-EXT={'.diff','.json','.jsonl','.lib','.cir','.inc','.log','.txt','.csv','.md','.raw','.png','.svg','.pdf'}
+EXT={'.jpg','.jpeg','.gif','.webp','.diff','.json','.jsonl','.lib','.cir','.inc','.log','.txt','.csv','.md','.raw','.png','.svg','.pdf'}
 def group(path):
     p=str(path)
     if p.startswith('input/') or p.startswith('preflight/') or path.name=='input_snapshot.json':return GROUPS[0]

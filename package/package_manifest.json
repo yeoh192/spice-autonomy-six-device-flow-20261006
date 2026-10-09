@@ -1,5 +1,5 @@
 {
-  "version": "0.4.1-live-stage-artifacts",
+  "version": "0.4.2-stage-modules",
   "files": {
     "CAPABILITY_DEVELOPMENT.md": "3ce2dae7347ab79ffbbda88e04b681fc0760aa6a705b99fd5e6d3f3fe7150c90",
     "COVERAGE_BINDING.md": "657a29b1552bc0a761c67633e37af7a79af6d10f05fd12ed1de3895d6587e1e3",
@@ -10425,17 +10425,17 @@
     "tests/test_flow_retry_categories.py": "3f12a993b44a467885c2c3b79056499bfed3aa0960361da46695e38364bb280e",
     "RUN_WEB_UI.sh": "439df00dffc23e5eaf1a357417cdfb342686904c802c62b28670990d7233ba9b",
     "RUN_WEB_UI.cmd": "71b4979b75266565f179560248b601cead9b58184bdf03bf50d8438cce0178a2",
-    "WEB_UI.md": "3626e9073b842335a7fbf097a29f743f9dd9fb7ade6172385ad8e2988a97463f",
+    "WEB_UI.md": "b2937f1ece6fb27cd1ebdffe649a36208ee5dfa8740eaff2cffee7508b5c1c5b",
     "tests/test_web_ui.py": "505b51142274e998789eb7ed77423f0acc18084213afad38cbd6731d59217737",
-    "web_ui/server.py": "df0fa9dbf28675ad7ace03b678095e87a4d6acf2943a0d28ceddf9b1920072d0",
-    "web_ui/index.html": "b50a94ecfd550392e3a7a6561f35dbb1d297a0334753ced9859cb76e62934e67",
+    "web_ui/server.py": "626aacaacfa2ee459ce5cf895fb37b91839f66f9b4f9dab8b61f633ddd147a5d",
+    "web_ui/index.html": "a2f3dad1f7ca6e670af063f93a8e1cba42963d0954a38c5e205c846f02432c0e",
     "web_ui/__init__.py": "fd483d4db1062def8ad9dd4b2c40996259a4c987c35a01b81f48272a7e0ec1d9",
     "web_ui/export.py": "5f02569cedb7c2c1fd57b6731a5dc2eeffcb0d35f5c3d8082b84e279e29a4291",
     "web_ui/plots.py": "99db9aa23812f6a10e552d7e212cae4c7a1a6180cf1ada33250686b4db96fb86",
     "web_ui/requirements.txt": "48e1d792aa42dc067223fe311036f1388d0fea6b9deec4c84760db4c2f70d2a5",
     "tests/test_web_plots.py": "88d304c35b34ea3e62b368a377e9ea42b939e5347c0fe3566eda129d7a00d24d",
     "flow_runtime/stage_labels.py": "1e9982ec0af56602df65264509977ae4c99dda512e05b9435fda4c56eeeaf84f",
-    "web_ui/progress.py": "41fbf41582ae33d75ef988c2b3b395c4ef1aae13cf0f6a80d9943b103f485152",
+    "web_ui/progress.py": "f11120645ad9cbf77e2009920a75541bc0d7fead6b42ce8cded73a864cb8906b",
     "tests/test_web_progress.py": "c0a31a334de154cf23d60f1cea32339dbdad6ae2621f2bc81a125bbfeae9ec02"
   }
 }

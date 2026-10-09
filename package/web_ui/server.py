@@ -132,7 +132,7 @@ class Handler(BaseHTTPRequestHandler):
                     import re
                     text=re.sub(r'sk-[A-Za-z0-9_-]+','[redacted]',text)
                     return self.send(200,{'text':text,'truncated':f.stat().st_size>128000})
-                return self.send(200,f.read_bytes(),'application/octet-stream')
+                return self.send(200,f.read_bytes(),{'.png':'image/png','.svg':'image/svg+xml','.jpg':'image/jpeg','.jpeg':'image/jpeg','.gif':'image/gif','.webp':'image/webp'}.get(f.suffix,'application/octet-stream'))
             if path.startswith('/download/'):
 
                 _,_,key,name=path.split('/',3)
