@@ -125,7 +125,9 @@ class Handler(BaseHTTPRequestHandler):
             n=int(self.headers.get('Content-Length',0))
             if not 0<n<=50_000_000:raise ValueError('请求大小上限50MB')
             blob=self.rfile.read(n);app=self.server.app;path=urlsplit(self.path).path
-            if path=='/upload':return self.send(200,{'id':app.upload(blob)})
+            if path=='/upload':
+                key=app.upload(blob);task=json.loads(app.jobs[key]['task'].read_text())
+                return self.send(200,{'id':key,'routes':task.get('routes',{}),'selection':'indexed' if task.get('template_selection') else 'fixed'})
             data=json.loads(blob)
             if path=='/start':app.start(data['id'],data)
             elif path=='/stop':app.stop(data['id'])
