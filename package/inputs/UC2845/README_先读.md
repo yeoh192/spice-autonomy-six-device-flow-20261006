@@ -44,4 +44,4 @@ LTspice手动演示可打开circuits/pwm_functional_demo.cir或任一测试.cir�
 
 LTspice解析夹具校准16/16通过；319项离线测试通过。器件31项中30项完成测量：21通过、7不通过、2待判定；1项UVLO启动预置检查失败（参考端约−0.099V），未保留UVLO启动验收值。详见evidence/expanded_execution_summary.json。运行检查与独立方法资格分开登记，未调用大模型API、未宣称全覆盖验收通过。
 
-当前任务默认continuous_until_acceptance=true。主循环只有完整验收通过才能成功结束；缺资料暂停、主动Ctrl+C中断。原失败项仍参与完整回归。详见软件CONTINUOUS_ACCEPTANCE.md。
+当前任务默认continuous_until_acceptance=false，使用有限预算：API最多32次、仿真最多300次、修复预算16、总时限5400秒；优化最多3次。达到上限或请求恢复失败后保存报告并停止，不代表验收通过。

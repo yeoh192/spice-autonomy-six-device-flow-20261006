@@ -10239,7 +10239,7 @@
     "diagnostic_attempts": 4,
     "diagnostic_revision_attempts": 3,
     "diagnostic_analysis_attempts": 2,
-    "continuous_until_acceptance": true
+    "continuous_until_acceptance": false
   },
   "limitations": [
     "Input package ready; no claim of full manual coverage or delivery acceptance.",

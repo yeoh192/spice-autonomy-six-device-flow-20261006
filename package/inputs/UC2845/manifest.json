@@ -1,13 +1,13 @@
 {
   "device": "UC2845",
-  "version": "31-continuous",
+  "version": "31-bounded",
   "files": {
-    "README_先读.md": "62b15c09982bc9d56dbe3bf6de0e141f22b6b96422dce418b1a97dc7ae08f7ba",
+    "README_先读.md": "3fffdcf3f1682d6dd777a4c1aa23865bc967c4835f45cb881db3060a8e2f917a",
     "RUN_UC2845.sh": "8ba5b782086d6107fb4903d17398d3f725febfc9774d4ad5f64d0d3b4ea7cb5e",
     "ports.json": "01d0fccf11485a4207e935ea6c2463711471bb2a529050ccc6e198d10834a29a",
     "verify_input.py": "9ce2f89e01dae4c31ceae0557a932ec3d59324de2432acfe1426b96c4ce1de6e",
     "acceptance.json": "7a0afa50d55f91d2999997712e6d287c80bb8ca06fe858fa28f093cf93b62032",
-    "task.json": "b50cf58b060870f49c8e2ade79ec034e89e835ae8719c455ce77e3f361f158ba",
+    "task.json": "7de9e9894deaeac289504d98f5bcb7bf7dc2cfd1e4b4593800d3cea05238eb04",
     "inventory.json": "2da2ead57de89ff013e58bc00e8e163bcbf9b8ded19914394820ee160e397dac",
     "expansion.json": "97a17b4525ff7752c2d064f9889f25ccd2df46968e1b275d2f9e778a21858077",
     "evidence/expanded_execution_summary.json": "dd3f01880e189b11e5298e16f6f15d02823175efb6194d851be37e5c5f1e59bb",
