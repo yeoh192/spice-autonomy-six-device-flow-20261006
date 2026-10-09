@@ -44,7 +44,12 @@ def export(runtime, task):
             shutil.copy2(source,out/'candidate.lib');initial=runtime/'models/input_model.lib'
             model_info={'available':True,'sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
                 'changed_from_input':initial.exists() and initial.read_bytes()!=source.read_bytes()}
-    meta={'workflow_status':report.get('workflow_status'),'model':model_info,
+    plots=[]
+    try:
+        from .plots import generate
+        plots=generate(report,out)
+    except Exception as e:notes.append({'stage':'plots','export_error':str(e)[:300]})
+    meta={'plots':plots,'workflow_status':report.get('workflow_status'),'model':model_info,
           'notice':'candidate.lib is the retained candidate, not necessarily accepted. See summary.json for full acceptance and gaps.', 'export_warnings':notes}
     (out/'export_manifest.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2))
     shutil.copy2(runtime/'summary.json',out/'summary.json')

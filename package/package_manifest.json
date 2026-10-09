@@ -10425,11 +10425,14 @@
     "tests/test_flow_retry_categories.py": "3f12a993b44a467885c2c3b79056499bfed3aa0960361da46695e38364bb280e",
     "RUN_WEB_UI.sh": "439df00dffc23e5eaf1a357417cdfb342686904c802c62b28670990d7233ba9b",
     "RUN_WEB_UI.cmd": "71b4979b75266565f179560248b601cead9b58184bdf03bf50d8438cce0178a2",
-    "WEB_UI.md": "d17da902f56d7c035f7dbea37e015885461ecc71a29890b1d80aa45dc82e452b",
+    "WEB_UI.md": "8ed48a2d15b3a145f4c61652aed291f846608a5ea7c0c58fe296180fe5951e93",
     "tests/test_web_ui.py": "505b51142274e998789eb7ed77423f0acc18084213afad38cbd6731d59217737",
-    "web_ui/server.py": "e22defc8b9b14f2628eeeb4e0c6528e78d94757c627ed1e46dbb02f8c63a67ca",
-    "web_ui/index.html": "ad5383a0f91b631a90b72701eebd46dcca432c0586bf2f2848085238bf13ac21",
+    "web_ui/server.py": "dfba67c39d04f09f9360e88e4955d2e96725b51a826e5c63df3d40f4fc45dad2",
+    "web_ui/index.html": "dd4539e7089e28d4a8ad267ecdf561b47790932d1fa0112de3fa2c2900da320c",
     "web_ui/__init__.py": "fd483d4db1062def8ad9dd4b2c40996259a4c987c35a01b81f48272a7e0ec1d9",
-    "web_ui/export.py": "56b8b420b98f5232f0b952e1979964c1ec372d2528dd959e8a624dcde94e2f41"
+    "web_ui/export.py": "5f02569cedb7c2c1fd57b6731a5dc2eeffcb0d35f5c3d8082b84e279e29a4291",
+    "web_ui/plots.py": "99db9aa23812f6a10e552d7e212cae4c7a1a6180cf1ada33250686b4db96fb86",
+    "web_ui/requirements.txt": "48e1d792aa42dc067223fe311036f1388d0fea6b9deec4c84760db4c2f70d2a5",
+    "tests/test_web_plots.py": "88d304c35b34ea3e62b368a377e9ea42b939e5347c0fe3566eda129d7a00d24d"
   }
 }

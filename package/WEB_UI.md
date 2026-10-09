@@ -16,3 +16,5 @@ Mac：`bash RUN_WEB_UI.sh`；Windows：双击 `RUN_WEB_UI.cmd`（需Python 3.9�
 - results.zip：上述所有文件。
 
 Key只传给本机子进程环境，不写入任务配置；控制台已知Key脱敏。历史报告保存在磁盘，重启服务可查看既有任务；此版Web UI不提供跨版本续跑。Windows停止机制尚未在Windows实机验证。真实API执行效果依赖原引擎与服务商，Web UI不改变验收逻辑。
+
+图表依赖：python -m pip install matplotlib。报告存在comparison数据时自动生成PNG/SVG/对比CSV；未安装时在export_manifest中记录缺口。

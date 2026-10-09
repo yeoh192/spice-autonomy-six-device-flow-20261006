@@ -113,10 +113,11 @@ class Handler(BaseHTTPRequestHandler):
             app=self.server.app
             if path=='/jobs':return self.send(200,[{k:v for k,v in j.items() if k in ('id','device','status','log','exports')} for j in app.jobs.values()])
             if path.startswith('/download/'):
-                _,_,key,name=path.split('/')
-                if name not in ('results.zip','measurements.csv','candidate.lib','summary.json','export_manifest.json'):raise ValueError('未知输出')
-                f=app.jobs[key]['folder']/'exports'/name
-                return self.send(200,f.read_bytes(),'application/octet-stream')
+                _,_,key,name=path.split('/',3)
+                if not (name.startswith('plots/') and Path(name).suffix in ('.png','.svg','.csv')) and name not in ('results.zip','measurements.csv','candidate.lib','summary.json','export_manifest.json'):raise ValueError('未知输出')
+                f=inside(app.jobs[key]['folder']/'exports'/name,app.jobs[key]['folder']/'exports')
+                kind='image/png' if f.suffix=='.png' else 'image/svg+xml' if f.suffix=='.svg' else 'application/octet-stream'
+                return self.send(200,f.read_bytes(),kind)
             self.send(404,{'error':'未知路径'})
         except Exception as e:self.send(400,{'error':str(e)})
     def do_POST(self):
