@@ -226,20 +226,22 @@ class Agents:
         while (dispatch < 2 if self.store.continuous else dispatch < 7 and not exhausted()):
             from .request_context import check_size
             from .interface_contracts import retry_context
-            check_size(retry_context(context, last_fault))
-            self.credentials([role])
-            self.store.reserve("api_calls")
+            # Fit the final retry payload, including newly added recovery feedback.
             dispatch += 1
             physical_dispatch += 1
             from .response_recovery import settings, focus
             profile = settings(self.store, route)
             tokens = max(profile['max_tokens'], 8192 if dispatch > 1 else 4096)
-            self.store.put("requests", key, {"status": "started", "dispatch": dispatch, "physical_dispatch": physical_dispatch, "failure_counts": failures})
             from .interface_contracts import retry_context, validate_response
             attempt_context = retry_context(context, last_fault)
             if role in ('model_optimizer','model_diagnoser','model_repair_designer'):
                 attempt_context = focus(attempt_context, profile)
+            from .request_context import fit
+            attempt_context = fit(role, attempt_context)
             check_size(attempt_context)
+            self.credentials([role])
+            self.store.reserve("api_calls")
+            self.store.put("requests", key, {"status": "started", "dispatch": dispatch, "physical_dispatch": physical_dispatch, "failure_counts": failures})
             request = {"role": role, "route": route, "context": attempt_context,
                 "recovery": last_fault, "max_tokens": tokens}
             attempt_folder = folder / ("attempt_%02d" % physical_dispatch)

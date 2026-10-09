@@ -39,7 +39,7 @@ def check_size(context,maximum=90000):
     return size
 
 
-def fit(role, context, maximum=90000):
+def fit(role, context, maximum=80000):
     """Reduce sampled detail only; preserve targets, circuits and error summaries."""
     c=copy.deepcopy(context)
     size=lambda:len(json.dumps(c,ensure_ascii=False,separators=(',',':')).encode('utf-8'))
@@ -57,5 +57,14 @@ def fit(role, context, maximum=90000):
         for name in ('shared_evidence','candidate_evidence'):
             for row in c.get(name,{}).get('tests',[]):
                 row.get('signed_residual',{}).pop('intervals',None)
-    check_size(c,maximum)
+    if size()>maximum:
+        for name in ('shared_evidence','candidate_evidence'):
+            for row in c.get(name,{}).get('tests',[]):
+                # Full artifact fingerprints remain in the saved evidence bundle.
+                row.pop('circuit_sha256',None)
+                for key in ('model_sha256','protocol_sha256'):
+                    row.get('result',{}).pop(key,None)
+                ref=row.get('reference',{})
+                ref.pop('path',None)
+    check_size(c,90000)
     return c
