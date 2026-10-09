@@ -61,7 +61,8 @@ class App:
             base=config.get('base_url','').strip()
             for role,provider,model in [('design','qwen',config.get('design_model')),('review','glm',config.get('review_model'))]:
                 route={'provider':provider,'model':model or ('qwen3.8-max' if role=='design' else 'glm-5.3')}
-                if base:route.update(base_url=base,key_env='SPICE_API_KEY' if role=='design' else 'WEB_REVIEW_KEY')
+                role_base=base if role=='design' else config.get('review_base_url',base).strip()
+                if role_base:route.update(base_url=role_base,key_env='SPICE_API_KEY' if role=='design' else 'WEB_REVIEW_KEY')
                 task['routes'][role]=route
             j['task'].write_text(json.dumps(task,ensure_ascii=False,indent=2));j['status']='preflight'
             env=os.environ.copy();design=config.get('key','');review=config.get('review_key','') or design

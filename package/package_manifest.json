@@ -1,5 +1,5 @@
 {
-  "version": "0.3.16-review-fit-core-demo",
+  "version": "0.3.17-buk-web-demo",
   "files": {
     "CAPABILITY_DEVELOPMENT.md": "3ce2dae7347ab79ffbbda88e04b681fc0760aa6a705b99fd5e6d3f3fe7150c90",
     "COVERAGE_BINDING.md": "657a29b1552bc0a761c67633e37af7a79af6d10f05fd12ed1de3895d6587e1e3",
@@ -6180,7 +6180,7 @@
     "six_inputs/EMHK350ARA470MF80G/fixture_drafts.json": "1b15ef5c6f71acc5376a4174c75f02eab5f4f6568070721afb479533ee90d727",
     "six_inputs/EMHK350ARA470MF80G/inventory.json": "5e9d34dd2e07d529917083c1ed4cd58a668eb531f9be404c33da5c9ed3e04574",
     "six_inputs/batch.json": "4de15d47188bddbb83a21746b467e899329dcde633f6cb3389ef294abbc23073",
-    "spice_flow.py": "bfa3a57af139aa27f9f0f6637b8e8d523dd73a4afd55719b962de6185168ac6e",
+    "spice_flow.py": "d4947c337da9c1a8eb0ca1da5a289aef0eb822aca83ab5f02b3a6160370861e0",
     "template_assets/index/report.md": "81f62218f4090428f6503efde5c00245f93d4af0d5cac083e189c35f392cf18a",
     "template_assets/index/summary.json": "1db3c3bc3f8b54605967907f1d6b8bcbb333277694f5f9a2bc65893c268e02f2",
     "template_assets/index/templates.sqlite": "7a62e5969f33514696c0cbddae3eb764560470d0ef30f8567cd60ec2e371f108",
@@ -10427,8 +10427,8 @@
     "RUN_WEB_UI.cmd": "71b4979b75266565f179560248b601cead9b58184bdf03bf50d8438cce0178a2",
     "WEB_UI.md": "b2937f1ece6fb27cd1ebdffe649a36208ee5dfa8740eaff2cffee7508b5c1c5b",
     "tests/test_web_ui.py": "505b51142274e998789eb7ed77423f0acc18084213afad38cbd6731d59217737",
-    "web_ui/server.py": "626aacaacfa2ee459ce5cf895fb37b91839f66f9b4f9dab8b61f633ddd147a5d",
-    "web_ui/index.html": "382e47d6413054762ead9ca582dca9557fb70b24263041cf71fc8606f5638159",
+    "web_ui/server.py": "b651432d544aec8d7446ef6d3d3dbd5c9967b20e51986a95a8e7b031c0f4a9cd",
+    "web_ui/index.html": "d12febef7953cd0dafb848dbac6beda2a937b6dda4104efdf8b04bc29ac78ab3",
     "web_ui/__init__.py": "fd483d4db1062def8ad9dd4b2c40996259a4c987c35a01b81f48272a7e0ec1d9",
     "web_ui/export.py": "5f02569cedb7c2c1fd57b6731a5dc2eeffcb0d35f5c3d8082b84e279e29a4291",
     "web_ui/plots.py": "99db9aa23812f6a10e552d7e212cae4c7a1a6180cf1ada33250686b4db96fb86",

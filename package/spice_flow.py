@@ -210,7 +210,12 @@ def main(argv=None):
                     raise Fault("input", "资格验证需要明确冻结的模型；请从import-legacy任务开始，不能默认选索引第一项")
                 summary = workflow.qualify_library()
             else:
-                summary = workflow.run(check_only=a.command == "preflight")
+                if a.command == 'run' and task.get('execution_profile') == 'model_iteration':
+                    from flow_runtime.batch_model_iteration import iterate
+                    workflow.preflight()
+                    summary = iterate(workflow)
+                else:
+                    summary = workflow.run(check_only=a.command == "preflight")
             return 0 if summary["workflow_status"] in ("prepared", "delivered_declared_scope", "qualification_completed_with_gaps") else 2
         except (Fault, OSError, KeyError, ValueError, TypeError) as error:
             if not isinstance(error, Fault):
