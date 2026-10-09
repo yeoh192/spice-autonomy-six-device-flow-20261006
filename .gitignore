@@ -10,3 +10,5 @@ __pycache__/
 
 # Local API routing, never contains keys
 package/local_api_routes.json
+
+/package/web_runs/

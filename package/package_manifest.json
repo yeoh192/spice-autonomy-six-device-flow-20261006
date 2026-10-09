@@ -1,5 +1,5 @@
 {
-  "version": "0.3.14-classified-retry",
+  "version": "0.4.0-local-web-ui",
   "files": {
     "CAPABILITY_DEVELOPMENT.md": "3ce2dae7347ab79ffbbda88e04b681fc0760aa6a705b99fd5e6d3f3fe7150c90",
     "COVERAGE_BINDING.md": "657a29b1552bc0a761c67633e37af7a79af6d10f05fd12ed1de3895d6587e1e3",
@@ -10422,6 +10422,14 @@
     "tests/test_flow_response_capture.py": "0212a91e80e4889dd162a1a80da2f255cb594f64938ebd0724a554c3fed5b536",
     "flow_runtime/response_recovery.py": "c41dc8fd34404024b3157f6b0cf253d1aab7115c236ad9eee640d90d4dee367c",
     "tests/test_flow_response_recovery.py": "9625b928b500d10bf4a6660819369e250d1bb726f59601fbec57599b10986c21",
-    "tests/test_flow_retry_categories.py": "3f12a993b44a467885c2c3b79056499bfed3aa0960361da46695e38364bb280e"
+    "tests/test_flow_retry_categories.py": "3f12a993b44a467885c2c3b79056499bfed3aa0960361da46695e38364bb280e",
+    "RUN_WEB_UI.sh": "439df00dffc23e5eaf1a357417cdfb342686904c802c62b28670990d7233ba9b",
+    "RUN_WEB_UI.cmd": "71b4979b75266565f179560248b601cead9b58184bdf03bf50d8438cce0178a2",
+    "WEB_UI.md": "d17da902f56d7c035f7dbea37e015885461ecc71a29890b1d80aa45dc82e452b",
+    "tests/test_web_ui.py": "505b51142274e998789eb7ed77423f0acc18084213afad38cbd6731d59217737",
+    "web_ui/server.py": "966250231157511ab97cb6d76353f3204f62618bc6cdf4c811a88d9933286f8b",
+    "web_ui/index.html": "6ad2c777d6e1ecf2ae6aa396277e04eeb5f656b805e27565dec8aefc21db2197",
+    "web_ui/__init__.py": "fd483d4db1062def8ad9dd4b2c40996259a4c987c35a01b81f48272a7e0ec1d9",
+    "web_ui/export.py": "56b8b420b98f5232f0b952e1979964c1ec372d2528dd959e8a624dcde94e2f41"
   }
 }
