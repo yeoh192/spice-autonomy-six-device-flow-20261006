@@ -86,14 +86,25 @@ def bundle(workflow, cases=None, results=None, model_path=None):
         "tests": [case_evidence(c, rows.get(c["id"], {}), workflow.task["model"], workflow.inventory) for c in cases]}
     key = fingerprint(value)
     save(workflow.store.folder/"evidence"/(key+".json"), value)
-    return {**value, "evidence_sha256": key}
+    compact = copy.deepcopy(value)
+    for test in compact['tests']:
+        test['manual_records'] = [{k:r[k] for k in ('id','label','kind','reference_evidence') if k in r} for r in test['manual_records']]
+        # Circuit is the executed protocol. Keep one representation, not both.
+        test.pop('protocol',None)
+        test['result'] = {k:v for k,v in test['result'].items() if k in ('test','execution','acceptance','value','unit','metrics','model_sha256','protocol_sha256')}
+        if test.get('contract'):
+            test['contract'] = {k:v for k,v in test['contract'].items() if k in ('conditions','expectation','reference_id')}
+    return {**compact, "evidence_sha256": key, "full_evidence_file": str(workflow.store.folder/'evidence'/(key+'.json'))}
 
 
 def compact_history(history, cases):
     """Retain feedback direction without resending every curve sample each round."""
     expected = {c["id"]: c["expectation"] for c in cases}
-    answer = copy.deepcopy(history)
+    keep = {'round','status','proposal','fault','reason','reasons','gain','improved','baseline_sha256','model_sha256','results','review','result_review','instruction','candidate_diagnostics'}
+    answer = [{k:copy.deepcopy(v) for k,v in r.items() if k in keep} for r in history]
     for record in answer:
+        if 'candidate_diagnostics' in record:
+            record['candidate_diagnostics'] = [{k:v for k,v in d.items() if k in ('test','log_tail','execution_diagnostics','measured_port_current')} for d in record['candidate_diagnostics']]
         for result in record.get("results", []):
             if result.get("test") in expected:
                 result["signed_residual"] = residual(result, expected[result["test"]])

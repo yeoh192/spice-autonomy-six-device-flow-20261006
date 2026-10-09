@@ -180,7 +180,7 @@ def validate_action(workflow, source, proposal, triggers):
 
 def audit_stop(history, baseline_sha):
     good = [h for h in history if h.get("status") == "experiment_completed" and h.get("baseline_sha256") == baseline_sha
-            and h.get("results") and all(r["execution"] == "completed" for r in h["results"])]
+            and h.get("result_review", {}).get("decision", "approve") == "approve" and h.get("results") and all(r["execution"] == "completed" for r in h["results"])]
     if any(h.get("improved") for h in good):
         return "已有试验改善冲突项；须提交patch进行完整回归，不能直接停止"
     if len({h["model_sha256"] for h in good}) < 2:
@@ -222,14 +222,14 @@ def repair(workflow):
         from .evidence import bundle, compact_history
         shared = bundle(w)
         context = saved.get("context") or {
-            "task": "Diagnose recorded model deviations; choose diagnose|experiment|patch|stop. experiment runs only evidence tests and never changes the active model. patch requires full regression before retention. Cite actual test IDs. No source replacement or changed acceptance.",
+            "task": "For diagnose/stop edits MUST be []; to change a parameter choose experiment or patch. Diagnose recorded model deviations; choose diagnose|experiment|patch|stop. experiment runs only evidence tests and never changes the active model. patch requires full regression before retention. Cite actual test IDs. No source replacement or changed acceptance.",
             "schema": {"action": "diagnose|experiment|patch|stop", "reason": "hypothesis, facts and proposed check",
                        "evidence_tests": "real tests; must include at least one trigger", "adapter": "parameter|behavioral_voltage|existing_node_rewire",
                        "edits": [{"old": "unique text from capabilities", "new": "small validated replacement"}]},
-            "shared_evidence": shared, "model_text": source, "capabilities": caps, "triggers": triggers,
+            "shared_evidence": shared, "capabilities": caps, "triggers": triggers,
             "parameter_step_limit_percent": w.policy.get("max_diagnostic_parameter_step_percent", 25),
             "adapter_rules": "Choose only an available adapter: parameter changes listed numeric values; behavioral_voltage changes existing B expressions; existing_node_rewire changes only existing component terminals within the same subcircuit. No new arbitrary elements or code.",
-            "allowed_test_ids": [c["id"] for c in w.cases], "baseline_evidence": baseline_evidence,
+            "allowed_test_ids": [c["id"] for c in w.cases],
             "history": compact_history(history[-6:], w.cases), "remaining_budget": {k: w.store.data["limits"][k]-w.store.data["usage"][k] for k in ("api_calls", "simulations", "repairs")}}
         w.store.put("plans", key, {**saved, "context": context})
         w.store.reserve("repairs", key + ":" + baseline_sha)
@@ -259,18 +259,19 @@ def repair(workflow):
                         break
             else:
                 sha = fingerprint(candidate)
-                record["model_sha256"] = sha
-                if any(h.get("model_sha256") == sha and h.get("proposal", {}).get("action") == action for h in history):
+                record["candidate_key"] = sha
+                if any(h.get("candidate_key") == sha and h.get("proposal", {}).get("action") == action for h in history):
                     raise Fault("proposal", "同动作重复候选；experiment可以提升为patch，但不能重复同一试验")
                 diff = "".join(difflib.unified_diff(source.splitlines(True), candidate.splitlines(True), fromfile="active.lib", tofile="diagnostic.lib"))
-                review = w.agents.ask("patch_reviewer", {"task": "Review actual model changes against the chosen available adapter, measured currents, signed residuals, frozen expectations and hypothesis; approve|revise. Experiment success is not delivery.",
-                    "proposal": proposal, "actual_diff": diff, "actual_evidence": baseline_evidence, "capabilities": caps, "shared_evidence": shared})
+                review = w.agents.ask("patch_reviewer", {"task": "Authorize a bounded experiment BEFORE execution: check actual diff, adapter, frozen conditions and hypothesis. All supplied measurements are BASELINE, not candidate results. Do not demand post-change waveforms or guaranteed improvement at this phase. approve means permission to simulate only; revise for a concrete invalid edit or test plan.",
+                    "planned_test_ids": [c["id"] for c in w.cases if action=="patch" or c["id"] in set(proposal["evidence_tests"])|set(triggers)], "proposal": proposal, "actual_diff": diff, "phase": "pre_execution", "candidate_executed": False, "baseline_evidence": baseline_evidence, "capabilities": caps, "shared_evidence": shared})
                 if review.get("decision") != "approve":
                     raise Fault("review", "诊断补丁审查要求修订", review)
                 folder = w.store.folder / "model_diagnostics" / ("round_%02d" % (n+1))
                 folder.mkdir(parents=True, exist_ok=True)
                 path = folder / "candidate.lib"
                 path.write_text(candidate, encoding="utf-8")
+                record["model_sha256"] = digest(path)
                 (folder / "changes.diff").write_text(diff, encoding="utf-8")
                 selected = [c for c in w.cases if c["id"] in set(proposal["evidence_tests"]) | set(triggers)]
                 if action == "experiment":
@@ -283,12 +284,17 @@ def repair(workflow):
                         from .workflow import retention
                         before = [r for r in w.results if r["test"] in {c["id"] for c in selected}]
                         improved, reasons, gain = retention(selected, before, after, w.policy)
-                        record.update(status="experiment_completed", improved=improved, reasons=reasons, gain=gain,
+                        result_review = review_results(w, path, selected, after, proposal)
+                        record['result_review'] = result_review
+                        record.update(status="experiment_completed", improved=improved and result_review.get('decision')=='approve', reasons=reasons, gain=gain,
                                       instruction="试验候选不交付；有改善须提交同补丁patch完整回归")
                 else:
                     after = w.evaluate_all(path, "diagnostic_regression_%02d" % (n+1))
                     from .workflow import retention
                     keep, reasons, gain = retention(w.cases, w.results, after, w.policy)
+                    result_review = review_results(w, path, w.cases, after, proposal)
+                    record['result_review'] = result_review
+                    keep = keep and result_review.get('decision')=='approve'
                     record.update(status="repair_retained" if keep else "regression_failed" if any(r["execution"] != "completed" for r in after) else "repair_rolled_back",
                                   results=after, reasons=reasons, gain=gain,
                                   candidate_diagnostics=evidence(w.cases, after, w.task["model"]))
@@ -312,3 +318,20 @@ def repair(workflow):
     save(w.store.folder / "model_diagnostics/summary.json", {"history": history, "active_model_sha256": digest(w.model_path),
          "remaining_triggers": triggers_for(w.cases, w.results), "scope": "按实际模板能力选择受限参数、B表达式或已有节点重接；保留必须经过完整回归"})
     w.checkpoint()
+
+
+def review_results(w, path, cases, results, proposal):
+    """Only candidate-hash measurements can support a post-execution review."""
+    if any(r.get('execution')!='completed' for r in results):
+        return {'decision':'revise','reason':'candidate_execution_incomplete'}
+    if {r['test'] for r in results}!={c['id'] for c in cases}:
+        raise Fault('cache_corrupt','Candidate result test set differs from executed plan')
+    if any(r.get('model_sha256')!=digest(path) for r in results):
+        raise Fault('cache_corrupt','Candidate results carry a different model hash')
+    from .evidence import bundle, residual
+    baseline={r["test"]:r for r in w.results}
+    return w.agents.ask('patch_reviewer',{'phase':'post_execution','candidate_executed':True,
+        'task':'Review actual candidate measurements against frozen targets and baseline. approve|revise. Program retention additionally requires full regression; experiment approval is not delivery.',
+        'proposal':proposal,'candidate_sha256':digest(path),
+        'baseline_summary':[{'test':c['id'],'residual':residual(baseline.get(c['id'],{}),c['expectation'])} for c in cases],
+        'candidate_evidence':bundle(w,cases,results,path)})

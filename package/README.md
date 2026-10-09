@@ -38,3 +38,7 @@ full coverage and electrical acceptance are still reported independently.
 ## v0.3.5: API batch with registered methods
 
 RUN_SIX_DEVICES.sh now imports the 190-method qualified library, executes it in the batch, writes method coverage, and expands candidate iteration to 65 BUK / 17 diode tests. Qwen/GLM development and patch review remain enabled. The other four devices still need eligible candidates; method benchmarks are not fitted deliveries. See REGISTERED_AUTOMATION.md.
+
+## v0.3.6 Review phases
+
+Patch review now authorizes a trial before execution; a separate result review follows measured candidate-hash validation and cannot override regression retention. Full evidence stays on disk while API contexts exclude redundant snapshots. The BUK launcher accepts BUK_BASELINE_RUNTIME pointing to a prior iteration runtime, verifying RAW, circuit, runner, parser and model identity before reuse in a new run. Offline tests do not establish successful real model fitting.

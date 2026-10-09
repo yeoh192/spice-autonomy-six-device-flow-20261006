@@ -29,7 +29,9 @@ def seed_configured(store,old,task):
     old=Path(old)
     if not (old/'state.json').exists():return 0
     state=read(old/'state.json');copied=0
-    snapshot=read(old/'input_snapshot.json') if (old/'input_snapshot.json').exists() else None
+    snapshot_path=old/'input_snapshot.json'
+    if not snapshot_path.exists():snapshot_path=old/'iteration_input.json'
+    snapshot=read(snapshot_path) if snapshot_path.exists() else None
     if snapshot and fingerprint(snapshot)!=state['identity']:raise Fault('cache_corrupt','历史输入及代码快照身份不符')
     for key,entry in state.get('simulations',{}).items():
         if entry.get('status')!='completed':continue
@@ -48,9 +50,10 @@ def seed_configured(store,old,task):
                 # New orchestration module changes global cache hash. Verify every old
                 # runtime dependency before reproducing the original cache signature.
                 if not snapshot:continue
-                old_code={Path(n).name:h for n,h in snapshot['code'].items() if n.startswith('flow_runtime/') and len(Path(n).parts)==2}
+                old_code={Path(n).name:h for n,h in snapshot['code'].items() if (n.startswith('flow_runtime/') and len(Path(n).parts)==2) or len(Path(n).parts)==1}
                 _,new_signature=signature(case['protocol'],task['model']['path'],task['runner'],text)
-                if not old_code or any(new_signature['code'].get(n)!=h for n,h in old_code.items()):continue
+                orchestration_only={'evidence.py','model_diagnostics.py','workflow.py','batch_model_iteration.py'}
+                if not old_code or any(new_signature['code'].get(n)!=h for n,h in old_code.items() if n not in orchestration_only):continue
                 prior={**new_signature,'code':old_code}
                 if fingerprint(prior)!=key:continue
                 key=new_key
@@ -107,8 +110,11 @@ def run(batch,source_runtime,output,check_only=False,resume=False,registered_tas
                 store=Store(folder,identity,task['budgets'],resume and (folder/'state.json').exists())
                 save(folder/'iteration_input.json',{'task':task,'assets':assets,'code':code})
                 # Lock source workflow while examining reusable evidence; never write its state.
-                with file_lock(source_runtime/row['folder']/'configured/.workflow.lock'):
-                    entry['baseline_records_imported']=seed_configured(store,source_runtime/row['folder']/'configured',task)
+                baseline_folder=source_runtime/row['folder']/'configured'
+                if not baseline_folder.exists() and (source_runtime/row['folder']/'iteration_input.json').exists():
+                    baseline_folder=source_runtime/row['folder']
+                with file_lock(baseline_folder/'.workflow.lock'):
+                    entry['baseline_records_imported']=seed_configured(store,baseline_folder,task)
                 for registered_row in registered:
                     if registered_row['device']==task['device']:
                         old=source_runtime/'registered_regression'/task['device']/Path(registered_row['task']).parent.name

@@ -622,8 +622,8 @@ class Workflow:
                 if self.store.get("patches", sha):
                     raise Fault("proposal", "模型补丁重复；必须使用已有反馈")
                 diff = "".join(difflib.unified_diff(source.splitlines(True), candidate.splitlines(True), fromfile="before.lib", tofile="candidate.lib"))
-                review = self.agents.ask("patch_reviewer", {"task": "Review this actual model diff against ports, model evidence, static/dynamic regressions and proposed physical change. Return decision approve|revise, issues, evidence_ids.",
-                    "proposal": proposal, "actual_diff": diff, "model_interface": self.task["model"], "results": context["results"], "shared_evidence": shared,
+                review = self.agents.ask("patch_reviewer", {"task": "PRE-EXECUTION review: authorize a bounded candidate simulation by checking the diff, ports, frozen tests and hypothesis. Supplied results are BASELINE ONLY. Do not require candidate results or proven improvement before simulation. Return decision approve|revise, issues, evidence_ids. Approval is permission to run, not retention.",
+                    "planned_test_ids": [c["id"] for c in self.cases], "phase": "pre_execution", "candidate_executed": False, "proposal": proposal, "actual_diff": diff, "model_interface": self.task["model"], "results": context["results"], "shared_evidence": shared,
                     "cases": context["cases"], "acceptance_standard": self.task.get("acceptance_standard")})
                 if review.get("decision") != "approve":
                     raise Fault("review", "模型补丁审查要求修订", review)
@@ -635,8 +635,13 @@ class Workflow:
                 # Full configured scope always runs BEFORE retention, including new capabilities.
                 results = self.evaluate_all(path, "regression_" + sha[:12])
                 keep, reasons, gain = retention(self.cases, self.results, results, self.policy)
+                from .model_diagnostics import review_results
+                post_review = review_results(self, path, self.cases, results, proposal)
+                if post_review.get('decision') != 'approve':
+                    keep = False
+                    reasons = list(reasons) + ['post_execution_review_required']
                 feedback = compact_history([{"status": "retained" if keep else "rolled_back", "reasons": reasons, "gain": gain,
-                    "results": results, "patch_id": sha}], self.cases)[0]
+                    "results": results, "result_review": post_review, "patch_id": sha}], self.cases)[0]
                 self.store.put("patches", sha, feedback)
                 save(folder / "retention.json", feedback)
                 if keep:
