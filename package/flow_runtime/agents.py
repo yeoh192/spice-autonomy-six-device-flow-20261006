@@ -215,10 +215,14 @@ class Agents:
         if self.store.continuous and old and old.get("status") == "failed":
             dispatch = 0
         last_fault = old.get("fault") if old else None
-        # At most two actual calls per logical request, persisted across restart.
+        # Independent finite retry budgets, persisted across restart.
+        failures = dict(old.get('failure_counts', {})) if old else {}
+        def exhausted():
+            return (failures.get('transport',0)>2 or failures.get('length',0)>2
+                    or failures.get('other',0)>=2)
         physical_dispatch = old.get("physical_dispatch", old.get("dispatch", 0)) if old else 0
         recoveries = 0
-        while dispatch < 2:
+        while (dispatch < 2 if self.store.continuous else dispatch < 7 and not exhausted()):
             from .request_context import check_size
             from .interface_contracts import retry_context
             check_size(retry_context(context, last_fault))
@@ -229,7 +233,7 @@ class Agents:
             from .response_recovery import settings, focus
             profile = settings(self.store, route)
             tokens = max(profile['max_tokens'], 8192 if dispatch > 1 else 4096)
-            self.store.put("requests", key, {"status": "started", "dispatch": dispatch, "physical_dispatch": physical_dispatch})
+            self.store.put("requests", key, {"status": "started", "dispatch": dispatch, "physical_dispatch": physical_dispatch, "failure_counts": failures})
             from .interface_contracts import retry_context, validate_response
             attempt_context = retry_context(context, last_fault)
             if role in ('model_optimizer','model_diagnoser','model_repair_designer'):
@@ -266,11 +270,13 @@ class Agents:
                 save(attempt_folder / "response.json", value)
                 save(attempt_folder / "metadata.json", meta)
                 self.store.put("requests", key, {"status": "completed", "dispatch": dispatch, "physical_dispatch": physical_dispatch,
-                    "hashes": artifact_hashes(folder, ["request.json", "response.json", "metadata.json"])})
+                    "failure_counts": failures, "hashes": artifact_hashes(folder, ["request.json", "response.json", "metadata.json"])})
                 return value
             except Fault as e:
                 last_fault = e.record()
-                if e.kind == 'response_incomplete' and e.evidence.get('finish_reason') == 'length':
+                category = 'transport' if e.kind == 'transport' else 'length' if e.kind == 'response_incomplete' and e.evidence.get('finish_reason') == 'length' else 'other'
+                failures[category] = failures.get(category,0) + 1
+                if category == 'length' and (self.store.continuous or failures[category] <= 2):
                     from .response_recovery import truncated
                     recovery_profile = truncated(self.store, route)
                     self.store.event(role, 'response_profile_updated', recovery_profile)
@@ -280,7 +286,7 @@ class Agents:
                     with self.lock:
                         self.provider_faults[fingerprint(route)] = last_fault
                 self.store.put("requests", key, {"status": "failed", "dispatch": dispatch, "physical_dispatch": physical_dispatch,
-                    "fault": last_fault, "terminal": terminal})
+                    "fault": last_fault, "terminal": terminal, "failure_counts": failures})
                 self.store.event(role, "request_recovery" if not terminal else "request_failed", last_fault)
                 if self.store.continuous and e.kind in ("transport", "authentication", "api_configuration", "credentials"):
                     from .continuous import wait

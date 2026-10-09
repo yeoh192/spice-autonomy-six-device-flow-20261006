@@ -1,5 +1,5 @@
 {
-  "version": "0.3.13-bounded-uc2845",
+  "version": "0.3.14-classified-retry",
   "files": {
     "CAPABILITY_DEVELOPMENT.md": "3ce2dae7347ab79ffbbda88e04b681fc0760aa6a705b99fd5e6d3f3fe7150c90",
     "COVERAGE_BINDING.md": "657a29b1552bc0a761c67633e37af7a79af6d10f05fd12ed1de3895d6587e1e3",
@@ -45,7 +45,7 @@
     "flow_runtime/ac_calibration.py": "1be21d0e3104339b537955ff796c55ad7f238c323b3d0d1add9dd51fbbd317a3",
     "flow_runtime/ac_calibration_runner.py": "e39f9561ab96b9b5ab068fb2e81b6cb05b5c9a2e42788a0a79835d940cd79c31",
     "flow_runtime/ac_measurements.py": "5097c6b36a8e2f77d2b431aa94f51ab82580dbe4b49a06651e39e45668105dc6",
-    "flow_runtime/agents.py": "ef979823b048dc1239435acc17cb0468521b1af593d5b100f8cc37874a78f8e7",
+    "flow_runtime/agents.py": "d36bb9a17da4d61c4932d9ca951c4d6be14835813acc6a5106f9fabbeb16dc3c",
     "flow_runtime/autonomous_qualification.py": "63badcbd5968c892c171d7909b02877af8498651f6c2e4bc290f076ea6be78ef",
     "flow_runtime/batch_model_iteration.py": "d43d3398cca895236e377b680ea74fb50f275afa71371a9a0e1cbc6720e04272",
     "flow_runtime/capability_development.py": "60e757bc1d5d4784eb0e36b2a2d6ec010ad35857ae3ae941a3952cb3f54c2e3d",
@@ -10365,7 +10365,7 @@
     "tests/test_flow_unified.py": "a7a8a93fe812cfd060fb779039b700355b7165f02cc4a6b4de4bd8089eb598ec",
     "use_gpt_test_library.py": "ecaedefcf2a7e94f77be36e27eefd92ac7657e18ff023f789b3c6531540c89ad",
     "tests/test_flow_thirdparty.py": "b095a696228bce80b86559884380c3b8f3be556e84c56b235bb36efdf19f2d2e",
-    "CONTINUOUS_ACCEPTANCE.md": "e3e9db612aa715e267ebd98399dd390f2e20e7c10e48861ba95cf880068e14e5",
+    "CONTINUOUS_ACCEPTANCE.md": "6b5945e1bb309d0885283dc997579a15447b7749d719d72ff09a3a6cdc659979",
     "flow_runtime/continuous.py": "63fe5dc8ff5af05b0340ed1339004a07b300fd399919333f899e92d8fcf8bf09",
     "flow_runtime/pulse_metrology.py": "950a031f0779c9c6d892f5d8918d75b3d0c43a560620156990265697f0fc3ed8",
     "tests/test_flow_continuous.py": "bc8e10814780ee5dfe8332e10bad5d655ac63d3812592a80cfcb8222d7e4f544",
@@ -10421,6 +10421,7 @@
     "flow_runtime/request_context.py": "28229eb709ba20d12cc50e634188df20c2fa84f2fe9310c72bcfc72a00ffd179",
     "tests/test_flow_response_capture.py": "0212a91e80e4889dd162a1a80da2f255cb594f64938ebd0724a554c3fed5b536",
     "flow_runtime/response_recovery.py": "c41dc8fd34404024b3157f6b0cf253d1aab7115c236ad9eee640d90d4dee367c",
-    "tests/test_flow_response_recovery.py": "9625b928b500d10bf4a6660819369e250d1bb726f59601fbec57599b10986c21"
+    "tests/test_flow_response_recovery.py": "9625b928b500d10bf4a6660819369e250d1bb726f59601fbec57599b10986c21",
+    "tests/test_flow_retry_categories.py": "3f12a993b44a467885c2c3b79056499bfed3aa0960361da46695e38364bb280e"
   }
 }
